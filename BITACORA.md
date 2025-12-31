@@ -1,0 +1,188 @@
+# Cuaderno de Bitacora - Portfolio Arquitectura
+
+## Estado Actual del Proyecto
+
+**Fase actual:** Fase 2 - Componentes UI (Pendiente)
+**Ultima actualizacion:** 31 de diciembre de 2025
+
+---
+
+## Resumen del Proyecto
+
+Portfolio web profesional para una arquitecta independiente. Sitio minimalista y elegante que prioriza la presentacion visual de proyectos.
+
+**Stack:** Next.js 15 + TypeScript + Tailwind CSS 4 + Framer Motion
+
+---
+
+## Fases de Desarrollo
+
+### Fase 1: Setup y Fundamentos
+| Tarea | Estado |
+|-------|--------|
+| Inicializar proyecto Next.js 15 con TypeScript | Completado |
+| Configurar Tailwind CSS con tema personalizado | Completado |
+| Configurar estructura de carpetas | Completado |
+| Crear tipos TypeScript | Completado |
+| Implementar layout base (Header, Footer) | Completado |
+| Configurar fuentes (Google Fonts) | Completado |
+| Crear componente Container y utilidades basicas | Completado |
+
+### Fase 2: Componentes UI
+| Tarea | Estado |
+|-------|--------|
+| Crear componentes atomicos (Button, Card, Badge) | Pendiente |
+| Implementar Navigation con mobile menu | Pendiente |
+| Crear componente Logo | Pendiente |
+| Implementar AnimatedSection con Framer Motion | Pendiente |
+| Crear ImageWithLoader para imagenes optimizadas | Pendiente |
+
+### Fase 3: Homepage
+| Tarea | Estado |
+|-------|--------|
+| Desarrollar Hero section | Pendiente |
+| Crear FeaturedProjects section | Pendiente |
+| Implementar About preview section | Pendiente |
+| Crear Services preview section | Pendiente |
+| Implementar CTA section | Pendiente |
+| Ensamblar homepage completa | Pendiente |
+
+### Fase 4: Paginas de Contenido
+| Tarea | Estado |
+|-------|--------|
+| Crear pagina de Proyectos con grid y filtros | Pendiente |
+| Implementar pagina individual de proyecto | Pendiente |
+| Desarrollar galeria de imagenes con lightbox | Pendiente |
+| Crear pagina Sobre Mi | Pendiente |
+| Implementar pagina de Servicios | Pendiente |
+| Crear pagina de Contacto con formulario | Pendiente |
+
+### Fase 5: Contenido y MDX
+| Tarea | Estado |
+|-------|--------|
+| Configurar MDX en Next.js | Pendiente |
+| Crear funcion para cargar proyectos | Pendiente |
+| Anadir proyectos de ejemplo (3-5) | Pendiente |
+| Optimizar imagenes de ejemplo | Pendiente |
+
+### Fase 6: Polish y Deploy
+| Tarea | Estado |
+|-------|--------|
+| Implementar SEO completo (metadata, sitemap, robots.txt) | Pendiente |
+| Anadir transiciones de pagina | Pendiente |
+| Testing responsive | Pendiente |
+| Optimizacion de rendimiento (Lighthouse 90+) | Pendiente |
+| Configurar Vercel | Pendiente |
+| Deploy inicial | Pendiente |
+| Configurar dominio | Pendiente |
+
+---
+
+## Estructura de Paginas
+
+| Ruta | Descripcion | Estado |
+|------|-------------|--------|
+| `/` | Homepage con hero, proyectos destacados, servicios | Basica |
+| `/proyectos` | Grid de todos los proyectos con filtros | Pendiente |
+| `/proyectos/[slug]` | Pagina individual de proyecto | Pendiente |
+| `/sobre-mi` | Biografia y trayectoria | Pendiente |
+| `/servicios` | Lista de servicios ofrecidos | Pendiente |
+| `/contacto` | Formulario de contacto | Pendiente |
+
+---
+
+## Log de Desarrollo
+
+### 31 de diciembre de 2025
+
+**Sesion 1 - Inicializacion del proyecto**
+
+- Creado proyecto Next.js 16.1.1 con TypeScript
+- Instaladas dependencias:
+  - framer-motion (animaciones)
+  - lucide-react (iconos)
+  - @next/mdx + gray-matter (contenido MDX)
+  - clsx + tailwind-merge (utilidades CSS)
+- Configurada estructura de carpetas:
+  ```
+  src/
+  ├── app/
+  ├── components/{ui,sections,layout,shared}
+  ├── lib/
+  └── types/
+  content/{projects,pages}
+  public/images/{projects,hero,about}
+  ```
+- Creados tipos TypeScript base (Project, Service, NavItem, etc.)
+- Creada funcion `cn()` para clases Tailwind
+- Configurado tema de colores personalizado (primary tierra, neutrals)
+- Configuradas fuentes: Playfair Display (titulos) + Inter (cuerpo)
+- Creada pagina principal basica con hero
+- Build verificado exitosamente
+
+**Sesion 2 - Completando Fase 1**
+
+- Creado componente `Container` para centrar contenido con padding responsive
+- Creado componente `Logo` con enlace a home y tipografia serif
+- Implementado `Header` con:
+  - Navegacion desktop con links a todas las paginas
+  - Menu mobile responsive con animacion de apertura/cierre
+  - Fondo con blur y transparencia (sticky)
+  - Iconos de Lucide React (Menu, X)
+- Implementado `Footer` con:
+  - Logo y descripcion del estudio
+  - Links de navegacion
+  - Informacion de contacto con iconos
+  - Links a redes sociales
+  - Copyright dinamico
+- Integrado Header y Footer en el layout raiz
+- Ajustada pagina principal para trabajar con el nuevo layout
+- Build verificado exitosamente
+
+---
+
+## Archivos Clave Creados
+
+| Archivo | Proposito |
+|---------|-----------|
+| `src/types/index.ts` | Tipos TypeScript del proyecto |
+| `src/lib/utils.ts` | Funcion cn() para Tailwind |
+| `src/lib/constants.ts` | Configuracion del sitio, navegacion, servicios |
+| `src/app/globals.css` | Tema Tailwind con colores personalizados |
+| `src/app/layout.tsx` | Layout raiz con Header, Footer, fuentes y metadata SEO |
+| `src/app/page.tsx` | Homepage basica con hero |
+| `src/components/ui/Container.tsx` | Wrapper para centrar contenido |
+| `src/components/shared/Logo.tsx` | Logo del sitio con enlace a home |
+| `src/components/layout/Header.tsx` | Header con navegacion desktop/mobile |
+| `src/components/layout/Footer.tsx` | Footer con contacto y redes sociales |
+
+---
+
+## Proximos Pasos
+
+1. **Iniciar Fase 2 - Componentes UI:**
+   - Crear componentes atomicos (Button, Card, Badge)
+   - Implementar AnimatedSection con Framer Motion
+   - Crear ImageWithLoader para imagenes optimizadas
+
+2. **Fase 3 - Homepage:**
+   - Desarrollar Hero section completo
+   - Crear FeaturedProjects section
+   - Implementar Services preview
+
+---
+
+## Notas Tecnicas
+
+- **Tailwind CSS 4:** Usa `@theme inline` en CSS en lugar de tailwind.config.ts
+- **Next.js 16:** Ultima version con App Router y React 19
+- **Fuentes:** Cargadas via next/font/google con display: swap
+
+---
+
+## Recursos
+
+- [Next.js 15 Docs](https://nextjs.org/docs)
+- [Tailwind CSS 4](https://tailwindcss.com/docs)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide Icons](https://lucide.dev/)
