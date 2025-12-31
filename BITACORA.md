@@ -52,7 +52,7 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 |-------|--------|
 | Crear pagina de Proyectos con grid y filtros | Completado |
 | Implementar pagina individual de proyecto | Completado |
-| Desarrollar galeria de imagenes con lightbox | Pendiente |
+| Desarrollar galeria de imagenes con lightbox | Completado |
 | Crear pagina Sobre Mi | Pendiente |
 | Implementar pagina de Servicios | Pendiente |
 | Crear pagina de Contacto con formulario | Pendiente |
@@ -288,6 +288,26 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
   - Contenido extendido para cada proyecto de ejemplo
 - Build verificado exitosamente
 
+**Sesion 14 - Fase 4: Galeria con Lightbox**
+
+- Rama: `feature/image-lightbox`
+- Creado componente `Lightbox` con:
+  - Modal fullscreen con fondo oscuro
+  - Navegacion con flechas (izquierda/derecha)
+  - Navegacion por teclado (Escape, flechas)
+  - Contador de imagenes (1/3, 2/3, etc.)
+  - Indicadores de posicion (dots) clickeables
+  - Animaciones de entrada/salida con Framer Motion
+  - Bloqueo de scroll del body cuando esta abierto
+  - Cierre al hacer click fuera de la imagen
+- Creado hook `useLightbox` para manejar estado:
+  - isOpen, currentIndex, open, close, prev, next
+- Integrado lightbox en pagina de proyecto:
+  - Imagenes de galeria ahora clickeables
+  - Icono de expandir en hover
+  - Efecto zoom en hover
+- Build verificado exitosamente
+
 ---
 
 ## Archivos Clave Creados
@@ -321,13 +341,15 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | `src/components/sections/CallToAction.tsx` | CTA con fondo primario |
 | `src/app/proyectos/page.tsx` | Listado de proyectos con filtros |
 | `src/app/proyectos/[slug]/page.tsx` | Pagina individual de proyecto |
+| `src/components/ui/Lightbox.tsx` | Modal lightbox para galerias |
+| `src/lib/hooks/useLightbox.ts` | Hook para manejar estado del lightbox |
+| `src/lib/hooks/index.ts` | Barrel export de hooks |
 
 ---
 
 ## Proximos Pasos
 
 1. **Continuar Fase 4 - Paginas de Contenido:**
-   - Desarrollar galeria de imagenes con lightbox
    - Crear pagina Sobre Mi
    - Implementar pagina de Servicios
    - Crear pagina de Contacto con formulario

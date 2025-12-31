@@ -4,9 +4,10 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { ArrowLeft, MapPin, Calendar, Ruler, User, CheckCircle } from 'lucide-react'
+import { ArrowLeft, MapPin, Calendar, Ruler, User, CheckCircle, Expand } from 'lucide-react'
 import Container from '@/components/ui/Container'
-import { Button, Badge } from '@/components/ui'
+import { Button, Badge, Lightbox } from '@/components/ui'
+import { useLightbox } from '@/lib/hooks'
 import type { Project } from '@/types'
 
 // Proyectos de ejemplo (mismos que en /proyectos)
@@ -188,6 +189,9 @@ export default function ProjectPage({ params }: ProjectPageProps) {
     { icon: CheckCircle, label: 'Estado', value: project.status },
   ]
 
+  // Hook para el lightbox
+  const lightbox = useLightbox(project.images.length)
+
   return (
     <main className="py-12">
       <Container>
@@ -295,7 +299,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           </motion.div>
         </div>
 
-        {/* Image Gallery Preview */}
+        {/* Image Gallery */}
         {project.images.length > 1 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -308,18 +312,22 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             </h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {project.images.map((image, index) => (
-                <div
+                <button
                   key={index}
-                  className="relative aspect-[4/3] cursor-pointer overflow-hidden rounded-xl bg-neutral-100 transition-transform hover:scale-[1.02]"
+                  onClick={() => lightbox.open(index)}
+                  className="group relative aspect-[4/3] cursor-pointer overflow-hidden rounded-xl bg-neutral-100 transition-transform hover:scale-[1.02]"
                 >
                   <Image
                     src={image}
                     alt={`${project.title} - Imagen ${index + 1}`}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
-                </div>
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/20">
+                    <Expand className="h-8 w-8 text-white opacity-0 transition-opacity group-hover:opacity-100" />
+                  </div>
+                </button>
               ))}
             </div>
           </motion.div>
@@ -360,6 +368,17 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           )}
         </motion.div>
       </Container>
+
+      {/* Lightbox */}
+      <Lightbox
+        images={project.images}
+        currentIndex={lightbox.currentIndex}
+        isOpen={lightbox.isOpen}
+        onClose={lightbox.close}
+        onPrev={lightbox.prev}
+        onNext={lightbox.next}
+        alt={project.title}
+      />
     </main>
   )
 }
