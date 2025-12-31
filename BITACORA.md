@@ -2,7 +2,7 @@
 
 ## Estado Actual del Proyecto
 
-**Fase actual:** Fase 2 - Componentes UI (En progreso)
+**Fase actual:** Fase 3 - Homepage (Pendiente)
 **Ultima actualizacion:** 31 de diciembre de 2025
 
 ---
@@ -35,7 +35,7 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | Implementar Navigation con mobile menu | Completado (Fase 1) |
 | Crear componente Logo | Completado (Fase 1) |
 | Implementar AnimatedSection con Framer Motion | Completado |
-| Crear ImageWithLoader para imagenes optimizadas | Pendiente |
+| Crear ImageWithLoader para imagenes optimizadas | Completado |
 
 ### Fase 3: Homepage
 | Tarea | Estado |
@@ -174,6 +174,19 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 - Creado `index.ts` barrel export para componentes shared
 - Build verificado exitosamente
 
+**Sesion 5 - Fase 2: ImageWithLoader (Fase 2 Completada)**
+
+- Rama: `feature/image-with-loader`
+- Creado componente `ImageWithLoader` con:
+  - Wrapper sobre next/image con estados de carga
+  - Skeleton animado mientras carga
+  - Estado de error con mensaje
+  - Transicion fade-in suave al cargar
+  - Aspect ratios configurables: square, video, portrait, landscape
+- Actualizado barrel export en `src/components/ui/index.ts`
+- **Fase 2 completada** - Todos los componentes UI listos
+- Build verificado exitosamente
+
 ---
 
 ## Archivos Clave Creados
@@ -197,18 +210,19 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | `src/components/shared/AnimatedSection.tsx` | Animaciones scroll-triggered |
 | `src/components/shared/AnimatedList.tsx` | Animaciones stagger para listas |
 | `src/components/shared/index.ts` | Barrel export de componentes shared |
+| `src/components/ui/ImageWithLoader.tsx` | Imagen con loading state y error handling |
 
 ---
 
 ## Proximos Pasos
 
-1. **Completar Fase 2 - Componentes UI:**
-   - Crear ImageWithLoader para imagenes optimizadas
-
-2. **Fase 3 - Homepage:**
+1. **Iniciar Fase 3 - Homepage:**
    - Desarrollar Hero section completo
    - Crear FeaturedProjects section
-   - Implementar Services preview
+   - Implementar About preview section
+   - Crear Services preview section
+   - Implementar CTA section
+   - Ensamblar homepage completa
 
 ---
 
