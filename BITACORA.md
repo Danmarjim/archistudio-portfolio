@@ -53,7 +53,7 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | Crear pagina de Proyectos con grid y filtros | Completado |
 | Implementar pagina individual de proyecto | Completado |
 | Desarrollar galeria de imagenes con lightbox | Completado |
-| Crear pagina Sobre Mi | Pendiente |
+| Crear pagina Sobre Mi | Completado |
 | Implementar pagina de Servicios | Pendiente |
 | Crear pagina de Contacto con formulario | Pendiente |
 
@@ -308,6 +308,19 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
   - Efecto zoom en hover
 - Build verificado exitosamente
 
+**Sesion 15 - Fase 4: Pagina Sobre Mi**
+
+- Rama: `feature/about-page`
+- Creada pagina `/sobre-mi` con:
+  - Hero section con foto e introduccion biografica
+  - Seccion de estadisticas (años experiencia, proyectos, etc.)
+  - Seccion de filosofia con 4 valores/principios
+  - Timeline de trayectoria profesional con iconos
+  - CTA final hacia pagina de contacto
+  - Todas las secciones con animaciones Framer Motion
+  - Diseño responsive mobile-first
+- Build verificado exitosamente
+
 ---
 
 ## Archivos Clave Creados
@@ -344,13 +357,13 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | `src/components/ui/Lightbox.tsx` | Modal lightbox para galerias |
 | `src/lib/hooks/useLightbox.ts` | Hook para manejar estado del lightbox |
 | `src/lib/hooks/index.ts` | Barrel export de hooks |
+| `src/app/sobre-mi/page.tsx` | Pagina completa Sobre Mi |
 
 ---
 
 ## Proximos Pasos
 
 1. **Continuar Fase 4 - Paginas de Contenido:**
-   - Crear pagina Sobre Mi
    - Implementar pagina de Servicios
    - Crear pagina de Contacto con formulario
 
