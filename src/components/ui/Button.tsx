@@ -1,4 +1,4 @@
-import { forwardRef } from 'react'
+import { forwardRef, cloneElement, isValidElement } from 'react'
 import { cn } from '@/lib/utils'
 
 type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost'
@@ -28,16 +28,25 @@ const sizeStyles: Record<ButtonSize, string> = {
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = 'primary', size = 'md', children, ...props }, ref) => {
+  ({ className, variant = 'primary', size = 'md', asChild = false, children, ...props }, ref) => {
+    const buttonClasses = cn(
+      'inline-flex items-center justify-center rounded-full font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+      variantStyles[variant],
+      sizeStyles[size],
+      className
+    )
+
+    if (asChild && isValidElement(children)) {
+      return cloneElement(children, {
+        ...props,
+        className: cn(buttonClasses, (children.props as { className?: string }).className),
+      } as React.HTMLAttributes<HTMLElement>)
+    }
+
     return (
       <button
         ref={ref}
-        className={cn(
-          'inline-flex items-center justify-center rounded-full font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
-          variantStyles[variant],
-          sizeStyles[size],
-          className
-        )}
+        className={buttonClasses}
         {...props}
       >
         {children}
