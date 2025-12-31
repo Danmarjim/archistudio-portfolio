@@ -2,7 +2,7 @@
 
 ## Estado Actual del Proyecto
 
-**Fase actual:** Fase 4 - Paginas de Contenido (Completada)
+**Fase actual:** Fase 5 - Contenido y MDX (Pendiente)
 **Ultima actualizacion:** 31 de diciembre de 2025
 
 ---
@@ -393,10 +393,22 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 ## Proximos Pasos
 
 1. **Comenzar Fase 5 - Contenido y MDX:**
-   - Configurar MDX en Next.js
-   - Crear funcion para cargar proyectos
-   - Anadir proyectos de ejemplo (3-5)
-   - Optimizar imagenes de ejemplo
+   - Configurar MDX en Next.js (next.config con @next/mdx)
+   - Crear funcion `getProjects()` en `src/lib/projects.ts`
+   - Mover proyectos hardcodeados a archivos MDX en `content/projects/`
+   - Anadir imagenes reales a `public/images/projects/`
+
+2. **Alternativa - Fase 6 rapida:**
+   - Añadir metadata SEO a cada pagina
+   - Crear robots.txt y sitemap.xml
+   - Deploy a Vercel
+
+## Notas para Proxima Sesion
+
+- Fase 4 completada al 100%
+- Todas las paginas funcionan con datos de ejemplo hardcodeados
+- Los proyectos estan duplicados en `FeaturedProjects.tsx`, `proyectos/page.tsx` y `proyectos/[slug]/page.tsx`
+- Fase 5 centralizara los datos en archivos MDX
 
 ---
 
