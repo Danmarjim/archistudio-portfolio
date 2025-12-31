@@ -34,7 +34,7 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | Crear componentes atomicos (Button, Card, Badge) | Completado |
 | Implementar Navigation con mobile menu | Completado (Fase 1) |
 | Crear componente Logo | Completado (Fase 1) |
-| Implementar AnimatedSection con Framer Motion | Pendiente |
+| Implementar AnimatedSection con Framer Motion | Completado |
 | Crear ImageWithLoader para imagenes optimizadas | Pendiente |
 
 ### Fase 3: Homepage
@@ -159,6 +159,21 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 - Creado `index.ts` barrel export para componentes UI
 - Build verificado exitosamente
 
+**Sesion 4 - Fase 2: AnimatedSection con Framer Motion**
+
+- Rama: `feature/animated-section`
+- Creado componente `AnimatedSection` con:
+  - 6 tipos de animacion: fadeIn, fadeInUp, fadeInDown, fadeInLeft, fadeInRight, scale
+  - Props configurables: delay, duration, once, amount
+  - Animacion activada por scroll (whileInView)
+  - Soporte para diferentes elementos HTML (div, section, article, etc.)
+- Creado componente `AnimatedList` con:
+  - Animacion stagger para listas y grids
+  - AnimatedList.Item como compound component
+  - Delay de stagger configurable
+- Creado `index.ts` barrel export para componentes shared
+- Build verificado exitosamente
+
 ---
 
 ## Archivos Clave Creados
@@ -179,13 +194,15 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | `src/components/ui/Card.tsx` | Card compound component |
 | `src/components/ui/Badge.tsx` | Etiquetas y badges |
 | `src/components/ui/index.ts` | Barrel export de componentes UI |
+| `src/components/shared/AnimatedSection.tsx` | Animaciones scroll-triggered |
+| `src/components/shared/AnimatedList.tsx` | Animaciones stagger para listas |
+| `src/components/shared/index.ts` | Barrel export de componentes shared |
 
 ---
 
 ## Proximos Pasos
 
 1. **Completar Fase 2 - Componentes UI:**
-   - Implementar AnimatedSection con Framer Motion
    - Crear ImageWithLoader para imagenes optimizadas
 
 2. **Fase 3 - Homepage:**
