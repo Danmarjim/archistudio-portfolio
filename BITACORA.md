@@ -43,7 +43,7 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | Desarrollar Hero section | Completado |
 | Crear FeaturedProjects section | Completado |
 | Implementar About preview section | Completado |
-| Crear Services preview section | Pendiente |
+| Crear Services preview section | Completado |
 | Implementar CTA section | Pendiente |
 | Ensamblar homepage completa | Pendiente |
 
@@ -226,6 +226,17 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
   - Boton CTA hacia pagina completa
 - Build verificado exitosamente
 
+**Sesion 9 - Fase 3: ServicesPreview Section**
+
+- Rama: `feature/services-preview-section`
+- Creado componente `ServicesPreview` con:
+  - Grid 3 columnas responsive
+  - Cards con iconos (Lucide), descripcion y features
+  - Usa servicios de constants.ts
+  - Animaciones staggered
+  - Boton CTA hacia pagina servicios
+- Build verificado exitosamente
+
 ---
 
 ## Archivos Clave Creados
@@ -255,13 +266,13 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | `src/components/sections/ProjectCard.tsx` | Card individual de proyecto |
 | `src/components/sections/FeaturedProjects.tsx` | Grid de proyectos destacados |
 | `src/components/sections/AboutPreview.tsx` | Preview de sobre mi |
+| `src/components/sections/ServicesPreview.tsx` | Preview de servicios |
 
 ---
 
 ## Proximos Pasos
 
 1. **Continuar Fase 3 - Homepage:**
-   - Crear Services preview section
    - Implementar CTA section
    - Ensamblar homepage completa
 
