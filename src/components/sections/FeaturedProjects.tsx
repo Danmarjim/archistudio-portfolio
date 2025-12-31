@@ -9,7 +9,7 @@ import ProjectCard from './ProjectCard'
 import type { Project } from '@/types'
 
 interface FeaturedProjectsProps {
-  projects: Project[]
+  projects?: Project[]
   title?: string
   subtitle?: string
   showViewAll?: boolean
