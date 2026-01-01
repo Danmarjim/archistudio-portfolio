@@ -1,6 +1,8 @@
 export { default as Hero } from './Hero'
 export { default as ProjectCard } from './ProjectCard'
 export { default as FeaturedProjects } from './FeaturedProjects'
+export { default as ProjectsGrid } from './ProjectsGrid'
+export { default as ProjectDetail } from './ProjectDetail'
 export { default as AboutPreview } from './AboutPreview'
 export { default as ServicesPreview } from './ServicesPreview'
 export { default as CallToAction } from './CallToAction'

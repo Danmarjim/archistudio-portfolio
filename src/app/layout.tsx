@@ -18,13 +18,15 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: siteConfig.title,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: ['arquitectura', 'diseño', 'interiorismo', 'reformas', 'vivienda', 'portfolio'],
+  keywords: ['arquitectura', 'diseño', 'interiorismo', 'reformas', 'vivienda', 'Madrid', 'arquitecta'],
   authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
   openGraph: {
     type: 'website',
     locale: 'es_ES',
@@ -41,6 +43,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 

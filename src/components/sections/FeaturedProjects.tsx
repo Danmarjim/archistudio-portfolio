@@ -9,68 +9,18 @@ import ProjectCard from './ProjectCard'
 import type { Project } from '@/types'
 
 interface FeaturedProjectsProps {
-  projects?: Project[]
+  projects: Project[]
   title?: string
   subtitle?: string
   showViewAll?: boolean
 }
 
-// Proyectos de ejemplo para desarrollo
-const sampleProjects: Project[] = [
-  {
-    title: 'Casa del Bosque',
-    slug: 'casa-del-bosque',
-    category: 'Vivienda unifamiliar',
-    location: 'Sierra de Madrid',
-    year: 2024,
-    client: 'Privado',
-    surface: '280 m²',
-    status: 'Construido',
-    featured: true,
-    coverImage: '/images/projects/placeholder-1.jpg',
-    images: [],
-    excerpt: 'Una vivienda que dialoga con el entorno natural, integrando materiales locales y técnicas sostenibles.',
-    tags: ['sostenibilidad', 'madera', 'vivienda'],
-  },
-  {
-    title: 'Loft Chamberí',
-    slug: 'loft-chamberi',
-    category: 'Reforma integral',
-    location: 'Madrid',
-    year: 2024,
-    client: 'Privado',
-    surface: '120 m²',
-    status: 'Construido',
-    featured: true,
-    coverImage: '/images/projects/placeholder-2.jpg',
-    images: [],
-    excerpt: 'Transformación de un espacio industrial en un hogar contemporáneo lleno de luz y carácter.',
-    tags: ['reforma', 'industrial', 'interiorismo'],
-  },
-  {
-    title: 'Clínica Dental Sonríe',
-    slug: 'clinica-dental-sonrie',
-    category: 'Comercial',
-    location: 'Barcelona',
-    year: 2023,
-    client: 'Clínica Sonríe S.L.',
-    surface: '200 m²',
-    status: 'Construido',
-    featured: true,
-    coverImage: '/images/projects/placeholder-3.jpg',
-    images: [],
-    excerpt: 'Un espacio que transmite calma y profesionalidad, diseñado para el bienestar del paciente.',
-    tags: ['comercial', 'salud', 'minimalismo'],
-  },
-]
-
 export default function FeaturedProjects({
-  projects = sampleProjects,
+  projects,
   title = 'Proyectos destacados',
   subtitle = 'Una selección de nuestros trabajos más recientes',
   showViewAll = true,
 }: FeaturedProjectsProps) {
-  const displayProjects = projects.length > 0 ? projects : sampleProjects
 
   return (
     <section className="py-24">
@@ -93,7 +43,7 @@ export default function FeaturedProjects({
 
         {/* Projects Grid */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {displayProjects.slice(0, 3).map((project, index) => (
+          {projects.slice(0, 3).map((project, index) => (
             <ProjectCard key={project.slug} project={project} index={index} />
           ))}
         </div>

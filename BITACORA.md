@@ -2,8 +2,8 @@
 
 ## Estado Actual del Proyecto
 
-**Fase actual:** Fase 5 - Contenido y MDX (Pendiente)
-**Ultima actualizacion:** 31 de diciembre de 2025
+**Fase actual:** Fase 6 - Polish y Deploy (En progreso)
+**Ultima actualizacion:** 1 de enero de 2026
 
 ---
 
@@ -60,15 +60,15 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 ### Fase 5: Contenido y MDX
 | Tarea | Estado |
 |-------|--------|
-| Configurar MDX en Next.js | Pendiente |
-| Crear funcion para cargar proyectos | Pendiente |
-| Anadir proyectos de ejemplo (3-5) | Pendiente |
-| Optimizar imagenes de ejemplo | Pendiente |
+| Configurar MDX en Next.js | Completado |
+| Crear funcion para cargar proyectos | Completado |
+| Anadir proyectos de ejemplo (6) | Completado |
+| Crear imagenes placeholder | Completado |
 
 ### Fase 6: Polish y Deploy
 | Tarea | Estado |
 |-------|--------|
-| Implementar SEO completo (metadata, sitemap, robots.txt) | Pendiente |
+| Implementar SEO completo (metadata, sitemap, robots.txt) | Completado |
 | Anadir transiciones de pagina | Pendiente |
 | Testing responsive | Pendiente |
 | Optimizacion de rendimiento (Lighthouse 90+) | Pendiente |
@@ -92,6 +92,67 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 ---
 
 ## Log de Desarrollo
+
+### 2 de enero de 2026
+
+**Sesion 20 - Fase 5/6: Imagenes Placeholder**
+
+- Descargadas 6 imagenes de arquitectura desde Unsplash
+- Imagenes guardadas en `public/images/projects/`:
+  - placeholder-1.jpg a placeholder-6.jpg
+  - Tamaño: 1200x800px, ~150-225KB cada una
+- Añadida imagen de arquitecta en `public/images/about/placeholder.jpg`
+  - Retrato profesional (800x1000px, 101KB)
+- Build verificado exitosamente
+- Fase 5 completada al 100%
+
+---
+
+### 1 de enero de 2026
+
+**Sesion 19 - Fase 6: SEO y Polish**
+
+- Rama: `feature/seo-and-polish` (mergeada a main)
+- Mejorado metadata en layout.tsx:
+  - Añadido metadataBase para URLs absolutas
+  - Añadido creator y keywords ampliados
+  - Configurado googleBot con max-image-preview
+- Creados layouts con metadata para paginas cliente:
+  - sobre-mi/layout.tsx
+  - servicios/layout.tsx
+  - contacto/layout.tsx
+- Creado robots.ts dinamico
+- Creado sitemap.ts dinamico con todas las paginas y proyectos
+- Build verificado exitosamente
+
+---
+
+**Sesion 18 - Fase 5: Contenido y MDX (Fase 5 Completada)**
+
+- Configurado MDX en next.config.ts (pageExtensions)
+- Creada funcion `getProjects()` en `src/lib/projects.ts` con:
+  - `getAllProjects()`: Carga todos los proyectos desde MDX
+  - `getFeaturedProjects()`: Filtra proyectos destacados
+  - `getProjectBySlug()`: Obtiene proyecto por slug
+  - `getAllProjectSlugs()`: Para generateStaticParams
+  - `getAdjacentProjects()`: Navegacion prev/next
+- Creados 6 archivos MDX en `content/projects/`:
+  - casa-del-bosque.mdx
+  - loft-chamberi.mdx
+  - clinica-dental-sonrie.mdx
+  - villa-mediterranea.mdx
+  - apartamento-malasana.mdx
+  - oficinas-creativas.mdx
+- Creado componente `ProjectsGrid` para filtros (client component)
+- Creado componente `ProjectDetail` para pagina individual (client component)
+- Actualizado `FeaturedProjects` para recibir proyectos como props
+- Actualizada homepage para cargar proyectos desde MDX
+- Actualizada pagina `/proyectos` como Server Component
+- Actualizada pagina `/proyectos/[slug]` con generateStaticParams y metadata dinamica
+- **Fase 5 completada** - Proyectos centralizados en archivos MDX
+- Build verificado exitosamente
+
+---
 
 ### 31 de diciembre de 2025
 
@@ -387,28 +448,35 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | `src/app/sobre-mi/page.tsx` | Pagina completa Sobre Mi |
 | `src/app/servicios/page.tsx` | Pagina completa de Servicios |
 | `src/app/contacto/page.tsx` | Pagina de Contacto con formulario |
+| `src/lib/projects.ts` | Funciones para cargar proyectos desde MDX |
+| `src/components/sections/ProjectsGrid.tsx` | Grid de proyectos con filtros |
+| `src/components/sections/ProjectDetail.tsx` | Vista detallada de proyecto con lightbox |
+| `content/projects/*.mdx` | 6 archivos MDX con datos de proyectos |
 
 ---
 
 ## Proximos Pasos
 
-1. **Comenzar Fase 5 - Contenido y MDX:**
-   - Configurar MDX en Next.js (next.config con @next/mdx)
-   - Crear funcion `getProjects()` en `src/lib/projects.ts`
-   - Mover proyectos hardcodeados a archivos MDX en `content/projects/`
-   - Anadir imagenes reales a `public/images/projects/`
+1. **Continuar Fase 6 - Polish y Deploy:**
+   - ~~Añadir metadata SEO completa~~ (Completado)
+   - ~~Crear robots.txt y sitemap.xml~~ (Completado)
+   - ~~Crear imagenes placeholder~~ (Completado)
+   - Anadir transiciones de pagina
+   - Testing responsive en multiples dispositivos
+   - Optimizacion Lighthouse (objetivo 90+)
+   - Configurar y deploy a Vercel
 
-2. **Alternativa - Fase 6 rapida:**
-   - Añadir metadata SEO a cada pagina
-   - Crear robots.txt y sitemap.xml
-   - Deploy a Vercel
+2. **Mejoras opcionales:**
+   - Implementar formulario de contacto funcional (API route)
+   - Anadir mas proyectos de ejemplo
 
 ## Notas para Proxima Sesion
 
-- Fase 4 completada al 100%
-- Todas las paginas funcionan con datos de ejemplo hardcodeados
-- Los proyectos estan duplicados en `FeaturedProjects.tsx`, `proyectos/page.tsx` y `proyectos/[slug]/page.tsx`
-- Fase 5 centralizara los datos en archivos MDX
+- Fase 6 en progreso: SEO e imagenes completados
+- Proyectos centralizados en archivos MDX en `content/projects/`
+- Imagenes placeholder descargadas de Unsplash (arquitectura)
+- Para anadir un nuevo proyecto: crear archivo `.mdx` con frontmatter
+- Las paginas usan generateStaticParams para SSG
 
 ---
 
