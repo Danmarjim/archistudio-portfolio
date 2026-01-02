@@ -95,6 +95,19 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 
 ### 2 de enero de 2026
 
+**Sesion 25 - Documentacion: Guia de Contenido**
+
+- Rama: `feature/user-guide`
+- Creada `GUIA-CONTENIDO.md` orientada a usuarios no tecnicos
+- Incluye instrucciones para:
+  - Crear/editar/eliminar proyectos
+  - Gestionar imagenes
+  - Editar informacion del sitio
+  - Publicar cambios en Vercel
+  - Preguntas frecuentes y solucion de problemas
+
+---
+
 **Sesion 24 - Fase 6: Deploy a Vercel**
 
 - Rama: `feature/vercel-deploy`
@@ -508,6 +521,7 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | `src/components/shared/PageTransition.tsx` | Transiciones de pagina con Framer Motion |
 | `src/app/template.tsx` | Template para aplicar transiciones |
 | `src/app/not-found.tsx` | Pagina 404 personalizada |
+| `GUIA-CONTENIDO.md` | Guia para gestionar contenido (usuarios no tecnicos) |
 
 ---
 
