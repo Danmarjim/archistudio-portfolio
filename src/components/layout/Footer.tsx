@@ -1,10 +1,15 @@
-import Link from 'next/link'
+'use client'
+
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import { Instagram, Linkedin, Mail } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import Logo from '@/components/shared/Logo'
 import { navigation, siteConfig } from '@/lib/constants'
 
 export default function Footer() {
+  const t = useTranslations('Footer')
+  const tNav = useTranslations('Navigation')
   const currentYear = new Date().getFullYear()
 
   return (
@@ -16,14 +21,14 @@ export default function Footer() {
             <div className="space-y-4">
               <Logo />
               <p className="max-w-xs text-sm text-neutral-600">
-                Arquitectura con alma. Diseno de espacios que inspiran y transforman.
+                {t('description')}
               </p>
             </div>
 
             {/* Navigation */}
             <div>
               <h3 className="mb-4 text-sm font-semibold text-foreground">
-                Navegacion
+                {t('navigation')}
               </h3>
               <ul className="space-y-3">
                 {navigation.map((item) => (
@@ -32,7 +37,7 @@ export default function Footer() {
                       href={item.href}
                       className="text-sm text-neutral-600 transition-colors hover:text-foreground"
                     >
-                      {item.label}
+                      {tNav(item.label)}
                     </Link>
                   </li>
                 ))}
@@ -42,7 +47,7 @@ export default function Footer() {
             {/* Contact */}
             <div>
               <h3 className="mb-4 text-sm font-semibold text-foreground">
-                Contacto
+                {t('contact')}
               </h3>
               <ul className="space-y-3">
                 <li>
@@ -78,7 +83,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="mt-12 border-t border-neutral-200 pt-8">
             <p className="text-center text-sm text-neutral-500">
-              &copy; {currentYear} {siteConfig.name}. Todos los derechos reservados.
+              &copy; {currentYear} {siteConfig.name}. {t('rights')}
             </p>
           </div>
         </div>

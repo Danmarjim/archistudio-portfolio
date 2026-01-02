@@ -1,0 +1,233 @@
+{
+  "Metadata": {
+    "title": "Architecture Studio | Portfolio",
+    "description": "Professional architecture portfolio. Residential design, renovations and commercial projects with attention to detail and creativity."
+  },
+  "Navigation": {
+    "projects": "Projects",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "skipToContent": "Skip to main content"
+  },
+  "Footer": {
+    "description": "Architecture with soul. Designing spaces that inspire and transform.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "Hero": {
+    "overline": "Architecture Studio",
+    "title": "We design spaces that inspire",
+    "subtitle": "Contemporary architecture with a human and sustainable approach. We transform ideas into unique spaces.",
+    "cta": "View projects",
+    "ctaSecondary": "Contact",
+    "scrollIndicator": "Discover more"
+  },
+  "FeaturedProjects": {
+    "title": "Featured projects",
+    "subtitle": "A selection of our most recent work",
+    "viewAll": "View all projects"
+  },
+  "AboutPreview": {
+    "overline": "About me",
+    "title": "Architecture with purpose",
+    "description": "Every project is an opportunity to create spaces that improve people's lives. With over 10 years of experience, I combine creativity, functionality and sustainability in every design.",
+    "cta": "Learn more about me"
+  },
+  "ServicesPreview": {
+    "title": "Services",
+    "subtitle": "Comprehensive architecture and design solutions",
+    "cta": "View all services"
+  },
+  "CallToAction": {
+    "title": "Do you have a project in mind?",
+    "subtitle": "Tell us your idea and let's work together to make it a reality.",
+    "cta": "Contact now"
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "description": "Explore our collection of architecture, interior design and renovation projects.",
+    "filterAll": "All",
+    "emptyState": "No projects in this category."
+  },
+  "ProjectDetail": {
+    "backToProjects": "Back to projects",
+    "aboutProject": "About the project",
+    "details": "Project details",
+    "gallery": "Gallery",
+    "location": "Location",
+    "year": "Year",
+    "surface": "Surface",
+    "client": "Client",
+    "status": "Status",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "AboutPage": {
+    "title": "About me",
+    "intro": "I am an architect with over 10 years of experience in residential and commercial space design.",
+    "stats": {
+      "years": "Years of experience",
+      "projects": "Completed projects",
+      "clients": "Satisfied clients",
+      "awards": "Awards received"
+    },
+    "philosophy": {
+      "title": "Design philosophy",
+      "values": {
+        "sustainability": {
+          "title": "Sustainability",
+          "description": "Environmentally responsible design"
+        },
+        "functionality": {
+          "title": "Functionality",
+          "description": "Spaces that improve daily life"
+        },
+        "aesthetics": {
+          "title": "Aesthetics",
+          "description": "Beauty in every detail"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Creative and contemporary solutions"
+        }
+      }
+    },
+    "timeline": {
+      "title": "Career"
+    },
+    "cta": "Shall we work together?"
+  },
+  "ServicesPage": {
+    "title": "Services",
+    "description": "We offer comprehensive architecture and design solutions for all types of projects.",
+    "process": {
+      "title": "How we work",
+      "steps": {
+        "consultation": {
+          "title": "Initial consultation",
+          "description": "We listen to your ideas and needs"
+        },
+        "design": {
+          "title": "Design",
+          "description": "We develop personalized proposals"
+        },
+        "development": {
+          "title": "Development",
+          "description": "We prepare the technical project"
+        },
+        "execution": {
+          "title": "Execution",
+          "description": "We supervise the construction"
+        }
+      }
+    },
+    "faq": {
+      "title": "Frequently asked questions"
+    }
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "description": "Do you have a project in mind? Tell us your idea and we'll respond within 24 hours.",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "projectType": "Project type",
+      "message": "Tell us about your project",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "required": "required",
+      "placeholder": {
+        "name": "Your name",
+        "email": "your@email.com",
+        "phone": "+34 600 000 000",
+        "message": "Briefly describe your project, needs and any details you consider relevant..."
+      },
+      "projectTypes": {
+        "residential": "Single-family home",
+        "renovation": "Complete renovation",
+        "commercial": "Commercial project",
+        "other": "Other project type"
+      },
+      "errors": {
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Email is not valid",
+        "messageRequired": "Message is required"
+      }
+    },
+    "success": {
+      "title": "Message sent!",
+      "description": "Thank you for contacting us. We will respond as soon as possible.",
+      "sendAnother": "Send another message"
+    },
+    "info": {
+      "title": "Contact information",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "social": "Follow us",
+      "hours": "Business hours",
+      "weekdays": "Monday to Friday",
+      "schedule": "9:00 AM - 6:00 PM"
+    }
+  },
+  "Services": {
+    "architecturalDesign": {
+      "title": "Architectural design",
+      "description": "Comprehensive design of single-family homes and buildings, from concept to execution project.",
+      "features": {
+        "preliminary": "Preliminary and basic project",
+        "execution": "Execution project",
+        "direction": "Construction management",
+        "licenses": "License management"
+      }
+    },
+    "renovations": {
+      "title": "Complete renovations",
+      "description": "Transformation of existing spaces to adapt them to new needs and lifestyles.",
+      "features": {
+        "feasibility": "Feasibility study",
+        "interior": "Interior design",
+        "coordination": "Trade coordination",
+        "supervision": "Construction supervision"
+      }
+    },
+    "interiorDesign": {
+      "title": "Interior design",
+      "description": "Design of interior spaces that combine functionality, aesthetics and personality.",
+      "features": {
+        "layout": "Space layout and design",
+        "materials": "Material selection",
+        "furniture": "Custom furniture",
+        "lighting": "Lighting and decoration"
+      }
+    }
+  },
+  "Categories": {
+    "singleFamily": "Single-family home",
+    "renovation": "Complete renovation",
+    "interiorDesign": "Interior design",
+    "commercial": "Commercial",
+    "residential": "Residential building"
+  },
+  "Common": {
+    "learnMore": "Learn more",
+    "viewProject": "View project",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "notFound": {
+      "title": "Page not found",
+      "description": "Sorry, the page you are looking for does not exist.",
+      "backHome": "Back to home"
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "es": "Español",
+    "en": "English",
+    "it": "Italiano"
+  }
+}

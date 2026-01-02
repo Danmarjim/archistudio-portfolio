@@ -1,0 +1,233 @@
+{
+  "Metadata": {
+    "title": "Studio di Architettura | Portfolio",
+    "description": "Portfolio professionale di architettura. Progettazione residenziale, ristrutturazioni e progetti commerciali con attenzione ai dettagli e creatività."
+  },
+  "Navigation": {
+    "projects": "Progetti",
+    "about": "Chi sono",
+    "services": "Servizi",
+    "contact": "Contatto",
+    "skipToContent": "Vai al contenuto principale"
+  },
+  "Footer": {
+    "description": "Architettura con anima. Progettazione di spazi che ispirano e trasformano.",
+    "navigation": "Navigazione",
+    "contact": "Contatto",
+    "rights": "Tutti i diritti riservati."
+  },
+  "Hero": {
+    "overline": "Studio di Architettura",
+    "title": "Progettiamo spazi che ispirano",
+    "subtitle": "Architettura contemporanea con un approccio umano e sostenibile. Trasformiamo le idee in spazi unici.",
+    "cta": "Vedi progetti",
+    "ctaSecondary": "Contattaci",
+    "scrollIndicator": "Scopri di più"
+  },
+  "FeaturedProjects": {
+    "title": "Progetti in evidenza",
+    "subtitle": "Una selezione dei nostri lavori più recenti",
+    "viewAll": "Vedi tutti i progetti"
+  },
+  "AboutPreview": {
+    "overline": "Chi sono",
+    "title": "Architettura con uno scopo",
+    "description": "Ogni progetto è un'opportunità per creare spazi che migliorano la vita delle persone. Con oltre 10 anni di esperienza, combino creatività, funzionalità e sostenibilità in ogni progetto.",
+    "cta": "Scopri di più su di me"
+  },
+  "ServicesPreview": {
+    "title": "Servizi",
+    "subtitle": "Soluzioni complete di architettura e design",
+    "cta": "Vedi tutti i servizi"
+  },
+  "CallToAction": {
+    "title": "Hai un progetto in mente?",
+    "subtitle": "Raccontaci la tua idea e lavoriamo insieme per realizzarla.",
+    "cta": "Contattaci ora"
+  },
+  "ProjectsPage": {
+    "title": "Progetti",
+    "description": "Esplora la nostra collezione di progetti di architettura, interior design e ristrutturazioni.",
+    "filterAll": "Tutti",
+    "emptyState": "Nessun progetto in questa categoria."
+  },
+  "ProjectDetail": {
+    "backToProjects": "Torna ai progetti",
+    "aboutProject": "Sul progetto",
+    "details": "Dettagli del progetto",
+    "gallery": "Galleria",
+    "location": "Ubicazione",
+    "year": "Anno",
+    "surface": "Superficie",
+    "client": "Cliente",
+    "status": "Stato",
+    "previous": "Precedente",
+    "next": "Successivo"
+  },
+  "AboutPage": {
+    "title": "Chi sono",
+    "intro": "Sono un'architetta con oltre 10 anni di esperienza nella progettazione di spazi residenziali e commerciali.",
+    "stats": {
+      "years": "Anni di esperienza",
+      "projects": "Progetti completati",
+      "clients": "Clienti soddisfatti",
+      "awards": "Premi ricevuti"
+    },
+    "philosophy": {
+      "title": "Filosofia di design",
+      "values": {
+        "sustainability": {
+          "title": "Sostenibilità",
+          "description": "Design responsabile verso l'ambiente"
+        },
+        "functionality": {
+          "title": "Funzionalità",
+          "description": "Spazi che migliorano la vita quotidiana"
+        },
+        "aesthetics": {
+          "title": "Estetica",
+          "description": "Bellezza in ogni dettaglio"
+        },
+        "innovation": {
+          "title": "Innovazione",
+          "description": "Soluzioni creative e contemporanee"
+        }
+      }
+    },
+    "timeline": {
+      "title": "Percorso"
+    },
+    "cta": "Lavoriamo insieme?"
+  },
+  "ServicesPage": {
+    "title": "Servizi",
+    "description": "Offriamo soluzioni complete di architettura e design per ogni tipo di progetto.",
+    "process": {
+      "title": "Come lavoriamo",
+      "steps": {
+        "consultation": {
+          "title": "Consulenza iniziale",
+          "description": "Ascoltiamo le tue idee e necessità"
+        },
+        "design": {
+          "title": "Progettazione",
+          "description": "Sviluppiamo proposte personalizzate"
+        },
+        "development": {
+          "title": "Sviluppo",
+          "description": "Elaboriamo il progetto tecnico"
+        },
+        "execution": {
+          "title": "Esecuzione",
+          "description": "Supervisioniamo la costruzione"
+        }
+      }
+    },
+    "faq": {
+      "title": "Domande frequenti"
+    }
+  },
+  "ContactPage": {
+    "title": "Contatto",
+    "description": "Hai un progetto in mente? Raccontaci la tua idea e ti risponderemo entro 24 ore.",
+    "form": {
+      "name": "Nome completo",
+      "email": "Email",
+      "phone": "Telefono (opzionale)",
+      "projectType": "Tipo di progetto",
+      "message": "Raccontaci il tuo progetto",
+      "submit": "Invia messaggio",
+      "sending": "Invio in corso...",
+      "required": "obbligatorio",
+      "placeholder": {
+        "name": "Il tuo nome",
+        "email": "tua@email.com",
+        "phone": "+39 333 000 0000",
+        "message": "Descrivi brevemente il tuo progetto, le tue esigenze e qualsiasi dettaglio che ritieni rilevante..."
+      },
+      "projectTypes": {
+        "residential": "Villa unifamiliare",
+        "renovation": "Ristrutturazione completa",
+        "commercial": "Progetto commerciale",
+        "other": "Altro tipo di progetto"
+      },
+      "errors": {
+        "nameRequired": "Il nome è obbligatorio",
+        "emailRequired": "L'email è obbligatoria",
+        "emailInvalid": "L'email non è valida",
+        "messageRequired": "Il messaggio è obbligatorio"
+      }
+    },
+    "success": {
+      "title": "Messaggio inviato!",
+      "description": "Grazie per averci contattato. Ti risponderemo il prima possibile.",
+      "sendAnother": "Invia un altro messaggio"
+    },
+    "info": {
+      "title": "Informazioni di contatto",
+      "email": "Email",
+      "phone": "Telefono",
+      "address": "Indirizzo",
+      "social": "Seguici sui social",
+      "hours": "Orari di apertura",
+      "weekdays": "Lunedì a Venerdì",
+      "schedule": "9:00 - 18:00"
+    }
+  },
+  "Services": {
+    "architecturalDesign": {
+      "title": "Progettazione architettonica",
+      "description": "Progettazione completa di ville unifamiliari e edifici, dal concept al progetto esecutivo.",
+      "features": {
+        "preliminary": "Progetto preliminare e definitivo",
+        "execution": "Progetto esecutivo",
+        "direction": "Direzione lavori",
+        "licenses": "Gestione permessi"
+      }
+    },
+    "renovations": {
+      "title": "Ristrutturazioni complete",
+      "description": "Trasformazione di spazi esistenti per adattarli a nuove esigenze e stili di vita.",
+      "features": {
+        "feasibility": "Studio di fattibilità",
+        "interior": "Design d'interni",
+        "coordination": "Coordinamento maestranze",
+        "supervision": "Supervisione lavori"
+      }
+    },
+    "interiorDesign": {
+      "title": "Interior design",
+      "description": "Progettazione di spazi interni che combinano funzionalità, estetica e personalità.",
+      "features": {
+        "layout": "Distribuzione e design degli spazi",
+        "materials": "Selezione materiali",
+        "furniture": "Mobili su misura",
+        "lighting": "Illuminazione e decorazione"
+      }
+    }
+  },
+  "Categories": {
+    "singleFamily": "Villa unifamiliare",
+    "renovation": "Ristrutturazione completa",
+    "interiorDesign": "Interior design",
+    "commercial": "Commerciale",
+    "residential": "Edificio residenziale"
+  },
+  "Common": {
+    "learnMore": "Scopri di più",
+    "viewProject": "Vedi progetto",
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "notFound": {
+      "title": "Pagina non trovata",
+      "description": "Ci dispiace, la pagina che cerchi non esiste.",
+      "backHome": "Torna alla home"
+    }
+  },
+  "LanguageSwitcher": {
+    "label": "Lingua",
+    "es": "Español",
+    "en": "English",
+    "it": "Italiano"
+  }
+}

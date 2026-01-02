@@ -16,10 +16,10 @@ export const siteConfig: SiteConfig = {
 }
 
 export const navigation: NavItem[] = [
-  { label: 'Proyectos', href: '/proyectos' },
-  { label: 'Sobre mí', href: '/sobre-mi' },
-  { label: 'Servicios', href: '/servicios' },
-  { label: 'Contacto', href: '/contacto' },
+  { label: 'projects', href: '/proyectos' },
+  { label: 'about', href: '/sobre-mi' },
+  { label: 'services', href: '/servicios' },
+  { label: 'contact', href: '/contacto' },
 ]
 
 export const services: Service[] = [

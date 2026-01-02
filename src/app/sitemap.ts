@@ -1,48 +1,57 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/lib/constants'
 import { getAllProjects } from '@/lib/projects'
+import { locales } from '@/i18n/routing'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const projects = getAllProjects()
+  const baseUrl = siteConfig.url
 
-  const projectUrls = projects.map((project) => ({
-    url: `${siteConfig.url}/proyectos/${project.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
+  // Generate URLs for all locales
+  const localizedUrls = locales.flatMap((locale) => {
+    const prefix = `${baseUrl}/${locale}`
 
-  return [
-    {
-      url: siteConfig.url,
+    const projectUrls = projects.map((project) => ({
+      url: `${prefix}/proyectos/${project.slug}`,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: `${siteConfig.url}/proyectos`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${siteConfig.url}/sobre-mi`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${siteConfig.url}/servicios`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${siteConfig.url}/contacto`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.6,
-    },
-    ...projectUrls,
-  ]
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    }))
+
+    return [
+      {
+        url: prefix,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 1,
+      },
+      {
+        url: `${prefix}/proyectos`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.9,
+      },
+      {
+        url: `${prefix}/sobre-mi`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      },
+      {
+        url: `${prefix}/servicios`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      },
+      {
+        url: `${prefix}/contacto`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly' as const,
+        priority: 0.6,
+      },
+      ...projectUrls,
+    ]
+  })
+
+  return localizedUrls
 }

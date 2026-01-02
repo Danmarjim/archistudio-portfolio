@@ -1,14 +1,17 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import { Menu, X } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import Logo from '@/components/shared/Logo'
+import { LanguageSwitcher } from '@/components/shared'
 import { navigation } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 
 export default function Header() {
+  const t = useTranslations('Navigation')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -19,33 +22,39 @@ export default function Header() {
           <Logo />
 
           {/* Desktop Navigation */}
-          <ul className="hidden items-center gap-8 md:flex">
-            {navigation.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="text-sm font-medium text-neutral-600 transition-colors hover:text-foreground"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="hidden items-center gap-8 md:flex">
+            <ul className="flex items-center gap-8">
+              {navigation.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-sm font-medium text-neutral-600 transition-colors hover:text-foreground"
+                  >
+                    {t(item.label)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <LanguageSwitcher />
+          </div>
 
           {/* Mobile Menu Button */}
-          <button
-            type="button"
-            className="inline-flex items-center justify-center rounded-md p-2 text-neutral-600 transition-colors hover:bg-neutral-100 hover:text-foreground md:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-expanded={mobileMenuOpen}
-            aria-label={mobileMenuOpen ? 'Cerrar menu' : 'Abrir menu'}
-          >
-            {mobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <LanguageSwitcher />
+            <button
+              type="button"
+              className="inline-flex items-center justify-center rounded-md p-2 text-neutral-600 transition-colors hover:bg-neutral-100 hover:text-foreground"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-expanded={mobileMenuOpen}
+              aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+            >
+              {mobileMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
+            </button>
+          </div>
         </nav>
 
         {/* Mobile Navigation */}
@@ -63,7 +72,7 @@ export default function Header() {
                   className="block text-base font-medium text-neutral-600 transition-colors hover:text-foreground"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  {item.label}
+                  {t(item.label)}
                 </Link>
               </li>
             ))}

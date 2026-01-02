@@ -95,6 +95,62 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 
 ### 2 de enero de 2026
 
+**Sesion 28 - Fase 11: Localizacion (i18n)**
+
+- Rama: `feature/i18n-localization`
+- Implementacion completa de soporte multiidioma con next-intl
+
+**Configuracion base:**
+- Instalado `next-intl` (v4.1.0)
+- Creada estructura i18n en `src/i18n/`:
+  - `routing.ts` - Definicion de locales ['es', 'en', 'it'] con 'es' como default
+  - `request.ts` - Configuracion de carga de mensajes
+  - `navigation.ts` - Link, useRouter, usePathname con soporte i18n
+- Configurado middleware para rutas localizadas (`src/middleware.ts`)
+- Actualizado `next.config.ts` con plugin next-intl
+
+**Archivos de traduccion:**
+- `messages/es.json` - Traducciones en espanol (233 lineas)
+- `messages/en.json` - Traducciones en ingles
+- `messages/it.json` - Traducciones en italiano
+- Namespaces: Metadata, Navigation, Footer, Hero, FeaturedProjects, AboutPreview, ServicesPreview, CallToAction, ProjectsPage, ProjectDetail, AboutPage, ServicesPage, ContactPage, Services, Categories, Common, LanguageSwitcher
+
+**Estructura de rutas:**
+- Reorganizado `src/app/` con carpeta `[locale]/`
+- Movidas todas las paginas a `src/app/[locale]/`:
+  - page.tsx, not-found.tsx, template.tsx
+  - contacto/, proyectos/, servicios/, sobre-mi/
+- Nuevo layout en `[locale]/layout.tsx` con NextIntlClientProvider
+- Layout raiz simplificado (solo fuentes y globals.css)
+
+**Componentes actualizados:**
+- `Header.tsx` - useTranslations para navegacion + LanguageSwitcher
+- `Footer.tsx` - useTranslations para textos
+- `Logo.tsx` - Link de next-intl para rutas localizadas
+- Nuevo componente `LanguageSwitcher.tsx` con dropdown de idiomas
+
+**SEO multiidioma:**
+- Metadata dinamica por locale en layout
+- Sitemap.ts actualizado para generar URLs en 3 idiomas
+- Alternates hreflang configurados
+
+**Rutas generadas:**
+- `/es`, `/en`, `/it` (homepage)
+- `/es/proyectos`, `/en/proyectos`, `/it/proyectos`
+- `/es/sobre-mi`, `/en/sobre-mi`, `/it/sobre-mi`
+- `/es/servicios`, `/en/servicios`, `/it/servicios`
+- `/es/contacto`, `/en/contacto`, `/it/contacto`
+- Proyectos individuales en 3 idiomas (18 rutas)
+
+**Build:** Verificado exitosamente (38 rutas estaticas generadas)
+
+**Pendiente para futuras sesiones:**
+- Traducir contenido de componentes sections (Hero, AboutPreview, etc.)
+- Proyectos MDX con contenido multiidioma
+- Traducir paginas de contenido extenso (servicios, sobre-mi, contacto)
+
+---
+
 **Sesion 27 - Fase 7: Galeria Mejorada**
 
 - Rama: `feature/enhanced-gallery`
@@ -674,28 +730,31 @@ Basado en investigacion de portfolios de arquitectura profesionales (Sesion 26).
 | Filtros por estado (completado/en curso) | Pendiente |
 | Busqueda de proyectos | Pendiente |
 
-### Fase 11: Localizacion (i18n)
+### Fase 11: Localizacion (i18n) - En Progreso
 | Tarea | Estado |
 |-------|--------|
-| Configurar next-intl o similar para i18n | Pendiente |
-| Estructura de rutas multiidioma (/es, /en, /it) | Pendiente |
-| Extraer textos a archivos de traduccion | Pendiente |
-| Traducir contenido a Espanol (base) | Pendiente |
-| Traducir contenido a Ingles | Pendiente |
-| Traducir contenido a Italiano | Pendiente |
-| Selector de idioma en Header | Pendiente |
+| Configurar next-intl para i18n | Completado |
+| Estructura de rutas multiidioma (/es, /en, /it) | Completado |
+| Extraer textos a archivos de traduccion | Completado |
+| Traducir contenido a Espanol (base) | Completado |
+| Traducir contenido a Ingles | Completado |
+| Traducir contenido a Italiano | Completado |
+| Selector de idioma en Header | Completado |
+| Header/Footer con traducciones | Completado |
+| Metadata SEO por idioma | Completado |
+| Sitemap multiidioma | Completado |
+| Traducir componentes sections | Pendiente |
+| Traducir paginas de contenido | Pendiente |
 | Proyectos MDX multiidioma | Pendiente |
-| Metadata SEO por idioma | Pendiente |
-| Sitemap multiidioma | Pendiente |
 
 ---
 
 ## Proximos Pasos
 
-1. **Fase 11 - Localizacion:** (Prioridad actual)
-   - Configurar i18n con next-intl
-   - Idiomas: Espanol, Ingles, Italiano
-   - Selector de idioma en Header
+1. **Fase 11 - Localizacion (Continuacion):**
+   - Traducir componentes sections (Hero, AboutPreview, ServicesPreview, etc.)
+   - Traducir paginas de contenido (servicios, sobre-mi, contacto)
+   - Proyectos MDX con contenido multiidioma
 
 2. **Fase 8 - Dark Mode:** (En pausa)
    - Rama `feature/dark-mode` disponible
@@ -707,9 +766,12 @@ Basado en investigacion de portfolios de arquitectura profesionales (Sesion 26).
 
 ## Notas para Proxima Sesion
 
-- Fase 7 completada: galeria mejorada con swipe, zoom y transiciones
+- Fase 11 en progreso: estructura i18n completa con next-intl
+- Rutas multiidioma funcionando (/es, /en, /it)
+- Selector de idioma implementado en Header
+- Header/Footer ya traducidos
+- Pendiente: traducir resto de componentes y paginas
 - Fase 8 en pausa: rama `feature/dark-mode` con implementacion base
-- Siguiente: Fase 11 (Localizacion ES/EN/IT)
 - URL produccion: https://portfolio-mparchistudio.vercel.app
 
 ---
