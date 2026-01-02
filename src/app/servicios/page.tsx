@@ -115,7 +115,7 @@ function ServiceDetailCard({ service, index }: ServiceDetailCardProps) {
 
 export default function ServiciosPage() {
   return (
-    <main>
+    <>
       {/* Hero */}
       <section className="py-16 md:py-24">
         <Container>
@@ -272,6 +272,6 @@ export default function ServiciosPage() {
           </motion.div>
         </Container>
       </section>
-    </main>
+    </>
   )
 }

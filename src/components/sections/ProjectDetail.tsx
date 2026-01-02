@@ -27,7 +27,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
   const lightbox = useLightbox(project.images.length)
 
   return (
-    <main className="py-12">
+    <div className="py-12">
       <Container>
         {/* Back button */}
         <motion.div
@@ -213,6 +213,6 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
         onNext={lightbox.next}
         alt={project.title}
       />
-    </main>
+    </div>
   )
 }

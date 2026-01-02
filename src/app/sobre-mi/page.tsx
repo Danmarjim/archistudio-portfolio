@@ -75,7 +75,7 @@ const stats = [
 
 export default function SobreMiPage() {
   return (
-    <main>
+    <>
       {/* Hero Section */}
       <section className="py-16 md:py-24">
         <Container>
@@ -295,6 +295,6 @@ export default function SobreMiPage() {
           </motion.div>
         </Container>
       </section>
-    </main>
+    </>
   )
 }

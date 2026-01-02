@@ -61,10 +61,17 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
+        {/* Skip to main content link for accessibility */}
+        <a
+          href="#main-content"
+          className="absolute left-4 top-4 z-50 -translate-y-16 rounded-md bg-primary-600 px-4 py-2 text-white transition-transform focus:translate-y-0"
+        >
+          Saltar al contenido principal
+        </a>
         <Header />
-        <div className="min-h-screen pt-20">
+        <main id="main-content" className="min-h-screen pt-20">
           {children}
-        </div>
+        </main>
         <Footer />
       </body>
     </html>

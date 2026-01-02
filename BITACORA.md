@@ -71,7 +71,7 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | Implementar SEO completo (metadata, sitemap, robots.txt) | Completado |
 | Anadir transiciones de pagina | Completado |
 | Testing responsive | Completado |
-| Optimizacion de rendimiento (Lighthouse 90+) | Pendiente |
+| Optimizacion de rendimiento (Lighthouse 90+) | Completado |
 | Configurar Vercel | Pendiente |
 | Deploy inicial | Pendiente |
 | Configurar dominio | Pendiente |
@@ -94,6 +94,21 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 ## Log de Desarrollo
 
 ### 2 de enero de 2026
+
+**Sesion 23 - Fase 6: Optimizacion Lighthouse**
+
+- Rama: `feature/lighthouse-optimization`
+- Mejoras de accesibilidad:
+  - Añadido link "Saltar al contenido principal" (skip-to-content)
+  - Movido `<main>` al layout para estructura semantica correcta
+  - Todas las paginas ahora usan fragmentos o divs
+- Mejoras de rendimiento:
+  - Añadido `sizes` por defecto en ImageWithLoader
+  - Fuentes ya optimizadas con `display: swap`
+- Creada pagina 404 personalizada (`not-found.tsx`)
+- Build verificado exitosamente
+
+---
 
 **Sesion 22 - Fase 6: Testing Responsive**
 
@@ -480,6 +495,7 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | `content/projects/*.mdx` | 6 archivos MDX con datos de proyectos |
 | `src/components/shared/PageTransition.tsx` | Transiciones de pagina con Framer Motion |
 | `src/app/template.tsx` | Template para aplicar transiciones |
+| `src/app/not-found.tsx` | Pagina 404 personalizada |
 
 ---
 
