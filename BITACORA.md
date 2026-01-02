@@ -650,13 +650,14 @@ Basado en investigacion de portfolios de arquitectura profesionales (Sesion 26).
 | Transiciones mas fluidas | Completado |
 | Hover effects refinados | Completado |
 
-### Fase 8: Dark Mode
+### Fase 8: Dark Mode (En pausa - rama: feature/dark-mode)
 | Tarea | Estado |
 |-------|--------|
-| Sistema de CSS variables para temas | Pendiente |
-| Toggle en header con persistencia (localStorage) | Pendiente |
-| Transicion suave entre temas | Pendiente |
-| Respetar prefers-color-scheme del sistema | Pendiente |
+| Sistema de CSS variables para temas | Implementado |
+| Toggle en header con persistencia (localStorage) | Implementado |
+| Transicion suave entre temas | Implementado |
+| Respetar prefers-color-scheme del sistema | Implementado |
+| Ajustes de legibilidad pendientes | Pendiente |
 
 ### Fase 9: Carrusel de Proyectos (Opcional)
 | Tarea | Estado |
@@ -673,23 +674,42 @@ Basado en investigacion de portfolios de arquitectura profesionales (Sesion 26).
 | Filtros por estado (completado/en curso) | Pendiente |
 | Busqueda de proyectos | Pendiente |
 
+### Fase 11: Localizacion (i18n)
+| Tarea | Estado |
+|-------|--------|
+| Configurar next-intl o similar para i18n | Pendiente |
+| Estructura de rutas multiidioma (/es, /en, /it) | Pendiente |
+| Extraer textos a archivos de traduccion | Pendiente |
+| Traducir contenido a Espanol (base) | Pendiente |
+| Traducir contenido a Ingles | Pendiente |
+| Traducir contenido a Italiano | Pendiente |
+| Selector de idioma en Header | Pendiente |
+| Proyectos MDX multiidioma | Pendiente |
+| Metadata SEO por idioma | Pendiente |
+| Sitemap multiidioma | Pendiente |
+
 ---
 
 ## Proximos Pasos
 
-1. **Fase 8 - Dark Mode:** (Prioridad actual)
-   - Sistema de CSS variables para temas
-   - Toggle en header con persistencia
-   - Transicion suave entre temas
+1. **Fase 11 - Localizacion:** (Prioridad actual)
+   - Configurar i18n con next-intl
+   - Idiomas: Espanol, Ingles, Italiano
+   - Selector de idioma en Header
 
-2. **Mejoras opcionales:**
+2. **Fase 8 - Dark Mode:** (En pausa)
+   - Rama `feature/dark-mode` disponible
+   - Requiere ajustes de legibilidad
+
+3. **Mejoras opcionales:**
    - Implementar formulario de contacto funcional (API route)
    - Anadir mas proyectos de ejemplo
 
 ## Notas para Proxima Sesion
 
 - Fase 7 completada: galeria mejorada con swipe, zoom y transiciones
-- Siguiente: Fase 8 (Dark Mode)
+- Fase 8 en pausa: rama `feature/dark-mode` con implementacion base
+- Siguiente: Fase 11 (Localizacion ES/EN/IT)
 - URL produccion: https://portfolio-mparchistudio.vercel.app
 
 ---
