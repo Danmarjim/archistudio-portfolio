@@ -95,6 +95,43 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 
 ### 2 de enero de 2026
 
+**Sesion 27 - Fase 7: Galeria Mejorada**
+
+- Rama: `feature/enhanced-gallery`
+- Mejoras significativas al componente Lightbox:
+
+**Nuevas funcionalidades:**
+- **Gestos swipe:** Navegacion deslizando en movil/tablet
+  - Threshold de 50px o velocidad 500px/s para activar
+  - Feedback elastico al arrastrar
+- **Zoom de imagenes:**
+  - Boton de zoom en controles superiores
+  - Doble click/tap para toggle zoom
+  - Zoom 1.5x con animacion spring
+  - Arrastrar imagen cuando esta ampliada
+- **Transiciones direccionales:**
+  - Animacion slide-in/out segun direccion de navegacion
+  - Spring animations (stiffness: 300, damping: 30)
+  - Transiciones mas fluidas entre imagenes
+- **Thumbnails mejorados:**
+  - Navegacion directa con onSetIndex (sin loop)
+  - Animacion spring en indicador activo
+  - Contenedor con backdrop-blur
+
+**Mejoras de UX:**
+- Indicador "Desliza para navegar" en movil
+- Instrucciones de zoom cuando esta ampliado
+- Botones prev/next con hover scale
+- Fondo mas oscuro (95% opacity)
+
+**Archivos modificados:**
+- `src/components/ui/Lightbox.tsx` - Reescrito con nuevas funcionalidades
+- `src/components/sections/ProjectDetail.tsx` - Añadido onSetIndex
+
+**Build:** Verificado exitosamente
+
+---
+
 **Sesion 26 - Investigacion: Analisis de Webs de Arquitectura**
 
 - Rama: `feature/roadmap-update`
@@ -601,16 +638,49 @@ El portfolio actual ya implementa muchas de estas practicas:
 
 ---
 
+## Roadmap de Mejoras (Post Fase 6)
+
+Basado en investigacion de portfolios de arquitectura profesionales (Sesion 26).
+
+### Fase 7: Quick Wins - Galeria Mejorada (Completada)
+| Tarea | Estado |
+|-------|--------|
+| Gestos swipe en movil para Lightbox | Completado |
+| Zoom en imagenes | Completado |
+| Transiciones mas fluidas | Completado |
+| Hover effects refinados | Completado |
+
+### Fase 8: Dark Mode
+| Tarea | Estado |
+|-------|--------|
+| Sistema de CSS variables para temas | Pendiente |
+| Toggle en header con persistencia (localStorage) | Pendiente |
+| Transicion suave entre temas | Pendiente |
+| Respetar prefers-color-scheme del sistema | Pendiente |
+
+### Fase 9: Carrusel de Proyectos (Opcional)
+| Tarea | Estado |
+|-------|--------|
+| Carrusel horizontal para destacados en homepage | Pendiente |
+| Navegacion con flechas y dots | Pendiente |
+| Soporte gestos touch/swipe | Pendiente |
+| Autoplay opcional con pausa en hover | Pendiente |
+
+### Fase 10: Escalabilidad (Cuando haya mas proyectos)
+| Tarea | Estado |
+|-------|--------|
+| Filtros por ubicacion | Pendiente |
+| Filtros por estado (completado/en curso) | Pendiente |
+| Busqueda de proyectos | Pendiente |
+
+---
+
 ## Proximos Pasos
 
-1. **Continuar Fase 6 - Polish y Deploy:**
-   - ~~Añadir metadata SEO completa~~ (Completado)
-   - ~~Crear robots.txt y sitemap.xml~~ (Completado)
-   - ~~Crear imagenes placeholder~~ (Completado)
-   - Anadir transiciones de pagina
-   - Testing responsive en multiples dispositivos
-   - Optimizacion Lighthouse (objetivo 90+)
-   - Configurar y deploy a Vercel
+1. **Fase 8 - Dark Mode:** (Prioridad actual)
+   - Sistema de CSS variables para temas
+   - Toggle en header con persistencia
+   - Transicion suave entre temas
 
 2. **Mejoras opcionales:**
    - Implementar formulario de contacto funcional (API route)
@@ -618,11 +688,9 @@ El portfolio actual ya implementa muchas de estas practicas:
 
 ## Notas para Proxima Sesion
 
-- Fase 6 en progreso: SEO e imagenes completados
-- Proyectos centralizados en archivos MDX en `content/projects/`
-- Imagenes placeholder descargadas de Unsplash (arquitectura)
-- Para anadir un nuevo proyecto: crear archivo `.mdx` con frontmatter
-- Las paginas usan generateStaticParams para SSG
+- Fase 7 completada: galeria mejorada con swipe, zoom y transiciones
+- Siguiente: Fase 8 (Dark Mode)
+- URL produccion: https://portfolio-mparchistudio.vercel.app
 
 ---
 
