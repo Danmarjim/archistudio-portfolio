@@ -69,7 +69,7 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | Tarea | Estado |
 |-------|--------|
 | Implementar SEO completo (metadata, sitemap, robots.txt) | Completado |
-| Anadir transiciones de pagina | Pendiente |
+| Anadir transiciones de pagina | Completado |
 | Testing responsive | Pendiente |
 | Optimizacion de rendimiento (Lighthouse 90+) | Pendiente |
 | Configurar Vercel | Pendiente |
@@ -94,6 +94,18 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 ## Log de Desarrollo
 
 ### 2 de enero de 2026
+
+**Sesion 21 - Fase 6: Transiciones de Pagina**
+
+- Rama: `feature/page-transitions`
+- Creado componente `PageTransition` con Framer Motion:
+  - Animacion fade-in con movimiento vertical sutil
+  - Duracion 0.3s, easing easeInOut
+- Creado `template.tsx` en app/ para aplicar transiciones
+- Transiciones automaticas en navegacion entre paginas
+- Build verificado exitosamente
+
+---
 
 **Sesion 20 - Fase 5/6: Imagenes Placeholder**
 
@@ -452,6 +464,8 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | `src/components/sections/ProjectsGrid.tsx` | Grid de proyectos con filtros |
 | `src/components/sections/ProjectDetail.tsx` | Vista detallada de proyecto con lightbox |
 | `content/projects/*.mdx` | 6 archivos MDX con datos de proyectos |
+| `src/components/shared/PageTransition.tsx` | Transiciones de pagina con Framer Motion |
+| `src/app/template.tsx` | Template para aplicar transiciones |
 
 ---
 
