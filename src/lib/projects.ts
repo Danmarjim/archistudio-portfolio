@@ -7,14 +7,21 @@ const projectsDirectory = path.join(process.cwd(), 'content/projects')
 
 /**
  * Obtiene el directorio de proyectos para un locale
- * Fallback a 'es' si el locale no existe
+ * Fallback a 'es' si el locale no existe o esta vacio
  */
 function getProjectsDir(locale: string = 'es'): string {
   const localeDir = path.join(projectsDirectory, locale)
+
+  // Check if directory exists and has MDX files
   if (fs.existsSync(localeDir)) {
-    return localeDir
+    const files = fs.readdirSync(localeDir)
+    const hasMdxFiles = files.some((f) => f.endsWith('.mdx'))
+    if (hasMdxFiles) {
+      return localeDir
+    }
   }
-  // Fallback a español si no existe el idioma
+
+  // Fallback a español si no existe el idioma o esta vacio
   return path.join(projectsDirectory, 'es')
 }
 

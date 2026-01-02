@@ -95,6 +95,37 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 
 ### 2 de enero de 2026
 
+**Sesion 30 - Fase 9: Carrusel de Proyectos**
+
+- Rama: `feature/projects-carousel`
+- Implementacion de carrusel horizontal para proyectos destacados en homepage
+
+**Nuevo componente `ProjectsCarousel.tsx`:**
+- Carrusel horizontal full-width con animaciones Framer Motion
+- Slide principal con imagen, titulo, excerpt y metadatos
+- Navegacion con flechas laterales (ChevronLeft/Right)
+- Indicadores de posicion (dots) con click para navegar
+- Thumbnails de preview en desktop
+- Gestos swipe con drag para movil/tablet
+- Autoplay con barra de progreso (5s por defecto)
+- Pausa automatica en hover
+- Navegacion por teclado (flechas izq/der)
+- Transiciones direccionales (slide-in/out)
+
+**Mejoras adicionales:**
+- Fix en `projects.ts`: fallback a 'es' si carpeta de idioma esta vacia
+- Proteccion contra arrays vacios en el carrusel
+
+**Archivos modificados/creados:**
+- `src/components/sections/ProjectsCarousel.tsx` (nuevo)
+- `src/components/sections/index.ts` (export)
+- `src/app/[locale]/page.tsx` (usa carrusel)
+- `src/lib/projects.ts` (mejor fallback)
+
+**Build:** Verificado exitosamente
+
+---
+
 **Sesion 29 - Fase 11: Proyectos MDX Multiidioma**
 
 - Rama: `feature/i18n-mdx-projects`
@@ -720,6 +751,7 @@ El portfolio actual ya implementa muchas de estas practicas:
 | `src/app/template.tsx` | Template para aplicar transiciones |
 | `src/app/not-found.tsx` | Pagina 404 personalizada |
 | `GUIA-CONTENIDO.md` | Guia para gestionar contenido (usuarios no tecnicos) |
+| `src/components/sections/ProjectsCarousel.tsx` | Carrusel de proyectos destacados |
 
 ---
 
@@ -744,13 +776,13 @@ Basado en investigacion de portfolios de arquitectura profesionales (Sesion 26).
 | Respetar prefers-color-scheme del sistema | Implementado |
 | Ajustes de legibilidad pendientes | Pendiente |
 
-### Fase 9: Carrusel de Proyectos (Opcional)
+### Fase 9: Carrusel de Proyectos - Completada
 | Tarea | Estado |
 |-------|--------|
-| Carrusel horizontal para destacados en homepage | Pendiente |
-| Navegacion con flechas y dots | Pendiente |
-| Soporte gestos touch/swipe | Pendiente |
-| Autoplay opcional con pausa en hover | Pendiente |
+| Carrusel horizontal para destacados en homepage | Completado |
+| Navegacion con flechas y dots | Completado |
+| Soporte gestos touch/swipe | Completado |
+| Autoplay opcional con pausa en hover | Completado |
 
 ### Fase 10: Escalabilidad (Cuando haya mas proyectos)
 | Tarea | Estado |
