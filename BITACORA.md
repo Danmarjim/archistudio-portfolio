@@ -72,9 +72,9 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | Anadir transiciones de pagina | Completado |
 | Testing responsive | Completado |
 | Optimizacion de rendimiento (Lighthouse 90+) | Completado |
-| Configurar Vercel | Pendiente |
-| Deploy inicial | Pendiente |
-| Configurar dominio | Pendiente |
+| Configurar Vercel | Completado |
+| Deploy inicial | Completado |
+| Configurar dominio | Pendiente (cuando se decida) |
 
 ---
 
@@ -94,6 +94,18 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 ## Log de Desarrollo
 
 ### 2 de enero de 2026
+
+**Sesion 24 - Fase 6: Deploy a Vercel**
+
+- Rama: `feature/vercel-deploy`
+- Instalado Vercel CLI globalmente
+- Proyecto vinculado a Vercel
+- Deploy inicial completado exitosamente
+- URL: https://portfolio-mparchistudio.vercel.app
+- Configuracion automatica detectada (Next.js)
+- Build en produccion verificado
+
+---
 
 **Sesion 23 - Fase 6: Optimizacion Lighthouse**
 
