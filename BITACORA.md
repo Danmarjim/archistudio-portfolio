@@ -95,6 +95,82 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 
 ### 2 de enero de 2026
 
+**Sesion 26 - Investigacion: Analisis de Webs de Arquitectura**
+
+- Rama: `feature/roadmap-update`
+- Investigacion de portfolios de arquitectura profesionales para referencia y mejoras
+
+**Estudios Analizados:**
+
+1. **Zaha Hadid Architects** (zaha-hadid.com)
+   - Layout modular con carrusel de proyectos destacados
+   - Filtros por categoria: Arquitectura, Interiorismo, Diseno, Masterplans
+   - Tipografia custom "zaha" con paleta minimalista
+   - Imagenes optimizadas con thumbnails y vistas ampliadas
+   - Funcionalidades: compartir, fullscreen, items destacados
+   - Destaca por escala: "950 proyectos, 44 paises, 400 empleados"
+
+2. **Norm Architects** (normcph.com)
+   - Grid minimalista con secciones full-width
+   - Tipografia: Adobe Caslon Pro (serif) + sans-serif
+   - Paleta: crema (#f5f1e5), negro (#383839), blanco
+   - Filosofia "soft minimalism" - minimalismo calido
+   - Patron de cards modulares con galerias escalonadas
+   - Letter-spacing amplio en headings (8px)
+   - Lazy-loading en imagenes
+
+3. **BIG - Bjarke Ingels Group** (big.dk)
+   - Filosofia "hedonistic sustainability"
+   - Concepto "programmatic alchemy" mezclando funciones
+   - Portfolio extenso con proyectos iconicos
+   - Presencia global: Copenhagen, NYC, London, Barcelona, Shanghai
+
+**Tendencias 2025 Identificadas:**
+
+- **Warm Minimalism:** Evolucion del minimalismo frio hacia tonos tierra y materiales naturales
+- **Mobile-First:** Navegacion simplificada (max 3 items principales)
+- **White Space:** Margenes consistentes (16px), respiracion visual
+- **Dark Mode:** Toggle entre temas claro/oscuro
+- **Grid Layouts:** Layouts limpios con paletas monocromaticas
+- **Lazy Loading:** Optimizacion de carga de imagenes
+
+**Mejores Practicas para Portfolios:**
+
+| Elemento | Recomendacion |
+|----------|---------------|
+| Cantidad proyectos | 8-12 proyectos (calidad > cantidad) |
+| Navegacion | Invisible/minima, sin distracciones |
+| Tipografia | Enmarca el contenido, no distrae |
+| Imagenes | Alta calidad, thumbnails optimizados |
+| Contenido | Proceso + resultado final + detalles tecnicos |
+| Responsive | Adaptar columnas segun viewport |
+
+**Aplicacion al Proyecto:**
+
+El portfolio actual ya implementa muchas de estas practicas:
+- ✅ Paleta calida (tonos tierra #a07848)
+- ✅ Tipografia serif (Playfair Display) + sans (Inter)
+- ✅ Grid responsive (1-2-3 columnas)
+- ✅ Lazy loading con ImageWithLoader
+- ✅ Animaciones sutiles con Framer Motion
+- ✅ 6 proyectos (dentro del rango recomendado)
+
+**Posibles Mejoras Futuras:**
+- Considerar filtros adicionales por ubicacion/estado
+- Implementar dark mode toggle
+- Añadir galeria con vista fullscreen mejorada
+- Considerar carrusel horizontal para proyectos destacados
+
+**Fuentes consultadas:**
+- [Zaha Hadid Architects](https://www.zaha-hadid.com)
+- [Norm Architects](https://normcph.com)
+- [BIG Architects](https://big.dk)
+- [SiteBuilder Report - Architecture Portfolios](https://www.sitebuilderreport.com/inspiration/architect-websites)
+- [Webflow - Best Architecture Websites](https://webflow.com/blog/best-architecture-websites)
+- [ArchDaily - Portfolio Designs](https://www.archdaily.com/872418/the-best-architecture-portfolio-designs)
+
+---
+
 **Sesion 25 - Documentacion: Guia de Contenido**
 
 - Rama: `feature/user-guide`
