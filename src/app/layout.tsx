@@ -64,7 +64,7 @@ export default function RootLayout({
         {/* Skip to main content link for accessibility */}
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-primary-600 focus:px-4 focus:py-2 focus:text-white"
+          className="absolute left-4 top-4 z-50 -translate-y-16 rounded-md bg-primary-600 px-4 py-2 text-white transition-transform focus:translate-y-0"
         >
           Saltar al contenido principal
         </a>
