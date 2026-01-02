@@ -23,6 +23,7 @@ export default function ImageWithLoader({
   aspectRatio,
   showSkeleton = true,
   fill = true,
+  sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
   ...props
 }: ImageWithLoaderProps) {
   const [isLoading, setIsLoading] = useState(true)
@@ -63,6 +64,7 @@ export default function ImageWithLoader({
           src={src}
           alt={alt}
           fill={fill}
+          sizes={sizes}
           className={cn(
             'object-cover transition-opacity duration-500',
             isLoading ? 'opacity-0' : 'opacity-100'

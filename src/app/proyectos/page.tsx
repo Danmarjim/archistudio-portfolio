@@ -12,7 +12,7 @@ export default function ProyectosPage() {
   const projects = getAllProjects()
 
   return (
-    <main className="py-12">
+    <div className="py-12">
       <Container>
         {/* Header */}
         <div className="mb-12 text-center">
@@ -26,6 +26,6 @@ export default function ProyectosPage() {
 
         <ProjectsGrid projects={projects} />
       </Container>
-    </main>
+    </div>
   )
 }

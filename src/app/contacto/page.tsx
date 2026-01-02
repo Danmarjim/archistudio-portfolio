@@ -116,7 +116,7 @@ export default function ContactoPage() {
   }
 
   return (
-    <main className="py-16 md:py-24">
+    <div className="py-16 md:py-24">
       <Container>
         {/* Header */}
         <motion.div
@@ -378,6 +378,6 @@ export default function ContactoPage() {
           </motion.div>
         </div>
       </Container>
-    </main>
+    </div>
   )
 }
