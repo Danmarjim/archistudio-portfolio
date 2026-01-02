@@ -211,6 +211,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
         onClose={lightbox.close}
         onPrev={lightbox.prev}
         onNext={lightbox.next}
+        onSetIndex={lightbox.setIndex}
         alt={project.title}
       />
     </div>
