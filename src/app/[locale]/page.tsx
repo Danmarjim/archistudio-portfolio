@@ -7,8 +7,13 @@ import {
 } from '@/components/sections'
 import { getFeaturedProjects } from '@/lib/projects'
 
-export default function Home() {
-  const featuredProjects = getFeaturedProjects()
+interface HomeProps {
+  params: Promise<{ locale: string }>
+}
+
+export default async function Home({ params }: HomeProps) {
+  const { locale } = await params
+  const featuredProjects = getFeaturedProjects(locale)
 
   return (
     <>

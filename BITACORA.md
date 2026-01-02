@@ -95,6 +95,35 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 
 ### 2 de enero de 2026
 
+**Sesion 29 - Fase 11: Proyectos MDX Multiidioma**
+
+- Rama: `feature/i18n-mdx-projects`
+- Estructura de proyectos MDX preparada para soporte multiidioma
+
+**Cambios realizados:**
+- Nueva estructura de carpetas:
+  ```
+  content/projects/
+  ├── es/  (6 proyectos existentes)
+  ├── en/  (vacio - para futuras traducciones)
+  └── it/  (vacio - para futuras traducciones)
+  ```
+- `src/lib/projects.ts` actualizado:
+  - Todas las funciones aceptan parametro `locale`
+  - Fallback automatico a 'es' si no existe el idioma
+  - `getAllProjectSlugs()` usa 'es' como fuente canonica
+- Paginas actualizadas para pasar locale:
+  - `[locale]/page.tsx` - Homepage con proyectos destacados
+  - `[locale]/proyectos/page.tsx` - Listado de proyectos
+  - `[locale]/proyectos/[slug]/page.tsx` - Detalle de proyecto
+
+**Nota importante:**
+Las tareas de traduccion de componentes y paginas de contenido se postponen hasta que el contenido real este disponible. No tiene sentido traducir contenido mock.
+
+**Build:** Verificado exitosamente
+
+---
+
 **Sesion 28 - Fase 11: Localizacion (i18n)**
 
 - Rama: `feature/i18n-localization`
@@ -730,7 +759,7 @@ Basado en investigacion de portfolios de arquitectura profesionales (Sesion 26).
 | Filtros por estado (completado/en curso) | Pendiente |
 | Busqueda de proyectos | Pendiente |
 
-### Fase 11: Localizacion (i18n) - En Progreso
+### Fase 11: Localizacion (i18n) - Completada (estructura base)
 | Tarea | Estado |
 |-------|--------|
 | Configurar next-intl para i18n | Completado |
@@ -743,18 +772,20 @@ Basado en investigacion de portfolios de arquitectura profesionales (Sesion 26).
 | Header/Footer con traducciones | Completado |
 | Metadata SEO por idioma | Completado |
 | Sitemap multiidioma | Completado |
-| Traducir componentes sections | Pendiente |
-| Traducir paginas de contenido | Pendiente |
-| Proyectos MDX multiidioma | Pendiente |
+| Proyectos MDX multiidioma (estructura) | Completado |
+| Traducir componentes sections | Diferido* |
+| Traducir paginas de contenido | Diferido* |
+
+*Diferido: Se hara cuando el contenido real este disponible. No tiene sentido traducir contenido mock.
 
 ---
 
 ## Proximos Pasos
 
-1. **Fase 11 - Localizacion (Continuacion):**
+1. **Cuando haya contenido real:**
    - Traducir componentes sections (Hero, AboutPreview, ServicesPreview, etc.)
    - Traducir paginas de contenido (servicios, sobre-mi, contacto)
-   - Proyectos MDX con contenido multiidioma
+   - Anadir traducciones de proyectos MDX en `content/projects/en/` y `content/projects/it/`
 
 2. **Fase 8 - Dark Mode:** (En pausa)
    - Rama `feature/dark-mode` disponible
@@ -766,11 +797,13 @@ Basado en investigacion de portfolios de arquitectura profesionales (Sesion 26).
 
 ## Notas para Proxima Sesion
 
-- Fase 11 en progreso: estructura i18n completa con next-intl
+- Fase 11 completada (estructura base)
+- Sistema i18n completo con next-intl
 - Rutas multiidioma funcionando (/es, /en, /it)
-- Selector de idioma implementado en Header
-- Header/Footer ya traducidos
-- Pendiente: traducir resto de componentes y paginas
+- Selector de idioma en Header
+- Header/Footer traducidos
+- Proyectos MDX con soporte multiidioma (estructura lista, fallback a ES)
+- Traducciones de contenido diferidas hasta tener contenido real
 - Fase 8 en pausa: rama `feature/dark-mode` con implementacion base
 - URL produccion: https://portfolio-mparchistudio.vercel.app
 

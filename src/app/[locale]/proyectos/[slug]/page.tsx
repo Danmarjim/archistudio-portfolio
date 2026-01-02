@@ -5,6 +5,7 @@ import { getProjectBySlug, getAdjacentProjects, getAllProjectSlugs } from '@/lib
 
 interface ProjectPageProps {
   params: Promise<{
+    locale: string
     slug: string
   }>
 }
@@ -15,8 +16,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
-  const { slug } = await params
-  const project = getProjectBySlug(slug)
+  const { slug, locale } = await params
+  const project = getProjectBySlug(slug, locale)
 
   if (!project) {
     return {
@@ -31,14 +32,14 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = await params
-  const project = getProjectBySlug(slug)
+  const { slug, locale } = await params
+  const project = getProjectBySlug(slug, locale)
 
   if (!project) {
     notFound()
   }
 
-  const { prev, next } = getAdjacentProjects(slug)
+  const { prev, next } = getAdjacentProjects(slug, locale)
 
   return <ProjectDetail project={project} prevProject={prev} nextProject={next} />
 }

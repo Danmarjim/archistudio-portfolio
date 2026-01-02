@@ -8,8 +8,13 @@ export const metadata: Metadata = {
   description: 'Una selección de nuestros trabajos en arquitectura, reformas e interiorismo.',
 }
 
-export default function ProyectosPage() {
-  const projects = getAllProjects()
+interface ProyectosPageProps {
+  params: Promise<{ locale: string }>
+}
+
+export default async function ProyectosPage({ params }: ProyectosPageProps) {
+  const { locale } = await params
+  const projects = getAllProjects(locale)
 
   return (
     <div className="py-12">
