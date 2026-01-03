@@ -14,7 +14,7 @@ export default function Logo({ className }: LogoProps) {
         className
       )}
     >
-      MParchi Studio
+      MP Archistudio
     </Link>
   )
 }

@@ -118,7 +118,7 @@ export default function SobreMiPage() {
 
               <div className="mt-6 space-y-4 text-lg leading-relaxed text-neutral-600">
                 <p>
-                  Soy María García, arquitecta con más de 15 años de experiencia diseñando
+                  Soy Martina Pozzi, arquitecta con más de 15 años de experiencia diseñando
                   espacios que transforman la vida de las personas. Mi pasión por la arquitectura
                   nació de la fascinación por cómo los espacios pueden influir en nuestras emociones
                   y comportamientos.

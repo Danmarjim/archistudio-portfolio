@@ -1,10 +1,11 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import Container from '@/components/ui/Container'
-import { Button, ImageWithLoader } from '@/components/ui'
+import { Button } from '@/components/ui'
 
 interface AboutPreviewProps {
   image?: string
@@ -35,12 +36,14 @@ export default function AboutPreview({
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-2xl">
-              <ImageWithLoader
+            <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-neutral-100">
+              <Image
                 src={image}
                 alt="Foto de la arquitecta"
-                aspectRatio="portrait"
-                className="w-full"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
               />
             </div>
 

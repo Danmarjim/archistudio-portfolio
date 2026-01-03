@@ -4,7 +4,7 @@ import ProjectsGrid from '@/components/sections/ProjectsGrid'
 import { getAllProjects } from '@/lib/projects'
 
 export const metadata: Metadata = {
-  title: 'Proyectos | María García Arquitectura',
+  title: 'Proyectos | Martina Pozzi Arquitectura',
   description: 'Una selección de nuestros trabajos en arquitectura, reformas e interiorismo.',
 }
 

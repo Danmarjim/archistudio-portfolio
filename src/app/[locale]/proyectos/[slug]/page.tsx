@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   }
 
   return {
-    title: `${project.title} | María García Arquitectura`,
+    title: `${project.title} | Martina Pozzi Arquitectura`,
     description: project.excerpt,
   }
 }
