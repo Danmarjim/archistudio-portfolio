@@ -94,7 +94,41 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 
 ## Log de Desarrollo
 
-### 3 de enero de 2026
+### 3 de enero de 2026 (Tarde)
+
+**Sesión 32 - Quick Wins: Bug Fixes y Branding**
+
+- Rama: `feature/quick-wins-bugs`
+- Arreglo de bug visual y actualizaciones de branding
+
+**Bug Arreglado:**
+- Sombra decorativa desapareciendo en AboutPreview al cargar imagen
+  - Causa: Framer Motion crea stacking context con `transform`, haciendo que `-z-index` no funcione
+  - Solución: Renderizar decorativo primero en DOM + usar `z-10` positivo en imagen
+  - Resultado: Sombra ahora permanece visible durante carga y animación
+
+**Cambios de Branding:**
+- Logo: "MParchi Studio" → "MP Archistudio"
+- Nombre: "María García" → "Martina Pozzi"
+- Metadata actualizada en todas las páginas
+
+**Archivos modificados:**
+- `src/components/sections/AboutPreview.tsx` (fix stacking context)
+- `src/components/shared/Logo.tsx` (branding)
+- `src/app/[locale]/proyectos/page.tsx` (metadata)
+- `src/app/[locale]/proyectos/[slug]/page.tsx` (metadata)
+- `src/app/[locale]/sobre-mi/page.tsx` (nombre + metadata)
+
+**Commits:**
+- `cdb2efd` - fix: resolve decorative shadow disappearing on image load
+
+**Merge:** `feature/quick-wins-bugs` → `main`
+
+**Deploy:** https://portfolio-mparchistudio.vercel.app ✅
+
+---
+
+### 3 de enero de 2026 (Mañana)
 
 **Sesión 31 - Documentación Exhaustiva del Proyecto**
 
