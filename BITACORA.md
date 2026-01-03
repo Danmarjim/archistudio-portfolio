@@ -2,8 +2,9 @@
 
 ## Estado Actual del Proyecto
 
-**Fase actual:** Fase 6 - Polish y Deploy (En progreso)
-**Ultima actualizacion:** 1 de enero de 2026
+**Fase actual:** MVP Completo - Documentación y Roadmap
+**Última actualización:** 3 de enero de 2026
+**Estado:** Proyecto funcional listo para contenido real y dominio
 
 ---
 
@@ -92,6 +93,72 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 ---
 
 ## Log de Desarrollo
+
+### 3 de enero de 2026
+
+**Sesión 31 - Documentación Exhaustiva del Proyecto**
+
+- Creación de guías completas de desarrollo y contenido
+- Planificación de roadmap para futuras iteraciones
+
+**Nuevo archivo `GUIA-DESARROLLO.md` (750+ líneas):**
+- Guía técnica exhaustiva para desarrolladores
+- Instalación completa desde cero (Node, npm, Git, Vercel CLI, Claude Code)
+- Documentación completa del stack tecnológico
+- Sistema de internacionalización con next-intl
+- A/B testing con query parameters (`?variant=carousel|grid`)
+- Gestión de proyectos MDX multiidioma
+- Flujo de trabajo con Git
+- Comandos de despliegue
+- Troubleshooting completo
+
+**Actualización `GUIA-CONTENIDO.md` (720+ líneas):**
+- Refactorizada para usuarios no técnicos
+- Eliminado todo contenido relacionado con desarrollo
+- Nueva sección "Sistema de idiomas" explicando multiidioma
+- Documentación detallada de estructura `es/`, `en/`, `it/`
+- Ejemplos prácticos paso a paso
+- Buenas prácticas para proyectos, imágenes y traducciones
+- FAQ ampliadas por categoría
+- Glosario de términos
+
+**Nuevo archivo `ROADMAP.md` (350+ líneas):**
+- Documentación del estado actual del proyecto (MVP completo)
+- Próximos pasos inmediatos:
+  - Configuración de dominio (.it + .com)
+  - Reemplazo de contenido mock por contenido real
+  - Implementación de formulario de contacto funcional
+  - Optimización SEO y metadata
+- Mejoras futuras post-MVP:
+  - CMS (opcional)
+  - Blog/Noticias
+  - Filtrado de proyectos
+  - Modo oscuro (retomar Fase 8)
+  - Galería mejorada
+- Checklist pre-launch
+- Decisiones técnicas pendientes (A/B testing, dark mode)
+- Flujo de trabajo recomendado para retomar el proyecto
+
+**Archivos creados:**
+- `GUIA-DESARROLLO.md` (nuevo)
+- `ROADMAP.md` (nuevo)
+
+**Archivos modificados:**
+- `GUIA-CONTENIDO.md` (refactorizada)
+
+**Commits:**
+- `8aad1d1` - docs: add comprehensive developer guide and improve content guide
+- `360281c` - docs: add project roadmap for future development
+
+**Deploy:** https://portfolio-mparchistudio.vercel.app
+
+**Notas importantes:**
+- Proyecto en estado MVP funcional
+- Pendiente: contenido real y configuración de dominio
+- Documentación completa para trabajar desde cualquier PC
+- Clara separación entre guías técnicas y de contenido
+
+---
 
 ### 2 de enero de 2026
 
