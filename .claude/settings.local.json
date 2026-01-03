@@ -15,7 +15,11 @@
       "mcp__context7__resolve-library-id",
       "mcp__context7__query-docs",
       "Bash(ls:*)",
-      "Bash(timeout 10 npm run dev)"
+      "Bash(timeout 10 npm run dev)",
+      "Bash(git diff:*)",
+      "Bash(npm run dev:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)"
     ]
   }
 }

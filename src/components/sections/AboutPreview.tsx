@@ -36,7 +36,11 @@ export default function AboutPreview({
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-neutral-100">
+            {/* Decorative element - rendered first, stays behind */}
+            <div className="absolute -bottom-6 -right-6 h-full w-full rounded-2xl bg-primary-100" />
+
+            {/* Image container - z-10 to stay above decorative element */}
+            <div className="relative z-10 aspect-[3/4] overflow-hidden rounded-2xl bg-neutral-100">
               <Image
                 src={image}
                 alt="Foto de la arquitecta"
@@ -46,9 +50,6 @@ export default function AboutPreview({
                 priority
               />
             </div>
-
-            {/* Decorative element */}
-            <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-2xl bg-primary-100" />
           </motion.div>
 
           {/* Content */}
