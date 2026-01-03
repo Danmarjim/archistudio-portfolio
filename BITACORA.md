@@ -96,6 +96,26 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 
 ### 3 de enero de 2026 (Tarde)
 
+**Sesión 33 - Actualización de Contenido**
+
+- Rama: `content/update-architect-photo`
+- Actualización de foto de perfil de la arquitecta
+
+**Cambios:**
+- Reemplazo de imagen placeholder con foto real
+- Archivo: `public/images/about/placeholder.jpg`
+
+**Nota técnica:**
+- Limpieza de caché de Next.js requerida (`rm -rf .next`)
+- Las imágenes en `public/` son cacheadas por Next.js
+
+**Commits:**
+- `6eb31b9` - content: update architect profile photo
+
+**Merge:** `content/update-architect-photo` → `main`
+
+---
+
 **Sesión 32 - Quick Wins: Bug Fixes y Branding**
 
 - Rama: `feature/quick-wins-bugs`
