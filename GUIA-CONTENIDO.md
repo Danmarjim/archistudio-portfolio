@@ -9,17 +9,18 @@ Guía completa para añadir y modificar el contenido del portfolio **sin necesid
 ## Índice
 
 1. [Antes de empezar](#antes-de-empezar)
-2. [Estructura del contenido](#estructura-del-contenido)
-3. [Sistema de idiomas](#sistema-de-idiomas)
-4. [Gestionar proyectos](#gestionar-proyectos)
-5. [Campos de un proyecto](#campos-de-un-proyecto)
-6. [Gestionar imágenes](#gestionar-imágenes)
-7. [Proyectos destacados](#proyectos-destacados)
-8. [Editar textos del sitio](#editar-textos-del-sitio)
-9. [Buenas prácticas](#buenas-prácticas)
-10. [Ejemplos prácticos](#ejemplos-prácticos)
-11. [Preguntas frecuentes](#preguntas-frecuentes)
-12. [Glosario](#glosario)
+2. [Primeros pasos en VS Code](#primeros-pasos-en-vs-code)
+3. [Estructura del contenido](#estructura-del-contenido)
+4. [Sistema de idiomas](#sistema-de-idiomas)
+5. [Gestionar proyectos](#gestionar-proyectos)
+6. [Campos de un proyecto](#campos-de-un-proyecto)
+7. [Gestionar imágenes](#gestionar-imágenes)
+8. [Proyectos destacados](#proyectos-destacados)
+9. [Editar textos del sitio](#editar-textos-del-sitio)
+10. [Buenas prácticas](#buenas-prácticas)
+11. [Ejemplos prácticos](#ejemplos-prácticos)
+12. [Preguntas frecuentes](#preguntas-frecuentes)
+13. [Glosario](#glosario)
 
 ---
 
@@ -46,6 +47,125 @@ Guía completa para añadir y modificar el contenido del portfolio **sin necesid
 - Resalta el código con colores para facilitar la lectura
 - Detecta errores de formato automáticamente
 - Tiene vista previa de imágenes
+
+---
+
+## Primeros pasos en VS Code
+
+Si nunca has usado VS Code, sigue estos pasos básicos para empezar a editar el contenido del portfolio.
+
+### Abrir la carpeta del proyecto
+
+1. Abre **Visual Studio Code**
+2. Ve al menú **Archivo** → **Abrir carpeta...** (o pulsa `Ctrl + K` seguido de `Ctrl + O`)
+3. Navega hasta la carpeta del proyecto `archistudio-portfolio`
+4. Haz clic en **Seleccionar carpeta**
+
+Ahora verás en el panel izquierdo todas las carpetas y archivos del proyecto.
+
+### Navegar por las carpetas
+
+En el panel izquierdo (llamado "Explorador"):
+
+- Haz **clic en una carpeta** para expandirla y ver su contenido
+- Haz **clic en un archivo** para abrirlo en el editor
+- Los archivos de proyectos están en: `content` → `projects` → `es`
+- Las imágenes están en: `public` → `images` → `projects`
+
+### Crear un archivo nuevo (nuevo proyecto)
+
+1. En el panel izquierdo, navega a la carpeta `content/projects/es/`
+2. Haz **clic derecho** sobre la carpeta `es`
+3. Selecciona **"Nuevo archivo"**
+4. Escribe el nombre del archivo con la extensión `.mdx`
+   - Ejemplo: `mi-nuevo-proyecto.mdx`
+5. Pulsa **Enter**
+6. El archivo se abrirá vacío en el editor, listo para escribir
+
+**Importante:** El nombre del archivo debe:
+- Usar solo **minúsculas**
+- Usar **guiones** `-` en lugar de espacios
+- Terminar en `.mdx`
+
+### Guardar un archivo
+
+Después de hacer cambios en un archivo:
+
+- Pulsa `Ctrl + S` (Windows) o `Cmd + S` (Mac)
+- O ve al menú **Archivo** → **Guardar**
+
+**Truco:** Un punto blanco junto al nombre del archivo indica que tiene cambios sin guardar.
+
+### Copiar y pegar la plantilla
+
+1. Abre un proyecto existente (por ejemplo `casa-del-bosque.mdx`) para ver la estructura
+2. Selecciona todo el contenido: `Ctrl + A`
+3. Cópialo: `Ctrl + C`
+4. Ve a tu archivo nuevo
+5. Pégalo: `Ctrl + V`
+6. Modifica los datos con la información de tu proyecto
+7. Guarda: `Ctrl + S`
+
+### Añadir imágenes al proyecto
+
+1. Abre el **Explorador de Windows** (fuera de VS Code)
+2. Navega a la carpeta del proyecto → `public` → `images` → `projects`
+3. Copia tus imágenes a esta carpeta
+4. Vuelve a VS Code y actualiza el archivo `.mdx` con las rutas de las imágenes
+
+**Ejemplo de ruta:**
+```
+/images/projects/mi-nuevo-proyecto-cover.jpg
+```
+
+### Ver los cambios en el navegador
+
+Para ver cómo quedan tus cambios en la web:
+
+1. Abre **Windows Terminal** (o Git Bash)
+2. Navega a la carpeta del proyecto:
+   ```bash
+   cd C:\Users\TuUsuario\Development\archistudio-portfolio
+   ```
+3. Ejecuta el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+4. Abre el navegador en **http://localhost:3000**
+5. Cada vez que guardes un archivo, la página se actualizará automáticamente
+
+### Atajos de teclado útiles
+
+| Atajo | Acción |
+|-------|--------|
+| `Ctrl + S` | Guardar archivo |
+| `Ctrl + Z` | Deshacer último cambio |
+| `Ctrl + Shift + Z` | Rehacer |
+| `Ctrl + C` | Copiar |
+| `Ctrl + V` | Pegar |
+| `Ctrl + A` | Seleccionar todo |
+| `Ctrl + F` | Buscar en el archivo |
+| `Ctrl + P` | Buscar archivo por nombre |
+
+### Solución de problemas comunes en VS Code
+
+**El archivo no se guarda:**
+- Verifica que tienes permisos de escritura en la carpeta
+- Intenta guardar con **Archivo** → **Guardar como...**
+
+**No veo las carpetas del proyecto:**
+- Asegúrate de haber abierto la carpeta correcta (no un archivo suelto)
+- Ve a **Archivo** → **Abrir carpeta...** y selecciona `archistudio-portfolio`
+
+**Los cambios no aparecen en el navegador:**
+- Verifica que guardaste el archivo (`Ctrl + S`)
+- Verifica que el servidor de desarrollo está corriendo (`npm run dev`)
+- Prueba a refrescar la página (`F5` o `Ctrl + R`)
+
+**El archivo se ve raro o con símbolos extraños:**
+- VS Code debe usar codificación **UTF-8**
+- Mira en la barra inferior derecha, debe decir "UTF-8"
+- Si dice otra cosa, haz clic y selecciona "Guardar con codificación" → "UTF-8"
 
 ---
 
