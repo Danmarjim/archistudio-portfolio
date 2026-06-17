@@ -21,12 +21,12 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
 
   if (!project) {
     return {
-      title: 'Proyecto no encontrado',
+      title: 'Progetto non trovato',
     }
   }
 
   return {
-    title: `${project.title} | Martina Pozzi Arquitectura`,
+    title: `${project.title} | MP_archistudio`,
     description: project.excerpt,
   }
 }

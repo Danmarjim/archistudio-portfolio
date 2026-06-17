@@ -6,6 +6,10 @@ import { cn } from '@/lib/utils'
 
 interface ImageWithLoaderProps extends Omit<ImageProps, 'onLoad' | 'onError'> {
   aspectRatio?: 'square' | 'video' | 'portrait' | 'landscape'
+  /** Larghezza reale dell'immagine: se fornita insieme a naturalHeight e senza aspectRatio,
+   *  il contenitore assume il rapporto esatto dell'immagine (nessun ritaglio). */
+  naturalWidth?: number
+  naturalHeight?: number
   showSkeleton?: boolean
 }
 
@@ -21,6 +25,8 @@ export default function ImageWithLoader({
   alt,
   className,
   aspectRatio,
+  naturalWidth,
+  naturalHeight,
   showSkeleton = true,
   fill = true,
   sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
@@ -38,13 +44,23 @@ export default function ImageWithLoader({
     setHasError(true)
   }
 
+  // Se non è specificato un aspectRatio fisso ma conosciamo le dimensioni reali,
+  // impostiamo il rapporto esatto via inline style così l'immagine non viene ritagliata.
+  const naturalStyle =
+    !aspectRatio && naturalWidth && naturalHeight
+      ? { aspectRatio: `${naturalWidth} / ${naturalHeight}` }
+      : undefined
+
   return (
     <div
       className={cn(
         'relative overflow-hidden bg-neutral-100',
         aspectRatio && aspectRatioClasses[aspectRatio],
+        // Fallback se non abbiamo né aspectRatio né dimensioni naturali
+        !aspectRatio && (!naturalWidth || !naturalHeight) && 'aspect-[4/3]',
         className
       )}
+      style={naturalStyle}
     >
       {/* Skeleton loader */}
       {showSkeleton && isLoading && !hasError && (

@@ -14,9 +14,9 @@ interface CallToActionProps {
 }
 
 export default function CallToAction({
-  title = '¿Tienes un proyecto en mente?',
-  subtitle = 'Cuéntanos tu idea y trabajemos juntos para hacerla realidad. Cada gran proyecto comienza con una conversación.',
-  ctaText = 'Contactar',
+  title = 'Hai un progetto in mente?',
+  subtitle = 'Raccontaci la tua idea e lavoriamo insieme per realizzarla. Ogni grande progetto inizia con una conversazione.',
+  ctaText = 'Contattaci',
   ctaHref = '/contacto',
 }: CallToActionProps) {
   return (

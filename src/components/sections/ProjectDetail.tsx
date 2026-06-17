@@ -2,8 +2,9 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowLeft, MapPin, Calendar, Ruler, User, CheckCircle, Expand } from 'lucide-react'
+import { ArrowLeft, MapPin, Calendar, Ruler, User, CheckCircle, Expand, Camera } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button, Badge, Lightbox } from '@/components/ui'
 import { useLightbox } from '@/lib/hooks'
@@ -17,14 +18,61 @@ interface ProjectDetailProps {
 
 export default function ProjectDetail({ project, prevProject, nextProject }: ProjectDetailProps) {
   const details = [
-    { icon: MapPin, label: 'Ubicación', value: project.location },
-    { icon: Calendar, label: 'Año', value: project.year.toString() },
+    { icon: MapPin, label: 'Ubicazione', value: project.location },
+    { icon: Calendar, label: 'Anno', value: project.year.toString() },
     { icon: Ruler, label: 'Superficie', value: project.surface },
     { icon: User, label: 'Cliente', value: project.client },
-    { icon: CheckCircle, label: 'Estado', value: project.status },
+    { icon: CheckCircle, label: 'Stato', value: project.status },
+    ...(project.photographer
+      ? [{ icon: Camera, label: 'Fotografia', value: project.photographer }]
+      : []),
   ]
 
-  const lightbox = useLightbox(project.images.length)
+  // Esclude la coverImage dalla galleria: è già mostrata come hero sopra
+  const allDimensions = project.imagesDimensions ?? []
+  const galleryImages = project.images.filter((img) => img !== project.coverImage)
+  const galleryDimensions = allDimensions.filter(
+    (_, i) => project.images[i] !== project.coverImage
+  )
+  const lightbox = useLightbox(galleryImages.length)
+
+  // Raggruppa le immagini per evitare spazi vuoti nel grid 3 colonne:
+  // - Landscape (col-span-3) → sempre riga intera
+  // - Portrait (col-span-1) → raggruppate in terzetti
+  // Quando arriva una landscape con 1-2 portrait in sospeso,
+  // la landscape va prima e le portrait restano in coda per il terzetto successivo.
+  const organizedItems = useMemo(() => {
+    const items = galleryImages.map((img, i) => ({
+      img,
+      dims: galleryDimensions[i] ?? null,
+      isLandscape: !!galleryDimensions[i] &&
+        galleryDimensions[i]!.width > galleryDimensions[i]!.height,
+      originalIndex: i, // indice originale per il lightbox
+    }))
+
+    const result: typeof items = []
+    const buffer: typeof items = []  // portrait in attesa di formare un terzetto
+
+    for (const item of items) {
+      if (item.isLandscape) {
+        // Svuota i terzetti completi prima di inserire la landscape
+        while (buffer.length >= 3) {
+          result.push(buffer.shift()!, buffer.shift()!, buffer.shift()!)
+        }
+        // Inserisci la landscape (le 1-2 portrait rimaste nel buffer seguiranno dopo)
+        result.push(item)
+      } else {
+        buffer.push(item)
+        if (buffer.length === 3) {
+          result.push(buffer.shift()!, buffer.shift()!, buffer.shift()!)
+        }
+      }
+    }
+    // Svuota le portrait rimanenti (al massimo 2, possibile gap solo a fine galleria)
+    result.push(...buffer)
+
+    return result
+  }, [galleryImages, galleryDimensions])
 
   return (
     <div className="py-12">
@@ -38,7 +86,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
           <Button variant="ghost" size="sm" asChild>
             <Link href="/proyectos">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Volver a proyectos
+              Torna ai progetti
             </Link>
           </Button>
         </motion.div>
@@ -88,7 +136,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
             className="lg:col-span-2"
           >
             <h2 className="font-serif text-2xl font-medium text-foreground">
-              Sobre el proyecto
+              Sul progetto
             </h2>
             <div className="prose prose-neutral mt-6 max-w-none">
               {project.content?.split('\n\n').map((paragraph, index) => (
@@ -116,7 +164,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
           >
             <div className="rounded-2xl bg-neutral-50 p-6">
               <h3 className="font-serif text-lg font-medium text-foreground">
-                Detalles del proyecto
+                Dettagli del progetto
               </h3>
               <dl className="mt-6 space-y-4">
                 {details.map((detail) => (
@@ -134,7 +182,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
         </div>
 
         {/* Image Gallery */}
-        {project.images.length > 1 && (
+        {galleryImages.length > 0 && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -142,21 +190,29 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
             className="mt-16"
           >
             <h2 className="font-serif text-2xl font-medium text-foreground">
-              Galería
+              Galleria
             </h2>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {project.images.map((image, index) => (
+            {/* Grid senza spazi vuoti: landscape = riga intera, portrait = terzetti */}
+            <div className="mt-6 grid items-start gap-4 lg:grid-cols-3">
+              {organizedItems.map((item) => (
                 <button
-                  key={index}
-                  onClick={() => lightbox.open(index)}
-                  className="group relative aspect-[4/3] cursor-pointer overflow-hidden rounded-xl bg-neutral-100 transition-transform hover:scale-[1.02]"
+                  key={item.originalIndex}
+                  onClick={() => lightbox.open(item.originalIndex)}
+                  className={[
+                    'group relative block w-full cursor-pointer overflow-hidden rounded-xl bg-neutral-100 transition-transform hover:scale-[1.02]',
+                    item.isLandscape ? 'lg:col-span-3' : '',
+                  ].join(' ')}
                 >
                   <Image
-                    src={image}
-                    alt={`${project.title} - Imagen ${index + 1}`}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    src={item.img}
+                    alt={`${project.title} - Immagine ${item.originalIndex + 1}`}
+                    width={0}
+                    height={0}
+                    sizes={item.isLandscape
+                      ? '100vw'
+                      : '(max-width: 1024px) 100vw, 33vw'}
+                    style={{ width: '100%', height: 'auto', display: 'block' }}
+                    className="transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/20">
                     <Expand className="h-8 w-8 text-white opacity-0 transition-opacity group-hover:opacity-100" />
@@ -181,7 +237,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
             >
               <ArrowLeft className="h-5 w-5 transition-transform group-hover:-translate-x-1" />
               <div>
-                <p className="text-sm text-neutral-500">Anterior</p>
+                <p className="text-sm text-neutral-500">Precedente</p>
                 <p className="font-medium">{prevProject.title}</p>
               </div>
             </Link>
@@ -194,7 +250,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
               className="group flex items-center gap-3 text-right text-neutral-600 transition-colors hover:text-foreground"
             >
               <div>
-                <p className="text-sm text-neutral-500">Siguiente</p>
+                <p className="text-sm text-neutral-500">Successivo</p>
                 <p className="font-medium">{nextProject.title}</p>
               </div>
               <ArrowLeft className="h-5 w-5 rotate-180 transition-transform group-hover:translate-x-1" />
@@ -205,7 +261,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
 
       {/* Lightbox */}
       <Lightbox
-        images={project.images}
+        images={galleryImages}
         currentIndex={lightbox.currentIndex}
         isOpen={lightbox.isOpen}
         onClose={lightbox.close}

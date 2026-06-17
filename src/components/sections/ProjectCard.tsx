@@ -28,7 +28,8 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           <ImageWithLoader
             src={project.coverImage}
             alt={project.title}
-            aspectRatio="portrait"
+            naturalWidth={project.coverImageWidth}
+            naturalHeight={project.coverImageHeight}
             className="transition-transform duration-500 group-hover:scale-105"
           />
 

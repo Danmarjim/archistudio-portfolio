@@ -36,7 +36,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
               : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
           )}
         >
-          Todos
+          Tutti
         </button>
         {projectCategories.map((category) => (
           <button
@@ -54,8 +54,8 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
         ))}
       </motion.div>
 
-      {/* Projects Grid */}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {/* Projects Grid — ordine riga per riga, altezza naturale per ogni card */}
+      <div className="grid items-start gap-8 md:grid-cols-2 lg:grid-cols-3">
         {filteredProjects.map((project, index) => (
           <ProjectCard key={project.slug} project={project} index={index} />
         ))}
@@ -64,7 +64,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
       {/* Empty state */}
       {filteredProjects.length === 0 && (
         <div className="py-12 text-center">
-          <p className="text-neutral-600">No hay proyectos en esta categoría.</p>
+          <p className="text-neutral-600">Nessun progetto in questa categoria.</p>
         </div>
       )}
     </>

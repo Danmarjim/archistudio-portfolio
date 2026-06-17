@@ -17,8 +17,8 @@ interface FeaturedProjectsProps {
 
 export default function FeaturedProjects({
   projects,
-  title = 'Proyectos destacados',
-  subtitle = 'Una selección de nuestros trabajos más recientes',
+  title = 'Progetti in evidenza',
+  subtitle = 'Una selezione dei nostri lavori più recenti',
   showViewAll = true,
 }: FeaturedProjectsProps) {
 
@@ -41,8 +41,8 @@ export default function FeaturedProjects({
           </p>
         </motion.div>
 
-        {/* Projects Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {/* Projects Grid — ordine riga per riga, altezza naturale per ogni card */}
+        <div className="grid items-start gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.slice(0, 3).map((project, index) => (
             <ProjectCard key={project.slug} project={project} index={index} />
           ))}
@@ -59,7 +59,7 @@ export default function FeaturedProjects({
           >
             <Button variant="outline" size="lg" asChild>
               <Link href="/proyectos">
-                Ver todos los proyectos
+                Vedi tutti i progetti
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

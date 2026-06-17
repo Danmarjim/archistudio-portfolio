@@ -1,5 +1,10 @@
 // Tipos principales del portfolio
 
+export interface ImageDimensions {
+  width: number
+  height: number
+}
+
 export interface Project {
   title: string
   slug: string
@@ -8,10 +13,14 @@ export interface Project {
   year: number
   client: string
   surface: string
-  status: 'Construido' | 'En construcción' | 'Proyecto'
+  status: string
+  photographer?: string
   featured: boolean
   coverImage: string
+  coverImageWidth?: number
+  coverImageHeight?: number
   images: string[]
+  imagesDimensions: Array<ImageDimensions | null>
   excerpt: string
   tags: string[]
   content?: string
@@ -31,7 +40,7 @@ export interface NavItem {
 }
 
 export interface SocialLink {
-  platform: 'instagram' | 'linkedin' | 'pinterest' | 'behance'
+  platform: 'instagram' | 'linkedin' | 'pinterest' | 'behance' | 'linktree'
   url: string
 }
 

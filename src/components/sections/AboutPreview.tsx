@@ -17,11 +17,10 @@ interface AboutPreviewProps {
 }
 
 export default function AboutPreview({
-  image = '/images/about/placeholder.jpg',
-  title = 'Sobre mí',
-  subtitle = 'Arquitectura con propósito',
-  description = 'Soy una arquitecta apasionada por crear espacios que mejoran la vida de las personas. Mi enfoque combina funcionalidad, estética y sostenibilidad, buscando siempre soluciones que respeten el entorno y respondan a las necesidades reales de cada cliente. Cada proyecto es una oportunidad para explorar nuevas formas de habitar.',
-  ctaText = 'Conocer más',
+  image = '/images/about/_K7A9361.jpg',
+  title = 'Chi sono',
+  subtitle = 'Architettura empatica',
+  ctaText = 'Scopri chi sono',
   ctaHref = '/sobre-mi',
 }: AboutPreviewProps) {
   return (
@@ -36,14 +35,11 @@ export default function AboutPreview({
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            {/* Decorative element - rendered first, stays behind */}
             <div className="absolute -bottom-6 -right-6 h-full w-full rounded-2xl bg-primary-100" />
-
-            {/* Image container - z-10 to stay above decorative element */}
             <div className="relative z-10 aspect-[3/4] overflow-hidden rounded-2xl bg-neutral-100">
               <Image
                 src={image}
-                alt="Foto de la arquitecta"
+                alt="Martina C.M. Pozzi"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -67,9 +63,17 @@ export default function AboutPreview({
               {subtitle}
             </h2>
 
-            <p className="mt-6 text-lg leading-relaxed text-neutral-600">
-              {description}
-            </p>
+            <div className="mt-6 space-y-4 text-lg leading-relaxed text-neutral-600">
+              <p>
+                Credo fermamente che la buona architettura migliori la qualità della vita.
+              </p>
+              <p>
+                Scegliere l&apos;architetto giusto significa trovare un buon professionista ma anche affidarsi a una persona che ti aiuterà in una fase decisionale importantissima — qualcuno che sappia ascoltarti e accompagnarti per mano nel territorio inesplorato della ristrutturazione.
+              </p>
+              <p className="font-medium text-foreground">
+                Senza fiducia, non può nascere un grande progetto.
+              </p>
+            </div>
 
             <div className="mt-8">
               <Button variant="outline" size="lg" asChild>

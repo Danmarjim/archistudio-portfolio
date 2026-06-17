@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
 import { Button } from '@/components/ui'
@@ -14,9 +15,9 @@ interface HeroProps {
 }
 
 export default function Hero({
-  title = 'Arquitectura con alma',
-  subtitle = 'Diseñamos espacios que inspiran, transforman y perduran. Cada proyecto es una historia única de luz, forma y función.',
-  ctaText = 'Ver proyectos',
+  title = 'Diamo forma e colore ai tuoi sogni',
+  subtitle = 'Dalla ristrutturazione integrale al semplice restyling,\nl\'obiettivo è ottimizzare i vostri spazi per farvi vivere al meglio.\nOgni progetto è una storia unica di luce, forma e funzione che dura nel tempo.',
+  ctaText = 'Vedi i progetti',
   ctaHref = '/proyectos',
 }: HeroProps) {
   const scrollToContent = () => {
@@ -37,48 +38,74 @@ export default function Hero({
 
       <Container className="relative z-10">
         <div className="mx-auto max-w-4xl text-center">
+          {/* Portrait */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mb-8 flex justify-center"
+          >
+            <div className="relative h-44 w-44 overflow-hidden rounded-full ring-2 ring-primary-300 ring-offset-4 ring-offset-background">
+              <Image
+                src="/images/about/placeholder.jpg"
+                alt="Martina Pozzi"
+                fill
+                className="object-cover"
+                sizes="176px"
+                priority
+              />
+            </div>
+          </motion.div>
+
           {/* Overline */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="mb-6 text-sm font-medium uppercase tracking-widest text-primary-600"
           >
-            Estudio de Arquitectura
+            Studio di Architettura ed Interior Design
           </motion.p>
 
           {/* Title */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="font-serif text-5xl font-medium leading-tight tracking-tight text-foreground md:text-6xl lg:text-7xl"
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="font-serif text-2xl font-medium leading-tight tracking-tight text-foreground whitespace-nowrap sm:text-3xl lg:text-4xl xl:text-5xl"
           >
             {title}
           </motion.h1>
 
           {/* Subtitle */}
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="mx-auto mt-6 max-w-2xl text-lg text-neutral-600 md:text-xl"
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="mx-auto mt-6 max-w-3xl text-lg text-neutral-600 md:text-xl"
           >
-            {subtitle}
-          </motion.p>
+            {subtitle.split('\n').map((line, i) => (
+              <p key={i} className={i > 0 ? 'mt-2' : ''}>
+                {line}
+              </p>
+            ))}
+          </motion.div>
 
           {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
           >
             <Button asChild size="lg">
               <Link href={ctaHref}>{ctaText}</Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <Link href="/contacto">Contactar</Link>
+              <Link href="/contacto">Contattaci</Link>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <Link href="/servicios">Servizi</Link>
             </Button>
           </motion.div>
         </div>
@@ -91,7 +118,7 @@ export default function Hero({
         transition={{ duration: 0.5, delay: 0.8 }}
         onClick={scrollToContent}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-neutral-400 transition-colors hover:text-foreground"
-        aria-label="Scroll hacia abajo"
+        aria-label="Scorri verso il basso"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}

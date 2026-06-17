@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowRight, Home, Hammer, Sofa } from 'lucide-react'
+import { ArrowRight, Home, Video, Key, Paintbrush } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import { services } from '@/lib/constants'
@@ -10,8 +10,9 @@ import type { Service } from '@/types'
 
 const iconMap: Record<string, React.ElementType> = {
   home: Home,
-  hammer: Hammer,
-  sofa: Sofa,
+  video: Video,
+  key: Key,
+  paintbrush: Paintbrush,
 }
 
 interface ServiceCardProps {
@@ -68,8 +69,8 @@ interface ServicesPreviewProps {
 }
 
 export default function ServicesPreview({
-  title = 'Servicios',
-  subtitle = 'Soluciones integrales de arquitectura adaptadas a cada proyecto',
+  title = 'Servizi',
+  subtitle = 'Soluzioni complete di architettura e design su misura per ogni progetto',
   showCta = true,
 }: ServicesPreviewProps) {
   return (
@@ -109,7 +110,7 @@ export default function ServicesPreview({
           >
             <Button variant="outline" size="lg" asChild>
               <Link href="/servicios">
-                Ver todos los servicios
+                Vedi tutti i servizi
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
