@@ -55,6 +55,22 @@ export interface SiteConfig {
   social: SocialLink[]
 }
 
+export type NewsCategory = 'pubblicazioni' | 'riflessioni' | 'annunci' | 'interviste'
+
+export interface NewsPost {
+  title: string
+  slug: string
+  date: string
+  category: NewsCategory
+  coverImage: string
+  excerpt: string
+  source?: string        // nome rivista/media (solo per pubblicazioni)
+  sourceUrl?: string     // link all'articolo originale
+  imagePosition?: string // es. "center 20%" per centrare il soggetto nel crop 16:9
+  images?: string[]      // galleria aggiuntiva (es. pagine scansionate della rivista)
+  content?: string
+}
+
 export interface ContactForm {
   name: string
   email: string

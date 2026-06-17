@@ -20,6 +20,7 @@ export const navigation: NavItem[] = [
   { label: 'projects', href: '/proyectos' },
   { label: 'about', href: '/sobre-mi' },
   { label: 'services', href: '/servicios' },
+  { label: 'news', href: '/news' },
   { label: 'contact', href: '/contacto' },
 ]
 

@@ -7,6 +7,7 @@
     "projects": "Projects",
     "about": "About",
     "services": "Services",
+    "news": "News",
     "contact": "Contact",
     "skipToContent": "Skip to main content"
   },
@@ -223,6 +224,22 @@
       "description": "Sorry, the page you are looking for does not exist.",
       "backHome": "Back to home"
     }
+  },
+  "NewsPage": {
+    "title": "News",
+    "description": "Publications, reflections, announcements and interviews.",
+    "filterAll": "All",
+    "filterPubblicazioni": "Publications",
+    "filterRiflessioni": "Reflections",
+    "filterAnnunci": "Announcements",
+    "filterInterviste": "Interviews",
+    "emptyState": "No content in this category.",
+    "readMore": "Read more",
+    "backToNews": "Back to news",
+    "source": "Source",
+    "readOriginal": "Read original article",
+    "previous": "Previous",
+    "next": "Next"
   },
   "LanguageSwitcher": {
     "label": "Language",

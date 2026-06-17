@@ -7,6 +7,7 @@
     "projects": "Progetti",
     "about": "Chi sono",
     "services": "Servizi",
+    "news": "News",
     "contact": "Contatto",
     "skipToContent": "Vai al contenuto principale"
   },
@@ -223,6 +224,22 @@
       "description": "Ci dispiace, la pagina che cerchi non esiste.",
       "backHome": "Torna alla home"
     }
+  },
+  "NewsPage": {
+    "title": "News",
+    "description": "Pubblicazioni, riflessioni, annunci e interviste.",
+    "filterAll": "Tutte",
+    "filterPubblicazioni": "Pubblicazioni",
+    "filterRiflessioni": "Riflessioni",
+    "filterAnnunci": "Annunci",
+    "filterInterviste": "Interviste",
+    "emptyState": "Nessun contenuto in questa categoria.",
+    "readMore": "Leggi di più",
+    "backToNews": "Torna alle news",
+    "source": "Fonte",
+    "readOriginal": "Leggi l'articolo originale",
+    "previous": "Precedente",
+    "next": "Successivo"
   },
   "LanguageSwitcher": {
     "label": "Lingua",

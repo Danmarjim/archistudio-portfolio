@@ -14,7 +14,7 @@ export default function Logo({ className }: LogoProps) {
     >
       <div className="relative h-10 w-40">
         <Image
-          src="/images/about/MP_ARCHISTUDIO LOGO S.jpg"
+          src="/images/about/MP_ARCHISTUDIO LOGO S.png"
           alt="MP_archistudio"
           fill
           className="object-contain object-left mix-blend-multiply"
