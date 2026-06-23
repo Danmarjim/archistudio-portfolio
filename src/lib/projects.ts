@@ -111,18 +111,17 @@ export function getAllProjects(locale: string = 'es'): Project[] {
 
     const { dims: coverDims } = analyzeImage(data.coverImage)
 
-    // 1. Rimuove path duplicati (stesso path scritto due volte nell'MDX)
-    // 2. Ordina per nome file (ordine numerico)
-    const sortedImages: string[] = [...new Set<string>(data.images ?? [])]
-      .sort((a: string, b: string) =>
-        path.basename(a).localeCompare(path.basename(b), undefined, {
-          numeric: true,
-          sensitivity: 'base',
-        })
-      )
+    // Legge le immagini direttamente dalla cartella (ordine alfabetico = ordine scelto dall'utente via rinominamento)
+    const projectsImagesDir = path.join(process.cwd(), 'public/images/projects')
+    const folderImages: string[] = fs.existsSync(projectsImagesDir)
+      ? fs.readdirSync(projectsImagesDir)
+          .filter((f) => f.startsWith(slug + '-') && /\.(jpg|jpeg|png|webp)$/i.test(f))
+          .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }))
+          .map((f) => `/images/projects/${f}`)
+      : []
 
-    // 3. Analizza ogni immagine (dimensioni + hash) in un'unica lettura per file
-    const analyses = sortedImages.map((img: string) => ({ img, ...analyzeImage(img) }))
+    // Analizza ogni immagine (dimensioni + hash) in un'unica lettura per file
+    const analyses = folderImages.map((img: string) => ({ img, ...analyzeImage(img) }))
 
     // 4. Deduplicazione per contenuto: elimina file con hash identico (stesso JPEG, nome diverso)
     const seenHashes = new Set<string>()

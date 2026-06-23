@@ -75,6 +75,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Infinite marquee animation */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
 /* Selection color */
 ::selection {
   background-color: var(--primary-200);

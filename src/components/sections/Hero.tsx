@@ -28,7 +28,7 @@ export default function Hero({
   }
 
   return (
-    <section className="relative flex min-h-[calc(100vh-5rem)] items-center justify-center overflow-hidden">
+    <section className="relative flex overflow-hidden pt-16 pb-10 justify-center">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary-50/50 via-background to-background" />
 
@@ -77,20 +77,6 @@ export default function Hero({
             {title}
           </motion.h1>
 
-          {/* Subtitle */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="mx-auto mt-6 max-w-3xl text-lg text-neutral-600 md:text-xl"
-          >
-            {subtitle.split('\n').map((line, i) => (
-              <p key={i} className={i > 0 ? 'mt-2' : ''}>
-                {line}
-              </p>
-            ))}
-          </motion.div>
-
           {/* CTA Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -111,22 +97,6 @@ export default function Hero({
         </div>
       </Container>
 
-      {/* Scroll indicator */}
-      <motion.button
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.8 }}
-        onClick={scrollToContent}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-neutral-400 transition-colors hover:text-foreground"
-        aria-label="Scorri verso il basso"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
-        >
-          <ArrowDown className="h-6 w-6" />
-        </motion.div>
-      </motion.button>
     </section>
   )
 }

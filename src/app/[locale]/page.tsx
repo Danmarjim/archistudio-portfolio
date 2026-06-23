@@ -1,37 +1,29 @@
+import fs from 'fs'
+import path from 'path'
 import {
   Hero,
-  FeaturedProjects,
-  ProjectsCarousel,
+  ProjectsStrip,
   AboutPreview,
   ServicesPreview,
   CallToAction,
 } from '@/components/sections'
-import { getFeaturedProjects } from '@/lib/projects'
 
 interface HomeProps {
   params: Promise<{ locale: string }>
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-// Variante por defecto: 'carousel' | 'grid'
-const DEFAULT_VARIANT = 'grid'
-
-export default async function Home({ params, searchParams }: HomeProps) {
-  const { locale } = await params
-  const { variant } = await searchParams
-  const featuredProjects = getFeaturedProjects(locale)
-
-  // ?variant=grid o ?variant=carousel para alternar
-  const projectsVariant = (variant as string) || DEFAULT_VARIANT
+export default async function Home({ params: _params, searchParams: _searchParams }: HomeProps) {
+  const projectsDir = path.join(process.cwd(), 'public/images/projects')
+  const allImages = fs.readdirSync(projectsDir)
+    .filter((f) => /\.(jpg|jpeg|png|webp)$/i.test(f))
+    .map((f) => `/images/projects/${f}`)
+    .sort(() => Math.random() - 0.5)
 
   return (
     <>
       <Hero />
-      {projectsVariant === 'carousel' ? (
-        <ProjectsCarousel projects={featuredProjects} />
-      ) : (
-        <FeaturedProjects projects={featuredProjects} />
-      )}
+      <ProjectsStrip images={allImages} />
       <AboutPreview />
       <ServicesPreview />
       <CallToAction />
