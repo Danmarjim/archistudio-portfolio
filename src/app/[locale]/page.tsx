@@ -6,6 +6,7 @@ import {
   AboutPreview,
   ServicesPreview,
   CallToAction,
+  NavBand,
 } from '@/components/sections'
 
 interface HomeProps {
@@ -27,6 +28,8 @@ export default async function Home({ params: _params, searchParams: _searchParam
       <AboutPreview />
       <ServicesPreview />
       <CallToAction />
+      <div className="bg-background py-1" />
+      <NavBand />
     </>
   )
 }
