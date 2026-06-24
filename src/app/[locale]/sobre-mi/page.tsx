@@ -74,7 +74,7 @@ export default function SobreMiPage() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="relative order-2 lg:order-1"
+              className="relative order-2 lg:order-1 pr-6 sm:pr-0"
             >
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-neutral-100">
                 <Image
