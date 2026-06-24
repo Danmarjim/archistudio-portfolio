@@ -18,6 +18,30 @@ const LinktreeIcon = () => (
   </svg>
 )
 
+const ArchiloversIcon = () => (
+  <svg className="h-5 w-5" viewBox="0 0 100 110" aria-hidden="true">
+    {/* Speech bubble arrotondata */}
+    <path
+      d="M18,0 H82 Q100,0 100,18 V75 Q100,92 82,92 H42 L18,110 L23,92 H18 Q0,92 0,75 V18 Q0,0 18,0 Z"
+      fill="currentColor"
+    />
+    {/* Lettera "a" in bianco */}
+    <text x="50" y="72" textAnchor="middle" fontSize="62" fontWeight="bold" fontFamily="Arial, sans-serif" fill="white">a</text>
+  </svg>
+)
+
+const HomifyIcon = () => (
+  <svg className="h-5 w-5" viewBox="0 0 100 110" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    {/* Contorno esterno: picco → lato destro → angolo arrotondato → diagonale verso basso-sinistra → lato sinistro → picco */}
+    <path d="M50,6 L94,43 L94,88 Q94,98 84,98 L16,98 L50,6" />
+    {/* Triangolo interno del tetto */}
+    <path d="M50,22 L82,44 L18,44 Z" />
+    {/* X nel corpo */}
+    <line x1="20" y1="56" x2="80" y2="96" />
+    <line x1="80" y1="56" x2="20" y2="96" />
+  </svg>
+)
+
 const HouzzIcon = () => (
   <svg className="h-5 w-5" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
     {/* Forma "h" stile Houzz: colonna sinistra alta + tetto diagonale + porta centrale */}
@@ -87,6 +111,24 @@ export default function Footer() {
                 aria-label="Houzz"
               >
                 <HouzzIcon />
+              </a>
+              <a
+                href="https://www.archilovers.com/mparchistudio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-500 transition-colors hover:text-foreground"
+                aria-label="Archilovers"
+              >
+                <ArchiloversIcon />
+              </a>
+              <a
+                href="https://www.homify.it/esperti/10014002/mp_archistudio-di-arch-martina-c-m-pozzi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-500 transition-colors hover:text-foreground"
+                aria-label="Homify"
+              >
+                <HomifyIcon />
               </a>
             </div>
           </div>

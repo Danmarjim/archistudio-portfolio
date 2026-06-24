@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Container from '@/components/ui/Container'
 import ProjectsGrid from '@/components/sections/ProjectsGrid'
+import NavBand from '@/components/sections/NavBand'
 import { getAllProjects } from '@/lib/projects'
 
 export const metadata: Metadata = {
@@ -28,6 +29,8 @@ export default async function ProyectosPage({ params }: ProyectosPageProps) {
 
         <ProjectsGrid projects={projects} />
       </Container>
+      <div className="bg-background py-1" />
+      <NavBand />
     </div>
   )
 }

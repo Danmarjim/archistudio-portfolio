@@ -14,7 +14,7 @@ const categories: { value: NewsCategory | null; label: string }[] = [
   { value: null, label: 'Tutte' },
   { value: 'pubblicazioni', label: 'Pubblicazioni' },
   { value: 'riflessioni', label: 'Riflessioni' },
-  { value: 'annunci', label: 'Annunci' },
+  { value: 'annunci', label: 'Notizie' },
   { value: 'interviste', label: 'Interviste' },
 ]
 

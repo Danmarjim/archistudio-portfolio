@@ -22,7 +22,7 @@ const categoryColors: Record<string, string> = {
 const categoryLabels: Record<string, string> = {
   pubblicazioni: 'Pubblicazioni',
   riflessioni: 'Riflessioni',
-  annunci: 'Annunci',
+  annunci: 'Notizie',
   interviste: 'Interviste',
 }
 
@@ -44,7 +44,7 @@ export default function NewsCard({ post, index = 0 }: NewsCardProps) {
         className="group flex flex-col overflow-hidden rounded-2xl bg-white h-full"
       >
         {/* Image */}
-        <div className="relative aspect-[16/9] overflow-hidden bg-neutral-100">
+        <div className={`relative overflow-hidden bg-neutral-100 ${post.imageAspect === 'portrait' ? 'aspect-[3/4]' : 'aspect-[16/9]'}`}>
           {post.coverImage ? (
             <Image
               src={post.coverImage}

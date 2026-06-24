@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Sun, Palette, Maximize2, Heart, BookOpen, Briefcase } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
+import NavBand from '@/components/sections/NavBand'
 
 const values = [
   {
@@ -273,7 +274,7 @@ export default function SobreMiPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24">
+      <section className="pt-24 pb-4">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -307,6 +308,8 @@ export default function SobreMiPage() {
           </motion.div>
         </Container>
       </section>
+      <div className="bg-background py-1" />
+      <NavBand />
     </>
   )
 }

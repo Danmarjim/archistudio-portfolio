@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Container from '@/components/ui/Container'
 import NewsGrid from '@/components/sections/NewsGrid'
+import NavBand from '@/components/sections/NavBand'
 import { getAllNews } from '@/lib/news'
 
 export const metadata: Metadata = {
@@ -31,6 +32,8 @@ export default async function NewsPage({ params }: NewsPageProps) {
 
         <NewsGrid posts={posts} />
       </Container>
+      <div className="bg-background py-1" />
+      <NavBand />
     </div>
   )
 }

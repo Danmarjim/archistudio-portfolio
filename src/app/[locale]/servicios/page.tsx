@@ -8,6 +8,7 @@ import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import { services } from '@/lib/constants'
 import type { Service } from '@/types'
+import NavBand from '@/components/sections/NavBand'
 
 const serviceImages: Record<string, string> = {
   archiadvice: '/images/services/archiadvice.jpg',
@@ -424,7 +425,7 @@ export default function ServiciosPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24">
+      <section className="pt-24 pb-4">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -464,6 +465,8 @@ export default function ServiciosPage() {
           </motion.div>
         </Container>
       </section>
+      <div className="bg-background py-1" />
+      <NavBand />
     </>
   )
 }

@@ -66,8 +66,9 @@ export interface NewsPost {
   excerpt: string
   source?: string        // nome rivista/media (solo per pubblicazioni)
   sourceUrl?: string     // link all'articolo originale
-  imagePosition?: string // es. "center 20%" per centrare il soggetto nel crop 16:9
-  images?: string[]      // galleria aggiuntiva (es. pagine scansionate della rivista)
+  imagePosition?: string  // es. "center 20%" per centrare il soggetto nel crop 16:9
+  imageAspect?: string    // es. "portrait" per mostrare la cover in formato verticale
+  images?: string[]       // galleria aggiuntiva (es. pagine scansionate della rivista)
   content?: string
 }
 
