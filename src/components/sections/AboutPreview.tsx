@@ -6,23 +6,18 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
+import { useTranslations } from 'next-intl'
 
 interface AboutPreviewProps {
   image?: string
-  title?: string
-  subtitle?: string
-  description?: string
-  ctaText?: string
   ctaHref?: string
 }
 
 export default function AboutPreview({
   image = '/images/about/_K7A9361.jpg',
-  title = 'Chi sono',
-  subtitle = 'Architettura empatica',
-  ctaText = 'Scopri chi sono',
   ctaHref = '/sobre-mi',
 }: AboutPreviewProps) {
+  const t = useTranslations('AboutPreview')
   return (
     <section className="bg-neutral-50 py-24">
       <Container>
@@ -56,29 +51,21 @@ export default function AboutPreview({
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary-600">
-              {title}
+              {t('overline')}
             </p>
 
             <h2 className="font-serif text-4xl font-medium text-foreground md:text-5xl">
-              {subtitle}
+              {t('title')}
             </h2>
 
             <div className="mt-6 space-y-4 text-lg leading-relaxed text-neutral-600">
-              <p>
-                Credo fermamente che la buona architettura migliori la qualità della vita.
-              </p>
-              <p>
-                Scegliere l&apos;architetto giusto significa trovare un buon professionista ma anche affidarsi a una persona che ti aiuterà in una fase decisionale importantissima — qualcuno che sappia ascoltarti e accompagnarti per mano nel territorio inesplorato della ristrutturazione.
-              </p>
-              <p className="font-medium text-foreground">
-                Senza fiducia, non può nascere un grande progetto.
-              </p>
+              <p>{t('description')}</p>
             </div>
 
             <div className="mt-8">
               <Button variant="outline" size="lg" asChild>
                 <Link href={ctaHref}>
-                  {ctaText}
+                  {t('cta')}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>

@@ -14,6 +14,7 @@ interface ProjectsGridProps {
 
 export default function ProjectsGrid({ projects }: ProjectsGridProps) {
   const t = useTranslations('ProjectsPage')
+  const tCat = useTranslations('ProjectCategories')
   const [activeFilter, setActiveFilter] = useState<string | null>(null)
 
   const filteredProjects = activeFilter
@@ -51,7 +52,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
                 : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
             )}
           >
-            {category}
+            {tCat(category as Parameters<typeof tCat>[0], { defaultValue: category })}
           </button>
         ))}
       </motion.div>

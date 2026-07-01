@@ -12,7 +12,7 @@
     "skipToContent": "Skip to main content"
   },
   "Footer": {
-    "description": "Diamo forma e colore ai tuoi sogni.",
+    "description": "We give shape and colour to your dreams.",
     "navigation": "Navigation",
     "contact": "Contact",
     "rights": "All rights reserved."
@@ -214,6 +214,18 @@
     "interiorDesign": "Interior design",
     "commercial": "Commercial",
     "residential": "Residential building"
+  },
+  "ProjectCategories": {
+    "Ristrutturazione integrale": "Complete renovation",
+    "Bagni": "Bathrooms",
+    "Cucine": "Kitchens",
+    "Restyling": "Restyling",
+    "Commerciale": "Commercial"
+  },
+  "ProjectStatus": {
+    "Realizzato": "Completed",
+    "In corso": "In progress",
+    "Privato": "Private"
   },
   "Common": {
     "learnMore": "Learn more",

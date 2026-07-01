@@ -10,8 +10,17 @@ import { LanguageSwitcher } from '@/components/shared'
 import { navigation, services } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 
+const serviceSlugToKey: Record<string, string> = {
+  'archiadvice': 'archiadvice',
+  'consulenza-acquisto': 'consulenzaAcquisto',
+  'restyling': 'restyling',
+  'progettazione-architettonica': 'progettazione',
+}
+
 export default function Header() {
   const t = useTranslations('Navigation')
+  const tServices = useTranslations('ServicesData')
+  const tPage = useTranslations('ServiciosPage')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
@@ -76,7 +85,7 @@ export default function Header() {
                                 <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary-600 text-[10px] font-semibold text-white">
                                   {i + 1}
                                 </span>
-                                {service.title}
+                                {tServices(`${serviceSlugToKey[service.slug] ?? service.slug}.title` as Parameters<typeof tServices>[0])}
                               </Link>
                             </li>
                           ))}
@@ -89,7 +98,7 @@ export default function Header() {
                               <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary-100 text-[10px] font-semibold text-primary-600">
                                 →
                               </span>
-                              Come lavoriamo
+                              {tPage('howWeWorkTitle')}
                             </Link>
                           </li>
                         </ul>
@@ -172,7 +181,7 @@ export default function Header() {
                               <span className="flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full bg-primary-600 text-[9px] font-semibold text-white">
                                 {i + 1}
                               </span>
-                              {service.title}
+                              {tServices(`${serviceSlugToKey[service.slug] ?? service.slug}.title` as Parameters<typeof tServices>[0])}
                             </Link>
                           </li>
                         ))}

@@ -12,7 +12,7 @@
     "skipToContent": "Saltar al contenido principal"
   },
   "Footer": {
-    "description": "Diamo forma e colore ai tuoi sogni.",
+    "description": "Damos forma y color a tus sueños.",
     "navigation": "Navegación",
     "contact": "Contacto",
     "rights": "Todos los derechos reservados."
@@ -214,6 +214,18 @@
     "interiorDesign": "Interiorismo",
     "commercial": "Comercial",
     "residential": "Edificio residencial"
+  },
+  "ProjectCategories": {
+    "Ristrutturazione integrale": "Reforma integral",
+    "Bagni": "Baños",
+    "Cucine": "Cocinas",
+    "Restyling": "Restyling",
+    "Commerciale": "Comercial"
+  },
+  "ProjectStatus": {
+    "Realizzato": "Realizado",
+    "In corso": "En curso",
+    "Privato": "Privado"
   },
   "Common": {
     "learnMore": "Saber más",

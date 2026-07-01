@@ -6,6 +6,7 @@ import Container from '@/components/ui/Container'
 import { getNewsBySlug, getAllNewsSlugs, getAdjacentNews } from '@/lib/news'
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import NewsGallery from '@/components/sections/NewsGallery'
+import { getTranslations } from 'next-intl/server'
 
 interface NewsDetailPageProps {
   params: Promise<{ locale: string; slug: string }>
@@ -26,11 +27,11 @@ export async function generateMetadata({ params }: NewsDetailPageProps): Promise
   }
 }
 
-const categoryLabels: Record<string, string> = {
-  pubblicazioni: 'Pubblicazioni',
-  riflessioni: 'Riflessioni',
-  annunci: 'Annunci',
-  interviste: 'Interviste',
+const categoryToKey: Record<string, string> = {
+  pubblicazioni: 'filterPubblicazioni',
+  riflessioni: 'filterRiflessioni',
+  annunci: 'filterAnnunci',
+  interviste: 'filterInterviste',
 }
 
 const categoryColors: Record<string, string> = {
@@ -40,8 +41,9 @@ const categoryColors: Record<string, string> = {
   interviste: 'bg-violet-50 text-violet-700 border-violet-200',
 }
 
-function formatDate(dateStr: string): string {
-  return new Date(dateStr).toLocaleDateString('it-IT', {
+function formatDate(dateStr: string, locale: string): string {
+  const localeStr = locale === 'es' ? 'es-ES' : locale === 'en' ? 'en-GB' : 'it-IT'
+  return new Date(dateStr).toLocaleDateString(localeStr, {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
@@ -53,6 +55,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   const post = getNewsBySlug(slug, locale)
   if (!post) notFound()
 
+  const t = await getTranslations({ locale, namespace: 'NewsPage' })
   const { prev, next } = getAdjacentNews(slug, locale)
 
   return (
@@ -64,7 +67,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
           className="mb-10 inline-flex items-center gap-2 text-sm text-neutral-500 transition-colors hover:text-foreground"
         >
           <ArrowLeft className="h-4 w-4" />
-          Torna alle news
+          {t('backToNews')}
         </Link>
 
         {/* Header */}
@@ -73,9 +76,9 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
             <span
               className={`inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium ${categoryColors[post.category] ?? ''}`}
             >
-              {categoryLabels[post.category] ?? post.category}
+              {categoryToKey[post.category] ? t(categoryToKey[post.category] as Parameters<typeof t>[0]) : post.category}
             </span>
-            <span className="text-sm text-neutral-400">{formatDate(post.date)}</span>
+            <span className="text-sm text-neutral-400">{formatDate(post.date, locale)}</span>
             {post.source && (
               <span className="text-sm font-medium text-primary-600">{post.source}</span>
             )}
@@ -95,7 +98,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
               rel="noopener noreferrer"
               className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:underline"
             >
-              Leggi l&apos;articolo originale
+              {t('readOriginal')}
               <ExternalLink className="h-4 w-4" />
             </a>
           )}
@@ -143,7 +146,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
               >
                 <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-neutral-400">Precedente</div>
+                  <div className="text-xs uppercase tracking-wider text-neutral-400">{t('previous')}</div>
                   <div className="font-medium text-foreground line-clamp-1">{prev.title}</div>
                 </div>
               </Link>
@@ -155,7 +158,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
                 className="group flex items-center gap-3 text-right text-sm text-neutral-500 transition-colors hover:text-foreground"
               >
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-neutral-400">Successivo</div>
+                  <div className="text-xs uppercase tracking-wider text-neutral-400">{t('next')}</div>
                   <div className="font-medium text-foreground line-clamp-1">{next.title}</div>
                 </div>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

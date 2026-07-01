@@ -72,9 +72,9 @@ function analyzeImage(imagePath: string): {
 
 /**
  * Obtiene el directorio de proyectos para un locale
- * Fallback a 'es' si el locale no existe o esta vacio
+ * Fallback a 'it' si el locale no existe o esta vacio
  */
-function getProjectsDir(locale: string = 'es'): string {
+function getProjectsDir(locale: string = 'it'): string {
   const localeDir = path.join(projectsDirectory, locale)
 
   // Check if directory exists and has MDX files
@@ -86,14 +86,14 @@ function getProjectsDir(locale: string = 'es'): string {
     }
   }
 
-  // Fallback a español si no existe el idioma o esta vacio
-  return path.join(projectsDirectory, 'es')
+  // Fallback a italiano se non esiste la cartella locale
+  return path.join(projectsDirectory, 'it')
 }
 
 /**
  * Lee todos los proyectos desde archivos MDX
  */
-export function getAllProjects(locale: string = 'es'): Project[] {
+export function getAllProjects(locale: string = 'it'): Project[] {
   const dir = getProjectsDir(locale)
 
   if (!fs.existsSync(dir)) {
@@ -179,14 +179,14 @@ export function getAllProjects(locale: string = 'es'): Project[] {
 /**
  * Obtiene los proyectos destacados
  */
-export function getFeaturedProjects(locale: string = 'es'): Project[] {
+export function getFeaturedProjects(locale: string = 'it'): Project[] {
   return getAllProjects(locale).filter((project) => project.featured)
 }
 
 /**
  * Obtiene un proyecto por su slug
  */
-export function getProjectBySlug(slug: string, locale: string = 'es'): Project | undefined {
+export function getProjectBySlug(slug: string, locale: string = 'it'): Project | undefined {
   const projects = getAllProjects(locale)
   return projects.find((project) => project.slug === slug)
 }
@@ -202,7 +202,7 @@ export function getAllProjectSlugs(): string[] {
 /**
  * Obtiene proyecto anterior y siguiente para navegación
  */
-export function getAdjacentProjects(slug: string, locale: string = 'es'): {
+export function getAdjacentProjects(slug: string, locale: string = 'it'): {
   prev: Project | null
   next: Project | null
 } {

@@ -7,6 +7,7 @@ import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import { services } from '@/lib/constants'
 import type { Service } from '@/types'
+import { useTranslations } from 'next-intl'
 
 const iconMap: Record<string, React.ElementType> = {
   home: Home,
@@ -63,16 +64,13 @@ function ServiceCard({ service, index }: ServiceCardProps) {
 }
 
 interface ServicesPreviewProps {
-  title?: string
-  subtitle?: string
   showCta?: boolean
 }
 
 export default function ServicesPreview({
-  title = 'Servizi',
-  subtitle = 'Soluzioni complete di architettura e design su misura per ogni progetto',
   showCta = true,
 }: ServicesPreviewProps) {
+  const t = useTranslations('ServicesPreview')
   return (
     <section className="py-24">
       <Container>
@@ -85,10 +83,10 @@ export default function ServicesPreview({
           className="mb-16 text-center"
         >
           <h2 className="font-serif text-4xl font-medium text-foreground md:text-5xl">
-            {title}
+            {t('title')}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-neutral-600">
-            {subtitle}
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -110,7 +108,7 @@ export default function ServicesPreview({
           >
             <Button variant="outline" size="lg" asChild>
               <Link href="/servicios">
-                Vedi tutti i servizi
+                {t('cta')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

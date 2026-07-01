@@ -5,21 +5,23 @@ import { motion } from 'framer-motion'
 import NewsCard from '@/components/sections/NewsCard'
 import { cn } from '@/lib/utils'
 import type { NewsPost, NewsCategory } from '@/types'
+import { useTranslations } from 'next-intl'
 
 interface NewsGridProps {
   posts: NewsPost[]
 }
 
-const categories: { value: NewsCategory | null; label: string }[] = [
-  { value: null, label: 'Tutte' },
-  { value: 'pubblicazioni', label: 'Pubblicazioni' },
-  { value: 'riflessioni', label: 'Riflessioni' },
-  { value: 'annunci', label: 'Notizie' },
-  { value: 'interviste', label: 'Interviste' },
-]
-
 export default function NewsGrid({ posts }: NewsGridProps) {
+  const t = useTranslations('NewsPage')
   const [activeFilter, setActiveFilter] = useState<NewsCategory | null>(null)
+
+  const categories: { value: NewsCategory | null; label: string }[] = [
+    { value: null, label: t('filterAll') },
+    { value: 'pubblicazioni', label: t('filterPubblicazioni') },
+    { value: 'riflessioni', label: t('filterRiflessioni') },
+    { value: 'annunci', label: t('filterAnnunci') },
+    { value: 'interviste', label: t('filterInterviste') },
+  ]
 
   const filtered = activeFilter
     ? posts.filter((p) => p.category === activeFilter)
@@ -60,7 +62,7 @@ export default function NewsGrid({ posts }: NewsGridProps) {
       {/* Empty state */}
       {filtered.length === 0 && (
         <div className="py-12 text-center">
-          <p className="text-neutral-600">Nessun contenuto in questa categoria.</p>
+          <p className="text-neutral-600">{t('emptyState')}</p>
         </div>
       )}
     </>

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import { ImageWithLoader, Badge } from '@/components/ui'
 import type { Project } from '@/types'
+import { useTranslations } from 'next-intl'
 
 interface ProjectCardProps {
   project: Project
@@ -12,6 +13,7 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
+  const tCat = useTranslations('ProjectCategories')
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
@@ -44,7 +46,7 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
         {/* Content */}
         <div className="p-5">
           <div className="mb-2 flex items-center gap-2">
-            <Badge variant="outline">{project.category}</Badge>
+            <Badge variant="outline">{tCat(project.category as Parameters<typeof tCat>[0], { defaultValue: project.category })}</Badge>
             <span className="text-sm text-neutral-400">{project.year}</span>
           </div>
 

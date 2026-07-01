@@ -215,6 +215,18 @@
     "commercial": "Commerciale",
     "residential": "Edificio residenziale"
   },
+  "ProjectCategories": {
+    "Ristrutturazione integrale": "Ristrutturazione integrale",
+    "Bagni": "Bagni",
+    "Cucine": "Cucine",
+    "Restyling": "Restyling",
+    "Commerciale": "Commerciale"
+  },
+  "ProjectStatus": {
+    "Realizzato": "Realizzato",
+    "In corso": "In corso",
+    "Privato": "Privato"
+  },
   "Common": {
     "learnMore": "Scopri di più",
     "viewProject": "Vedi progetto",

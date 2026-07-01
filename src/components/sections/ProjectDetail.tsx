@@ -19,13 +19,14 @@ interface ProjectDetailProps {
 
 export default function ProjectDetail({ project, prevProject, nextProject }: ProjectDetailProps) {
   const t = useTranslations('ProjectDetail')
+  const tStatus = useTranslations('ProjectStatus')
 
   const details = [
     { icon: MapPin, label: t('location'), value: project.location },
     { icon: Calendar, label: t('year'), value: project.year.toString() },
     { icon: Ruler, label: t('surface'), value: project.surface },
-    { icon: User, label: t('client'), value: project.client },
-    { icon: CheckCircle, label: t('status'), value: project.status },
+    { icon: User, label: t('client'), value: tStatus(project.client as Parameters<typeof tStatus>[0], { defaultValue: project.client }) },
+    { icon: CheckCircle, label: t('status'), value: tStatus(project.status as Parameters<typeof tStatus>[0], { defaultValue: project.status }) },
     ...(project.photographer
       ? [{ icon: Camera, label: t('photographer'), value: project.photographer }]
       : []),

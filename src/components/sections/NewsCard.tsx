@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import { Badge } from '@/components/ui'
 import type { NewsPost } from '@/types'
+import { useTranslations, useLocale } from 'next-intl'
 
 interface NewsCardProps {
   post: NewsPost
@@ -19,19 +20,20 @@ const categoryColors: Record<string, string> = {
   interviste: 'bg-violet-50 text-violet-700 border-violet-200',
 }
 
-const categoryLabels: Record<string, string> = {
-  pubblicazioni: 'Pubblicazioni',
-  riflessioni: 'Riflessioni',
-  annunci: 'Notizie',
-  interviste: 'Interviste',
-}
-
-function formatDate(dateStr: string): string {
-  const date = new Date(dateStr)
-  return date.toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' })
+const categoryToKey: Record<string, string> = {
+  pubblicazioni: 'filterPubblicazioni',
+  riflessioni: 'filterRiflessioni',
+  annunci: 'filterAnnunci',
+  interviste: 'filterInterviste',
 }
 
 export default function NewsCard({ post, index = 0 }: NewsCardProps) {
+  const t = useTranslations('NewsPage')
+  const locale = useLocale()
+  const formatDate = (dateStr: string) =>
+    new Date(dateStr).toLocaleDateString(locale === 'es' ? 'es-ES' : locale === 'en' ? 'en-GB' : 'it-IT', {
+      day: 'numeric', month: 'long', year: 'numeric',
+    })
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
@@ -75,7 +77,7 @@ export default function NewsCard({ post, index = 0 }: NewsCardProps) {
             <span
               className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium ${categoryColors[post.category] ?? ''}`}
             >
-              {categoryLabels[post.category] ?? post.category}
+              {categoryToKey[post.category] ? t(categoryToKey[post.category] as Parameters<typeof t>[0]) : post.category}
             </span>
             <span className="text-xs text-neutral-400">{formatDate(post.date)}</span>
           </div>

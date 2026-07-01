@@ -1,20 +1,18 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send, CheckCircle, Instagram, Linkedin } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import { siteConfig } from '@/lib/constants'
-
-type ProjectType = 'ristrutturazione' | 'interior' | 'restyling' | 'altro'
+import { useTranslations } from 'next-intl'
 
 interface FormData {
   name: string
   email: string
   phone: string
-  projectType: ProjectType
+  projectType: string
   message: string
 }
 
@@ -23,34 +21,6 @@ interface FormErrors {
   email?: string
   message?: string
 }
-
-const projectTypes = [
-  { value: 'ristrutturazione', label: 'Ristrutturazione integrale' },
-  { value: 'interior', label: 'Interior design' },
-  { value: 'restyling', label: 'Restyling' },
-  { value: 'altro', label: 'Altro tipo di progetto' },
-]
-
-const contactInfo = [
-  {
-    icon: Mail,
-    label: 'Email',
-    value: siteConfig.email,
-    href: `mailto:${siteConfig.email}`,
-  },
-  {
-    icon: Phone,
-    label: 'Telefono',
-    value: '+39 327 126 7024',
-    href: 'tel:+393271267024',
-  },
-  {
-    icon: MapPin,
-    label: 'Indirizzo',
-    value: 'Via Bologna 2, 24128, Bergamo',
-    href: 'https://maps.google.com/?q=Via+Bologna+2,+24128+Bergamo',
-  },
-]
 
 function PinterestIcon({ className }: { className?: string }) {
   return (
@@ -76,11 +46,15 @@ const socialLinks = [
 ]
 
 export default function ContactoPage() {
+  const t = useTranslations('ContactPage')
+
+  const projectTypeKeys = ['residential', 'renovation', 'commercial', 'other'] as const
+
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     phone: '',
-    projectType: 'ristrutturazione',
+    projectType: 'residential',
     message: '',
   })
   const [errors, setErrors] = useState<FormErrors>({})
@@ -91,17 +65,17 @@ export default function ContactoPage() {
     const newErrors: FormErrors = {}
 
     if (!formData.name.trim()) {
-      newErrors.name = 'Il nome è obbligatorio'
+      newErrors.name = t('form.errors.nameRequired')
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = "L'email è obbligatoria"
+      newErrors.email = t('form.errors.emailRequired')
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "L'email non è valida"
+      newErrors.email = t('form.errors.emailInvalid')
     }
 
     if (!formData.message.trim()) {
-      newErrors.message = 'Il messaggio è obbligatorio'
+      newErrors.message = t('form.errors.messageRequired')
     }
 
     setErrors(newErrors)
@@ -110,13 +84,9 @@ export default function ContactoPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-
     if (!validateForm()) return
-
     setIsSubmitting(true)
-
     await new Promise((resolve) => setTimeout(resolve, 1500))
-
     setIsSubmitting(false)
     setIsSubmitted(true)
   }
@@ -131,6 +101,27 @@ export default function ContactoPage() {
     }
   }
 
+  const contactInfo = [
+    {
+      icon: Mail,
+      label: t('info.email'),
+      value: siteConfig.email,
+      href: `mailto:${siteConfig.email}`,
+    },
+    {
+      icon: Phone,
+      label: t('info.phone'),
+      value: '+39 327 126 7024',
+      href: 'tel:+393271267024',
+    },
+    {
+      icon: MapPin,
+      label: t('info.address'),
+      value: 'Via Bologna 2, 24128, Bergamo',
+      href: 'https://maps.google.com/?q=Via+Bologna+2,+24128+Bergamo',
+    },
+  ]
+
   return (
     <div className="py-16 md:py-24">
       <Container>
@@ -142,10 +133,10 @@ export default function ContactoPage() {
           className="mx-auto max-w-2xl text-center"
         >
           <h1 className="font-serif text-4xl font-medium text-foreground md:text-5xl">
-            Contatto
+            {t('title')}
           </h1>
           <p className="mt-4 text-lg text-neutral-600">
-            Hai un progetto in mente? Raccontami la tua idea e ti risponderò entro 24 ore.
+            {t('description')}
           </p>
         </motion.div>
 
@@ -163,38 +154,29 @@ export default function ContactoPage() {
                   <CheckCircle className="h-8 w-8 text-green-600" />
                 </div>
                 <h2 className="mt-6 font-serif text-2xl font-medium text-foreground">
-                  Messaggio inviato!
+                  {t('success.title')}
                 </h2>
                 <p className="mt-3 text-neutral-600">
-                  Grazie per avermi contattato. Ti risponderò al più presto.
+                  {t('success.description')}
                 </p>
                 <Button
                   variant="outline"
                   className="mt-6"
                   onClick={() => {
                     setIsSubmitted(false)
-                    setFormData({
-                      name: '',
-                      email: '',
-                      phone: '',
-                      projectType: 'ristrutturazione',
-                      message: '',
-                    })
+                    setFormData({ name: '', email: '', phone: '', projectType: 'residential', message: '' })
                   }}
                 >
-                  Invia un altro messaggio
+                  {t('success.sendAnother')}
                 </Button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid gap-6 md:grid-cols-2">
-                  {/* Nome */}
+                  {/* Name */}
                   <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-medium text-foreground"
-                    >
-                      Nome completo *
+                    <label htmlFor="name" className="block text-sm font-medium text-foreground">
+                      {t('form.name')} *
                     </label>
                     <input
                       type="text"
@@ -205,7 +187,7 @@ export default function ContactoPage() {
                       className={`mt-2 block w-full rounded-xl border bg-white px-4 py-3 text-foreground transition-colors focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 ${
                         errors.name ? 'border-red-500' : 'border-neutral-200'
                       }`}
-                      placeholder="Il tuo nome"
+                      placeholder={t('form.placeholder.name')}
                     />
                     {errors.name && (
                       <p className="mt-1 text-sm text-red-500">{errors.name}</p>
@@ -214,11 +196,8 @@ export default function ContactoPage() {
 
                   {/* Email */}
                   <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-foreground"
-                    >
-                      Email *
+                    <label htmlFor="email" className="block text-sm font-medium text-foreground">
+                      {t('form.email')} *
                     </label>
                     <input
                       type="email"
@@ -229,7 +208,7 @@ export default function ContactoPage() {
                       className={`mt-2 block w-full rounded-xl border bg-white px-4 py-3 text-foreground transition-colors focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 ${
                         errors.email ? 'border-red-500' : 'border-neutral-200'
                       }`}
-                      placeholder="tua@email.com"
+                      placeholder={t('form.placeholder.email')}
                     />
                     {errors.email && (
                       <p className="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -238,13 +217,10 @@ export default function ContactoPage() {
                 </div>
 
                 <div className="grid gap-6 md:grid-cols-2">
-                  {/* Telefono */}
+                  {/* Phone */}
                   <div>
-                    <label
-                      htmlFor="phone"
-                      className="block text-sm font-medium text-foreground"
-                    >
-                      Telefono (opzionale)
+                    <label htmlFor="phone" className="block text-sm font-medium text-foreground">
+                      {t('form.phone')}
                     </label>
                     <input
                       type="tel"
@@ -253,17 +229,14 @@ export default function ContactoPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="mt-2 block w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-foreground transition-colors focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20"
-                      placeholder="+39 000 000 0000"
+                      placeholder={t('form.placeholder.phone')}
                     />
                   </div>
 
-                  {/* Tipo di progetto */}
+                  {/* Project Type */}
                   <div>
-                    <label
-                      htmlFor="projectType"
-                      className="block text-sm font-medium text-foreground"
-                    >
-                      Tipo di progetto
+                    <label htmlFor="projectType" className="block text-sm font-medium text-foreground">
+                      {t('form.projectType')}
                     </label>
                     <select
                       id="projectType"
@@ -272,22 +245,19 @@ export default function ContactoPage() {
                       onChange={handleChange}
                       className="mt-2 block w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-foreground transition-colors focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20"
                     >
-                      {projectTypes.map((type) => (
-                        <option key={type.value} value={type.value}>
-                          {type.label}
+                      {projectTypeKeys.map((key) => (
+                        <option key={key} value={key}>
+                          {t(`form.projectTypes.${key}`)}
                         </option>
                       ))}
                     </select>
                   </div>
                 </div>
 
-                {/* Messaggio */}
+                {/* Message */}
                 <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-foreground"
-                  >
-                    Raccontami il tuo progetto *
+                  <label htmlFor="message" className="block text-sm font-medium text-foreground">
+                    {t('form.message')} *
                   </label>
                   <textarea
                     id="message"
@@ -298,7 +268,7 @@ export default function ContactoPage() {
                     className={`mt-2 block w-full resize-none rounded-xl border bg-white px-4 py-3 text-foreground transition-colors focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 ${
                       errors.message ? 'border-red-500' : 'border-neutral-200'
                     }`}
-                    placeholder="Descrivi brevemente il tuo progetto, le tue esigenze e qualsiasi dettaglio che ritieni utile..."
+                    placeholder={t('form.placeholder.message')}
                   />
                   {errors.message && (
                     <p className="mt-1 text-sm text-red-500">{errors.message}</p>
@@ -315,11 +285,11 @@ export default function ContactoPage() {
                   {isSubmitting ? (
                     <>
                       <span className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
-                      Invio in corso...
+                      {t('form.sending')}
                     </>
                   ) : (
                     <>
-                      Invia messaggio
+                      {t('form.submit')}
                       <Send className="ml-2 h-4 w-4" />
                     </>
                   )}
@@ -336,7 +306,7 @@ export default function ContactoPage() {
           >
             <div className="rounded-2xl bg-neutral-50 p-8">
               <h2 className="font-serif text-xl font-medium text-foreground">
-                Informazioni di contatto
+                {t('info.title')}
               </h2>
 
               <div className="mt-6 space-y-6">
@@ -362,7 +332,7 @@ export default function ContactoPage() {
 
               {/* Social Links */}
               <div className="mt-8 border-t border-neutral-200 pt-8">
-                <p className="text-sm text-neutral-500">Seguimi sui social</p>
+                <p className="text-sm text-neutral-500">{t('info.social')}</p>
                 <div className="mt-4 flex gap-3">
                   {socialLinks.map((social) => (
                     <a
@@ -381,11 +351,11 @@ export default function ContactoPage() {
 
               {/* Office Hours */}
               <div className="mt-8 border-t border-neutral-200 pt-8">
-                <p className="text-sm text-neutral-500">Orari di disponibilità</p>
+                <p className="text-sm text-neutral-500">{t('info.hours')}</p>
                 <p className="mt-2 font-medium text-foreground">
-                  Lunedì – Venerdì
+                  {t('info.weekdays')}
                 </p>
-                <p className="text-neutral-600">9:00 – 18:00</p>
+                <p className="text-neutral-600">{t('info.schedule')}</p>
               </div>
             </div>
           </motion.div>

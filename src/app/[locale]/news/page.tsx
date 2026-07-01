@@ -3,19 +3,25 @@ import Container from '@/components/ui/Container'
 import NewsGrid from '@/components/sections/NewsGrid'
 import NavBand from '@/components/sections/NavBand'
 import { getAllNews } from '@/lib/news'
-
-export const metadata: Metadata = {
-  title: 'News | MP_archistudio',
-  description: 'Pubblicazioni, riflessioni, annunci e interviste di MP_archistudio.',
-}
+import { getTranslations } from 'next-intl/server'
 
 interface NewsPageProps {
   params: Promise<{ locale: string }>
 }
 
+export async function generateMetadata({ params }: NewsPageProps): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'NewsPage' })
+  return {
+    title: `${t('title')} | MP_archistudio`,
+    description: t('description'),
+  }
+}
+
 export default async function NewsPage({ params }: NewsPageProps) {
   const { locale } = await params
   const posts = getAllNews(locale)
+  const t = await getTranslations({ locale, namespace: 'NewsPage' })
 
   return (
     <div className="py-12">
@@ -23,10 +29,10 @@ export default async function NewsPage({ params }: NewsPageProps) {
         {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="font-serif text-4xl font-medium text-foreground md:text-5xl">
-            News
+            {t('title')}
           </h1>
           <p className="mt-4 text-neutral-500">
-            Pubblicazioni, riflessioni, annunci e interviste
+            {t('description')}
           </p>
         </div>
 

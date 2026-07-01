@@ -9,15 +9,14 @@ import Container from '@/components/ui/Container'
 import { useTranslations } from 'next-intl'
 
 interface HeroProps {
-  title?: string
   ctaHref?: string
 }
 
 export default function Hero({
-  title = 'Diamo forma e colore ai tuoi sogni',
   ctaHref = '/proyectos',
 }: HeroProps) {
   const t = useTranslations('Navigation')
+  const tHero = useTranslations('Hero')
 
   return (
     <section className="relative flex overflow-hidden pt-16 pb-10 justify-center">
@@ -56,7 +55,7 @@ export default function Hero({
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mb-6 text-sm font-medium uppercase tracking-widest text-primary-600"
           >
-            Studio di Architettura ed Interior Design
+            {tHero('overline')}
           </motion.p>
 
           {/* Title */}
@@ -66,7 +65,7 @@ export default function Hero({
             transition={{ duration: 0.5, delay: 0.3 }}
             className="font-serif text-2xl font-medium leading-tight tracking-tight text-foreground sm:whitespace-nowrap sm:text-3xl lg:text-4xl xl:text-5xl"
           >
-            {title}
+            {tHero('title')}
           </motion.h1>
 
           {/* CTA Buttons */}

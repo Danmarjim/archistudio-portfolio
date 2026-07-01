@@ -7,20 +7,18 @@ import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import ProjectCard from './ProjectCard'
 import type { Project } from '@/types'
+import { useTranslations } from 'next-intl'
 
 interface FeaturedProjectsProps {
   projects: Project[]
-  title?: string
-  subtitle?: string
   showViewAll?: boolean
 }
 
 export default function FeaturedProjects({
   projects,
-  title = 'Progetti in evidenza',
-  subtitle = 'Una selezione dei nostri lavori più recenti',
   showViewAll = true,
 }: FeaturedProjectsProps) {
+  const t = useTranslations('FeaturedProjects')
 
   return (
     <section className="py-24">
@@ -34,10 +32,10 @@ export default function FeaturedProjects({
           className="mb-16 text-center"
         >
           <h2 className="font-serif text-4xl font-medium text-foreground md:text-5xl">
-            {title}
+            {t('title')}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-neutral-600">
-            {subtitle}
+            {t('subtitle')}
           </p>
         </motion.div>
 
@@ -59,7 +57,7 @@ export default function FeaturedProjects({
           >
             <Button variant="outline" size="lg" asChild>
               <Link href="/proyectos">
-                Vedi tutti i progetti
+                {t('viewAll')}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
