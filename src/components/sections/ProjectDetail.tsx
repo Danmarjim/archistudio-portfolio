@@ -8,6 +8,7 @@ import { ArrowLeft, MapPin, Calendar, Ruler, User, CheckCircle, Expand, Camera }
 import Container from '@/components/ui/Container'
 import { Button, Badge, Lightbox } from '@/components/ui'
 import { useLightbox } from '@/lib/hooks'
+import { useTranslations } from 'next-intl'
 import type { Project } from '@/types'
 
 interface ProjectDetailProps {
@@ -17,14 +18,16 @@ interface ProjectDetailProps {
 }
 
 export default function ProjectDetail({ project, prevProject, nextProject }: ProjectDetailProps) {
+  const t = useTranslations('ProjectDetail')
+
   const details = [
-    { icon: MapPin, label: 'Ubicazione', value: project.location },
-    { icon: Calendar, label: 'Anno', value: project.year.toString() },
-    { icon: Ruler, label: 'Superficie', value: project.surface },
-    { icon: User, label: 'Cliente', value: project.client },
-    { icon: CheckCircle, label: 'Stato', value: project.status },
+    { icon: MapPin, label: t('location'), value: project.location },
+    { icon: Calendar, label: t('year'), value: project.year.toString() },
+    { icon: Ruler, label: t('surface'), value: project.surface },
+    { icon: User, label: t('client'), value: project.client },
+    { icon: CheckCircle, label: t('status'), value: project.status },
     ...(project.photographer
-      ? [{ icon: Camera, label: 'Fotografia', value: project.photographer }]
+      ? [{ icon: Camera, label: t('photographer'), value: project.photographer }]
       : []),
   ]
 
@@ -86,7 +89,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
           <Button variant="ghost" size="sm" asChild>
             <Link href="/proyectos">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Torna ai progetti
+              {t('backToProjects')}
             </Link>
           </Button>
         </motion.div>
@@ -136,7 +139,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
             className="lg:col-span-2"
           >
             <h2 className="font-serif text-2xl font-medium text-foreground">
-              Sul progetto
+              {t('aboutProject')}
             </h2>
             <div className="prose prose-neutral mt-6 max-w-none">
               {project.content?.split('\n\n').map((paragraph, index) => (
@@ -164,7 +167,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
           >
             <div className="rounded-2xl bg-neutral-50 p-6">
               <h3 className="font-serif text-lg font-medium text-foreground">
-                Dettagli del progetto
+                {t('details')}
               </h3>
               <dl className="mt-6 space-y-4">
                 {details.map((detail) => (
@@ -190,7 +193,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
             className="mt-16"
           >
             <h2 className="font-serif text-2xl font-medium text-foreground">
-              Galleria
+              {t('gallery')}
             </h2>
             {/* Grid senza spazi vuoti: landscape = riga intera, portrait = terzetti */}
             <div className="mt-6 grid items-start gap-4 lg:grid-cols-3">
@@ -237,7 +240,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
             >
               <ArrowLeft className="h-5 w-5 transition-transform group-hover:-translate-x-1" />
               <div>
-                <p className="text-sm text-neutral-500">Precedente</p>
+                <p className="text-sm text-neutral-500">{t('previous')}</p>
                 <p className="font-medium">{prevProject.title}</p>
               </div>
             </Link>
@@ -250,7 +253,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
               className="group flex items-center gap-3 text-right text-neutral-600 transition-colors hover:text-foreground"
             >
               <div>
-                <p className="text-sm text-neutral-500">Successivo</p>
+                <p className="text-sm text-neutral-500">{t('next')}</p>
                 <p className="font-medium">{nextProject.title}</p>
               </div>
               <ArrowLeft className="h-5 w-5 rotate-180 transition-transform group-hover:translate-x-1" />

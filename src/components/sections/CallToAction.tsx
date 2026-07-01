@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
+import { useTranslations } from 'next-intl'
 
 interface CallToActionProps {
   title?: string
@@ -14,11 +15,15 @@ interface CallToActionProps {
 }
 
 export default function CallToAction({
-  title = 'Hai un progetto in mente?',
-  subtitle = 'Raccontaci la tua idea e lavoriamo insieme per realizzarla. Ogni grande progetto inizia con una conversazione.',
-  ctaText = 'Contattaci',
+  title,
+  subtitle,
+  ctaText,
   ctaHref = '/contacto',
 }: CallToActionProps) {
+  const t = useTranslations('CallToAction')
+  const resolvedTitle = title ?? t('title')
+  const resolvedSubtitle = subtitle ?? t('subtitle')
+  const resolvedCta = ctaText ?? t('cta')
   return (
     <section className="bg-primary-500 py-24">
       <Container>
@@ -30,11 +35,11 @@ export default function CallToAction({
           className="mx-auto max-w-3xl text-center"
         >
           <h2 className="font-serif text-4xl font-medium text-white md:text-5xl">
-            {title}
+            {resolvedTitle}
           </h2>
 
           <p className="mt-6 text-lg text-primary-100">
-            {subtitle}
+            {resolvedSubtitle}
           </p>
 
           <motion.div
@@ -50,7 +55,7 @@ export default function CallToAction({
               asChild
             >
               <Link href={ctaHref}>
-                {ctaText}
+                {resolvedCta}
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

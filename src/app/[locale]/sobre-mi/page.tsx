@@ -7,62 +7,25 @@ import { ArrowRight, Sun, Palette, Maximize2, Heart, BookOpen, Briefcase } from 
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import NavBand from '@/components/sections/NavBand'
-
-const values = [
-  {
-    icon: Sun,
-    title: 'Luce',
-    description: 'La linfa vitale di ogni stanza.',
-  },
-  {
-    icon: Palette,
-    title: 'Colore',
-    description: 'Per creare spazi emozionali e vibranti.',
-  },
-  {
-    icon: Maximize2,
-    title: 'Spazio extra',
-    description: 'Perché ogni cm conta e dare ad ogni oggetto il proprio contenitore permette di avere una casa ordinata e quindi più spaziosa.',
-  },
-  {
-    icon: Heart,
-    title: 'Empatia',
-    description: 'Porto in Italia quel calore e quell\'energia appresi all\'estero, ma soprattutto la capacità di ascoltare.',
-  },
-]
-
-const timeline = [
-  {
-    year: 'Formazione',
-    date: '2011',
-    title: 'Politecnico di Milano',
-    description: 'Laurea in Architettura al Politecnico di Milano.',
-    type: 'education',
-  },
-  {
-    year: 'Siviglia',
-    date: '2013',
-    title: 'Studio Vázquez Consuegra',
-    description: 'Prima esperienza internazionale nello studio Vázquez Consuegra a Siviglia.',
-    type: 'work',
-  },
-  {
-    year: 'Barcellona',
-    date: '2017',
-    title: 'Exe Arquitectura',
-    description: 'Collaborazione con Exe Arquitectura a Barcellona.',
-    type: 'work',
-  },
-  {
-    year: 'Oggi',
-    date: '2021',
-    title: 'MP Archistudio',
-    description: 'Studio con base a Bergamo e Siviglia, con progetti in Italia e all\'estero.',
-    type: 'work',
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export default function SobreMiPage() {
+  const t = useTranslations('SobreMiPage')
+
+  const values = [
+    { icon: Sun,      title: t('v1Title'), description: t('v1Desc') },
+    { icon: Palette,  title: t('v2Title'), description: t('v2Desc') },
+    { icon: Maximize2,title: t('v3Title'), description: t('v3Desc') },
+    { icon: Heart,    title: t('v4Title'), description: t('v4Desc') },
+  ]
+
+  const timeline = [
+    { year: t('t1Year'), date: t('t1Date'), title: t('t1Title'), description: t('t1Desc'), type: 'education' },
+    { year: t('t2Year'), date: t('t2Date'), title: t('t2Title'), description: t('t2Desc'), type: 'work' },
+    { year: t('t3Year'), date: t('t3Date'), title: t('t3Title'), description: t('t3Desc'), type: 'work' },
+    { year: t('t4Year'), date: t('t4Date'), title: t('t4Title'), description: t('t4Desc'), type: 'work' },
+  ]
+
   return (
     <>
       {/* Hero Section */}
@@ -97,24 +60,16 @@ export default function SobreMiPage() {
               className="order-1 lg:order-2"
             >
               <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary-600">
-                Chi sono
+                {t('overline')}
               </p>
               <h1 className="font-serif text-4xl font-medium text-foreground md:text-5xl">
-                Architettura empatica
+                {t('heroTitle')}
               </h1>
               <div className="mt-6 space-y-4 text-lg leading-relaxed text-neutral-600">
-                <p>
-                  Credo fermamente che la buona architettura migliori la qualità della vita.
-                </p>
-                <p>
-                  Scegliere l&apos;architetto giusto per la casa dei propri sogni significa trovare un buon professionista ma anche affidarsi a una persona che ti aiuterà in una fase decisionale importantissima.
-                </p>
-                <p>
-                  Qualcuno che sappia ascoltarvi e accompagnarvi per mano in quel territorio inesplorato — e spesso stressante! — che è la ristrutturazione. E che vi guidi con occhio attento sui costi globali.
-                </p>
-                <p className="font-medium text-foreground">
-                  Senza fiducia, non può nascere un grande progetto.
-                </p>
+                <p>{t('heroPara1')}</p>
+                <p>{t('heroPara2')}</p>
+                <p>{t('heroPara3')}</p>
+                <p className="font-medium text-foreground">{t('heroHighlight')}</p>
               </div>
             </motion.div>
           </div>
@@ -132,23 +87,15 @@ export default function SobreMiPage() {
             className="mx-auto max-w-3xl"
           >
             <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl">
-              Chi è Martina C.M. Pozzi?
+              {t('bioTitle')}
             </h2>
             <div className="mt-8 space-y-4 text-lg leading-relaxed text-neutral-600">
+              <p>{t('bioPara1')}</p>
+              <p>{t('bioPara2')}</p>
+              <p>{t('bioPara3')}</p>
+              <p>{t('bioPara4')}</p>
               <p>
-                Sono un&apos;architetta con oltre 15 anni di esperienza nella progettazione di spazi che trasformano la vita delle persone.
-              </p>
-              <p>
-                La mia passione per l&apos;architettura è nata dal fascino per il modo in cui gli spazi possono influenzare le nostre emozioni e i nostri comportamenti.
-              </p>
-              <p>
-                Il mio approccio unisce funzionalità, estetica e sostenibilità, alla ricerca costante di soluzioni che rispettino l&apos;ambiente e rispondano alle reali esigenze di ogni cliente.
-              </p>
-              <p>
-                Sono una persona solare, di quelle col &quot;sorriso a mille denti&quot;, capace di trovare il lato positivo in ogni sfida.
-              </p>
-              <p>
-                La mia creatività è irrequieta: se non sto progettando interni, mi trovate a creare collage analogici con la firma{' '}
+                {t('bioPara5')}{' '}
                 <a
                   href="https://www.instagram.com/mp_collages/"
                   target="_blank"
@@ -175,11 +122,9 @@ export default function SobreMiPage() {
             className="mx-auto max-w-2xl text-center"
           >
             <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl">
-              Il mio percorso
+              {t('timelineTitle')}
             </h2>
-            <p className="mt-4 text-lg text-neutral-600">
-              Formata a Milano, cresciuta in Spagna. È lì che ho trovato la mia strada.
-            </p>
+            <p className="mt-4 text-lg text-neutral-600">{t('timelineSubtitle')}</p>
           </motion.div>
 
           <div className="relative mt-16">
@@ -209,9 +154,7 @@ export default function SobreMiPage() {
                     }`}
                   >
                     <span className="text-sm font-medium text-primary-600">{item.year}</span>
-                    <h3 className="mt-1 font-serif text-xl font-medium text-foreground">
-                      {item.title}
-                    </h3>
+                    <h3 className="mt-1 font-serif text-xl font-medium text-foreground">{item.title}</h3>
                     <p className="mt-2 text-neutral-600">{item.description}</p>
                     <p className="mt-1 text-sm text-neutral-400">{item.date}</p>
                   </div>
@@ -228,8 +171,8 @@ export default function SobreMiPage() {
             className="mx-auto mt-16 max-w-3xl rounded-2xl bg-primary-50 p-8 text-center"
           >
             <p className="text-lg leading-relaxed text-neutral-700">
-              Tra Siviglia e Barcellona ho vissuto un decennio che ha cambiato il mio modo di vedere l&apos;architettura. Lì ho capito che la mia vera missione è la{' '}
-              <span className="font-semibold text-primary-700">progettazione sartoriale d&apos;interni</span>.
+              {t('timelineHighlight')}{' '}
+              <span className="font-semibold text-primary-700">{t('timelineHighlightBold')}</span>.
             </p>
           </motion.div>
         </Container>
@@ -246,7 +189,7 @@ export default function SobreMiPage() {
             className="mx-auto max-w-2xl text-center"
           >
             <h2 className="font-serif text-3xl font-medium text-foreground md:text-4xl">
-              Cosa porto nei miei progetti
+              {t('valuesTitle')}
             </h2>
           </motion.div>
 
@@ -284,13 +227,13 @@ export default function SobreMiPage() {
             className="rounded-3xl bg-primary-600 px-8 py-16 text-center md:px-16"
           >
             <p className="text-sm font-medium uppercase tracking-widest text-primary-200">
-              Studio con base a Bergamo 🇮🇹 e Siviglia 🇪🇸
+              {t('ctaOverline')}
             </p>
             <h2 className="mt-4 font-serif text-3xl font-medium text-white md:text-4xl">
-              Hai un&apos;idea nel cassetto?
+              {t('ctaTitle')}
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg text-primary-100">
-              Scrivimi, mettiamoci alla prova e trasformiamola in realtà.
+              {t('ctaSubtitle')}
             </p>
             <div className="mt-8 flex justify-center">
               <Button
@@ -300,7 +243,7 @@ export default function SobreMiPage() {
                 asChild
               >
                 <a href="mailto:martina_pozzi_17@hotmail.com">
-                  Scrivimi
+                  {t('ctaButton')}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>

@@ -2,16 +2,19 @@
 
 import { Link } from '@/i18n/navigation'
 import { ArrowRight } from 'lucide-react'
-
-const navLinks = [
-  { label: 'Progetti', href: '/proyectos' },
-  { label: 'Chi sono', href: '/sobre-mi' },
-  { label: 'Servizi', href: '/servicios' },
-  { label: 'News', href: '/news' },
-  { label: 'Contatto', href: '/contacto' },
-]
+import { useTranslations } from 'next-intl'
 
 export default function NavBand() {
+  const t = useTranslations('Navigation')
+
+  const navLinks = [
+    { label: t('projects'), href: '/proyectos' },
+    { label: t('about'), href: '/sobre-mi' },
+    { label: t('services'), href: '/servicios' },
+    { label: t('news'), href: '/news' },
+    { label: t('contact'), href: '/contacto' },
+  ]
+
   return (
     <section style={{ backgroundColor: '#eeb898' }} className="py-14">
       <div className="flex flex-wrap justify-center gap-5 px-6">

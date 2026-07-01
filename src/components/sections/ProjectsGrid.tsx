@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { ProjectCard } from '@/components/sections'
 import { projectCategories } from '@/lib/constants'
 import { cn } from '@/lib/utils'
+import { useTranslations } from 'next-intl'
 import type { Project } from '@/types'
 
 interface ProjectsGridProps {
@@ -12,6 +13,7 @@ interface ProjectsGridProps {
 }
 
 export default function ProjectsGrid({ projects }: ProjectsGridProps) {
+  const t = useTranslations('ProjectsPage')
   const [activeFilter, setActiveFilter] = useState<string | null>(null)
 
   const filteredProjects = activeFilter
@@ -36,7 +38,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
               : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
           )}
         >
-          Tutti
+          {t('filterAll')}
         </button>
         {projectCategories.map((category) => (
           <button
@@ -64,7 +66,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
       {/* Empty state */}
       {filteredProjects.length === 0 && (
         <div className="py-12 text-center">
-          <p className="text-neutral-600">Nessun progetto in questa categoria.</p>
+          <p className="text-neutral-600">{t('emptyState')}</p>
         </div>
       )}
     </>

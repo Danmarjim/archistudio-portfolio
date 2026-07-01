@@ -6,26 +6,18 @@ import { motion } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
 import { Button } from '@/components/ui'
 import Container from '@/components/ui/Container'
+import { useTranslations } from 'next-intl'
 
 interface HeroProps {
   title?: string
-  subtitle?: string
-  ctaText?: string
   ctaHref?: string
 }
 
 export default function Hero({
   title = 'Diamo forma e colore ai tuoi sogni',
-  subtitle = 'Dalla ristrutturazione integrale al semplice restyling,\nl\'obiettivo è ottimizzare i vostri spazi per farvi vivere al meglio.\nOgni progetto è una storia unica di luce, forma e funzione che dura nel tempo.',
-  ctaText = 'Vedi i progetti',
   ctaHref = '/proyectos',
 }: HeroProps) {
-  const scrollToContent = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: 'smooth',
-    })
-  }
+  const t = useTranslations('Navigation')
 
   return (
     <section className="relative flex overflow-hidden pt-16 pb-10 justify-center">
@@ -85,13 +77,13 @@ export default function Hero({
             className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
           >
             <Button asChild size="lg">
-              <Link href={ctaHref}>{ctaText}</Link>
+              <Link href={ctaHref}>{t('projects')}</Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <Link href="/contacto">Contattaci</Link>
+              <Link href="/contacto">{t('contact')}</Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <Link href="/servicios">Servizi</Link>
+              <Link href="/servicios">{t('services')}</Link>
             </Button>
           </motion.div>
         </div>

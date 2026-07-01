@@ -5,6 +5,7 @@ import { Instagram, Linkedin, Mail } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import Logo from '@/components/shared/Logo'
 import { siteConfig } from '@/lib/constants'
+import { useTranslations } from 'next-intl'
 
 const PinterestIcon = () => (
   <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -61,6 +62,7 @@ const SpaziBelliIcon = () => (
 )
 
 export default function Footer() {
+  const t = useTranslations('Footer')
   const currentYear = new Date().getFullYear()
 
   return (
@@ -72,7 +74,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Logo />
             <p className="font-serif text-lg text-neutral-700">
-              Diamo forma e colore ai tuoi sogni
+              {t('description')}
             </p>
           </div>
 
@@ -154,7 +156,7 @@ export default function Footer() {
             &copy; {currentYear}{' '}
             <span className="font-medium text-neutral-700">Martina Chiara Maria Pozzi</span>
             {' '}|{' '}
-            MP_archistudio. Tutti i diritti riservati.
+            MP_archistudio. {t('rights')}
             {' '}|{' '}
             <Link
               href="/privacy"
