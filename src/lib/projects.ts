@@ -111,14 +111,20 @@ export function getAllProjects(locale: string = 'es'): Project[] {
 
     const { dims: coverDims } = analyzeImage(data.coverImage)
 
-    // Legge le immagini direttamente dalla cartella (ordine alfabetico = ordine scelto dall'utente via rinominamento)
+    // Legge le immagini: prima cerca per prefisso slug nella cartella,
+    // se non trova nulla usa la lista esplicita dell'MDX (per sottoprogetti che usano foto di altri)
     const projectsImagesDir = path.join(process.cwd(), 'public/images/projects')
-    const folderImages: string[] = fs.existsSync(projectsImagesDir)
+    let folderImages: string[] = fs.existsSync(projectsImagesDir)
       ? fs.readdirSync(projectsImagesDir)
           .filter((f) => f.startsWith(slug + '-') && /\.(jpg|jpeg|png|webp)$/i.test(f))
           .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }))
           .map((f) => `/images/projects/${f}`)
       : []
+
+    // Fallback: se non ci sono foto per prefisso slug, usa la lista images dell'MDX
+    if (folderImages.length === 0 && Array.isArray(data.images) && data.images.length > 0) {
+      folderImages = data.images as string[]
+    }
 
     // Analizza ogni immagine (dimensioni + hash) in un'unica lettura per file
     const analyses = folderImages.map((img: string) => ({ img, ...analyzeImage(img) }))
@@ -157,8 +163,17 @@ export function getAllProjects(locale: string = 'es'): Project[] {
     } as Project
   })
 
-  // Ordenar por año descendente (más recientes primero)
-  return projects.sort((a, b) => b.year - a.year)
+  // Ordina: prima Ristrutturazione integrale e Restyling, poi le altre categorie, poi per anno desc
+  const categoryPriority: Record<string, number> = {
+    'Ristrutturazione integrale': 0,
+    'Restyling': 1,
+  }
+  return projects.sort((a, b) => {
+    const pa = categoryPriority[a.category] ?? 99
+    const pb = categoryPriority[b.category] ?? 99
+    if (pa !== pb) return pa - pb
+    return b.year - a.year
+  })
 }
 
 /**
