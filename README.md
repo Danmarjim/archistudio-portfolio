@@ -6,7 +6,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-FF0055?style=flat-square&logo=framer)
 
-Portfolio web profesional para una arquitecta independiente. Sitio minimalista y elegante que prioriza la presentación visual de proyectos arquitectónicos.
+Portfolio web profesional para una arquitecta independiente. Sitio minimalista y elegante que prioriza la presentación visual de proyectos arquitectónicos, con soporte completo de internacionalización en tres idiomas (IT/ES/EN).
 
 ## Demo
 
@@ -21,8 +21,8 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 | [TypeScript](https://www.typescriptlang.org/) | 5 | Tipado estático |
 | [Tailwind CSS](https://tailwindcss.com/) | 4 | Estilos utility-first |
 | [Framer Motion](https://www.framer.com/motion/) | 12 | Animaciones fluidas |
-| [next-intl](https://next-intl-docs.vercel.app/) | 4.7 | Internacionalización (ES/EN) |
-| [MDX](https://mdxjs.com/) | - | Contenido de proyectos |
+| [next-intl](https://next-intl-docs.vercel.app/) | 4.7 | Internacionalización (IT/ES/EN) |
+| [gray-matter](https://github.com/jonschlinkert/gray-matter) | 4 | Parsing frontmatter MDX |
 | [Lucide React](https://lucide.dev/) | - | Iconografía |
 
 ## Arquitectura
@@ -30,43 +30,56 @@ Portfolio web profesional para una arquitecta independiente. Sitio minimalista y
 ```
 src/
 ├── app/                    # App Router (Next.js 16)
-│   ├── [locale]/           # Rutas internacionalizadas
+│   ├── [locale]/           # Rutas internacionalizadas (it / es / en)
 │   │   ├── page.tsx        # Homepage
 │   │   ├── proyectos/      # Grid + detalle de proyectos
+│   │   ├── news/           # Grid + detalle de noticias
 │   │   ├── sobre-mi/       # Página "Sobre mí"
 │   │   ├── servicios/      # Lista de servicios
 │   │   └── contacto/       # Formulario de contacto
-│   ├── sitemap.ts          # Sitemap dinámico
+│   ├── sitemap.ts          # Sitemap estático (force-static)
 │   └── robots.ts           # Robots.txt
 │
 ├── components/
-│   ├── ui/                 # Componentes atómicos (Button, Card, Badge...)
-│   ├── sections/           # Secciones de página (Hero, ProjectsGrid...)
+│   ├── ui/                 # Componentes atómicos (Button, Card, Badge, Lightbox...)
+│   ├── sections/           # Secciones de página (Hero, ProjectsGrid, NewsGrid...)
 │   ├── layout/             # Header, Footer
-│   └── shared/             # Componentes compartidos (Logo, Lightbox...)
+│   └── shared/             # Componentes compartidos (Logo...)
 │
 ├── lib/
-│   ├── projects.ts         # Carga y parsing de proyectos MDX
-│   ├── utils.ts            # Utilidades (cn, formatters...)
-│   ├── constants.ts        # Configuración del sitio
-│   └── hooks/              # Custom hooks
+│   ├── projects.ts         # Carga MDX proyectos + análisis dimensiones imágenes
+│   ├── news.ts             # Carga MDX noticias
+│   ├── utils.ts            # Utilidades (cn...)
+│   ├── constants.ts        # Configuración del sitio + categorías
+│   └── hooks/              # Custom hooks (useLightbox...)
 │
 ├── i18n/                   # Configuración next-intl
-│   ├── routing.ts          # Rutas localizadas
+│   ├── routing.ts          # Locales: ['it', 'es', 'en'], defaultLocale: 'it'
 │   ├── navigation.ts       # Links i18n
 │   └── request.ts          # Middleware config
 │
-├── types/                  # Definiciones TypeScript
+├── types/                  # Definiciones TypeScript (Project, NewsPost...)
 └── middleware.ts           # Middleware de localización
 
 content/
-└── projects/               # Proyectos en MDX
+├── projects/               # Proyectos en MDX por locale
+│   ├── it/                 # Italiano (fuente canónica)
+│   ├── es/                 # Español
+│   └── en/                 # Inglés
+└── news/                   # Noticias en MDX por locale
+    ├── it/                 # Italiano (fuente canónica)
+    ├── es/                 # Español
+    └── en/                 # Inglés
 
-messages/                   # Traducciones (es.json, en.json)
+messages/                   # Traducciones UI
+├── it.json
+├── es.json
+└── en.json
 
 public/
-└── images/                 # Imágenes optimizadas
+└── images/                 # Imágenes estáticas (servidas por CDN Vercel)
     ├── projects/           # Fotos de proyectos
+    ├── news/               # Imágenes de noticias
     ├── hero/               # Imágenes hero
     └── about/              # Fotos perfil
 ```
@@ -75,14 +88,14 @@ public/
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/tu-usuario/archistudio-portfolio.git
+git clone https://github.com/Danmarjim/archistudio-portfolio.git
 cd archistudio-portfolio
 
 # Instalar dependencias
 npm install
 
-# Configurar variables de entorno
-cp .env.example .env.local
+# Iniciar servidor de desarrollo
+npm run dev
 ```
 
 ## Scripts
@@ -101,64 +114,81 @@ npm run lint      # Linting con ESLint
 NEXT_PUBLIC_SITE_URL=https://tu-dominio.com
 ```
 
-## Características
+## Internacionalización (i18n)
 
-- **Internacionalización** - Soporte completo ES/EN con next-intl
-- **SEO optimizado** - Metadata dinámica, sitemap, robots.txt, Open Graph
-- **Animaciones fluidas** - Transiciones de página y scroll con Framer Motion
-- **Responsive** - Mobile-first, adaptado a todos los dispositivos
-- **Performance** - Imágenes optimizadas con next/image, lazy loading
-- **Accesibilidad** - HTML semántico, ARIA labels, navegación por teclado
-- **Contenido MDX** - Proyectos gestionados con Markdown + componentes React
+El sitio soporta tres idiomas: **Italiano** (predeterminado), **Español** e **Inglés**.
+
+- Las URLs tienen el formato `/{locale}/ruta` (ej. `/it/proyectos`, `/es/proyectos`)
+- Los textos de UI están en `messages/{locale}.json`
+- El contenido de proyectos y noticias está en `content/{tipo}/{locale}/*.mdx`
+- El locale `it` es la fuente canónica y fallback para ambos contenidos
+- Componentes cliente usan `useTranslations()`, páginas servidor usan `getTranslations()`
+
+### Traducción de categorías
+
+Las categorías de proyectos (`category`) y estados (`status`) se almacenan en italiano como valor interno y se traducen en UI con `useTranslations('ProjectCategories')` y `useTranslations('ProjectStatus')`.
+
+```typescript
+// Patrón para traducir con fallback seguro
+const tCat = useTranslations('ProjectCategories')
+tCat(project.category, { defaultValue: project.category })
+```
 
 ## Páginas
 
 | Ruta | Descripción |
 |------|-------------|
 | `/` | Homepage con hero, proyectos destacados y servicios |
-| `/proyectos` | Grid de todos los proyectos con filtros |
-| `/proyectos/[slug]` | Detalle de proyecto con galería |
+| `/proyectos` | Grid de todos los proyectos con filtros por categoría |
+| `/proyectos/[slug]` | Detalle de proyecto con galería lightbox |
+| `/news` | Grid de noticias con filtros por categoría |
+| `/news/[slug]` | Detalle de noticia con galería de imágenes |
 | `/sobre-mi` | Biografía y trayectoria profesional |
 | `/servicios` | Lista de servicios ofrecidos |
 | `/contacto` | Formulario de contacto |
-
-## Deploy
-
-El proyecto está configurado para deploy en **Vercel**:
-
-```bash
-# Deploy a preview
-vercel
-
-# Deploy a producción
-vercel --prod
-```
 
 ## Estructura de un Proyecto (MDX)
 
 ```mdx
 ---
-title: "Casa del Bosque"
-slug: "casa-del-bosque"
-category: "Vivienda unifamiliar"
-location: "Sierra de Madrid"
-year: 2024
-surface: "280 m²"
-status: "Construido"
-featured: true
-coverImage: "/images/projects/casa-bosque/cover.jpg"
+title: "Cucina PARIGINA"
+category: "Cucine"           # valor interno en italiano
+location: "Bergamo"
+year: 2022
+client: "Privato"            # valor interno en italiano
+surface: "8.20 m²"
+status: "Realizzato"         # valor interno en italiano
+featured: false
+coverImage: "/images/projects/cucina-parigina-01.jpg"
 images:
-  - "/images/projects/casa-bosque/01.jpg"
-  - "/images/projects/casa-bosque/02.jpg"
-excerpt: "Una vivienda que dialoga con el entorno natural..."
+  - "/images/projects/cucina-parigina-01.jpg"
+  - "/images/projects/cucina-parigina-02.jpg"
+excerpt: "Descripción breve del proyecto..."
 tags:
-  - sostenibilidad
-  - madera
+  - cucina
+  - restyling
 ---
 
-## El Proyecto
+Cuerpo del artículo en el idioma del locale correspondiente.
+```
 
-Descripción del proyecto...
+## Deploy
+
+El proyecto está configurado para deploy automático en **Vercel** al hacer push a `main`.
+
+```bash
+# Build local para verificar antes de push
+npm run build
+```
+
+### Nota importante Vercel
+
+`next.config.ts` incluye `outputFileTracingExcludes` para evitar que las imágenes de `public/` se incluyan en los bundles Lambda (causaría funciones de 250 MB+):
+
+```typescript
+outputFileTracingExcludes: {
+  '*': ['public/**'],
+}
 ```
 
 ## Paleta de Colores
