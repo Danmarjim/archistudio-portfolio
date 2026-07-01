@@ -32,12 +32,10 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
       : []),
   ]
 
-  // Esclude la coverImage dalla galleria: è già mostrata come hero sopra
+  // Tutte le immagini appaiono in galleria (la coverImage è anche nel carousel)
   const allDimensions = project.imagesDimensions ?? []
-  const galleryImages = project.images.filter((img) => img !== project.coverImage)
-  const galleryDimensions = allDimensions.filter(
-    (_, i) => project.images[i] !== project.coverImage
-  )
+  const galleryImages = project.images
+  const galleryDimensions = allDimensions
   const lightbox = useLightbox(galleryImages.length)
 
   // Raggruppa le immagini per evitare spazi vuoti nel grid 3 colonne:
