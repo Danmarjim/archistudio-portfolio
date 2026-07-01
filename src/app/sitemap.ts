@@ -1,18 +1,32 @@
+import fs from 'fs'
+import path from 'path'
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/lib/constants'
-import { getAllProjects } from '@/lib/projects'
 import { locales } from '@/i18n/routing'
 
+// Generato staticamente alla build — nessuna serverless function a runtime
+export const dynamic = 'force-static'
+
+/** Legge solo i filename dalla cartella it/ senza importare gray-matter o code pesante */
+function getProjectSlugs(): string[] {
+  const dir = path.join(process.cwd(), 'content/projects/it')
+  if (!fs.existsSync(dir)) return []
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.mdx'))
+    .map((f) => f.replace(/\.mdx$/, ''))
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const projects = getAllProjects()
+  const slugs = getProjectSlugs()
   const baseUrl = siteConfig.url
 
   // Generate URLs for all locales
   const localizedUrls = locales.flatMap((locale) => {
     const prefix = `${baseUrl}/${locale}`
 
-    const projectUrls = projects.map((project) => ({
-      url: `${prefix}/proyectos/${project.slug}`,
+    const projectUrls = slugs.map((slug) => ({
+      url: `${prefix}/proyectos/${slug}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
