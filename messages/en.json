@@ -33,7 +33,7 @@
   "AboutPreview": {
     "overline": "About me",
     "title": "Architecture with purpose",
-    "description": "Every project is an opportunity to create spaces that improve people's lives. With over 10 years of experience, I combine creativity, functionality and sustainability in every design.",
+    "description": "I'm an architect passionate about spaces that improve people's lives. My approach combines functionality, aesthetics and sustainability, always seeking solutions that respect the context and respond to each client's real needs. Every project is a chance to explore new ways of living. The goal is to offer real benefits to the people who trust me.",
     "cta": "Learn more about me"
   },
   "ServicesPreview": {
@@ -157,7 +157,8 @@
         "nameRequired": "Name is required",
         "emailRequired": "Email is required",
         "emailInvalid": "Email is not valid",
-        "messageRequired": "Message is required"
+        "messageRequired": "Message is required",
+        "submitFailed": "We couldn't send your message. Please try again or email me directly."
       }
     },
     "success": {

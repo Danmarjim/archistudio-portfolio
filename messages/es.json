@@ -33,7 +33,7 @@
   "AboutPreview": {
     "overline": "Sobre mí",
     "title": "Arquitectura con propósito",
-    "description": "Cada proyecto es una oportunidad para crear espacios que mejoren la vida de las personas. Con más de 10 años de experiencia, combino creatividad, funcionalidad y sostenibilidad en cada diseño.",
+    "description": "Soy arquitecta apasionada por los espacios que mejoran la vida de las personas. Mi enfoque une funcionalidad, estética y sostenibilidad, buscando siempre soluciones que respeten el contexto y respondan a las necesidades reales de cada cliente. Cada proyecto es una oportunidad para explorar nuevas formas de habitar. El objetivo es ofrecer beneficios reales a las personas que confían en mí.",
     "cta": "Conoce más sobre mí"
   },
   "ServicesPreview": {
@@ -157,7 +157,8 @@
         "nameRequired": "El nombre es obligatorio",
         "emailRequired": "El email es obligatorio",
         "emailInvalid": "El email no es válido",
-        "messageRequired": "El mensaje es obligatorio"
+        "messageRequired": "El mensaje es obligatorio",
+        "submitFailed": "No se pudo enviar el mensaje. Inténtalo de nuevo o escríbeme directamente por email."
       }
     },
     "success": {

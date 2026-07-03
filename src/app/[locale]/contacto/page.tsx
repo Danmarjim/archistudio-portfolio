@@ -38,11 +38,56 @@ function LinktreeIcon({ className }: { className?: string }) {
   )
 }
 
+function ArchiloversIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 100 110" aria-hidden="true">
+      <path
+        d="M18,0 H82 Q100,0 100,18 V75 Q100,92 82,92 H42 L18,110 L23,92 H18 Q0,92 0,75 V18 Q0,0 18,0 Z"
+        fill="currentColor"
+      />
+      <text x="50" y="72" textAnchor="middle" fontSize="62" fontWeight="bold" fontFamily="Arial, sans-serif" fill="white">a</text>
+    </svg>
+  )
+}
+
+function HomifyIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 100 110" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M50,6 L94,43 L94,88 Q94,98 84,98 L16,98 L50,6" />
+      <path d="M50,22 L82,44 L18,44 Z" />
+      <line x1="20" y1="56" x2="80" y2="96" />
+      <line x1="80" y1="56" x2="20" y2="96" />
+    </svg>
+  )
+}
+
+function HouzzIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
+      <polygon points="3,3 32,3 97,38 97,97 65,97 65,67 35,67 35,97 3,97" />
+    </svg>
+  )
+}
+
+function SpaziBelliIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 100 100" fill="currentColor" aria-hidden="true">
+      <rect x="3" y="3" width="21" height="55" />
+      <polygon points="38,58 38,25 67,3 96,25 96,58" />
+      <rect x="3" y="70" width="94" height="27" />
+    </svg>
+  )
+}
+
 const socialLinks = [
   { icon: Instagram, href: 'https://www.instagram.com/mp_archistudio/', label: 'Instagram' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/martinachiaramariapozzi/', label: 'LinkedIn' },
   { icon: PinterestIcon, href: 'https://es.pinterest.com/MartinaCMPozzi/', label: 'Pinterest' },
   { icon: LinktreeIcon, href: 'https://linktr.ee/Arch.MartinaPozzi?utm_source=linktree_profile_share&ltsid=5ebb31cc-5a59-4cce-b0a5-d577b11e5c5a', label: 'Linktree' },
+  { icon: SpaziBelliIcon, href: 'https://www.spazibelli.com/professionisti/arch-martina-pozzi-mp_archistudio', label: 'Spazi Belli' },
+  { icon: HouzzIcon, href: 'https://www.houzz.it/pro/martina-pozzi', label: 'Houzz' },
+  { icon: ArchiloversIcon, href: 'https://www.archilovers.com/mparchistudio/', label: 'Archilovers' },
+  { icon: HomifyIcon, href: 'https://www.homify.it/esperti/10014002/mp_archistudio-di-arch-martina-c-m-pozzi', label: 'Homify' },
 ]
 
 export default function ContactoPage() {
@@ -60,6 +105,7 @@ export default function ContactoPage() {
   const [errors, setErrors] = useState<FormErrors>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [submitError, setSubmitError] = useState(false)
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {}
@@ -86,9 +132,23 @@ export default function ContactoPage() {
     e.preventDefault()
     if (!validateForm()) return
     setIsSubmitting(true)
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    setSubmitError(false)
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      if (!res.ok) throw new Error('request_failed')
+
+      setIsSubmitted(true)
+    } catch {
+      setSubmitError(true)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (
@@ -294,6 +354,9 @@ export default function ContactoPage() {
                     </>
                   )}
                 </Button>
+                {submitError && (
+                  <p className="text-sm text-red-500">{t('form.errors.submitFailed')}</p>
+                )}
               </form>
             )}
           </motion.div>

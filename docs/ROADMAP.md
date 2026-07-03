@@ -19,13 +19,13 @@ Pasos:
 
 ### Formulario de contacto funcional
 
-Actualmente el formulario `/contacto` tiene la UI lista pero no envía emails.
+Código implementado: `src/app/api/contact/route.ts` (endpoint que llama a [Resend](https://resend.com)) y el formulario en `/contacto` ya está conectado a él.
 
-Implementación pendiente con [Resend](https://resend.com):
-- Crear cuenta en Resend y verificar el dominio de envío
-- Añadir variable de entorno `RESEND_API_KEY`
-- Crear `src/app/api/contact/route.ts` que llame a la API de Resend
-- Conectar el formulario existente con el endpoint
+Falta solo la configuración de la cuenta:
+- Crear cuenta en Resend y verificar el dominio de envío (`mparchistudio.it`/`.com`)
+- Añadir `RESEND_API_KEY` en `.env.local` (local) y en las variables de entorno de Vercel (producción)
+- Opcional: `CONTACT_TO_EMAIL` (destinatario, por defecto `siteConfig.email`) y `CONTACT_FROM_EMAIL` (remitente verificado; hasta verificar el dominio se usa `onboarding@resend.dev` de Resend)
+- Ejecutar `npm install` para instalar la dependencia `resend` añadida a `package.json`
 
 ---
 

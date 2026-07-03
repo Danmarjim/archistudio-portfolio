@@ -22,7 +22,8 @@ export default function NavBand() {
           <Link
             key={link.href}
             href={link.href}
-            className="inline-flex items-center gap-2 rounded-full border-2 border-white px-8 py-3 text-sm font-medium text-white transition-all hover:bg-white hover:text-neutral-700"
+            className="inline-flex items-center gap-2 rounded-full border-2 bg-white px-8 py-3 text-sm font-medium transition-all hover:bg-[#806038] hover:text-white"
+            style={{ borderColor: '#806038', color: '#806038' }}
           >
             {link.label}
             <ArrowRight className="h-4 w-4" />

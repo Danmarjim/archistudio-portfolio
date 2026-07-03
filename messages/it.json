@@ -33,7 +33,7 @@
   "AboutPreview": {
     "overline": "Chi sono",
     "title": "Architettura con uno scopo",
-    "description": "Ogni progetto è un'opportunità per creare spazi che migliorano la vita delle persone. Con oltre 10 anni di esperienza, combino creatività, funzionalità e sostenibilità in ogni progetto.",
+    "description": "Sono un'architetta appassionata di spazi che migliorano la vita delle persone. Il mio approccio unisce funzionalità, estetica e sostenibilità, cercando sempre soluzioni che rispettino il contesto e rispondano alle esigenze reali di ogni cliente. Ogni progetto è un'occasione per esplorare nuovi modi di abitare. Lo scopo è offrire reali benefici alle persone che si affidano a me.",
     "cta": "Scopri di più su di me"
   },
   "ServicesPreview": {
@@ -157,7 +157,8 @@
         "nameRequired": "Il nome è obbligatorio",
         "emailRequired": "L'email è obbligatoria",
         "emailInvalid": "L'email non è valida",
-        "messageRequired": "Il messaggio è obbligatorio"
+        "messageRequired": "Il messaggio è obbligatorio",
+        "submitFailed": "Non è stato possibile inviare il messaggio. Riprova più tardi o scrivimi direttamente via email."
       }
     },
     "success": {

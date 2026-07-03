@@ -6,20 +6,39 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 interface ProjectsStripProps {
   images: string[]
+  /** Optional subset of `images` that are portrait/vertical. Used on mobile viewports. */
+  verticalImages?: string[]
 }
 
-export default function ProjectsStrip({ images }: ProjectsStripProps) {
+export default function ProjectsStrip({ images, verticalImages }: ProjectsStripProps) {
+  const [activeImages, setActiveImages] = useState(images)
   const [current, setCurrent] = useState(0)
 
+  // Switch to the vertical-only set on mobile viewports (post-mount, to avoid
+  // hydration mismatches between server and client render).
   useEffect(() => {
-    if (images.length <= 1) return
+    if (!verticalImages || verticalImages.length === 0) return
+
+    const mql = window.matchMedia('(max-width: 767px)')
+    const applyList = () => {
+      setActiveImages(mql.matches ? verticalImages : images)
+      setCurrent(0)
+    }
+
+    applyList()
+    mql.addEventListener('change', applyList)
+    return () => mql.removeEventListener('change', applyList)
+  }, [images, verticalImages])
+
+  useEffect(() => {
+    if (activeImages.length <= 1) return
     const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length)
+      setCurrent((prev) => (prev + 1) % activeImages.length)
     }, 7000)
     return () => clearInterval(timer)
-  }, [images.length])
+  }, [activeImages.length])
 
-  if (!images.length) return null
+  if (!activeImages.length) return null
 
   return (
     <section
@@ -36,7 +55,7 @@ export default function ProjectsStrip({ images }: ProjectsStripProps) {
           className="overflow-hidden rounded-2xl shadow-2xl"
         >
           <Image
-            src={images[current]}
+            src={activeImages[current]}
             alt={`Progetto ${current + 1}`}
             width={0}
             height={0}

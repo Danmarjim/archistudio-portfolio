@@ -16,6 +16,13 @@ const iconMap: Record<string, React.ElementType> = {
   paintbrush: Paintbrush,
 }
 
+const serviceSlugToKey: Record<string, string> = {
+  'archiadvice': 'archiadvice',
+  'consulenza-acquisto': 'consulenzaAcquisto',
+  'restyling': 'restyling',
+  'progettazione-architettonica': 'progettazione',
+}
+
 interface ServiceCardProps {
   service: Service
   index: number
@@ -23,6 +30,9 @@ interface ServiceCardProps {
 
 function ServiceCard({ service, index }: ServiceCardProps) {
   const Icon = iconMap[service.icon] || Home
+  const sd = useTranslations('ServicesData')
+  const key = serviceSlugToKey[service.slug] ?? service.slug
+  const features = [sd(`${key}.f1`), sd(`${key}.f2`), sd(`${key}.f3`), sd(`${key}.f4`)]
 
   return (
     <motion.div
@@ -39,17 +49,17 @@ function ServiceCard({ service, index }: ServiceCardProps) {
 
       {/* Title */}
       <h3 className="font-serif text-xl font-medium text-foreground">
-        {service.title}
+        {sd(`${key}.title`)}
       </h3>
 
       {/* Description */}
       <p className="mt-3 text-neutral-600">
-        {service.description}
+        {sd(`${key}.question`)}
       </p>
 
       {/* Features */}
       <ul className="mt-6 space-y-2">
-        {service.features.slice(0, 3).map((feature) => (
+        {features.slice(0, 3).map((feature) => (
           <li
             key={feature}
             className="flex items-center gap-2 text-sm text-neutral-600"
