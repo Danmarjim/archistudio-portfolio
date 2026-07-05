@@ -1,4 +1,5 @@
 import { Inter, Playfair_Display } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const inter = Inter({
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html suppressHydrationWarning>
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   )

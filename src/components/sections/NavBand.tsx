@@ -3,6 +3,7 @@
 import { Link } from '@/i18n/navigation'
 import { ArrowRight } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { Button } from '@/components/ui'
 
 export default function NavBand() {
   const t = useTranslations('Navigation')
@@ -19,15 +20,17 @@ export default function NavBand() {
     <section style={{ backgroundColor: '#eeb898' }} className="py-14">
       <div className="flex flex-wrap justify-center gap-5 px-6">
         {navLinks.map((link) => (
-          <Link
+          <Button
             key={link.href}
-            href={link.href}
-            className="inline-flex items-center gap-2 rounded-full border-2 bg-white px-8 py-3 text-sm font-medium transition-all hover:bg-[#806038] hover:text-white"
-            style={{ borderColor: '#806038', color: '#806038' }}
+            size="lg"
+            className="bg-white text-primary-600 hover:bg-primary-50"
+            asChild
           >
-            {link.label}
-            <ArrowRight className="h-4 w-4" />
-          </Link>
+            <Link href={link.href}>
+              {link.label}
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
         ))}
       </div>
     </section>
