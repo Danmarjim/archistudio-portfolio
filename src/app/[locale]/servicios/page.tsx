@@ -397,11 +397,8 @@ export default function ServiciosPage() {
               {t('ctaSubtitle')}
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Button variant="secondary" size="lg" className="bg-white text-primary-600 hover:bg-primary-50" asChild>
-                <Link href="/contacto">
-                  {t('ctaButton')}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+              <Button variant="inverse" size="lg" trailingIcon asChild>
+                <Link href="/contacto">{t('ctaButton')}</Link>
               </Button>
               <a
                 href="https://calendly.com/mp_archistudio"

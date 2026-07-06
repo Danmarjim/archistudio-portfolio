@@ -1,0 +1,74 @@
+<!-- @dsCard group="Media" -->
+<div style="background:#fafaf9; color:#1a1a1a; padding:32px; box-sizing:border-box; font-family:'Inter', system-ui, sans-serif;">
+  <style>
+    .ds-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #737373; margin: 0 0 16px; }
+    .ds-section { margin-bottom: 40px; }
+    .ds-section:last-child { margin-bottom: 0; }
+    .ds-row { display: flex; gap: 20px; flex-wrap: wrap; }
+    .ds-item { width: 160px; }
+    .ds-name { font-size: 11px; color: #a3a3a3; font-family: ui-monospace, monospace; margin-top: 8px; }
+
+    .media-box { position: relative; overflow: hidden; background: #f5f5f5; border-radius: 8px; }
+
+    @keyframes ds-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+    .skeleton { position: absolute; inset: 0; background: #e5e5e5; animation: ds-pulse 2s cubic-bezier(0.4,0,0.6,1) infinite; }
+
+    .loaded-fill {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, #e0ccb0 0%, #d4d4d4 100%);
+      display: flex; align-items: center; justify-content: center;
+      color: #737373; font-size: 11px; font-family: ui-monospace, monospace;
+    }
+
+    .error-fill {
+      position: absolute; inset: 0; background: #f5f5f5;
+      display: flex; align-items: center; justify-content: center;
+      color: #a3a3a3; font-size: 12px; text-align: center; padding: 8px;
+    }
+
+    .ar-square { aspect-ratio: 1 / 1; }
+    .ar-video { aspect-ratio: 16 / 9; }
+    .ar-portrait { aspect-ratio: 3 / 4; }
+    .ar-landscape { aspect-ratio: 4 / 3; }
+  </style>
+
+  <div class="ds-section">
+    <p class="ds-title">Estados</p>
+    <div class="ds-row">
+      <div class="ds-item">
+        <div class="media-box ar-landscape"><div class="skeleton"></div></div>
+        <p class="ds-name">loading (skeleton)</p>
+      </div>
+      <div class="ds-item">
+        <div class="media-box ar-landscape"><div class="loaded-fill">imagen cargada</div></div>
+        <p class="ds-name">loaded (object-cover)</p>
+      </div>
+      <div class="ds-item">
+        <div class="media-box ar-landscape"><div class="error-fill">Error al cargar imagen</div></div>
+        <p class="ds-name">error</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ds-section">
+    <p class="ds-title">aspectRatio</p>
+    <div class="ds-row">
+      <div class="ds-item" style="width:110px;">
+        <div class="media-box ar-square"><div class="loaded-fill">1:1</div></div>
+        <p class="ds-name">square</p>
+      </div>
+      <div class="ds-item" style="width:180px;">
+        <div class="media-box ar-video"><div class="loaded-fill">16:9</div></div>
+        <p class="ds-name">video</p>
+      </div>
+      <div class="ds-item" style="width:120px;">
+        <div class="media-box ar-portrait"><div class="loaded-fill">3:4</div></div>
+        <p class="ds-name">portrait</p>
+      </div>
+      <div class="ds-item" style="width:160px;">
+        <div class="media-box ar-landscape"><div class="loaded-fill">4:3</div></div>
+        <p class="ds-name">landscape (default fallback)</p>
+      </div>
+    </div>
+  </div>
+</div>

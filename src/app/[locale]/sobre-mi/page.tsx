@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowRight, Sun, Palette, Maximize2, Heart, BookOpen, Briefcase } from 'lucide-react'
+import { Sun, Palette, Maximize2, Heart, BookOpen, Briefcase } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import NavBand from '@/components/sections/NavBand'
@@ -236,16 +236,8 @@ export default function SobreMiPage() {
               {t('ctaSubtitle')}
             </p>
             <div className="mt-8 flex justify-center">
-              <Button
-                variant="secondary"
-                size="lg"
-                className="bg-white text-primary-600 hover:bg-primary-50"
-                asChild
-              >
-                <a href="mailto:martina_pozzi_17@hotmail.com">
-                  {t('ctaButton')}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
+              <Button variant="inverse" size="lg" trailingIcon asChild>
+                <a href="mailto:martina_pozzi_17@hotmail.com">{t('ctaButton')}</a>
               </Button>
             </div>
           </motion.div>

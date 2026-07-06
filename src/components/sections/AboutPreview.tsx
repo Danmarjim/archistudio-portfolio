@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import { useTranslations } from 'next-intl'
@@ -63,11 +62,8 @@ export default function AboutPreview({
             </div>
 
             <div className="mt-8">
-              <Button variant="outline" size="lg" asChild>
-                <Link href={ctaHref}>
-                  {t('cta')}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+              <Button variant="outline" size="lg" trailingIcon asChild>
+                <Link href={ctaHref}>{t('cta')}</Link>
               </Button>
             </div>
           </motion.div>

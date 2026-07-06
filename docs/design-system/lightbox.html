@@ -1,0 +1,65 @@
+<!-- @dsCard group="Overlays" -->
+<div style="background:#fafaf9; color:#1a1a1a; padding:32px; box-sizing:border-box; font-family:'Inter', system-ui, sans-serif;">
+  <style>
+    .ds-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #737373; margin: 0 0 16px; }
+
+    .screen {
+      position: relative; width: 100%; max-width: 720px; aspect-ratio: 16 / 10;
+      background: rgba(0,0,0,0.95); border-radius: 12px; overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .topbar { position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; padding: 14px; z-index: 2; }
+    .counter { background: rgba(255,255,255,0.1); color: #fff; font-size: 12px; font-weight: 500; padding: 8px 14px; border-radius: 9999px; backdrop-filter: blur(4px); }
+    .actions { display: flex; gap: 8px; }
+    .icon-btn { width: 34px; height: 34px; border-radius: 9999px; background: rgba(255,255,255,0.1); border: none; color: #fff; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); cursor: pointer; transition: background-color .15s; }
+    .icon-btn:hover { background: rgba(255,255,255,0.2); }
+
+    .nav-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 9999px; background: rgba(255,255,255,0.1); border: none; color: #fff; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); cursor: pointer; z-index: 2; transition: background-color .15s, transform .15s; }
+    .nav-btn:hover { background: rgba(255,255,255,0.2); }
+    .nav-prev { left: 14px; }
+    .nav-next { right: 14px; }
+
+    .stage { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+    .stage-image {
+      width: 62%; height: 70%; border-radius: 4px;
+      background: linear-gradient(135deg, #403018 0%, #262626 100%);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.4); font-size: 12px; font-family: ui-monospace, monospace;
+    }
+
+    .thumbs { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; background: rgba(0,0,0,0.5); padding: 10px 16px; border-radius: 9999px; backdrop-filter: blur(4px); z-index: 2; }
+    .dot { height: 8px; border-radius: 9999px; background: rgba(255,255,255,0.4); }
+    .dot.active { width: 24px; background: #fff; }
+    .dot:not(.active) { width: 8px; }
+
+    .ds-legend { font-size: 12px; color: #737373; margin-top: 14px; text-align: center; }
+  </style>
+
+  <p class="ds-title">Lightbox — overlay a pantalla completa (bg-black/95)</p>
+
+  <div class="screen">
+    <div class="topbar">
+      <span class="counter">2 / 5</span>
+      <div class="actions">
+        <button class="icon-btn" aria-label="Acercar">🔍</button>
+        <button class="icon-btn" aria-label="Cerrar">✕</button>
+      </div>
+    </div>
+
+    <button class="nav-btn nav-prev" aria-label="Imagen anterior">‹</button>
+    <button class="nav-btn nav-next" aria-label="Imagen siguiente">›</button>
+
+    <div class="stage"><div class="stage-image">imagen (object-contain)</div></div>
+
+    <div class="thumbs">
+      <span class="dot"></span>
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <p class="ds-legend">Swipe horizontal (drag) · doble click/tap para zoom · flechas de teclado y Esc</p>
+</div>

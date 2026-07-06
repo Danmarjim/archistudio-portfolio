@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowRight, Home, Video, Key, Paintbrush } from 'lucide-react'
+import { Home, Video, Key, Paintbrush } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import { services } from '@/lib/constants'
@@ -116,11 +116,8 @@ export default function ServicesPreview({
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-12 text-center"
           >
-            <Button variant="outline" size="lg" asChild>
-              <Link href="/servicios">
-                {t('cta')}
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+            <Button variant="outline" size="lg" trailingIcon asChild>
+              <Link href="/servicios">{t('cta')}</Link>
             </Button>
           </motion.div>
         )}

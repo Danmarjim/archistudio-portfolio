@@ -1,0 +1,101 @@
+<!-- @dsCard group="Buttons" -->
+<div style="background:#fafaf9; color:#1a1a1a; padding:32px; box-sizing:border-box; font-family:'Inter', system-ui, sans-serif;">
+  <style>
+    .ds-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #737373; margin: 0 0 16px; }
+    .ds-section { margin-bottom: 36px; }
+    .ds-section:last-child { margin-bottom: 0; }
+    .ds-grid-row { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
+    .ds-grid-row:last-child { margin-bottom: 0; }
+    .ds-row-label { width: 84px; flex-shrink: 0; font-size: 12px; color: #a3a3a3; font-family: ui-monospace, monospace; }
+
+    .btn { display:inline-flex; align-items:center; justify-content:center; border-radius:9999px; font-weight:500; border:none; cursor:pointer; transition: background-color .15s, color .15s, border-color .15s; }
+    .btn-sm { height:36px; padding:0 16px; font-size:14px; }
+    .btn-md { height:44px; padding:0 24px; font-size:14px; }
+    .btn-lg { height:48px; padding:0 32px; font-size:16px; }
+
+    .btn-primary { background:#a07848; color:#fff; }
+    .btn-primary:hover { background:#806038; }
+    .btn-primary:active { background:#604828; }
+
+    .btn-secondary { background:#f5f5f5; color:#1a1a1a; }
+    .btn-secondary:hover { background:#e5e5e5; }
+    .btn-secondary:active { background:#d4d4d4; }
+
+    .btn-outline { background:transparent; color:#1a1a1a; border:1px solid #d4d4d4; }
+    .btn-outline:hover { background:#f5f5f5; }
+    .btn-outline:active { background:#e5e5e5; }
+
+    .btn-ghost { background:transparent; color:#1a1a1a; }
+    .btn-ghost:hover { background:#f5f5f5; }
+    .btn-ghost:active { background:#e5e5e5; }
+
+    .btn-inverse { background:#fff; color:#a07848; }
+    .btn-inverse:hover { background:#faf5f0; }
+    .btn-inverse:active { background:#f0e6d8; }
+
+    .btn:disabled { opacity:.5; pointer-events:none; }
+
+    .ds-row-tinted { background:#a07848; border-radius:8px; padding:10px 16px; }
+    .ds-row-tinted .ds-row-label { color:rgba(255,255,255,0.7); }
+
+    .btn-icon { margin-left:8px; width:16px; height:16px; }
+  </style>
+
+  <div class="ds-section">
+    <p class="ds-title">Variant × Size</p>
+
+    <div class="ds-grid-row">
+      <span class="ds-row-label">primary</span>
+      <button class="btn btn-primary btn-sm">Button</button>
+      <button class="btn btn-primary btn-md">Button</button>
+      <button class="btn btn-primary btn-lg">Button</button>
+    </div>
+    <div class="ds-grid-row">
+      <span class="ds-row-label">secondary</span>
+      <button class="btn btn-secondary btn-sm">Button</button>
+      <button class="btn btn-secondary btn-md">Button</button>
+      <button class="btn btn-secondary btn-lg">Button</button>
+    </div>
+    <div class="ds-grid-row">
+      <span class="ds-row-label">outline</span>
+      <button class="btn btn-outline btn-sm">Button</button>
+      <button class="btn btn-outline btn-md">Button</button>
+      <button class="btn btn-outline btn-lg">Button</button>
+    </div>
+    <div class="ds-grid-row">
+      <span class="ds-row-label">ghost</span>
+      <button class="btn btn-ghost btn-sm">Button</button>
+      <button class="btn btn-ghost btn-md">Button</button>
+      <button class="btn btn-ghost btn-lg">Button</button>
+    </div>
+    <div class="ds-grid-row ds-row-tinted">
+      <span class="ds-row-label">inverse</span>
+      <button class="btn btn-inverse btn-sm">Button</button>
+      <button class="btn btn-inverse btn-md">Button</button>
+      <button class="btn btn-inverse btn-lg">Button</button>
+    </div>
+  </div>
+
+  <div class="ds-section">
+    <p class="ds-title">trailingIcon — prop del componente, no markup manual</p>
+    <div class="ds-grid-row">
+      <span class="ds-row-label">primary</span>
+      <button class="btn btn-primary btn-lg">Ver proyectos <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+    </div>
+    <div class="ds-grid-row ds-row-tinted">
+      <span class="ds-row-label">inverse</span>
+      <button class="btn btn-inverse btn-lg">Contactar ahora <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+
+  <div class="ds-section">
+    <p class="ds-title">Disabled</p>
+    <div class="ds-grid-row">
+      <span class="ds-row-label">&nbsp;</span>
+      <button class="btn btn-primary btn-md" disabled>Button</button>
+      <button class="btn btn-secondary btn-md" disabled>Button</button>
+      <button class="btn btn-outline btn-md" disabled>Button</button>
+      <button class="btn btn-ghost btn-md" disabled>Button</button>
+    </div>
+  </div>
+</div>

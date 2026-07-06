@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import { useTranslations } from 'next-intl'
@@ -49,15 +48,8 @@ export default function CallToAction({
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-10"
           >
-            <Button
-              size="lg"
-              className="bg-white text-primary-600 hover:bg-primary-50"
-              asChild
-            >
-              <Link href={ctaHref}>
-                {resolvedCta}
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+            <Button variant="inverse" size="lg" trailingIcon asChild>
+              <Link href={ctaHref}>{resolvedCta}</Link>
             </Button>
           </motion.div>
         </motion.div>

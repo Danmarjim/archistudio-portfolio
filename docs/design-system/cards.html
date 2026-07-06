@@ -1,0 +1,61 @@
+<!-- @dsCard group="Cards" -->
+<div style="background:#fafaf9; color:#1a1a1a; padding:32px; box-sizing:border-box; font-family:'Inter', system-ui, sans-serif;">
+  <style>
+    .ds-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #737373; margin: 0 0 16px; }
+    .ds-section { margin-bottom: 40px; }
+    .ds-section:last-child { margin-bottom: 0; }
+    .ds-row { display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; }
+    .ds-name { font-size: 11px; color: #a3a3a3; font-family: ui-monospace, monospace; margin-top: 8px; }
+
+    .placeholder {
+      display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #e0ccb0 0%, #d4d4d4 100%);
+      color: #737373; font-size: 12px; font-family: ui-monospace, monospace;
+      width: 100%; height: 100%;
+    }
+
+    .card { border-radius: 16px; overflow: hidden; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+    .card-hover { transition: box-shadow .3s; }
+    .card-hover:hover { box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1); }
+
+    .card-image { position: relative; overflow: hidden; }
+    .ar-square { aspect-ratio: 1 / 1; }
+    .ar-video { aspect-ratio: 16 / 9; }
+    .ar-portrait { aspect-ratio: 3 / 4; }
+
+    .card-content { padding: 20px; }
+    .card-title { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; font-weight: 500; color: #1a1a1a; margin: 0; }
+    .card-description { margin-top: 8px; font-size: 14px; color: #525252; margin-bottom: 0; }
+  </style>
+
+  <div class="ds-section">
+    <p class="ds-title">Card.Image — aspectRatio</p>
+    <div class="ds-row">
+      <div style="width:160px;">
+        <div class="card-image ar-square"><div class="placeholder">1:1</div></div>
+        <p class="ds-name">square</p>
+      </div>
+      <div style="width:220px;">
+        <div class="card-image ar-video"><div class="placeholder">16:9</div></div>
+        <p class="ds-name">video (default)</p>
+      </div>
+      <div style="width:150px;">
+        <div class="card-image ar-portrait"><div class="placeholder">3:4</div></div>
+        <p class="ds-name">portrait</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ds-section">
+    <p class="ds-title">Composed — Card.Image + Card.Content + Card.Title + Card.Description (hover)</p>
+    <div style="width: 280px;">
+      <div class="card card-hover">
+        <div class="card-image ar-portrait"><div class="placeholder">imagen proyecto</div></div>
+        <div class="card-content">
+          <h3 class="card-title">Casa Archi Colori</h3>
+          <p class="card-description">Ristrutturazione integrale · Bergamo · 2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

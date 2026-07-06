@@ -1,0 +1,34 @@
+<!-- @dsCard group="Layout" -->
+<div style="background:#fafaf9; color:#1a1a1a; padding:32px; box-sizing:border-box; font-family:'Inter', system-ui, sans-serif;">
+  <style>
+    .ds-title { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #737373; margin: 0 0 16px; }
+    .ds-section { margin-bottom: 32px; }
+    .ds-section:last-child { margin-bottom: 0; }
+
+    .viewport { background: #fff; border: 1px dashed #d4d4d4; border-radius: 8px; overflow: hidden; }
+    .container-demo { max-width: 1280px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; }
+    .container-fill {
+      background: repeating-linear-gradient(135deg, rgba(160,120,72,0.10) 0 10px, rgba(160,120,72,0.04) 10px 20px);
+      border-left: 2px dashed #c09460; border-right: 2px dashed #c09460;
+      height: 56px; display: flex; align-items: center; justify-content: center;
+      font-size: 12px; color: #806038; font-family: ui-monospace, monospace;
+    }
+
+    .ds-legend { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; font-size: 13px; }
+    .ds-legend code { font-family: ui-monospace, monospace; font-size: 12px; background: #f5f5f5; padding: 2px 6px; border-radius: 4px; }
+  </style>
+
+  <div class="ds-section">
+    <p class="ds-title">mx-auto w-full max-w-7xl px-6 lg:px-8</p>
+    <div class="viewport">
+      <div class="container-demo">
+        <div class="container-fill">contenido centrado · max-width 1280px</div>
+      </div>
+    </div>
+    <div class="ds-legend">
+      <div><code>max-w-7xl</code> → ancho máximo del contenido: 1280px</div>
+      <div><code>px-6</code> → padding lateral 24px (base) · <code>lg:px-8</code> → 32px desde 1024px</div>
+      <div><code>as</code> → <code>div</code> (default) · <code>section</code> · <code>article</code> · <code>main</code></div>
+    </div>
+  </div>
+</div>

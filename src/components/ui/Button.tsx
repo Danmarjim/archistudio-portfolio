@@ -1,13 +1,16 @@
 import { forwardRef, cloneElement, isValidElement } from 'react'
+import { ArrowRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
-type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost'
+type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost' | 'inverse'
 type ButtonSize = 'sm' | 'md' | 'lg'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant
   size?: ButtonSize
   asChild?: boolean
+  /** Añade una flecha final (ArrowRight), usada en CTAs sobre fondos de color. */
+  trailingIcon?: boolean
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -19,6 +22,8 @@ const variantStyles: Record<ButtonVariant, string> = {
     'border border-neutral-300 bg-transparent text-foreground hover:bg-neutral-100 active:bg-neutral-200',
   ghost:
     'bg-transparent text-foreground hover:bg-neutral-100 active:bg-neutral-200',
+  inverse:
+    'bg-white text-primary-600 hover:bg-primary-50 active:bg-primary-100',
 }
 
 const sizeStyles: Record<ButtonSize, string> = {
@@ -28,7 +33,7 @@ const sizeStyles: Record<ButtonSize, string> = {
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = 'primary', size = 'md', asChild = false, children, ...props }, ref) => {
+  ({ className, variant = 'primary', size = 'md', asChild = false, trailingIcon = false, children, ...props }, ref) => {
     const buttonClasses = cn(
       'inline-flex items-center justify-center rounded-full font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
       variantStyles[variant],
@@ -36,11 +41,20 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       className
     )
 
+    const icon = trailingIcon ? <ArrowRight className="ml-2 h-4 w-4" /> : null
+
     if (asChild && isValidElement(children)) {
-      return cloneElement(children, {
+      const child = children as React.ReactElement<{ children?: React.ReactNode; className?: string }>
+      return cloneElement(child, {
         ...props,
-        className: cn(buttonClasses, (children.props as { className?: string }).className),
-      } as React.HTMLAttributes<HTMLElement>)
+        className: cn(buttonClasses, child.props.className),
+        children: (
+          <>
+            {child.props.children}
+            {icon}
+          </>
+        ),
+      } as React.HTMLAttributes<HTMLElement> & { children: React.ReactNode })
     }
 
     return (
@@ -50,6 +64,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       >
         {children}
+        {icon}
       </button>
     )
   }

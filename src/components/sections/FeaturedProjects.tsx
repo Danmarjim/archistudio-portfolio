@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
@@ -55,11 +54,8 @@ export default function FeaturedProjects({
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-12 text-center"
           >
-            <Button variant="outline" size="lg" asChild>
-              <Link href="/proyectos">
-                {t('viewAll')}
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+            <Button variant="outline" size="lg" trailingIcon asChild>
+              <Link href="/proyectos">{t('viewAll')}</Link>
             </Button>
           </motion.div>
         )}
