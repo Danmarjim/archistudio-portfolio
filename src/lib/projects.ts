@@ -126,6 +126,18 @@ export function getAllProjects(locale: string = 'it'): Project[] {
       folderImages = data.images as string[]
     }
 
+    // Escludi immagini elencate in excludeImages (es. cover usata solo come copertina)
+    if (Array.isArray(data.excludeImages) && data.excludeImages.length > 0) {
+      const excludeBasenames = new Set<string>(
+        (data.excludeImages as string[]).map((p: string) =>
+          path.basename(p, path.extname(p)).toLowerCase()
+        )
+      )
+      folderImages = folderImages.filter(
+        (img) => !excludeBasenames.has(path.basename(img, path.extname(img)).toLowerCase())
+      )
+    }
+
     // Analizza ogni immagine (dimensioni + hash) in un'unica lettura per file
     const analyses = folderImages.map((img: string) => ({ img, ...analyzeImage(img) }))
 
