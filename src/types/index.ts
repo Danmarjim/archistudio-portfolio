@@ -69,6 +69,8 @@ export interface NewsPost {
   imagePosition?: string  // es. "center 20%" per centrare il soggetto nel crop 16:9
   imageAspect?: string    // es. "portrait" per mostrare la cover in formato verticale
   images?: string[]       // galleria aggiuntiva (es. pagine scansionate della rivista)
+  relatedProjectUrl?: string   // path interno al progetto correlato (es. /proyectos/bagno-italian-summer)
+  relatedProjectLabel?: string // testo del link al progetto (localizzato nel frontmatter)
   content?: string
 }
 

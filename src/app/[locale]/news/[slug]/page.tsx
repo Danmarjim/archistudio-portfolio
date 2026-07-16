@@ -129,6 +129,19 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
           </div>
         )}
 
+        {/* Link al progetto correlato */}
+        {post.relatedProjectUrl && (
+          <div className="mx-auto mt-8 max-w-3xl">
+            <Link
+              href={post.relatedProjectUrl}
+              className="inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:underline"
+            >
+              {post.relatedProjectLabel ?? 'Vedi il progetto'}
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        )}
+
         {/* Galleria pagine articolo — sotto il testo */}
         {post.images && post.images.length > 0 && (
           <div className="mx-auto mt-12 max-w-4xl">
