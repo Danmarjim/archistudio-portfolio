@@ -1,6 +1,6 @@
 # Guía de Setup en Windows desde Cero
 
-## Archistudio Portfolio - Configuración del Entorno de Desarrollo
+## Archistudio Portfolio - Configuración del Entorno de Desarrollo Windows
 
 ---
 
