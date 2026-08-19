@@ -350,7 +350,14 @@
     "producer": "Producción",
     "producerValue": "Panizza Studio",
     "year": "Año",
-    "yearValue": "2026 / 2027"
+    "yearValue": "2026 / 2027",
+    "heroLine1": "MP_archistudio presenta",
+    "heroLine2": "su primera COLECCIÓN DE ALFOMBRAS",
+    "videocallCta": "Puedes solicitar una videollamada de asesoramiento gratuita y un render de la alfombra en el ambiente que quieres completar",
+    "tailoredText": "Alfombras a medida realizadas en el tamaño que desees, tufteadas a mano, 100% personalizables: además de las combinaciones sugeridas en la colección, podrás elegir entre más de 70 colores para crear la que más te guste. Puedes solicitar muestras para evaluar el tejido",
+    "modelsIntro": "La colección consta de 5 modelos:",
+    "catalogCta": "Descubre todos los modelos de la colección completa y los precios: SOLICITA EL CATÁLOGO",
+    "catalogButton": "Envíame el catálogo"
   },
   "ServicesData": {
     "archiadvice": {

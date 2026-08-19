@@ -22,8 +22,8 @@ export default function TappetiPage() {
             className="mx-auto max-w-4xl text-center"
           >
             <h1 className="text-2xl font-semibold tracking-wide text-[#8B5C2A] md:text-3xl">
-              MP_archistudio presenta<br />
-              la sua prima COLLEZIONE DI TAPPETI
+              {t('heroLine1')}<br />
+              {t('heroLine2')}
             </h1>
           </motion.div>
         </Container>
@@ -35,7 +35,7 @@ export default function TappetiPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mx-auto w-full md:max-w-[33vw]"
+          className="mx-auto w-full px-6 md:max-w-[33vw] md:px-0"
         >
           <video
             src="/images/tappeti/tappeti-01.mp4"
@@ -72,7 +72,7 @@ export default function TappetiPage() {
                 {t('description3')}
               </p>
               <p className="mt-auto pt-6 text-right font-serif text-3xl font-light leading-tight text-[#8B5C2A] md:text-4xl">
-                Puoi chiedere una videocall di consulenza gratuita ed un render del tappeto inserito nell&apos;ambiente che vuoi completare
+                {t('videocallCta')}
               </p>
             </motion.div>
 
@@ -165,7 +165,7 @@ export default function TappetiPage() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="mt-auto pt-8 font-serif text-3xl font-light leading-tight text-[#8B5C2A] md:text-4xl"
               >
-                Tappeti sartoriali realizzati nella misura che desideri, tuftati a mano, 100% personalizzabili: oltre alle combinazioni suggerite in collezione, potrai scegliere tra più di 70 colori per creare quella adatta a te. Puoi richiedere i campioni per valutare il tessuto
+                {t('tailoredText')}
               </motion.p>
             </div>
           </div>
@@ -191,17 +191,17 @@ export default function TappetiPage() {
               />
             </div>
             <p className="mt-8 font-serif text-2xl font-light leading-snug text-neutral-800 md:text-3xl">
-              La collezione consta di 5 modelli : <span className="font-medium">ARCHI, PETALÀ, JACARANDA, MANTÓN</span> e <span className="font-medium">FUNDICIÓN</span>.
+              {t('modelsIntro')} <span className="font-medium">ARCHI, PETALÀ, JACARANDA, MANTÓN</span> e <span className="font-medium">FUNDICIÓN</span>.
             </p>
             <div className="mt-10 flex flex-col items-center gap-6 text-center">
               <p className="text-base font-medium uppercase tracking-widest text-[#8B5C2A] md:text-lg">
-                Scopri tutti i modelli della collezione completa e i prezzi: RICHIEDI IL CATALOGO
+                {t('catalogCta')}
               </p>
               <Link
                 href="/contacto"
                 className="inline-block rounded-full bg-[#8B5C2A] px-8 py-3 text-sm font-semibold uppercase tracking-widest text-white transition-opacity hover:opacity-80"
               >
-                Mandami il catalogo
+                {t('catalogButton')}
               </Link>
             </div>
           </motion.div>
