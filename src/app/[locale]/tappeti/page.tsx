@@ -31,24 +31,22 @@ export default function TappetiPage() {
 
       {/* Video */}
       <section className="pb-10 pt-4">
-        <Container>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="mx-auto w-full max-w-[33vw]"
-          >
-            <video
-              src="/images/tappeti/tappeti-01.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-              className="w-full rounded-lg"
-            />
-          </motion.div>
-        </Container>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mx-auto w-full md:max-w-[33vw]"
+        >
+          <video
+            src="/images/tappeti/tappeti-01.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            controls
+            className="w-full md:rounded-lg"
+          />
+        </motion.div>
       </section>
 
       {/* Riga 1: testo descrittivo + foto tappeti-02 */}
