@@ -44,7 +44,7 @@ export default function TappetiPage() {
             loop
             playsInline
             controls
-            className="w-full md:rounded-lg"
+            className="w-full rounded-lg"
           />
         </motion.div>
       </section>
