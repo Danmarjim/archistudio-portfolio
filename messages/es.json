@@ -7,6 +7,7 @@
     "projects": "Proyectos",
     "about": "Sobre mí",
     "services": "Servicios",
+    "tappeti": "Tappeti",
     "news": "News",
     "contact": "Contacto",
     "skipToContent": "Saltar al contenido principal"
@@ -151,7 +152,8 @@
         "residential": "Vivienda unifamiliar",
         "renovation": "Reforma integral",
         "commercial": "Proyecto comercial",
-        "other": "Otro tipo de proyecto"
+        "other": "Otro tipo de proyecto",
+        "carpet_catalog": "Catálogo ALFOMBRAS"
       },
       "errors": {
         "nameRequired": "El nombre es obligatorio",
@@ -334,6 +336,21 @@
     "ctaSubtitle": "Cuéntame tu proyecto y lo que necesitas. Me pondré en contacto contigo en 48h para concertar una llamada y prepararte un presupuesto a medida.",
     "ctaButton": "Escríbeme",
     "ctaBooking": "Reserva tu ArchiAdvice →"
+  },
+  "TappetiPage": {
+    "overline": "MP_archistudio by Martina Pozzi — 2026/2027",
+    "heroTitle": "Sevilla",
+    "heroSubtitle": "Una colección de alfombras",
+    "description1": "Sevilla, una colección de alfombras inspirada en el imaginario poético que la ciudad de Sevilla luce durante sus tradicionales Fiestas de Primavera.",
+    "description2": "Producida por Panizza Studio y nacida de la creatividad de Martina Pozzi, que ha traducido primero en papel y luego con lana y viscosa, los colores cálidos de la ciudad, combinándolos con elementos arquitectónicos típicos del arte mudéjar, aquí reinterpretados en clave gráfica contemporánea.",
+    "description3": "La colección Sevilla se distingue por un estilo fresco y vibrante: sus formas suaves y acogedoras se adaptan perfectamente a ambientes modernos, aportándoles un toque de calidez y personalidad.",
+    "ctaLabel": "Contáctame para más información",
+    "material": "Materiales",
+    "materialValue": "Lana y viscosa",
+    "producer": "Producción",
+    "producerValue": "Panizza Studio",
+    "year": "Año",
+    "yearValue": "2026 / 2027"
   },
   "ServicesData": {
     "archiadvice": {

@@ -7,6 +7,7 @@
     "projects": "Projects",
     "about": "About",
     "services": "Services",
+    "tappeti": "Tappeti",
     "news": "News",
     "contact": "Contact",
     "skipToContent": "Skip to main content"
@@ -151,7 +152,8 @@
         "residential": "Single-family home",
         "renovation": "Complete renovation",
         "commercial": "Commercial project",
-        "other": "Other project type"
+        "other": "Other project type",
+        "carpet_catalog": "CARPET Catalog"
       },
       "errors": {
         "nameRequired": "Name is required",
@@ -334,6 +336,21 @@
     "ctaSubtitle": "Tell me about your project and what you need. I'll contact you within 48h to arrange a call and prepare a tailored quote.",
     "ctaButton": "Write to me",
     "ctaBooking": "Book your ArchiAdvice →"
+  },
+  "TappetiPage": {
+    "overline": "MP_archistudio by Martina Pozzi — 2026/2027",
+    "heroTitle": "Sevilla",
+    "heroSubtitle": "A rug collection",
+    "description1": "Sevilla, a rug collection inspired by the poetic imagery that the city of Seville displays during its traditional Spring Festivals.",
+    "description2": "Produced by Panizza Studio and born from the creativity of Martina Pozzi, who translated first on paper then with wool and viscose the warm colours of the city, combining them with architectural elements typical of Mudéjar art, here reinterpreted in a contemporary graphic style.",
+    "description3": "The Sevilla collection stands out for its fresh and vibrant style: its soft and welcoming shapes adapt perfectly to modern environments, giving them a touch of warmth and personality.",
+    "ctaLabel": "Contact me for more information",
+    "material": "Materials",
+    "materialValue": "Wool and viscose",
+    "producer": "Production",
+    "producerValue": "Panizza Studio",
+    "year": "Year",
+    "yearValue": "2026 / 2027"
   },
   "ServicesData": {
     "archiadvice": {

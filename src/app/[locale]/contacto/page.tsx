@@ -93,7 +93,7 @@ const socialLinks = [
 export default function ContactoPage() {
   const t = useTranslations('ContactPage')
 
-  const projectTypeKeys = ['residential', 'renovation', 'commercial', 'other'] as const
+  const projectTypeKeys = ['residential', 'renovation', 'commercial', 'other', 'carpet_catalog'] as const
 
   const [formData, setFormData] = useState<FormData>({
     name: '',

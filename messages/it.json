@@ -7,6 +7,7 @@
     "projects": "Progetti",
     "about": "Chi sono",
     "services": "Servizi",
+    "tappeti": "Tappeti",
     "news": "News",
     "contact": "Contatto",
     "skipToContent": "Vai al contenuto principale"
@@ -151,7 +152,8 @@
         "residential": "Villa unifamiliare",
         "renovation": "Ristrutturazione completa",
         "commercial": "Progetto commerciale",
-        "other": "Altro tipo di progetto"
+        "other": "Altro tipo di progetto",
+        "carpet_catalog": "Catalogo TAPPETI"
       },
       "errors": {
         "nameRequired": "Il nome è obbligatorio",
@@ -334,6 +336,21 @@
     "ctaSubtitle": "Raccontami il tuo progetto e ciò di cui hai bisogno. Ti contatterò entro 48h per fissare una chiamata e prepararti un preventivo su misura.",
     "ctaButton": "Scrivimi",
     "ctaBooking": "Prenota il tuo ArchiAdvice →"
+  },
+  "TappetiPage": {
+    "overline": "MP_archistudio by Martina Pozzi — 2026/2027",
+    "heroTitle": "Sevilla",
+    "heroSubtitle": "MP_archistudio presenta la sua prima COLLEZIONE DI TAPPETI",
+    "description1": "Sevilla, una collezione di tappeti che trae ispirazione dall'immaginario poetico che la città di Siviglia sfoggia durante le sue tradizionali Feste di Primavera.",
+    "description2": "Prodotta da Panizza Studio e nata dalla creatività di Martina Pozzi, che ha tradotto prima su carta poi con lana e viscosa, i colori caldi della città, accostandoli a elementi architettonici tipici dell'arte mudéjar, qui reinterpretati in chiave grafica contemporanea.",
+    "description3": "La collezione Sevilla si distingue per uno stile fresco e vivace: le sue forme morbide e accoglienti si adattano perfettamente ad ambienti moderni, donando loro un tocco di calore e personalità.",
+    "ctaLabel": "Scrivimi per informazioni",
+    "material": "Materiali",
+    "materialValue": "Lana neozelandese e viscosa",
+    "producer": "Produzione",
+    "producerValue": "Panizza Studio",
+    "year": "Anno",
+    "yearValue": "2026 / 2027"
   },
   "ServicesData": {
     "archiadvice": {
