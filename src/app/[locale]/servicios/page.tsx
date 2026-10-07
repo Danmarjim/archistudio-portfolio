@@ -52,19 +52,14 @@ export default function ServiciosPage() {
       {/* Hero */}
       <section className="py-16 md:py-24">
         <Container>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mx-auto max-w-3xl text-center"
-          >
+          <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-serif text-4xl font-medium text-foreground md:text-5xl lg:text-6xl">
               {t('heroTitle')}
             </h1>
             <p className="mt-6 text-lg text-neutral-600 md:text-xl">
               {t('heroSubtitle')}
             </p>
-          </motion.div>
+          </div>
         </Container>
       </section>
 

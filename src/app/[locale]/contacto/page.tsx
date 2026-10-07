@@ -186,28 +186,18 @@ export default function ContactoPage() {
     <div className="py-16 md:py-24">
       <Container>
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mx-auto max-w-2xl text-center"
-        >
+        <div className="mx-auto max-w-2xl text-center">
           <h1 className="font-serif text-4xl font-medium text-foreground md:text-5xl">
             {t('title')}
           </h1>
           <p className="mt-4 text-lg text-neutral-600">
             {t('description')}
           </p>
-        </motion.div>
+        </div>
 
         <div className="mt-16 grid gap-12 lg:grid-cols-3">
           {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="min-w-0 lg:col-span-2"
-          >
+          <div className="min-w-0 lg:col-span-2">
             {isSubmitted ? (
               <div className="rounded-2xl bg-green-50 p-8 text-center">
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
@@ -359,7 +349,7 @@ export default function ContactoPage() {
                 )}
               </form>
             )}
-          </motion.div>
+          </div>
 
           {/* Contact Info Sidebar */}
           <motion.div

@@ -71,6 +71,7 @@ export default function ProjectsStrip({ images, verticalImages }: ProjectsStripP
             sizes="(max-width: 768px) 90vw, 70vw"
             style={{ width: 'auto', height: '60vh', maxWidth: '88vw', display: 'block' }}
             priority
+            fetchPriority="high"
           />
         </motion.div>
       </AnimatePresence>

@@ -160,6 +160,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
               style={{ objectPosition: post.imagePosition ?? 'center center' }}
               sizes="(max-width: 768px) 100vw, 400px"
               priority
+              fetchPriority="high"
             />
           </div>
         )}

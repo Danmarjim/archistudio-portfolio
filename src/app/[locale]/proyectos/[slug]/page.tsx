@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     locale,
     path: `/proyectos/${slug}`,
     title: `${project.title}${place}`,
-    description: project.excerpt,
+    description: project.description ?? project.excerpt,
     image: project.coverImage,
   })
 }
@@ -59,7 +59,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     '@context': 'https://schema.org',
     '@type': 'CreativeWork',
     name: project.title,
-    description: project.excerpt,
+    description: project.description ?? project.excerpt,
     url: localizedUrl(locale, `/proyectos/${slug}`),
     image: images.filter(Boolean).map((img) => absoluteUrl(img)),
     dateCreated: String(project.year),

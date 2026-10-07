@@ -86,6 +86,7 @@ export default function ImageWithLoader({
             'object-cover transition-opacity duration-500',
             isLoading ? 'opacity-0' : 'opacity-100'
           )}
+          fetchPriority={props.priority ? 'high' : undefined}
           onLoad={handleLoad}
           onError={handleError}
           {...props}

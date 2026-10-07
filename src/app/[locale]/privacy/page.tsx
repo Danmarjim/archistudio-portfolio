@@ -10,12 +10,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'Metadata.pages.privacy' })
-  return buildMetadata({
-    locale,
-    path: '/privacy',
-    title: t('title'),
-    description: t('description'),
-  })
+  return {
+    ...buildMetadata({
+      locale,
+      path: '/privacy',
+      title: t('title'),
+      description: t('description'),
+    }),
+    // Pagina legale: non va nei risultati di ricerca (ed è esclusa dalla sitemap)
+    robots: { index: false, follow: true },
+  }
 }
 
 export default function PrivacyPage() {

@@ -37,7 +37,6 @@ export default function AboutPreview({
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
               />
             </div>
           </motion.div>

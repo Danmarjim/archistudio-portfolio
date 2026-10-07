@@ -33,12 +33,7 @@ export default function SobreMiPage() {
         <Container>
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="relative order-2 lg:order-1 pr-6 sm:pr-0"
-            >
+            <div className="relative order-2 lg:order-1 pr-6 sm:pr-0">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-neutral-100">
                 <Image
                   src="/images/about/_K7A9382_1.jpg"
@@ -47,18 +42,14 @@ export default function SobreMiPage() {
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   priority
+                  fetchPriority="high"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-2xl bg-primary-100" />
-            </motion.div>
+            </div>
 
             {/* Content */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="order-1 lg:order-2"
-            >
+            <div className="order-1 lg:order-2">
               <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary-600">
                 {t('overline')}
               </p>
@@ -71,7 +62,7 @@ export default function SobreMiPage() {
                 <p>{t('heroPara3')}</p>
                 <p className="font-medium text-foreground">{t('heroHighlight')}</p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </Container>
       </section>
