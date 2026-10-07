@@ -131,13 +131,12 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
 
         {/* Link al progetto correlato */}
         {post.relatedProjectUrl && (
-          <div className="mx-auto mt-8 max-w-3xl">
+          <div className="mx-auto mt-10 max-w-3xl flex justify-center">
             <Link
               href={post.relatedProjectUrl}
-              className="inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:underline"
+              className="inline-block rounded-full bg-[#8B5C2A] px-8 py-3 text-sm font-semibold uppercase tracking-widest text-white transition-opacity hover:opacity-80"
             >
-              {post.relatedProjectLabel ?? 'Vedi il progetto'}
-              <ArrowRight className="h-4 w-4" />
+              {post.relatedProjectLabel ?? 'Scopri di più'}
             </Link>
           </div>
         )}

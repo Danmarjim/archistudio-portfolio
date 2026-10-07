@@ -1,0 +1,19 @@
+Abrir terminal y seguir la cadena de comandos
+copio tutto e incollo insieme epr aprire la web portfolio local
+
+cd ..
+cd ..
+cd '.\MARTINA WORLD\'
+cd .\MP_ARCHISTUDIO\
+cd .\archistudio-portfolio\
+npm run dev
+
+
+
+per pubblicaro ufficialmente verso il mondo ( copia incolla uno per uno )
+
+git add .
+git commit -m "mensaje"
+git push
+
+No hace falta vercel --prod
