@@ -63,10 +63,20 @@ export default function Hero({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="font-serif text-2xl font-medium leading-tight tracking-tight text-foreground sm:whitespace-nowrap sm:text-3xl lg:text-4xl xl:text-5xl"
+            className="font-serif text-2xl font-medium leading-tight tracking-tight text-foreground text-balance sm:text-3xl lg:text-4xl xl:text-5xl"
           >
             {tHero('title')}
           </motion.h1>
+
+          {/* Subtitle */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="mx-auto mt-5 max-w-3xl text-balance text-lg leading-relaxed text-foreground/70 sm:text-xl lg:text-2xl"
+          >
+            {tHero('subtitle')}
+          </motion.p>
 
           {/* CTA Buttons */}
           <motion.div
