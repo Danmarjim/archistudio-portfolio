@@ -1,14 +1,36 @@
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
+import JsonLd from '@/components/seo/JsonLd'
+import { buildBreadcrumb, buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Sobre Mí',
-  description: 'Arquitecta con más de 10 años de experiencia en diseño de viviendas, reformas e interiorismo. Conozca mi trayectoria y filosofía de trabajo.',
+type Props = {
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
 }
 
-export default function SobreMiLayout({
-  children,
+export async function generateMetadata({
+  params,
 }: {
-  children: React.ReactNode
-}) {
-  return children
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'Metadata.pages.about' })
+  return buildMetadata({
+    locale,
+    path: '/sobre-mi',
+    title: t('title'),
+    description: t('description'),
+  })
+}
+
+export default async function SobreMiLayout({ children, params }: Props) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'Metadata.pages.about' })
+
+  return (
+    <>
+      <JsonLd data={buildBreadcrumb(locale, [{ name: t('title'), path: '/sobre-mi' }])} />
+      {children}
+    </>
+  )
 }

@@ -2,12 +2,14 @@ import type { NavItem, SiteConfig, Service } from '@/types'
 
 export const siteConfig: SiteConfig = {
   name: 'MP_archistudio',
-  title: 'MP_archistudio | Portfolio di Architettura',
-  description: 'Portfolio professionale di architettura. Progettazione residenziale, ristrutturazioni e progetti commerciali con attenzione ai dettagli e creatività.',
-  url: 'https://example.com',
+  title: 'Architetto a Bergamo – Martina Pozzi | MP_archistudio',
+  description: 'Martina Pozzi, architetta a Bergamo: ristrutturazioni chiavi in mano, interior design su misura e consulenza all\'acquisto casa.',
+  // URL canonico di produzione (senza slash finale). Alimenta metadataBase, canonical,
+  // hreflang, og:url, sitemap e robots. Se il dominio principale cambia (es. .it), aggiornare qui.
+  url: 'https://mparchistudio.com',
   email: 'martina_pozzi_17@hotmail.com',
-  phone: undefined,
-  address: undefined,
+  phone: '+39 327 126 7024',
+  address: 'Via Bologna 2, 24128 Bergamo (BG), Italia',
   social: [
     { platform: 'instagram', url: 'https://www.instagram.com/mp_archistudio/' },
     { platform: 'linkedin', url: 'https://www.linkedin.com/in/martinachiaramariapozzi/' },
@@ -15,6 +17,17 @@ export const siteConfig: SiteConfig = {
     { platform: 'linktree', url: 'https://linktr.ee/Arch.MartinaPozzi?utm_source=linktree_profile_share&ltsid=5ebb31cc-5a59-4cce-b0a5-d577b11e5c5a' },
   ],
 }
+
+/** Profili professionali esterni (usati come `sameAs` nei dati strutturati). */
+export const sameAsProfiles: string[] = [
+  'https://www.instagram.com/mp_archistudio/',
+  'https://www.linkedin.com/in/martinachiaramariapozzi/',
+  'https://es.pinterest.com/MartinaCMPozzi/',
+  'https://www.houzz.it/pro/martina-pozzi',
+  'https://www.archilovers.com/mparchistudio/',
+  'https://www.homify.it/esperti/10014002/mp_archistudio-di-arch-martina-c-m-pozzi',
+  'https://www.spazibelli.com/professionisti/arch-martina-pozzi-mp_archistudio',
+]
 
 export const navigation: NavItem[] = [
   { label: 'projects', href: '/proyectos' },

@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Container from '@/components/ui/Container'
@@ -37,7 +37,6 @@ export default function AboutPreview({
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
               />
             </div>
           </motion.div>

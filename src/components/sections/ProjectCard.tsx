@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import { ImageWithLoader, Badge } from '@/components/ui'
@@ -14,9 +14,11 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
   const tCat = useTranslations('ProjectCategories')
+  const aboveFold = index < 3
   return (
     <motion.article
-      initial={{ opacity: 0, y: 20 }}
+      // Le prime card sono above the fold: visibili già nell'HTML (LCP), senza opacity:0 iniziale
+      initial={aboveFold ? false : { opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -31,6 +33,8 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
             src={project.coverImage}
             alt={project.title}
             aspectRatio="landscape"
+            priority={aboveFold}
+            sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1023px) calc(50vw - 40px), 400px"
             className="transition-transform duration-500 group-hover:scale-105"
           />
 

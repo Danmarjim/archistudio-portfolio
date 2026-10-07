@@ -1,6 +1,9 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import ProjectDetail from '@/components/sections/ProjectDetail'
+import JsonLd from '@/components/seo/JsonLd'
+import { getTranslations } from 'next-intl/server'
+import { absoluteUrl, buildBreadcrumb, buildMetadata, localizedUrl, personRef } from '@/lib/seo'
 import { getProjectBySlug, getAdjacentProjects, getAllProjectSlugs } from '@/lib/projects'
 
 interface ProjectPageProps {
@@ -9,6 +12,9 @@ interface ProjectPageProps {
     slug: string
   }>
 }
+
+// Slug non elencati in generateStaticParams rispondono 404 senza renderizzare la pagina.
+export const dynamicParams = false
 
 export async function generateStaticParams() {
   const slugs = getAllProjectSlugs()
@@ -25,10 +31,15 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     }
   }
 
-  return {
-    title: `${project.title} | MP_archistudio`,
-    description: project.excerpt,
-  }
+  const place = project.location ? ` – ${project.location}` : ''
+
+  return buildMetadata({
+    locale,
+    path: `/proyectos/${slug}`,
+    title: `${project.title}${place}`,
+    description: project.description ?? project.excerpt,
+    image: project.coverImage,
+  })
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
@@ -41,5 +52,37 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   const { prev, next } = getAdjacentProjects(slug, locale)
 
-  return <ProjectDetail project={project} prevProject={prev} nextProject={next} />
+  const tMeta = await getTranslations({ locale, namespace: 'Metadata.pages.projects' })
+  const images = (project.images?.length ? project.images : [project.coverImage]).slice(0, 8)
+
+  const projectSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: project.title,
+    description: project.description ?? project.excerpt,
+    url: localizedUrl(locale, `/proyectos/${slug}`),
+    image: images.filter(Boolean).map((img) => absoluteUrl(img)),
+    dateCreated: String(project.year),
+    locationCreated: project.location
+      ? { '@type': 'Place', name: project.location }
+      : undefined,
+    keywords: project.tags?.length ? project.tags.join(', ') : undefined,
+    inLanguage: locale,
+    creator: personRef,
+  }
+
+  return (
+    <>
+      <JsonLd
+        data={[
+          projectSchema,
+          buildBreadcrumb(locale, [
+            { name: tMeta('title'), path: '/proyectos' },
+            { name: project.title, path: `/proyectos/${slug}` },
+          ]),
+        ]}
+      />
+      <ProjectDetail project={project} prevProject={prev} nextProject={next} />
+    </>
+  )
 }

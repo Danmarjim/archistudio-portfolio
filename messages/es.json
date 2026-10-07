@@ -1,7 +1,37 @@
 {
   "Metadata": {
-    "title": "Estudio de Arquitectura | Portfolio",
-    "description": "Portfolio profesional de arquitectura. Diseño de viviendas, reformas y proyectos comerciales con atención al detalle y creatividad."
+    "title": "Arquitecta en Bérgamo – Martina Pozzi | MP_archistudio",
+    "description": "Martina Pozzi, arquitecta en Bérgamo: reformas llave en mano, interiorismo a medida y asesoría para la compra de vivienda. Te acompaño hasta el final de la obra.",
+    "pages": {
+      "projects": {
+        "title": "Proyectos de reforma e interiorismo en Bérgamo",
+        "description": "Casas, baños y cocinas reformados por MP_archistudio: descubre los proyectos de Martina Pozzi, arquitecta en Bérgamo."
+      },
+      "news": {
+        "title": "Noticias y publicaciones",
+        "description": "Publicaciones en revistas, reflexiones y anuncios del estudio MP_archistudio de Martina Pozzi."
+      },
+      "about": {
+        "title": "Sobre mí – Martina Pozzi, arquitecta",
+        "description": "Martina Pozzi, arquitecta titulada en el Politecnico di Milano y con sede en Bérgamo. Conoce mi trayectoria y mi forma de trabajar."
+      },
+      "services": {
+        "title": "Servicios de arquitectura y reformas en Bérgamo",
+        "description": "ArchiAdvice, asesoría para la compra, restyling y proyecto arquitectónico integral: elige el servicio adecuado para tu vivienda."
+      },
+      "contact": {
+        "title": "Contacto – Arquitecta en Bérgamo",
+        "description": "Contacta con Martina Pozzi para reformas, asesorías y proyectos de interiores en Bérgamo. Respondo en menos de 24 horas."
+      },
+      "tappeti": {
+        "title": "Alfombras — Colección Sevilla",
+        "description": "Sevilla, una colección de alfombras firmadas MP_archistudio by Martina Pozzi. Inspirada en las fiestas de primavera de Sevilla y producida por Panizza Studio en lana y viscosa."
+      },
+      "privacy": {
+        "title": "Política de privacidad",
+        "description": "Información sobre el tratamiento de datos personales de MP_archistudio."
+      }
+    }
   },
   "Navigation": {
     "projects": "Proyectos",
@@ -400,5 +430,14 @@
       "f4": "Dirección artística, dirección de obra y cierre del expediente con actualización catastral",
       "cta": "Descubre cómo trabajamos"
     }
+  },
+  "NotFound": {
+    "eyebrow": "Error 404",
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
+    "backHome": "Volver al inicio"
+  },
+  "Press": {
+    "title": "Publicado en"
   }
 }

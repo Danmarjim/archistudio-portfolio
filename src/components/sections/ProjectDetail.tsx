@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { useMemo } from 'react'
 import { motion } from 'framer-motion'
@@ -20,6 +20,7 @@ interface ProjectDetailProps {
 export default function ProjectDetail({ project, prevProject, nextProject }: ProjectDetailProps) {
   const t = useTranslations('ProjectDetail')
   const tStatus = useTranslations('ProjectStatus')
+  const tCat = useTranslations('ProjectCategories')
 
   const details = [
     { icon: MapPin, label: t('location'), value: project.location },
@@ -80,28 +81,19 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
     <div className="py-12">
       <Container>
         {/* Back button */}
-        <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div>
           <Button variant="ghost" size="sm" asChild>
             <Link href="/proyectos">
               <ArrowLeft className="mr-2 h-4 w-4" />
               {t('backToProjects')}
             </Link>
           </Button>
-        </motion.div>
+        </div>
 
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="mt-8"
-        >
+        <div className="mt-8">
           <Badge variant="secondary" className="mb-4">
-            {project.category}
+            {tCat(project.category as Parameters<typeof tCat>[0], { defaultValue: project.category })}
           </Badge>
           <h1 className="font-serif text-4xl font-medium text-foreground md:text-5xl lg:text-6xl">
             {project.title}
@@ -109,15 +101,10 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
           <p className="mt-4 max-w-3xl text-lg text-neutral-600 md:text-xl">
             {project.excerpt}
           </p>
-        </motion.div>
+        </div>
 
         {/* Cover Image */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="relative mt-12 aspect-[16/9] overflow-hidden rounded-2xl bg-neutral-100"
-        >
+        <div className="relative mt-12 aspect-[16/9] overflow-hidden rounded-2xl bg-neutral-100">
           <Image
             src={project.coverImage}
             alt={project.title}
@@ -125,8 +112,9 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
             className="object-cover"
             sizes="(max-width: 1280px) 100vw, 1280px"
             priority
+            fetchPriority="high"
           />
-        </motion.div>
+        </div>
 
         {/* Content Grid */}
         <div className="mt-16 grid gap-12 lg:grid-cols-3">
@@ -208,8 +196,10 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
                   <Image
                     src={item.img}
                     alt={`${project.title} - Immagine ${item.originalIndex + 1}`}
-                    width={0}
-                    height={0}
+                    // Dimensioni reali: riservano lo spazio prima del caricamento.
+                    // Con 0×0 tutte le immagini risultavano nel viewport e il lazy loading le scaricava insieme.
+                    width={item.dims?.width ?? 1200}
+                    height={item.dims?.height ?? 900}
                     sizes={item.isLandscape
                       ? '100vw'
                       : '(max-width: 1024px) 100vw, 33vw'}

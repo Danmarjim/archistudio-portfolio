@@ -4,6 +4,8 @@ import NewsGrid from '@/components/sections/NewsGrid'
 import NavBand from '@/components/sections/NavBand'
 import { getAllNews } from '@/lib/news'
 import { getTranslations } from 'next-intl/server'
+import JsonLd from '@/components/seo/JsonLd'
+import { buildBreadcrumb, buildMetadata } from '@/lib/seo'
 
 interface NewsPageProps {
   params: Promise<{ locale: string }>
@@ -11,11 +13,13 @@ interface NewsPageProps {
 
 export async function generateMetadata({ params }: NewsPageProps): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'NewsPage' })
-  return {
-    title: `${t('title')} | MP_archistudio`,
+  const t = await getTranslations({ locale, namespace: 'Metadata.pages.news' })
+  return buildMetadata({
+    locale,
+    path: '/news',
+    title: t('title'),
     description: t('description'),
-  }
+  })
 }
 
 export default async function NewsPage({ params }: NewsPageProps) {
@@ -23,8 +27,11 @@ export default async function NewsPage({ params }: NewsPageProps) {
   const posts = getAllNews(locale)
   const t = await getTranslations({ locale, namespace: 'NewsPage' })
 
+  const tMeta = await getTranslations({ locale, namespace: 'Metadata.pages.news' })
+
   return (
     <div className="py-12">
+      <JsonLd data={buildBreadcrumb(locale, [{ name: tMeta('title'), path: '/news' }])} />
       <Container>
         {/* Header */}
         <div className="mb-12 text-center">

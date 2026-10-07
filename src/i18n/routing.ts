@@ -12,4 +12,8 @@ export const routing = defineRouting({
 
   // Omit locale prefix for the default locale (Italian)
   localePrefix: 'as-needed',
+
+  // hreflang e canonical sono dichiarati nell'HTML (generateMetadata). Disattivo l'header HTTP
+  // `Link` di next-intl per evitare duplicati o conflitti con le alternate dichiarate in pagina.
+  alternateLinks: false,
 })

@@ -1,7 +1,7 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
-import { Instagram, Linkedin, Mail } from 'lucide-react'
+import { Instagram, Linkedin, Mail, Phone } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import Logo from '@/components/shared/Logo'
 import { siteConfig } from '@/lib/constants'
@@ -80,14 +80,14 @@ export default function Footer() {
 
           {/* Centro: Social */}
           <div className="flex flex-col items-center justify-center gap-4">
-            <div className="flex items-center gap-5">
+            <div className="flex flex-wrap items-center justify-center gap-1">
               {siteConfig.social.map((link) => (
                 <a
                   key={link.platform}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-neutral-500 transition-colors hover:text-foreground"
+                  className="inline-flex h-11 w-11 items-center justify-center text-neutral-500 transition-colors hover:text-foreground"
                   aria-label={link.platform}
                 >
                   {link.platform === 'instagram' && <Instagram className="h-5 w-5" />}
@@ -100,7 +100,7 @@ export default function Footer() {
                 href="https://www.spazibelli.com/professionisti/arch-martina-pozzi-mp_archistudio"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-500 transition-colors hover:text-foreground"
+                className="inline-flex h-11 w-11 items-center justify-center text-neutral-500 transition-colors hover:text-foreground"
                 aria-label="Spazi Belli"
               >
                 <SpaziBelliIcon />
@@ -109,7 +109,7 @@ export default function Footer() {
                 href="https://www.houzz.it/pro/martina-pozzi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-500 transition-colors hover:text-foreground"
+                className="inline-flex h-11 w-11 items-center justify-center text-neutral-500 transition-colors hover:text-foreground"
                 aria-label="Houzz"
               >
                 <HouzzIcon />
@@ -118,7 +118,7 @@ export default function Footer() {
                 href="https://www.archilovers.com/mparchistudio/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-500 transition-colors hover:text-foreground"
+                className="inline-flex h-11 w-11 items-center justify-center text-neutral-500 transition-colors hover:text-foreground"
                 aria-label="Archilovers"
               >
                 <ArchiloversIcon />
@@ -127,7 +127,7 @@ export default function Footer() {
                 href="https://www.homify.it/esperti/10014002/mp_archistudio-di-arch-martina-c-m-pozzi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-500 transition-colors hover:text-foreground"
+                className="inline-flex h-11 w-11 items-center justify-center text-neutral-500 transition-colors hover:text-foreground"
                 aria-label="Homify"
               >
                 <HomifyIcon />
@@ -144,7 +144,14 @@ export default function Footer() {
               <Mail className="h-4 w-4" />
               {siteConfig.email}
             </a>
-            <p>Via Bologna, 24128</p>
+            <a
+              href={`tel:${siteConfig.phone?.replace(/\s+/g, '')}`}
+              className="inline-flex items-center gap-2 transition-colors hover:text-foreground"
+            >
+              <Phone className="h-4 w-4" />
+              {siteConfig.phone}
+            </a>
+            <p>Via Bologna 2, 24128</p>
             <p>Bergamo (BG) Italia</p>
             <p>P.IVA IT07788400963</p>
           </div>

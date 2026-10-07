@@ -171,13 +171,13 @@ export default function ContactoPage() {
     {
       icon: Phone,
       label: t('info.phone'),
-      value: '+39 327 126 7024',
-      href: 'tel:+393271267024',
+      value: siteConfig.phone ?? '',
+      href: `tel:${siteConfig.phone?.replace(/\s+/g, '')}`,
     },
     {
       icon: MapPin,
       label: t('info.address'),
-      value: 'Via Bologna 2, 24128, Bergamo',
+      value: 'Via Bologna 2, 24128 Bergamo',
       href: 'https://maps.google.com/?q=Via+Bologna+2,+24128+Bergamo',
     },
   ]
@@ -186,28 +186,18 @@ export default function ContactoPage() {
     <div className="py-16 md:py-24">
       <Container>
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mx-auto max-w-2xl text-center"
-        >
+        <div className="mx-auto max-w-2xl text-center">
           <h1 className="font-serif text-4xl font-medium text-foreground md:text-5xl">
             {t('title')}
           </h1>
           <p className="mt-4 text-lg text-neutral-600">
             {t('description')}
           </p>
-        </motion.div>
+        </div>
 
         <div className="mt-16 grid gap-12 lg:grid-cols-3">
           {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="lg:col-span-2"
-          >
+          <div className="min-w-0 lg:col-span-2">
             {isSubmitted ? (
               <div className="rounded-2xl bg-green-50 p-8 text-center">
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
@@ -359,32 +349,33 @@ export default function ContactoPage() {
                 )}
               </form>
             )}
-          </motion.div>
+          </div>
 
           {/* Contact Info Sidebar */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            className="min-w-0"
           >
-            <div className="rounded-2xl bg-neutral-50 p-8">
+            <div className="rounded-2xl bg-neutral-50 p-6 sm:p-8">
               <h2 className="font-serif text-xl font-medium text-foreground">
                 {t('info.title')}
               </h2>
 
               <div className="mt-6 space-y-6">
                 {contactInfo.map((item) => (
-                  <div key={item.label} className="flex items-start gap-4">
+                  <div key={item.label} className="flex min-w-0 items-start gap-4">
                     <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-primary-100">
                       <item.icon className="h-5 w-5 text-primary-600" />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-sm text-neutral-500">{item.label}</p>
                       <a
                         href={item.href}
                         target={item.href.startsWith('http') ? '_blank' : undefined}
                         rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        className="font-medium text-foreground transition-colors hover:text-primary-600"
+                        className="break-words font-medium text-foreground transition-colors hover:text-primary-600"
                       >
                         {item.value}
                       </a>
@@ -396,14 +387,14 @@ export default function ContactoPage() {
               {/* Social Links */}
               <div className="mt-8 border-t border-neutral-200 pt-8">
                 <p className="text-sm text-neutral-500">{t('info.social')}</p>
-                <div className="mt-4 flex gap-3">
+                <div className="mt-4 flex flex-wrap gap-3">
                   {socialLinks.map((social) => (
                     <a
                       key={social.label}
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex h-10 w-10 items-center justify-center rounded-lg bg-white text-neutral-600 transition-colors hover:bg-primary-100 hover:text-primary-600"
+                      className="flex h-11 w-11 items-center justify-center rounded-lg bg-white text-neutral-600 transition-colors hover:bg-primary-100 hover:text-primary-600"
                       aria-label={social.label}
                     >
                       <social.icon className="h-5 w-5" />

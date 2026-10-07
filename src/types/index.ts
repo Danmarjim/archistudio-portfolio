@@ -22,6 +22,8 @@ export interface Project {
   images: string[]
   imagesDimensions: Array<ImageDimensions | null>
   excerpt: string
+  /** Meta description SEO (opzionale): se assente si usa `excerpt` */
+  description?: string
   tags: string[]
   content?: string
 }

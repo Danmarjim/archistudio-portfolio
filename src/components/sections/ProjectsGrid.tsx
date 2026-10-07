@@ -25,15 +25,13 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
     <>
       {/* Filters */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
+        initial={false}
         className="mb-12 flex flex-wrap justify-center gap-3"
       >
         <button
           onClick={() => setActiveFilter(null)}
           className={cn(
-            'rounded-full px-5 py-2 text-sm font-medium transition-colors',
+            'min-h-11 rounded-full px-5 py-2.5 text-sm font-medium transition-colors',
             activeFilter === null
               ? 'bg-foreground text-white'
               : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
@@ -46,7 +44,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
             key={category}
             onClick={() => setActiveFilter(category)}
             className={cn(
-              'rounded-full px-5 py-2 text-sm font-medium transition-colors',
+              'min-h-11 rounded-full px-5 py-2.5 text-sm font-medium transition-colors',
               activeFilter === category
                 ? 'bg-foreground text-white'
                 : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'

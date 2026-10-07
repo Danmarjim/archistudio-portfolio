@@ -1,9 +1,25 @@
 import { Metadata } from 'next'
 import Container from '@/components/ui/Container'
+import { getTranslations } from 'next-intl/server'
+import { buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy | MP_archistudio',
-  description: 'Informativa sul trattamento dei dati personali ai sensi del GDPR – Reg. UE 2016/679.',
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'Metadata.pages.privacy' })
+  return {
+    ...buildMetadata({
+      locale,
+      path: '/privacy',
+      title: t('title'),
+      description: t('description'),
+    }),
+    // Pagina legale: non va nei risultati di ricerca (ed è esclusa dalla sitemap)
+    robots: { index: false, follow: true },
+  }
 }
 
 export default function PrivacyPage() {

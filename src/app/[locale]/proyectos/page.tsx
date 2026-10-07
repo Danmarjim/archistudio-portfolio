@@ -4,6 +4,8 @@ import ProjectsGrid from '@/components/sections/ProjectsGrid'
 import NavBand from '@/components/sections/NavBand'
 import { getAllProjects } from '@/lib/projects'
 import { getTranslations } from 'next-intl/server'
+import JsonLd from '@/components/seo/JsonLd'
+import { buildBreadcrumb, buildMetadata } from '@/lib/seo'
 
 interface ProyectosPageProps {
   params: Promise<{ locale: string }>
@@ -11,11 +13,13 @@ interface ProyectosPageProps {
 
 export async function generateMetadata({ params }: ProyectosPageProps): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'ProjectsPage' })
-  return {
-    title: `${t('title')} | MP_archistudio`,
+  const t = await getTranslations({ locale, namespace: 'Metadata.pages.projects' })
+  return buildMetadata({
+    locale,
+    path: '/proyectos',
+    title: t('title'),
     description: t('description'),
-  }
+  })
 }
 
 export default async function ProyectosPage({ params }: ProyectosPageProps) {
@@ -23,8 +27,11 @@ export default async function ProyectosPage({ params }: ProyectosPageProps) {
   const projects = getAllProjects(locale)
   const t = await getTranslations({ locale, namespace: 'ProjectsPage' })
 
+  const tMeta = await getTranslations({ locale, namespace: 'Metadata.pages.projects' })
+
   return (
     <div className="py-12">
+      <JsonLd data={buildBreadcrumb(locale, [{ name: tMeta('title'), path: '/proyectos' }])} />
       <Container>
         {/* Header */}
         <div className="mb-12 text-center">

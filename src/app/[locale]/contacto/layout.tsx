@@ -1,14 +1,36 @@
-import { Metadata } from 'next'
+import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
+import JsonLd from '@/components/seo/JsonLd'
+import { buildBreadcrumb, buildMetadata } from '@/lib/seo'
 
-export const metadata: Metadata = {
-  title: 'Contacto',
-  description: 'Contacta con el estudio de arquitectura. Cuéntanos tu proyecto y te ayudaremos a hacerlo realidad.',
+type Props = {
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
 }
 
-export default function ContactoLayout({
-  children,
+export async function generateMetadata({
+  params,
 }: {
-  children: React.ReactNode
-}) {
-  return children
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'Metadata.pages.contact' })
+  return buildMetadata({
+    locale,
+    path: '/contacto',
+    title: t('title'),
+    description: t('description'),
+  })
+}
+
+export default async function ContactoLayout({ children, params }: Props) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'Metadata.pages.contact' })
+
+  return (
+    <>
+      <JsonLd data={buildBreadcrumb(locale, [{ name: t('title'), path: '/contacto' }])} />
+      {children}
+    </>
+  )
 }

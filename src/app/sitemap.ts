@@ -1,8 +1,9 @@
 import fs from 'fs'
 import path from 'path'
 import { MetadataRoute } from 'next'
-import { siteConfig } from '@/lib/constants'
 import { locales } from '@/i18n/routing'
+import { buildAlternates, localizedUrl } from '@/lib/seo'
+import { getAllNews } from '@/lib/news'
 
 // Generato staticamente alla build — nessuna serverless function a runtime
 export const dynamic = 'force-static'
@@ -17,55 +18,45 @@ function getProjectSlugs(): string[] {
     .map((f) => f.replace(/\.mdx$/, ''))
 }
 
+type Entry = MetadataRoute.Sitemap[number]
+
+/**
+ * Una voce per ogni lingua e pagina. Nessun URL con prefisso `/it` (redirige alla versione
+ * senza prefisso) e ogni voce dichiara le alternate hreflang di tutte le lingue.
+ */
+function entriesFor(
+  pagePath: string,
+  extra: Pick<Entry, 'changeFrequency' | 'priority' | 'lastModified'>
+): Entry[] {
+  return locales.map((locale) => ({
+    url: localizedUrl(locale, pagePath),
+    alternates: { languages: buildAlternates(locale, pagePath).languages as Record<string, string> },
+    ...extra,
+  }))
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const slugs = getProjectSlugs()
-  const baseUrl = siteConfig.url
+  const projectSlugs = getProjectSlugs()
+  const news = getAllNews('it')
 
-  // Generate URLs for all locales
-  const localizedUrls = locales.flatMap((locale) => {
-    const prefix = `${baseUrl}/${locale}`
-
-    const projectUrls = slugs.map((slug) => ({
-      url: `${prefix}/proyectos/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    }))
-
-    return [
-      {
-        url: prefix,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 1,
-      },
-      {
-        url: `${prefix}/proyectos`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.9,
-      },
-      {
-        url: `${prefix}/sobre-mi`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.7,
-      },
-      {
-        url: `${prefix}/servicios`,
-        lastModified: new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.7,
-      },
-      {
-        url: `${prefix}/contacto`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly' as const,
-        priority: 0.6,
-      },
-      ...projectUrls,
-    ]
-  })
-
-  return localizedUrls
+  return [
+    ...entriesFor('/', { changeFrequency: 'weekly', priority: 1 }),
+    ...entriesFor('/proyectos', { changeFrequency: 'weekly', priority: 0.9 }),
+    ...entriesFor('/sobre-mi', { changeFrequency: 'monthly', priority: 0.7 }),
+    ...entriesFor('/servicios', { changeFrequency: 'monthly', priority: 0.7 }),
+    ...entriesFor('/tappeti', { changeFrequency: 'monthly', priority: 0.6 }),
+    ...entriesFor('/news', { changeFrequency: 'weekly', priority: 0.6 }),
+    ...entriesFor('/contacto', { changeFrequency: 'yearly', priority: 0.6 }),
+    ...projectSlugs.flatMap((slug) =>
+      entriesFor(`/proyectos/${slug}`, { changeFrequency: 'monthly', priority: 0.8 })
+    ),
+    // lastModified reale: data di pubblicazione dichiarata nel frontmatter della news
+    ...news.flatMap((post) =>
+      entriesFor(`/news/${post.slug}`, {
+        changeFrequency: 'yearly',
+        priority: 0.5,
+        lastModified: new Date(post.date),
+      })
+    ),
+  ]
 }

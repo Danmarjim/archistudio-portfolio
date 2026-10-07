@@ -15,28 +15,18 @@ export default function TappetiPage() {
       {/* Hero */}
       <section className="pb-4 pt-16 md:pt-20">
         <Container>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mx-auto max-w-4xl text-center"
-          >
+          <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-2xl font-semibold tracking-wide text-[#8B5C2A] md:text-3xl">
               {t('heroLine1')}<br />
               {t('heroLine2')}
             </h1>
-          </motion.div>
+          </div>
         </Container>
       </section>
 
       {/* Video */}
       <section className="pb-10 pt-4">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mx-auto w-full px-6 md:max-w-[33vw] md:px-0"
-        >
+        <div className="mx-auto w-full px-6 md:max-w-[33vw] md:px-0">
           <video
             src="/images/tappeti/tappeti-01.mp4"
             autoPlay
@@ -46,7 +36,7 @@ export default function TappetiPage() {
             controls
             className="w-full rounded-lg"
           />
-        </motion.div>
+        </div>
       </section>
 
       {/* Riga 1: testo descrittivo + foto tappeti-02 */}

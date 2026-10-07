@@ -32,7 +32,8 @@ export default function ImageWithLoader({
   sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
   ...props
 }: ImageWithLoaderProps) {
-  const [isLoading, setIsLoading] = useState(true)
+  // Le immagini `priority` (above the fold / LCP) sono visibili subito: niente fade-in da opacity 0.
+  const [isLoading, setIsLoading] = useState(!props.priority)
   const [hasError, setHasError] = useState(false)
 
   const handleLoad = () => {
@@ -85,6 +86,7 @@ export default function ImageWithLoader({
             'object-cover transition-opacity duration-500',
             isLoading ? 'opacity-0' : 'opacity-100'
           )}
+          fetchPriority={props.priority ? 'high' : undefined}
           onLoad={handleLoad}
           onError={handleError}
           {...props}

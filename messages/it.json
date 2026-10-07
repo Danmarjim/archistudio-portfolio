@@ -1,7 +1,37 @@
 {
   "Metadata": {
-    "title": "Studio di Architettura | Portfolio",
-    "description": "Portfolio professionale di architettura. Progettazione residenziale, ristrutturazioni e progetti commerciali con attenzione ai dettagli e creatività."
+    "title": "Architetto a Bergamo – Martina Pozzi | MP_archistudio",
+    "description": "Martina Pozzi, architetta a Bergamo: ristrutturazioni chiavi in mano, interior design su misura e consulenza all'acquisto casa. Ti seguo fino al cantiere.",
+    "pages": {
+      "projects": {
+        "title": "Progetti di ristrutturazione e interior design a Bergamo",
+        "description": "Case, bagni e cucine ristrutturati dallo studio MP_archistudio: scopri i progetti realizzati da Martina Pozzi, architetta a Bergamo."
+      },
+      "news": {
+        "title": "News e pubblicazioni",
+        "description": "Pubblicazioni su riviste, riflessioni e annunci dello studio MP_archistudio di Martina Pozzi."
+      },
+      "about": {
+        "title": "Chi sono – Martina Pozzi, architetta",
+        "description": "Martina Pozzi, architetta laureata al Politecnico di Milano con base a Bergamo. Scopri il mio percorso e il mio modo di lavorare."
+      },
+      "services": {
+        "title": "Servizi di architettura e ristrutturazione a Bergamo",
+        "description": "ArchiAdvice, consulenza all'acquisto, restyling e progettazione architettonica a 360°: scegli il servizio adatto alla tua casa."
+      },
+      "contact": {
+        "title": "Contatti – Architetto a Bergamo",
+        "description": "Contatta Martina Pozzi per ristrutturazioni, consulenze e progetti d'interni a Bergamo. Rispondo entro 24 ore."
+      },
+      "tappeti": {
+        "title": "Tappeti — Collezione Sevilla",
+        "description": "Sevilla, una collezione di tappeti firmati MP_archistudio by Martina Pozzi. Ispirata alle Feste di Primavera di Siviglia, prodotta da Panizza Studio con lana e viscosa."
+      },
+      "privacy": {
+        "title": "Privacy Policy",
+        "description": "Informativa sul trattamento dei dati personali di MP_archistudio."
+      }
+    }
   },
   "Navigation": {
     "projects": "Progetti",
@@ -400,5 +430,14 @@
       "f4": "Direzione artistica, direzione lavori e chiusura pratica con aggiornamento catastale",
       "cta": "Scopri come lavoriamo"
     }
+  },
+  "NotFound": {
+    "eyebrow": "Errore 404",
+    "title": "Pagina non trovata",
+    "description": "La pagina che cerchi non esiste o è stata spostata.",
+    "backHome": "Torna alla home"
+  },
+  "Press": {
+    "title": "Pubblicato su"
   }
 }

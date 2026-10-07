@@ -1,9 +1,5 @@
-'use client'
-
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { ArrowDown } from 'lucide-react'
 import { Button } from '@/components/ui'
 import Container from '@/components/ui/Container'
 import { useTranslations } from 'next-intl'
@@ -30,12 +26,7 @@ export default function Hero({
       <Container className="relative z-10">
         <div className="mx-auto max-w-4xl text-center">
           {/* Portrait */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="mb-8 flex justify-center"
-          >
+          <div className="mb-8 flex justify-center">
             <div className="relative h-44 w-44 overflow-hidden rounded-full ring-2 ring-primary-300 ring-offset-4 ring-offset-background">
               <Image
                 src="/images/about/placeholder.jpg"
@@ -46,45 +37,25 @@ export default function Hero({
                 priority
               />
             </div>
-          </motion.div>
+          </div>
 
           {/* Overline */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="mb-6 text-sm font-medium uppercase tracking-widest text-primary-600"
-          >
+          <p className="mb-6 text-sm font-medium uppercase tracking-widest text-primary-600">
             {tHero('overline')}
-          </motion.p>
+          </p>
 
           {/* Title */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="font-serif text-2xl font-medium leading-tight tracking-tight text-foreground text-balance sm:text-3xl lg:text-4xl xl:text-5xl"
-          >
+          <h1 className="font-serif text-2xl font-medium leading-tight tracking-tight text-foreground text-balance sm:text-3xl lg:text-4xl xl:text-5xl">
             {tHero('title')}
-          </motion.h1>
+          </h1>
 
           {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="mx-auto mt-5 max-w-3xl text-balance text-lg leading-relaxed text-foreground/70 sm:text-xl lg:text-2xl"
-          >
+          <p className="mx-auto mt-5 max-w-3xl text-balance text-lg leading-relaxed text-foreground/70 sm:text-xl lg:text-2xl">
             {tHero('subtitle')}
-          </motion.p>
+          </p>
 
           {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
-          >
+          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <Button asChild size="lg">
               <Link href={ctaHref}>{t('projects')}</Link>
             </Button>
@@ -94,7 +65,7 @@ export default function Hero({
             <Button variant="outline" size="lg" asChild>
               <Link href="/servicios">{t('services')}</Link>
             </Button>
-          </motion.div>
+          </div>
         </div>
       </Container>
 
