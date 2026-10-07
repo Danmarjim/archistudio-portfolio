@@ -43,3 +43,6 @@ next-env.d.ts
 
 # claude code
 .claude/settings.local.json
+
+# Plugin claude-seo (instalado globalmente, no forma parte del proyecto)
+claude-seo/
