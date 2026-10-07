@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { motion } from 'framer-motion'
 import { Home, Video, Key, Paintbrush } from 'lucide-react'
 import Container from '@/components/ui/Container'

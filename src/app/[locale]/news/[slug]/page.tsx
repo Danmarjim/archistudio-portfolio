@@ -7,10 +7,15 @@ import { getNewsBySlug, getAllNewsSlugs, getAdjacentNews } from '@/lib/news'
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import NewsGallery from '@/components/sections/NewsGallery'
 import { getTranslations } from 'next-intl/server'
+import JsonLd from '@/components/seo/JsonLd'
+import { absoluteUrl, buildBreadcrumb, buildMetadata, businessRef, localizedUrl, personRef } from '@/lib/seo'
 
 interface NewsDetailPageProps {
   params: Promise<{ locale: string; slug: string }>
 }
+
+// Slug non elencati in generateStaticParams rispondono 404 senza renderizzare la pagina.
+export const dynamicParams = false
 
 export async function generateStaticParams() {
   const slugs = getAllNewsSlugs()
@@ -21,10 +26,22 @@ export async function generateMetadata({ params }: NewsDetailPageProps): Promise
   const { slug, locale } = await params
   const post = getNewsBySlug(slug, locale)
   if (!post) return { title: 'News non trovata' }
-  return {
-    title: `${post.title} | MP_archistudio`,
+  return buildMetadata({
+    locale,
+    path: `/news/${slug}`,
+    title: post.title,
     description: post.excerpt,
-  }
+    image: post.coverImage,
+    type: 'article',
+    publishedTime: post.date,
+  })
+}
+
+/** Rende `**testo**` come grassetto invece di mostrare gli asterischi letterali. */
+function renderInline(text: string): React.ReactNode[] {
+  return text.split(/\*\*(.+?)\*\*/g).map((part, i) =>
+    i % 2 === 1 ? <strong key={i}>{part}</strong> : part
+  )
 }
 
 const categoryToKey: Record<string, string> = {
@@ -56,10 +73,37 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   if (!post) notFound()
 
   const t = await getTranslations({ locale, namespace: 'NewsPage' })
+  const tMeta = await getTranslations({ locale, namespace: 'Metadata.pages.news' })
   const { prev, next } = getAdjacentNews(slug, locale)
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    inLanguage: locale,
+    image: [post.coverImage, ...(post.images ?? []).slice(0, 3)]
+      .filter(Boolean)
+      .map((img) => absoluteUrl(img)),
+    mainEntityOfPage: localizedUrl(locale, `/news/${slug}`),
+    author: personRef,
+    publisher: businessRef,
+    isBasedOn: post.sourceUrl,
+  }
 
   return (
     <div className="py-12">
+      <JsonLd
+        data={[
+          articleSchema,
+          buildBreadcrumb(locale, [
+            { name: tMeta('title'), path: '/news' },
+            { name: post.title, path: `/news/${slug}` },
+          ]),
+        ]}
+      />
       <Container>
         {/* Back link */}
         <Link
@@ -124,7 +168,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
         {post.content && (
           <div className="prose prose-neutral prose-lg mx-auto mt-12 max-w-3xl">
             {post.content.split('\n\n').map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
+              <p key={i}>{renderInline(paragraph)}</p>
             ))}
           </div>
         )}

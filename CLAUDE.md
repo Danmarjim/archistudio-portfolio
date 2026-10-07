@@ -249,3 +249,13 @@ outputFileTracingExcludes: {
 - Ignorar TypeScript errors
 - Cambiar los valores internos de `category`/`status` en MDX (rompe los filtros y traducciones)
 - Eliminar `outputFileTracingExcludes` de `next.config.ts` (rompería el deploy en Vercel)
+
+## SEO
+
+- URL canonico in `siteConfig.url` (`src/lib/constants.ts`).
+- `src/lib/seo.ts`: `buildMetadata()` (title, canonical, hreflang, OG, Twitter) da usare in **ogni** `generateMetadata`; `buildBreadcrumb()` e `buildSiteGraph()` per il JSON-LD (`components/seo/JsonLd.tsx`).
+- Il root layout è `src/app/[locale]/layout.tsx` (contiene `<html lang>`); non esiste `src/app/layout.tsx`.
+- Link interni: sempre `Link` da `@/i18n/navigation` (mai `next/link`), altrimenti si perde il prefisso lingua.
+- Contenuto above-the-fold: niente `opacity: 0` iniziale nell'HTML (LCP).
+- Stato e attività pendenti: `docs/SEO-IMPLEMENTATION-STATUS.md`.
+

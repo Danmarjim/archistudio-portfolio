@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { useMemo } from 'react'
 import { motion } from 'framer-motion'
@@ -20,6 +20,7 @@ interface ProjectDetailProps {
 export default function ProjectDetail({ project, prevProject, nextProject }: ProjectDetailProps) {
   const t = useTranslations('ProjectDetail')
   const tStatus = useTranslations('ProjectStatus')
+  const tCat = useTranslations('ProjectCategories')
 
   const details = [
     { icon: MapPin, label: t('location'), value: project.location },
@@ -101,7 +102,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
           className="mt-8"
         >
           <Badge variant="secondary" className="mb-4">
-            {project.category}
+            {tCat(project.category as Parameters<typeof tCat>[0], { defaultValue: project.category })}
           </Badge>
           <h1 className="font-serif text-4xl font-medium text-foreground md:text-5xl lg:text-6xl">
             {project.title}

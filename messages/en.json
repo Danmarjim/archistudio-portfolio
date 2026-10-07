@@ -1,7 +1,37 @@
 {
   "Metadata": {
-    "title": "Architecture Studio | Portfolio",
-    "description": "Professional architecture portfolio. Residential design, renovations and commercial projects with attention to detail and creativity."
+    "title": "Architect in Bergamo – Martina Pozzi | MP_archistudio",
+    "description": "Martina Pozzi, architect in Bergamo: turnkey renovations, tailor-made interior design and home-buying consultancy. I guide you all the way to the finished site.",
+    "pages": {
+      "projects": {
+        "title": "Renovation and interior design projects in Bergamo",
+        "description": "Homes, bathrooms and kitchens renovated by MP_archistudio: explore the projects by Martina Pozzi, architect in Bergamo."
+      },
+      "news": {
+        "title": "News and publications",
+        "description": "Magazine features, reflections and announcements from Martina Pozzi's studio MP_archistudio."
+      },
+      "about": {
+        "title": "About me – Martina Pozzi, architect",
+        "description": "Martina Pozzi, architect graduated from the Politecnico di Milano and based in Bergamo. Discover my background and how I work."
+      },
+      "services": {
+        "title": "Architecture and renovation services in Bergamo",
+        "description": "ArchiAdvice, home-buying consultancy, restyling and full architectural design: choose the service that suits your home."
+      },
+      "contact": {
+        "title": "Contact – Architect in Bergamo",
+        "description": "Get in touch with Martina Pozzi for renovations, consultations and interior design projects in Bergamo. I reply within 24 hours."
+      },
+      "tappeti": {
+        "title": "Rugs — Sevilla Collection",
+        "description": "Sevilla, a collection of rugs signed MP_archistudio by Martina Pozzi. Inspired by the spring festivals of Seville and produced by Panizza Studio in wool and viscose."
+      },
+      "privacy": {
+        "title": "Privacy Policy",
+        "description": "How MP_archistudio processes personal data."
+      }
+    }
   },
   "Navigation": {
     "projects": "Projects",
@@ -400,5 +430,14 @@
       "f4": "Artistic direction, construction management and project closure with cadastral update",
       "cta": "Discover how we work"
     }
+  },
+  "NotFound": {
+    "eyebrow": "Error 404",
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to home"
+  },
+  "Press": {
+    "title": "Featured in"
   }
 }

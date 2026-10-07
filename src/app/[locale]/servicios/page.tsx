@@ -1,6 +1,6 @@
 'use client'
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowRight, Home, Video, Key, Paintbrush, CheckCircle2 } from 'lucide-react'
@@ -135,7 +135,7 @@ export default function ServiciosPage() {
                         {sd(`${key}.cta`)}
                         <ArrowRight className="h-4 w-4" />
                       </a>
-                    ) : (
+                    ) : ctaHref.startsWith('#') ? (
                       <a
                         href={ctaHref}
                         className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-700"
@@ -143,6 +143,14 @@ export default function ServiciosPage() {
                         {sd(`${key}.cta`)}
                         <ArrowRight className="h-4 w-4" />
                       </a>
+                    ) : (
+                      <Link
+                        href={ctaHref}
+                        className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-700"
+                      >
+                        {sd(`${key}.cta`)}
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
                     )}
                   </div>
 
