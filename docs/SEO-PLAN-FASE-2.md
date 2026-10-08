@@ -104,11 +104,11 @@ Continúa `docs/SEO-IMPLEMENTATION-PLAN.md` (fase 1, cerrada: score 49 → 80). 
 
 ## Bloque C — Contenido nuevo (requiere textos o datos de Martina)
 
-Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, secciones, palabras, competidores, enlaces).
+Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, secciones, palabras, competidores, enlaces). Los briefs se guardan en `docs/seo-briefs/` con el código de la tarea (`C2-…md`).
 
 **Ola 1** (junto con A2/A3):
 - C1. Señales E-E-A-T en `/chi-sono`: colegiación (D3), premio (D4), una cifra de experiencia, foto, email de dominio (D8).
-- C2. Texto de ArchiAdvice con precio (D2).
+- C2. Texto de ArchiAdvice con precio (D2). **Brief:** `docs/seo-briefs/C2-consulenza-architetto-online.md`.
 - C3. Texto de consulenza acquisto casa (qué se revisa: agibilità, catasto, conformità; precio D2).
 - C4. Texto de ristrutturazione appartamento Bergamo (proceso, plazos, casos reales en Bergamo; las tablas de precio van en C7, no aquí).
 - C5. Testimonios (Spazi Belli 5,0★ / 7 reseñas) en home y servicios.
