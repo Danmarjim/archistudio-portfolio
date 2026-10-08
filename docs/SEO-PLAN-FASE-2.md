@@ -56,11 +56,12 @@ Antes de lanzar un comando del plugin `claude-seo`, mirar aquí si ya está hech
 | 8 oct | `/seo content-brief colore nell'architettura d'interni` (modo mejora) | Artículo existente de 143 palabras frente a 5 competidores | `docs/seo-briefs/C10-colore-architettura.md` | No |
 | 8 oct | `/seo content-brief costo ristrutturazione appartamento Bergamo` | 5 competidores, cifras de mercado 2026, estructura | `docs/seo-briefs/C11-costo-ristrutturazione-bergamo.md` | No (actualizar cifras de la guía cada año) |
 | 8 oct | `/seo content-brief come scegliere un architetto per ristrutturare casa` | 5 competidores, estructura | `docs/seo-briefs/C12-come-scegliere-architetto.md` | No |
+| 8 oct | `/seo content-brief progettazione cucina architetto` | 5 competidores, medidas de referencia, estructura | `docs/seo-briefs/C13-progettare-la-cucina.md` | No |
 | 8 oct | Benchmark manual (misma rúbrica que los briefs) | Nuestras páginas frente a los competidores de C2 y C4 | Sección "Benchmark" de este documento | Tras publicar C2/C4 |
 
 **No hace falta lanzar por separado** lo que ya cubre `/seo audit`: `/seo technical`, `/seo content`, `/seo schema`, `/seo sitemap`, `/seo geo`, `/seo agentic`, `/seo local`, `/seo sxo` y `/seo backlinks` son exactamente los subagentes de la auditoría. Tiene sentido lanzarlos sueltos solo para revisar un área concreta después de cambiarla.
 
-**Pendientes, no ejecutados todavía:** los briefs de las olas 2 y 3 (C13–C14); `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
+**Pendientes, no ejecutados todavía:** el brief C14; `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
 
 ## Benchmark frente a la competencia (8 oct 2026)
 
@@ -181,7 +182,7 @@ Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, seccio
 **Ola 3:**
 - C11. `/news/costo-ristrutturazione-appartamento-bergamo`. **Brief:** `docs/seo-briefs/C11-costo-ristrutturazione-bergamo.md`.
 - C12. `/news/come-scegliere-architetto-ristrutturazione`. **Brief:** `docs/seo-briefs/C12-come-scegliere-architetto.md`.
-- C13. `/news/progettare-la-cucina-consigli-architetto`.
+- C13. `/news/progettare-la-cucina-consigli-architetto`. **Brief:** `docs/seo-briefs/C13-progettare-la-cucina.md`.
 - C14. `/news/come-scegliere-colore-pareti-casa`.
 - C-pre. **Requisito técnico para las guías (C7–C14):** el detalle de noticias (`src/app/[locale]/news/[slug]/page.tsx`) solo renderiza párrafos y negritas; las guías necesitan tablas, listas y H2/H3 (Markdown completo). Añadir también un campo opcional `seoTitle` en el frontmatter de news para títulos de guía largos. Hacerlo antes de publicar la primera guía.
 - C15. Proyectos más ricos (encargo, soluciones, materiales, plazos, rango de presupuesto, cita del cliente) y autor visible en las noticias.
