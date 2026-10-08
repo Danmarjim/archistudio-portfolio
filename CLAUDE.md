@@ -16,6 +16,10 @@ Portfolio web profesional para una arquitecta independiente (Martina Pozzi). Sit
 - **next-intl 4.7** — i18n, locales: `it` (default), `es`, `en`
 - **gray-matter 4** — parsing frontmatter MDX en `lib/projects.ts` y `lib/news.ts`
 
+## SEO
+
+Estado y pendientes en `docs/seo/ESTADO.md` (punto de entrada); detalle en `docs/seo/PLAN.md`; comandos `/seo` ya ejecutados en `docs/seo/REGISTRO-COMANDOS.md`. Mantener `ESTADO.md` al día al cerrar cada tarea.
+
 ## Comandos Frecuentes
 
 ```bash
@@ -205,7 +209,7 @@ tags:
 
 ## Páginas de servicio (`content/services/{locale}/{slug}.mdx`)
 
-Una página por servicio (`/servizi/consulenza-architetto-online`, `…/consulenza-acquisto-casa`, `…/restyling-casa`, `…/ristrutturazione-appartamento-bergamo`). Solo existen las que tienen `published: true` en el MDX **italiano**: hasta entonces no se generan, no van al sitemap y el hub `/servizi` no las enlaza. El texto se completa siguiendo el brief indicado en cada archivo (`docs/seo-briefs/`).
+Una página por servicio (`/servizi/consulenza-architetto-online`, `…/consulenza-acquisto-casa`, `…/restyling-casa`, `…/ristrutturazione-appartamento-bergamo`). Solo existen las que tienen `published: true` en el MDX **italiano**: hasta entonces no se generan, no van al sitemap y el hub `/servizi` no las enlaza. El texto se completa siguiendo el brief indicado en cada archivo (`docs/seo/briefs/`).
 
 ```yaml
 title: "H1 de la página"
@@ -288,5 +292,5 @@ Las carpetas de `app/[locale]` usan el slug interno (español); la URL pública 
 - Il root layout è `src/app/[locale]/layout.tsx` (contiene `<html lang>`); non esiste `src/app/layout.tsx`.
 - Link interni: sempre `Link` da `@/i18n/navigation` (mai `next/link`), altrimenti si perde il prefisso lingua.
 - Contenuto above-the-fold: niente `opacity: 0` iniziale nell'HTML (LCP).
-- Stato e attività pendenti: `docs/SEO-IMPLEMENTATION-STATUS.md`.
+- Stato e attività pendenti: `docs/seo/archivo/fase-1/ESTADO-FASE-1.md`.
 

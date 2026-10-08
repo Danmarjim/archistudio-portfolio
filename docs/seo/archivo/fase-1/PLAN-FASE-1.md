@@ -1,6 +1,6 @@
 # Plan de implementación SEO — mparchistudio
 
-Basado en `docs/SEO-AUDIT-REPORT.md` (7 oct 2026, score 49/100). Objetivo: que el sitio se indexe bajo su dominio real, aparezca en búsquedas de marca y local, y mejore LCP móvil (< 2,5 s).
+Basado en `docs/seo/archivo/fase-1/SEO-AUDIT-REPORT.md` (7 oct 2026, score 49/100). Objetivo: que el sitio se indexe bajo su dominio real, aparezca en búsquedas de marca y local, y mejore LCP móvil (< 2,5 s).
 
 > Nota: este plan parte de lo que dice la auditoría. Antes de cada tarea, comprobar en el código que el problema sigue ahí (las referencias de línea pueden haber cambiado).
 

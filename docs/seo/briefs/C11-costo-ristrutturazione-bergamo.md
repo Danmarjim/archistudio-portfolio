@@ -1,6 +1,6 @@
 # Brief C11 — Costo ristrutturazione appartamento Bergamo
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 3, tarea C11). Generado con `/seo content-brief costo ristrutturazione appartamento Bergamo` el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 3, tarea C11). Generado con `/seo content-brief costo ristrutturazione appartamento Bergamo` el 8 oct 2026.
 
 **Estado:** pendiente. Necesita que Martina valide los rangos (o aporte los suyos) y, si es posible, un ejemplo real con cifras.
 

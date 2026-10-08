@@ -1,6 +1,6 @@
 # Brief C12 — Come scegliere un architetto per ristrutturare casa
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 3, tarea C12). Generado con `/seo content-brief come scegliere un architetto per ristrutturare casa` el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 3, tarea C12). Generado con `/seo content-brief come scegliere un architetto per ristrutturare casa` el 8 oct 2026.
 
 **Estado:** pendiente. Se puede escribir casi entera con lo que ya hay; requiere tono equilibrado (es una guía, no publicidad).
 

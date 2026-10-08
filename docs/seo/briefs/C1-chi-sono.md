@@ -1,6 +1,6 @@
 # Brief C1 — Chi sono
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 1, tarea C1). Generado con `/seo content-brief https://mparchistudio.com/chi-sono` (modo mejora) el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 1, tarea C1). Generado con `/seo content-brief https://mparchistudio.com/chi-sono` (modo mejora) el 8 oct 2026.
 
 **Estado:** pendiente. Algunos datos los tiene que confirmar Martina (checklist al final).
 

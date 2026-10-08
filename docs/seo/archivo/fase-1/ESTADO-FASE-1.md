@@ -1,6 +1,6 @@
 # SEO — stato dell'implementazione (branch `feat/seo-improvements`)
 
-Riferimenti: `docs/SEO-AUDIT-REPORT.md` (audit), `docs/SEO-IMPLEMENTATION-PLAN.md` (piano).
+Riferimenti: `docs/seo/archivo/fase-1/SEO-AUDIT-REPORT.md` (audit), `docs/seo/archivo/fase-1/PLAN-FASE-1.md` (piano).
 
 ## Azioni manuali
 
@@ -34,7 +34,7 @@ Riferimenti: `docs/SEO-AUDIT-REPORT.md` (audit), `docs/SEO-IMPLEMENTATION-PLAN.m
 
 ## Da fare (richiede dati o decisioni di Martina)
 
-> **Aggiornamento 8 ott 2026:** la fase 2 continua in `docs/SEO-PLAN-FASE-2.md` (piano, brief in `docs/seo-briefs/`, elenco unico dei dati da chiedere a Martina). Le voci segnate ✅ sono già state fatte; le altre sono riprese lì.
+> **Aggiornamento 8 ott 2026:** la fase 2 continua in `docs/seo/PLAN.md` (piano, brief in `docs/seo/briefs/`, elenco unico dei dati da chiedere a Martina). Le voci segnate ✅ sono già state fatte; le altre sono riprese lì.
 
 - **Iscrizione all'Ordine** (Bergamo o Monza e Brianza + numero) → aggiungere `hasCredential` in `buildSiteGraph` e mostrarla in "Chi sono".
 - ✅ **Anni di esperienza**: "più di 10" (meta, `AboutPage.intro`) vs "oltre 15" nel testo. Scegliere una cifra e allineare `messages/*.json`. *(fatto 8 ott: rimossa `AboutPage.intro`, resta solo "oltre 15")*

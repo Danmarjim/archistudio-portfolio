@@ -1,6 +1,6 @@
 # Brief C10 — Il colore nell'architettura d'interni (ampliación)
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 2, tarea C10). Generado con `/seo content-brief colore nell'architettura d'interni` (modo mejora sobre `/news/il-colore-nell-architettura`) el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 2, tarea C10). Generado con `/seo content-brief colore nell'architettura d'interni` (modo mejora sobre `/news/il-colore-nell-architettura`) el 8 oct 2026.
 
 **Estado:** pendiente. Es la pieza más alineada con la identidad de Martina; la puede escribir ella casi entera, con fotos de sus proyectos.
 

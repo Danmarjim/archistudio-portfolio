@@ -1,6 +1,6 @@
 # Brief C8 — Conformità urbanistica e catastale prima di comprare casa
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 2, tarea C8). Generado con `/seo content-brief conformità urbanistica e catastale` el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 2, tarea C8). Generado con `/seo content-brief conformità urbanistica e catastale` el 8 oct 2026.
 
 **Estado:** pendiente. Requiere revisión técnica de Martina antes de publicar (tema con consecuencias legales y económicas para el lector).
 

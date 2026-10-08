@@ -1,6 +1,6 @@
 # Brief C13 — Progettare la cucina: i consigli dell'architetta
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 3, tarea C13). Generado con `/seo content-brief progettazione cucina architetto` el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 3, tarea C13). Generado con `/seo content-brief progettazione cucina architetto` el 8 oct 2026.
 
 **Estado:** pendiente. Se puede escribir con lo que ya hay en la web (2 proyectos de cocina + las cocinas de 3 reformas integrales); faltan fotos del antes y algunos datos de Martina.
 

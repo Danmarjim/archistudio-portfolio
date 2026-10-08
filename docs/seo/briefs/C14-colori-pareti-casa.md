@@ -1,6 +1,6 @@
 # Brief C14 — Colori pareti casa: come sceglierli
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 3, tarea C14). Generado con `/seo content-brief colori pareti casa consigli architetto` el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 3, tarea C14). Generado con `/seo content-brief colori pareti casa consigli architetto` el 8 oct 2026.
 
 **Estado:** pendiente. Es la guía práctica "gemela" de C10 (concepto): se puede escribir con el material de los proyectos y la experiencia de Martina.
 

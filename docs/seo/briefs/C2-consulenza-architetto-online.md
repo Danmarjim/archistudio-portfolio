@@ -1,6 +1,6 @@
 # Brief C2 — Consulenza architetto online (ArchiAdvice)
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 1, tarea C2; estructura en A2). Generado con `/seo content-brief` el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 1, tarea C2; estructura en A2). Generado con `/seo content-brief` el 8 oct 2026.
 
 **Estado:** pendiente. Bloqueado por los datos de Martina (checklist al final).
 

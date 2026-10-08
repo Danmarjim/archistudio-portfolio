@@ -1,6 +1,6 @@
 # Brief C9 — Progettare il bagno: i consigli dell'architetta
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 2, tarea C9). Generado con `/seo content-brief progettazione bagno architetto` el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 2, tarea C9). Generado con `/seo content-brief progettazione bagno architetto` el 8 oct 2026.
 
 **Estado:** pendiente. Se puede escribir casi entero con el material que ya hay en la web (3 proyectos de baño); faltan fotos de planos/antes y algunos datos de Martina.
 

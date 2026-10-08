@@ -1,12 +1,12 @@
 # Brief C3 — Consulenza acquisto casa
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 1, tarea C3; estructura en A2). Generado con `/seo content-brief consulenza acquisto casa` el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 1, tarea C3; estructura en A2). Generado con `/seo content-brief consulenza acquisto casa` el 8 oct 2026.
 
 **Estado:** pendiente. Bloqueado por los datos de Martina (checklist al final).
 
 **Página:** nueva, `/servizi/consulenza-acquisto-casa`. Hoy "Consulenza all'acquisto" es un ancla en `/servizi` con 4 viñetas (revisión de documentos —agibilità, catasto—, sopralluogo, coste orientativo de la reforma, compra consciente) y un botón "Scrivimi".
 
-**Keywords:** principal "consulenza acquisto casa"; variantes "consulenza architetto acquisto casa", "consulenza tecnica acquisto casa (Bergamo)", "verifica tecnica immobile", "comprare casa da ristrutturare". Según el plan de clusters (`docs/seo-data/2026-10-08-cluster-architetto-bergamo/`) tiene SERP propia (0 solape con ArchiAdvice) y en "Bergamo" solo compiten agencias y un geometra: competencia local baja.
+**Keywords:** principal "consulenza acquisto casa"; variantes "consulenza architetto acquisto casa", "consulenza tecnica acquisto casa (Bergamo)", "verifica tecnica immobile", "comprare casa da ristrutturare". Según el plan de clusters (`docs/seo/archivo/datos/2026-10-08-cluster-architetto-bergamo/`) tiene SERP propia (0 solape con ArchiAdvice) y en "Bergamo" solo compiten agencias y un geometra: competencia local baja.
 
 **Límites de los datos:** sin volumen de búsqueda (no hay DataForSEO); SERP no geolocalizada en google.it.
 

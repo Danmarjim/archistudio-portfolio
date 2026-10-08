@@ -1,6 +1,6 @@
 # Brief C6 — Restyling casa
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 2, tarea C6; estructura en A2). Generado con `/seo content-brief restyling casa` el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 2, tarea C6; estructura en A2). Generado con `/seo content-brief restyling casa` el 8 oct 2026.
 
 **Estado:** pendiente. Bloqueado por los datos de Martina (checklist al final).
 

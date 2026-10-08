@@ -1,12 +1,12 @@
 # Brief C4 — Ristrutturazione appartamento Bergamo
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 1, tarea C4; estructura en A2). Generado con `/seo content-brief` el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 1, tarea C4; estructura en A2). Generado con `/seo content-brief` el 8 oct 2026.
 
 **Estado:** pendiente. Bloqueado por los datos de Martina (checklist al final).
 
 **Página:** nueva, `/servizi/ristrutturazione-appartamento-bergamo`. Hoy el servicio "Progettazione architettonica a 360°" es un ancla en `/servizi`, con un proceso en 5 pasos muy completo (rilievo, progetto, direzione artistica, coordinamento cantiere, pratica edilizia) que es la base de esta página.
 
-**Límites de los datos:** sin volumen de búsqueda (no hay DataForSEO); SERP no geolocalizada en google.it y sin el bloque del mapa, que en esta búsqueda pesa mucho (ver `docs/SEO-PLAN-FASE-2.md`, D-1 Google Business Profile).
+**Límites de los datos:** sin volumen de búsqueda (no hay DataForSEO); SERP no geolocalizada en google.it y sin el bloque del mapa, que en esta búsqueda pesa mucho (ver `docs/seo/PLAN.md`, D-1 Google Business Profile).
 
 **Relación con otras páginas del plan:**
 - Las tablas de costes por m² van en la guía C11 (`/news/costo-ristrutturazione-appartamento-bergamo`), no aquí: la SERP las separa (solo 1 URL compartida).

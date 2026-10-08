@@ -1,6 +1,6 @@
 # Brief C7 — Quanto costa un architetto per ristrutturare casa
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque C, ola 2, tarea C7). Generado con `/seo content-brief quanto costa un architetto per ristrutturare casa` el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque C, ola 2, tarea C7). Generado con `/seo content-brief quanto costa un architetto per ristrutturare casa` el 8 oct 2026.
 
 **Estado:** pendiente. Bloqueado por la decisión de Martina de publicar (aunque sea en rangos) cómo calcula sus honorarios.
 

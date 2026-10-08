@@ -1,6 +1,6 @@
 # Brief A3 — Home (página pilar "architetto Bergamo")
 
-Parte de `docs/SEO-PLAN-FASE-2.md` (bloque A, tarea A3). Generado con `/seo content-brief https://mparchistudio.com/` (modo mejora) el 8 oct 2026.
+Parte de `docs/seo/PLAN.md` (bloque A, tarea A3). Generado con `/seo content-brief https://mparchistudio.com/` (modo mejora) el 8 oct 2026.
 
 **Estado:** pendiente. Depende de D5 (copy del H1, decide Martina), de A2 (páginas de servicio a las que enlazar) y de C5 (testimonios).
 

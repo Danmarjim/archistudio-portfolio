@@ -6,25 +6,13 @@ Funcionalidades pendientes de implementar.
 
 ## Pendiente
 
-### Dominio personalizado
+### Dominio `mparchistudio.it`
 
-Configurar `mparchistudio.it` y `mparchistudio.com` apuntando a Vercel.
+`mparchistudio.com` ya está en producción. Si también se tiene `mparchistudio.it`, conviene añadirlo en Vercel (Project Settings → Domains) como **redirect 308 a `mparchistudio.com`**, nunca como segundo sitio con el mismo contenido.
 
-Pasos:
-1. En Vercel → Project Settings → Domains → añadir dominio
-2. En el registrador del dominio, añadir los DNS records que indica Vercel
-3. Actualizar `NEXT_PUBLIC_SITE_URL` en las variables de entorno de Vercel
+### SEO
 
----
-
-### Analytics
-
-Instalar analíticas para ver tráfico y páginas más visitadas.
-
-Opciones:
-- **Vercel Analytics** (integrado, sin cookies) — recomendado para empezar
-- **Plausible** (privacidad, pago)
-- **Google Analytics** (gratuito, más completo)
+Ver `docs/seo/ESTADO.md`.
 
 ---
 
@@ -32,9 +20,12 @@ Opciones:
 
 - Formulario de contacto funcional: `src/app/api/contact/route.ts` envía emails vía Resend, conectado al formulario de `/contacto`. `RESEND_API_KEY` configurada en `.env.local` y en Vercel (producción). Emails llegando correctamente al email personal
 - Portfolio trilingüe (IT/ES/EN) con next-intl
-- 7 proyectos con galería lightbox y auto-discovery de imágenes
-- 3 noticias con categorías y galería
+- 8 proyectos con galería lightbox y auto-discovery de imágenes
+- 8 noticias con categorías y galería
 - Deploy automático en Vercel
-- Sitemap y robots.txt estáticos
+- Sitemap (con hreflang) y robots.txt estáticos
 - Fix de Lambda 250MB (`outputFileTracingExcludes`)
 - Documentación actualizada (README, CLAUDE.md, docs/)
+- Dominio `mparchistudio.com` en producción (DNS gestionado en Vercel) y verificado en Google Search Console
+- Vercel Analytics instalado
+- SEO fase 1 y PR 1 de la fase 2 (oct 2026): ver `docs/seo/ESTADO.md`
