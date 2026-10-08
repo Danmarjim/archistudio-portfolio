@@ -29,6 +29,10 @@ export default function TappetiPage() {
         <div className="mx-auto w-full px-6 md:max-w-[33vw] md:px-0">
           <video
             src="/images/tappeti/tappeti-01.mp4"
+            // Fotogramma mostrato finché il video non parte: evita un riquadro vuoto e il salto di layout
+            poster="/images/tappeti/tappeti-01-poster.jpg"
+            width={720}
+            height={960}
             autoPlay
             muted
             loop
@@ -100,7 +104,7 @@ export default function TappetiPage() {
               className="relative w-full overflow-hidden rounded-2xl"
             >
               <Image
-                src="/images/tappeti/tappeti-03 - copia.jpg"
+                src="/images/tappeti/tappeti-03.jpg"
                 alt="Collezione Sevilla — tappeto"
                 width={800}
                 height={1000}
@@ -231,7 +235,7 @@ export default function TappetiPage() {
               className="overflow-hidden rounded-2xl"
             >
               <Image
-                src="/images/tappeti/tappeti-06 - copia.jpg"
+                src="/images/tappeti/tappeti-06.jpg"
                 alt="Collezione Sevilla — tappeti-06"
                 width={800}
                 height={1000}
@@ -246,7 +250,7 @@ export default function TappetiPage() {
               className="overflow-hidden rounded-2xl"
             >
               <Image
-                src="/images/tappeti/tappeti-07 - copia.jpg"
+                src="/images/tappeti/tappeti-07.jpg"
                 alt="Collezione Sevilla — tappeti-07"
                 width={800}
                 height={1000}

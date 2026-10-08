@@ -33,6 +33,11 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   // Non esporre `X-Powered-By: Next.js`
   poweredByHeader: false,
+  images: {
+    // AVIF prima di WebP: ~20-30% in meno a parità di qualità. Il browser riceve il primo
+    // formato che supporta (header Accept); gli altri continuano a ricevere WebP.
+    formats: ['image/avif', 'image/webp'],
+  },
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }]
   },

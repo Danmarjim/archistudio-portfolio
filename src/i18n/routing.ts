@@ -13,6 +13,11 @@ export const routing = defineRouting({
   // Omit locale prefix for the default locale (Italian)
   localePrefix: 'as-needed',
 
+  // Ogni URL mostra sempre la sua lingua: niente redirect automatici in base all'header
+  // Accept-Language o al cookie. Google sconsiglia i redirect per lingua; hreflang basta per
+  // mostrare a ogni utente la versione giusta nei risultati, e il selettore resta disponibile.
+  localeDetection: false,
+
   // hreflang e canonical sono dichiarati nell'HTML (generateMetadata). Disattivo l'header HTTP
   // `Link` di next-intl per evitare duplicati o conflitti con le alternate dichiarate in pagina.
   alternateLinks: false,

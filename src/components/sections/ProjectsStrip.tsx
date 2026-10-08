@@ -70,8 +70,9 @@ export default function ProjectsStrip({ images, verticalImages }: ProjectsStripP
             height={0}
             sizes="(max-width: 768px) 90vw, 70vw"
             style={{ width: 'auto', height: '60vh', maxWidth: '88vw', display: 'block' }}
-            priority
-            fetchPriority="high"
+            // Su mobile il carosello è sotto il ritratto, che è l'LCP: caricamento immediato ma
+            // senza preload ad alta priorità, per non contendergli la banda.
+            loading="eager"
           />
         </motion.div>
       </AnimatePresence>

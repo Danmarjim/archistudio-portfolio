@@ -34,7 +34,10 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
             src={project.coverImage}
             alt={project.title}
             aspectRatio="landscape"
-            priority={aboveFold}
+            // Solo la prima card è l'LCP (su mobile è l'unica visibile); le altre above the fold
+            // si caricano subito ma senza contendere la priorità di rete.
+            priority={index === 0}
+            loading={aboveFold && index > 0 ? 'eager' : undefined}
             sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1023px) calc(50vw - 40px), 400px"
             className="transition-transform duration-500 group-hover:scale-105"
           />

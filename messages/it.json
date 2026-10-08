@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Architetto a Bergamo – Martina Pozzi | MP_archistudio",
-    "description": "Martina Pozzi, architetta a Bergamo: ristrutturazioni chiavi in mano, interior design su misura e consulenza all'acquisto casa. Ti seguo fino al cantiere.",
+    "description": "Martina Pozzi, architetta a Bergamo: ristrutturazioni chiavi in mano, interior design su misura e consulenza all'acquisto casa. Scrivimi.",
     "pages": {
       "projects": {
         "title": "Progetti di ristrutturazione e interior design a Bergamo",
@@ -85,6 +85,7 @@
   },
   "ProjectDetail": {
     "backToProjects": "Torna ai progetti",
+    "galleryImageAlt": "{title}, {location} — foto {n}",
     "aboutProject": "Sul progetto",
     "details": "Dettagli del progetto",
     "gallery": "Galleria",

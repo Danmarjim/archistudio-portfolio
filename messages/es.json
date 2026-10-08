@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Arquitecta en Bérgamo – Martina Pozzi | MP_archistudio",
-    "description": "Martina Pozzi, arquitecta en Bérgamo: reformas llave en mano, interiorismo a medida y asesoría para la compra de vivienda. Te acompaño hasta el final de la obra.",
+    "description": "Martina Pozzi, arquitecta en Bérgamo: reformas llave en mano, interiorismo a medida y asesoría para comprar vivienda. Escríbeme.",
     "pages": {
       "projects": {
         "title": "Proyectos de reforma e interiorismo en Bérgamo",
@@ -85,6 +85,7 @@
   },
   "ProjectDetail": {
     "backToProjects": "Volver a proyectos",
+    "galleryImageAlt": "{title}, {location} — foto {n}",
     "aboutProject": "Sobre el proyecto",
     "details": "Detalles del proyecto",
     "gallery": "Galería",

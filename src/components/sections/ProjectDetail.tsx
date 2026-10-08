@@ -196,7 +196,11 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
                 >
                   <Image
                     src={item.img}
-                    alt={`${project.title} - Immagine ${item.originalIndex + 1}`}
+                    alt={t('galleryImageAlt', {
+                      title: project.title,
+                      location: project.location,
+                      n: item.originalIndex + 1,
+                    })}
                     // Dimensioni reali: riservano lo spazio prima del caricamento.
                     // Con 0×0 tutte le immagini risultavano nel viewport e il lazy loading le scaricava insieme.
                     width={item.dims?.width ?? 1200}

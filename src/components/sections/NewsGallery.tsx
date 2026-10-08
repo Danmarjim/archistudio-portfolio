@@ -70,7 +70,6 @@ export default function NewsGallery({ images, title = '' }: NewsGalleryProps) {
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 900px"
-                  priority={current === 0}
                 />
                 {/* Zoom hint */}
                 <button

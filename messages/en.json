@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Architect in Bergamo – Martina Pozzi | MP_archistudio",
-    "description": "Martina Pozzi, architect in Bergamo: turnkey renovations, tailor-made interior design and home-buying consultancy. I guide you all the way to the finished site.",
+    "description": "Martina Pozzi, architect in Bergamo: turnkey renovations, tailor-made interior design and home-buying consultancy. Get in touch.",
     "pages": {
       "projects": {
         "title": "Renovation and interior design projects in Bergamo",
@@ -85,6 +85,7 @@
   },
   "ProjectDetail": {
     "backToProjects": "Back to projects",
+    "galleryImageAlt": "{title}, {location} — photo {n}",
     "aboutProject": "About the project",
     "details": "Project details",
     "gallery": "Gallery",
