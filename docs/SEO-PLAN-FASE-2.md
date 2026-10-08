@@ -29,6 +29,25 @@ Continúa `docs/SEO-IMPLEMENTATION-PLAN.md` (fase 1, cerrada: score 49 → 80). 
 
 **PR 1 (rama `feat/seo-fase-2`, 8 oct):** A1, B1–B11 hechos y verificados en build local (ver detalle al final). Pendiente: B12 (decisión D9), A2–A4 y bloques C–D.
 
+## Benchmark frente a la competencia (8 oct 2026)
+
+Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso (1–10 cada uno, total /40). Mide solo la página; en la búsqueda local también pesan Google Business Profile, reseñas y antigüedad del dominio, donde los competidores llevan ventaja.
+
+| Búsqueda | Mejor competidor | Nosotros hoy | Objetivo con el brief | Brief |
+|---|---|---|---|---|
+| ristrutturazione appartamento Bergamo | Atrio 33/40 | ~20/40 | 34–36/40 | `docs/seo-briefs/C4-ristrutturazione-appartamento-bergamo.md` |
+| consulenza architetto online | Risorse per progettare 30/40 | ~15/40 | 33–35/40 | `docs/seo-briefs/C2-consulenza-architetto-online.md` |
+
+**ristrutturazione appartamento Bergamo** — competidores: Atrio 33, ARB Geom 24, Carzaniga 21, Zambelli 20, RistrutturaSMART 20.
+- `/servizi` ~20/40 (profundidad 6 · formato 7 · SEO 2 · experiencia 5): el texto no menciona "ristrutturazione" ni "Bergamo" (0 veces; solo el `<title>`), H1 "I miei servizi", URL genérica, 4 servicios mezclados, sin caso en Bergamo, costes ni plazos. Punto fuerte: el proceso en 5 pasos es más completo que el de casi todos los competidores.
+- `/progetti/appartamento-lovingcolors` ~20/40 (4 · 7 · 4 · 5): único caso real en Bergamo, 15 fotos, pero 313 palabras de proyecto, no una página de servicio.
+
+**consulenza architetto online** — competidores: Risorse per progettare 30, Architettura a Domicilio 27, Viù 26, Valentina Falvo 26, Michele Scarpellini 21.
+- Sección ArchiAdvice en `/servizi` ~14/40 (2 · 5 · 1 · 6): "consulenza architetto online" y "online" aparecen 0 veces; 4 viñetas y un botón; sin precio (la SERP lo exige), sin cómo funciona ni qué se recibe. Punto fuerte: reserva directa en Calendly.
+- `/news/archiadvice-lancio` ~15/40 (3 · 5 · 3 · 4).
+
+**Conclusión:** la distancia no es de calidad del trabajo sino de que estas búsquedas no tienen una página que les responda. Con los briefs aplicados (A2 + C2 + C4) pasaríamos por delante en contenido, con lo que nadie más tiene: caso real, proceso con entregables, color y consulta en tres idiomas. Repetir esta medición tras publicar las páginas.
+
 ## Bloque A — Estructura y URLs (código, depende de D1/D5)
 
 **A1. Slugs en italiano con `pathnames`** · `src/i18n/routing.ts`, `src/app/[locale]/*`, `next.config.ts`
