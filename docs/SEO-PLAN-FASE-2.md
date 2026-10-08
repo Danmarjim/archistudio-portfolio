@@ -143,6 +143,61 @@ Fuera de alcance (decidido en el cluster): páginas por ciudad (Milano, Monza), 
 - Inspección por API (`/seo google inspect-batch`) de las URLs nuevas a los 3–7 días.
 - Search Console → Rendimiento: primeras impresiones de marca y de "architetto Bergamo".
 
+## Bloque F — Imágenes (auditoría `/seo images`, 8 oct 2026) · pendiente
+
+Diagnóstico: lo que se sirve está bien optimizado (WebP de 19–44 KB, `srcset`, dimensiones, lazy bajo el pliegue, `fetchpriority` en el LCP). Los problemas están en los textos alternativos, los nombres de archivo y los originales.
+
+**F1. Alt de las galerías de proyecto** · Alta · `src/components/sections/ProjectDetail.tsx:199`, `content/projects/*/*.mdx`, `messages/*.json`
+- Hoy: 176 de 230 imágenes con `alt="<Proyecto> - Immagine N"`, en italiano también en `/es` y `/en` (texto hardcodeado).
+- Paso 1 (código): traducir el patrón con `useTranslations` (`ProjectDetail.galleryImageAlt` → "Foto {n}" / "Photo {n}") e incluir tipo de obra y ciudad: "Casa Archi & Colori, Milano — foto 12".
+- Paso 2 (contenido, Martina): campo opcional `captions` en el frontmatter (una descripción corta por imagen y por idioma, p. ej. "Soggiorno con parete libreria verde e panca") que se usa como alt; si falta, cae al patrón del paso 1.
+- Verificar: 0 alts con "Immagine" en páginas `/es` y `/en`; alt de galería distinto por imagen donde haya caption.
+
+**F2. Vídeo de `/tappeti`** · Media · `public/images/tappeti/tappeti-01.mp4` (13 MB), `src/app/[locale]/tappeti/page.tsx`
+- Reencodar a ~720p H.264 (objetivo 1,5–3 MB), añadir `poster` (primer fotograma en WebP) y `preload="metadata"`.
+- Verificar: peso del vídeo < 3 MB; Lighthouse móvil de `/tappeti` sin el vídeo en "Avoid enormous network payloads".
+
+**F3. Originales pesados** · Media · `public/images/**` (322 MB, 63 archivos > 2 MB; el mayor 11 MB)
+- Redimensionar a máx. 2560 px de ancho, JPEG calidad ~85 (objetivo 300–800 KB por foto). No cambia nada visible: `next/image` ya sirve tamaños reducidos, pero mejora el primer render de cada tamaño (LCP en frío), la cuota de optimización de Vercel y el peso del repo.
+- Herramienta: `sips` (macOS) o ImageMagick; conservar los originales fuera del repo.
+- Verificar: `find public/images -size +2M` vacío salvo el vídeo; comparación visual de 3–4 fotos antes/después.
+
+**F4. Prioridades de carga** · Media
+- `src/components/sections/ProjectCard.tsx:18`: `aboveFold = index < 3` → solo la primera card con `priority` (en móvil solo se ve una).
+- `src/components/sections/ProjectsStrip.tsx:73`: quitar `fetchPriority="high"` (y valorar `priority`) del carrusel de la home; compite con el avatar, que es el LCP en móvil.
+- `src/components/sections/NewsGallery.tsx:73` y `:172`: quitar `priority` de la galería de páginas del artículo (está bajo el texto).
+- Verificar: PSI móvil de `/` con LCP < 2,5 s (mediana de 3); una sola imagen `fetchpriority=high` por página.
+
+**F5. AVIF** · Baja · `next.config.ts`
+- `images: { formats: ['image/avif', 'image/webp'] }` → ~20–30 % menos por imagen. Coste: primera transformación más lenta y más cuota de Vercel. Hacer después de F3.
+
+**F6. Nombres de archivo** · Baja · 21 archivos
+- `tappeti-0X - copia.jpg` (×3), `Articolo HOME n36 aprile 2026 - cover.jpg`, `Articolo Cose diCasa N.10 ottobre 2022_Pagina_N.jpg` (×5), `.JPG` en mayúsculas (`cucina-parigina-02.JPG`, `intervista-archiboost-0N.JPG`, `cose-di-casa-ottobre-2022-cover.JPG`).
+- Renombrar a minúsculas con guiones y descriptivos (`home-n36-aprile-2026-cover.jpg`, `cose-di-casa-ottobre-2022-pagina-1.jpg`…) con `git mv` en dos pasos (macOS no distingue mayúsculas) y actualizar referencias en MDX y código.
+- Verificar: `find public/images | grep -E ' |[A-Z]|copia'` vacío; build sin imágenes rotas.
+
+**F7. Imágenes compartidas entre proyectos** · Baja · confirmar con Martina
+- La galería de `bagno-italian-summer` usa `restyling-casa-peonia-29…`. Si es la misma casa, renombrar las del baño (`bagno-italian-summer-NN.jpg`) para que Google Images las asocie al proyecto correcto.
+
+**F8. Créditos IPTC** · Baja, opcional
+- Inyectar Creator/Credit/Copyright (fotógrafa Marta D'Avenia donde aplique, MP_archistudio en el resto) con `exiftool`. Google Images lo muestra; no es factor de ranking. Hacer junto con F3.
+
+## Bloque G — Internacionalización (auditoría `/seo hreflang`, 8 oct 2026) · pendiente
+
+Diagnóstico: hreflang técnicamente perfecto (63/63 URLs: autorreferencia, retorno, x-default, canonical, `lang`, sitemap = HTML). Paridad de contenido correcta (±15 % de palabras, misma estructura).
+
+**G1. Títulos de proyecto sin traducir** · Media · `content/projects/{es,en}/*.mdx`
+- Los 8 proyectos tienen el mismo `title` en los tres idiomas ("Bagno ITALIAN SUMMER", "Cucina PARIGINA", "Appartamento LOVINGCOLORS"). Mantener el nombre propio y traducir el tipo: es "Baño ITALIAN SUMMER", "Cocina PARIGINA", "Piso LOVINGCOLORS"; en "ITALIAN SUMMER bathroom", "PARIGINA kitchen", "LOVINGCOLORS apartment". Lo exige además la regla de CLAUDE.md (`title` se traduce por locale).
+- Verificar: ningún `<title>` de proyecto idéntico entre idiomas.
+
+**G2. Redirección automática por idioma del navegador** · Media · `src/i18n/routing.ts`
+- Hoy `/` y `/progetti` redirigen (307) a `/es` o `/en` según `Accept-Language`, y la cookie `NEXT_LOCALE` fija el idioma en visitas posteriores. Googlebot (sin cabecera) ve el italiano, así que no bloquea la indexación, pero Google desaconseja redirigir automáticamente: un visitante con navegador en español no puede abrir la versión italiana desde un resultado o un enlace.
+- Cambio: `localeDetection: false`. Cada URL muestra siempre su idioma; el visitante cambia con el selector.
+- Verificar: `curl -H "Accept-Language: es" https://mparchistudio.com/progetti` → 200 (sin redirect).
+
+**G3. Slugs italianos en news y tappeti para es/en** · Info
+- `/en/news/il-colore-nell-architettura`. Aceptable con tan pocas páginas; revisar solo si las noticias pasan a ser contenido estratégico en es/en.
+
 ## Orden de ejecución propuesto
 
 | PR | Contenido | Depende de |
@@ -151,6 +206,7 @@ Fuera de alcance (decidido en el cluster): páginas por ciudad (Milano, Monza), 
 | PR 2 | A2 + A3 + A4 con el contenido actual de `/servicios` ampliado | D5; precios (D2) si ya están |
 | PR 3 | C1–C5 (ola 1 de contenido) | textos/datos de Martina |
 | PR 4+ | C6–C15 (olas 2 y 3) | briefs + textos |
+| PR imágenes/i18n | F1 (paso 1), F2–F6, G1, G2 | — (F1 paso 2 y F7: Martina) |
 
 D (Martina) en paralelo desde ya; E después de cada PR.
 
