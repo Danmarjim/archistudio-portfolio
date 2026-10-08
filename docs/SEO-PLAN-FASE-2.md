@@ -49,11 +49,12 @@ Antes de lanzar un comando del plugin `claude-seo`, mirar aquí si ya está hech
 | 8 oct | `/seo content-brief restyling casa` | 5 competidores, precios de mercado, estructura, meta tags | `docs/seo-briefs/C6-restyling-casa.md` | No |
 | 8 oct | `/seo drift compare https://mparchistudio.com/` | Home frente a la foto del 7 oct (14 reglas) | Sin regresiones; solo cambios intencionados (JSON-LD ampliado, HTML del hero) | Tras cada deploy |
 | 8 oct | `/seo content-brief https://mparchistudio.com/` (modo mejora) | Home como pilar "architetto Bergamo": qué conservar, qué añadir, 3 competidores + directorios | `docs/seo-briefs/A3-home.md` | No |
+| 8 oct | `/seo content-brief https://mparchistudio.com/chi-sono` (modo mejora) | Página de marca: qué ve Google con su nombre, credenciales, prensa | `docs/seo-briefs/C1-chi-sono.md` | No |
 | 8 oct | Benchmark manual (misma rúbrica que los briefs) | Nuestras páginas frente a los competidores de C2 y C4 | Sección "Benchmark" de este documento | Tras publicar C2/C4 |
 
 **No hace falta lanzar por separado** lo que ya cubre `/seo audit`: `/seo technical`, `/seo content`, `/seo schema`, `/seo sitemap`, `/seo geo`, `/seo agentic`, `/seo local`, `/seo sxo` y `/seo backlinks` son exactamente los subagentes de la auditoría. Tiene sentido lanzarlos sueltos solo para revisar un área concreta después de cambiarla.
 
-**Pendientes, no ejecutados todavía:** los briefs de las olas 2 y 3 (C7–C14) y de `/chi-sono` (C1); `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
+**Pendientes, no ejecutados todavía:** los briefs de las olas 2 y 3 (C7–C14); `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
 
 ## Benchmark frente a la competencia (8 oct 2026)
 
@@ -66,6 +67,7 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 | consulenza acquisto casa | ConsulenzaCasa360 / Erica Benini 27/40 | ~14/40 | 32–34/40 | `docs/seo-briefs/C3-consulenza-acquisto-casa.md` |
 | restyling casa | Caterina Fini 31/40 | ~14/40 | 32–34/40 | `docs/seo-briefs/C6-restyling-casa.md` |
 | architetto Bergamo (home) | Atrio 32/40 (y directorios) | ~23/40 | 33–35/40 | `docs/seo-briefs/A3-home.md` |
+| Martina Pozzi architetto (marca, `/chi-sono`) | LinkedIn / Homeadore / albo del Ordine | ~22/40 | 33–35/40 | `docs/seo-briefs/C1-chi-sono.md` |
 
 **ristrutturazione appartamento Bergamo** — competidores: Atrio 33, ARB Geom 24, Carzaniga 21, Zambelli 20, RistrutturaSMART 20.
 - `/servizi` ~20/40 (profundidad 6 · formato 7 · SEO 2 · experiencia 5): el texto no menciona "ristrutturazione" ni "Bergamo" (0 veces; solo el `<title>`), H1 "I miei servizi", URL genérica, 4 servicios mezclados, sin caso en Bergamo, costes ni plazos. Punto fuerte: el proceso en 5 pasos es más completo que el de casi todos los competidores.
@@ -155,11 +157,12 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, secciones, palabras, competidores, enlaces). Los briefs se guardan en `docs/seo-briefs/` con el código de la tarea (`C2-…md`).
 
 **Ola 1** (junto con A2/A3):
-- C1. Señales E-E-A-T en `/chi-sono`: colegiación (D3), premio (D4), una cifra de experiencia, foto, email de dominio (D8).
+- C1. Señales E-E-A-T en `/chi-sono`: colegiación (D3), premio (D4), una cifra de experiencia, foto, email de dominio (D8). **Brief:** `docs/seo-briefs/C1-chi-sono.md`.
 - C2. Texto de ArchiAdvice con precio (D2). **Brief:** `docs/seo-briefs/C2-consulenza-architetto-online.md`.
 - C3. Texto de consulenza acquisto casa (qué se revisa: agibilità, catasto, conformità; precio D2). **Brief:** `docs/seo-briefs/C3-consulenza-acquisto-casa.md`.
 - C4. Texto de ristrutturazione appartamento Bergamo (proceso, plazos, casos reales en Bergamo; las tablas de coste por m² van en C11, no aquí). **Brief:** `docs/seo-briefs/C4-ristrutturazione-appartamento-bergamo.md`.
 - C5. Testimonios (Spazi Belli 5,0★ / 7 reseñas) en home y servicios.
+- C5b. Prensa no recogida: dos artículos de **Homeadore** (Lovingcolors, 25 jun 2026; Casa ARCHI & COLORI, 5 ago 2026) → noticias + franja "Pubblicato su" + `llms.txt` + `subjectOf` (ver brief C1).
 
 **Ola 2:**
 - C6. `/servizi/restyling-casa` (texto). **Brief:** `docs/seo-briefs/C6-restyling-casa.md`.
