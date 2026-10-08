@@ -54,11 +54,12 @@ Antes de lanzar un comando del plugin `claude-seo`, mirar aquí si ya está hech
 | 8 oct | `/seo content-brief conformità urbanistica e catastale` | 5 competidores, estructura, requisitos normativos | `docs/seo-briefs/C8-conformita-urbanistica-catastale.md` | No (revisar la guía publicada cada 6–12 meses) |
 | 8 oct | `/seo content-brief progettazione bagno architetto` | 5 competidores, medidas de referencia, estructura | `docs/seo-briefs/C9-progettare-il-bagno.md` | No |
 | 8 oct | `/seo content-brief colore nell'architettura d'interni` (modo mejora) | Artículo existente de 143 palabras frente a 5 competidores | `docs/seo-briefs/C10-colore-architettura.md` | No |
+| 8 oct | `/seo content-brief costo ristrutturazione appartamento Bergamo` | 5 competidores, cifras de mercado 2026, estructura | `docs/seo-briefs/C11-costo-ristrutturazione-bergamo.md` | No (actualizar cifras de la guía cada año) |
 | 8 oct | Benchmark manual (misma rúbrica que los briefs) | Nuestras páginas frente a los competidores de C2 y C4 | Sección "Benchmark" de este documento | Tras publicar C2/C4 |
 
 **No hace falta lanzar por separado** lo que ya cubre `/seo audit`: `/seo technical`, `/seo content`, `/seo schema`, `/seo sitemap`, `/seo geo`, `/seo agentic`, `/seo local`, `/seo sxo` y `/seo backlinks` son exactamente los subagentes de la auditoría. Tiene sentido lanzarlos sueltos solo para revisar un área concreta después de cambiarla.
 
-**Pendientes, no ejecutados todavía:** los briefs de las olas 2 y 3 (C11–C14); `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
+**Pendientes, no ejecutados todavía:** los briefs de las olas 2 y 3 (C12–C14); `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
 
 ## Benchmark frente a la competencia (8 oct 2026)
 
@@ -177,7 +178,7 @@ Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, seccio
 - C10. Ampliar `/news/il-colore-nell-architettura` (hoy 185 palabras). **Brief:** `docs/seo-briefs/C10-colore-architettura.md`.
 
 **Ola 3:**
-- C11. `/news/costo-ristrutturazione-appartamento-bergamo`.
+- C11. `/news/costo-ristrutturazione-appartamento-bergamo`. **Brief:** `docs/seo-briefs/C11-costo-ristrutturazione-bergamo.md`.
 - C12. `/news/come-scegliere-architetto-ristrutturazione`.
 - C13. `/news/progettare-la-cucina-consigli-architetto`.
 - C14. `/news/come-scegliere-colore-pareti-casa`.
