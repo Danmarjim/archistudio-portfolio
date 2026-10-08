@@ -325,8 +325,17 @@
     "ctaSubtitle": "Write to me, let's put it to the test and make it real.",
     "ctaButton": "Write to me"
   },
+  "ServicePage": {
+    "backToServices": "All services",
+    "priceFrom": "From",
+    "bookCta": "Book the consultation",
+    "contactCta": "Get in touch",
+    "relatedProjects": "Completed projects",
+    "finalTitle": "Let's talk about your project"
+  },
   "ServiciosPage": {
     "heroTitle": "My services",
+    "serviceDetailCta": "Learn more about this service",
     "heroSubtitle": "From a quick consultation to a full turnkey project — choose the service that best fits your situation.",
     "notSureTitle": "Not sure which service is right for you?",
     "notSureCta": "Tell me what you have in mind and we'll figure it out together",

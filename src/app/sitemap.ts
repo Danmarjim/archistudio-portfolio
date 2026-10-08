@@ -3,6 +3,7 @@ import { locales } from '@/i18n/routing'
 import { buildAlternates, localizedUrl } from '@/lib/seo'
 import { getAllNews } from '@/lib/news'
 import { getAllProjects } from '@/lib/projects'
+import { getPublishedServices } from '@/lib/services'
 
 // Generato staticamente alla build — nessuna serverless function a runtime
 export const dynamic = 'force-static'
@@ -31,6 +32,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ),
     ...projects.flatMap((project) =>
       entriesFor(`/proyectos/${project.slug}`, project.updated ? new Date(project.updated) : undefined)
+    ),
+    ...getPublishedServices('it').flatMap((service) =>
+      entriesFor(`/servicios/${service.slug}`, service.updated ? new Date(service.updated) : undefined)
     ),
     ...news.flatMap((post) => entriesFor(`/news/${post.slug}`, new Date(post.updated ?? post.date))),
   ]

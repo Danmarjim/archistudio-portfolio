@@ -92,3 +92,27 @@ export interface ContactForm {
   message: string
   budget?: string
 }
+
+/** Pagina di servizio (`content/services/{locale}/{slug}.mdx`). */
+export interface ServicePage {
+  slug: string
+  /** Chiave del servizio in `ServicesData` / `/servizi` (archiadvice, consulenza-acquisto, …) */
+  serviceKey: string
+  title: string
+  /** Titolo SEO (≤ 43 caratteri: il layout aggiunge " | MP_archistudio") */
+  seoTitle?: string
+  description: string
+  /** Valore di schema.org `serviceType` */
+  serviceType: string
+  published: boolean
+  /** Call to action principale: prenotazione su Calendly o modulo di contatto */
+  cta: 'calendly' | 'contact'
+  /** Tipo di progetto preselezionato nel modulo di contatto */
+  contactProjectType?: string
+  /** Slug dei progetti da mostrare come esempi */
+  relatedProjects: string[]
+  /** Prezzo di partenza in euro, se pubblicato (genera un `Offer` nel JSON-LD) */
+  priceFrom?: number
+  updated?: string
+  content: string
+}

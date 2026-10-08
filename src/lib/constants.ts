@@ -1,5 +1,8 @@
 import type { NavItem, SiteConfig, Service } from '@/types'
 
+/** Prenotazione online di ArchiAdvice */
+export const CALENDLY_URL = 'https://calendly.com/mp_archistudio'
+
 export const siteConfig: SiteConfig = {
   name: 'MP_archistudio',
   title: 'Architetto a Bergamo – Martina Pozzi | MP_archistudio',

@@ -9,6 +9,10 @@ export function projectHref(slug: string): AppHref {
   return { pathname: '/proyectos/[slug]', params: { slug } }
 }
 
+export function serviceHref(slug: string): AppHref {
+  return { pathname: '/servicios/[slug]', params: { slug } }
+}
+
 export function newsHref(slug: string): AppHref {
   return { pathname: '/news/[slug]', params: { slug } }
 }
@@ -28,5 +32,6 @@ export function internalHref(path: string): AppHref | null {
   if (!slug || rest.length) return null
   if (section === 'proyectos') return projectHref(slug)
   if (section === 'news') return newsHref(slug)
+  if (section === 'servicios') return serviceHref(slug)
   return null
 }

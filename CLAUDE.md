@@ -203,6 +203,23 @@ tags:
   - tag2
 ```
 
+## Páginas de servicio (`content/services/{locale}/{slug}.mdx`)
+
+Una página por servicio (`/servizi/consulenza-architetto-online`, `…/consulenza-acquisto-casa`, `…/restyling-casa`, `…/ristrutturazione-appartamento-bergamo`). Solo existen las que tienen `published: true` en el MDX **italiano**: hasta entonces no se generan, no van al sitemap y el hub `/servizi` no las enlaza. El texto se completa siguiendo el brief indicado en cada archivo (`docs/seo-briefs/`).
+
+```yaml
+title: "H1 de la página"
+seoTitle: "Title ≤ 43 car."          # el código añade " | MP_archistudio"
+description: "Meta description ≤ 150 car."
+serviceKey: "restyling"              # clave en ServicesData / hub /servizi
+serviceType: "Restyling d'interni"   # schema.org Service
+published: false
+cta: "contact"                       # "calendly" | "contact"
+contactProjectType: "restyling"      # preselección del formulario (?tipo=)
+relatedProjects: [restyling-casa-peonia]
+priceFrom: 120                       # opcional → Offer en el JSON-LD
+```
+
 ## Frontmatter MDX — Noticias
 
 ```yaml
@@ -217,7 +234,11 @@ source: "Nombre publicación"  # Opcional
 sourceUrl: "https://..."      # Opcional
 images:                       # Opcional — galería adicional
   - "/images/news/pagina-1.jpg"
+seoTitle: "Title ≤ 43 car."   # Opcional — si el título del artículo es largo
+updated: "2026-10-08"         # Opcional — dateModified y lastmod del sitemap
 ```
+
+El cuerpo de las noticias es **Markdown completo** (`##`, listas, tablas, citas, enlaces; los enlaces internos con ruta interna, p. ej. `/proyectos/slug`).
 
 ## Configuración Vercel (`next.config.ts`)
 
@@ -239,12 +260,14 @@ Las carpetas de `app/[locale]` usan el slug interno (español); la URL pública 
 | `/` | `/` | `/es` | `/en` | `app/[locale]/page.tsx` |
 | `/proyectos` | `/progetti` | `/es/proyectos` | `/en/projects` | `app/[locale]/proyectos/page.tsx` |
 | `/proyectos/[slug]` | `/progetti/[slug]` | `/es/proyectos/[slug]` | `/en/projects/[slug]` | `app/[locale]/proyectos/[slug]/page.tsx` |
-| `/servicios` | `/servizi` | `/es/servicios` | `/en/services` | `app/[locale]/servicios/page.tsx` |
+| `/servicios` | `/servizi` | `/es/servicios` | `/en/services` | `app/[locale]/servicios/page.tsx` (server) + `ServiciosContent.tsx` (client) |
+| `/servicios/[slug]` | `/servizi/[slug]` | `/es/servicios/[slug]` | `/en/services/[slug]` | `app/[locale]/servicios/[slug]/page.tsx` |
 | `/sobre-mi` | `/chi-sono` | `/es/sobre-mi` | `/en/about` | `app/[locale]/sobre-mi/page.tsx` |
 | `/contacto` (Client) | `/contatti` | `/es/contacto` | `/en/contact` | `app/[locale]/contacto/page.tsx` |
 | `/news`, `/news/[slug]`, `/tappeti`, `/privacy` | igual en los tres idiomas | | | `app/[locale]/…` |
 
-- Enlaces internos: siempre `Link` de `@/i18n/navigation` con la ruta **interna** (`href="/contacto"`). Rutas dinámicas con los helpers de `@/lib/routes` (`projectHref(slug)`, `newsHref(slug)`).
+- Enlaces internos: siempre `Link` de `@/i18n/navigation` con la ruta **interna** (`href="/contacto"`). Rutas dinámicas con los helpers de `@/lib/routes` (`projectHref`, `newsHref`, `serviceHref`).
+- Sin redirección por idioma del navegador (`localeDetection: false`): cada URL muestra siempre su idioma.
 - SEO (`buildMetadata`, `buildBreadcrumb`, sitemap) recibe también la ruta interna; `src/lib/seo.ts` la traduce.
 - Las URLs antiguas (`/proyectos`, `/servicios`… en IT y EN) tienen redirect permanente en `next.config.ts`. **No quitarlos.** Las mayúsculas se redirigen a minúsculas en `src/middleware.ts`.
 

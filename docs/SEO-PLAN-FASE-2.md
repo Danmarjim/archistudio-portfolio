@@ -31,6 +31,8 @@ Continúa `docs/SEO-IMPLEMENTATION-PLAN.md` (fase 1, cerrada: score 49 → 80). 
 
 **Briefs (8 oct):** completos para A3 (home), C1 (chi sono), C2, C3, C4, C6 (servicios) y C7–C14 (guías) en `docs/seo-briefs/`. Cada brief termina con la checklist de datos de Martina. Antes de publicar cualquier guía: C-pre (render Markdown completo + `seoTitle` en noticias).
 
+**PR 2 (rama `feat/seo-fase-2-pr2`, 8 oct):** hechos C-pre, C5b, F1 (paso 1), F2–F6, G1, G2, meta description de la home y la estructura de A2 (plantilla `/servizi/[slug]`, 4 borradores sin publicar en `content/services/`, hub enlazando solo lo publicado, `Service` + `Offer` en JSON-LD, preselección del formulario con `?tipo=`). Pendiente de A2: completar y publicar cada servicio con los datos de Martina.
+
 ## Registro de comandos ejecutados
 
 Antes de lanzar un comando del plugin `claude-seo`, mirar aquí si ya está hecho. Los resultados completos están en `docs/seo-data/` y `docs/seo-briefs/`; no hace falta repetirlos salvo en los casos de la última columna.

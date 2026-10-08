@@ -325,8 +325,17 @@
     "ctaSubtitle": "Escríbeme, pongámosla a prueba y hagámosla realidad.",
     "ctaButton": "Escríbeme"
   },
+  "ServicePage": {
+    "backToServices": "Todos los servicios",
+    "priceFrom": "Desde",
+    "bookCta": "Reserva la asesoría",
+    "contactCta": "Pide información",
+    "relatedProjects": "Proyectos realizados",
+    "finalTitle": "Hablemos de tu proyecto"
+  },
   "ServiciosPage": {
     "heroTitle": "Mis servicios",
+    "serviceDetailCta": "Descubre el servicio",
     "heroSubtitle": "Desde la consulta rápida hasta el proyecto llave en mano — elige el servicio más adecuado para tu situación.",
     "notSureTitle": "¿No sabes qué servicio es el tuyo?",
     "notSureCta": "Cuéntame qué tienes en mente y lo descubriremos juntos",
