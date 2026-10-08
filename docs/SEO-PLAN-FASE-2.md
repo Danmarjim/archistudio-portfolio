@@ -47,11 +47,13 @@ Antes de lanzar un comando del plugin `claude-seo`, mirar aquí si ya está hech
 | 8 oct | `/seo content-brief ristrutturazione appartamento Bergamo` | 5 competidores, estructura, meta tags | `docs/seo-briefs/C4-ristrutturazione-appartamento-bergamo.md` | No |
 | 8 oct | `/seo content-brief consulenza acquisto casa` | 5 competidores, precios de mercado, estructura, meta tags | `docs/seo-briefs/C3-consulenza-acquisto-casa.md` | No |
 | 8 oct | `/seo content-brief restyling casa` | 5 competidores, precios de mercado, estructura, meta tags | `docs/seo-briefs/C6-restyling-casa.md` | No |
+| 8 oct | `/seo drift compare https://mparchistudio.com/` | Home frente a la foto del 7 oct (14 reglas) | Sin regresiones; solo cambios intencionados (JSON-LD ampliado, HTML del hero) | Tras cada deploy |
+| 8 oct | `/seo content-brief https://mparchistudio.com/` (modo mejora) | Home como pilar "architetto Bergamo": qué conservar, qué añadir, 3 competidores + directorios | `docs/seo-briefs/A3-home.md` | No |
 | 8 oct | Benchmark manual (misma rúbrica que los briefs) | Nuestras páginas frente a los competidores de C2 y C4 | Sección "Benchmark" de este documento | Tras publicar C2/C4 |
 
 **No hace falta lanzar por separado** lo que ya cubre `/seo audit`: `/seo technical`, `/seo content`, `/seo schema`, `/seo sitemap`, `/seo geo`, `/seo agentic`, `/seo local`, `/seo sxo` y `/seo backlinks` son exactamente los subagentes de la auditoría. Tiene sentido lanzarlos sueltos solo para revisar un área concreta después de cambiarla.
 
-**Pendientes, no ejecutados todavía:** los briefs de las olas 2 y 3 (C7–C14); `/seo drift compare` tras el próximo deploy; `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
+**Pendientes, no ejecutados todavía:** los briefs de las olas 2 y 3 (C7–C14) y de `/chi-sono` (C1); `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
 
 ## Benchmark frente a la competencia (8 oct 2026)
 
@@ -63,6 +65,7 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 | consulenza architetto online | Risorse per progettare 30/40 | ~15/40 | 33–35/40 | `docs/seo-briefs/C2-consulenza-architetto-online.md` |
 | consulenza acquisto casa | ConsulenzaCasa360 / Erica Benini 27/40 | ~14/40 | 32–34/40 | `docs/seo-briefs/C3-consulenza-acquisto-casa.md` |
 | restyling casa | Caterina Fini 31/40 | ~14/40 | 32–34/40 | `docs/seo-briefs/C6-restyling-casa.md` |
+| architetto Bergamo (home) | Atrio 32/40 (y directorios) | ~23/40 | 33–35/40 | `docs/seo-briefs/A3-home.md` |
 
 **ristrutturazione appartamento Bergamo** — competidores: Atrio 33, ARB Geom 24, Carzaniga 21, Zambelli 20, RistrutturaSMART 20.
 - `/servizi` ~20/40 (profundidad 6 · formato 7 · SEO 2 · experiencia 5): el texto no menciona "ristrutturazione" ni "Bergamo" (0 veces; solo el `<title>`), H1 "I miei servizi", URL genérica, 4 servicios mezclados, sin caso en Bergamo, costes ni plazos. Punto fuerte: el proceso en 5 pasos es más completo que el de casi todos los competidores.
@@ -93,7 +96,7 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 - Cada una con: H1 con keyword, qué incluye, para quién, proceso, precio (D2) o "da X €", proyectos relacionados, CTA a Calendly/contacto, JSON-LD `Service` con `provider` → `#business` (y `Offer` cuando haya precio).
 - `/news/archiadvice-lancio` se queda como anuncio y enlaza visiblemente a la página del servicio.
 
-**A3. Home como página pilar** · `src/app/[locale]/page.tsx`, `Hero.tsx`, `messages/*.json`
+**A3. Home como página pilar** · `src/app/[locale]/page.tsx`, `Hero.tsx`, `messages/*.json` · **Brief:** `docs/seo-briefs/A3-home.md`
 - H1/intro con Bergamo (D5) y un párrafo de entidad de 40–60 palabras (quién, qué, dónde, credenciales).
 - Bloque "Servizi" enlazando a las 4 páginas de A2; bloque "Zona" (Bergamo, Milano, Brianza) sin crear páginas de ciudad.
 - Objetivo ~1.300 palabras visibles (la SERP son homes de estudios y directorios, no guías largas).
@@ -179,7 +182,7 @@ Fuera de alcance (decidido en el cluster): páginas por ciudad (Milano, Monza), 
 - D-1. **Google Business Profile**: categoría *Architetto*, nombre `MP_archistudio`, web, teléfono, dirección o zona de servicio, fotos, horario. Es lo único que la saca en el mapa. Cuando exista: enlace en `sameAs` y botón "Recensioni / Come arrivare" en contacto.
 - D-2. Pedir reseñas en Google (primero a los clientes de Spazi Belli).
 - D-3. Nombre comercial idéntico en Houzz, Homify, Spazi Belli, Archilovers.
-- D-4. Web en Archilovers y en Linktree; alta en PagineGialle.
+- D-4. Web en Archilovers y en Linktree; alta en PagineGialle. Perfiles en los directorios que encabezan "architetto Bergamo": **Archisio**, **Edilportale** y **Divisare** (detectado en el brief A3).
 
 ## Bloque E — Seguimiento
 
