@@ -1,6 +1,7 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
+import { projectHref } from '@/lib/routes'
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import { ImageWithLoader, Badge } from '@/components/ui'
@@ -24,7 +25,7 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
       <Link
-        href={`/proyectos/${project.slug}`}
+        href={projectHref(project.slug)}
         className="group block overflow-hidden rounded-2xl bg-white"
       >
         {/* Image */}

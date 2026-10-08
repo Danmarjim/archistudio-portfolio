@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
+import { newsHref } from '@/lib/routes'
 import Container from '@/components/ui/Container'
 
 interface PressItem {
@@ -33,7 +34,7 @@ export default function PressBand({ items }: PressBandProps) {
             {unique.map((item) => (
               <li key={item.slug}>
                 <Link
-                  href={`/news/${item.slug}`}
+                  href={newsHref(item.slug)}
                   title={item.title}
                   className="inline-flex min-h-11 items-center font-serif text-xl text-foreground/80 transition-colors hover:text-primary-600"
                 >

@@ -53,6 +53,7 @@ messages/
 - `bagno-casa-peonia`
 - `bagno-casa-archi-colori`
 - `cucina-parigina`
+- `cucina-mite`
 
 ### Noticias actuales (slugs)
 
@@ -194,7 +195,9 @@ featured: false
 coverImage: "/images/projects/slug-01.jpg"
 images:                       # Opcional — si vacío, auto-descubre por prefijo slug
   - "/images/projects/slug-01.jpg"
-excerpt: "Descripción breve..."
+excerpt: "Descripción breve..."     # También se muestra bajo el H1
+description: "Meta description SEO"   # Opcional: tipo de obra, ciudad, m², año (≤160 car.). Si falta, se usa excerpt
+updated: "2026-10-08"                 # Opcional: última modificación relevante → lastmod del sitemap
 tags:
   - tag1
   - tag2
@@ -229,16 +232,21 @@ outputFileTracingExcludes: {
 
 ## Páginas y Rutas
 
-| Ruta | Tipo | Archivo |
-|------|------|---------|
-| `/{locale}` | Server | `app/[locale]/page.tsx` |
-| `/{locale}/proyectos` | Server | `app/[locale]/proyectos/page.tsx` |
-| `/{locale}/proyectos/[slug]` | Server | `app/[locale]/proyectos/[slug]/page.tsx` |
-| `/{locale}/news` | Server | `app/[locale]/news/page.tsx` |
-| `/{locale}/news/[slug]` | Server | `app/[locale]/news/[slug]/page.tsx` |
-| `/{locale}/sobre-mi` | Server | `app/[locale]/sobre-mi/page.tsx` |
-| `/{locale}/servicios` | Server | `app/[locale]/servicios/page.tsx` |
-| `/{locale}/contacto` | Client | `app/[locale]/contacto/page.tsx` |
+Las carpetas de `app/[locale]` usan el slug interno (español); la URL pública se traduce por idioma con `pathnames` en `src/i18n/routing.ts`. Italiano sin prefijo.
+
+| Ruta interna | IT | ES | EN | Archivo |
+|---|---|---|---|---|
+| `/` | `/` | `/es` | `/en` | `app/[locale]/page.tsx` |
+| `/proyectos` | `/progetti` | `/es/proyectos` | `/en/projects` | `app/[locale]/proyectos/page.tsx` |
+| `/proyectos/[slug]` | `/progetti/[slug]` | `/es/proyectos/[slug]` | `/en/projects/[slug]` | `app/[locale]/proyectos/[slug]/page.tsx` |
+| `/servicios` | `/servizi` | `/es/servicios` | `/en/services` | `app/[locale]/servicios/page.tsx` |
+| `/sobre-mi` | `/chi-sono` | `/es/sobre-mi` | `/en/about` | `app/[locale]/sobre-mi/page.tsx` |
+| `/contacto` (Client) | `/contatti` | `/es/contacto` | `/en/contact` | `app/[locale]/contacto/page.tsx` |
+| `/news`, `/news/[slug]`, `/tappeti`, `/privacy` | igual en los tres idiomas | | | `app/[locale]/…` |
+
+- Enlaces internos: siempre `Link` de `@/i18n/navigation` con la ruta **interna** (`href="/contacto"`). Rutas dinámicas con los helpers de `@/lib/routes` (`projectHref(slug)`, `newsHref(slug)`).
+- SEO (`buildMetadata`, `buildBreadcrumb`, sitemap) recibe también la ruta interna; `src/lib/seo.ts` la traduce.
+- Las URLs antiguas (`/proyectos`, `/servicios`… en IT y EN) tienen redirect permanente en `next.config.ts`. **No quitarlos.** Las mayúsculas se redirigen a minúsculas en `src/middleware.ts`.
 
 ## NO hacer
 

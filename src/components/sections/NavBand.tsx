@@ -13,7 +13,7 @@ export default function NavBand() {
     { label: t('services'), href: '/servicios' },
     { label: t('news'), href: '/news' },
     { label: t('contact'), href: '/contacto' },
-  ]
+  ] as const
 
   return (
     <section className="bg-primary-200 py-14">

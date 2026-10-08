@@ -11,12 +11,30 @@ export const ogLocales: Record<string, string> = {
 }
 
 /**
- * Percorso pubblico di una pagina per una lingua.
- * Con `localePrefix: 'as-needed'` l'italiano (default) non ha prefisso: `/proyectos`,
- * mentre le altre lingue sì: `/es/proyectos`, `/en/proyectos`.
+ * Traduce un percorso interno (`/proyectos/casa-archi-colori`) nello slug pubblico della lingua
+ * (`/progetti/casa-archi-colori` in italiano) secondo `routing.pathnames`.
+ */
+function translatePath(locale: string, internal: string): string {
+  for (const [pattern, value] of Object.entries(routing.pathnames)) {
+    const target = typeof value === 'string' ? value : value[locale as keyof typeof value]
+    if (pattern === internal) return target
+    const param = pattern.match(/\[(\w+)\]/)?.[1]
+    if (!param) continue
+    const prefix = pattern.slice(0, pattern.indexOf('['))
+    if (internal.startsWith(prefix) && !internal.slice(prefix.length).includes('/')) {
+      return target.replace(`[${param}]`, internal.slice(prefix.length))
+    }
+  }
+  return internal
+}
+
+/**
+ * Percorso pubblico di una pagina per una lingua, a partire dal percorso interno.
+ * Con `localePrefix: 'as-needed'` l'italiano (default) non ha prefisso: `/progetti`,
+ * mentre le altre lingue sì: `/es/proyectos`, `/en/projects`.
  */
 export function localizedPath(locale: string, path = ''): string {
-  const clean = path === '/' ? '' : path
+  const clean = path === '/' ? '' : translatePath(locale, path)
   if (locale === routing.defaultLocale) return clean || '/'
   return `/${locale}${clean}`
 }
@@ -130,13 +148,37 @@ const ids = {
   website: `${siteConfig.url}/#website`,
 }
 
+const logoUrl = absoluteUrl('/images/about/mparchistudio-logo.png')
+const portraitUrl = absoluteUrl('/images/about/martina-pozzi.jpg')
+
 export const personRef = { '@id': ids.person }
 export const businessRef = { '@id': ids.business }
 
+/**
+ * Riferimenti con i dati minimi in linea. Da usare nei JSON-LD di pagina (Article, Service…):
+ * sono in un blocco <script> diverso dal grafo globale e Google potrebbe non risolvere il solo `@id`.
+ */
+export const personSummary = {
+  ...personRef,
+  '@type': 'Person',
+  name: 'Martina Chiara Maria Pozzi',
+  url: siteConfig.url,
+}
+export const businessSummary = {
+  ...businessRef,
+  '@type': 'ProfessionalService',
+  name: siteConfig.name,
+  url: siteConfig.url,
+  logo: { '@type': 'ImageObject', url: logoUrl },
+}
+
 const telephone = siteConfig.phone?.replace(/\s+/g, '')
 
-/** Grafo globale: attività, persona e sito web. Va incluso in tutte le pagine (layout). */
-export function buildSiteGraph(locale: string) {
+/**
+ * Grafo globale: attività, persona e sito web. Va incluso in tutte le pagine (layout).
+ * `description` è la descrizione del sito nella lingua della pagina (Metadata.description).
+ */
+export function buildSiteGraph(locale: string, description: string) {
   return {
     '@context': 'https://schema.org',
     '@graph': [
@@ -145,9 +187,10 @@ export function buildSiteGraph(locale: string) {
         '@id': ids.business,
         name: siteConfig.name,
         legalName: 'Martina Chiara Maria Pozzi',
-        url: localizedUrl(locale),
-        description: siteConfig.description,
-        image: getDefaultOgImage(),
+        url: siteConfig.url,
+        description,
+        logo: { '@type': 'ImageObject', url: logoUrl },
+        image: portraitUrl,
         email: siteConfig.email,
         telephone,
         vatID: 'IT07788400963',
@@ -159,10 +202,23 @@ export function buildSiteGraph(locale: string) {
           addressRegion: 'BG',
           addressCountry: 'IT',
         },
+        geo: { '@type': 'GeoCoordinates', latitude: 45.6995, longitude: 9.65781 },
+        // Stessi orari mostrati nella pagina contatti
+        openingHoursSpecification: {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '09:00',
+          closes: '18:00',
+        },
         areaServed: [
           { '@type': 'City', name: 'Bergamo' },
+          { '@type': 'AdministrativeArea', name: 'Provincia di Bergamo' },
+          { '@type': 'City', name: 'Milano' },
+          { '@type': 'AdministrativeArea', name: 'Monza e Brianza' },
           { '@type': 'AdministrativeArea', name: 'Lombardia' },
+          { '@type': 'City', name: 'Sevilla' },
         ],
+        knowsLanguage: ['it', 'es', 'en'],
         founder: personRef,
         sameAs: sameAsProfiles,
       },
@@ -172,10 +228,20 @@ export function buildSiteGraph(locale: string) {
         name: 'Martina Chiara Maria Pozzi',
         alternateName: 'Martina Pozzi',
         jobTitle: 'Architetta',
-        url: localizedUrl(locale),
+        url: localizedUrl(locale, '/sobre-mi'),
+        image: portraitUrl,
         email: siteConfig.email,
         telephone,
         alumniOf: { '@type': 'CollegeOrUniversity', name: 'Politecnico di Milano' },
+        knowsAbout: [
+          'Architettura',
+          "Interior design",
+          'Ristrutturazione di appartamenti',
+          'Progettazione di bagni e cucine',
+          'Colore in architettura',
+          'Consulenza per l\'acquisto di immobili',
+        ],
+        knowsLanguage: ['it', 'es', 'en'],
         worksFor: businessRef,
         address: {
           '@type': 'PostalAddress',

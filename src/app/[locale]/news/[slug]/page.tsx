@@ -2,13 +2,14 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
+import { newsHref, internalHref } from '@/lib/routes'
 import Container from '@/components/ui/Container'
 import { getNewsBySlug, getAllNewsSlugs, getAdjacentNews } from '@/lib/news'
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import NewsGallery from '@/components/sections/NewsGallery'
 import { getTranslations } from 'next-intl/server'
 import JsonLd from '@/components/seo/JsonLd'
-import { absoluteUrl, buildBreadcrumb, buildMetadata, businessRef, localizedUrl, personRef } from '@/lib/seo'
+import { absoluteUrl, buildBreadcrumb, buildMetadata, businessSummary, localizedUrl, personSummary } from '@/lib/seo'
 
 interface NewsDetailPageProps {
   params: Promise<{ locale: string; slug: string }>
@@ -73,8 +74,9 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   if (!post) notFound()
 
   const t = await getTranslations({ locale, namespace: 'NewsPage' })
-  const tMeta = await getTranslations({ locale, namespace: 'Metadata.pages.news' })
+  const tNav = await getTranslations({ locale, namespace: 'Navigation' })
   const { prev, next } = getAdjacentNews(slug, locale)
+  const relatedHref = post.relatedProjectUrl ? internalHref(post.relatedProjectUrl) : null
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -88,8 +90,8 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
       .filter(Boolean)
       .map((img) => absoluteUrl(img)),
     mainEntityOfPage: localizedUrl(locale, `/news/${slug}`),
-    author: personRef,
-    publisher: businessRef,
+    author: personSummary,
+    publisher: businessSummary,
     isBasedOn: post.sourceUrl,
   }
 
@@ -99,7 +101,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
         data={[
           articleSchema,
           buildBreadcrumb(locale, [
-            { name: tMeta('title'), path: '/news' },
+            { name: tNav('news'), path: '/news' },
             { name: post.title, path: `/news/${slug}` },
           ]),
         ]}
@@ -175,10 +177,10 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
         )}
 
         {/* Link al progetto correlato */}
-        {post.relatedProjectUrl && (
+        {relatedHref && (
           <div className="mx-auto mt-10 max-w-3xl flex justify-center">
             <Link
-              href={post.relatedProjectUrl}
+              href={relatedHref}
               className="inline-block rounded-full bg-[#8B5C2A] px-8 py-3 text-sm font-semibold uppercase tracking-widest text-white transition-opacity hover:opacity-80"
             >
               {post.relatedProjectLabel ?? 'Scopri di più'}
@@ -198,7 +200,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
           <div className="mt-16 flex items-center justify-between border-t border-neutral-100 pt-8">
             {prev ? (
               <Link
-                href={`/news/${prev.slug}`}
+                href={newsHref(prev.slug)}
                 className="group flex items-center gap-3 text-sm text-neutral-500 transition-colors hover:text-foreground"
               >
                 <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
@@ -211,7 +213,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
 
             {next ? (
               <Link
-                href={`/news/${next.slug}`}
+                href={newsHref(next.slug)}
                 className="group flex items-center gap-3 text-right text-sm text-neutral-500 transition-colors hover:text-foreground"
               >
                 <div>

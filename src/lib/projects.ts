@@ -171,6 +171,7 @@ export function getAllProjects(locale: string = 'it'): Project[] {
       imagesDimensions,
       excerpt: data.excerpt,
       description: data.description,
+      updated: data.updated,
       tags: data.tags ?? [],
       content: content.trim(),
     } as Project

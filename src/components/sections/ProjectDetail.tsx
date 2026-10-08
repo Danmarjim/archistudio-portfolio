@@ -1,6 +1,7 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
+import { projectHref } from '@/lib/routes'
 import Image from 'next/image'
 import { useMemo } from 'react'
 import { motion } from 'framer-motion'
@@ -110,7 +111,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
             alt={project.title}
             fill
             className="object-cover"
-            sizes="(max-width: 1280px) 100vw, 1280px"
+            sizes="(max-width: 1280px) calc(100vw - 48px), 1216px"
             priority
             fetchPriority="high"
           />
@@ -200,9 +201,10 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
                     // Con 0×0 tutte le immagini risultavano nel viewport e il lazy loading le scaricava insieme.
                     width={item.dims?.width ?? 1200}
                     height={item.dims?.height ?? 900}
+                    // Larghezza reale nel contenitore max-w-7xl (padding 24/32px, gap 16px)
                     sizes={item.isLandscape
-                      ? '100vw'
-                      : '(max-width: 1024px) 100vw, 33vw'}
+                      ? '(max-width: 1280px) calc(100vw - 48px), 1216px'
+                      : '(max-width: 1023px) calc(100vw - 48px), (max-width: 1280px) calc(33vw - 32px), 395px'}
                     style={{ width: '100%', height: 'auto', display: 'block' }}
                     className="transition-transform duration-300 group-hover:scale-105"
                   />
@@ -224,7 +226,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
         >
           {prevProject ? (
             <Link
-              href={`/proyectos/${prevProject.slug}`}
+              href={projectHref(prevProject.slug)}
               className="group flex items-center gap-3 text-neutral-600 transition-colors hover:text-foreground"
             >
               <ArrowLeft className="h-5 w-5 transition-transform group-hover:-translate-x-1" />
@@ -238,7 +240,7 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
           )}
           {nextProject && (
             <Link
-              href={`/proyectos/${nextProject.slug}`}
+              href={projectHref(nextProject.slug)}
               className="group flex items-center gap-3 text-right text-neutral-600 transition-colors hover:text-foreground"
             >
               <div>

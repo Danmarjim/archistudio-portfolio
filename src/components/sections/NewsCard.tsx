@@ -1,10 +1,10 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
+import { newsHref } from '@/lib/routes'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
-import { Badge } from '@/components/ui'
 import type { NewsPost } from '@/types'
 import { useTranslations, useLocale } from 'next-intl'
 
@@ -42,7 +42,7 @@ export default function NewsCard({ post, index = 0 }: NewsCardProps) {
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
       <Link
-        href={`/news/${post.slug}`}
+        href={newsHref(post.slug)}
         className="group flex flex-col overflow-hidden rounded-2xl bg-white h-full"
       >
         {/* Image */}

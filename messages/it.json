@@ -99,7 +99,6 @@
   },
   "AboutPage": {
     "title": "Chi sono",
-    "intro": "Sono un'architetta con oltre 10 anni di esperienza nella progettazione di spazi residenziali e commerciali.",
     "stats": {
       "years": "Anni di esperienza",
       "projects": "Progetti completati",
@@ -179,11 +178,12 @@
         "message": "Descrivi brevemente il tuo progetto, le tue esigenze e qualsiasi dettaglio che ritieni rilevante..."
       },
       "projectTypes": {
-        "residential": "Villa unifamiliare",
-        "renovation": "Ristrutturazione completa",
-        "commercial": "Progetto commerciale",
-        "other": "Altro tipo di progetto",
-        "carpet_catalog": "Catalogo TAPPETI"
+        "archiadvice": "ArchiAdvice — consulenza di 60'",
+        "home_purchase": "Consulenza all'acquisto casa",
+        "restyling": "Restyling",
+        "renovation": "Ristrutturazione integrale",
+        "carpet_catalog": "Catalogo TAPPETI",
+        "other": "Altro"
       },
       "errors": {
         "nameRequired": "Il nome è obbligatorio",

@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Sun, Palette, Maximize2, Heart, BookOpen, Briefcase } from 'lucide-react'
 import Container from '@/components/ui/Container'
@@ -36,7 +35,7 @@ export default function SobreMiPage() {
             <div className="relative order-2 lg:order-1 pr-6 sm:pr-0">
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-neutral-100">
                 <Image
-                  src="/images/about/_K7A9382_1.jpg"
+                  src="/images/about/martina-pozzi-ritratto.jpg"
                   alt="Martina C.M. Pozzi"
                   fill
                   className="object-cover"

@@ -140,7 +140,7 @@ export default function ServiciosPage() {
                       </a>
                     ) : (
                       <Link
-                        href={ctaHref}
+                        href="/contacto"
                         className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-700"
                       >
                         {sd(`${key}.cta`)}

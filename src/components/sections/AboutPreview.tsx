@@ -6,14 +6,15 @@ import { motion } from 'framer-motion'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import { useTranslations } from 'next-intl'
+import type { StaticPathname } from '@/i18n/routing'
 
 interface AboutPreviewProps {
   image?: string
-  ctaHref?: string
+  ctaHref?: StaticPathname
 }
 
 export default function AboutPreview({
-  image = '/images/about/_K7A9361.jpg',
+  image = '/images/about/martina-pozzi-studio.jpg',
   ctaHref = '/sobre-mi',
 }: AboutPreviewProps) {
   const t = useTranslations('AboutPreview')

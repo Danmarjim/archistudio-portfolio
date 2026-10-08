@@ -93,13 +93,14 @@ const socialLinks = [
 export default function ContactoPage() {
   const t = useTranslations('ContactPage')
 
-  const projectTypeKeys = ['residential', 'renovation', 'commercial', 'other', 'carpet_catalog'] as const
+  // Corrispondono ai servizi dello studio (+ catalogo tappeti e altro)
+  const projectTypeKeys = ['archiadvice', 'home_purchase', 'restyling', 'renovation', 'carpet_catalog', 'other'] as const
 
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     phone: '',
-    projectType: 'residential',
+    projectType: 'archiadvice',
     message: '',
   })
   const [errors, setErrors] = useState<FormErrors>({})
@@ -138,7 +139,11 @@ export default function ContactoPage() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        // Nell'email arriva l'etichetta leggibile, non la chiave interna
+        body: JSON.stringify({
+          ...formData,
+          projectType: t(`form.projectTypes.${formData.projectType as (typeof projectTypeKeys)[number]}`),
+        }),
       })
 
       if (!res.ok) throw new Error('request_failed')
@@ -214,7 +219,7 @@ export default function ContactoPage() {
                   className="mt-6"
                   onClick={() => {
                     setIsSubmitted(false)
-                    setFormData({ name: '', email: '', phone: '', projectType: 'residential', message: '' })
+                    setFormData({ name: '', email: '', phone: '', projectType: 'archiadvice', message: '' })
                   }}
                 >
                   {t('success.sendAnother')}

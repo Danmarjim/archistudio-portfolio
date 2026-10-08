@@ -1,3 +1,5 @@
+import type { StaticPathname } from '@/i18n/routing'
+
 // Tipos principales del portfolio
 
 export interface ImageDimensions {
@@ -24,6 +26,8 @@ export interface Project {
   excerpt: string
   /** Meta description SEO (opzionale): se assente si usa `excerpt` */
   description?: string
+  /** Data dell'ultima modifica sostanziale (YYYY-MM-DD), usata come lastmod nella sitemap */
+  updated?: string
   tags: string[]
   content?: string
 }
@@ -38,7 +42,7 @@ export interface Service {
 
 export interface NavItem {
   label: string
-  href: string
+  href: StaticPathname
 }
 
 export interface SocialLink {

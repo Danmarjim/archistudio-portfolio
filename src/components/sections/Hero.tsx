@@ -3,9 +3,10 @@ import Image from 'next/image'
 import { Button } from '@/components/ui'
 import Container from '@/components/ui/Container'
 import { useTranslations } from 'next-intl'
+import type { StaticPathname } from '@/i18n/routing'
 
 interface HeroProps {
-  ctaHref?: string
+  ctaHref?: StaticPathname
 }
 
 export default function Hero({
@@ -29,12 +30,14 @@ export default function Hero({
           <div className="mb-8 flex justify-center">
             <div className="relative h-44 w-44 overflow-hidden rounded-full ring-2 ring-primary-300 ring-offset-4 ring-offset-background">
               <Image
-                src="/images/about/placeholder.jpg"
+                src="/images/about/martina-pozzi.jpg"
                 alt="Martina Pozzi"
                 fill
                 className="object-cover"
                 sizes="176px"
                 priority
+                // Su mobile è l'elemento LCP della home
+                fetchPriority="high"
               />
             </div>
           </div>

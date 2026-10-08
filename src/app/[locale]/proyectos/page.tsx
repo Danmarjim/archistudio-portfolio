@@ -27,11 +27,11 @@ export default async function ProyectosPage({ params }: ProyectosPageProps) {
   const projects = getAllProjects(locale)
   const t = await getTranslations({ locale, namespace: 'ProjectsPage' })
 
-  const tMeta = await getTranslations({ locale, namespace: 'Metadata.pages.projects' })
+  const tNav = await getTranslations({ locale, namespace: 'Navigation' })
 
   return (
     <div className="py-12">
-      <JsonLd data={buildBreadcrumb(locale, [{ name: tMeta('title'), path: '/proyectos' }])} />
+      <JsonLd data={buildBreadcrumb(locale, [{ name: tNav('projects'), path: '/proyectos' }])} />
       <Container>
         {/* Header */}
         <div className="mb-12 text-center">

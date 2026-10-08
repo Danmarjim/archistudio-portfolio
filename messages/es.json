@@ -99,7 +99,6 @@
   },
   "AboutPage": {
     "title": "Sobre mí",
-    "intro": "Soy arquitecta con más de 10 años de experiencia en diseño de espacios residenciales y comerciales.",
     "stats": {
       "years": "Años de experiencia",
       "projects": "Proyectos completados",
@@ -179,11 +178,12 @@
         "message": "Describe brevemente tu proyecto, necesidades y cualquier detalle que consideres relevante..."
       },
       "projectTypes": {
-        "residential": "Vivienda unifamiliar",
+        "archiadvice": "ArchiAdvice — asesoría de 60'",
+        "home_purchase": "Asesoría para la compra de vivienda",
+        "restyling": "Restyling",
         "renovation": "Reforma integral",
-        "commercial": "Proyecto comercial",
-        "other": "Otro tipo de proyecto",
-        "carpet_catalog": "Catálogo ALFOMBRAS"
+        "carpet_catalog": "Catálogo ALFOMBRAS",
+        "other": "Otro"
       },
       "errors": {
         "nameRequired": "El nombre es obligatorio",
