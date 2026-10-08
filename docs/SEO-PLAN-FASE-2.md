@@ -53,11 +53,12 @@ Antes de lanzar un comando del plugin `claude-seo`, mirar aquí si ya está hech
 | 8 oct | `/seo content-brief quanto costa un architetto per ristrutturare casa` | 5 competidores, cifras de mercado, estructura | `docs/seo-briefs/C7-quanto-costa-un-architetto.md` | No |
 | 8 oct | `/seo content-brief conformità urbanistica e catastale` | 5 competidores, estructura, requisitos normativos | `docs/seo-briefs/C8-conformita-urbanistica-catastale.md` | No (revisar la guía publicada cada 6–12 meses) |
 | 8 oct | `/seo content-brief progettazione bagno architetto` | 5 competidores, medidas de referencia, estructura | `docs/seo-briefs/C9-progettare-il-bagno.md` | No |
+| 8 oct | `/seo content-brief colore nell'architettura d'interni` (modo mejora) | Artículo existente de 143 palabras frente a 5 competidores | `docs/seo-briefs/C10-colore-architettura.md` | No |
 | 8 oct | Benchmark manual (misma rúbrica que los briefs) | Nuestras páginas frente a los competidores de C2 y C4 | Sección "Benchmark" de este documento | Tras publicar C2/C4 |
 
 **No hace falta lanzar por separado** lo que ya cubre `/seo audit`: `/seo technical`, `/seo content`, `/seo schema`, `/seo sitemap`, `/seo geo`, `/seo agentic`, `/seo local`, `/seo sxo` y `/seo backlinks` son exactamente los subagentes de la auditoría. Tiene sentido lanzarlos sueltos solo para revisar un área concreta después de cambiarla.
 
-**Pendientes, no ejecutados todavía:** los briefs de las olas 2 y 3 (C10–C14); `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
+**Pendientes, no ejecutados todavía:** los briefs de las olas 2 y 3 (C11–C14); `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
 
 ## Benchmark frente a la competencia (8 oct 2026)
 
@@ -71,6 +72,7 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 | restyling casa | Caterina Fini 31/40 | ~14/40 | 32–34/40 | `docs/seo-briefs/C6-restyling-casa.md` |
 | architetto Bergamo (home) | Atrio 32/40 (y directorios) | ~23/40 | 33–35/40 | `docs/seo-briefs/A3-home.md` |
 | Martina Pozzi architetto (marca, `/chi-sono`) | LinkedIn / Homeadore / albo del Ordine | ~22/40 | 33–35/40 | `docs/seo-briefs/C1-chi-sono.md` |
+| colore nell'architettura d'interni | Archiformazione 31/40 | ~17/40 | 32–34/40 | `docs/seo-briefs/C10-colore-architettura.md` |
 
 **ristrutturazione appartamento Bergamo** — competidores: Atrio 33, ARB Geom 24, Carzaniga 21, Zambelli 20, RistrutturaSMART 20.
 - `/servizi` ~20/40 (profundidad 6 · formato 7 · SEO 2 · experiencia 5): el texto no menciona "ristrutturazione" ni "Bergamo" (0 veces; solo el `<title>`), H1 "I miei servizi", URL genérica, 4 servicios mezclados, sin caso en Bergamo, costes ni plazos. Punto fuerte: el proceso en 5 pasos es más completo que el de casi todos los competidores.
@@ -172,7 +174,7 @@ Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, seccio
 - C7. `/news/quanto-costa-un-architetto-ristrutturazione` (honorarios; comparte SERP con "parcella architetto"). **Brief:** `docs/seo-briefs/C7-quanto-costa-un-architetto.md`.
 - C8. `/news/conformita-urbanistica-catastale-prima-di-comprare-casa`. **Brief:** `docs/seo-briefs/C8-conformita-urbanistica-catastale.md`.
 - C9. `/news/progettare-il-bagno-consigli-architetto`, a partir de los 3 proyectos de baño. **Brief:** `docs/seo-briefs/C9-progettare-il-bagno.md`.
-- C10. Ampliar `/news/il-colore-nell-architettura` (hoy 185 palabras).
+- C10. Ampliar `/news/il-colore-nell-architettura` (hoy 185 palabras). **Brief:** `docs/seo-briefs/C10-colore-architettura.md`.
 
 **Ola 3:**
 - C11. `/news/costo-ristrutturazione-appartamento-bergamo`.
