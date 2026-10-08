@@ -94,14 +94,14 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 
 ## Bloque A — Estructura y URLs (código, depende de D1/D5)
 
-**A1. Slugs en italiano con `pathnames`** · `src/i18n/routing.ts`, `src/app/[locale]/*`, `next.config.ts`
+**✅ PR 1 · A1. Slugs en italiano con `pathnames`** · `src/i18n/routing.ts`, `src/app/[locale]/*`, `next.config.ts`
 - Definir `pathnames` en next-intl: it `/servizi`, `/progetti`, `/progetti/[slug]`, `/chi-sono`, `/contatti`, `/news`, `/tappeti`, `/privacy`; es `/servicios`, `/proyectos`, `/sobre-mi`, `/contacto`; en `/services`, `/projects`, `/about`, `/contact`.
 - Redirecciones **301 permanentes** de todas las URLs antiguas italianas (`/servicios` → `/servizi`, `/proyectos/*` → `/progetti/*`, etc.) y de las inglesas.
 - Sitemap, hreflang, breadcrumbs, `llms.txt`, enlaces internos y `Link` de navegación con las rutas nuevas.
 - Aprovechar para pasar `cucina-MITE` a `cucina-mite` (contenido + imágenes) con 301.
 - Verificar: `curl -I` de cada URL antigua → 301 a la nueva; sitemap sin URLs antiguas; 0 enlaces internos a rutas antiguas.
 
-**A2. Servicios en páginas propias** · nuevo `src/app/[locale]/servizi/[slug]/`, `messages/*.json`
+**🟡 PR 2 (estructura hecha; textos y publicación pendientes de Martina) · A2. Servicios en páginas propias** · nuevo `src/app/[locale]/servizi/[slug]/`, `messages/*.json`
 - `/servizi` pasa a hub: resumen de 80–120 palabras por servicio + enlace (sin repetir el contenido).
 - Páginas nuevas, con el contenido que hoy está en anclas de `/servicios`, ampliado:
   - `/servizi/consulenza-architetto-online` (ArchiAdvice)
@@ -124,17 +124,17 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 
 ## Bloque B — Correcciones técnicas de la re-auditoría (código, sin dependencias salvo las marcadas)
 
-**B1. LCP móvil de la home** · `src/components/sections/Hero.tsx`
+**✅ PR 1 · B1. LCP móvil de la home** · `src/components/sections/Hero.tsx`
 - El avatar (176×176) es el elemento LCP en móvil y no tiene `fetchPriority="high"`. Añadirlo y renombrar `public/images/about/placeholder.jpg` → `martina-pozzi.jpg`.
 - Verificar: Lighthouse móvil de `/` con LCP < 2,5 s (3 ejecuciones, mediana).
 
-**B2. `sizes` de imágenes** · `ProjectCard.tsx`, `ProjectDetail.tsx` (galería), `ProjectsStrip.tsx`
+**✅ PR 1 · B2. `sizes` de imágenes** · `ProjectCard.tsx`, `ProjectDetail.tsx` (galería), `ProjectsStrip.tsx`
 - 79–103 KiB desperdiciados en móvil: ajustar `sizes` al ancho real del contenedor.
 
-**B3. Renombrar assets** · `public/images/about/`
+**✅ PR 1 · B3. Renombrar assets** · `public/images/about/`
 - `MP_ARCHISTUDIO LOGO S.png` → `mparchistudio-logo.png` (sin espacios); `_K7A93xx.jpg` → nombres descriptivos. Actualizar referencias.
 
-**B4. JSON-LD** · `src/lib/seo.ts` (`buildSiteGraph`), `news/[slug]/page.tsx`, `proyectos/[slug]/page.tsx`
+**✅ PR 1 · B4. JSON-LD** · `src/lib/seo.ts` (`buildSiteGraph`), `news/[slug]/page.tsx`, `proyectos/[slug]/page.tsx`
 - `ProfessionalService`: `logo` (B3), `image` = logo o foto de Martina (no foto de proyecto), `geo` (lat/long de Via Bologna 2), `description` traducida por locale, `url`/`@id` coherentes, `areaServed` + Milano y Monza e Brianza (+ Sevilla según D6), `openingHoursSpecification` (D8).
 - `Person`: `url` → `/chi-sono`, `image`, `knowsAbout`, `knowsLanguage` (it, es, en), `award` (D4), `hasCredential` (D3).
 - `Article`: `author` y `publisher` con `name` (+ `logo`) en línea junto al `@id`, o un único `@graph` por página.
@@ -142,25 +142,25 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 - `Service` en las páginas de A2.
 - Verificar: Rich Results Test sin errores en home, un proyecto, una noticia y un servicio.
 
-**B5. Meta descriptions de proyectos** · `content/projects/{it,es,en}/*.mdx`
+**✅ PR 1 · B5. Meta descriptions de proyectos** · `content/projects/{it,es,en}/*.mdx`
 - 6 de 8 proyectos tienen un eslogan como descripción. Rellenar el campo `description` (ya existe) con tipo de obra, ciudad, m² y año, en los tres idiomas.
 
-**B6. Coherencia de títulos de proyecto** · MDX es/en
+**✅ PR 1 · B6. Coherencia de títulos de proyecto** · MDX es/en
 - Ciudad localizada de forma consistente (hoy "Milán" en uno y "Milano" en otro). Propuesta: nombre local en todos los idiomas.
 
-**B7. Limpieza de mensajes** · `messages/*.json`
+**✅ PR 1 · B7. Limpieza de mensajes** · `messages/*.json`
 - Eliminar `AboutPage.intro` ("oltre 10 anni"), que ya no se usa pero viaja en el payload de cada página.
 
-**B8. `llms.txt`** · `public/llms.txt`
+**✅ PR 1 · B8. `llms.txt`** · `public/llms.txt`
 - Añadir los 8 proyectos con un dato por línea (lugar, m², año, tipo), sección de prensa con enlaces externos, perfiles sincronizados con `sameAs` y las páginas principales en es/en. Actualizar con las rutas de A1/A2.
 
-**B9. Formulario de contacto** · `src/app/[locale]/contacto/page.tsx`, `messages/*.json` (D7)
+**✅ PR 1 · B9. Formulario de contacto** · `src/app/[locale]/contacto/page.tsx`, `messages/*.json` (D7)
 - Tipos de proyecto = servicios reales. Texto de la página con zona de servicio y tiempo de respuesta.
 
-**B10. Sitemap** · `src/app/sitemap.ts`
+**✅ PR 1 · B10. Sitemap** · `src/app/sitemap.ts`
 - `lastModified` real para proyectos y páginas fijas (campo `updated` en frontmatter, o fecha del último commit del archivo). Quitar `priority`/`changefreq`.
 
-**B11. CSP** · `next.config.ts`
+**✅ PR 1 · B11. CSP** · `next.config.ts`
 - Añadir `Content-Security-Policy` probada con Vercel Analytics, Calendly y los JSON-LD inline. Empezar en `Report-Only` una semana.
 
 **B12. Animaciones bajo el pliegue** (D9) — solo si se decide quitarlas.
@@ -175,7 +175,7 @@ Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, seccio
 - C3. Texto de consulenza acquisto casa (qué se revisa: agibilità, catasto, conformità; precio D2). **Brief:** `docs/seo-briefs/C3-consulenza-acquisto-casa.md`.
 - C4. Texto de ristrutturazione appartamento Bergamo (proceso, plazos, casos reales en Bergamo; las tablas de coste por m² van en C11, no aquí). **Brief:** `docs/seo-briefs/C4-ristrutturazione-appartamento-bergamo.md`.
 - C5. Testimonios (Spazi Belli 5,0★ / 7 reseñas) en home y servicios.
-- C5b. Prensa no recogida: dos artículos de **Homeadore** (Lovingcolors, 25 jun 2026; Casa ARCHI & COLORI, 5 ago 2026) → noticias + franja "Pubblicato su" + `llms.txt` + `subjectOf` (ver brief C1).
+- ✅ PR 2 · C5b. Prensa no recogida: dos artículos de **Homeadore** (Lovingcolors, 25 jun 2026; Casa ARCHI & COLORI, 5 ago 2026) → noticias + franja "Pubblicato su" + `llms.txt` + `subjectOf` (ver brief C1).
 
 **Ola 2:**
 - C6. `/servizi/restyling-casa` (texto). **Brief:** `docs/seo-briefs/C6-restyling-casa.md`.
@@ -189,7 +189,7 @@ Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, seccio
 - C12. `/news/come-scegliere-architetto-ristrutturazione`. **Brief:** `docs/seo-briefs/C12-come-scegliere-architetto.md`.
 - C13. `/news/progettare-la-cucina-consigli-architetto`. **Brief:** `docs/seo-briefs/C13-progettare-la-cucina.md`.
 - C14. `/news/come-scegliere-colore-pareti-casa`. **Brief:** `docs/seo-briefs/C14-colori-pareti-casa.md`.
-- C-pre. **Requisito técnico para las guías (C7–C14):** el detalle de noticias (`src/app/[locale]/news/[slug]/page.tsx`) solo renderiza párrafos y negritas; las guías necesitan tablas, listas y H2/H3 (Markdown completo). Añadir también un campo opcional `seoTitle` en el frontmatter de news para títulos de guía largos. Hacerlo antes de publicar la primera guía.
+- ✅ PR 2 · C-pre. **Requisito técnico para las guías (C7–C14):** el detalle de noticias (`src/app/[locale]/news/[slug]/page.tsx`) solo renderiza párrafos y negritas; las guías necesitan tablas, listas y H2/H3 (Markdown completo). Añadir también un campo opcional `seoTitle` en el frontmatter de news para títulos de guía largos. Hacerlo antes de publicar la primera guía.
 - C15. Proyectos más ricos (encargo, soluciones, materiales, plazos, rango de presupuesto, cita del cliente) y autor visible en las noticias.
 
 Fuera de alcance (decidido en el cluster): páginas por ciudad (Milano, Monza), páginas propias de reforma de baño/cocina "Bergamo" (son secciones de C4), FAQPage, HowTo.
@@ -373,35 +373,35 @@ Una sola lista para pedirle todo de una vez. Muchos datos se repiten entre brief
 - Inspección por API (`/seo google inspect-batch`) de las URLs nuevas a los 3–7 días.
 - Search Console → Rendimiento: primeras impresiones de marca y de "architetto Bergamo".
 
-## Bloque F — Imágenes (auditoría `/seo images`, 8 oct 2026) · pendiente
+## Bloque F — Imágenes (auditoría `/seo images`, 8 oct 2026) · F1 (paso 1)–F6 hechos en PR 2; F7 y F8 pendientes
 
 Diagnóstico: lo que se sirve está bien optimizado (WebP de 19–44 KB, `srcset`, dimensiones, lazy bajo el pliegue, `fetchpriority` en el LCP). Los problemas están en los textos alternativos, los nombres de archivo y los originales.
 
-**F1. Alt de las galerías de proyecto** · Alta · `src/components/sections/ProjectDetail.tsx:199`, `content/projects/*/*.mdx`, `messages/*.json`
+**🟡 PR 2 (paso 1 hecho; paso 2 pendiente de Martina) · F1. Alt de las galerías de proyecto** · Alta · `src/components/sections/ProjectDetail.tsx:199`, `content/projects/*/*.mdx`, `messages/*.json`
 - Hoy: 176 de 230 imágenes con `alt="<Proyecto> - Immagine N"`, en italiano también en `/es` y `/en` (texto hardcodeado).
 - Paso 1 (código): traducir el patrón con `useTranslations` (`ProjectDetail.galleryImageAlt` → "Foto {n}" / "Photo {n}") e incluir tipo de obra y ciudad: "Casa Archi & Colori, Milano — foto 12".
 - Paso 2 (contenido, Martina): campo opcional `captions` en el frontmatter (una descripción corta por imagen y por idioma, p. ej. "Soggiorno con parete libreria verde e panca") que se usa como alt; si falta, cae al patrón del paso 1.
 - Verificar: 0 alts con "Immagine" en páginas `/es` y `/en`; alt de galería distinto por imagen donde haya caption.
 
-**F2. Vídeo de `/tappeti`** · Media · `public/images/tappeti/tappeti-01.mp4` (13 MB), `src/app/[locale]/tappeti/page.tsx`
+**✅ PR 2 · F2. Vídeo de `/tappeti`** · Media · `public/images/tappeti/tappeti-01.mp4` (13 MB), `src/app/[locale]/tappeti/page.tsx`
 - Reencodar a ~720p H.264 (objetivo 1,5–3 MB), añadir `poster` (primer fotograma en WebP) y `preload="metadata"`.
 - Verificar: peso del vídeo < 3 MB; Lighthouse móvil de `/tappeti` sin el vídeo en "Avoid enormous network payloads".
 
-**F3. Originales pesados** · Media · `public/images/**` (322 MB, 63 archivos > 2 MB; el mayor 11 MB)
+**✅ PR 2 · F3. Originales pesados** · Media · `public/images/**` (322 MB, 63 archivos > 2 MB; el mayor 11 MB)
 - Redimensionar a máx. 2560 px de ancho, JPEG calidad ~85 (objetivo 300–800 KB por foto). No cambia nada visible: `next/image` ya sirve tamaños reducidos, pero mejora el primer render de cada tamaño (LCP en frío), la cuota de optimización de Vercel y el peso del repo.
 - Herramienta: `sips` (macOS) o ImageMagick; conservar los originales fuera del repo.
 - Verificar: `find public/images -size +2M` vacío salvo el vídeo; comparación visual de 3–4 fotos antes/después.
 
-**F4. Prioridades de carga** · Media
+**✅ PR 2 · F4. Prioridades de carga** · Media
 - `src/components/sections/ProjectCard.tsx:18`: `aboveFold = index < 3` → solo la primera card con `priority` (en móvil solo se ve una).
 - `src/components/sections/ProjectsStrip.tsx:73`: quitar `fetchPriority="high"` (y valorar `priority`) del carrusel de la home; compite con el avatar, que es el LCP en móvil.
 - `src/components/sections/NewsGallery.tsx:73` y `:172`: quitar `priority` de la galería de páginas del artículo (está bajo el texto).
 - Verificar: PSI móvil de `/` con LCP < 2,5 s (mediana de 3); una sola imagen `fetchpriority=high` por página.
 
-**F5. AVIF** · Baja · `next.config.ts`
+**✅ PR 2 · F5. AVIF** · Baja · `next.config.ts`
 - `images: { formats: ['image/avif', 'image/webp'] }` → ~20–30 % menos por imagen. Coste: primera transformación más lenta y más cuota de Vercel. Hacer después de F3.
 
-**F6. Nombres de archivo** · Baja · 21 archivos
+**✅ PR 2 · F6. Nombres de archivo** · Baja · 21 archivos
 - `tappeti-0X - copia.jpg` (×3), `Articolo HOME n36 aprile 2026 - cover.jpg`, `Articolo Cose diCasa N.10 ottobre 2022_Pagina_N.jpg` (×5), `.JPG` en mayúsculas (`cucina-parigina-02.JPG`, `intervista-archiboost-0N.JPG`, `cose-di-casa-ottobre-2022-cover.JPG`).
 - Renombrar a minúsculas con guiones y descriptivos (`home-n36-aprile-2026-cover.jpg`, `cose-di-casa-ottobre-2022-pagina-1.jpg`…) con `git mv` en dos pasos (macOS no distingue mayúsculas) y actualizar referencias en MDX y código.
 - Verificar: `find public/images | grep -E ' |[A-Z]|copia'` vacío; build sin imágenes rotas.
@@ -412,15 +412,15 @@ Diagnóstico: lo que se sirve está bien optimizado (WebP de 19–44 KB, `srcset
 **F8. Créditos IPTC** · Baja, opcional
 - Inyectar Creator/Credit/Copyright (fotógrafa Marta D'Avenia donde aplique, MP_archistudio en el resto) con `exiftool`. Google Images lo muestra; no es factor de ranking. Hacer junto con F3.
 
-## Bloque G — Internacionalización (auditoría `/seo hreflang`, 8 oct 2026) · pendiente
+## Bloque G — Internacionalización (auditoría `/seo hreflang`, 8 oct 2026) · G1 y G2 hechos en PR 2
 
 Diagnóstico: hreflang técnicamente perfecto (63/63 URLs: autorreferencia, retorno, x-default, canonical, `lang`, sitemap = HTML). Paridad de contenido correcta (±15 % de palabras, misma estructura).
 
-**G1. Títulos de proyecto sin traducir** · Media · `content/projects/{es,en}/*.mdx`
+**✅ PR 2 · G1. Títulos de proyecto sin traducir** · Media · `content/projects/{es,en}/*.mdx`
 - Los 8 proyectos tienen el mismo `title` en los tres idiomas ("Bagno ITALIAN SUMMER", "Cucina PARIGINA", "Appartamento LOVINGCOLORS"). Mantener el nombre propio y traducir el tipo: es "Baño ITALIAN SUMMER", "Cocina PARIGINA", "Piso LOVINGCOLORS"; en "ITALIAN SUMMER bathroom", "PARIGINA kitchen", "LOVINGCOLORS apartment". Lo exige además la regla de CLAUDE.md (`title` se traduce por locale).
 - Verificar: ningún `<title>` de proyecto idéntico entre idiomas.
 
-**G2. Redirección automática por idioma del navegador** · Media · `src/i18n/routing.ts`
+**✅ PR 2 · G2. Redirección automática por idioma del navegador** · Media · `src/i18n/routing.ts`
 - Hoy `/` y `/progetti` redirigen (307) a `/es` o `/en` según `Accept-Language`, y la cookie `NEXT_LOCALE` fija el idioma en visitas posteriores. Googlebot (sin cabecera) ve el italiano, así que no bloquea la indexación, pero Google desaconseja redirigir automáticamente: un visitante con navegador en español no puede abrir la versión italiana desde un resultado o un enlace.
 - Cambio: `localeDetection: false`. Cada URL muestra siempre su idioma; el visitante cambia con el selector.
 - Verificar: `curl -H "Accept-Language: es" https://mparchistudio.com/progetti` → 200 (sin redirect).
@@ -432,11 +432,12 @@ Diagnóstico: hreflang técnicamente perfecto (63/63 URLs: autorreferencia, reto
 
 | PR | Contenido | Depende de |
 |---|---|---|
-| PR 1 | A1 (slugs + 301) + B1–B11 (correcciones técnicas) | D1, D6, D7 (B9) |
+| ✅ PR 1 | A1 (slugs + 301) + B1–B11 (correcciones técnicas) | D1, D6, D7 (B9) |
 | PR 2 | A2 + A3 + A4 con el contenido actual de `/servicios` ampliado | D5; precios (D2) si ya están |
 | PR 3 | C1–C5 (ola 1 de contenido) | textos/datos de Martina |
 | PR 4+ | C6–C15 (olas 2 y 3) | briefs + textos |
-| PR imágenes/i18n | F1 (paso 1), F2–F6, G1, G2 | — (F1 paso 2 y F7: Martina) |
+| ✅ PR imágenes/i18n | F1 (paso 1), F2–F6, G1, G2 | — (F1 paso 2 y F7: Martina) |
+| ✅ PR 2 (`feat/seo-fase-2-pr2`) | C-pre, C5b, F1–F6, G1, G2, meta de la home, estructura de A2 | — |
 
 D (Martina) en paralelo desde ya; E después de cada PR.
 

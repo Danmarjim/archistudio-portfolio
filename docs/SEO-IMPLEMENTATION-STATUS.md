@@ -34,22 +34,24 @@ Riferimenti: `docs/SEO-AUDIT-REPORT.md` (audit), `docs/SEO-IMPLEMENTATION-PLAN.m
 
 ## Da fare (richiede dati o decisioni di Martina)
 
+> **Aggiornamento 8 ott 2026:** la fase 2 continua in `docs/SEO-PLAN-FASE-2.md` (piano, brief in `docs/seo-briefs/`, elenco unico dei dati da chiedere a Martina). Le voci segnate ✅ sono già state fatte; le altre sono riprese lì.
+
 - **Iscrizione all'Ordine** (Bergamo o Monza e Brianza + numero) → aggiungere `hasCredential` in `buildSiteGraph` e mostrarla in "Chi sono".
-- **Anni di esperienza**: "più di 10" (meta, `AboutPage.intro`) vs "oltre 15" nel testo. Scegliere una cifra e allineare `messages/*.json`.
+- ✅ **Anni di esperienza**: "più di 10" (meta, `AboutPage.intro`) vs "oltre 15" nel testo. Scegliere una cifra e allineare `messages/*.json`. *(fatto 8 ott: rimossa `AboutPage.intro`, resta solo "oltre 15")*
 - **Email sul dominio** al posto dell'hotmail (`siteConfig.email`).
 - **H1 della home**: "Ristruttura senza pensieri" non contiene la città (solo l'overline). Decisione di copy.
 - **Pagina ArchiAdvice / consulenza all'acquisto** con prezzo, cosa si riceve e prenotazione: servono prezzi e testi reali.
-- **Pagine progetto più ricche** (incarico, soluzioni, materiali, tempi, budget, citazione del cliente) e **titoli tradotti** in es/en.
+- ✅ **Pagine progetto più ricche** (incarico, soluzioni, materiali, tempi, budget, citazione del cliente) e **titoli tradotti** in es/en. *(titoli tradotti 8 ott (G1); pagine più ricche ancora da fare (C15))*
 - **Guida alla progettazione del bagno** (news) a partire dai tre progetti di bagni, con link interni.
 - **Testimonianze** (es. Spazi Belli 5,0★, 7 recensioni).
-- **Orari** in `ProfessionalService` (`openingHoursSpecification`) quando sono confermati.
+- ✅ **Orari** in `ProfessionalService` (`openingHoursSpecification`) quando sono confermati. *(fatto 8 ott con gli orari già pubblicati (lun–ven 9–18))*
 - **Siviglia**: pagine/servizio dedicati solo se si vuole posizionare il mercato spagnolo.
 - **Google Business Profile**, citazioni (Archilovers, Linktree, PagineGialle), nome commerciale identico ovunque.
-- **File**: rinominare `public/images/about/placeholder.jpg` e `MP_ARCHISTUDIO LOGO S.png`.
-- **Slug `cucina-MITE`** ha maiuscole (`content/projects/*/cucina-MITE.mdx` e immagini `cucina-MITE-*.jpg`): rinominare in minuscolo con un redirect 301 dal vecchio URL. Per questo NON è stato aggiunto il redirect globale a minuscolo (F4-2).
-- Titolo della news Archiboost contiene già "| MP_Archistudio": rimuoverlo dal frontmatter per evitare il marchio doppio nel `<title>`.
-- Slug italiani (`/progetti`, `/chi-sono`…) con 301: solo dopo che canonical e hreflang si sono stabilizzati.
-- Search Console + chiave API Google (CrUX) per dati di campo; rilanciare l'audit dopo il deploy.
+- ✅ **File**: rinominare `public/images/about/placeholder.jpg` e `MP_ARCHISTUDIO LOGO S.png`. *(fatto 8 ott (B3))*
+- ✅ **Slug `cucina-MITE`** ha maiuscole (`content/projects/*/cucina-MITE.mdx` e immagini `cucina-MITE-*.jpg`): rinominare in minuscolo con un redirect 301 dal vecchio URL. Per questo NON è stato aggiunto il redirect globale a minuscolo (F4-2). *(fatto 8 ott: `cucina-mite` + redirect da maiuscole a minuscole nel middleware)*
+- ✅ Titolo della news Archiboost contiene già "| MP_Archistudio": rimuoverlo dal frontmatter per evitare il marchio doppio nel `<title>`. *(fatto 8 ott)*
+- ✅ Slug italiani (`/progetti`, `/chi-sono`…) con 301: solo dopo che canonical e hreflang si sono stabilizzati. *(fatto 8 ott (A1))*
+- ✅ Search Console + chiave API Google (CrUX) per dati di campo; rilanciare l'audit dopo il deploy. *(fatto 8 ott: proprietà verificata, API collegata, audit ripetuto (49 → 80))*
 
 ## Verifiche eseguite
 
