@@ -110,7 +110,7 @@ Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, seccio
 - C1. Señales E-E-A-T en `/chi-sono`: colegiación (D3), premio (D4), una cifra de experiencia, foto, email de dominio (D8).
 - C2. Texto de ArchiAdvice con precio (D2). **Brief:** `docs/seo-briefs/C2-consulenza-architetto-online.md`.
 - C3. Texto de consulenza acquisto casa (qué se revisa: agibilità, catasto, conformità; precio D2).
-- C4. Texto de ristrutturazione appartamento Bergamo (proceso, plazos, casos reales en Bergamo; las tablas de precio van en C7, no aquí).
+- C4. Texto de ristrutturazione appartamento Bergamo (proceso, plazos, casos reales en Bergamo; las tablas de precio van en C7, no aquí). **Brief:** `docs/seo-briefs/C4-ristrutturazione-appartamento-bergamo.md`.
 - C5. Testimonios (Spazi Belli 5,0★ / 7 reseñas) en home y servicios.
 
 **Ola 2:**
