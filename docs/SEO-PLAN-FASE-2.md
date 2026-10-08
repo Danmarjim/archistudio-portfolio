@@ -29,6 +29,8 @@ Continúa `docs/SEO-IMPLEMENTATION-PLAN.md` (fase 1, cerrada: score 49 → 80). 
 
 **PR 1 (rama `feat/seo-fase-2`, 8 oct):** A1, B1–B11 hechos y verificados en build local (ver detalle al final). Pendiente: B12 (decisión D9), A2–A4 y bloques C–D.
 
+**Briefs (8 oct):** completos para A3 (home), C1 (chi sono), C2, C3, C4, C6 (servicios) y C7–C14 (guías) en `docs/seo-briefs/`. Cada brief termina con la checklist de datos de Martina. Antes de publicar cualquier guía: C-pre (render Markdown completo + `seoTitle` en noticias).
+
 ## Registro de comandos ejecutados
 
 Antes de lanzar un comando del plugin `claude-seo`, mirar aquí si ya está hecho. Los resultados completos están en `docs/seo-data/` y `docs/seo-briefs/`; no hace falta repetirlos salvo en los casos de la última columna.
@@ -57,11 +59,12 @@ Antes de lanzar un comando del plugin `claude-seo`, mirar aquí si ya está hech
 | 8 oct | `/seo content-brief costo ristrutturazione appartamento Bergamo` | 5 competidores, cifras de mercado 2026, estructura | `docs/seo-briefs/C11-costo-ristrutturazione-bergamo.md` | No (actualizar cifras de la guía cada año) |
 | 8 oct | `/seo content-brief come scegliere un architetto per ristrutturare casa` | 5 competidores, estructura | `docs/seo-briefs/C12-come-scegliere-architetto.md` | No |
 | 8 oct | `/seo content-brief progettazione cucina architetto` | 5 competidores, medidas de referencia, estructura | `docs/seo-briefs/C13-progettare-la-cucina.md` | No |
+| 8 oct | `/seo content-brief colori pareti casa consigli architetto` | 5 competidores, criterios, estructura | `docs/seo-briefs/C14-colori-pareti-casa.md` | No |
 | 8 oct | Benchmark manual (misma rúbrica que los briefs) | Nuestras páginas frente a los competidores de C2 y C4 | Sección "Benchmark" de este documento | Tras publicar C2/C4 |
 
 **No hace falta lanzar por separado** lo que ya cubre `/seo audit`: `/seo technical`, `/seo content`, `/seo schema`, `/seo sitemap`, `/seo geo`, `/seo agentic`, `/seo local`, `/seo sxo` y `/seo backlinks` son exactamente los subagentes de la auditoría. Tiene sentido lanzarlos sueltos solo para revisar un área concreta después de cambiarla.
 
-**Pendientes, no ejecutados todavía:** el brief C14; `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
+**Pendientes, no ejecutados todavía:** ningún brief de contenido (C1–C14 y A3 hechos); brief del hub `/servizi` (A2) cuando se aborde; `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
 
 ## Benchmark frente a la competencia (8 oct 2026)
 
@@ -183,7 +186,7 @@ Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, seccio
 - C11. `/news/costo-ristrutturazione-appartamento-bergamo`. **Brief:** `docs/seo-briefs/C11-costo-ristrutturazione-bergamo.md`.
 - C12. `/news/come-scegliere-architetto-ristrutturazione`. **Brief:** `docs/seo-briefs/C12-come-scegliere-architetto.md`.
 - C13. `/news/progettare-la-cucina-consigli-architetto`. **Brief:** `docs/seo-briefs/C13-progettare-la-cucina.md`.
-- C14. `/news/come-scegliere-colore-pareti-casa`.
+- C14. `/news/come-scegliere-colore-pareti-casa`. **Brief:** `docs/seo-briefs/C14-colori-pareti-casa.md`.
 - C-pre. **Requisito técnico para las guías (C7–C14):** el detalle de noticias (`src/app/[locale]/news/[slug]/page.tsx`) solo renderiza párrafos y negritas; las guías necesitan tablas, listas y H2/H3 (Markdown completo). Añadir también un campo opcional `seoTitle` en el frontmatter de news para títulos de guía largos. Hacerlo antes de publicar la primera guía.
 - C15. Proyectos más ricos (encargo, soluciones, materiales, plazos, rango de presupuesto, cita del cliente) y autor visible en las noticias.
 
