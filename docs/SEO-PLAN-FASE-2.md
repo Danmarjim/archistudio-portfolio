@@ -51,11 +51,12 @@ Antes de lanzar un comando del plugin `claude-seo`, mirar aquí si ya está hech
 | 8 oct | `/seo content-brief https://mparchistudio.com/` (modo mejora) | Home como pilar "architetto Bergamo": qué conservar, qué añadir, 3 competidores + directorios | `docs/seo-briefs/A3-home.md` | No |
 | 8 oct | `/seo content-brief https://mparchistudio.com/chi-sono` (modo mejora) | Página de marca: qué ve Google con su nombre, credenciales, prensa | `docs/seo-briefs/C1-chi-sono.md` | No |
 | 8 oct | `/seo content-brief quanto costa un architetto per ristrutturare casa` | 5 competidores, cifras de mercado, estructura | `docs/seo-briefs/C7-quanto-costa-un-architetto.md` | No |
+| 8 oct | `/seo content-brief conformità urbanistica e catastale` | 5 competidores, estructura, requisitos normativos | `docs/seo-briefs/C8-conformita-urbanistica-catastale.md` | No (revisar la guía publicada cada 6–12 meses) |
 | 8 oct | Benchmark manual (misma rúbrica que los briefs) | Nuestras páginas frente a los competidores de C2 y C4 | Sección "Benchmark" de este documento | Tras publicar C2/C4 |
 
 **No hace falta lanzar por separado** lo que ya cubre `/seo audit`: `/seo technical`, `/seo content`, `/seo schema`, `/seo sitemap`, `/seo geo`, `/seo agentic`, `/seo local`, `/seo sxo` y `/seo backlinks` son exactamente los subagentes de la auditoría. Tiene sentido lanzarlos sueltos solo para revisar un área concreta después de cambiarla.
 
-**Pendientes, no ejecutados todavía:** los briefs de las olas 2 y 3 (C8–C14); `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
+**Pendientes, no ejecutados todavía:** los briefs de las olas 2 y 3 (C9–C14); `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
 
 ## Benchmark frente a la competencia (8 oct 2026)
 
@@ -168,7 +169,7 @@ Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, seccio
 **Ola 2:**
 - C6. `/servizi/restyling-casa` (texto). **Brief:** `docs/seo-briefs/C6-restyling-casa.md`.
 - C7. `/news/quanto-costa-un-architetto-ristrutturazione` (honorarios; comparte SERP con "parcella architetto"). **Brief:** `docs/seo-briefs/C7-quanto-costa-un-architetto.md`.
-- C8. `/news/conformita-urbanistica-catastale-prima-di-comprare-casa`.
+- C8. `/news/conformita-urbanistica-catastale-prima-di-comprare-casa`. **Brief:** `docs/seo-briefs/C8-conformita-urbanistica-catastale.md`.
 - C9. `/news/progettare-il-bagno-consigli-architetto`, a partir de los 3 proyectos de baño.
 - C10. Ampliar `/news/il-colore-nell-architettura` (hoy 185 palabras).
 
