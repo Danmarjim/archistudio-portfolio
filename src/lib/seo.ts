@@ -174,6 +174,38 @@ export const businessSummary = {
 
 const telephone = siteConfig.phone?.replace(/\s+/g, '')
 
+/** Articoli di stampa esterni sui progetti dello studio (Person.subjectOf). */
+const pressCoverage = [
+  {
+    name: 'Casa ARCHI & COLORI: A Playful Milan Apartment',
+    url: 'https://homeadore.com/2026/08/05/casa-archi-colori-a-playful-milan-apartment/',
+    publisher: 'Homeadore',
+    datePublished: '2026-08-05',
+  },
+  {
+    name: 'Archiboost Talks: MP_archistudio',
+    url: 'https://www.archiboost.it/blog-detail/post/622968/mp-archistudio',
+    publisher: 'Archiboost',
+    datePublished: '2026-07-14',
+  },
+  {
+    name: 'Lovingcolors Opens a 1960s Apartment by Martina Pozzi',
+    url: 'https://homeadore.com/2026/06/25/lovingcolors-opens-a-1960s-apartment-by-martina-pozzi/',
+    publisher: 'Homeadore',
+    datePublished: '2026-06-25',
+  },
+  {
+    name: '80 mq con arredi super smart',
+    url: 'https://www.cosedicasa.com/case/case-50-100-mq/80-mq-a-tutto-colore-con-soluzioni-che-ottimizzano-lo-spazio-e-con-zona-studio-nellarmadio-30843',
+    publisher: 'Cose di Casa',
+    datePublished: '2022-10-01',
+  },
+].map(({ publisher, ...article }) => ({
+  '@type': 'Article',
+  ...article,
+  publisher: { '@type': 'Organization', name: publisher },
+}))
+
 /**
  * Grafo globale: attività, persona e sito web. Va incluso in tutte le pagine (layout).
  * `description` è la descrizione del sito nella lingua della pagina (Metadata.description).
@@ -242,6 +274,7 @@ export function buildSiteGraph(locale: string, description: string) {
           'Consulenza per l\'acquisto di immobili',
         ],
         knowsLanguage: ['it', 'es', 'en'],
+        subjectOf: pressCoverage,
         worksFor: businessRef,
         address: {
           '@type': 'PostalAddress',

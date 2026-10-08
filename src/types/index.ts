@@ -77,6 +77,10 @@ export interface NewsPost {
   images?: string[]       // galleria aggiuntiva (es. pagine scansionate della rivista)
   relatedProjectUrl?: string   // path interno al progetto correlato (es. /proyectos/bagno-italian-summer)
   relatedProjectLabel?: string // testo del link al progetto (localizzato nel frontmatter)
+  /** Titolo SEO (opzionale, ≤ 43 caratteri: il layout aggiunge " | MP_archistudio"); se assente si usa `title` */
+  seoTitle?: string
+  /** Data dell'ultimo aggiornamento sostanziale (YYYY-MM-DD): dateModified e lastmod */
+  updated?: string
   content?: string
 }
 

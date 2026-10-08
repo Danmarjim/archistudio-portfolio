@@ -32,6 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...projects.flatMap((project) =>
       entriesFor(`/proyectos/${project.slug}`, project.updated ? new Date(project.updated) : undefined)
     ),
-    ...news.flatMap((post) => entriesFor(`/news/${post.slug}`, new Date(post.date))),
+    ...news.flatMap((post) => entriesFor(`/news/${post.slug}`, new Date(post.updated ?? post.date))),
   ]
 }

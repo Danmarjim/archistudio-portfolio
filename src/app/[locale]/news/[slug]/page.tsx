@@ -9,6 +9,7 @@ import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import NewsGallery from '@/components/sections/NewsGallery'
 import { getTranslations } from 'next-intl/server'
 import JsonLd from '@/components/seo/JsonLd'
+import Markdown from '@/components/shared/Markdown'
 import { absoluteUrl, buildBreadcrumb, buildMetadata, businessSummary, localizedUrl, personSummary } from '@/lib/seo'
 
 interface NewsDetailPageProps {
@@ -30,19 +31,12 @@ export async function generateMetadata({ params }: NewsDetailPageProps): Promise
   return buildMetadata({
     locale,
     path: `/news/${slug}`,
-    title: post.title,
+    title: post.seoTitle ?? post.title,
     description: post.excerpt,
     image: post.coverImage,
     type: 'article',
     publishedTime: post.date,
   })
-}
-
-/** Rende `**testo**` come grassetto invece di mostrare gli asterischi letterali. */
-function renderInline(text: string): React.ReactNode[] {
-  return text.split(/\*\*(.+?)\*\*/g).map((part, i) =>
-    i % 2 === 1 ? <strong key={i}>{part}</strong> : part
-  )
 }
 
 const categoryToKey: Record<string, string> = {
@@ -84,7 +78,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     inLanguage: locale,
     image: [post.coverImage, ...(post.images ?? []).slice(0, 3)]
       .filter(Boolean)
@@ -169,10 +163,8 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
 
         {/* Content */}
         {post.content && (
-          <div className="prose prose-neutral prose-lg mx-auto mt-12 max-w-3xl">
-            {post.content.split('\n\n').map((paragraph, i) => (
-              <p key={i}>{renderInline(paragraph)}</p>
-            ))}
+          <div className="mx-auto mt-12 max-w-3xl">
+            <Markdown content={post.content} />
           </div>
         )}
 

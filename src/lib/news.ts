@@ -41,6 +41,8 @@ export function getAllNews(locale: string = 'it'): NewsPost[] {
       images: data.images ?? [],
       relatedProjectUrl: data.relatedProjectUrl,
       relatedProjectLabel: data.relatedProjectLabel,
+      seoTitle: data.seoTitle,
+      updated: data.updated,
       content: content.trim(),
     } as NewsPost
   })
