@@ -25,11 +25,11 @@ export async function generateMetadata({
 
 export default async function ContactoLayout({ children, params }: Props) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'Metadata.pages.contact' })
+  const t = await getTranslations({ locale, namespace: 'Navigation' })
 
   return (
     <>
-      <JsonLd data={buildBreadcrumb(locale, [{ name: t('title'), path: '/contacto' }])} />
+      <JsonLd data={buildBreadcrumb(locale, [{ name: t('contact'), path: '/contacto' }])} />
       {children}
     </>
   )

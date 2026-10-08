@@ -27,11 +27,11 @@ export default async function NewsPage({ params }: NewsPageProps) {
   const posts = getAllNews(locale)
   const t = await getTranslations({ locale, namespace: 'NewsPage' })
 
-  const tMeta = await getTranslations({ locale, namespace: 'Metadata.pages.news' })
+  const tNav = await getTranslations({ locale, namespace: 'Navigation' })
 
   return (
     <div className="py-12">
-      <JsonLd data={buildBreadcrumb(locale, [{ name: tMeta('title'), path: '/news' }])} />
+      <JsonLd data={buildBreadcrumb(locale, [{ name: tNav('news'), path: '/news' }])} />
       <Container>
         {/* Header */}
         <div className="mb-12 text-center">

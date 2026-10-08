@@ -1,6 +1,7 @@
 'use client'
 
 import { useLocale, useTranslations } from 'next-intl'
+import { useParams } from 'next/navigation'
 import { usePathname, useRouter } from '@/i18n/navigation'
 import { locales, type Locale } from '@/i18n/routing'
 import { Globe } from 'lucide-react'
@@ -15,8 +16,16 @@ export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
+  const params = useParams()
+
   const handleLocaleChange = (newLocale: Locale) => {
-    router.replace(pathname, { locale: newLocale })
+    // Con `pathnames` localizzati le rotte dinamiche (/progetti/[slug]) richiedono i params.
+    // `params` arriva dal router e corrisponde sempre al `pathname` corrente.
+    router.replace(
+      // @ts-expect-error -- next-intl non può correlare staticamente pathname e params correnti
+      { pathname, params },
+      { locale: newLocale }
+    )
     setIsOpen(false)
   }
 

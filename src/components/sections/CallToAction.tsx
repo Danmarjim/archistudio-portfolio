@@ -5,12 +5,13 @@ import { motion } from 'framer-motion'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import { useTranslations } from 'next-intl'
+import type { StaticPathname } from '@/i18n/routing'
 
 interface CallToActionProps {
   title?: string
   subtitle?: string
   ctaText?: string
-  ctaHref?: string
+  ctaHref?: StaticPathname
 }
 
 export default function CallToAction({

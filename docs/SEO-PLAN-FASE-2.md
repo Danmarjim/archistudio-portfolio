@@ -15,15 +15,19 @@ Continúa `docs/SEO-IMPLEMENTATION-PLAN.md` (fase 1, cerrada: score 49 → 80). 
 
 | # | Decisión | Bloquea | Propuesta |
 |---|---|---|---|
-| D1 | Slugs en italiano (`/servizi`, `/progetti`, `/chi-sono`, `/contatti`) | A1, A2 | **Hacerlo ahora**: con 0 impresiones y casi sin enlaces externos el coste es mínimo; después habría que redirigir también las páginas nuevas |
+| D1 | Slugs en italiano (`/servizi`, `/progetti`, `/chi-sono`, `/contatti`) | A1, A2 | ✅ **Decidido (8 oct): sí, ahora.** Hecho en PR 1 |
 | D2 | Precio de ArchiAdvice y de la consulenza acquisto | C2, C3 | Pedir a Martina. La SERP muestra 80–150 € por 60 min; sin precio la página compite peor |
 | D3 | Nº de colegiación (el albo público indica Ordine di Monza e Brianza, 2012) | B4 `hasCredential`, C1 | Pedir a Martina |
 | D4 | Premio Piranesi Prix de Rome 2009: ¿se menciona? | B4 `award`, C1 | Confirmar con Martina |
-| D5 | H1 de la home con Bergamo | A3 | Propuesta: mantener "Ristruttura senza pensieri" como claim y añadir un H1 descriptivo ("Architetto a Bergamo: ristrutturazioni e interni su misura"), o al revés. Decisión de copy |
-| D6 | Sevilla: ¿zona de servicio real? | B4 `areaServed` | El texto dice "Bergamo e Siviglia". Si no se trabaja allí, quitarlo del copy; si sí, añadirlo al schema |
-| D7 | Tipos del formulario de contacto | B9 | Sustituir "Villa unifamiliare / Progetto commerciale" por los servicios reales |
+| D5 | H1 de la home con Bergamo | A3 | ⏳ **Decide Martina.** Propuesta: mantener "Ristruttura senza pensieri" como claim y añadir un H1 descriptivo ("Architetto a Bergamo: ristrutturazioni e interni su misura"), o al revés. Decisión de copy |
+| D6 | Sevilla: ¿zona de servicio real? | B4 `areaServed` | ✅ **Sí** (8 oct): añadida al `areaServed`. |
+| D7 | Tipos del formulario de contacto | B9 | ✅ **Los 4 servicios + Catálogo tappeti + Altro** (8 oct). |
 | D8 | Email de dominio (`info@mparchistudio.com`) y horarios | B4, C1 | Martina; el email se puede crear en el proveedor del dominio |
 | D9 | `opacity:0` bajo el pliegue (10 elementos en la home) | B12 | Propuesta: mantener las animaciones; no afectan a SEO ni LCP |
+
+## Estado
+
+**PR 1 (rama `feat/seo-fase-2`, 8 oct):** A1, B1–B11 hechos y verificados en build local (ver detalle al final). Pendiente: B12 (decisión D9), A2–A4 y bloques C–D.
 
 ## Bloque A — Estructura y URLs (código, depende de D1/D5)
 
@@ -156,3 +160,23 @@ D (Martina) en paralelo desde ya; E después de cada PR.
 - Build de producción en local: códigos de estado (incluidas las 301), canonical/hreflang, JSON-LD válido, ningún H1 en `opacity:0`.
 - Lighthouse móvil (mediana de 3) en `/`, `/progetti`, un proyecto y un servicio.
 - Tras el deploy: `/seo drift compare` y re-auditoría parcial de lo tocado.
+
+## Registro PR 1 (8 oct 2026)
+
+- **A1** `pathnames` en `src/i18n/routing.ts`; helpers `src/lib/routes.ts`; `seo.ts` traduce rutas internas a slugs por idioma; 12 redirects permanentes en `next.config.ts`; mayúsculas → minúsculas en `src/middleware.ts`; `cucina-MITE` → `cucina-mite` (MDX + 17 imágenes); selector de idioma con `params` en rutas dinámicas.
+- **B1** `fetchPriority="high"` en el avatar del hero; `placeholder.jpg` → `martina-pozzi.jpg`.
+- **B2** `sizes` ajustados en la ficha de proyecto (portada y galería).
+- **B3** Assets renombrados: `mparchistudio-logo.png`, `martina-pozzi-ritratto.jpg`, `martina-pozzi-studio.jpg`, `martina-pozzi-archiadvice.jpg`.
+- **B4** `ProfessionalService` con `logo`, `image` (retrato), `geo`, horario, `areaServed` (+ Milano, Monza e Brianza, Sevilla), `description` traducida, `url` estable; `Person` con `url` → `/chi-sono`, `image`, `knowsAbout`, `knowsLanguage`; `Article.author`/`publisher` y `CreativeWork.creator` con nombre y logo en línea; breadcrumbs con etiquetas cortas. Pendiente de Martina: `award` (D4), `hasCredential` (D3).
+- **B5** `description` en los 6 proyectos que solo tenían eslogan (it/es/en).
+- **B6** Ciudad "Milano" en todos los idiomas.
+- **B7** Eliminada `AboutPage.intro` ("oltre 10 anni").
+- **B8** `llms.txt` con proyectos, prensa, perfiles = `sameAs`, páginas es/en y slugs nuevos.
+- **B9** Formulario: ArchiAdvice, Consulenza acquisto, Restyling, Ristrutturazione integrale, Catalogo tappeti, Altro; el email recibe la etiqueta legible.
+- **B10** Sitemap sin `priority`/`changefreq`; `lastmod` real (news por fecha, proyectos por campo `updated`).
+- **B11** `Content-Security-Policy-Report-Only` (0 violaciones en 6 páginas probadas).
+- **A4 (parcial)** Noticias de Cose di Casa y HOME enlazan a su proyecto.
+
+Verificación: `tsc` limpio; build sin errores ni `MISSING_MESSAGE`; lint sin problemas nuevos (16 preexistentes, antes 17); 18 URLs nuevas → 200; 12 URLs antiguas → 308; mayúsculas → 301; 0 enlaces internos a slugs antiguos; sitemap 63 URLs con 42 `lastmod`; selector de idioma correcto en home, servicios, proyecto y noticia.
+
+Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `casa-archi-colori` en Milano.

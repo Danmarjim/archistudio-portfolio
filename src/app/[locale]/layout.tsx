@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { Inter, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, setRequestLocale } from 'next-intl/server'
+import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
 import { siteConfig } from '@/lib/constants'
 import { buildMetadata, buildSiteGraph } from '@/lib/seo'
@@ -93,6 +93,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   // Enable static rendering
   setRequestLocale(locale)
+  const tMeta = await getTranslations({ locale, namespace: 'Metadata' })
 
   // Load messages
   const messages = await getMessages()
@@ -114,7 +115,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           </main>
           <Footer />
         </NextIntlClientProvider>
-        <JsonLd data={buildSiteGraph(locale)} />
+        <JsonLd data={buildSiteGraph(locale, tMeta('description'))} />
         <Analytics />
       </body>
     </html>

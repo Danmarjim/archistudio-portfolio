@@ -25,11 +25,11 @@ export async function generateMetadata({
 
 export default async function TappetiLayout({ children, params }: Props) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'Metadata.pages.tappeti' })
+  const t = await getTranslations({ locale, namespace: 'Navigation' })
 
   return (
     <>
-      <JsonLd data={buildBreadcrumb(locale, [{ name: t('title'), path: '/tappeti' }])} />
+      <JsonLd data={buildBreadcrumb(locale, [{ name: t('tappeti'), path: '/tappeti' }])} />
       {children}
     </>
   )

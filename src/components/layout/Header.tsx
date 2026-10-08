@@ -78,7 +78,7 @@ export default function Header() {
                           {services.map((service, i) => (
                             <li key={service.slug}>
                               <Link
-                                href={`/servicios#${service.slug}`}
+                                href={{ pathname: '/servicios', hash: service.slug }}
                                 className="flex items-center gap-3 px-4 py-3 text-sm text-neutral-600 transition-colors hover:bg-neutral-50 hover:text-foreground"
                                 onClick={() => setServicesOpen(false)}
                               >
@@ -91,7 +91,7 @@ export default function Header() {
                           ))}
                           <li>
                             <Link
-                              href="/servicios#come-lavoriamo"
+                              href={{ pathname: '/servicios', hash: 'come-lavoriamo' }}
                               className="flex items-center gap-3 border-t border-neutral-100 px-4 py-3 text-sm font-medium text-primary-600 transition-colors hover:bg-neutral-50"
                               onClick={() => setServicesOpen(false)}
                             >
@@ -171,7 +171,7 @@ export default function Header() {
                         {services.map((service, i) => (
                           <li key={service.slug}>
                             <Link
-                              href={`/servicios#${service.slug}`}
+                              href={{ pathname: '/servicios', hash: service.slug }}
                               className="flex items-center gap-2 py-1 text-sm text-neutral-500 hover:text-foreground"
                               onClick={() => {
                                 setMobileMenuOpen(false)

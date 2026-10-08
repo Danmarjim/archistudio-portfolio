@@ -99,7 +99,6 @@
   },
   "AboutPage": {
     "title": "About me",
-    "intro": "I am an architect with over 10 years of experience in residential and commercial space design.",
     "stats": {
       "years": "Years of experience",
       "projects": "Completed projects",
@@ -179,11 +178,12 @@
         "message": "Briefly describe your project, needs and any details you consider relevant..."
       },
       "projectTypes": {
-        "residential": "Single-family home",
-        "renovation": "Complete renovation",
-        "commercial": "Commercial project",
-        "other": "Other project type",
-        "carpet_catalog": "CARPET Catalog"
+        "archiadvice": "ArchiAdvice — 60' consultation",
+        "home_purchase": "Home-buying consultancy",
+        "restyling": "Restyling",
+        "renovation": "Full renovation",
+        "carpet_catalog": "CARPET Catalog",
+        "other": "Other"
       },
       "errors": {
         "nameRequired": "Name is required",
