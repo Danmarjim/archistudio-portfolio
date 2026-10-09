@@ -65,7 +65,7 @@ Ficha pública a 9 oct 2026 ([Google Maps](https://www.google.com/maps/search/MP
 | Nombre | MP_archistudio Arch. Martina Pozzi | Se puede dejar: es el nombre real con el que firma (Spazi Belli e Instagram lo usan igual). No añadir keywords como "Architetto Bergamo" |
 | Categorías | Solo **Studio di architettura** (principal) | Principal **Architetto**; secundarias Studio di architettura, Designer d'interni, Studio di architettura di interni (sección 1). Es probablemente la razón de que no salga entre los 20 primeros de "architetto Bergamo", a pocas calles de Von Wunster y AGM, que sí salen |
 | Dirección | Via Bologna 2, 24128 Bergamo, visible | Mantener si recibe clientes ahí; si no, ocultarla y definir zona de servicio |
-| Horario | Lunes a viernes, **9–17** | **La web dice 9–18** (`messages/*.json` y `openingHoursSpecification` en `src/lib/seo.ts`). Unificar: decidir cuál es el real y corregir el otro |
+| Horario | Lunes a viernes, **9–17** | **Lunes a viernes, 9–18** (horario real, confirmado el 9 oct; la web ya lo tiene así) |
 | Teléfono, web | 327 126 7024 · mparchistudio.com | Correcto |
 | Enlace de reserva | calendly.com | Correcto (ArchiAdvice) |
 | Fotos | Hay fotos "Dal proprietario" | Añadir proyectos (antes/después), el estudio y el retrato; 3–5 al mes |

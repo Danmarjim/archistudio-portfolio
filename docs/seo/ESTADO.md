@@ -84,7 +84,7 @@ Lista completa en [`DATOS-MARTINA.md`](DATOS-MARTINA.md). Los 8 que desbloquean 
 - [ ] F7 — confirmar las fotos de `bagno-italian-summer` que se llaman `restyling-casa-peonia-*`.
 
 ### Martina — fuera de la web
-- [ ] **D-1 Google Business Profile**: la ficha ya existe, pero solo con categoría Studio di architettura, 0 reseñas, sin atributos y con horario 9–17 (la web dice 9–18). Confirmar que Martina tiene acceso y aplicar los cambios de [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md) §3.
+- [ ] **D-1 Google Business Profile**: la ficha ya existe, pero solo con categoría Studio di architettura, 0 reseñas, sin atributos y con horario 9–17 (el real es 9–18, como en la web). Confirmar que Martina tiene acceso y aplicar los cambios de [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md) §3.
 - [ ] D-2 reseñas en Google; D-3 mismo nombre comercial en todos los perfiles; D-4 web en Archilovers y Linktree, alta en PagineGialle, Archisio, Edilportale y Divisare.
 
 ### Tú
