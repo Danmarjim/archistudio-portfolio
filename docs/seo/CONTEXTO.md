@@ -97,8 +97,8 @@ El artículo "How to use Claude Cowork for SEO so well it feels illegal" propone
 
 | # | Prompt del artículo | ¿Usarlo? | Adaptación / motivo |
 |---|---|---|---|
-| 1 | Auditoría de categorías de la ficha de Google (competidores del mapa) | **Sí, primero** | Buscar en Google Maps "architetto Bergamo", "studio di architettura Bergamo", "interior designer Bergamo" y comparar categorías principal y secundarias de los primeros resultados. Antes de crear la ficha |
-| 2 | Atributos de la ficha | **Sí** | Mismo método (p. ej. "appuntamento online", "gestito da donne", "consulenze online") |
+| 1 | Auditoría de categorías de la ficha de Google (competidores del mapa) | ✅ Hecho (9 oct) | Resultado en [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md). Se buscó en Google Maps "architetto Bergamo", "studio di architettura Bergamo", "interior designer Bergamo" y comparar categorías principal y secundarias de los primeros resultados. Antes de crear la ficha |
+| 2 | Atributos de la ficha | ✅ Hecho (9 oct) | En [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md). Mismo método (p. ej. "appuntamento online", "gestito da donne", "consulenze online") |
 | 3 | Velocidad y contenido de reseñas de competidores | **Sí** | Útil para saber cuántas reseñas al mes hacen falta y qué servicios mencionan los clientes |
 | 4 | Plantillas de respuesta a reseñas | **Sí** | En italiano y español; respuestas personales, sin meter keywords a la fuerza |
 | 5 / 19 | Publicaciones en la ficha y patrones de publicación | Más adelante | Cuando exista la ficha. Proyectos terminados y antes/después |

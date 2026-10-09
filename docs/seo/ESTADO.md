@@ -1,11 +1,12 @@
 # SEO — Estado
 
-Última actualización: 8 oct 2026. **Este es el punto de entrada**: qué está hecho, qué está en curso y qué queda. El detalle de cada tarea (archivos, cómo verificar) está en [`PLAN.md`](PLAN.md); los códigos (A1, C4, F3…) remiten a ese documento.
+Última actualización: 9 oct 2026. **Este es el punto de entrada**: qué está hecho, qué está en curso y qué queda. El detalle de cada tarea (archivos, cómo verificar) está en [`PLAN.md`](PLAN.md); los códigos (A1, C4, F3…) remiten a ese documento.
 
 | Documento | Para qué |
 |---|---|
 | [`CONTEXTO.md`](CONTEXTO.md) | Datos del negocio para pegar en Cowork/Claude antes de cualquier tarea de SEO, y qué prompts usar |
 | [`PLAN.md`](PLAN.md) | Detalle de cada tarea, decisiones y benchmark frente a la competencia |
+| [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md) | Categorías y atributos para la ficha de Google, a partir de los competidores del mapa |
 | [`DATOS-MARTINA.md`](DATOS-MARTINA.md) | Todo lo que hay que pedirle a Martina, en una sola lista |
 | [`REGISTRO-COMANDOS.md`](REGISTRO-COMANDOS.md) | Comandos `/seo` ya ejecutados y cuándo merece la pena repetirlos |
 | [`briefs/`](briefs/) | Un brief por página: estructura, keywords, competidores, meta tags |
@@ -23,6 +24,7 @@
 | 8 oct | Search Console verificado (DNS en Vercel) y API conectada (Search Console, PageSpeed, CrUX); sitemap enviado | — |
 | 8 oct | **PR 1** — A1 (slugs en italiano + 301) y B1–B11 (JSON-LD ampliado, LCP, `sizes`, assets renombrados, descripciones de proyecto, `llms.txt`, formulario, sitemap, CSP en observación) | `main` (merge `e104ad3`) |
 | 8 oct | **Briefs** de A3 (home), C1 (chi sono), C2, C3, C4, C6 (servicios) y C7–C14 (guías) | [`briefs/`](briefs/) |
+| 9 oct | Análisis de categorías y atributos de los competidores en Google Maps (prompts 1 y 2 de `CONTEXTO.md`) | [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md) |
 | 8 oct | **PR 2** — C-pre (Markdown en noticias, `seoTitle`, `updated`), C5b (prensa de Homeadore), F1 paso 1, F2–F6 (vídeo 13,9 → 2,8 MB; imágenes 322 → 127 MB; AVIF; prioridades; nombres), G1, G2, meta de la home y estructura de A2 | rama `feat/seo-fase-2-pr2` (**sin merge**) |
 
 <details><summary>Detalle de PR 1</summary>
@@ -82,7 +84,7 @@ Lista completa en [`DATOS-MARTINA.md`](DATOS-MARTINA.md). Los 8 que desbloquean 
 - [ ] F7 — confirmar las fotos de `bagno-italian-summer` que se llaman `restyling-casa-peonia-*`.
 
 ### Martina — fuera de la web
-- [ ] **D-1 Google Business Profile** (lo único que la saca en el mapa).
+- [ ] **D-1 Google Business Profile** (lo único que la saca en el mapa). Categorías, atributos y preguntas previas en [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md).
 - [ ] D-2 reseñas en Google; D-3 mismo nombre comercial en todos los perfiles; D-4 web en Archilovers y Linktree, alta en PagineGialle, Archisio, Edilportale y Divisare.
 
 ### Tú
