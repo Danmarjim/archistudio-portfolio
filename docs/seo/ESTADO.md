@@ -4,6 +4,7 @@
 
 | Documento | Para qué |
 |---|---|
+| [`CONTEXTO.md`](CONTEXTO.md) | Datos del negocio para pegar en Cowork/Claude antes de cualquier tarea de SEO, y qué prompts usar |
 | [`PLAN.md`](PLAN.md) | Detalle de cada tarea, decisiones y benchmark frente a la competencia |
 | [`DATOS-MARTINA.md`](DATOS-MARTINA.md) | Todo lo que hay que pedirle a Martina, en una sola lista |
 | [`REGISTRO-COMANDOS.md`](REGISTRO-COMANDOS.md) | Comandos `/seo` ya ejecutados y cuándo merece la pena repetirlos |

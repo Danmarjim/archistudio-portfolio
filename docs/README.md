@@ -3,6 +3,7 @@
 | Documento | Para quién | Qué es |
 |---|---|---|
 | [`seo/ESTADO.md`](seo/ESTADO.md) | Todos | **Estado del SEO**: hecho, en curso y pendiente. Empieza aquí |
+| [`seo/CONTEXTO.md`](seo/CONTEXTO.md) | Martina | Contexto del negocio para pegar en Cowork antes de pedir algo de SEO |
 | [`seo/DATOS-MARTINA.md`](seo/DATOS-MARTINA.md) | Martina | Datos y textos que faltan para seguir con el SEO |
 | [`seo/PLAN.md`](seo/PLAN.md) | Desarrollo | Detalle de cada tarea SEO |
 | [`seo/briefs/`](seo/briefs/) | Martina / desarrollo | Guion de cada página nueva o a mejorar |
