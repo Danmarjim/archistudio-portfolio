@@ -6,7 +6,7 @@
 |---|---|
 | [`CONTEXTO.md`](CONTEXTO.md) | Datos del negocio para pegar en Cowork/Claude antes de cualquier tarea de SEO, y qué prompts usar |
 | [`PLAN.md`](PLAN.md) | Detalle de cada tarea, decisiones y benchmark frente a la competencia |
-| [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md) | Categorías y atributos para la ficha de Google, a partir de los competidores del mapa |
+| [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md) | Ficha de Google: estado actual, categorías y atributos frente a los competidores, mensajes para pedir reseñas |
 | [`DATOS-MARTINA.md`](DATOS-MARTINA.md) | Todo lo que hay que pedirle a Martina, en una sola lista |
 | [`REGISTRO-COMANDOS.md`](REGISTRO-COMANDOS.md) | Comandos `/seo` ya ejecutados y cuándo merece la pena repetirlos |
 | [`briefs/`](briefs/) | Un brief por página: estructura, keywords, competidores, meta tags |
@@ -84,7 +84,7 @@ Lista completa en [`DATOS-MARTINA.md`](DATOS-MARTINA.md). Los 8 que desbloquean 
 - [ ] F7 — confirmar las fotos de `bagno-italian-summer` que se llaman `restyling-casa-peonia-*`.
 
 ### Martina — fuera de la web
-- [ ] **D-1 Google Business Profile** (lo único que la saca en el mapa). Categorías, atributos y preguntas previas en [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md).
+- [ ] **D-1 Google Business Profile**: la ficha ya existe, pero solo con categoría Studio di architettura, 0 reseñas, sin atributos y con horario 9–17 (la web dice 9–18). Confirmar que Martina tiene acceso y aplicar los cambios de [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md) §3.
 - [ ] D-2 reseñas en Google; D-3 mismo nombre comercial en todos los perfiles; D-4 web en Archilovers y Linktree, alta en PagineGialle, Archisio, Edilportale y Divisare.
 
 ### Tú

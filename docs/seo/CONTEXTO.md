@@ -18,7 +18,8 @@ NEGOCIO
 - Dirección: Via Bologna 2, 24128 Bergamo (BG), Italia
 - Teléfono: +39 327 126 7024 · Horario: lunes a viernes, 9:00–18:00
 - Web: https://mparchistudio.com (italiano; /es español; /en inglés)
-- Google Business Profile: todavía no existe 🟡
+- Google Business Profile: existe ("MP_archistudio Arch. Martina Pozzi", categoría Studio di architettura),
+  0 reseñas, sin atributos. Pendiente de optimizar (docs/seo/FICHA-GOOGLE.md)
 - Estudio desde 2021. Experiencia: más de 15 años entre Italia y España
   (Politecnico di Milano 2011; Studio Vázquez Consuegra, Sevilla, 2013;
   Exe Arquitectura, Barcelona, 2017). Colegiada en el Ordine degli Architetti
@@ -61,10 +62,11 @@ KEYWORDS OBJETIVO (italiano)
 - consulenza architetto online · consulenza acquisto casa
 - restyling casa · progettazione bagno architetto
 Situación actual (oct 2026): web indexada correctamente, 0 impresiones todavía
-en Search Console; no aparece en el mapa porque no hay ficha de Google.
+en Search Console. La ficha de Google sale al buscar el nombre, pero no entre los
+20 primeros del mapa en "architetto Bergamo" (categoría y reseñas).
 
 RESEÑAS Y PERFILES
-- Reseñas: Spazi Belli 5,0★ (7). Google: sin ficha.
+- Reseñas: Spazi Belli 5,0★ (7). Google: 0.
 - Perfiles: Instagram @mp_archistudio, LinkedIn, Pinterest, Houzz, Archilovers,
   Homify, Spazi Belli, Linktree. El nombre comercial no es idéntico en todos (pendiente).
 
@@ -97,11 +99,11 @@ El artículo "How to use Claude Cowork for SEO so well it feels illegal" propone
 
 | # | Prompt del artículo | ¿Usarlo? | Adaptación / motivo |
 |---|---|---|---|
-| 1 | Auditoría de categorías de la ficha de Google (competidores del mapa) | ✅ Hecho (9 oct) | Resultado en [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md). Se buscó en Google Maps "architetto Bergamo", "studio di architettura Bergamo", "interior designer Bergamo" y comparar categorías principal y secundarias de los primeros resultados. Antes de crear la ficha |
+| 1 | Auditoría de categorías de la ficha de Google (competidores del mapa) | ✅ Hecho (9 oct) | Resultado en [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md). Se buscó en Google Maps "architetto Bergamo", "studio di architettura Bergamo", "interior designer Bergamo" y comparar categorías principal y secundarias de los primeros resultados |
 | 2 | Atributos de la ficha | ✅ Hecho (9 oct) | En [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md). Mismo método (p. ej. "appuntamento online", "gestito da donne", "consulenze online") |
 | 3 | Velocidad y contenido de reseñas de competidores | **Sí** | Útil para saber cuántas reseñas al mes hacen falta y qué servicios mencionan los clientes |
 | 4 | Plantillas de respuesta a reseñas | **Sí** | En italiano y español; respuestas personales, sin meter keywords a la fuerza |
-| 5 / 19 | Publicaciones en la ficha y patrones de publicación | Más adelante | Cuando exista la ficha. Proyectos terminados y antes/después |
+| 5 / 19 | Publicaciones en la ficha y patrones de publicación | Más adelante | Cuando la ficha tenga categorías y reseñas. Proyectos terminados y antes/después |
 | 6 | Sección de servicios de la ficha | **Sí** | Con los 4 servicios del bloque anterior; descripciones de 40–60 palabras |
 | 7 | Descripción de la ficha (750 caracteres) | Sí, con matiz | Solo la versión "confianza" o "conversión": Google prohíbe el relleno de keywords en la descripción |
 | 8 | Auditoría de fotos | Sí, con matiz | Frecuencia y tipos de fotos sí; **ignorar** lo de geoetiquetar y nombres de archivo para rankear en el mapa (Google elimina esos metadatos) |

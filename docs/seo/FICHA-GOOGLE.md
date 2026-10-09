@@ -1,6 +1,8 @@
 # Ficha de Google (Google Business Profile): categorías y atributos
 
-Análisis de las fichas que aparecen en Google Maps para las búsquedas objetivo (prompts 1 y 2 de [`CONTEXTO.md`](CONTEXTO.md) §2). Hecho el 9 oct 2026 en Google Maps (`hl=it`), antes de crear la ficha de MP_archistudio (D-1). Repetir cuando la ficha lleve unos meses publicada.
+Análisis de las fichas que aparecen en Google Maps para las búsquedas objetivo (prompts 1 y 2 de [`CONTEXTO.md`](CONTEXTO.md) §2). Hecho el 9 oct 2026 en Google Maps (`hl=it`), para configurar la ficha de MP_archistudio (D-1). Repetir cuando la ficha lleve unos meses con reseñas.
+
+> **La ficha ya existe** (descubierto el 9 oct): sale en el panel de Google al buscar "martina pozzi architetto". Su estado actual y lo que hay que cambiar están en la sección 3.
 
 ---
 
@@ -14,7 +16,7 @@ Análisis de las fichas que aparecen en Google Maps para las búsquedas objetivo
 | Secundaria | **Studio di architettura** | La usan AEDES y BAU. Refuerza "studio di architettura Bergamo" |
 | No poner | Servizi di ristrutturazione, Impresa edile, Negozio di mobili, Negozio di tappeti | Son de empresas que ejecutan obra o venden en tienda. Martina proyecta y dirige la obra, y las alfombras no se venden en un local abierto al público. Google puede retirar categorías que no reflejan lo que hace el negocio |
 
-Las categorías se eligen en el formulario de alta. Si alguna de las anteriores no aparece con ese nombre exacto, se elige la más parecida.
+Las categorías se cambian en "Modifica profilo → Categoria dell'attività". Si alguna de las anteriores no aparece con ese nombre exacto, se elige la más parecida.
 
 **Atributos** (se configuran después del alta, en "Modifica profilo → Altro"):
 
@@ -54,13 +56,47 @@ En "interior designer Bergamo" el mapa lo ocupan sobre todo tiendas de muebles (
 
 ---
 
-## 3. Antes de crear la ficha (preguntas para Martina)
+## 3. La ficha actual y qué cambiar
 
-- [ ] ¿Recibe clientes en Via Bologna 2? Si es su casa y no recibe clientes, la ficha se crea como **negocio de área de servicio**: la dirección no se muestra y se indican las zonas (Bergamo, Milano, Monza e Brianza). Si recibe clientes, se muestra la dirección.
-- [ ] ¿Hay acceso y aparcamiento accesible en silla de ruedas? (solo para marcar el atributo si es cierto)
-- [ ] Horario definitivo (hoy en la web: lunes a viernes, 9:00–18:00).
-- [ ] Nombre de la ficha: "MP_archistudio" tal cual. Google prohíbe añadir keywords al nombre ("MP_archistudio Architetto Bergamo" no).
+Ficha pública a 9 oct 2026 ([Google Maps](https://www.google.com/maps/search/MP_archistudio+Via+Bologna+2+Bergamo) · ID `/g/11mlzjtllx`):
+
+| Campo | Ahora | Cambiar a |
+|---|---|---|
+| Nombre | MP_archistudio Arch. Martina Pozzi | Se puede dejar: es el nombre real con el que firma (Spazi Belli e Instagram lo usan igual). No añadir keywords como "Architetto Bergamo" |
+| Categorías | Solo **Studio di architettura** (principal) | Principal **Architetto**; secundarias Studio di architettura, Designer d'interni, Studio di architettura di interni (sección 1). Es probablemente la razón de que no salga entre los 20 primeros de "architetto Bergamo", a pocas calles de Von Wunster y AGM, que sí salen |
+| Dirección | Via Bologna 2, 24128 Bergamo, visible | Mantener si recibe clientes ahí; si no, ocultarla y definir zona de servicio |
+| Horario | Lunes a viernes, **9–17** | **La web dice 9–18** (`messages/*.json` y `openingHoursSpecification` en `src/lib/seo.ts`). Unificar: decidir cuál es el real y corregir el otro |
+| Teléfono, web | 327 126 7024 · mparchistudio.com | Correcto |
+| Enlace de reserva | calendly.com | Correcto (ArchiAdvice) |
+| Fotos | Hay fotos "Dal proprietario" | Añadir proyectos (antes/después), el estudio y el retrato; 3–5 al mes |
+| Reseñas | **0** | Pedir a los clientes de Spazi Belli y de los proyectos publicados (mensajes en la sección 5) |
+| Atributos | **Ninguno** | Appuntamenti online, Servizi in loco, È richiesto l'appuntamento y, si está disponible, Gestita da donne (sección 1) |
+| Descripción y servicios | Sin comprobar desde fuera | Rellenar con los 4 servicios (prompts 6 y 7 de `CONTEXTO.md`) |
+
+**Verificación:** no aparece "Rivendica questa attività" y hay fotos del propietario y enlace de reserva, así que la ficha está reclamada por alguien. Hay que confirmar que es Martina (o una cuenta suya) y que tiene acceso en [business.google.com](https://business.google.com). Si no lo tiene, solicitar el acceso desde la propia ficha.
 
 ## 4. Método
 
 Búsquedas en Google Maps en italiano, sin ubicación forzada: "architetto Bergamo", "studio di architettura Bergamo", "interior designer Bergamo". Las categorías secundarias no se ven en la ficha pública; se han leído de los datos que Google Maps carga con los resultados. Los atributos son los de la pestaña "Informazioni" de cada ficha; si una ficha no tiene esa pestaña, no tiene atributos. Los anuncios (*Sponsorizzato*) no cuentan para el ranking orgánico.
+
+## 5. Mensajes para pedir reseñas
+
+Cada cliente escribe la reseña con sus palabras. Nada de textos redactados por el estudio ni de descuentos a cambio (Google lo prohíbe y retira las reseñas). El `[link]` es el enlace corto de "Chiedi recensioni" en el panel de la ficha. Enviar unos pocos por semana, no todos el mismo día.
+
+**Proyectos terminados (WhatsApp o email)**
+
+> Ciao [Nome]! Spero che a casa vada tutto bene 😊
+> Ho appena sistemato la scheda di MP_archistudio su Google e mi farebbe davvero piacere se lasciassi due righe sulla tua esperienza: [link]
+> Bastano un paio di frasi, per esempio cosa abbiamo fatto insieme (il bagno, la cucina, la ristrutturazione…) e com'è andata. Per chi cerca un architetto è l'aiuto più prezioso.
+> Grazie di cuore!
+> Martina
+
+**ArchiAdvice (consulta online)**
+
+> Ciao [Nome], grazie ancora per la consulenza ArchiAdvice!
+> Se ti è stata utile, mi aiuteresti lasciando una recensione su Google? Ci vuole un minuto: [link]
+> Raccontare cosa ti ha aiutato a decidere (colori, arredo, distribuzione…) è utilissimo per chi sta valutando una consulenza online.
+> Grazie!
+> Martina
+
+Las reseñas de Spazi Belli no se pueden pasar a Google: a esos clientes hay que pedírsela de nuevo.

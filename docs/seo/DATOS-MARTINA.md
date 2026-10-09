@@ -8,7 +8,7 @@ Una sola lista para pedirle todo de una vez. Muchos datos se repiten entre brief
 - [ ] Precios u honorarios (ArchiAdvice, consulenza acquisto, restyling, reforma) o rangos → C2, C3, C4, C6, C7
 - [ ] 2–3 testimonios con permiso → A3, C2, C3, C4, C6
 - [ ] Fotos del "antes" de los proyectos (LOVINGCOLORS, CASA PEONIA, cocinas, baños) → C4, C6, C9, C13
-- [ ] Email de dominio, horarios definitivos, Google Business Profile → D8, D-1
+- [ ] Email de dominio, horarios definitivos (la ficha de Google dice 9–17 y la web 9–18), acceso a la ficha de Google (ya existe) → D8, D-1
 - [ ] H1 de la home (opción A o B) → A3 (D5)
 - [ ] Ubicación de Bagno CASA ARCHI & COLORI (¿Bergamo o Milano?) y fotos de `bagno-italian-summer` que se llaman `restyling-casa-peonia-*` → C9, F7
 
