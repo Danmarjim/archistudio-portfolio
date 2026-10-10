@@ -295,8 +295,8 @@
     "it": "Italiano"
   },
   "SobreMiPage": {
-    "overline": "About me",
-    "heroTitle": "Empathetic architecture",
+    "overline": "Empathetic architecture",
+    "heroTitle": "Martina Pozzi, architect in Bergamo",
     "heroPara1": "I firmly believe that good architecture improves the quality of life.",
     "heroPara2": "Choosing the right architect for your dream home means finding a skilled professional, but also trusting someone who will guide you through a very important decision-making phase.",
     "heroPara3": "Someone who knows how to listen and walk you through that uncharted — and often stressful! — territory that is renovation. And who keeps a watchful eye on overall costs.",
@@ -304,7 +304,7 @@
     "bioTitle": "Who is Martina C.M. Pozzi?",
     "bioPara1": "I am an architect with over 15 years of experience designing spaces that transform people's lives.",
     "bioPara2": "My passion for architecture was born from a fascination with the way spaces can influence our emotions and behaviours.",
-    "bioPara3": "My approach combines functionality, aesthetics and sustainability, in a constant search for solutions that respect the environment and respond to each client's real needs.",
+    "bioPara3": "I work mainly on renovations of apartments and houses, bespoke interiors and restylings. Colour is my main tool: I use it to give every room a character and a purpose, together with custom-designed furniture that makes the most of every centimetre.",
     "bioPara4": "I am a sunny person, one of those with a \"thousand-watt smile\", always able to find the positive side of every challenge.",
     "bioPara5": "My creativity is restless: when I'm not designing interiors, you'll find me creating analogue collages under the signature",
     "timelineTitle": "My journey",
@@ -323,7 +323,21 @@
     "ctaOverline": "Studio based in Bergamo 🇮🇹 and Seville 🇪🇸",
     "ctaTitle": "Have an idea waiting to happen?",
     "ctaSubtitle": "Write to me, let's put it to the test and make it real.",
-    "ctaButton": "Write to me"
+    "ctaButton": "Write to me",
+    "tRegYear": "Registration",
+    "tRegDate": "2012",
+    "tRegTitle": "Ordine degli Architetti",
+    "tRegDesc": "Registered with the Ordine degli Architetti of the Province of Monza e Brianza.",
+    "credentialsTitle": "Education and registration",
+    "cred1": "Degree in Architecture, Politecnico di Milano (2011)",
+    "cred2": "Registered with the Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori of the Province of Monza e Brianza since 2012",
+    "cred3": "Working languages: Italian, Spanish and English",
+    "cred4": "MP_archistudio, VAT IT07788400963",
+    "pressTitle": "What they say about my projects",
+    "pressSubtitle": "Design magazines and blogs that have published my work.",
+    "whereTitle": "Where to find me",
+    "wherePara": "I see clients at my studio in Bergamo, at Via Bologna 2, by appointment. My projects and client reviews are also on:",
+    "ctaArchiAdvice": "Would you rather start with a one-hour online consultation? Book an ArchiAdvice"
   },
   "ServicePage": {
     "backToServices": "All services",

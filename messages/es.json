@@ -295,8 +295,8 @@
     "it": "Italiano"
   },
   "SobreMiPage": {
-    "overline": "Sobre mí",
-    "heroTitle": "Arquitectura empática",
+    "overline": "Arquitectura empática",
+    "heroTitle": "Martina Pozzi, arquitecta en Bérgamo",
     "heroPara1": "Creo firmemente que la buena arquitectura mejora la calidad de vida.",
     "heroPara2": "Elegir al arquitecto adecuado para la casa de tus sueños significa encontrar a un buen profesional, pero también confiar en alguien que te acompañará en una fase de decisiones muy importante.",
     "heroPara3": "Alguien que sepa escucharos y guiaros de la mano por ese territorio inexplorado — ¡y a menudo estresante! — que es la reforma. Y que os oriente con ojo atento sobre los costes globales.",
@@ -304,7 +304,7 @@
     "bioTitle": "¿Quién es Martina C.M. Pozzi?",
     "bioPara1": "Soy arquitecta con más de 15 años de experiencia en el diseño de espacios que transforman la vida de las personas.",
     "bioPara2": "Mi pasión por la arquitectura nació de la fascinación por la forma en que los espacios pueden influir en nuestras emociones y comportamientos.",
-    "bioPara3": "Mi enfoque une funcionalidad, estética y sostenibilidad, en la búsqueda constante de soluciones que respeten el medio ambiente y respondan a las necesidades reales de cada cliente.",
+    "bioPara3": "Me dedico sobre todo a reformas de pisos y casas, interiores a medida y restylings. El color es mi herramienta principal: lo uso para dar a cada estancia un carácter y una función, junto con muebles diseñados a medida que aprovechan cada centímetro.",
     "bioPara4": "Soy una persona alegre, de las de «sonrisa de mil dientes», capaz de encontrar el lado positivo en cada reto.",
     "bioPara5": "Mi creatividad es inquieta: si no estoy diseñando interiores, me encontraréis creando collages analógicos con la firma",
     "timelineTitle": "Mi trayectoria",
@@ -323,7 +323,21 @@
     "ctaOverline": "Estudio con sede en Bérgamo 🇮🇹 y Sevilla 🇪🇸",
     "ctaTitle": "¿Tienes una idea guardada?",
     "ctaSubtitle": "Escríbeme, pongámosla a prueba y hagámosla realidad.",
-    "ctaButton": "Escríbeme"
+    "ctaButton": "Escríbeme",
+    "tRegYear": "Colegiación",
+    "tRegDate": "2012",
+    "tRegTitle": "Ordine degli Architetti",
+    "tRegDesc": "Colegiación en el Ordine degli Architetti de la provincia de Monza e Brianza.",
+    "credentialsTitle": "Formación y colegiación",
+    "cred1": "Licenciatura en Arquitectura por el Politecnico di Milano (2011)",
+    "cred2": "Colegiada en el Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori de la provincia de Monza e Brianza desde 2012",
+    "cred3": "Idiomas de trabajo: italiano, español e inglés",
+    "cred4": "MP_archistudio, P.IVA IT07788400963",
+    "pressTitle": "Lo que dicen de mis proyectos",
+    "pressSubtitle": "Revistas y blogs de diseño que han publicado mis trabajos.",
+    "whereTitle": "Dónde encontrarme",
+    "wherePara": "Recibo en mi estudio de Bérgamo, en Via Bologna 2, con cita previa. Mis proyectos y las reseñas de los clientes también están en:",
+    "ctaArchiAdvice": "¿Prefieres empezar con una hora de asesoría online? Reserva un ArchiAdvice"
   },
   "ServicePage": {
     "backToServices": "Todos los servicios",
