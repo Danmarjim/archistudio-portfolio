@@ -130,6 +130,22 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
 
           <p className="mt-4 text-lg text-neutral-600">{post.excerpt}</p>
 
+          {/* Articoli propri (non rassegna stampa): autrice visibile e data di aggiornamento */}
+          {!post.source && (
+            <p className="mt-4 text-sm text-neutral-600">
+              {t.rich('byline', {
+                author: (chunks) => (
+                  <Link href="/sobre-mi" className="font-medium text-foreground underline-offset-4 hover:underline">
+                    {chunks}
+                  </Link>
+                ),
+              })}
+              {post.updated && post.updated !== post.date && (
+                <> · {t('updatedOn', { date: formatDate(post.updated, locale) })}</>
+              )}
+            </p>
+          )}
+
           {/* Link articolo originale */}
           {post.sourceUrl && (
             <a

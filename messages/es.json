@@ -286,7 +286,9 @@
     "source": "Fuente",
     "readOriginal": "Leer el artículo original",
     "previous": "Anterior",
-    "next": "Siguiente"
+    "next": "Siguiente",
+    "byline": "Por <author>Martina Pozzi</author>, arquitecta en Bérgamo",
+    "updatedOn": "Actualizado el {date}"
   },
   "LanguageSwitcher": {
     "label": "Idioma",
