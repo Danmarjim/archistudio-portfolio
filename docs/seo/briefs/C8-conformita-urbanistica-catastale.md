@@ -2,7 +2,7 @@
 
 Parte de `docs/seo/planes/fase-2.md` (bloque C, ola 2, tarea C8). Generado con `/seo content-brief conformità urbanistica e catastale` el 8 oct 2026.
 
-**Estado:** pendiente. Requiere revisión técnica de Martina antes de publicar (tema con consecuencias legales y económicas para el lector).
+**Estado:** ✅ redactado en it/es/en en la rama `seo/c8-conformita-urbanistica` (10 oct 2026). Lo que falta de Martina está en su [revisión](../revisiones/c8-conformita-urbanistica.md) y en [`PENDIENTE-MARTINA.md`](../PENDIENTE-MARTINA.md). La checklist de datos de abajo es la original del brief.
 
 **Página:** nueva, guía en `/news/conformita-urbanistica-catastale-prima-di-comprare-casa`.
 
