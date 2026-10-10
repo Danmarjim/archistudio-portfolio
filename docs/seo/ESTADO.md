@@ -4,6 +4,7 @@
 
 | Documento | Para qué |
 |---|---|
+| [`PLAN-FASE-3.md`](PLAN-FASE-3.md) | Plan mientras Martina valida: calidad, contenido, día de publicar y seguimiento, con los comandos `/seo` de cada paso |
 | [`CONTEXTO.md`](CONTEXTO.md) | Datos del negocio para pegar en Cowork/Claude antes de cualquier tarea de SEO, y qué prompts usar |
 | [`PLAN.md`](PLAN.md) | Detalle de cada tarea, decisiones y benchmark frente a la competencia |
 | [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md) | Ficha de Google: estado actual, categorías y atributos frente a los competidores, mensajes para pedir reseñas |
