@@ -51,7 +51,7 @@
   "Hero": {
     "overline": "ARCHITECTURAL DESIGN STUDIO FOR TAILOR-MADE INTERIORS IN BERGAMO",
     "title": "Architect in Bergamo: renovations and bespoke interiors",
-    "subtitle": "Renovate without the worry. I'm Martina Pozzi, an architect: I guide you from design through permits to the building site, as a single point of contact looking after your interests.",
+    "subtitle": "Renovate without the worry. I'm Martina Pozzi, an architect: I guide you from design through permits to the building site, as <b>a single point of contact</b> looking after your interests.",
     "cta": "View projects",
     "ctaSecondary": "Contact",
     "scrollIndicator": "Discover more"
