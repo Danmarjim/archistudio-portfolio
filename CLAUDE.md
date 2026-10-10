@@ -221,7 +221,8 @@ published: false
 cta: "contact"                       # "calendly" | "contact"
 contactProjectType: "restyling"      # preselección del formulario (?tipo=)
 relatedProjects: [restyling-casa-peonia]
-priceFrom: 120                       # opcional → Offer en el JSON-LD
+price: 100                           # opcional: precio cerrado ("Prezzo") → Offer en el JSON-LD
+priceFrom: 120                       # opcional → Offer en el JSON-LD ("A partire da")
 ```
 
 ## Frontmatter MDX — Noticias

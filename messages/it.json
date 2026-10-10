@@ -327,6 +327,7 @@
   },
   "ServicePage": {
     "backToServices": "Tutti i servizi",
+    "price": "Prezzo",
     "priceFrom": "A partire da",
     "bookCta": "Prenota la consulenza",
     "contactCta": "Richiedi informazioni",

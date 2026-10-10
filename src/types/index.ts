@@ -111,6 +111,8 @@ export interface ServicePage {
   contactProjectType?: string
   /** Slug dei progetti da mostrare come esempi */
   relatedProjects: string[]
+  /** Prezzo fisso in euro (es. ArchiAdvice); ha la precedenza su `priceFrom` */
+  price?: number
   /** Prezzo di partenza in euro, se pubblicato (genera un `Offer` nel JSON-LD) */
   priceFrom?: number
   updated?: string

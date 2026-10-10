@@ -19,7 +19,7 @@ Página de servicio **"Consulenza architetto online" (ArchiAdvice)**. Es el serv
 - `published: true` en la rama para la preview. En producción no se publica mientras queden marcadores.
 - Botón de reserva a Calendly arriba y al final; proyectos relacionados: ITALIAN SUMMER, LOVINGCOLORS y CASA PEONIA.
 
-**Archivos:** `content/services/{it,es,en}/consulenza-architetto-online.mdx`.
+**Archivos:** `content/services/{it,es,en}/consulenza-architetto-online.mdx`; campo `price` en `src/types/index.ts`, `src/lib/services.ts`, `src/app/[locale]/servicios/[slug]/page.tsx`, `messages/*.json` (`ServicePage.price`) y `CLAUDE.md`.
 
 **De dónde sale el texto:** las situaciones para las que sirve, del texto actual de `/servizi` y de la noticia de lanzamiento de ArchiAdvice; los ejemplos, de las fichas de los proyectos. Los ejemplos se presentan como "el tipo de decisiones que tomamos", **sin decir que esos proyectos empezaran con un ArchiAdvice**, porque no consta.
 
@@ -30,15 +30,20 @@ Página de servicio **"Consulenza architetto online" (ArchiAdvice)**. Es el serv
 
 ## Qué validar
 
-**Martina: datos pendientes (9 por idioma)**
-- [ ] **Precio** de la consulta, qué incluye y si se descuenta de un proyecto posterior. El precio es lo que más pesa: 3 de cada 4 resultados de esta búsqueda lo muestran. Con el precio se rellena también `priceFrom`, que lo muestra junto al título y lo añade a los datos estructurados.
-- [ ] Qué recibe el cliente después: resumen escrito, paleta, enlaces… Es el mayor diferenciador según el brief.
-- [ ] Con cuánta antelación y por qué medio hay que enviar fotos y medidas.
-- [ ] Plataforma de la videollamada.
+**Confirmado por Martina (10 oct), ya en el texto**
+- [x] Precio: **100 € todo incluido** (Inarcassa 4 % y marca da bollo incluidos; IVA no aplicable). Se muestra como "Prezzo · 100 €" junto al título y como `Offer` en los datos estructurados (campo nuevo `price` para precios cerrados; `priceFrom` sigue mostrando "A partire da").
+- [x] Plataforma: Google Meet.
+- [x] Proceso: cuestionario en Calendly al reservar, fotos y planimetría por email (las instrucciones llegan tras la reserva), pago por PayPal o transferencia hasta 3 días antes (si no, se anula la cita), factura al terminar.
+
+**Martina: datos pendientes (6 por idioma)**
+- [ ] Qué recibe el cliente después de la llamada (resumen escrito, paleta, enlaces…). Es el mayor diferenciador según el brief. Hoy el texto dice "consigli pratici e nuovi punti di vista", como la descripción de Calendly.
+- [ ] ¿El precio se descuenta de un proyecto posterior?
+- [ ] ¿Reembolso si se anula después de pagar?
+- [ ] ¿ArchiAdvice también en persona en el estudio de Bergamo?
 - [ ] 1–2 ejemplos reales de consultas (problema → solución).
-- [ ] Política de cambio y cancelación de cita.
-- [ ] ¿Se puede hacer en persona en Bergamo?
 - [ ] Número de colegiada.
+
+**Nota:** en la confirmación de Calendly se pide enviar las fotos a un email personal de hotmail. En la web no se publica ese email. Cuando exista el email de dominio (D8), conviene cambiarlo también en Calendly.
 
 **Martina: contenido**
 - [ ] El texto suena a ella; la lista de "qué puedes resolver" y la checklist de preparación son correctas.
@@ -47,7 +52,7 @@ Página de servicio **"Consulenza architetto online" (ArchiAdvice)**. Es el serv
 
 **Daniel**
 - [ ] El botón de reserva abre Calendly; se ve bien en móvil.
-- [ ] Verificado en local el 10 oct: `tsc` y `build` sin errores; 200 en it/es/en con su title; 9 marcadores resaltados por idioma; JSON-LD `Service` correcto.
+- [ ] Verificado en local el 10 oct: `tsc`, `lint` y `build` sin errores; 200 en it/es/en con su title; 6 marcadores resaltados por idioma; precio "Prezzo / Precio / Price · 100 €" y `Offer` con `price: 100`.
 
 ## Pendiente para otras ramas
 
@@ -56,4 +61,4 @@ Página de servicio **"Consulenza architetto online" (ArchiAdvice)**. Es el serv
 
 ## Cómo mergear
 
-Después de `feat/seo-fase-2-pr2`. Antes del merge, sustituir todos los `[DA CONFERMARE: …]` y añadir `priceFrom` en el frontmatter de los tres idiomas.
+Después de `feat/seo-fase-2-pr2`. Antes del merge, sustituir todos los `[DA CONFERMARE: …]`.
