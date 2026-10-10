@@ -1,21 +1,18 @@
 # SEO — Estado
 
-Última actualización: 10 oct 2026. **Este es el punto de entrada**: qué está hecho, qué está en curso y qué queda. El detalle de cada tarea (archivos, cómo verificar) está en [`planes/fase-2.md`](planes/fase-2.md); los códigos (A1, C4, F3…) remiten a ese documento.
+Última actualización: 10 oct 2026. **Este es el punto de entrada**: en qué fase estamos, qué está hecho y qué viene ahora. Los códigos (A1, C4, F3…) remiten al detalle de [`planes/fase-2.md`](planes/fase-2.md); los de la fase 3 (A5, B3…), a [`planes/fase-3.md`](planes/fase-3.md).
 
 | Documento | Para qué |
 |---|---|
-| [`planes/fase-3.md`](planes/fase-3.md) | Plan mientras Martina valida: calidad, contenido, día de publicar y seguimiento, con los comandos `/seo` de cada paso |
-| [`CONTEXTO-COWORK.md`](../martina/CONTEXTO-COWORK.md) | Datos del negocio para pegar en Cowork/Claude antes de cualquier tarea de SEO, y qué prompts usar |
-| [`planes/fase-2.md`](planes/fase-2.md) | Detalle de cada tarea, decisiones y benchmark frente a la competencia |
-| [`FICHA-GOOGLE.md`](../martina/FICHA-GOOGLE.md) | Ficha de Google: estado actual, categorías y atributos frente a los competidores, mensajes para pedir reseñas |
-| [`PENDIENTE-MARTINA.md`](PENDIENTE-MARTINA.md) | Todo lo que hay que pedirle a Martina, en una sola lista |
-| [`auditorias/REGISTRO-COMANDOS.md`](auditorias/REGISTRO-COMANDOS.md) | Comandos `/seo` ya ejecutados y cuándo merece la pena repetirlos |
-| [`briefs/`](briefs/) | Un brief por página: estructura, keywords, competidores, meta tags |
-| [`auditorias/`](auditorias/) | Resultados de los audits y clusters por fecha (7 oct inicial y producción, 8 oct cluster, 10 oct preview) |
+| [`PENDIENTE-MARTINA.md`](PENDIENTE-MARTINA.md) | Todo lo que hay que pedirle a Martina, en una sola lista y sin repeticiones |
+| [`planes/`](planes/) | Un plan por fase: [1](planes/fase-1.md) y [2](planes/fase-2.md) cerradas, [3](planes/fase-3.md) en curso, [Martina](planes/fase-martina.md) (visto bueno, datos y día de publicar) |
+| [`revisiones/`](revisiones/README.md) | Un documento por rama: qué se hizo y qué validar |
+| [`briefs/`](briefs/) | El guion de cada página (estructura, keywords, competidores, meta tags) |
+| [`auditorias/`](auditorias/) | Resultados de audits y clusters por fecha, y el [registro de comandos `/seo`](auditorias/REGISTRO-COMANDOS.md) |
+| [`CONTEXTO-COWORK.md`](../martina/CONTEXTO-COWORK.md) | Datos del negocio para pegar en Cowork/Claude antes de cualquier tarea de SEO |
+| [`FICHA-GOOGLE.md`](../martina/FICHA-GOOGLE.md) | Ficha de Google: estado, categorías y atributos frente a los competidores, mensajes para pedir reseñas |
 
-**Ramas:** cada tarea en su rama, con un documento de revisión en [`revisiones/`](revisiones/); `seo/preview-completa` las junta todas.
-
-**Score:** 49/100 (7 oct, antes de la fase 1) → 80/100 (7 oct, re-auditoría en producción) → **84/100 (10 oct, preview completa de la fase 2, en local)**: [informe](auditorias/2026-10-10-preview/FULL-AUDIT-REPORT.md) y [plan de acción](auditorias/2026-10-10-preview/ACTION-PLAN.md). Hechos los puntos 1–4 (`llms.txt` dinámico, títulos y descripciones, imagen social por servicio): 0 títulos > 60 y 0 descripciones > 160 en las 87 páginas.
+**Score:** 49/100 (7 oct, antes de la fase 1) → 80/100 (7 oct, re-auditoría en producción) → **84/100 (10 oct, preview completa de la fase 2, en local)**: [informe](auditorias/2026-10-10-preview/FULL-AUDIT-REPORT.md) y [plan de acción](auditorias/2026-10-10-preview/ACTION-PLAN.md). Después se hicieron los puntos 1–4 del plan de acción (`llms.txt` dinámico, títulos y descripciones, imagen social por servicio): 0 títulos > 60 y 0 descripciones > 160 en las 87 páginas.
 
 ---
 
@@ -27,8 +24,13 @@
 | 8 oct | Search Console verificado (DNS en Vercel) y API conectada (Search Console, PageSpeed, CrUX); sitemap enviado | — |
 | 8 oct | **PR 1** — A1 (slugs en italiano + 301) y B1–B11 (JSON-LD ampliado, LCP, `sizes`, assets renombrados, descripciones de proyecto, `llms.txt`, formulario, sitemap, CSP en observación) | `main` (merge `e104ad3`) |
 | 8 oct | **Briefs** de A3 (home), C1 (chi sono), C2, C3, C4, C6 (servicios) y C7–C14 (guías) | [`briefs/`](briefs/) |
-| 9 oct | Análisis de categorías y atributos de los competidores en Google Maps (prompts 1 y 2 de `CONTEXTO-COWORK.md`) | [`FICHA-GOOGLE.md`](../martina/FICHA-GOOGLE.md) |
 | 8 oct | **PR 2** — C-pre (Markdown en noticias, `seoTitle`, `updated`), C5b (prensa de Homeadore), F1 paso 1, F2–F6 (vídeo 13,9 → 2,8 MB; imágenes 322 → 127 MB; AVIF; prioridades; nombres), G1, G2, meta de la home y estructura de A2 | rama `feat/seo-fase-2-pr2` (**sin merge**) |
+| 9 oct | Análisis de categorías y atributos de los competidores en Google Maps | [`FICHA-GOOGLE.md`](../martina/FICHA-GOOGLE.md) |
+| 9–10 oct | **Páginas de servicio** C2, C3, C4 y C6; **home** (A3), **chi sono** (C1), **enlazado interno** (A4); textos de la ficha de Google | una rama cada una · [`revisiones/`](revisiones/README.md) |
+| 10 oct | **Fase 3, bloque A1–A4**: revisión de contenido (74/100) y GEO (76/100); `llms.txt` dinámico; títulos y descripciones; imagen social por servicio; autora visible en los artículos; contraste AA; páginas más ligeras (−15/−24 % de HTML) | una rama cada una |
+| 10 oct | **Speed Insights** en producción | `main` (`5243492`) |
+| 10 oct | **Guías C7–C14** en it/es/en y enlaces cruzados entre guías, servicios, fichas de proyecto y chi sono (4–10 enlaces entrantes por guía) | una rama cada una |
+| 10 oct | Vercel: solo despliega `seo/preview-completa`, nada cuando solo cambia documentación, retención de deployments activada | `vercel.json` |
 
 <details><summary>Detalle de PR 1</summary>
 
