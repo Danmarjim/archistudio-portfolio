@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import type { NewsPost, NewsCategory } from '@/types'
+import { resolveServiceLinks } from '@/lib/services'
 
 const newsDirectory = path.join(process.cwd(), 'content/news')
 
@@ -43,7 +44,7 @@ export function getAllNews(locale: string = 'it'): NewsPost[] {
       relatedProjectLabel: data.relatedProjectLabel,
       seoTitle: data.seoTitle,
       updated: data.updated,
-      content: content.trim(),
+      content: resolveServiceLinks(content.trim()),
     } as NewsPost
   })
 
