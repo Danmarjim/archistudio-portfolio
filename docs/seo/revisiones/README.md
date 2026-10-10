@@ -31,6 +31,7 @@ Los textos con datos pendientes llevan `[DA CONFERMARE: …]`. En local y en las
 | `seo/llms-dinamico` | [llms-dinamico.md](llms-dinamico.md) | Pendiente de revisión |
 | `seo/meta-titulos-descripciones` | [meta-titulos-descripciones.md](meta-titulos-descripciones.md) | Pendiente de revisión |
 | `seo/og-servicios` | [og-servicios.md](og-servicios.md) | Pendiente de revisión |
+| `seo/geo-autoria` | [geo-autoria.md](geo-autoria.md) | Pendiente de revisión |
 | `seo/preview-completa` | — | Integra todas las anteriores |
 
 Orden de merge: primero `feat/seo-fase-2-pr2` (todas salen de ella); después, cualquier rama aprobada, en cualquier orden.

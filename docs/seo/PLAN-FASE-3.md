@@ -11,7 +11,7 @@
 | # | Tarea | Comando | Categoría del audit | Esfuerzo |
 |---|---|---|---|---|
 | A1 | ✅ [hecho](archivo/datos/2026-10-10-audit-preview/findings/content.md): **Revisión de contenido de los textos nuevos** (4 servicios, 2 guías, home, chi sono): E-E-A-T, legibilidad y **limpieza de frases típicas de IA**, antes de que los lea Martina | `/seo content <url>` por página | Contenido (23 %) | 1–2 h |
-| A2 | **Citabilidad en buscadores con IA** (AI Overviews, ChatGPT, Perplexity): pasajes que se entienden solos, datos con fuente, entidad clara | `/seo geo <url>` en guías y servicios | Preparación IA (10 %) | 1 h |
+| A2 | ✅ [hecho](archivo/datos/2026-10-10-audit-preview/findings/GEO-ANALYSIS.md) (76/100): **Citabilidad en buscadores con IA** (AI Overviews, ChatGPT, Perplexity): pasajes que se entienden solos, datos con fuente, entidad clara | `/seo geo <url>` en guías y servicios | Preparación IA (10 %) | 1 h |
 | A3 | **Páginas más ligeras:** cada página envía solo los textos que usan sus componentes de cliente | — (código) | Rendimiento (10 %) | 1–2 h |
 | A4 | **Contraste** del gris de fechas y etiquetas en noticias | — (código) | Accesibilidad | 15 min |
 | A5 | **Lighthouse en todas las páginas**, no solo en 3 | `/seo unlighthouse` sobre la build local | Rendimiento, accesibilidad | 30 min |
