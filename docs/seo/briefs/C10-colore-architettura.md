@@ -2,7 +2,7 @@
 
 Parte de `docs/seo/planes/fase-2.md` (bloque C, ola 2, tarea C10). Generado con `/seo content-brief colore nell'architettura d'interni` (modo mejora sobre `/news/il-colore-nell-architettura`) el 8 oct 2026.
 
-**Estado:** pendiente. Es la pieza más alineada con la identidad de Martina; la puede escribir ella casi entera, con fotos de sus proyectos.
+**Estado:** ✅ redactado en it/es/en en la rama `seo/c10-colore-architettura` (10 oct 2026). Lo que falta de Martina está en su [revisión](../revisiones/c10-colore-architettura.md) y en [`PENDIENTE-MARTINA.md`](../PENDIENTE-MARTINA.md). La checklist de datos de abajo es la original del brief.
 
 **Página:** existente, `/news/il-colore-nell-architettura` (sept 2022). Hoy: 143 palabras en italiano (154 en es/en), 5 párrafos, una imagen de portada (LOVINGCOLORS). El texto es bueno y personal, pero demasiado corto para competir.
 
