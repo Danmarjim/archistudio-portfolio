@@ -1,5 +1,5 @@
 #!/bin/bash
-# Simulacro de merge (A7): junta main + seo/preview-completa en un worktree aparte, compila
+# Simulacro de merge (A7): junta main + preview/seo-completa (antes seo/preview-completa) en un worktree aparte, compila
 # en modo producción y comprueba conflictos, redirecciones, sitemap y enlaces internos.
 # No toca ninguna rama ni sube nada. Uso: bash docs/seo/auditorias/2026-10-10-simulacro-merge/simulacro.sh
 set -u
@@ -8,17 +8,17 @@ WT=${TMPDIR:-/tmp}/simulacro-merge; PORT=3107; H=http://localhost:$PORT
 export GIT_AUTHOR_NAME=sim GIT_AUTHOR_EMAIL=sim@local GIT_COMMITTER_NAME=sim GIT_COMMITTER_EMAIL=sim@local
 
 echo "== 1. Conflictos =="
-T=$(git merge-tree --write-tree main seo/preview-completa) || { echo "CONFLICTO main + preview-completa"; exit 1; }
+T=$(git merge-tree --write-tree main preview/seo-completa) || { echo "CONFLICTO main + preview-completa"; exit 1; }
 BASE=$(git commit-tree "$(git merge-tree --write-tree main feat/seo-fase-2-pr2)" -p main -p feat/seo-fase-2-pr2 -m base)
 CUR=$BASE
-for b in $(git for-each-ref --format='%(refname:short)' refs/heads/seo/ | grep -v preview-completa); do
+for b in $(git for-each-ref --format='%(refname:short)' refs/heads/seo/); do
   git merge-tree --write-tree --name-only "$BASE" "$b" >/dev/null 2>&1 || echo "CONFLICTO sola: $b"
   t=$(git merge-tree --write-tree "$CUR" "$b" 2>/dev/null) && CUR=$(git commit-tree "$t" -p "$CUR" -p "$b" -m "$b") || echo "CONFLICTO secuencial: $b"
 done
-[ "$(git rev-parse "$CUR^{tree}")" = "$T" ] && echo "rama a rama = preview-completa: idéntico" || echo "AVISO: rama a rama difiere de preview-completa"
+[ "$(git rev-parse "$CUR^{tree}")" = "$T" ] && echo "rama a rama = preview/seo-completa: idéntico" || echo "AVISO: rama a rama difiere de preview/seo-completa"
 
 echo "== 2. Build en modo producción =="
-C=$(git commit-tree "$T" -p main -p seo/preview-completa -m simulacro)
+C=$(git commit-tree "$T" -p main -p preview/seo-completa -m simulacro)
 git worktree remove --force "$WT" 2>/dev/null; git worktree add -q --detach "$WT" "$C"
 cp .env.local "$WT"/ 2>/dev/null; cd "$WT"
 npm ci --no-audit --no-fund >/dev/null 2>&1 && VERCEL_ENV=production npm run build > build.log 2>&1 || { echo "BUILD FALLIDO: $WT/build.log"; exit 1; }
