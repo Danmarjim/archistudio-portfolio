@@ -188,7 +188,7 @@ export default function SobreMiContent({ pressItems, projects, profiles, archiAd
                     <span className="text-sm font-medium text-primary-600">{item.year}</span>
                     <h3 className="mt-1 font-serif text-xl font-medium text-foreground">{item.title}</h3>
                     <p className="mt-2 text-neutral-600">{item.description}</p>
-                    <p className="mt-1 text-sm text-neutral-400">{item.date}</p>
+                    <p className="mt-1 text-sm text-neutral-500">{item.date}</p>
                   </div>
                 </motion.div>
               ))}
