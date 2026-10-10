@@ -4,12 +4,12 @@ Textos para la ficha de Google (Google Business Profile). Solo documentación: n
 
 ## Qué se ha hecho
 
-- `docs/seo/FICHA-GOOGLE.md` §6: descripción de la ficha (732 de 750 caracteres) y 5 servicios con su descripción (todas de menos de 300 caracteres), más la checklist para hacer todos los cambios en una sola visita.
-- Escritos a partir de la web y de `CONTEXTO.md`, cumpliendo las normas de Google: sin URLs, sin precios en la descripción, sin repetir keywords.
+- `docs/martina/FICHA-GOOGLE.md` §6: descripción de la ficha (732 de 750 caracteres) y 5 servicios con su descripción (todas de menos de 300 caracteres), más la checklist para hacer todos los cambios en una sola visita.
+- Escritos a partir de la web y de `CONTEXTO-COWORK.md`, cumpliendo las normas de Google: sin URLs, sin precios en la descripción, sin repetir keywords.
 
 ## Cómo verlo
 
-`docs/seo/FICHA-GOOGLE.md`, secciones 3 (estado actual de la ficha), 5 (mensajes para pedir reseñas) y 6 (textos).
+`docs/martina/FICHA-GOOGLE.md`, secciones 3 (estado actual de la ficha), 5 (mensajes para pedir reseñas) y 6 (textos).
 
 ## Qué validar
 

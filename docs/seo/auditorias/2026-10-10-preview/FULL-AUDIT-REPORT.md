@@ -55,7 +55,7 @@
 - Speed Insights para tener datos reales de Core Web Vitals (`5243492`).
 
 ### Depende de Martina
-- 38 marcadores `[DA CONFERMARE]` por idioma entre servicios y guías (ver `docs/seo/revisiones/PARA-MARTINA.md`).
+- 38 marcadores `[DA CONFERMARE]` por idioma entre servicios y guías (ver `docs/seo/PENDIENTE-MARTINA.md`).
 - Testimonios (home, servicios), número de colegiada, premio Piranesi.
 - Ficha de Google: categorías, atributos, reseñas (el mayor impacto en búsquedas locales, fuera de la web).
 

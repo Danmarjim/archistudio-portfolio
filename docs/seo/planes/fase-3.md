@@ -1,6 +1,6 @@
 # Plan SEO — fase 3 (mientras Martina valida)
 
-10 oct 2026. Objetivo: subir del **84/100** del [audit de la preview](archivo/datos/2026-10-10-audit-preview/FULL-AUDIT-REPORT.md) a **~90** y llegar al día del visto bueno con todo listo para publicar e indexar. Cada tarea va en su rama `seo/*`, con su documento de revisión, y se junta en `seo/preview-completa`. `main` no se toca hasta que Martina valide.
+10 oct 2026. Objetivo: subir del **84/100** del [audit de la preview](../auditorias/2026-10-10-preview/FULL-AUDIT-REPORT.md) a **~90** y llegar al día del visto bueno con todo listo para publicar e indexar. Cada tarea va en su rama `seo/*`, con su documento de revisión, y se junta en `seo/preview-completa`. `main` no se toca hasta que Martina valide.
 
 ## 0. Preparar la skill (una vez)
 
@@ -10,8 +10,8 @@
 
 | # | Tarea | Comando | Categoría del audit | Esfuerzo |
 |---|---|---|---|---|
-| A1 | ✅ [hecho](archivo/datos/2026-10-10-audit-preview/findings/content.md): **Revisión de contenido de los textos nuevos** (4 servicios, 2 guías, home, chi sono): E-E-A-T, legibilidad y **limpieza de frases típicas de IA**, antes de que los lea Martina | `/seo content <url>` por página | Contenido (23 %) | 1–2 h |
-| A2 | ✅ [hecho](archivo/datos/2026-10-10-audit-preview/findings/GEO-ANALYSIS.md) (76/100): **Citabilidad en buscadores con IA** (AI Overviews, ChatGPT, Perplexity): pasajes que se entienden solos, datos con fuente, entidad clara | `/seo geo <url>` en guías y servicios | Preparación IA (10 %) | 1 h |
+| A1 | ✅ [hecho](../auditorias/2026-10-10-preview/findings/content.md): **Revisión de contenido de los textos nuevos** (4 servicios, 2 guías, home, chi sono): E-E-A-T, legibilidad y **limpieza de frases típicas de IA**, antes de que los lea Martina | `/seo content <url>` por página | Contenido (23 %) | 1–2 h |
+| A2 | ✅ [hecho](../auditorias/2026-10-10-preview/findings/GEO-ANALYSIS.md) (76/100): **Citabilidad en buscadores con IA** (AI Overviews, ChatGPT, Perplexity): pasajes que se entienden solos, datos con fuente, entidad clara | `/seo geo <url>` en guías y servicios | Preparación IA (10 %) | 1 h |
 | A3 | ✅ (`seo/mensajes-cliente`, −15/−24 % de HTML) **Páginas más ligeras:** cada página envía solo los textos que usan sus componentes de cliente | — (código) | Rendimiento (10 %) | 1–2 h |
 | A4 | ✅ (`seo/contraste`, 2,42 → 4,54:1) **Contraste** del gris de fechas y etiquetas en noticias | — (código) | Accesibilidad | 15 min |
 | A5 | **Lighthouse en todas las páginas**, no solo en 3 | `/seo unlighthouse` sobre la build local | Rendimiento, accesibilidad | 30 min |

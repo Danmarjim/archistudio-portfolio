@@ -1,6 +1,6 @@
 # Contexto del negocio para SEO (para Cowork / Claude)
 
-**Cómo usarlo:** antes de pedir cualquier cosa de SEO en Cowork, pega el bloque de la sección 1 (o pide a Claude que lea este archivo). Así Claude trabaja sobre los datos reales del estudio y no hace preguntas que ya están respondidas. Los campos marcados con 🟡 faltan: complétalos cuando los tengas (ver `DATOS-MARTINA.md`).
+**Cómo usarlo:** antes de pedir cualquier cosa de SEO en Cowork, pega el bloque de la sección 1 (o pide a Claude que lea este archivo). Así Claude trabaja sobre los datos reales del estudio y no hace preguntas que ya están respondidas. Los campos marcados con 🟡 faltan: complétalos cuando los tengas (ver `docs/seo/PENDIENTE-MARTINA.md`).
 
 Última actualización: 10 oct 2026.
 
@@ -19,7 +19,7 @@ NEGOCIO
 - Teléfono: +39 327 126 7024 · Horario: lunes a viernes, 9:00–18:00
 - Web: https://mparchistudio.com (italiano; /es español; /en inglés)
 - Google Business Profile: existe ("MP_archistudio Arch. Martina Pozzi", categoría Studio di architettura),
-  0 reseñas, sin atributos. Pendiente de optimizar (docs/seo/FICHA-GOOGLE.md)
+  0 reseñas, sin atributos. Pendiente de optimizar (docs/martina/FICHA-GOOGLE.md)
 - Estudio desde 2021. Experiencia: más de 15 años entre Italia y España
   (Politecnico di Milano 2011; Studio Vázquez Consuegra, Sevilla, 2013;
   Exe Arquitectura, Barcelona, 2017). Colegiada en el Ordine degli Architetti
