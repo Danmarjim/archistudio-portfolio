@@ -15,7 +15,7 @@ Página de servicio **"Restyling casa"**. Brief: [`C6`](../briefs/C6-restyling-c
   8. Cuánto cuesta.
   9. Quién soy.
   10. 4 preguntas frecuentes.
-- Traducción al español ("Restyling de casa sin obras") y al inglés ("Home restyling without building work").
+- Traducción al español ("Restyling de casa en Bérgamo, sin obras") y al inglés ("Home restyling in Bergamo, no building work").
 - Enlace a la colección de alfombras Sevilla (`/tappeti`) como parte del restyling: es un recurso que no tiene ningún competidor.
 - Ya incluye zonas (Lombardía) y atención en el estudio con cita.
 - Formulario con "Restyling" preseleccionado.
@@ -23,6 +23,8 @@ Página de servicio **"Restyling casa"**. Brief: [`C6`](../briefs/C6-restyling-c
 **Archivos:** `content/services/{it,es,en}/restyling-casa.mdx`.
 
 **De dónde sale el texto:** los públicos, del texto actual de `/servizi`; el caso y las cocinas, de las fichas de los proyectos; las alfombras, de `/tappeti`.
+
+**10 oct (B3):** Google trata "restyling casa" a secas como búsqueda informativa (ideas, revistas, vídeos), donde una página de servicio no entra; "restyling casa Bergamo" es local y comercial, y allí ya sale la web. Por eso: Bergamo en el title ("Restyling casa a Bergamo con un'architetta"), en el H1 y en la descripción, en los tres idiomas, y una frase que distingue restyling y relooking (primera pregunta de "Le persone hanno chiesto anche"). [Informe](../auditorias/2026-10-10-intencion/README.md).
 
 ## Cómo verlo
 
