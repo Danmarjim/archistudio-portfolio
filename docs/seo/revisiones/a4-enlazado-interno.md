@@ -13,13 +13,18 @@ Enlaces internos hacia las páginas de servicio, para que reciban visitas y auto
   - Cose di Casa y Homeadore (LOVINGCOLORS, Bergamo): "Vuoi ristrutturare un appartamento a Bergamo? Scopri come lavoro" → C4.
   - HOME n.36 y Homeadore (Casa Archi & Colori, Milano): "Stai pensando a una ristrutturazione completa?" → C4.
   - Lanzamiento de ArchiAdvice: "Prenota il tuo slot" → C2 (antes decía "dalla pagina Servizi", sin enlace).
+- **Fichas de proyecto → su guía** (añadido el 10 oct, al cerrar la fase 2). Un segundo enlace, "Leggi la guida: …", debajo del del servicio:
+  - Baños → guía del baño (C9).
+  - Cocinas → guía de la cocina (C13).
+  - Reforma integral y restyling → artículo del color (C10). Ese artículo ya está publicado, así que este enlace aparece desde el primer día.
+  - Igual que el del servicio, **solo aparece si la guía está publicada**. La asignación está en `src/lib/news.ts` (`GUIDE_BY_PROJECT_CATEGORY`).
 - **Lombardia** añadida a `areaServed` en los datos estructurados de las páginas de servicio. La ficha del negocio ya la tenía.
 
 Relacionado, en otras ramas:
 - En la base: un enlace a un servicio todavía no publicado apunta al hub `/servizi`, así que nunca da 404.
 - En cada rama de servicio: los enlaces entre servicios ya son directos (C2 ↔ C3 ↔ C4 ↔ C6).
 
-**Archivos:** `src/lib/services.ts`, `src/app/[locale]/proyectos/[slug]/page.tsx`, `src/components/sections/ProjectDetail.tsx`, `src/app/[locale]/servicios/[slug]/page.tsx`, `messages/*.json` (`ProjectDetail.serviceLink`), `content/news/{it,es,en}/` (5 noticias).
+**Archivos:** `src/lib/services.ts`, `src/app/[locale]/proyectos/[slug]/page.tsx`, `src/components/sections/ProjectDetail.tsx`, `src/app/[locale]/servicios/[slug]/page.tsx`, `src/lib/news.ts`, `messages/*.json` (`ProjectDetail.serviceLink`, `ProjectDetail.guideLink`), `content/news/{it,es,en}/` (5 noticias).
 
 ## Cómo verlo
 
