@@ -1,6 +1,6 @@
 import SobreMiContent, { type ProfileLink } from './SobreMiContent'
 import { sameAsProfiles } from '@/lib/constants'
-import { getAllNews } from '@/lib/news'
+import { getAllNews, getNewsBySlug } from '@/lib/news'
 import { getProjectBySlug } from '@/lib/projects'
 import { getPublishedServiceBySlug } from '@/lib/services'
 import type { Project } from '@/types'
@@ -46,6 +46,7 @@ export default async function SobreMiPage({ params }: SobreMiPageProps) {
       projects={projects}
       profiles={profiles}
       archiAdviceSlug={getPublishedServiceBySlug('consulenza-architetto-online', locale)?.slug}
+      colorArticleSlug={getNewsBySlug('il-colore-nell-architettura', locale)?.slug}
     />
   )
 }
