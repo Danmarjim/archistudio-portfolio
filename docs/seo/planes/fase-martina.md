@@ -36,8 +36,9 @@ Ficha de Google (D-1), reseñas (D-2), mismo nombre en todos los perfiles (D-3) 
 
 | # | Tarea | Comando |
 |---|---|---|
+| P0 | Repetir el [simulacro de merge](../auditorias/2026-10-10-simulacro-merge/README.md) con las ramas aprobadas: sin conflictos, las URLs de producción en 200, 0 enlaces rotos | `bash docs/seo/auditorias/2026-10-10-simulacro-merge/simulacro.sh` |
 | P1 | Foto de producción antes del merge, para comparar después | `/seo drift baseline https://mparchistudio.com/` |
-| P2 | Merge a `main` (primero `feat/seo-fase-2-pr2`, después las ramas aprobadas) y deploy | — |
+| P2 | Merge a `main` (primero `feat/seo-fase-2-pr2`, después las ramas aprobadas) y deploy. **`seo/c10-colore-architettura` solo sin `[DA CONFERMARE]`**: el artículo ya está publicado y con marcadores daría 404 | — |
 | P3 | Comparar después del merge: títulos, canonical, hreflang, schema | `/seo drift compare https://mparchistudio.com/` |
 | P4 | Reenviar `sitemap.xml` y pedir indexación de los servicios, la home y las guías | `/seo google` (Search Console) |
 | P5 | Bing Webmaster + IndexNow: Bing indexa en horas y alimenta ChatGPT Search y Copilot | `/seo bing` |
