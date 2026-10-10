@@ -31,6 +31,7 @@
 | 10 oct | **Speed Insights** en producción | `main` (`5243492`) |
 | 10 oct | **Guías C7–C14** en it/es/en y enlaces cruzados entre guías, servicios, fichas de proyecto y chi sono (4–10 enlaces entrantes por guía) | una rama cada una |
 | 10 oct | **A7, simulacro de merge** sobre una copia de `main`: 0 conflictos (también rama a rama), build, 12 redirecciones, sitemap y enlaces en modo producción. Arreglado un enlace roto en chi sono; C10 no se mergea con marcadores (borraría un artículo publicado). `main` mergeado en la preview | [informe](auditorias/2026-10-10-simulacro-merge/README.md) |
+| 10 oct | **A5, A6 y B3**: Lighthouse en las 102 páginas (accesibilidad 100 en todas tras arreglar la galería y el orden de encabezados); agentes de IA 3/3 en Lighthouse Agentic Browsing y el firewall deja pasar a los agentes; intención de búsqueda en Google Italia desde Bergamo: 14 de 15 páginas encajan, restyling reorientado a "restyling casa Bergamo" | [Lighthouse](auditorias/2026-10-10-lighthouse/README.md) · [agentes](auditorias/2026-10-10-agentes/README.md) · [intención](auditorias/2026-10-10-intencion/README.md) |
 | 10 oct | Vercel: solo despliega `seo/preview-completa`, nada cuando solo cambia documentación, retención de deployments activada | `vercel.json` |
 
 <details><summary>Detalle de PR 1</summary>
@@ -63,7 +64,7 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 |---|---|---|---|
 | **1** — base técnica | ✅ Cerrada (10 oct) | — | [`fase-1`](planes/fase-1.md) · [estado](planes/fase-1-estado.md) |
 | **2** — estructura, servicios y contenido | ✅ Cerrada (10 oct) | — (validación y publicación → fase Martina) | [`fase-2`](planes/fase-2.md) |
-| **3** — calidad, preparación y seguimiento | 🔄 En curso (A1–A4 y A7 hechos) | A5, A6, B3–B5 y el seguimiento | [`fase-3`](planes/fase-3.md) |
+| **3** — calidad, preparación y seguimiento | 🔄 En curso (A1–A7 y B3 hechos) | B4, B5 y el seguimiento; decidir la política de entrenamiento de IA (A6) | [`fase-3`](planes/fase-3.md) |
 | **Martina** — visto bueno, datos y publicación | ⏳ Esperando a Martina | Validar ramas, datos, ficha de Google, día de publicar | [`fase-martina`](planes/fase-martina.md) · [lista para ella](PENDIENTE-MARTINA.md) |
 
 Decisiones del 10 oct: B12 (animaciones bajo el pliegue) se mantienen; F8 (créditos IPTC) descartado; G3 (slugs italianos en news para es/en) no se hace.
@@ -75,5 +76,5 @@ Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/
 ## Próximos pasos
 
 1. ~~**Fase 2**~~: cerrada el 10 oct (guías C8–C14 y enlaces entre guías, servicios y proyectos).
-2. **Fase 3:** ~~A7 (simulacro de merge)~~ → A5 + A6 + B3 → B4 → B5.
+2. **Fase 3:** ~~A7~~ → ~~A5 + A6 + B3~~ → B4 → B5.
 3. **Por fecha:** ~11 oct inspección de la reindexación; ~15 oct CSP obligatoria.
