@@ -28,7 +28,7 @@ Relacionado, en otras ramas:
 
 ## Cómo verlo
 
-En la preview de `seo/preview-completa`, donde los servicios están publicados:
+En la preview de `preview/seo-completa`, donde los servicios están publicados:
 - `/progetti/appartamento-lovingcolors` → enlace a la reforma.
 - `/progetti/cucina-mite` → enlace al restyling.
 - `/news/archiadvice-lancio` → enlace a ArchiAdvice.
