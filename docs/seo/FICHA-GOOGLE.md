@@ -71,7 +71,7 @@ Ficha pública a 9 oct 2026 ([Google Maps](https://www.google.com/maps/search/MP
 | Fotos | Hay fotos "Dal proprietario" | Añadir proyectos (antes/después), el estudio y el retrato; 3–5 al mes |
 | Reseñas | **0** | Pedir a los clientes de Spazi Belli y de los proyectos publicados (mensajes en la sección 5) |
 | Atributos | **Ninguno** | Appuntamenti online, Servizi in loco, È richiesto l'appuntamento y, si está disponible, Gestita da donne (sección 1) |
-| Descripción y servicios | Sin comprobar desde fuera | Rellenar con los 4 servicios (prompts 6 y 7 de `CONTEXTO.md`) |
+| Descripción y servicios | Sin comprobar desde fuera | Pegar los textos de la sección 6 |
 
 **Verificación:** no aparece "Rivendica questa attività" y hay fotos del propietario y enlace de reserva, así que la ficha está reclamada por alguien. Hay que confirmar que es Martina (o una cuenta suya) y que tiene acceso en [business.google.com](https://business.google.com). Si no lo tiene, solicitar el acceso desde la propia ficha.
 
@@ -100,3 +100,44 @@ Cada cliente escribe la reseña con sus palabras. Nada de textos redactados por 
 > Martina
 
 Las reseñas de Spazi Belli no se pueden pasar a Google: a esos clientes hay que pedírsela de nuevo.
+
+## 6. Textos para pegar en la ficha
+
+Redactados el 10 oct 2026 a partir de la web y de `CONTEXTO.md` (prompts 6 y 7). Pendientes de que Martina los revise. Reglas de Google que cumplen: sin URLs, sin precios ni ofertas en la descripción, sin repetir keywords.
+
+### Descripción (731 de 750 caracteres)
+
+"Modifica profilo → Descrizione dell'attività":
+
+> MP_archistudio è lo studio dell'architetta Martina Pozzi a Bergamo. Seguo la ristrutturazione di appartamenti e case dal rilievo alla consegna delle chiavi: progetto architettonico e d'interni, pratiche edilizie, scelta delle imprese e direzione lavori, con un unico riferimento per tutto il cantiere. Mi occupo anche di restyling senza opere murarie e di consulenze tecniche prima dell'acquisto di una casa. Il colore e i mobili su misura sono il cuore di ogni progetto. Lavoro a Bergamo e provincia, Milano e Monza e Brianza; le consulenze ArchiAdvice si svolgono anche online, in italiano, spagnolo e inglese. Laureata al Politecnico di Milano, ho lavorato in studi di architettura in Italia e in Spagna. Ricevo su appuntamento.
+
+Antes de pegarla, Martina tiene que confirmar:
+- "Ricevo su appuntamento": solo si recibe clientes en el estudio. Si no, quitar la frase.
+- Las zonas (Bergamo y provincia, Milano, Monza e Brianza).
+
+### Servicios (cada descripción, menos de 300 caracteres)
+
+"Modifica servizi → Aggiungi servizio personalizzato". Si Google propone un servicio predefinido con el mismo nombre, usar ese y pegar la descripción.
+
+| Servicio | Descripción |
+|---|---|
+| Ristrutturazione appartamento chiavi in mano | Ristrutturazione completa di appartamenti e case: rilievo, progetto, pratiche edilizie, scelta e gestione delle imprese, direzione lavori e aggiornamento catastale. Un unico riferimento dal primo sopralluogo alla consegna delle chiavi. |
+| Consulenza architetto online (ArchiAdvice) | Un'ora in videochiamata con l'architetta per decidere colori, materiali, arredo e distribuzione degli spazi. Mandi foto e misure prima della chiamata e ne esci con idee chiare da applicare subito. Si prenota online, anche in spagnolo e inglese. |
+| Consulenza acquisto casa | Prima di comprare casa verifichiamo insieme l'immobile: documenti, agibilità, conformità urbanistica e catastale, visita tecnica e stima orientativa del costo di ristrutturazione. Per decidere e trattare sapendo cosa stai comprando. |
+| Restyling casa | Rinnovare casa senza opere murarie: colore, luce, arredi e pezzi su misura per cambiare volto agli ambienti in poco tempo. Pensato anche per chi vive in affitto e vuole sentirsi a casa senza lavori invasivi. |
+| Progettazione bagno e cucina | Bagni e cucine progettati su misura: distribuzione, rivestimenti, sanitari, colori e arredi, con disegni esecutivi per l'impresa e controllo in cantiere. Anche all'interno di una ristrutturazione completa. |
+
+Cuando haya precios confirmados se pueden añadir en el campo "Prezzo" de cada servicio (ahí sí se permiten).
+
+### Otros campos
+
+- **Data di apertura:** 2021.
+- **Link per prenotazioni:** Calendly (ya está puesto).
+
+### Checklist para Martina (una sola visita a business.google.com)
+
+1. [ ] Categoría principal **Architetto**; secundarias Studio di architettura, Designer d'interni, Studio di architettura di interni.
+2. [ ] Horario: lunes a viernes, **9–18**.
+3. [ ] Atributos: Appuntamenti online, Servizi in loco, È richiesto l'appuntamento y, si aparece, Gestita da donne.
+4. [ ] Descripción y servicios de esta sección.
+5. [ ] Copiar el enlace de "Chiedi recensioni" y enviar los mensajes de la sección 5.
