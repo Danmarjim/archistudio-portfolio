@@ -18,7 +18,7 @@ Portfolio web profesional para una arquitecta independiente (Martina Pozzi). Sit
 
 ## SEO
 
-Estado y pendientes en `docs/seo/ESTADO.md` (punto de entrada); detalle en `docs/seo/PLAN.md`; comandos `/seo` ya ejecutados en `docs/seo/REGISTRO-COMANDOS.md`. Mantener `ESTADO.md` al día al cerrar cada tarea.
+Estado y pendientes en `docs/seo/ESTADO.md` (punto de entrada); detalle en `docs/seo/planes/fase-2.md`; comandos `/seo` ya ejecutados en `docs/seo/auditorias/REGISTRO-COMANDOS.md`. Mantener `ESTADO.md` al día al cerrar cada tarea.
 
 ## Comandos Frecuentes
 
@@ -294,5 +294,5 @@ Las carpetas de `app/[locale]` usan el slug interno (español); la URL pública 
 - Il root layout è `src/app/[locale]/layout.tsx` (contiene `<html lang>`); non esiste `src/app/layout.tsx`.
 - Link interni: sempre `Link` da `@/i18n/navigation` (mai `next/link`), altrimenti si perde il prefisso lingua.
 - Contenuto above-the-fold: niente `opacity: 0` iniziale nell'HTML (LCP).
-- Stato e attività pendenti: `docs/seo/archivo/fase-1/ESTADO-FASE-1.md`.
+- Stato e attività pendenti: `docs/seo/planes/fase-1-estado.md`.
 

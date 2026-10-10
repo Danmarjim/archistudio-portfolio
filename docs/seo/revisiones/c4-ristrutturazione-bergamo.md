@@ -23,7 +23,7 @@ Página de servicio **"Ristrutturazione appartamento a Bergamo"**, la búsqueda 
 
 **Archivos:** `content/services/{it,es,en}/ristrutturazione-appartamento-bergamo.mdx`.
 
-**De dónde sale el texto:** el proceso y los entregables vienen del texto actual de `/servizi`; el caso, de la ficha del proyecto LOVINGCOLORS; la biografía, de `CONTEXTO.md`. No se ha inventado ningún dato: lo que falta está marcado.
+**De dónde sale el texto:** el proceso y los entregables vienen del texto actual de `/servizi`; el caso, de la ficha del proyecto LOVINGCOLORS; la biografía, de `CONTEXTO-COWORK.md`. No se ha inventado ningún dato: lo que falta está marcado.
 
 ## Cómo verlo
 

@@ -1,6 +1,6 @@
 # Revisión — `seo/og-servicios`
 
-Imagen para redes sociales (`og:image`, la que sale al compartir el enlace en WhatsApp, Facebook o LinkedIn) propia en cada página de servicio. Hallazgo 4 del [audit del 10 oct](../archivo/datos/2026-10-10-audit-preview/FULL-AUDIT-REPORT.md): todas usaban la imagen por defecto.
+Imagen para redes sociales (`og:image`, la que sale al compartir el enlace en WhatsApp, Facebook o LinkedIn) propia en cada página de servicio. Hallazgo 4 del [audit del 10 oct](../auditorias/2026-10-10-preview/FULL-AUDIT-REPORT.md): todas usaban la imagen por defecto.
 
 ## Qué se ha hecho
 

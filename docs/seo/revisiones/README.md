@@ -1,6 +1,6 @@
 # Revisiones por rama
 
-**Para Martina:** todo lo pendiente en una sola lista, en [PARA-MARTINA.md](PARA-MARTINA.md).
+**Para Martina:** todo lo pendiente en una sola lista, en [PENDIENTE-MARTINA.md](../PENDIENTE-MARTINA.md).
 
 Cada tarea de SEO vive en su propia rama, que sale de `feat/seo-fase-2-pr2`, y se mergea a `main` sola cuando Martina da el visto bueno. Cada rama tiene aquí un documento con el mismo nombre (`seo/c4-…` → `c4-….md`) con:
 

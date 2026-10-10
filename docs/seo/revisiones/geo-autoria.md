@@ -1,6 +1,6 @@
 # Revisión — `seo/geo-autoria`
 
-Autora visible en los artículos propios (guías, reflexiones, anuncios). Parte de A2 del [plan de la fase 3](../PLAN-FASE-3.md): para que Google y los buscadores con IA citen un contenido, cuenta quién lo firma, y las guías solo mostraban la fecha.
+Autora visible en los artículos propios (guías, reflexiones, anuncios). Parte de A2 del [plan de la fase 3](../planes/fase-3.md): para que Google y los buscadores con IA citen un contenido, cuenta quién lo firma, y las guías solo mostraban la fecha.
 
 ## Qué se ha hecho
 

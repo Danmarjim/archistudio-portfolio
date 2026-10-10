@@ -1,6 +1,6 @@
 # Revisión — `seo/mensajes-cliente`
 
-Páginas más ligeras (A3 del [plan de la fase 3](../PLAN-FASE-3.md), hallazgo 5 del audit). Cada página enviaba al navegador **todos los textos de la web** (29 grupos, en el idioma de la página), aunque la mayoría solo se usan en el servidor o en otras páginas.
+Páginas más ligeras (A3 del [plan de la fase 3](../planes/fase-3.md), hallazgo 5 del audit). Cada página enviaba al navegador **todos los textos de la web** (29 grupos, en el idioma de la página), aunque la mayoría solo se usan en el servidor o en otras páginas.
 
 ## Qué se ha hecho
 

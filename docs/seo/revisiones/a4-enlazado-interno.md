@@ -1,6 +1,6 @@
 # Revisión — `seo/a4-enlazado-interno`
 
-Enlaces internos hacia las páginas de servicio, para que reciban visitas y autoridad desde los proyectos y las noticias. Tarea A4 de [`PLAN.md`](../PLAN.md).
+Enlaces internos hacia las páginas de servicio, para que reciban visitas y autoridad desde los proyectos y las noticias. Tarea A4 de [`planes/fase-2.md`](../planes/fase-2.md).
 
 ## Qué se ha hecho
 
