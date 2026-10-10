@@ -28,7 +28,7 @@ Guía **"Colori pareti casa: come sceglierli (e abbinarli) senza sbagliare"** en
 
 ## Cómo verlo
 
-Preview de `seo/preview-completa` o `npm run dev` → http://localhost:3000/news/come-scegliere-colore-pareti-casa. En producción no se publica mientras haya marcadores.
+Preview de `preview/seo-completa` o `npm run dev` → http://localhost:3000/news/come-scegliere-colore-pareti-casa. En producción no se publica mientras haya marcadores.
 
 ## Qué validar
 

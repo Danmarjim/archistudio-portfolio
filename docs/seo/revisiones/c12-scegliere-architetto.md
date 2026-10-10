@@ -27,7 +27,7 @@ Guía **"Come scegliere un architetto per ristrutturare casa (e quando non serve
 
 ## Cómo verlo
 
-Preview de `seo/preview-completa` o `npm run dev` → http://localhost:3000/news/come-scegliere-architetto-ristrutturazione. En producción no se publica mientras haya marcadores.
+Preview de `preview/seo-completa` o `npm run dev` → http://localhost:3000/news/come-scegliere-architetto-ristrutturazione. En producción no se publica mientras haya marcadores.
 
 ## Qué validar
 
