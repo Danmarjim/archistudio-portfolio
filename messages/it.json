@@ -299,8 +299,8 @@
     "it": "Italiano"
   },
   "SobreMiPage": {
-    "overline": "Chi sono",
-    "heroTitle": "Architettura empatica",
+    "overline": "Architettura empatica",
+    "heroTitle": "Martina Pozzi, architetta a Bergamo",
     "heroPara1": "Credo fermamente che la buona architettura migliori la qualità della vita.",
     "heroPara2": "Scegliere l'architetto giusto per la casa dei propri sogni significa trovare un buon professionista ma anche affidarsi a una persona che ti aiuterà in una fase decisionale importantissima.",
     "heroPara3": "Qualcuno che sappia ascoltarvi e accompagnarvi per mano in quel territorio inesplorato — e spesso stressante! — che è la ristrutturazione. E che vi guidi con occhio attento sui costi globali.",
@@ -308,7 +308,7 @@
     "bioTitle": "Chi è Martina C.M. Pozzi?",
     "bioPara1": "Sono un'architetta con oltre 15 anni di esperienza nella progettazione di spazi che trasformano la vita delle persone.",
     "bioPara2": "La mia passione per l'architettura è nata dal fascino per il modo in cui gli spazi possono influenzare le nostre emozioni e i nostri comportamenti.",
-    "bioPara3": "Il mio approccio unisce funzionalità, estetica e sostenibilità, alla ricerca costante di soluzioni che rispettino l'ambiente e rispondano alle reali esigenze di ogni cliente.",
+    "bioPara3": "Mi occupo soprattutto di ristrutturazioni di appartamenti e case, di interni su misura e di restyling. Il colore è il mio strumento principale: lo uso per dare a ogni stanza un carattere e una funzione, insieme a mobili disegnati su misura che sfruttano ogni centimetro.",
     "bioPara4": "Sono una persona solare, di quelle col \"sorriso a mille denti\", capace di trovare il lato positivo in ogni sfida.",
     "bioPara5": "La mia creatività è irrequieta: se non sto progettando interni, mi trovate a creare collage analogici con la firma",
     "timelineTitle": "Il mio percorso",
@@ -327,7 +327,21 @@
     "ctaOverline": "Studio con base a Bergamo 🇮🇹 e Siviglia 🇪🇸",
     "ctaTitle": "Hai un'idea nel cassetto?",
     "ctaSubtitle": "Scrivimi, mettiamoci alla prova e trasformiamola in realtà.",
-    "ctaButton": "Scrivimi"
+    "ctaButton": "Scrivimi",
+    "tRegYear": "Albo",
+    "tRegDate": "2012",
+    "tRegTitle": "Ordine degli Architetti",
+    "tRegDesc": "Iscrizione all'Ordine degli Architetti della Provincia di Monza e della Brianza.",
+    "credentialsTitle": "Formazione e iscrizione all'albo",
+    "cred1": "Laurea in Architettura al Politecnico di Milano (2011)",
+    "cred2": "Iscritta all'Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori della Provincia di Monza e della Brianza dal 2012",
+    "cred3": "Lingue di lavoro: italiano, spagnolo e inglese",
+    "cred4": "MP_archistudio, P.IVA IT07788400963",
+    "pressTitle": "Dicono dei miei progetti",
+    "pressSubtitle": "Riviste e blog di design che hanno pubblicato i miei lavori.",
+    "whereTitle": "Dove mi trovi",
+    "wherePara": "Ricevo nel mio studio di Bergamo, in Via Bologna 2, su appuntamento. I miei progetti e le recensioni dei clienti sono anche su:",
+    "ctaArchiAdvice": "Preferisci iniziare con un'ora di consulenza online? Prenota un ArchiAdvice"
   },
   "ServicePage": {
     "backToServices": "Tutti i servizi",

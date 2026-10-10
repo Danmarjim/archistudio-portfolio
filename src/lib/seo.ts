@@ -265,6 +265,17 @@ export function buildSiteGraph(locale: string, description: string) {
         email: siteConfig.email,
         telephone,
         alumniOf: { '@type': 'CollegeOrUniversity', name: 'Politecnico di Milano' },
+        hasCredential: {
+          '@type': 'EducationalOccupationalCredential',
+          name: 'Laurea in Architettura',
+          credentialCategory: 'degree',
+          recognizedBy: { '@type': 'CollegeOrUniversity', name: 'Politecnico di Milano' },
+        },
+        memberOf: {
+          '@type': 'Organization',
+          name: 'Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori della Provincia di Monza e della Brianza',
+          url: 'https://ordinearchitetti.mb.it/',
+        },
         knowsAbout: [
           'Architettura',
           "Interior design",
