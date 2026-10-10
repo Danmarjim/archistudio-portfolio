@@ -2,7 +2,7 @@
 
 Parte de `docs/seo/planes/fase-2.md` (bloque C, ola 1, tarea C1). Generado con `/seo content-brief https://mparchistudio.com/chi-sono` (modo mejora) el 8 oct 2026.
 
-**Estado:** pendiente. Algunos datos los tiene que confirmar Martina (checklist al final).
+**Estado:** ✅ redactado en it/es/en en la rama `seo/c1-chi-sono` (10 oct 2026). Lo que falta de Martina está en su [revisión](../revisiones/c1-chi-sono.md) y en [`PENDIENTE-MARTINA.md`](../PENDIENTE-MARTINA.md). La checklist de datos de abajo es la original del brief.
 
 **Página:** existente, `/chi-sono` (es `/es/sobre-mi`, en `/en/about`). No compite por una búsqueda genérica: es la página de **marca y confianza** de todo el sitio. Responde a "Martina Pozzi architetto", "MP_archistudio" y alimenta la autoridad (E-E-A-T) de las páginas de servicio, que enlazan aquí.
 
