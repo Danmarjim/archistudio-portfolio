@@ -30,7 +30,7 @@ N = 3 porque las auditorías N/A no cuentan. La única forma de subir N sería W
 | P1 | Rutas privadas | ✅ Solo `/api/`, y no hay contenido privado |
 | P1 | URL inexistente → 404 real | ✅ |
 | P1 | `llms.txt` | ✅ 200, `text/plain` (`llms-full.txt` no existe; es opcional) |
-| P1 | `Content-Signal` | ℹ️ No declarado (decisión pendiente, abajo) |
+| P1 | `Content-Signal` | ✅ `search=yes, ai-input=yes, ai-train=no` desde `seo/a6-content-signal` (antes no declarado) |
 | P1 | Markdown (`.md` o `Accept: text/markdown`) | ℹ️ No se ofrece. Ningún agente conocido lo pide; no se recomienda |
 | P1 | Estados de confirmación visibles, menús sin hover obligatorio | No comprobado (no hay check automático) |
 | P2–P3 | WebMCP, API Catalog, OAuth, A2A, UCP, `ai-catalog.json` | N/A: no hay API, tienda ni herramientas |
@@ -39,11 +39,11 @@ La comprobación del árbol con Playwright (`agent_ux_check.py`) no puede abrir 
 
 ## Política de acceso
 
-- **Entrenamiento** (GPTBot, ClaudeBot…): permitido (grupo `*`).
+- **Entrenamiento** (GPTBot, ClaudeBot…): acceso permitido (grupo `*`), con la preferencia `ai-train=no` declarada.
 - **Búsqueda con IA** (OAI-SearchBot, Claude-SearchBot, PerplexityBot): permitido.
 - **Agentes a petición del usuario** (ChatGPT-User, Claude-User, Perplexity-User): permitido; además no siempre leen `robots.txt`.
 
-**Decisión pendiente (Daniel/Martina):** ¿se permite usar los textos y fotos para **entrenar** modelos? Si no, se añade `Content-Signal: search=yes, ai-input=yes, ai-train=no` al grupo `*` y, si se quiere hacer cumplir, grupos `Disallow` para GPTBot, ClaudeBot y Google-Extended, sin tocar los de búsqueda. `Content-Signal` es una preferencia (borrador IETF y política de Cloudflare), no una obligación, y **no afecta a Google Search**.
+**Decidido el 10 oct:** no al entrenamiento. `Content-Signal: search=yes, ai-input=yes, ai-train=no` en el grupo `*` ([`seo/a6-content-signal`](../../revisiones/a6-content-signal.md)), sin `Disallow` por agente. Si algún día se quiere hacer cumplir, se añaden grupos `Disallow` para GPTBot, ClaudeBot y Google-Extended, sin tocar los de búsqueda. `Content-Signal` es una preferencia (borrador IETF y política de Cloudflare), no una obligación, y **no afecta a Google Search**.
 
 ## Estado de los estándares (10 oct 2026)
 
