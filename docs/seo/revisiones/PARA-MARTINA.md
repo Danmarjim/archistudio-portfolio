@@ -66,6 +66,8 @@ Todo está escrito en primera persona, como si fueras tú. Revisa que suene a ti
 - [ ] Textos de las 4 páginas de servicio, en italiano, español e inglés.
 - [ ] Textos de la ficha de Google (`FICHA-GOOGLE.md` §6) y mensajes para pedir reseñas (§5).
 - [ ] **Home** ([revisión](a3-home.md)): el H1 nuevo "Architetto a Bergamo: ristrutturazioni e interni su misura" (¿"Architetto" por la búsqueda o "Architetta"?), "Chi sono", resúmenes de servicios, "Come lavoro" y "Dove lavoro".
+- [ ] **Chi sono** ([revisión](c1-chi-sono.md)): H1 con tu nombre, la frase sobre tu especialidad, inscripción en el Ordine desde 2012 y los perfiles enlazados.
+- [ ] **Sevilla:** la página "chi sono" dice "Studio con base a Bergamo e Siviglia". ¿Sigues trabajando en Sevilla? Si no, se quita de la web y de los datos estructurados.
 - [ ] **Enlaces de proyectos a servicios** ([revisión](a4-enlazado-interno.md)): cocinas → restyling y baños → reforma; frases añadidas al final de las noticias de prensa.
 - [ ] Rama base: las dos noticias de Homeadore y los títulos de los proyectos en español e inglés ([revisión](feat-seo-fase-2-pr2.md)).
 
