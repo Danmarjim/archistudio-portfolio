@@ -2,7 +2,7 @@
 
 Parte de `docs/seo/planes/fase-2.md` (bloque A, tarea A3). Generado con `/seo content-brief https://mparchistudio.com/` (modo mejora) el 8 oct 2026.
 
-**Estado:** pendiente. Depende de D5 (copy del H1, decide Martina), de A2 (páginas de servicio a las que enlazar) y de C5 (testimonios).
+**Estado:** ✅ redactado en it/es/en en la rama `seo/a3-home` (10 oct 2026). Lo que falta de Martina está en su [revisión](../revisiones/a3-home.md) y en [`PENDIENTE-MARTINA.md`](../PENDIENTE-MARTINA.md). La checklist de datos de abajo es la original del brief.
 
 **Página:** existente, `/`. Según el plan de clusters es el **pilar** del sitio: keyword principal "architetto Bergamo"; secundarias "studio di architettura Bergamo", "architetto ristrutturazione Bergamo", "consulenza architetto Bergamo" (comparten 2/2–2/3 URLs de la SERP). "Architetto d'interni Bergamo" va a `/servizi` (0/0 de solape).
 

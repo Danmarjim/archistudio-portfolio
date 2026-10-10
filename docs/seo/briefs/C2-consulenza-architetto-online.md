@@ -2,7 +2,7 @@
 
 Parte de `docs/seo/planes/fase-2.md` (bloque C, ola 1, tarea C2; estructura en A2). Generado con `/seo content-brief` el 8 oct 2026.
 
-**Estado:** pendiente. Bloqueado por los datos de Martina (checklist al final).
+**Estado:** ✅ redactado en it/es/en en la rama `seo/c2-consulenza-online` (10 oct 2026). Lo que falta de Martina está en su [revisión](../revisiones/c2-consulenza-online.md) y en [`PENDIENTE-MARTINA.md`](../PENDIENTE-MARTINA.md). La checklist de datos de abajo es la original del brief.
 
 **Página:** nueva, `/servizi/consulenza-architetto-online` (hoy ArchiAdvice es solo un ancla en `/servizi` con 4 viñetas y la noticia `/news/archiadvice-lancio`).
 
