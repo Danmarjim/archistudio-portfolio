@@ -36,12 +36,11 @@ Página de servicio **"Consulenza architetto online" (ArchiAdvice)**. Es el serv
 - [x] Proceso: cuestionario en Calendly al reservar, fotos y planimetría por email (las instrucciones llegan tras la reserva), pago por PayPal o transferencia hasta 3 días antes (si no, se anula la cita), factura al terminar.
 - [x] Los 100 € se descuentan del precio final si después encarga el proyecto (10 oct).
 
-**Martina: datos pendientes (5 por idioma)**
+**Martina: datos pendientes (4 por idioma)**
 - [ ] Qué recibe el cliente después de la llamada (resumen escrito, paleta, enlaces…). Es el mayor diferenciador según el brief. Hoy el texto dice "consigli pratici e nuovi punti di vista", como la descripción de Calendly.
 - [ ] ¿Reembolso si se anula después de pagar?
 - [ ] ¿ArchiAdvice también en persona en el estudio de Bergamo?
 - [ ] 1–2 ejemplos reales de consultas (problema → solución).
-- [ ] Número de colegiada.
 
 **Nota:** en la confirmación de Calendly se pide enviar las fotos a un email personal de hotmail. En la web no se publica ese email. Cuando exista el email de dominio (D8), conviene cambiarlo también en Calendly.
 
@@ -52,7 +51,7 @@ Página de servicio **"Consulenza architetto online" (ArchiAdvice)**. Es el serv
 
 **Daniel**
 - [ ] El botón de reserva abre Calendly; se ve bien en móvil.
-- [ ] Verificado en local el 10 oct: `tsc`, `lint` y `build` sin errores; 200 en it/es/en con su title; 5 marcadores resaltados por idioma; precio "Prezzo / Precio / Price · 100 €" y `Offer` con `price: 100`.
+- [ ] Verificado en local el 10 oct: `tsc`, `lint` y `build` sin errores; 200 en it/es/en con su title; 4 marcadores resaltados por idioma (la biografía ya no pide la colegiación: va en reforma y compra de vivienda); precio "Prezzo / Precio / Price · 100 €" y `Offer` con `price: 100`.
 
 ## Pendiente para otras ramas
 
