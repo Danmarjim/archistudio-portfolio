@@ -59,7 +59,7 @@ Los datos pendientes salen **resaltados en amarillo**.
 ## Pendiente para otras ramas
 
 - Enlaces hacia esta página desde la home, la ficha de LOVINGCOLORS y la noticia de Cose di Casa → rama A4 (enlazado interno).
-- Enlace a la guía C11 (coste de una reforma en Bergamo) cuando exista, y a "consulenza acquisto casa" cuando se publique.
+- Enlaces a las guías C11 (coste de la obra) y C7 (honorarios) en "Quanto costa": ya añadidos; mientras no se publiquen, apuntan a `/news`.
 - Fotos del antes de LOVINGCOLORS, cuando Martina las tenga.
 
 ## Cómo mergear
