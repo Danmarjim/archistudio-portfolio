@@ -29,7 +29,7 @@ export default function CallToAction({
   const resolvedSubtitle = subtitle ?? t('subtitle')
   const resolvedCta = ctaText ?? t('cta')
   return (
-    <section className="bg-primary-500 py-24">
+    <section className="bg-primary-600 py-24">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

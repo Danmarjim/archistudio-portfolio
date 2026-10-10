@@ -15,7 +15,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    'bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700',
+    'bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800',
   secondary:
     'bg-neutral-100 text-foreground hover:bg-neutral-200 active:bg-neutral-300',
   outline:
