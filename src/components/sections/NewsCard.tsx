@@ -79,7 +79,7 @@ export default function NewsCard({ post, index = 0 }: NewsCardProps) {
             >
               {categoryToKey[post.category] ? t(categoryToKey[post.category] as Parameters<typeof t>[0]) : post.category}
             </span>
-            <span className="text-xs text-neutral-400">{formatDate(post.date)}</span>
+            <span className="text-xs text-neutral-500">{formatDate(post.date)}</span>
           </div>
 
           {post.source && (

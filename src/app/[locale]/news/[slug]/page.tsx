@@ -118,7 +118,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
             >
               {categoryToKey[post.category] ? t(categoryToKey[post.category] as Parameters<typeof t>[0]) : post.category}
             </span>
-            <span className="text-sm text-neutral-400">{formatDate(post.date, locale)}</span>
+            <span className="text-sm text-neutral-500">{formatDate(post.date, locale)}</span>
             {post.source && (
               <span className="text-sm font-medium text-primary-600">{post.source}</span>
             )}
@@ -197,7 +197,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
               >
                 <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-neutral-400">{t('previous')}</div>
+                  <div className="text-xs uppercase tracking-wider text-neutral-500">{t('previous')}</div>
                   <div className="font-medium text-foreground line-clamp-1">{prev.title}</div>
                 </div>
               </Link>
@@ -209,7 +209,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
                 className="group flex items-center gap-3 text-right text-sm text-neutral-500 transition-colors hover:text-foreground"
               >
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-neutral-400">{t('next')}</div>
+                  <div className="text-xs uppercase tracking-wider text-neutral-500">{t('next')}</div>
                   <div className="font-medium text-foreground line-clamp-1">{next.title}</div>
                 </div>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
