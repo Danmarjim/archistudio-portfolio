@@ -19,7 +19,7 @@ En la preview, lo que falta sale **resaltado en amarillo** en las páginas. Mien
 |---|---|
 | [ ] **Número de colegiada** (Ordine di Monza e Brianza) | Home, chi sono, los 4 servicios, guía de cómo elegir arquitecto |
 | [ ] **¿La primera reunión o visita es gratuita?** Si no, ¿cuánto cuesta? | Reforma, guía de cuánto cuesta un arquitecto, guía de cómo elegir arquitecto |
-| [ ] **Honorarios o rangos** de reforma, asesoría de compra y restyling (ArchiAdvice ya tiene precio). **¿Publicas cómo los calculas?** (porcentaje, por fases o mixto) | Los 3 servicios, guía de cuánto cuesta un arquitecto |
+| [ ] **Honorarios o rangos** de reforma, asesoría de compra y restyling (ArchiAdvice ya tiene precio). **¿Publicas cómo los calculas?** (porcentaje, por fases o mixto). En Google, quien ofrece la asesoría de compra publica el precio: 97–250 € ([B3](auditorias/2026-10-10-intencion/README.md)) | Los 3 servicios, guía de cuánto cuesta un arquitecto |
 | [ ] **2–3 testimonios con permiso** (ideal: uno de reforma, uno de restyling y uno de ArchiAdvice) | Home y las 4 páginas de servicio |
 | [ ] **Plazos típicos**: piso de 70–90 m² (proyecto y obra por separado), un baño, un restyling de cocina, un restyling de una estancia y de una casa entera, una comprobación antes de comprar | Reforma, restyling, asesoría de compra y guías de costes, baño, cocina y conformidad |
 | [ ] **Fotos del antes** de LOVINGCOLORS, CASA PEONIA, los baños y las cocinas | Reforma, restyling, guías del baño y la cocina |
