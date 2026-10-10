@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import JsonLd from '@/components/seo/JsonLd'
+import ClientMessages from '@/components/i18n/ClientMessages'
 import { buildBreadcrumb, buildMetadata } from '@/lib/seo'
 
 type Props = {
@@ -30,7 +31,7 @@ export default async function ServiciosLayout({ children, params }: Props) {
   return (
     <>
       <JsonLd data={buildBreadcrumb(locale, [{ name: t('services'), path: '/servicios' }])} />
-      {children}
+      <ClientMessages namespaces={['ServiciosPage']}>{children}</ClientMessages>
     </>
   )
 }
