@@ -64,6 +64,20 @@ export function resolveServiceLinks(content: string, publishedSlugs: Set<string>
   )
 }
 
+// Servizio a cui rimanda la scheda di un progetto, in base alla categoria (valori in italiano)
+const SERVICE_BY_PROJECT_CATEGORY: Record<string, string> = {
+  'Ristrutturazione integrale': 'ristrutturazione-appartamento-bergamo',
+  Bagni: 'ristrutturazione-appartamento-bergamo',
+  Restyling: 'restyling-casa',
+  Cucine: 'restyling-casa',
+}
+
+/** Pagina di servizio collegata a un progetto, solo se pubblicata. */
+export function getServiceForProject(category: string, locale: string = 'it'): ServicePage | undefined {
+  const slug = SERVICE_BY_PROJECT_CATEGORY[category]
+  return slug ? getPublishedServiceBySlug(slug, locale) : undefined
+}
+
 export function getPublishedServiceBySlug(slug: string, locale: string = 'it'): ServicePage | undefined {
   return getPublishedServices(locale).find((s) => s.slug === slug)
 }
