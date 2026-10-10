@@ -127,43 +127,46 @@ export default function ServiciosContent({ servicePages }: ServiciosContentProps
                       ))}
                     </ul>
 
-                    {servicePages[slug] && (
-                      <Link
-                        href={serviceHref(servicePages[slug])}
-                        className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary-700 underline underline-offset-4 hover:text-primary-800"
-                      >
-                        {t('serviceDetailCta')}
-                        <ArrowRight className="h-4 w-4" />
-                      </Link>
-                    )}
+                    {/* Azione principale sopra, link alla pagina del servizio sotto */}
+                    <div className="mt-8 flex flex-col items-start gap-4">
+                      {ctaIsExternal ? (
+                        <a
+                          href={ctaHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-700"
+                        >
+                          {sd(`${key}.cta`)}
+                          <ArrowRight className="h-4 w-4" />
+                        </a>
+                      ) : ctaHref.startsWith('#') ? (
+                        <a
+                          href={ctaHref}
+                          className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-700"
+                        >
+                          {sd(`${key}.cta`)}
+                          <ArrowRight className="h-4 w-4" />
+                        </a>
+                      ) : (
+                        <Link
+                          href="/contacto"
+                          className="inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-700"
+                        >
+                          {sd(`${key}.cta`)}
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      )}
 
-                    {ctaIsExternal ? (
-                      <a
-                        href={ctaHref}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-700"
-                      >
-                        {sd(`${key}.cta`)}
-                        <ArrowRight className="h-4 w-4" />
-                      </a>
-                    ) : ctaHref.startsWith('#') ? (
-                      <a
-                        href={ctaHref}
-                        className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-700"
-                      >
-                        {sd(`${key}.cta`)}
-                        <ArrowRight className="h-4 w-4" />
-                      </a>
-                    ) : (
-                      <Link
-                        href="/contacto"
-                        className="mt-8 inline-flex items-center gap-2 rounded-xl bg-primary-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-700"
-                      >
-                        {sd(`${key}.cta`)}
-                        <ArrowRight className="h-4 w-4" />
-                      </Link>
-                    )}
+                      {servicePages[slug] && (
+                        <Link
+                          href={serviceHref(servicePages[slug])}
+                          className="inline-flex items-center gap-2 text-sm font-medium text-primary-700 underline underline-offset-4 hover:text-primary-800"
+                        >
+                          {t('serviceDetailCta')}
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      )}
+                    </div>
                   </div>
 
                   {/* Visual */}

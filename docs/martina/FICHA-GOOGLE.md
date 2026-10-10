@@ -1,6 +1,6 @@
 # Ficha de Google (Google Business Profile): categorías y atributos
 
-Análisis de las fichas que aparecen en Google Maps para las búsquedas objetivo (prompts 1 y 2 de [`CONTEXTO.md`](CONTEXTO.md) §2). Hecho el 9 oct 2026 en Google Maps (`hl=it`), para configurar la ficha de MP_archistudio (D-1). Repetir cuando la ficha lleve unos meses con reseñas.
+Análisis de las fichas que aparecen en Google Maps para las búsquedas objetivo (prompts 1 y 2 de [`CONTEXTO-COWORK.md`](CONTEXTO-COWORK.md) §2). Hecho el 9 oct 2026 en Google Maps (`hl=it`), para configurar la ficha de MP_archistudio (D-1). Repetir cuando la ficha lleve unos meses con reseñas.
 
 > **La ficha ya existe** (descubierto el 9 oct): sale en el panel de Google al buscar "martina pozzi architetto". Su estado actual y lo que hay que cambiar están en la sección 3.
 
@@ -103,7 +103,7 @@ Las reseñas de Spazi Belli no se pueden pasar a Google: a esos clientes hay que
 
 ## 6. Textos para pegar en la ficha
 
-Redactados el 10 oct 2026 a partir de la web y de `CONTEXTO.md` (prompts 6 y 7). Pendientes de que Martina los revise. Reglas de Google que cumplen: sin URLs, sin precios ni ofertas en la descripción, sin repetir keywords.
+Redactados el 10 oct 2026 a partir de la web y de `CONTEXTO-COWORK.md` (prompts 6 y 7). Pendientes de que Martina los revise. Reglas de Google que cumplen: sin URLs, sin precios ni ofertas en la descripción, sin repetir keywords.
 
 ### Descripción (732 de 750 caracteres)
 
