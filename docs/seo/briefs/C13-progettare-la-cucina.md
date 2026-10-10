@@ -2,7 +2,7 @@
 
 Parte de `docs/seo/planes/fase-2.md` (bloque C, ola 3, tarea C13). Generado con `/seo content-brief progettazione cucina architetto` el 8 oct 2026.
 
-**Estado:** pendiente. Se puede escribir con lo que ya hay en la web (2 proyectos de cocina + las cocinas de 3 reformas integrales); faltan fotos del antes y algunos datos de Martina.
+**Estado:** ✅ redactado en it/es/en en la rama `seo/c13-progettare-cucina` (10 oct 2026). Lo que falta de Martina está en su [revisión](../revisiones/c13-progettare-cucina.md) y en [`PENDIENTE-MARTINA.md`](../PENDIENTE-MARTINA.md). La checklist de datos de abajo es la original del brief.
 
 **Página:** nueva, guía en `/news/progettare-la-cucina-consigli-architetto`.
 

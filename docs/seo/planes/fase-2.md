@@ -8,7 +8,7 @@ Origen: re-auditoría del 7 oct 2026 (score 49 → 80), plan de clusters "archit
 
 > Antes de cada tarea, comprobar en el código que el problema sigue ahí.
 
-**Estado (10 oct):** en cierre. Lo que depende de Martina (decisiones D2–D5 y D8, validar textos, C5, C15, F1 paso 2, F7 y el bloque D) pasa a la [fase Martina](fase-martina.md); el seguimiento (bloque E), a la [fase 3](fase-3.md). Para cerrar la fase solo quedan los **borradores de las guías C8, C9, C10, C12, C13 y C14**.
+**Estado:** ✅ **cerrada el 10 oct 2026** por nuestra parte. Todo lo que no depende de Martina está hecho: borradores de C1–C4 y C6–C14 y enlaces internos entre guías, servicios y proyectos. Lo que falta (validar, completar los `[DA CONFERMARE]` y publicar) está en la [fase Martina](fase-martina.md); el seguimiento, en la [fase 3](fase-3.md).
 
 ## Decisiones previas (bloquean tareas)
 
@@ -67,12 +67,12 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 - Cada una con: H1 con keyword, qué incluye, para quién, proceso, precio (D2) o "da X €", proyectos relacionados, CTA a Calendly/contacto, JSON-LD `Service` con `provider` → `#business` (y `Offer` cuando haya precio).
 - `/news/archiadvice-lancio` se queda como anuncio y enlaza visiblemente a la página del servicio.
 
-**A3. Home como página pilar** · `src/app/[locale]/page.tsx`, `Hero.tsx`, `messages/*.json` · **Brief:** `docs/seo/briefs/A3-home.md`
+**✅ rama `seo/a3-home` · A3. Home como página pilar** · `src/app/[locale]/page.tsx`, `Hero.tsx`, `messages/*.json` · **Brief:** `docs/seo/briefs/A3-home.md`
 - H1/intro con Bergamo (D5) y un párrafo de entidad de 40–60 palabras (quién, qué, dónde, credenciales).
 - Bloque "Servizi" enlazando a las 4 páginas de A2; bloque "Zona" (Bergamo, Milano, Brianza) sin crear páginas de ciudad.
 - Objetivo ~1.300 palabras visibles (la SERP son homes de estudios y directorios, no guías largas).
 
-**A4. Enlazado interno** · según `cluster-plan.json` (matriz de 68 enlaces)
+**✅ rama `seo/a4-enlazado-interno` · A4. Enlazado interno** · según `cluster-plan.json` (matriz de 68 enlaces)
 - Noticias de prensa → proyecto que mencionan (Cose di Casa → appartamento-lovingcolors; HOME n.36 → casa-archi-colori).
 - Cada proyecto → servicio correspondiente + contacto.
 - Cada servicio → 2–3 proyectos relacionados.
@@ -123,7 +123,7 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 
 ## Bloque C — Contenido nuevo (requiere textos o datos de Martina)
 
-Nosotros redactamos el borrador de cada página con su brief, con los datos que faltan como `[DA CONFERMARE]`; Martina valida y completa ([fase Martina](fase-martina.md)). Borradores hechos: C1–C4, C6, C7, C11. Pendientes para cerrar la fase: C8, C9, C10, C12, C13, C14.
+Nosotros redactamos el borrador de cada página con su brief, con los datos que faltan como `[DA CONFERMARE]`; Martina valida y completa ([fase Martina](fase-martina.md)). Borradores hechos: C1–C4 y C6–C14 (10 oct), con enlaces cruzados entre guías, servicios, fichas de proyecto y chi sono.
 
 Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, secciones, palabras, competidores, enlaces). Los briefs se guardan en `docs/seo/briefs/` con el código de la tarea (`C2-…md`).
 
@@ -225,18 +225,15 @@ Diagnóstico: hreflang técnicamente perfecto (63/63 URLs: autorreferencia, reto
 **✅ Cerrado (decidido no hacerlo) · G3. Slugs italianos en news y tappeti para es/en** · Info
 - `/en/news/il-colore-nell-architettura`. Aceptable con tan pocas páginas; revisar solo si las noticias pasan a ser contenido estratégico en es/en.
 
-## Orden de ejecución propuesto
+## Cómo terminó la fase
 
-| PR | Contenido | Depende de |
+| Entrega | Contenido | Estado |
 |---|---|---|
-| ✅ PR 1 | A1 (slugs + 301) + B1–B11 (correcciones técnicas) | D1, D6, D7 (B9) |
-| PR 2 | A2 + A3 + A4 con el contenido actual de `/servicios` ampliado | D5; precios (D2) si ya están |
-| PR 3 | C1–C5 (ola 1 de contenido) | textos/datos de Martina |
-| PR 4+ | C6–C15 (olas 2 y 3) | briefs + textos |
-| ✅ PR imágenes/i18n | F1 (paso 1), F2–F6, G1, G2 | — (F1 paso 2 y F7: Martina) |
-| ✅ PR 2 (`feat/seo-fase-2-pr2`) | C-pre, C5b, F1–F6, G1, G2, meta de la home, estructura de A2 | — |
+| PR 1 | A1 (slugs + 301) y B1–B11 (correcciones técnicas) | ✅ En `main` |
+| PR 2 (`feat/seo-fase-2-pr2`) | C-pre, C5b, F1 (paso 1)–F6, G1, G2, meta de la home y estructura de A2 | ✅ Hecho, sin merge: es la base de todas las ramas |
+| Una rama por tarea (`seo/*`) | A3, A4, C1–C4, C6–C14 y la ficha de Google | ✅ Redactadas; esperan el visto bueno de Martina |
 
-D (Martina) en paralelo desde ya; E después de cada PR.
+Lo que queda (validar, completar los `[DA CONFERMARE]`, la ficha de Google y el merge) está en la [fase Martina](fase-martina.md). El merge va primero con la base y después con cada rama aprobada, en cualquier orden.
 
 ## Verificación de cada PR
 
