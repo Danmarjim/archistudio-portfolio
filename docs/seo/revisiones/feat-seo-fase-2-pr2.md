@@ -10,6 +10,7 @@
 | `c446cc9` | Noticias en Markdown completo (necesario para las guías); dos noticias nuevas sobre Homeadore en it/es/en; campos `seoTitle` y `updated` | `src/components/shared/Markdown.tsx`, `content/news/*/homeadore-*.mdx`, `src/lib/news.ts` |
 | `1722869` | Estructura de páginas de servicio (`/servizi/[slug]`) con 4 borradores **sin publicar**; `/servizi` enlaza solo a las publicadas; el formulario de contacto acepta `?tipo=` | `src/app/[locale]/servicios/[slug]/`, `content/services/`, `src/lib/services.ts` |
 | `5034ed6` | Marcador `[DA CONFERMARE: …]`: resaltado en previews, bloquea la publicación en producción | `src/lib/pending.ts`, `src/lib/services.ts`, `Markdown.tsx` |
+| (este commit) | Enlaces seguros entre servicios: un enlace Markdown a `/servicios/<slug>` no publicado apunta al hub `/servizi` (páginas de servicio y noticias) | `src/lib/services.ts`, `src/lib/news.ts` |
 | varios `docs:` | Reorganización de `docs/seo/`, 14 briefs, `CONTEXTO.md`, `FICHA-GOOGLE.md` | `docs/` |
 
 ## Cómo verlo
