@@ -1,4 +1,4 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "ignoreCommand": "git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- . ':(exclude)docs' ':(exclude)*.md' ':(exclude).claude'"
+  "ignoreCommand": "case \"$VERCEL_GIT_COMMIT_REF\" in seo/preview-completa) ;; seo/*) exit 0 ;; esac; git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- . ':(exclude)docs' ':(exclude)*.md' ':(exclude).claude'"
 }

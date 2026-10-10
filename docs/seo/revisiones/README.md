@@ -11,7 +11,7 @@ Cada tarea de SEO vive en su propia rama, que sale de `feat/seo-fase-2-pr2`, y s
 
 Los textos con datos pendientes llevan `[DA CONFERMARE: …]`. En local y en las previews se ven resaltados en amarillo; en producción una página que los contenga no se publica.
 
-`seo/preview-completa` junta todas las ramas para ver el resultado final. El estado general (`docs/seo/ESTADO.md`) solo se actualiza en esa rama.
+`seo/preview-completa` junta todas las ramas para ver el resultado final. **Es la única rama `seo/*` que Vercel despliega** (`vercel.json`): las ramas de tarea no generan preview, para no ocupar espacio en el plan gratuito. El estado general (`docs/seo/ESTADO.md`) solo se actualiza en esa rama.
 
 ## Ramas
 
