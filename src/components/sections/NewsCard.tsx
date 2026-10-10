@@ -11,6 +11,8 @@ import { useTranslations, useLocale } from 'next-intl'
 interface NewsCardProps {
   post: NewsPost
   index?: number
+  /** `h2` nei listati senza sezioni (/progetti, /news); `h3` sotto un titolo di sezione */
+  headingLevel?: 'h2' | 'h3'
 }
 
 const categoryColors: Record<string, string> = {
@@ -27,7 +29,7 @@ const categoryToKey: Record<string, string> = {
   interviste: 'filterInterviste',
 }
 
-export default function NewsCard({ post, index = 0 }: NewsCardProps) {
+export default function NewsCard({ post, index = 0, headingLevel: Heading = 'h3' }: NewsCardProps) {
   const t = useTranslations('NewsPage')
   const locale = useLocale()
   const formatDate = (dateStr: string) =>
@@ -88,9 +90,9 @@ export default function NewsCard({ post, index = 0 }: NewsCardProps) {
             </p>
           )}
 
-          <h3 className="font-serif text-lg font-medium text-foreground transition-colors group-hover:text-primary-600 line-clamp-2">
+          <Heading className="font-serif text-lg font-medium text-foreground transition-colors group-hover:text-primary-600 line-clamp-2">
             {post.title}
-          </h3>
+          </Heading>
 
           <p className="mt-2 line-clamp-3 text-sm text-neutral-600 flex-1">
             {post.excerpt}
