@@ -1,5 +1,7 @@
 # Plan SEO — fase 3 (mientras Martina valida)
 
+> **10 oct:** lo que depende de Martina (el día de publicar y el SEO local) pasa a la [fase Martina](fase-martina.md); las guías C12, C9 y C13 vuelven a la [fase 2](fase-2.md), donde estaban. Aquí queda solo trabajo nuestro. Se empieza cuando se cierre la fase 2.
+
 10 oct 2026. Objetivo: subir del **84/100** del [audit de la preview](../auditorias/2026-10-10-preview/FULL-AUDIT-REPORT.md) a **~90** y llegar al día del visto bueno con todo listo para publicar e indexar. Cada tarea va en su rama `seo/*`, con su documento de revisión, y se junta en `seo/preview-completa`. `main` no se toca hasta que Martina valide.
 
 ## 0. Preparar la skill (una vez)
@@ -18,37 +20,34 @@
 | A6 | **Agentes de IA:** que un agente navegue y entienda la web (árbol de accesibilidad, `llms.txt`, robots) | `/seo agentic <url>` | Preparación IA | 30 min |
 | A7 | **Simulacro de merge** de todas las ramas en una copia de `main`: conflictos (`package.json`, `messages`), build y redirecciones | — | Seguridad del día del merge | 30 min |
 
-## B. Contenido que no depende de ella
+## B. Preparación sin Martina
 
 | # | Tarea | Comando | Por qué |
 |---|---|---|---|
-| B1 | **Guía C12**, "Come scegliere un architetto a Bergamo" (brief listo) | `/seo content-brief` ya hecho → redactar | La lee quien está a punto de contratar; enlaza a los 4 servicios |
-| B2 | **Guías C9 (bagno) y C13 (cucina)** con sus 5 proyectos reales (briefs listos) | ídem | Búsquedas locales concretas y su especialidad |
+| ~~B1~~ | Guía C12 → [fase 2](fase-2.md) | — | — |
+| ~~B2~~ | Guías C9 y C13 → [fase 2](fase-2.md) | — | — |
 | B3 | **Comprobar la intención de búsqueda** de las páginas objetivo: ¿Google quiere una página de servicio, una guía o un listado para cada keyword? | `/seo sxo <url>` | Evita escribir el tipo de página equivocado |
 | B4 | **Sección de testimonios** lista y oculta: aparece sola cuando haya 2–3 | — | Señal de confianza en home y servicios |
 | B5 | **4 semanas de publicaciones** para la ficha de Google, a partir de los proyectos | — | Actividad en la ficha = mejor posición en el mapa |
 
-## C. El día de publicar (tras el visto bueno)
+## C. El día de publicar
 
-| # | Tarea | Comando |
-|---|---|---|
-| C1 | **Foto de producción antes del merge**, para comparar después | `/seo drift baseline https://mparchistudio.com/` |
-| C2 | Merge a `main` (base → ramas aprobadas) y deploy | — |
-| C3 | Comparar después del merge: títulos, canonical, hreflang, schema | `/seo drift compare https://mparchistudio.com/` |
-| C4 | Reenviar `sitemap.xml` y pedir indexación de los 4 servicios, la home y las guías | `/seo google` (Search Console) |
-| C5 | **Bing Webmaster + IndexNow**: Bing indexa en horas y alimenta ChatGPT Search y Copilot | `/seo bing` |
-| C6 | Audit sobre producción (con PageSpeed y CrUX reales) | `/seo audit https://mparchistudio.com/` |
+→ Movido a la [fase Martina](fase-martina.md) §4 (depende de su visto bueno).
 
-## D. Local y seguimiento
+## D. Seguimiento (sin Martina)
 
 | # | Tarea | Comando | Cuándo |
 |---|---|---|---|
-| D1 | **SEO local completo**: ficha de Google, coherencia de nombre, dirección y teléfono en directorios, reseñas | `/seo local https://mparchistudio.com/` | Cuando Martina actualice la ficha |
+| D0 | Inspeccionar la reindexación de las URLs nuevas (Google aún elige `/servicios` como canónica de `/servizi`) | `/seo google inspect-batch` | ~11 oct |
+| D0b | **CSP**: pasar de `Report-Only` a `Content-Security-Policy` si no hay violaciones (B11) | — (código) | ~15 oct, tras una semana en producción |
+| D1 | SEO local → [fase Martina](fase-martina.md) §5 | — | — |
 | D2 | Informe mensual: Search Console, Speed Insights, ficha | `/seo google` (informe) | Cada mes |
-| D3 | Backlinks y menciones | `/seo backlinks` | Con la API de Moz (pendiente, gratuita) |
+| D3 | Backlinks y menciones | `/seo backlinks` | Con la API de Moz (Daniel, gratuita) |
+| D4 | Volúmenes de búsqueda de las keywords del plan | Planificador de Google Ads (Daniel) | Cuando se pueda |
+| D5 | Tras cada deploy: `/seo drift compare` y PageSpeed móvil | `/seo drift compare https://mparchistudio.com/` | Cada deploy |
 
 ## Orden recomendado
 
-0 → A1 + A2 (textos mejores antes de que Martina los revise) → A4 → A3 → A7 → B1 → B2 → resto. C cuando Martina dé el visto bueno; D después.
+Cerrar la fase 2 → A7 → A5 + A6 + B3 → B4 → B5. D según su fecha.
 
 **Comandos que no aportan aquí:** `ecommerce`, `programmatic`, `competitor-pages`, `cluster` (ya hecho el 8 oct), `hreflang` (sin errores en el audit), `seranking`/`profound` (de pago, para cuando haya tráfico).
