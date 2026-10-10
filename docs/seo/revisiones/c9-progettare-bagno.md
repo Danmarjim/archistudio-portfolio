@@ -35,7 +35,7 @@ Guía **"Progettare il bagno: i consigli di un'architetta (con 3 bagni reali)"**
 
 ## Cómo verlo
 
-Preview de `seo/preview-completa` o `npm run dev` → http://localhost:3000/news/progettare-il-bagno-consigli-architetto. En producción no se publica mientras haya marcadores.
+Preview de `preview/seo-completa` o `npm run dev` → http://localhost:3000/news/progettare-il-bagno-consigli-architetto. En producción no se publica mientras haya marcadores.
 
 ## Qué validar
 

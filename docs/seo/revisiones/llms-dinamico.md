@@ -16,7 +16,7 @@
 
 ## Cómo verlo
 
-`/llms.txt` en la preview o en local. En esta rama sola no hay servicios publicados (solo el enlace al hub); en `seo/preview-completa` salen los 4 servicios y las 2 guías.
+`/llms.txt` en la preview o en local. En esta rama sola no hay servicios publicados (solo el enlace al hub); en `preview/seo-completa` salen los 4 servicios y las 2 guías.
 
 ## Qué validar
 
