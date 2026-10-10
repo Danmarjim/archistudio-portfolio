@@ -29,9 +29,11 @@ interface SobreMiContentProps {
   profiles: ProfileLink[]
   /** Slug della pagina ArchiAdvice, se pubblicata; altrimenti il link va all'hub /servizi */
   archiAdviceSlug?: string
+  /** Slug dell'articolo sul colore, se pubblicato; altrimenti il link va a /news */
+  colorArticleSlug?: string
 }
 
-export default function SobreMiContent({ pressItems, projects, profiles, archiAdviceSlug }: SobreMiContentProps) {
+export default function SobreMiContent({ pressItems, projects, profiles, archiAdviceSlug, colorArticleSlug }: SobreMiContentProps) {
   const t = useTranslations('SobreMiPage')
   const credentials = [t('cred1'), t('cred2'), t('cred3'), t('cred4')]
 
@@ -111,7 +113,7 @@ export default function SobreMiContent({ pressItems, projects, profiles, archiAd
                 {t.rich('bioPara3', {
                   link: (chunks) => (
                     <Link
-                      href={newsHref('il-colore-nell-architettura')}
+                      href={colorArticleSlug ? newsHref(colorArticleSlug) : '/news'}
                       className="font-medium text-primary-700 underline underline-offset-4 hover:text-primary-800"
                     >
                       {chunks}
