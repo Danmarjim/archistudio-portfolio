@@ -234,6 +234,7 @@ coverImage: "/images/news/cover.jpg"
 imagePosition: "center 32%"   # Opcional
 imageAspect: "portrait"       # Opcional
 excerpt: "Resumen..."
+description: "Meta description"  # Opcional (≤155 car.); si falta, se usa excerpt
 source: "Nombre publicación"  # Opcional
 sourceUrl: "https://..."      # Opcional
 images:                       # Opcional — galería adicional
