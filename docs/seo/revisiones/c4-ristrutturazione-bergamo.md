@@ -34,12 +34,12 @@ Los datos pendientes salen **resaltados en amarillo**.
 
 ## Qué validar
 
-**Martina: datos pendientes (8 por idioma)**
+**Martina: datos pendientes (7 por idioma)**
 - [ ] ¿El sopralluogo es gratuito o de pago? Precio.
 - [ ] LOVINGCOLORS: duración de la obra, rango de presupuesto (si el cliente lo permite) y una frase del cliente.
 - [ ] Plazos típicos de un piso de 70–90 m² (proyecto y obra por separado).
 - [ ] Cómo se calculan los honorarios (porcentaje, por fases o precio cerrado) y un rango orientativo.
-- [ ] Zonas en las que sigue obras de verdad.
+- [x] Zonas: Bergamo y provincia, Milano, Monza e Brianza y toda Lombardía; recibe en el estudio con cita (confirmado el 10 oct).
 - [ ] Número de colegiada.
 - [ ] ¿Trabaja con empresas de confianza? ¿El cliente puede proponer la suya?
 - [ ] Con cuánta antelación conviene contactarla.
