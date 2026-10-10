@@ -30,7 +30,8 @@ NEGOCIO
 SERVICIOS
 1. ArchiAdvice: consulta de 60 minutos (videollamada) sobre colores, materiales,
    muebles y distribución, por Google Meet. 100 € todo incluido (Inarcassa y bollo;
-   IVA no aplicable), pago por PayPal o transferencia hasta 3 días antes. Reserva por Calendly.
+   IVA no aplicable), pago por PayPal o transferencia hasta 3 días antes; se descuenta
+   del proyecto si después lo encargan. Reserva por Calendly.
 2. Consulenza all'acquisto: verificación técnica antes de comprar casa
    (documentos, agibilità, catastro, visita) y estimación del coste de reforma. Precio 🟡.
 3. Restyling: renovar espacios sin obras estructurales (color, luz, muebles,

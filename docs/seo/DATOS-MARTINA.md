@@ -41,7 +41,7 @@ Una sola lista para pedirle todo de una vez. Muchos datos se repiten entre brief
 - [x] Plataforma: Google Meet — 10 oct
 - [ ] ¿También en persona en el estudio de Bergamo? ¿Reembolso si se anula después de pagar?
 - [ ] Qué recibe el cliente después (resumen escrito, paleta, enlaces…)
-- [ ] ¿Se descuenta el precio de un proyecto posterior?
+- [x] Se descuenta del precio final del proyecto posterior — 10 oct
 - [x] Envío de fotos y planimetría por email tras reservar; pago hasta 3 días antes — 10 oct
 - [ ] Nº de colegiación (Ordine di Monza e Brianza)
 - [ ] 1–2 ejemplos reales de consultas (problema → solución)
