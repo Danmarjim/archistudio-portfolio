@@ -107,7 +107,18 @@ export default function SobreMiContent({ pressItems, projects, profiles, archiAd
             <div className="mt-8 space-y-4 text-lg leading-relaxed text-neutral-600">
               <p>{t('bioPara1')}</p>
               <p>{t('bioPara2')}</p>
-              <p>{t('bioPara3')}</p>
+              <p>
+                {t.rich('bioPara3', {
+                  link: (chunks) => (
+                    <Link
+                      href={newsHref('il-colore-nell-architettura')}
+                      className="font-medium text-primary-700 underline underline-offset-4 hover:text-primary-800"
+                    >
+                      {chunks}
+                    </Link>
+                  ),
+                })}
+              </p>
               <p>{t('bioPara4')}</p>
               <p>
                 {t('bioPara5')}{' '}
