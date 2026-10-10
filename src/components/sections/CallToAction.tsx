@@ -6,12 +6,15 @@ import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import { useTranslations } from 'next-intl'
 import type { StaticPathname } from '@/i18n/routing'
+import { siteConfig } from '@/lib/constants'
 
 interface CallToActionProps {
   title?: string
   subtitle?: string
   ctaText?: string
   ctaHref?: StaticPathname
+  /** Mostra il telefono dello studio sotto il pulsante */
+  showPhone?: boolean
 }
 
 export default function CallToAction({
@@ -19,6 +22,7 @@ export default function CallToAction({
   subtitle,
   ctaText,
   ctaHref = '/contacto',
+  showPhone = false,
 }: CallToActionProps) {
   const t = useTranslations('CallToAction')
   const resolvedTitle = title ?? t('title')
@@ -52,6 +56,13 @@ export default function CallToAction({
             <Button variant="inverse" size="lg" trailingIcon asChild>
               <Link href={ctaHref}>{resolvedCta}</Link>
             </Button>
+            {showPhone && siteConfig.phone && (
+              <p className="mt-6 text-primary-100">
+                <a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} className="underline-offset-4 hover:underline">
+                  {t('phone', { phone: siteConfig.phone })}
+                </a>
+              </p>
+            )}
           </motion.div>
         </motion.div>
       </Container>

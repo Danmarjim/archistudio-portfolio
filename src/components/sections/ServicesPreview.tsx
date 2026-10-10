@@ -1,8 +1,9 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
+import { serviceHref } from '@/lib/routes'
 import { motion } from 'framer-motion'
-import { Home, Video, Key, Paintbrush } from 'lucide-react'
+import { Home, Video, Key, Paintbrush, ArrowRight } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button } from '@/components/ui'
 import { services } from '@/lib/constants'
@@ -26,13 +27,15 @@ const serviceSlugToKey: Record<string, string> = {
 interface ServiceCardProps {
   service: Service
   index: number
+  /** Slug della pagina del servizio, se pubblicata; altrimenti il link va all'hub /servizi */
+  pageSlug?: string
 }
 
-function ServiceCard({ service, index }: ServiceCardProps) {
+function ServiceCard({ service, index, pageSlug }: ServiceCardProps) {
   const Icon = iconMap[service.icon] || Home
   const sd = useTranslations('ServicesData')
+  const t = useTranslations('ServicesPreview')
   const key = serviceSlugToKey[service.slug] ?? service.slug
-  const features = [sd(`${key}.f1`), sd(`${key}.f2`), sd(`${key}.f3`), sd(`${key}.f4`)]
 
   return (
     <motion.div
@@ -53,32 +56,33 @@ function ServiceCard({ service, index }: ServiceCardProps) {
       </h3>
 
       {/* Description */}
-      <p className="mt-3 text-neutral-600">
+      <p className="mt-3 font-medium text-foreground">
         {sd(`${key}.question`)}
       </p>
+      <p className="mt-3 leading-relaxed text-neutral-600">
+        {sd(`${key}.summary`)}
+      </p>
 
-      {/* Features */}
-      <ul className="mt-6 space-y-2">
-        {features.slice(0, 3).map((feature) => (
-          <li
-            key={feature}
-            className="flex items-center gap-2 text-sm text-neutral-600"
-          >
-            <span className="h-1.5 w-1.5 rounded-full bg-primary-500" />
-            {feature}
-          </li>
-        ))}
-      </ul>
+      <Link
+        href={pageSlug ? serviceHref(pageSlug) : '/servicios'}
+        className="mt-6 inline-flex items-center gap-2 font-medium text-primary-700 underline-offset-4 hover:underline"
+      >
+        {t('learnMore')}
+        <ArrowRight className="h-4 w-4" />
+      </Link>
     </motion.div>
   )
 }
 
 interface ServicesPreviewProps {
   showCta?: boolean
+  /** Pagine di servizio pubblicate: `serviceKey` → slug */
+  servicePages?: Record<string, string>
 }
 
 export default function ServicesPreview({
   showCta = true,
+  servicePages = {},
 }: ServicesPreviewProps) {
   const t = useTranslations('ServicesPreview')
   return (
@@ -101,9 +105,14 @@ export default function ServicesPreview({
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2">
           {services.map((service, index) => (
-            <ServiceCard key={service.slug} service={service} index={index} />
+            <ServiceCard
+              key={service.slug}
+              service={service}
+              index={index}
+              pageSlug={servicePages[service.slug]}
+            />
           ))}
         </div>
 

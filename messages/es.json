@@ -50,32 +50,35 @@
   },
   "Hero": {
     "overline": "ESTUDIO DE DISEÑO ARQUITECTÓNICO DE INTERIORES A MEDIDA EN BERGAMO",
-    "title": "Reforma sin preocupaciones",
-    "subtitle": "Te acompaño paso a paso, desde los trámites de obra hasta la ejecución, velando por tus intereses",
+    "title": "Arquitecta en Bérgamo: reformas e interiores a medida",
+    "subtitle": "Reforma sin preocupaciones. Soy Martina Pozzi, arquitecta: te acompaño del proyecto a los trámites y hasta la obra, con una única persona de referencia que vela por tus intereses.",
     "cta": "Ver proyectos",
     "ctaSecondary": "Contactar",
     "scrollIndicator": "Descubre más"
   },
   "FeaturedProjects": {
     "title": "Proyectos destacados",
-    "subtitle": "Una selección de nuestros trabajos más recientes",
+    "subtitle": "Reformas y restylings en Bérgamo, Milán y la Brianza",
     "viewAll": "Ver todos los proyectos"
   },
   "AboutPreview": {
     "overline": "Sobre mí",
     "title": "Arquitectura y Escucha Empática",
-    "description": "Soy arquitecta apasionada por los espacios que mejoran la vida de las personas. Mi enfoque une funcionalidad, estética y sostenibilidad, buscando siempre soluciones que respeten el contexto y respondan a las necesidades reales de cada cliente. Cada proyecto es una oportunidad para explorar nuevas formas de habitar. El objetivo es ofrecer beneficios reales a las personas que confían en mí.",
-    "cta": "Conoce más sobre mí"
+    "description": "Soy Martina Pozzi, arquitecta, y desde 2021 dirijo MP_archistudio, estudio de arquitectura e interiores en Bérgamo. Me licencié en el Politecnico di Milano y antes de abrir el estudio trabajé en estudios de arquitectura en Italia y en España, entre Sevilla y Barcelona. Proyecto reformas de pisos y casas, interiores a medida y restylings: el color y los muebles diseñados a medida son mi firma.",
+    "cta": "Conoce más sobre mí",
+    "description2": "Escucho antes de dibujar: cada proyecto parte de cómo vives la casa y de lo que quieres sentir al abrir la puerta. Mis trabajos se han publicado en HOME, Cose di Casa y Homeadore."
   },
   "ServicesPreview": {
     "title": "Servicios",
-    "subtitle": "Soluciones integrales de arquitectura y diseño",
-    "cta": "Ver todos los servicios"
+    "subtitle": "De la asesoría de una hora a la reforma llave en mano",
+    "cta": "Ver todos los servicios",
+    "learnMore": "Descubre el servicio"
   },
   "CallToAction": {
     "title": "¿Tienes un proyecto en mente?",
     "subtitle": "Cuéntanos tu idea y trabajemos juntos para hacerla realidad.",
-    "cta": "Contactar ahora"
+    "cta": "Contactar ahora",
+    "phone": "O llámame al {phone}"
   },
   "ProjectsPage": {
     "title": "Proyectos",
@@ -410,7 +413,8 @@
       "f2": "Tienes ideas pero no sabes cómo llevarlas a la práctica",
       "f3": "No sabes cómo organizar el mobiliario, qué conservar, qué renovar, cómo disponerlo, dónde comprarlo",
       "f4": "Quieres compartir tus dudas sobre un proyecto de interiorismo que no te deja dormir",
-      "cta": "Reserva tu ArchiAdvice"
+      "cta": "Reserva tu ArchiAdvice",
+      "summary": "Una hora de videollamada para decidir colores, materiales, muebles y distribución, estés donde estés, en italiano, español o inglés. 100 € todo incluido, que se descuentan del proyecto si después decides seguir."
     },
     "consulenzaAcquisto": {
       "title": "Asesoría de compra",
@@ -420,7 +424,8 @@
       "f2": "Quieres hacer una visita con un arquitecto y/o una puesta en común de la información para evaluar posibles problemáticas, descubrir el potencial y cómo aprovechar al máximo cada metro",
       "f3": "Quieres saber cuánto podría costarte reformarlo aproximadamente",
       "f4": "Quieres hacer una compra consciente",
-      "cta": "Escríbeme"
+      "cta": "Escríbeme",
+      "summary": "Antes de comprar reviso contigo los documentos, la conformidad urbanística y catastral y el estado real del inmueble, y te doy una estimación orientativa del coste de la reforma. Para ofertar, negociar o renunciar sabiendo lo que compras."
     },
     "restyling": {
       "title": "Restyling",
@@ -430,7 +435,8 @@
       "f2": "Estás de alquiler y te gustaría sentir más tuya la casa donde vives o el local/oficina donde trabajas",
       "f3": "Quieres cambiar el mobiliario, optimizar los espacios diseñando algunos elementos a medida",
       "f4": "La obra ha terminado y ahora toca decorar, pintar, amueblar...",
-      "cta": "Escríbeme"
+      "cta": "Escríbeme",
+      "summary": "Renovar la casa sin obras: color, luz, muebles y piezas a medida para cambiar la imagen de las estancias. Para quien tiene una casa que ya no le representa, para quien vive de alquiler y para quien acaba de terminar una obra."
     },
     "progettazione": {
       "title": "Proyecto arquitectónico 360°",
@@ -440,7 +446,8 @@
       "f2": "Trámites de obra, elección de materiales y solicitud de presupuestos",
       "f3": "Gestión de empresas, seguimiento económico y cronograma",
       "f4": "Dirección artística, dirección de obra y cierre del expediente con actualización catastral",
-      "cta": "Descubre cómo trabajamos"
+      "cta": "Descubre cómo trabajamos",
+      "summary": "Reforma de pisos y casas en Bérgamo y Lombardía, del levantamiento a la entrega de llaves: proyecto arquitectónico y de interiores, trámites, elección de empresas y dirección de obra. Una única persona de referencia para todo el recorrido, o solo para una parte."
     }
   },
   "NotFound": {
@@ -451,5 +458,24 @@
   },
   "Press": {
     "title": "Publicado en"
+  },
+  "HowIWork": {
+    "title": "Cómo trabajo",
+    "subtitle": "Cuatro pasos, una sola persona de referencia: puedes encargarme todo el recorrido o solo una parte.",
+    "s1title": "Levantamiento y escucha",
+    "s1": "Mido y fotografío la casa y entiendo cómo quieres vivirla. Si hace falta, compruebo en el ayuntamiento que el estado actual está en regla.",
+    "s2title": "Proyecto",
+    "s2": "Distribución, colores, materiales y muebles a medida, con planos, moodboard y vistas 3D para ver la casa antes de construirla.",
+    "s3title": "Empresas y presupuestos",
+    "s3": "Preparo las mediciones, comparo varios presupuestos sobre el mismo proyecto y te ayudo a elegir materiales y proveedores.",
+    "s4title": "Obra y trámites",
+    "s4": "Dirijo la obra, controlo calidad y pagos, presento los trámites y cierro con el fin de obra y la actualización catastral.",
+    "cta": "Cómo funciona una reforma"
+  },
+  "WorkArea": {
+    "title": "Dónde trabajo",
+    "p1": "Mi estudio está en Bérgamo, en Via Bologna 2, y recibo con cita previa. Sigo proyectos y obras en Bérgamo y su provincia, Milán, Monza e Brianza y el resto de Lombardía: el piso LOVINGCOLORS está en Bérgamo, Casa Archi & Colori en Milán, CASA PEONIA en Camparada y la cocina PARIGINA en Monza.",
+    "p2": "Con las asesorías online ArchiAdvice trabajo con clientes estén donde estén, en italiano, español e inglés.",
+    "cta": "Ver todos los proyectos"
   }
 }
