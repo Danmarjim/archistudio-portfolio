@@ -2,6 +2,12 @@ import ReactMarkdown, { type Components } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { Link } from '@/i18n/navigation'
 import { internalHref } from '@/lib/routes'
+import { PENDING_MARKER } from '@/lib/pending'
+
+// I dati da confermare (`[DA CONFERMARE: …]`, vedi `lib/pending`) diventano un link a questa
+// ancora e si mostrano evidenziati
+const PENDING_ANCHOR = '#da-confermare'
+const PENDING_REGEX = new RegExp(`\\[(${PENDING_MARKER}[^\\]]*)\\]`, 'g')
 
 interface MarkdownProps {
   content: string
@@ -36,6 +42,9 @@ const components: Components = {
   th: ({ children }) => <th className="border-b border-neutral-200 px-4 py-3 font-medium text-foreground">{children}</th>,
   td: ({ children }) => <td className="border-b border-neutral-100 px-4 py-3 align-top text-neutral-700">{children}</td>,
   a: ({ href = '', children }) => {
+    if (href === PENDING_ANCHOR) {
+      return <mark className="rounded bg-amber-100 px-1 text-amber-900">{children}</mark>
+    }
     const internal = href.startsWith('/') ? internalHref(href) : null
     if (internal) {
       return (
@@ -60,7 +69,7 @@ const components: Components = {
 export default function Markdown({ content }: MarkdownProps) {
   return (
     <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
-      {content}
+      {content.replace(PENDING_REGEX, `[$1](${PENDING_ANCHOR})`)}
     </ReactMarkdown>
   )
 }

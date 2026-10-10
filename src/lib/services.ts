@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import type { ServicePage } from '@/types'
+import { hasPendingMarkers, isProductionDeploy } from '@/lib/pending'
 
 const servicesDirectory = path.join(process.cwd(), 'content/services')
 
@@ -22,7 +23,10 @@ function readServices(locale: string): ServicePage[] {
         seoTitle: data.seoTitle,
         description: data.description,
         serviceType: data.serviceType,
-        published: data.published === true,
+        // In produzione una pagina con dati da confermare non esce, anche se marcata come pubblicata
+        published:
+          data.published === true &&
+          !(isProductionDeploy && hasPendingMarkers(content, data.title, data.description, data.seoTitle)),
         cta: data.cta === 'calendly' ? 'calendly' : 'contact',
         contactProjectType: data.contactProjectType,
         relatedProjects: data.relatedProjects ?? [],
