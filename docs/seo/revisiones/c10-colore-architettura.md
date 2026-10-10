@@ -34,7 +34,7 @@ Este artículo **ya está publicado en producción**. Si llega a `main` con alg�
 
 ## Cómo verlo
 
-Preview de `seo/preview-completa` o `npm run dev` → http://localhost:3000/news/il-colore-nell-architettura.
+Preview de `preview/seo-completa` o `npm run dev` → http://localhost:3000/news/il-colore-nell-architettura.
 
 ## Qué validar
 
