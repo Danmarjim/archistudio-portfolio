@@ -55,7 +55,7 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
         <div className="p-5">
           <div className="mb-2 flex items-center gap-2">
             <Badge variant="outline">{tCat(project.category as Parameters<typeof tCat>[0], { defaultValue: project.category })}</Badge>
-            <span className="text-sm text-neutral-400">{project.year}</span>
+            <span className="text-sm text-neutral-500">{project.year}</span>
           </div>
 
           <h3 className="font-serif text-xl font-medium text-foreground transition-colors group-hover:text-primary-600">
