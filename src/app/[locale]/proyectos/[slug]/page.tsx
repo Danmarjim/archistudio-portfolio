@@ -6,6 +6,7 @@ import { getTranslations } from 'next-intl/server'
 import { absoluteUrl, buildBreadcrumb, buildMetadata, localizedUrl, personSummary } from '@/lib/seo'
 import { getProjectBySlug, getAdjacentProjects, getAllProjectSlugs } from '@/lib/projects'
 import { getServiceForProject } from '@/lib/services'
+import { getGuideForProject } from '@/lib/news'
 
 interface ProjectPageProps {
   params: Promise<{
@@ -53,6 +54,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   const { prev, next } = getAdjacentProjects(slug, locale)
   const service = getServiceForProject(project.category, locale)
+  const guide = getGuideForProject(project.category, locale)
 
   const tNav = await getTranslations({ locale, namespace: 'Navigation' })
   const images = (project.images?.length ? project.images : [project.coverImage]).slice(0, 8)
@@ -89,6 +91,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         prevProject={prev}
         nextProject={next}
         service={service ? { slug: service.slug, name: service.seoTitle ?? service.title } : undefined}
+        guide={guide ? { slug: guide.slug, name: guide.seoTitle ?? guide.title } : undefined}
       />
     </>
   )

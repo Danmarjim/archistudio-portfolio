@@ -1,7 +1,7 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
-import { projectHref, serviceHref } from '@/lib/routes'
+import { newsHref, projectHref, serviceHref } from '@/lib/routes'
 import Image from 'next/image'
 import { useMemo } from 'react'
 import { motion } from 'framer-motion'
@@ -18,9 +18,11 @@ interface ProjectDetailProps {
   nextProject: Project | null
   /** Pagina del servizio con cui è stato realizzato il progetto, se pubblicata */
   service?: { slug: string; name: string }
+  /** Guida collegata alla categoria del progetto, se pubblicata */
+  guide?: { slug: string; name: string }
 }
 
-export default function ProjectDetail({ project, prevProject, nextProject, service }: ProjectDetailProps) {
+export default function ProjectDetail({ project, prevProject, nextProject, service, guide }: ProjectDetailProps) {
   const t = useTranslations('ProjectDetail')
   const tStatus = useTranslations('ProjectStatus')
   const tCat = useTranslations('ProjectCategories')
@@ -148,14 +150,27 @@ export default function ProjectDetail({ project, prevProject, nextProject, servi
               ))}
             </div>
 
-            {service && (
-              <Link
-                href={serviceHref(service.slug)}
-                className="mt-8 inline-flex items-center gap-2 font-medium text-primary-700 underline-offset-4 hover:underline"
-              >
-                {t('serviceLink', { service: service.name })}
-                <ArrowRight className="h-4 w-4" />
-              </Link>
+            {(service || guide) && (
+              <div className="mt-8 flex flex-col items-start gap-3">
+                {service && (
+                  <Link
+                    href={serviceHref(service.slug)}
+                    className="inline-flex items-center gap-2 font-medium text-primary-700 underline-offset-4 hover:underline"
+                  >
+                    {t('serviceLink', { service: service.name })}
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                )}
+                {guide && (
+                  <Link
+                    href={newsHref(guide.slug)}
+                    className="inline-flex items-center gap-2 font-medium text-primary-700 underline-offset-4 hover:underline"
+                  >
+                    {t('guideLink', { guide: guide.name })}
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                )}
+              </div>
             )}
           </motion.div>
 
