@@ -9,7 +9,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import Markdown from '@/components/shared/Markdown'
 import { getPublishedServiceBySlug, getPublishedServices } from '@/lib/services'
 import { getProjectBySlug } from '@/lib/projects'
-import { buildBreadcrumb, buildMetadata, businessSummary, localizedUrl } from '@/lib/seo'
+import { absoluteUrl, buildBreadcrumb, buildMetadata, businessSummary, localizedUrl } from '@/lib/seo'
 import { CALENDLY_URL, siteConfig } from '@/lib/constants'
 import type { Project } from '@/types'
 
@@ -24,11 +24,18 @@ export async function generateStaticParams() {
   return getPublishedServices('it').map((service) => ({ slug: service.slug }))
 }
 
+function serviceImage(relatedProjects: string[], locale: string): string | undefined {
+  const [first] = relatedProjects
+  return first ? getProjectBySlug(first, locale)?.coverImage : undefined
+}
+
 export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
   const { slug, locale } = await params
   const service = getPublishedServiceBySlug(slug, locale)
   if (!service) return {}
   return buildMetadata({
+    // Immagine social: la copertina del primo progetto collegato al servizio
+    image: serviceImage(service.relatedProjects, locale),
     locale,
     path: `/servicios/${slug}`,
     // Titolo assoluto: il layout di /servizi definisce un proprio title e non propaga il template
@@ -55,6 +62,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
     name: service.title,
     description: service.description,
     serviceType: service.serviceType,
+    ...(projects[0] ? { image: absoluteUrl(projects[0].coverImage) } : {}),
     url: localizedUrl(locale, `/servicios/${slug}`),
     inLanguage: locale,
     provider: businessSummary,
