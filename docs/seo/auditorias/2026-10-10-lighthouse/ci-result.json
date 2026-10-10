@@ -1,0 +1,5643 @@
+{
+  "summary": {
+    "score": 0.97,
+    "categories": {
+      "performance": {
+        "score": 0.9,
+        "scores": [
+          0.99,
+          0.89,
+          0.92,
+          0.92,
+          0.91,
+          0.93,
+          0.9,
+          0.92,
+          0.89,
+          0.94,
+          0.92,
+          0.92,
+          0.89,
+          0.92,
+          0.91,
+          0.92,
+          0.92,
+          0.92,
+          0.89,
+          0.92,
+          0.92,
+          0.92,
+          0.89,
+          0.91,
+          0.91,
+          0.91,
+          0.91,
+          0.91,
+          0.91,
+          0.91,
+          0.92,
+          0.92,
+          0.93,
+          0.93,
+          0.93,
+          0.93,
+          0.89,
+          0.91,
+          0.95,
+          0.87,
+          0.92,
+          0.89,
+          0.93,
+          0.92,
+          0.92,
+          0.89,
+          0.92,
+          0.91,
+          0.92,
+          0.92,
+          0.92,
+          0.89,
+          0.92,
+          0.92,
+          0.92,
+          0.9,
+          0.91,
+          0.94,
+          0.91,
+          0.91,
+          0.94,
+          0.91,
+          0.95,
+          0.95,
+          0.92,
+          0.93,
+          0.93,
+          0.93,
+          0.98,
+          0.92,
+          0.92,
+          0.88,
+          0.92,
+          0.89,
+          0.93,
+          0.92,
+          0.92,
+          0.89,
+          0.92,
+          0.91,
+          0.92,
+          0.92,
+          0.92,
+          0.89,
+          0.92,
+          0.92,
+          0.93,
+          0.89,
+          0.94,
+          0.91,
+          0.91,
+          0.94,
+          0.91,
+          0.91,
+          0.95,
+          0.92,
+          0.92,
+          0.93,
+          0.93,
+          0.93,
+          0.93,
+          0.9
+        ],
+        "averageScore": 0.92
+      },
+      "accessibility": {
+        "score": 1,
+        "scores": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "averageScore": 1
+      },
+      "best-practices": {
+        "score": 0.96,
+        "scores": [
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96,
+          0.96
+        ],
+        "averageScore": 0.96
+      },
+      "seo": {
+        "score": 1,
+        "scores": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "averageScore": 1
+      }
+    },
+    "metrics": {
+      "largest-contentful-paint": {
+        "numericValue": 3698.34155,
+        "displayValue": "3.7 s",
+        "numericValues": [
+          1968.9419000000003,
+          3816.3356999999996,
+          3329.61245,
+          3403.1022999999996,
+          3477.685449999999,
+          3250.538875000001,
+          3622.32115,
+          3325.22185,
+          3767.2968,
+          3100.8325000000004,
+          3322.0015000000003,
+          3324.38875,
+          3837.2628000000004,
+          3391.138125,
+          3467.8013,
+          3321.8795499999997,
+          3324.1888,
+          3320.75515,
+          3768.184075,
+          3321.6475,
+          3321.4123,
+          3324.34835,
+          3775.0413499999995,
+          3477.1589000000004,
+          3475.3884500000004,
+          3471.3787,
+          3474.64715,
+          3466.33655,
+          3469.8278499999997,
+          3548.5542499999992,
+          3396.3193,
+          3397.229975,
+          3172.414875,
+          3170.433125,
+          3170.2204999999994,
+          3170.2765,
+          3846.1838,
+          3473.894275,
+          2862.3552500000005,
+          4081.9601,
+          3323.2968999999994,
+          3767.094,
+          3247.14895,
+          3320.7667,
+          3321.3313000000003,
+          3835.9982,
+          3390.6938,
+          3466.1114,
+          3322.9258,
+          3323.08645,
+          3322.0661500000006,
+          3766.0364499999996,
+          3327.2873,
+          3323.68235,
+          3320.2678,
+          3624.24445,
+          3472.7456500000008,
+          3089.7927499999996,
+          3472.7113,
+          3470.5764999999997,
+          3014.3383499999995,
+          3471.30415,
+          3012.63285,
+          2941.0267500000004,
+          3395.779124999999,
+          3172.1494999999995,
+          3170.596875,
+          3174.3196250000005,
+          2409.1129999999994,
+          3396.0587499999992,
+          3387.342375,
+          3927.35625,
+          3321.2446,
+          3767.0497,
+          3245.59915,
+          3320.41165,
+          3321.1350999999995,
+          3840.0222,
+          3390.438825,
+          3463.81025,
+          3320.97805,
+          3321.31675,
+          3321.13375,
+          3765.6755999999996,
+          3320.9846500000003,
+          3320.5886499999997,
+          3251.30905,
+          3773.08345,
+          3088.0176,
+          3471.60085,
+          3546.7909,
+          3085.9964250000003,
+          3464.1626000000006,
+          3469.4092,
+          3013.1058000000003,
+          3395.8652500000003,
+          3394.7837499999987,
+          3170.948,
+          3170.3945000000003,
+          3180.5102999999995,
+          3177.0966,
+          3698.34155
+        ],
+        "averageNumericValue": 3376.26
+      },
+      "cumulative-layout-shift": {
+        "numericValue": 0,
+        "displayValue": "0",
+        "numericValues": [
+          0,
+          0,
+          0,
+          0,
+          0.0004781775107010494,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0.0004712972587485163,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "averageNumericValue": 0
+      },
+      "first-contentful-paint": {
+        "numericValue": 906.1242,
+        "displayValue": "0.9 s",
+        "numericValues": [
+          918.9419,
+          922.1119000000001,
+          910.4083,
+          910.0681999999999,
+          909.7902999999999,
+          906.8311000000001,
+          1056.2141,
+          908.1478999999999,
+          906.1696,
+          908.5550000000001,
+          906.001,
+          907.5925,
+          906.1314,
+          905.5074999999999,
+          907.5342,
+          905.9196999999999,
+          907.4592,
+          905.1701,
+          906.3909000000001,
+          905.7650000000001,
+          905.6081999999999,
+          906.8988999999999,
+          907.3608999999999,
+          908.7726,
+          907.5923,
+          905.5858000000001,
+          907.0980999999999,
+          906.5577000000001,
+          904.5518999999999,
+          906.3695,
+          905.5462,
+          906.9911,
+          907.5319,
+          905.9465,
+          905.7764,
+          905.8212000000001,
+          907.0918999999999,
+          906.2253000000001,
+          904.9421,
+          1059.0764,
+          906.8646000000001,
+          905.768,
+          906.0993000000001,
+          905.1777999999999,
+          905.5542,
+          905.4991,
+          905.2536,
+          906.4076,
+          906.6171999999999,
+          906.7243000000001,
+          906.0441000000001,
+          905.4494,
+          908.8581999999999,
+          906.4549,
+          904.8452,
+          906.4254000000001,
+          906.4971,
+          905.9170999999999,
+          906.4742000000001,
+          905.0509999999999,
+          906.3725999999999,
+          905.5361,
+          905.6146000000001,
+          907.123,
+          906.2233000000001,
+          906.5196000000001,
+          906.0775000000001,
+          908.2556999999999,
+          909.113,
+          905.3725,
+          905.4855,
+          1055.3425,
+          905.4964,
+          906.0283999999999,
+          905.0661,
+          904.9411,
+          905.4233999999999,
+          907.5110999999999,
+          905.1079,
+          904.8734999999999,
+          905.3187,
+          905.5445,
+          905.4224999999999,
+          905.2431999999999,
+          905.3231000000001,
+          905.0591,
+          908.8726999999999,
+          906.7222999999999,
+          905.7855999999999,
+          905.7339,
+          905.8606,
+          904.8873000000001,
+          905.1084000000001,
+          904.2728,
+          905.8248000000001,
+          905.2435,
+          905.4269999999999,
+          905.5583999999999,
+          905.9156,
+          910.1701,
+          909.0322000000001,
+          906.1242
+        ],
+        "averageNumericValue": 911.06
+      },
+      "total-blocking-time": {
+        "numericValue": 0,
+        "displayValue": "0 ms",
+        "numericValues": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "averageNumericValue": 0
+      },
+      "max-potential-fid": {
+        "numericValue": 16,
+        "displayValue": "20 ms",
+        "numericValues": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          17,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "averageNumericValue": 16.01
+      },
+      "interactive": {
+        "numericValue": 3720.9570750000003,
+        "displayValue": "3.7 s",
+        "numericValues": [
+          1968.9419000000003,
+          3816.3356999999996,
+          3329.6124500000005,
+          3410.6023,
+          3477.685449999999,
+          3258.2096525000006,
+          3652.3211500000007,
+          3325.22185,
+          3796.8010400000003,
+          3100.8325000000004,
+          3322.0015000000003,
+          3324.3887500000005,
+          3859.762800000001,
+          3398.1258125000004,
+          3482.1513000000004,
+          3321.8795499999997,
+          3324.1888,
+          3320.75515,
+          3797.6438475000004,
+          3321.6475000000005,
+          3321.4123,
+          3324.34835,
+          3820.0413499999995,
+          3492.1589000000004,
+          3490.3884500000004,
+          3486.3787,
+          3489.64715,
+          3480.6865500000004,
+          3484.8278499999997,
+          3571.0542499999997,
+          3403.8193,
+          3419.8556425,
+          3172.6031725000003,
+          3170.5817875000002,
+          3170.3649100000002,
+          3170.4220300000006,
+          3867.9838,
+          3489.0499075000002,
+          2862.3552500000005,
+          4111.9408300000005,
+          3323.2969,
+          3796.5382000000004,
+          3254.6489500000002,
+          3320.7667000000006,
+          3321.3313000000007,
+          3858.4982,
+          3397.6751400000003,
+          3480.4614,
+          3322.9258,
+          3323.08645,
+          3322.0661500000006,
+          3795.522685,
+          3327.2873,
+          3323.6823500000005,
+          3320.2678000000005,
+          3654.4050850000003,
+          3487.7456500000008,
+          3097.2927499999996,
+          3487.7113,
+          3485.5765,
+          3029.1790349999997,
+          3486.30415,
+          3027.773215,
+          2948.3486750000006,
+          3418.434707499999,
+          3172.3124900000003,
+          3170.7488125000004,
+          3174.5260175000008,
+          2409.1129999999994,
+          3403.5587499999997,
+          3409.4309625,
+          3972.623375,
+          3321.2446,
+          3796.5504100000003,
+          3253.09915,
+          3320.41165,
+          3321.1350999999995,
+          3862.5222000000003,
+          3397.4165224999997,
+          3478.1602500000004,
+          3320.9780500000006,
+          3321.31675,
+          3321.13375,
+          3795.15668,
+          3320.9846500000003,
+          3320.5886499999997,
+          3251.30905,
+          3818.0834500000005,
+          3110.3729600000006,
+          3486.60085,
+          3554.2909,
+          3108.374242500001,
+          3478.5126000000005,
+          3484.4092,
+          3028.2514200000005,
+          3403.3652500000007,
+          3417.419424999999,
+          3171.0869599999996,
+          3170.5423900000005,
+          3180.5102999999995,
+          3177.0966,
+          3720.9570750000003
+        ],
+        "averageNumericValue": 3386.71
+      }
+    }
+  },
+  "routes": [
+    {
+      "path": "/",
+      "score": 0.99,
+      "categories": {
+        "performance": {
+          "score": 0.99
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 1968.9419000000003,
+          "displayValue": "2.0 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 918.9419,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 1968.9419000000003,
+          "displayValue": "2.0 s"
+        }
+      }
+    },
+    {
+      "path": "/chi-sono",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3816.3356999999996,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 922.1119000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3816.3356999999996,
+          "displayValue": "3.8 s"
+        }
+      }
+    },
+    {
+      "path": "/contatti",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3329.61245,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 910.4083,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3329.6124500000005,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/en",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3403.1022999999996,
+          "displayValue": "3.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 910.0681999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3410.6023,
+          "displayValue": "3.4 s"
+        }
+      }
+    },
+    {
+      "path": "/en/about",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3477.685449999999,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0.0004781775107010494,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 909.7902999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3477.685449999999,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/en/contact",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3250.538875000001,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.8311000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 17,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3258.2096525000006,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.9
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3622.32115,
+          "displayValue": "3.6 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 1056.2141,
+          "displayValue": "1.1 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3652.3211500000007,
+          "displayValue": "3.7 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/archiadvice-lancio",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3325.22185,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 908.1478999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3325.22185,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/collezione-tappeti-sevilla",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3767.2968,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.1696,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3796.8010400000003,
+          "displayValue": "3.8 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/come-scegliere-architetto-ristrutturazione",
+      "score": 0.98,
+      "categories": {
+        "performance": {
+          "score": 0.94
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3100.8325000000004,
+          "displayValue": "3.1 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 908.5550000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3100.8325000000004,
+          "displayValue": "3.1 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/come-scegliere-colore-pareti-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3322.0015000000003,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3322.0015000000003,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/conformita-urbanistica-catastale-prima-di-comprare-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3324.38875,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 907.5925,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3324.3887500000005,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/cose-di-casa-ottobre-2022",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3837.2628000000004,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.1314,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3859.762800000001,
+          "displayValue": "3.9 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/costo-ristrutturazione-appartamento-bergamo",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3391.138125,
+          "displayValue": "3.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.5074999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3398.1258125000004,
+          "displayValue": "3.4 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/home-n36-aprile-2026",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3467.8013,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 907.5342,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3482.1513000000004,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/homeadore-casa-archi-colori-agosto-2026",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3321.8795499999997,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.9196999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3321.8795499999997,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/homeadore-lovingcolors-giugno-2026",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3324.1888,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 907.4592,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3324.1888,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/il-colore-nell-architettura",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3320.75515,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.1701,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3320.75515,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/intervista-archiboost-luglio-2026",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3768.184075,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.3909000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3797.6438475000004,
+          "displayValue": "3.8 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/progettare-il-bagno-consigli-architetto",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3321.6475,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.7650000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3321.6475000000005,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/progettare-la-cucina-consigli-architetto",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3321.4123,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.6081999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3321.4123,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/en/news/quanto-costa-un-architetto-ristrutturazione",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3324.34835,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.8988999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3324.34835,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/en/projects",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3775.0413499999995,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 907.3608999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3820.0413499999995,
+          "displayValue": "3.8 s"
+        }
+      }
+    },
+    {
+      "path": "/en/projects/appartamento-lovingcolors",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3477.1589000000004,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 908.7726,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3492.1589000000004,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/en/projects/bagno-casa-archi-colori",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3475.3884500000004,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 907.5923,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3490.3884500000004,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/en/projects/bagno-casa-peonia",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3471.3787,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.5858000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3486.3787,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/en/projects/bagno-italian-summer",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3474.64715,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 907.0980999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3489.64715,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/en/projects/casa-archi-colori",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3466.33655,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.5577000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3480.6865500000004,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/en/projects/cucina-mite",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3469.8278499999997,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 904.5518999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3484.8278499999997,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/en/projects/cucina-parigina",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3548.5542499999992,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.3695,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3571.0542499999997,
+          "displayValue": "3.6 s"
+        }
+      }
+    },
+    {
+      "path": "/en/projects/restyling-casa-peonia",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3396.3193,
+          "displayValue": "3.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.5462,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3403.8193,
+          "displayValue": "3.4 s"
+        }
+      }
+    },
+    {
+      "path": "/en/services",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3397.229975,
+          "displayValue": "3.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.9911,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3419.8556425,
+          "displayValue": "3.4 s"
+        }
+      }
+    },
+    {
+      "path": "/en/services/consulenza-acquisto-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3172.414875,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 907.5319,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3172.6031725000003,
+          "displayValue": "3.2 s"
+        }
+      }
+    },
+    {
+      "path": "/en/services/consulenza-architetto-online",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3170.433125,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.9465,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3170.5817875000002,
+          "displayValue": "3.2 s"
+        }
+      }
+    },
+    {
+      "path": "/en/services/restyling-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3170.2204999999994,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.7764,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3170.3649100000002,
+          "displayValue": "3.2 s"
+        }
+      }
+    },
+    {
+      "path": "/en/services/ristrutturazione-appartamento-bergamo",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3170.2765,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.8212000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3170.4220300000006,
+          "displayValue": "3.2 s"
+        }
+      }
+    },
+    {
+      "path": "/en/tappeti",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3846.1838,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 907.0918999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3867.9838,
+          "displayValue": "3.9 s"
+        }
+      }
+    },
+    {
+      "path": "/es",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3473.894275,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.2253000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3489.0499075000002,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/es/contacto",
+      "score": 0.98,
+      "categories": {
+        "performance": {
+          "score": 0.95
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 2862.3552500000005,
+          "displayValue": "2.9 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 904.9421,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 2862.3552500000005,
+          "displayValue": "2.9 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.87
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 4081.9601,
+          "displayValue": "4.1 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 1059.0764,
+          "displayValue": "1.1 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 4111.9408300000005,
+          "displayValue": "4.1 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/archiadvice-lancio",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3323.2968999999994,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.8646000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3323.2969,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/collezione-tappeti-sevilla",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3767.094,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.768,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3796.5382000000004,
+          "displayValue": "3.8 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/come-scegliere-architetto-ristrutturazione",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3247.14895,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.0993000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3254.6489500000002,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/come-scegliere-colore-pareti-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3320.7667,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.1777999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3320.7667000000006,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/conformita-urbanistica-catastale-prima-di-comprare-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3321.3313000000003,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.5542,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3321.3313000000007,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/cose-di-casa-ottobre-2022",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3835.9982,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.4991,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3858.4982,
+          "displayValue": "3.9 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/costo-ristrutturazione-appartamento-bergamo",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3390.6938,
+          "displayValue": "3.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.2536,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3397.6751400000003,
+          "displayValue": "3.4 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/home-n36-aprile-2026",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3466.1114,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.4076,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3480.4614,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/homeadore-casa-archi-colori-agosto-2026",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3322.9258,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.6171999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3322.9258,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/homeadore-lovingcolors-giugno-2026",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3323.08645,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.7243000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3323.08645,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/il-colore-nell-architettura",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3322.0661500000006,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.0441000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3322.0661500000006,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/intervista-archiboost-luglio-2026",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3766.0364499999996,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.4494,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3795.522685,
+          "displayValue": "3.8 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/progettare-il-bagno-consigli-architetto",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3327.2873,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 908.8581999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3327.2873,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/progettare-la-cucina-consigli-architetto",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3323.68235,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.4549,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3323.6823500000005,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/es/news/quanto-costa-un-architetto-ristrutturazione",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3320.2678,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 904.8452,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3320.2678000000005,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/es/proyectos",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.9
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3624.24445,
+          "displayValue": "3.6 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.4254000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3654.4050850000003,
+          "displayValue": "3.7 s"
+        }
+      }
+    },
+    {
+      "path": "/es/proyectos/appartamento-lovingcolors",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3472.7456500000008,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.4971,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3487.7456500000008,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/es/proyectos/bagno-casa-archi-colori",
+      "score": 0.98,
+      "categories": {
+        "performance": {
+          "score": 0.94
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3089.7927499999996,
+          "displayValue": "3.1 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.9170999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3097.2927499999996,
+          "displayValue": "3.1 s"
+        }
+      }
+    },
+    {
+      "path": "/es/proyectos/bagno-casa-peonia",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3472.7113,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.4742000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3487.7113,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/es/proyectos/bagno-italian-summer",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3470.5764999999997,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.0509999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3485.5765,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/es/proyectos/casa-archi-colori",
+      "score": 0.98,
+      "categories": {
+        "performance": {
+          "score": 0.94
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3014.3383499999995,
+          "displayValue": "3.0 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.3725999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3029.1790349999997,
+          "displayValue": "3.0 s"
+        }
+      }
+    },
+    {
+      "path": "/es/proyectos/cucina-mite",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3471.30415,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.5361,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3486.30415,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/es/proyectos/cucina-parigina",
+      "score": 0.98,
+      "categories": {
+        "performance": {
+          "score": 0.95
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3012.63285,
+          "displayValue": "3.0 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.6146000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3027.773215,
+          "displayValue": "3.0 s"
+        }
+      }
+    },
+    {
+      "path": "/es/proyectos/restyling-casa-peonia",
+      "score": 0.98,
+      "categories": {
+        "performance": {
+          "score": 0.95
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 2941.0267500000004,
+          "displayValue": "2.9 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 907.123,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 2948.3486750000006,
+          "displayValue": "2.9 s"
+        }
+      }
+    },
+    {
+      "path": "/es/servicios",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3395.779124999999,
+          "displayValue": "3.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.2233000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3418.434707499999,
+          "displayValue": "3.4 s"
+        }
+      }
+    },
+    {
+      "path": "/es/servicios/consulenza-acquisto-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3172.1494999999995,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.5196000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3172.3124900000003,
+          "displayValue": "3.2 s"
+        }
+      }
+    },
+    {
+      "path": "/es/servicios/consulenza-architetto-online",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3170.596875,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.0775000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3170.7488125000004,
+          "displayValue": "3.2 s"
+        }
+      }
+    },
+    {
+      "path": "/es/servicios/restyling-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3174.3196250000005,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 908.2556999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3174.5260175000008,
+          "displayValue": "3.2 s"
+        }
+      }
+    },
+    {
+      "path": "/es/servicios/ristrutturazione-appartamento-bergamo",
+      "score": 0.99,
+      "categories": {
+        "performance": {
+          "score": 0.98
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 2409.1129999999994,
+          "displayValue": "2.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 909.113,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 2409.1129999999994,
+          "displayValue": "2.4 s"
+        }
+      }
+    },
+    {
+      "path": "/es/sobre-mi",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3396.0587499999992,
+          "displayValue": "3.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0.0004712972587485163,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.3725,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3403.5587499999997,
+          "displayValue": "3.4 s"
+        }
+      }
+    },
+    {
+      "path": "/es/tappeti",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3387.342375,
+          "displayValue": "3.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.4855,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3409.4309625,
+          "displayValue": "3.4 s"
+        }
+      }
+    },
+    {
+      "path": "/news",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.88
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3927.35625,
+          "displayValue": "3.9 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 1055.3425,
+          "displayValue": "1.1 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3972.623375,
+          "displayValue": "4.0 s"
+        }
+      }
+    },
+    {
+      "path": "/news/archiadvice-lancio",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3321.2446,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.4964,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3321.2446,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/news/collezione-tappeti-sevilla",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3767.0497,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.0283999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3796.5504100000003,
+          "displayValue": "3.8 s"
+        }
+      }
+    },
+    {
+      "path": "/news/come-scegliere-architetto-ristrutturazione",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3245.59915,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.0661,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3253.09915,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/news/come-scegliere-colore-pareti-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3320.41165,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 904.9411,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3320.41165,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/news/conformita-urbanistica-catastale-prima-di-comprare-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3321.1350999999995,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.4233999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3321.1350999999995,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/news/cose-di-casa-ottobre-2022",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3840.0222,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 907.5110999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3862.5222000000003,
+          "displayValue": "3.9 s"
+        }
+      }
+    },
+    {
+      "path": "/news/costo-ristrutturazione-appartamento-bergamo",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3390.438825,
+          "displayValue": "3.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.1079,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3397.4165224999997,
+          "displayValue": "3.4 s"
+        }
+      }
+    },
+    {
+      "path": "/news/home-n36-aprile-2026",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3463.81025,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 904.8734999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3478.1602500000004,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/news/homeadore-casa-archi-colori-agosto-2026",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3320.97805,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.3187,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3320.9780500000006,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/news/homeadore-lovingcolors-giugno-2026",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3321.31675,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.5445,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3321.31675,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/news/il-colore-nell-architettura",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3321.13375,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.4224999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3321.13375,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/news/intervista-archiboost-luglio-2026",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3765.6755999999996,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.2431999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3795.15668,
+          "displayValue": "3.8 s"
+        }
+      }
+    },
+    {
+      "path": "/news/progettare-il-bagno-consigli-architetto",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3320.9846500000003,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.3231000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3320.9846500000003,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/news/progettare-la-cucina-consigli-architetto",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3320.5886499999997,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.0591,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3320.5886499999997,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/news/quanto-costa-un-architetto-ristrutturazione",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3251.30905,
+          "displayValue": "3.3 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 908.8726999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3251.30905,
+          "displayValue": "3.3 s"
+        }
+      }
+    },
+    {
+      "path": "/progetti",
+      "score": 0.96,
+      "categories": {
+        "performance": {
+          "score": 0.89
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3773.08345,
+          "displayValue": "3.8 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.7222999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3818.0834500000005,
+          "displayValue": "3.8 s"
+        }
+      }
+    },
+    {
+      "path": "/progetti/appartamento-lovingcolors",
+      "score": 0.98,
+      "categories": {
+        "performance": {
+          "score": 0.94
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3088.0176,
+          "displayValue": "3.1 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.7855999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3110.3729600000006,
+          "displayValue": "3.1 s"
+        }
+      }
+    },
+    {
+      "path": "/progetti/bagno-casa-archi-colori",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3471.60085,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.7339,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3486.60085,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/progetti/bagno-casa-peonia",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3546.7909,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.8606,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3554.2909,
+          "displayValue": "3.6 s"
+        }
+      }
+    },
+    {
+      "path": "/progetti/bagno-italian-summer",
+      "score": 0.98,
+      "categories": {
+        "performance": {
+          "score": 0.94
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3085.9964250000003,
+          "displayValue": "3.1 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 904.8873000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3108.374242500001,
+          "displayValue": "3.1 s"
+        }
+      }
+    },
+    {
+      "path": "/progetti/casa-archi-colori",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3464.1626000000006,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.1084000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3478.5126000000005,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/progetti/cucina-mite",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.91
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3469.4092,
+          "displayValue": "3.5 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 904.2728,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3484.4092,
+          "displayValue": "3.5 s"
+        }
+      }
+    },
+    {
+      "path": "/progetti/cucina-parigina",
+      "score": 0.98,
+      "categories": {
+        "performance": {
+          "score": 0.95
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3013.1058000000003,
+          "displayValue": "3.0 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.8248000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3028.2514200000005,
+          "displayValue": "3.0 s"
+        }
+      }
+    },
+    {
+      "path": "/progetti/restyling-casa-peonia",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3395.8652500000003,
+          "displayValue": "3.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.2435,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3403.3652500000007,
+          "displayValue": "3.4 s"
+        }
+      }
+    },
+    {
+      "path": "/servizi",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.92
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3394.7837499999987,
+          "displayValue": "3.4 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.4269999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3417.419424999999,
+          "displayValue": "3.4 s"
+        }
+      }
+    },
+    {
+      "path": "/servizi/consulenza-acquisto-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3170.948,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.5583999999999,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3171.0869599999996,
+          "displayValue": "3.2 s"
+        }
+      }
+    },
+    {
+      "path": "/servizi/consulenza-architetto-online",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3170.3945000000003,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 905.9156,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3170.5423900000005,
+          "displayValue": "3.2 s"
+        }
+      }
+    },
+    {
+      "path": "/servizi/restyling-casa",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3180.5102999999995,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 910.1701,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3180.5102999999995,
+          "displayValue": "3.2 s"
+        }
+      }
+    },
+    {
+      "path": "/servizi/ristrutturazione-appartamento-bergamo",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.93
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3177.0966,
+          "displayValue": "3.2 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 909.0322000000001,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3177.0966,
+          "displayValue": "3.2 s"
+        }
+      }
+    },
+    {
+      "path": "/tappeti",
+      "score": 0.97,
+      "categories": {
+        "performance": {
+          "score": 0.9
+        },
+        "accessibility": {
+          "score": 1
+        },
+        "best-practices": {
+          "score": 0.96
+        },
+        "seo": {
+          "score": 1
+        }
+      },
+      "metrics": {
+        "largest-contentful-paint": {
+          "numericValue": 3698.34155,
+          "displayValue": "3.7 s"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0,
+          "displayValue": "0"
+        },
+        "first-contentful-paint": {
+          "numericValue": 906.1242,
+          "displayValue": "0.9 s"
+        },
+        "total-blocking-time": {
+          "numericValue": 0,
+          "displayValue": "0 ms"
+        },
+        "max-potential-fid": {
+          "numericValue": 16,
+          "displayValue": "20 ms"
+        },
+        "interactive": {
+          "numericValue": 3720.9570750000003,
+          "displayValue": "3.7 s"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "metrics": {
+      "largest-contentful-paint": {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+        "numericUnit": "millisecond"
+      },
+      "cumulative-layout-shift": {
+        "id": "cumulative-layout-shift",
+        "title": "Cumulative Layout Shift",
+        "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport. [Learn more about the Cumulative Layout Shift metric](https://web.dev/articles/cls).",
+        "numericUnit": "unitless"
+      },
+      "first-contentful-paint": {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+        "numericUnit": "millisecond"
+      },
+      "total-blocking-time": {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).",
+        "numericUnit": "millisecond"
+      },
+      "max-potential-fid": {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more about the Maximum Potential First Input Delay metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-max-potential-fid/).",
+        "numericUnit": "millisecond"
+      },
+      "interactive": {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+        "numericUnit": "millisecond"
+      }
+    },
+    "categories": {
+      "performance": {
+        "id": "performance",
+        "title": "Performance"
+      },
+      "accessibility": {
+        "id": "accessibility",
+        "title": "Accessibility"
+      },
+      "best-practices": {
+        "id": "best-practices",
+        "title": "Best Practices"
+      },
+      "seo": {
+        "id": "seo",
+        "title": "SEO"
+      }
+    }
+  }
+}
