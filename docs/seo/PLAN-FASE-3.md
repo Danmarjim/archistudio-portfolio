@@ -4,13 +4,13 @@
 
 ## 0. Preparar la skill (una vez)
 
-`/seo setup` → entorno Python ≥ 3.10 y Chromium aislados. El Mac tiene Python 3.9 y los scripts de la skill no arrancan. `/seo doctor` para comprobarlo. Sin esto, PageSpeed/CrUX, capturas, Lighthouse multipágina y las APIs de Google no funcionan desde la skill.
+✅ Hecho el 10 oct (usando el Python 3.12 de `uv`: `CLAUDE_SEO_PYTHON=~/.local/bin/python3.12`). `/seo setup` → entorno Python ≥ 3.10 y Chromium aislados. El Mac tiene Python 3.9 y los scripts de la skill no arrancan. `/seo doctor` para comprobarlo. Sin esto, PageSpeed/CrUX, capturas, Lighthouse multipágina y las APIs de Google no funcionan desde la skill.
 
 ## A. Calidad y técnica (sin Martina) — de 84 a ~88
 
 | # | Tarea | Comando | Categoría del audit | Esfuerzo |
 |---|---|---|---|---|
-| A1 | **Revisión de contenido de los textos nuevos** (4 servicios, 2 guías, home, chi sono): E-E-A-T, legibilidad y **limpieza de frases típicas de IA**, antes de que los lea Martina | `/seo content <url>` por página | Contenido (23 %) | 1–2 h |
+| A1 | ✅ [hecho](archivo/datos/2026-10-10-audit-preview/findings/content.md): **Revisión de contenido de los textos nuevos** (4 servicios, 2 guías, home, chi sono): E-E-A-T, legibilidad y **limpieza de frases típicas de IA**, antes de que los lea Martina | `/seo content <url>` por página | Contenido (23 %) | 1–2 h |
 | A2 | **Citabilidad en buscadores con IA** (AI Overviews, ChatGPT, Perplexity): pasajes que se entienden solos, datos con fuente, entidad clara | `/seo geo <url>` en guías y servicios | Preparación IA (10 %) | 1 h |
 | A3 | **Páginas más ligeras:** cada página envía solo los textos que usan sus componentes de cliente | — (código) | Rendimiento (10 %) | 1–2 h |
 | A4 | **Contraste** del gris de fechas y etiquetas en noticias | — (código) | Accesibilidad | 15 min |
