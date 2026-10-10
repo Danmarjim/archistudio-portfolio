@@ -1,12 +1,14 @@
 # SEO — stato dell'implementazione (branch `feat/seo-improvements`)
 
+> ✅ **Fase 1 chiusa il 10 ott 2026.** Tutto in `main`.
+
 Riferimenti: `docs/seo/auditorias/2026-10-07-inicial/INFORME-ITALIANO.md` (audit), `docs/seo/planes/fase-1.md` (piano).
 
 ## Azioni manuali
 
 - [x] Eliminati `src/app/layout.tsx` e `src/app/favicon.ico.ico` (il root layout è `src/app/[locale]/layout.tsx`).
 - [x] Dominio canonico confermato: `https://mparchistudio.com` (`siteConfig.url` e `public/llms.txt`).
-- [ ] Dopo il deploy: inviare `sitemap.xml` in Search Console e richiedere l'indicizzazione della home.
+- [x] Dopo il deploy: inviare `sitemap.xml` in Search Console e richiedere l'indicizzazione della home (8 ott).
 
 ## Fatto
 
