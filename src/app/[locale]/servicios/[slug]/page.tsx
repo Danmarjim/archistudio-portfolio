@@ -9,6 +9,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import Markdown from '@/components/shared/Markdown'
 import { getPublishedServiceBySlug, getPublishedServices } from '@/lib/services'
 import { getProjectBySlug } from '@/lib/projects'
+import { getPublishedNewsSlugs, resolveNewsLinks } from '@/lib/news'
 import { absoluteUrl, buildBreadcrumb, buildMetadata, businessSummary, localizedUrl } from '@/lib/seo'
 import { CALENDLY_URL, siteConfig } from '@/lib/constants'
 import type { Project } from '@/types'
@@ -145,7 +146,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         </header>
 
         <div className="mx-auto mt-12 max-w-3xl">
-          <Markdown content={service.content} />
+          <Markdown content={resolveNewsLinks(service.content, getPublishedNewsSlugs(locale))} />
         </div>
 
         {projects.length > 0 && (
