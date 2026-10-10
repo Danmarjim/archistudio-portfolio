@@ -1,16 +1,38 @@
 # Documentación
 
-| Documento | Para quién | Qué es |
-|---|---|---|
-| [`seo/ESTADO.md`](seo/ESTADO.md) | Todos | **Estado del SEO**: hecho, en curso y pendiente. Empieza aquí |
-| [`seo/CONTEXTO.md`](seo/CONTEXTO.md) | Martina | Contexto del negocio para pegar en Cowork antes de pedir algo de SEO |
-| [`seo/DATOS-MARTINA.md`](seo/DATOS-MARTINA.md) | Martina | Datos y textos que faltan para seguir con el SEO |
-| [`seo/PLAN.md`](seo/PLAN.md) | Desarrollo | Detalle de cada tarea SEO |
-| [`seo/briefs/`](seo/briefs/) | Martina / desarrollo | Guion de cada página nueva o a mejorar |
-| [`seo/REGISTRO-COMANDOS.md`](seo/REGISTRO-COMANDOS.md) | Desarrollo | Análisis SEO ya ejecutados (para no repetirlos) |
-| [`seo/archivo/`](seo/archivo/) | Consulta | Fase 1 cerrada y resultados brutos de los análisis |
-| [`GUIA-CONTENIDO.md`](GUIA-CONTENIDO.md) | Martina | Cómo añadir proyectos, noticias y servicios |
-| [`WORKFLOW.md`](WORKFLOW.md) | Martina | Cómo trabajar con Cowork |
-| [`setup-windows.md`](setup-windows.md) | Desarrollo | Instalar el entorno en Windows |
-| [`ROADMAP.md`](ROADMAP.md) | Todos | Funcionalidades pendientes (no SEO) |
-| [`design-system/`](design-system/) | Desarrollo | Muestras HTML de los componentes de la interfaz |
+Organizada por quién la usa. **Para saber en qué punto está el SEO, empieza por [`seo/ESTADO.md`](seo/ESTADO.md).**
+
+```
+docs/
+├── martina/       → lo que usa Martina (contenido, Cowork, ficha de Google)
+├── seo/           → trabajo de SEO: estado, pendientes, planes, briefs, revisiones y auditorías
+└── desarrollo/    → entorno, roadmap y design system
+```
+
+## Martina — `martina/`
+
+| Documento | Qué es |
+|---|---|
+| [`GUIA-CONTENIDO.md`](martina/GUIA-CONTENIDO.md) | Cómo añadir proyectos, noticias y servicios |
+| [`WORKFLOW.md`](martina/WORKFLOW.md) | Cómo trabajar con Cowork |
+| [`CONTEXTO-COWORK.md`](martina/CONTEXTO-COWORK.md) | Datos del negocio para pegar en Cowork antes de pedir algo de SEO |
+| [`FICHA-GOOGLE.md`](martina/FICHA-GOOGLE.md) | Ficha de Google: estado, categorías, atributos y mensajes para pedir reseñas |
+
+## SEO — `seo/`
+
+| Documento | Qué es |
+|---|---|
+| [`ESTADO.md`](seo/ESTADO.md) | **Punto de entrada**: hecho, en curso y pendiente |
+| [`PENDIENTE-MARTINA.md`](seo/PENDIENTE-MARTINA.md) | Todo lo que falta de Martina (datos, textos, decisiones), con el detalle por brief en el anexo |
+| [`planes/`](seo/planes/) | Planes por fase: [`fase-1`](seo/planes/fase-1.md) (cerrada, con su [estado](seo/planes/fase-1-estado.md)), [`fase-2`](seo/planes/fase-2.md) (detalle de cada tarea A1…F3), [`fase-3`](seo/planes/fase-3.md) (en curso) |
+| [`briefs/`](seo/briefs/) | Guion de cada página nueva o a mejorar (estructura, keywords, competidores, meta) |
+| [`revisiones/`](seo/revisiones/) | Un documento por rama: qué se hizo y qué validar |
+| [`auditorias/`](seo/auditorias/) | Resultados de los audits por fecha y el [registro de comandos `/seo`](seo/auditorias/REGISTRO-COMANDOS.md) ya ejecutados |
+
+## Desarrollo — `desarrollo/`
+
+| Documento | Qué es |
+|---|---|
+| [`ROADMAP.md`](desarrollo/ROADMAP.md) | Funcionalidades pendientes (no SEO) |
+| [`setup-windows.md`](desarrollo/setup-windows.md) | Instalar el entorno en Windows |
+| [`design-system/`](desarrollo/design-system/) | Muestras HTML de los componentes de la interfaz |

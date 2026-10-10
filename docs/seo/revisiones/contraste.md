@@ -1,6 +1,6 @@
 # Revisión — `seo/contraste`
 
-Contraste del texto gris claro (A4 del [plan de la fase 3](../PLAN-FASE-3.md), hallazgo 7 del audit). El gris `text-neutral-400` (`#a3a3a3`) da **2,42:1** sobre el fondo de la web (`#fafaf9`); WCAG AA pide 4,5:1 para texto pequeño. Lighthouse lo marcaba en la página de noticia.
+Contraste del texto gris claro (A4 del [plan de la fase 3](../planes/fase-3.md), hallazgo 7 del audit). El gris `text-neutral-400` (`#a3a3a3`) da **2,42:1** sobre el fondo de la web (`#fafaf9`); WCAG AA pide 4,5:1 para texto pequeño. Lighthouse lo marcaba en la página de noticia.
 
 ## Qué se ha hecho
 
