@@ -1,8 +1,8 @@
 # Plan SEO — detalle de tareas (fase 2)
 
-> Punto de entrada: **`docs/seo/ESTADO.md`** (qué está hecho, en curso y pendiente). Este documento contiene el **detalle** de cada tarea: qué hacer, en qué archivos y cómo verificarlo. Datos a pedir a Martina: `docs/seo/DATOS-MARTINA.md`. Comandos ejecutados: `docs/seo/REGISTRO-COMANDOS.md`.
+> Punto de entrada: **`docs/seo/ESTADO.md`** (qué está hecho, en curso y pendiente). Este documento contiene el **detalle** de cada tarea: qué hacer, en qué archivos y cómo verificarlo. Datos a pedir a Martina: `docs/seo/DATOS-MARTINA.md`. Comandos ejecutados: `docs/seo/auditorias/REGISTRO-COMANDOS.md`.
 
-Origen: re-auditoría del 7 oct 2026 (score 49 → 80), plan de clusters "architetto Bergamo" (8 oct) y Search Console. Fase 1 archivada en `docs/seo/archivo/fase-1/`.
+Origen: re-auditoría del 7 oct 2026 (score 49 → 80), plan de clusters "architetto Bergamo" (8 oct) y Search Console. Fase 1 archivada en `docs/seo/planes/`.
 
 **Diagnóstico:** el sitio ya no tiene problemas de indexación. Que no aparezca por "studio architettura Bergamo" es falta de relevancia y autoridad local: una sola página de servicios, sin ficha de Google Business Profile, sin reseñas visibles y sin contenido que responda a las búsquedas reales.
 
