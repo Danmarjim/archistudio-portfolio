@@ -2,7 +2,7 @@
 
 Parte de `docs/seo/planes/fase-2.md` (bloque C, ola 2, tarea C7). Generado con `/seo content-brief quanto costa un architetto per ristrutturare casa` el 8 oct 2026.
 
-**Estado:** pendiente. Bloqueado por la decisión de Martina de publicar (aunque sea en rangos) cómo calcula sus honorarios.
+**Estado:** ✅ redactado en it/es/en en la rama `seo/c7-costo-architetto` (10 oct 2026). Lo que falta de Martina está en su [revisión](../revisiones/c7-costo-architetto.md) y en [`PENDIENTE-MARTINA.md`](../PENDIENTE-MARTINA.md). La checklist de datos de abajo es la original del brief.
 
 **Página:** nueva, guía en `/news/quanto-costa-un-architetto-ristrutturazione`.
 

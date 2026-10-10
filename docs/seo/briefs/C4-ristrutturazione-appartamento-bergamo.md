@@ -2,7 +2,7 @@
 
 Parte de `docs/seo/planes/fase-2.md` (bloque C, ola 1, tarea C4; estructura en A2). Generado con `/seo content-brief` el 8 oct 2026.
 
-**Estado:** pendiente. Bloqueado por los datos de Martina (checklist al final).
+**Estado:** ✅ redactado en it/es/en en la rama `seo/c4-ristrutturazione-bergamo` (10 oct 2026). Lo que falta de Martina está en su [revisión](../revisiones/c4-ristrutturazione-bergamo.md) y en [`PENDIENTE-MARTINA.md`](../PENDIENTE-MARTINA.md). La checklist de datos de abajo es la original del brief.
 
 **Página:** nueva, `/servizi/ristrutturazione-appartamento-bergamo`. Hoy el servicio "Progettazione architettonica a 360°" es un ancla en `/servizi`, con un proceso en 5 pasos muy completo (rilievo, progetto, direzione artistica, coordinamento cantiere, pratica edilizia) que es la base de esta página.
 
