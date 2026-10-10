@@ -65,6 +65,8 @@ Todo está escrito en primera persona, como si fueras tú. Revisa que suene a ti
   - Restyling: la tabla de qué es restyling y qué es reforma.
 - [ ] Textos de las 4 páginas de servicio, en italiano, español e inglés.
 - [ ] Textos de la ficha de Google (`FICHA-GOOGLE.md` §6) y mensajes para pedir reseñas (§5).
+- [ ] **Home** ([revisión](a3-home.md)): el H1 nuevo "Architetto a Bergamo: ristrutturazioni e interni su misura" (¿"Architetto" por la búsqueda o "Architetta"?), "Chi sono", resúmenes de servicios, "Come lavoro" y "Dove lavoro".
+- [ ] **Enlaces de proyectos a servicios** ([revisión](a4-enlazado-interno.md)): cocinas → restyling y baños → reforma; frases añadidas al final de las noticias de prensa.
 - [ ] Rama base: las dos noticias de Homeadore y los títulos de los proyectos en español e inglés ([revisión](feat-seo-fase-2-pr2.md)).
 
 ## 5. Más adelante
