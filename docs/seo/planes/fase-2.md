@@ -8,7 +8,7 @@ Origen: re-auditoría del 7 oct 2026 (score 49 → 80), plan de clusters "archit
 
 > Antes de cada tarea, comprobar en el código que el problema sigue ahí.
 
-**Estado (10 oct):** en cierre. Lo que depende de Martina (decisiones D2–D5 y D8, validar textos, C5, C15, F1 paso 2, F7 y el bloque D) pasa a la [fase Martina](fase-martina.md); el seguimiento (bloque E), a la [fase 3](fase-3.md). Para cerrar la fase solo quedan los **borradores de las guías C8, C10 y C14** (C12, C9 y C13 hechas el 10 oct) y los enlaces hacia ellas.
+**Estado (10 oct):** en cierre. Lo que depende de Martina (decisiones D2–D5 y D8, validar textos, C5, C15, F1 paso 2, F7 y el bloque D) pasa a la [fase Martina](fase-martina.md); el seguimiento (bloque E), a la [fase 3](fase-3.md). Para cerrar la fase solo quedan los **borradores de las guías C8 y C14** (C12, C9, C13 y C10 hechas el 10 oct) y los enlaces hacia ellas.
 
 ## Decisiones previas (bloquean tareas)
 
@@ -123,7 +123,7 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 
 ## Bloque C — Contenido nuevo (requiere textos o datos de Martina)
 
-Nosotros redactamos el borrador de cada página con su brief, con los datos que faltan como `[DA CONFERMARE]`; Martina valida y completa ([fase Martina](fase-martina.md)). Borradores hechos: C1–C4, C6, C7, C9, C11–C13. Pendientes para cerrar la fase: C8, C10, C14; después, los enlaces de C4 y C7 hacia las guías nuevas.
+Nosotros redactamos el borrador de cada página con su brief, con los datos que faltan como `[DA CONFERMARE]`; Martina valida y completa ([fase Martina](fase-martina.md)). Borradores hechos: C1–C4, C6, C7, C9–C13. Pendientes para cerrar la fase: C8, C14; después, los enlaces de C4 y C7 hacia las guías nuevas.
 
 Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, secciones, palabras, competidores, enlaces). Los briefs se guardan en `docs/seo/briefs/` con el código de la tarea (`C2-…md`).
 

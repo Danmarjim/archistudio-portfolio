@@ -78,6 +78,12 @@ En la preview, todo lo que falta sale **resaltado en amarillo** en las páginas.
 - [ ] ¿Trabajas con carpinteros para las cocinas a medida o con tiendas de cocinas?
 - [ ] Duración típica de un restyling de cocina.
 
+**Artículo sobre el color** ([revisión](revisiones/c10-colore-architettura.md)): ya está publicado, así que hasta que respondas no se puede actualizar en la web.
+- [ ] Cómo compruebas los colores antes de decidir (muestras en la pared, pruebas en obra…).
+- [ ] Una anécdota de un cliente al que convenciste de usar color, o un color nacido de un recuerdo suyo.
+- [ ] (Opcional) Nombres o códigos de los colores de cada proyecto.
+- [ ] Que el texto ampliado siga sonando a ti: es tu artículo más personal.
+
 ## 4. Revisar lo escrito (visto bueno)
 
 Todo está escrito en primera persona, como si fueras tú. Revisa que suene a ti y que sea correcto.
