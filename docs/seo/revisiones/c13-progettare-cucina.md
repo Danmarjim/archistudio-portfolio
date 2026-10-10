@@ -36,7 +36,7 @@ Guía **"Progettare la cucina: i consigli di un'architetta (con cucine reali)"**
 
 ## Cómo verlo
 
-Preview de `seo/preview-completa` o `npm run dev` → http://localhost:3000/news/progettare-la-cucina-consigli-architetto. En producción no se publica mientras haya marcadores.
+Preview de `preview/seo-completa` o `npm run dev` → http://localhost:3000/news/progettare-la-cucina-consigli-architetto. En producción no se publica mientras haya marcadores.
 
 ## Qué validar
 
