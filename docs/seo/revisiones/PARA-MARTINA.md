@@ -55,6 +55,15 @@ En la preview, todo lo que falta sale **resaltado en amarillo** en las páginas.
 - [ ] Plazos (una estancia, una casa entera).
 - [ ] ¿Llevas restylings completos a distancia?
 
+**Guía de costes de la obra en Bergamo** ([revisión](c11-costo-ristrutturazione.md))
+- [ ] ¿Los rangos por m² de mercado coinciden con lo que ves en tus obras? Si no, ¿cuáles son los tuyos?
+- [ ] Un ejemplo por partidas para 80 m² (real con permiso, o tipo).
+- [ ] Plazos para 70–90 m² y rango para reformar solo un baño.
+
+**Guía de cuánto cuesta un arquitecto** ([revisión](c7-costo-architetto.md))
+- [ ] **¿Publicas cómo calculas tus honorarios?** (porcentaje, por fases o mixto) y un rango. Es la decisión que más pesa en esta guía.
+- [ ] Peso de cada fase en el total, ejemplo de LOVINGCOLORS y cómo organizas los pagos.
+
 ## 4. Revisar lo escrito (visto bueno)
 
 Todo está escrito en primera persona, como si fueras tú. Revisa que suene a ti y que sea correcto.
@@ -63,6 +72,7 @@ Todo está escrito en primera persona, como si fueras tú. Revisa que suene a ti
   - Reforma: mover o derribar un tabique suele requerir CILA; CILA o SCIA según la intervención; no se suele poder vivir en casa durante una reforma integral.
   - Compra de vivienda: el notario no comprueba en la casa que el estado real coincida con los proyectos y el catastro; se puede poner una condición suspensiva ligada a la verificación técnica.
   - Restyling: la tabla de qué es restyling y qué es reforma.
+  - Guías de costes: amianto en edificios anteriores a 1992; honorarios libres desde 2012 y el DM 140/2012 como referencia judicial; los gastos técnicos siguen la deducción de la obra; arquitecto y geometra pueden firmar los trámites de muchas obras en un piso.
 - [ ] Textos de las 4 páginas de servicio, en italiano, español e inglés.
 - [ ] Textos de la ficha de Google (`FICHA-GOOGLE.md` §6) y mensajes para pedir reseñas (§5).
 - [ ] **Home** ([revisión](a3-home.md)): el H1 nuevo "Architetto a Bergamo: ristrutturazioni e interni su misura" (¿"Architetto" por la búsqueda o "Architetta"?), "Chi sono", resúmenes de servicios, "Come lavoro" y "Dove lavoro".

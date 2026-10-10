@@ -26,6 +26,8 @@ Los textos con datos pendientes llevan `[DA CONFERMARE: …]`. En local y en las
 | `seo/a4-enlazado-interno` | [a4-enlazado-interno.md](a4-enlazado-interno.md) | Pendiente de revisión |
 | `seo/a3-home` | [a3-home.md](a3-home.md) | Pendiente de revisión (H1 y testimonios) |
 | `seo/c1-chi-sono` | [c1-chi-sono.md](c1-chi-sono.md) | Pendiente de revisión (premio, colegiada, Sevilla) |
+| `seo/c11-costo-ristrutturazione` | [c11-costo-ristrutturazione.md](c11-costo-ristrutturazione.md) | Pendiente de revisión (4 datos de Martina) |
+| `seo/c7-costo-architetto` | [c7-costo-architetto.md](c7-costo-architetto.md) | Pendiente de revisión (5 datos; decidir si publica sus honorarios) |
 | `seo/preview-completa` | — | Integra todas las anteriores |
 
 Orden de merge: primero `feat/seo-fase-2-pr2` (todas salen de ella); después, cualquier rama aprobada, en cualquier orden.

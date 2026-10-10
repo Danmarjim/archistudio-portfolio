@@ -73,6 +73,7 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 - [x] **A3 — home** (rama `seo/a3-home`): H1 con oficio y ciudad, "Chi sono" concreto, servicios con resumen y enlace, Come lavoro, proyectos destacados, Dove lavoro, teléfono. Falta de Martina: validar el H1 (D5), testimonios y colegiación.
 - [x] **C1 — chi sono** (rama `seo/c1-chi-sono`): H1 con nombre, credenciales, prensa, proyectos, perfiles, `Person` con `hasCredential` y `memberOf`. Falta de Martina: número de colegiada, texto del premio y confirmar Sevilla.
 - [x] **A4 — enlazado interno** (rama `seo/a4-enlazado-interno`): proyecto → servicio, prensa y ArchiAdvice → servicio, servicios entre sí; enlaces a servicios sin publicar apuntan al hub. La home enlaza a los servicios desde A3.
+- [x] Guías **C11** (coste de la obra en Bergamo) y **C7** (cuánto cuesta un arquitecto) redactadas en it/es/en, en sus ramas, con las cifras de Martina como `[DA CONFERMARE]`.
 - [ ] Borradores de las guías **C12** y **C8** para que Martina las revise (C8 requiere revisión normativa).
 - [ ] **B12** — decidir si se quitan las animaciones `opacity:0` bajo el pliegue (propuesta: mantener).
 - [ ] **F8** — créditos IPTC en las fotos (opcional).
