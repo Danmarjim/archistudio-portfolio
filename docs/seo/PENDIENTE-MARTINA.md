@@ -88,6 +88,12 @@ En la preview, todo lo que falta sale **resaltado en amarillo** en las páginas.
 - [ ] Cómo pruebas las muestras y qué pintura prefieres (la misma pregunta que en el artículo del color).
 - [ ] ¿Reconoces como tuya la lectura 60-30-10 de CASA PEONIA (marfil 60 %, roble y marrón 30 %, amarillo oro 10 %)?
 
+**Guía de conformidad urbanística y catastral** ([revisión](revisiones/c8-conformita-urbanistica.md)): necesita tu **revisión técnica completa** antes de publicarse; la revisión lista cada afirmación legal con su referencia.
+- [ ] Plazos reales del accesso agli atti en Bergamo, Milán y Monza.
+- [ ] Qué documentos pides al cliente o a la agencia para empezar.
+- [ ] Las irregularidades que más te encuentras.
+- [ ] Plazo típico de una comprobación completa.
+
 ## 4. Revisar lo escrito (visto bueno)
 
 Todo está escrito en primera persona, como si fueras tú. Revisa que suene a ti y que sea correcto.
