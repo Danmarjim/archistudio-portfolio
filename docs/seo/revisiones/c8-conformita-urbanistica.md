@@ -27,7 +27,7 @@ Guía **"Conformità urbanistica e catastale: cosa controllare prima di comprare
 
 ## Cómo verlo
 
-Preview de `seo/preview-completa` o `npm run dev` → http://localhost:3000/news/conformita-urbanistica-catastale-prima-di-comprare-casa. En producción no se publica mientras haya marcadores.
+Preview de `preview/seo-completa` o `npm run dev` → http://localhost:3000/news/conformita-urbanistica-catastale-prima-di-comprare-casa. En producción no se publica mientras haya marcadores.
 
 ## Qué validar
 

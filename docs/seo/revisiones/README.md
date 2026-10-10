@@ -11,7 +11,7 @@ Cada tarea de SEO vive en su propia rama, que sale de `feat/seo-fase-2-pr2`, y s
 
 Los textos con datos pendientes llevan `[DA CONFERMARE: …]`. En local y en las previews se ven resaltados en amarillo; en producción una página que los contenga no se publica.
 
-`seo/preview-completa` junta todas las ramas para ver el resultado final. **Es la única rama `seo/*` que Vercel despliega** (`vercel.json`): las ramas de tarea no generan preview, para no ocupar espacio en el plan gratuito. El estado general (`docs/seo/ESTADO.md`) solo se actualiza en esa rama.
+`preview/seo-completa` junta todas las ramas para ver el resultado final y **es la única que Vercel despliega**. Las ramas `seo/*` y la base no crean despliegues (`git.deploymentEnabled` en `vercel.json`): así no ocupan espacio ni gastan el límite diario de despliegues del plan gratuito. Hasta el 10 oct la integración se llamaba `seo/preview-completa`. El estado general (`docs/seo/ESTADO.md`) solo se actualiza en esa rama.
 
 ## Ramas
 
@@ -42,6 +42,6 @@ Los textos con datos pendientes llevan `[DA CONFERMARE: …]`. En local y en las
 | `seo/c10-colore-architettura` | [c10-colore-architettura.md](c10-colore-architettura.md) | Pendiente de revisión (3 datos; **ya publicado: no mergear con marcadores**; sale de `meta-titulos-descripciones`) |
 | `seo/c14-colori-pareti` | [c14-colori-pareti.md](c14-colori-pareti.md) | Pendiente de revisión (1 dato; validar la lectura 60-30-10) |
 | `seo/c8-conformita-urbanistica` | [c8-conformita-urbanistica.md](c8-conformita-urbanistica.md) | Pendiente de revisión técnica (normativa) y 4 datos |
-| `seo/preview-completa` | — | Integra todas las anteriores |
+| `preview/seo-completa` | — | Integra todas las anteriores |
 
 Orden de merge: primero `feat/seo-fase-2-pr2` (todas salen de ella); después, cualquier rama aprobada, en cualquier orden.
