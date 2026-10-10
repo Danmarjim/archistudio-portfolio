@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import type { NewsPost, NewsCategory } from '@/types'
 import { resolveServiceLinks } from '@/lib/services'
+import { hasPendingMarkers, isProductionDeploy } from '@/lib/pending'
 
 const newsDirectory = path.join(process.cwd(), 'content/news')
 
@@ -16,7 +17,7 @@ function getNewsDir(locale: string = 'it'): string {
   return path.join(newsDirectory, 'it')
 }
 
-export function getAllNews(locale: string = 'it'): NewsPost[] {
+function readNews(locale: string): NewsPost[] {
   const dir = getNewsDir(locale)
   if (!fs.existsSync(dir)) return []
 
@@ -44,12 +45,43 @@ export function getAllNews(locale: string = 'it'): NewsPost[] {
       relatedProjectLabel: data.relatedProjectLabel,
       seoTitle: data.seoTitle,
       updated: data.updated,
-      content: resolveServiceLinks(content.trim()),
+      content: content.trim(),
     } as NewsPost
   })
 
   // Ordine cronologico inverso (più recenti prima)
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+}
+
+function hasPending(post: NewsPost): boolean {
+  return hasPendingMarkers(post.title, post.excerpt, post.seoTitle, post.content)
+}
+
+/**
+ * Notizie pubblicate. In produzione resta fuori ogni articolo con dati da confermare
+ * (`[DA CONFERMARE: …]`) nella lingua richiesta o in italiano, la lingua di riferimento.
+ * I link Markdown a notizie non pubblicate puntano a `/news` e quelli a servizi non
+ * pubblicati all'hub `/servizi`.
+ */
+export function getAllNews(locale: string = 'it'): NewsPost[] {
+  let posts = readNews(locale)
+  if (isProductionDeploy) {
+    const blocked = new Set(
+      [...readNews('it'), ...posts].filter(hasPending).map((post) => post.slug)
+    )
+    posts = posts.filter((post) => !blocked.has(post.slug))
+  }
+  const publishedSlugs = new Set(posts.map((post) => post.slug))
+  return posts.map((post) => ({
+    ...post,
+    content: resolveServiceLinks(resolveNewsLinks(post.content ?? '', publishedSlugs)),
+  }))
+}
+
+function resolveNewsLinks(content: string, publishedSlugs: Set<string>): string {
+  return content.replace(/\]\(\/news\/([a-z0-9-]+)\)/g, (link, slug: string) =>
+    publishedSlugs.has(slug) ? link : '](/news)'
+  )
 }
 
 export function getNewsByCategory(category: NewsCategory, locale: string = 'it'): NewsPost[] {
