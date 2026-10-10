@@ -27,8 +27,8 @@
 | ~~B1~~ | Guía C12 → [fase 2](fase-2.md) | — | — |
 | ~~B2~~ | Guías C9 y C13 → [fase 2](fase-2.md) | — | — |
 | B3 | ✅ [hecho](../auditorias/2026-10-10-intencion/README.md): 14 de 15 alineadas; restyling reorientado a Bergamo. **Comprobar la intención de búsqueda** de las páginas objetivo: ¿Google quiere una página de servicio, una guía o un listado para cada keyword? | `/seo sxo <url>` | Evita escribir el tipo de página equivocado |
-| B4 | **Sección de testimonios** lista y oculta: aparece sola cuando haya 2–3 | — | Señal de confianza en home y servicios |
-| B5 | **4 semanas de publicaciones** para la ficha de Google, a partir de los proyectos | — | Actividad en la ficha = mejor posición en el mapa |
+| B4 | ✅ [hecho](../revisiones/b4-testimonios.md) (`seo/b4-testimonios`): **Sección de testimonios** lista y oculta: aparece sola cuando haya 2–3 | — | Señal de confianza en home y servicios |
+| B5 | ✅ [hecho](../../martina/POST-GOOGLE.md): 8 publicaciones (2 por semana) con foto, texto y botón. **4 semanas de publicaciones** para la ficha de Google, a partir de los proyectos | — | Actividad en la ficha = mejor posición en el mapa |
 
 ## C. El día de publicar
 
@@ -48,6 +48,6 @@
 
 ## Orden recomendado
 
-~~Cerrar la fase 2~~ → ~~A7~~ → ~~A5 + A6 + B3~~ → B4 → B5. D según su fecha.
+~~Cerrar la fase 2~~ → ~~A7~~ → ~~A5 + A6 + B3~~ → ~~B4~~ → ~~B5~~. D según su fecha.
 
 **Comandos que no aportan aquí:** `ecommerce`, `programmatic`, `competitor-pages`, `cluster` (ya hecho el 8 oct), `hreflang` (sin errores en el audit), `seranking`/`profound` (de pago, para cuando haya tráfico).
