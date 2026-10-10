@@ -2,7 +2,7 @@
 
 Parte de `docs/seo/planes/fase-2.md` (bloque C, ola 3, tarea C11). Generado con `/seo content-brief costo ristrutturazione appartamento Bergamo` el 8 oct 2026.
 
-**Estado:** pendiente. Necesita que Martina valide los rangos (o aporte los suyos) y, si es posible, un ejemplo real con cifras.
+**Estado:** ✅ redactado en it/es/en en la rama `seo/c11-costo-ristrutturazione` (10 oct 2026). Lo que falta de Martina está en su [revisión](../revisiones/c11-costo-ristrutturazione.md) y en [`PENDIENTE-MARTINA.md`](../PENDIENTE-MARTINA.md). La checklist de datos de abajo es la original del brief.
 
 **Página:** nueva, guía en `/news/costo-ristrutturazione-appartamento-bergamo`.
 
