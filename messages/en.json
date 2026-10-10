@@ -51,7 +51,7 @@
   "Hero": {
     "overline": "ARCHITECTURAL DESIGN STUDIO FOR TAILOR-MADE INTERIORS IN BERGAMO",
     "title": "Architect in Bergamo: renovations and bespoke interiors",
-    "subtitle": "Renovate without the worry. I'm Martina Pozzi, an architect: I guide you from design through permits to the building site, as a single point of contact looking after your interests.",
+    "subtitle": "Renovate without the worry. I'm Martina Pozzi, an architect: I guide you from design through permits to the building site, as <b>a single point of contact</b> looking after your interests.",
     "cta": "View projects",
     "ctaSecondary": "Contact",
     "scrollIndicator": "Discover more"
@@ -66,7 +66,7 @@
     "title": "Architecture and Empathetic Listening",
     "description": "I'm Martina Pozzi, an architect, and since 2021 I have run MP_archistudio, an architecture and interiors studio in Bergamo. I graduated from the Politecnico di Milano and before opening the studio I worked in architecture practices in Italy and Spain, in Seville and Barcelona. I design renovations of apartments and houses, bespoke interiors and restylings: colour and custom-designed furniture are my signature.",
     "cta": "Learn more about me",
-    "description2": "I listen before I draw: every project starts from how you live in your home and what you want to feel when you open the door. My work has been published in HOME, Cose di Casa and Homeadore."
+    "description2": "I listen before I draw: every project starts from how you live in your home and what you want to feel when you open the door. My work has been published in HOME and Cose di Casa magazines and on the international design blog Homeadore."
   },
   "ServicesPreview": {
     "title": "Services",

@@ -51,7 +51,7 @@
   "Hero": {
     "overline": "STUDIO DI PROGETTAZIONE ARCHITETTONICA SARTORIALE D'INTERNI A BERGAMO",
     "title": "Architetto a Bergamo: ristrutturazioni e interni su misura",
-    "subtitle": "Ristruttura senza pensieri. Sono Martina Pozzi, architetta: ti seguo dal progetto alle pratiche fino al cantiere, con un unico referente che veglia sui tuoi interessi.",
+    "subtitle": "Ristruttura senza pensieri. Sono Martina Pozzi, architetta: ti seguo dal progetto alle pratiche fino al cantiere, con <b>un unico referente</b> che veglia sui tuoi interessi.",
     "cta": "Vedi progetti",
     "ctaSecondary": "Contattaci",
     "scrollIndicator": "Scopri di più"
@@ -66,7 +66,7 @@
     "title": "Architettura e Ascolto Empatico",
     "description": "Sono Martina Pozzi, architetta, e dal 2021 guido MP_archistudio, studio di architettura e interni a Bergamo. Mi sono laureata al Politecnico di Milano e prima di aprire lo studio ho lavorato in studi di architettura in Italia e in Spagna, tra Siviglia e Barcellona. Progetto ristrutturazioni di appartamenti e case, interni su misura e restyling: il colore e i mobili disegnati su misura sono la mia firma.",
     "cta": "Scopri di più su di me",
-    "description2": "Ascolto prima di disegnare: ogni progetto parte da come vivi la casa e da cosa vuoi provare quando apri la porta. I miei lavori sono stati pubblicati su HOME, Cose di Casa e Homeadore."
+    "description2": "Ascolto prima di disegnare: ogni progetto parte da come vivi la casa e da cosa vuoi provare quando apri la porta. I miei lavori sono stati pubblicati sulle riviste HOME e Cose di Casa e sul blog internazionale di design Homeadore."
   },
   "ServicesPreview": {
     "title": "Servizi",
