@@ -49,6 +49,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
     .map((projectSlug) => getProjectBySlug(projectSlug, locale))
     .filter((project): project is Project => Boolean(project))
 
+  const price = service.price ?? service.priceFrom
+
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -62,11 +64,11 @@ export default async function ServicePage({ params }: ServicePageProps) {
       '@type': 'Place',
       name,
     })),
-    ...(service.priceFrom
+    ...(price
       ? {
           offers: {
             '@type': 'Offer',
-            price: service.priceFrom,
+            price,
             priceCurrency: 'EUR',
             url: localizedUrl(locale, `/servicios/${slug}`),
           },
@@ -121,12 +123,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <header className="mx-auto max-w-3xl">
           <h1 className="font-serif text-4xl font-medium text-foreground md:text-5xl">{service.title}</h1>
           <p className="mt-5 text-lg text-neutral-600 md:text-xl">{service.description}</p>
-          {service.priceFrom && (
+          {price && (
             <p className="mt-6 inline-flex items-baseline gap-2 rounded-xl bg-primary-50 px-5 py-3 text-primary-800">
-              <span className="text-sm uppercase tracking-widest">{t('priceFrom')}</span>
+              <span className="text-sm uppercase tracking-widest">{t(service.price ? 'price' : 'priceFrom')}</span>
               <span className="font-serif text-2xl">
                 {new Intl.NumberFormat(locale, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(
-                  service.priceFrom
+                  price
                 )}
               </span>
             </p>

@@ -30,6 +30,7 @@ function readServices(locale: string): ServicePage[] {
         cta: data.cta === 'calendly' ? 'calendly' : 'contact',
         contactProjectType: data.contactProjectType,
         relatedProjects: data.relatedProjects ?? [],
+        price: typeof data.price === 'number' ? data.price : undefined,
         priceFrom: typeof data.priceFrom === 'number' ? data.priceFrom : undefined,
         updated: data.updated,
         content: content.trim(),

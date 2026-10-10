@@ -327,6 +327,7 @@
   },
   "ServicePage": {
     "backToServices": "Todos los servicios",
+    "price": "Precio",
     "priceFrom": "Desde",
     "bookCta": "Reserva la asesoría",
     "contactCta": "Pide información",
