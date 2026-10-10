@@ -110,9 +110,9 @@ export default function ServiciosContent({ servicePages }: ServiciosContentProps
                       </div>
                     </div>
 
-                    <h3 className="font-serif text-3xl font-medium uppercase tracking-wide text-primary-600">
+                    <h2 className="font-serif text-3xl font-medium uppercase tracking-wide text-primary-600">
                       {sd(`${key}.title`)}
-                    </h3>
+                    </h2>
 
                     <p className="mt-4 text-sm font-semibold uppercase tracking-widest text-primary-600">
                       {sd(`${key}.label`)}

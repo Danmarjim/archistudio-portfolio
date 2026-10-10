@@ -55,7 +55,7 @@ export default function NewsGrid({ posts }: NewsGridProps) {
       {/* Grid */}
       <div className="grid items-start gap-8 md:grid-cols-2 lg:grid-cols-3">
         {filtered.map((post, index) => (
-          <NewsCard key={post.slug} post={post} index={index} />
+          <NewsCard key={post.slug} post={post} index={index} headingLevel="h2" />
         ))}
       </div>
 
