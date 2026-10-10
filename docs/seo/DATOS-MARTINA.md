@@ -5,7 +5,7 @@ Una sola lista para pedirle todo de una vez. Muchos datos se repiten entre brief
 **Datos transversales (desbloquean varias páginas):**
 - [ ] Nº de colegiación (Ordine di Monza e Brianza) y si quiere mostrarlo → A3, C1, C2, C3, C4, C7, C12
 - [ ] Premio Piranesi Prix de Rome 2009: texto exacto → C1
-- [ ] Precios u honorarios (ArchiAdvice, consulenza acquisto, restyling, reforma) o rangos → C2, C3, C4, C6, C7
+- [ ] Precios u honorarios (consulenza acquisto, restyling, reforma) o rangos (ArchiAdvice: 100 €, confirmado) → C2, C3, C4, C6, C7
 - [ ] 2–3 testimonios con permiso → A3, C2, C3, C4, C6
 - [ ] Fotos del "antes" de los proyectos (LOVINGCOLORS, CASA PEONIA, cocinas, baños) → C4, C6, C9, C13
 - [ ] Email de dominio, acceso a la ficha de Google (ya existe) → D8, D-1
@@ -37,11 +37,12 @@ Una sola lista para pedirle todo de una vez. Muchos datos se repiten entre brief
 
 <details><summary>Brief C2 — Consulenza architetto online (ArchiAdvice) (8)</summary>
 
-- [ ] Precio de la consulta (y si hay variantes: 30/60/90 min)
-- [ ] Plataforma de la videollamada (Meet, Zoom, WhatsApp) y si existe la opción en persona en Bergamo
+- [x] Precio: 100 € todo incluido (Inarcassa y bollo; IVA no aplicable) — 10 oct
+- [x] Plataforma: Google Meet — 10 oct
+- [ ] ¿También en persona en el estudio de Bergamo? ¿Reembolso si se anula después de pagar?
 - [ ] Qué recibe el cliente después (resumen escrito, paleta, enlaces…)
 - [ ] ¿Se descuenta el precio de un proyecto posterior?
-- [ ] Con cuánta antelación hay que enviar fotos y medidas
+- [x] Envío de fotos y planimetría por email tras reservar; pago hasta 3 días antes — 10 oct
 - [ ] Nº de colegiación (Ordine di Monza e Brianza)
 - [ ] 1–2 ejemplos reales de consultas (problema → solución)
 - [ ] 1–2 testimonios con permiso para publicarlos
@@ -69,7 +70,7 @@ Una sola lista para pedirle todo de una vez. Muchos datos se repiten entre brief
 - [ ] Plazos típicos de un piso de 70–90 m² (proyecto + obra)
 - [ ] LOVINGCOLORS: fotos del antes, plazo real, rango de presupuesto (si el cliente lo permite)
 - [ ] ¿Trabaja con empresas de confianza, deja elegir al cliente, o ambas?
-- [ ] Zonas donde trabaja de verdad (¿toda la provincia de Bergamo? ¿Milano ciudad?)
+- [x] Zonas: Bergamo y provincia, Milano, Monza e Brianza y toda Lombardía; recibe en el estudio con cita — 10 oct
 - [ ] Nº de colegiación (Ordine di Monza e Brianza)
 - [ ] 1–2 testimonios de clientes de reformas, con permiso para publicarlos
 

@@ -2,7 +2,7 @@
 
 **Cómo usarlo:** antes de pedir cualquier cosa de SEO en Cowork, pega el bloque de la sección 1 (o pide a Claude que lea este archivo). Así Claude trabaja sobre los datos reales del estudio y no hace preguntas que ya están respondidas. Los campos marcados con 🟡 faltan: complétalos cuando los tengas (ver `DATOS-MARTINA.md`).
 
-Última actualización: 9 oct 2026.
+Última actualización: 10 oct 2026.
 
 ---
 
@@ -29,7 +29,8 @@ NEGOCIO
 
 SERVICIOS
 1. ArchiAdvice: consulta de 60 minutos (videollamada) sobre colores, materiales,
-   muebles y distribución. Precio 🟡. Reserva por Calendly.
+   muebles y distribución, por Google Meet. 100 € todo incluido (Inarcassa y bollo;
+   IVA no aplicable), pago por PayPal o transferencia hasta 3 días antes. Reserva por Calendly.
 2. Consulenza all'acquisto: verificación técnica antes de comprar casa
    (documentos, agibilità, catastro, visita) y estimación del coste de reforma. Precio 🟡.
 3. Restyling: renovar espacios sin obras estructurales (color, luz, muebles,
@@ -40,7 +41,8 @@ SERVICIOS
 Especialidad: el color como herramienta de proyecto y los muebles a medida.
 
 ZONA
-- Bergamo y provincia, Milano, Monza e Brianza (obras presenciales); Sevilla.
+- Bergamo y provincia, Milano, Monza e Brianza y el resto de Lombardía (obras presenciales); Sevilla.
+- Recibe clientes en el estudio de Via Bologna 2, con cita.
 - ArchiAdvice y la revisión de documentos también a distancia.
 - No queremos páginas por ciudad duplicadas (doorway pages).
 

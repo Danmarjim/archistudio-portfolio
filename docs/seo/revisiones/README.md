@@ -17,8 +17,8 @@ Los textos con datos pendientes llevan `[DA CONFERMARE: …]`. En local y en las
 |---|---|---|
 | `feat/seo-fase-2-pr2` | [feat-seo-fase-2-pr2.md](feat-seo-fase-2-pr2.md) | Pendiente de revisión |
 | `seo/ficha-google-textos` | [ficha-google-textos.md](ficha-google-textos.md) | Pendiente de revisión |
-| `seo/c4-ristrutturazione-bergamo` | [c4-ristrutturazione-bergamo.md](c4-ristrutturazione-bergamo.md) | Pendiente de revisión (8 datos de Martina) |
-| `seo/c2-consulenza-online` | [c2-consulenza-online.md](c2-consulenza-online.md) | Pendiente de revisión (9 datos de Martina) |
+| `seo/c4-ristrutturazione-bergamo` | [c4-ristrutturazione-bergamo.md](c4-ristrutturazione-bergamo.md) | Pendiente de revisión (7 datos de Martina) |
+| `seo/c2-consulenza-online` | [c2-consulenza-online.md](c2-consulenza-online.md) | Pendiente de revisión (6 datos de Martina) |
 | `seo/preview-completa` | — | Integra todas las anteriores |
 
 Orden de merge: primero `feat/seo-fase-2-pr2` (todas salen de ella); después, cualquier rama aprobada, en cualquier orden.

@@ -60,7 +60,7 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 | **PR 2** sin merge | Desplegado en preview de Vercel | Revisar (sobre todo las dos noticias de Homeadore) y hacer merge |
 | **Reindexación de las URLs nuevas** (`/servizi`, `/progetti`…) | Sitemap reenviado el 8 oct; Google aún elige `/servicios` como canónica de `/servizi` | Comprobar por API hacia el 11 oct (`/seo google inspect-batch`) |
 | **CSP** en modo `Report-Only` | 0 violaciones en local | Tras ~1 semana en producción sin violaciones, pasar a `Content-Security-Policy` (B11) |
-| **A2 — páginas de servicio** | C4 (reforma Bergamo) y C2 (ArchiAdvice) redactadas en it/es/en, cada una en su rama, con los datos pendientes como `[DA CONFERMARE]`. C3 y C6 siguen como borrador | Martina valida C4 y C2 y completa los datos ([`revisiones/`](revisiones/)); redactar C3 y C6 |
+| **A2 — páginas de servicio** | C4 (reforma Bergamo, 7 datos pendientes) y C2 (ArchiAdvice, 6 pendientes; precio 100 € ya puesto) redactadas en it/es/en, cada una en su rama, con los datos pendientes como `[DA CONFERMARE]`. C3 y C6 siguen como borrador | Martina valida C4 y C2 y completa los datos ([`revisiones/`](revisiones/)); redactar C3 y C6 |
 | **Ficha de Google: textos** | Descripción y 5 servicios redactados (`FICHA-GOOGLE.md` §6) | Martina los valida y aplica la checklist de §6 |
 | **F1 — alt de las galerías** | Paso 1 hecho (patrón traducido con ciudad) | Paso 2: descripciones por foto (Martina) |
 
