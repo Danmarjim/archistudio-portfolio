@@ -1,6 +1,6 @@
 # Revisión — `seo/llms-dinamico`
 
-`llms.txt` (el resumen del sitio para buscadores con IA) pasa de archivo estático a generarse en el build desde el contenido. Hallazgo 1 del [audit del 10 oct](../archivo/datos/2026-10-10-audit-preview/FULL-AUDIT-REPORT.md).
+`llms.txt` (el resumen del sitio para buscadores con IA) pasa de archivo estático a generarse en el build desde el contenido. Hallazgo 1 del [audit del 10 oct](../auditorias/2026-10-10-preview/FULL-AUDIT-REPORT.md).
 
 ## Qué se ha hecho
 
