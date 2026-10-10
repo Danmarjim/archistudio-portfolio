@@ -1,5 +1,7 @@
 # Revisiones por rama
 
+**Para Martina:** todo lo pendiente en una sola lista, en [PARA-MARTINA.md](PARA-MARTINA.md).
+
 Cada tarea de SEO vive en su propia rama, que sale de `feat/seo-fase-2-pr2`, y se mergea a `main` sola cuando Martina da el visto bueno. Cada rama tiene aquí un documento con el mismo nombre (`seo/c4-…` → `c4-….md`) con:
 
 - **Qué se ha hecho** y en qué archivos.
@@ -20,6 +22,7 @@ Los textos con datos pendientes llevan `[DA CONFERMARE: …]`. En local y en las
 | `seo/c4-ristrutturazione-bergamo` | [c4-ristrutturazione-bergamo.md](c4-ristrutturazione-bergamo.md) | Pendiente de revisión (7 datos de Martina) |
 | `seo/c2-consulenza-online` | [c2-consulenza-online.md](c2-consulenza-online.md) | Pendiente de revisión (5 datos de Martina) |
 | `seo/c3-acquisto-casa` | [c3-acquisto-casa.md](c3-acquisto-casa.md) | Pendiente de revisión (10 datos de Martina) |
+| `seo/c6-restyling` | [c6-restyling.md](c6-restyling.md) | Pendiente de revisión (7 datos de Martina) |
 | `seo/preview-completa` | — | Integra todas las anteriores |
 
 Orden de merge: primero `feat/seo-fase-2-pr2` (todas salen de ella); después, cualquier rama aprobada, en cualquier orden.

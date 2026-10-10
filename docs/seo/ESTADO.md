@@ -60,7 +60,7 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 | **PR 2** sin merge | Desplegado en preview de Vercel | Revisar (sobre todo las dos noticias de Homeadore) y hacer merge |
 | **Reindexación de las URLs nuevas** (`/servizi`, `/progetti`…) | Sitemap reenviado el 8 oct; Google aún elige `/servicios` como canónica de `/servizi` | Comprobar por API hacia el 11 oct (`/seo google inspect-batch`) |
 | **CSP** en modo `Report-Only` | 0 violaciones en local | Tras ~1 semana en producción sin violaciones, pasar a `Content-Security-Policy` (B11) |
-| **A2 — páginas de servicio** | C4 (reforma Bergamo, 7 datos pendientes) y C2 (ArchiAdvice, 5 pendientes; precio 100 € ya puesto) y C3 (compra de vivienda, 10 pendientes) redactadas en it/es/en, cada una en su rama, con los datos pendientes como `[DA CONFERMARE]`. C6 sigue como borrador | Martina valida C4, C2 y C3 y completa los datos ([`revisiones/`](revisiones/)); redactar C6 |
+| **A2 — páginas de servicio** | C4 (reforma Bergamo, 7 datos pendientes) y C2 (ArchiAdvice, 5 pendientes; precio 100 € ya puesto) C3 (compra de vivienda, 10 pendientes) y C6 (restyling, 7 pendientes) redactadas en it/es/en, cada una en su rama, con los datos pendientes como `[DA CONFERMARE]` | Martina valida y completa los datos: lista única en [`revisiones/PARA-MARTINA.md`](revisiones/PARA-MARTINA.md) |
 | **Ficha de Google: textos** | Descripción y 5 servicios redactados (`FICHA-GOOGLE.md` §6) | Martina los valida y aplica la checklist de §6 |
 | **F1 — alt de las galerías** | Paso 1 hecho (patrón traducido con ciudad) | Paso 2: descripciones por foto (Martina) |
 
@@ -78,7 +78,7 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 - [ ] **F8** — créditos IPTC en las fotos (opcional).
 
 ### Martina — datos
-Lista completa en [`DATOS-MARTINA.md`](DATOS-MARTINA.md). Los 8 que desbloquean más: colegiación, premio Piranesi, precios, testimonios, fotos del antes, email/horarios/Google Business Profile, H1 de la home, ubicación del baño de Casa Archi & Colori.
+**Lista única y priorizada en [`revisiones/PARA-MARTINA.md`](revisiones/PARA-MARTINA.md).** Detalle por brief en [`DATOS-MARTINA.md`](DATOS-MARTINA.md). Los 8 que desbloquean más: colegiación, premio Piranesi, precios, testimonios, fotos del antes, email/horarios/Google Business Profile, H1 de la home, ubicación del baño de Casa Archi & Colori.
 
 ### Martina — contenido
 - [ ] Textos de las páginas de servicio: C2 ArchiAdvice, C3 compra de vivienda, C4 reforma en Bergamo, C6 restyling.
