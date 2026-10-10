@@ -1,4 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "ignoreCommand": "case \"$VERCEL_GIT_COMMIT_REF\" in seo/preview-completa) ;; seo/*) exit 0 ;; esac; P=${VERCEL_GIT_PREVIOUS_SHA:-HEAD^}; git cat-file -e \"$P^{commit}\" 2>/dev/null || exit 1; git diff --quiet \"$P\" HEAD -- . ':(exclude)docs' ':(exclude)*.md' ':(exclude).claude'"
+  "git": {
+    "deploymentEnabled": {
+      "seo/*": false,
+      "feat/seo-fase-2-pr2": false
+    }
+  },
+  "ignoreCommand": "P=${VERCEL_GIT_PREVIOUS_SHA:-HEAD^}; git cat-file -e \"$P^{commit}\" 2>/dev/null || exit 1; git diff --quiet \"$P\" HEAD -- . ':(exclude)docs' ':(exclude)*.md' ':(exclude).claude'"
 }
