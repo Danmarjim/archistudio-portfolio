@@ -4,7 +4,7 @@ Textos para la ficha de Google (Google Business Profile). Solo documentación: n
 
 ## Qué se ha hecho
 
-- `docs/seo/FICHA-GOOGLE.md` §6: descripción de la ficha (731 de 750 caracteres) y 5 servicios con su descripción (todas de menos de 300 caracteres), más la checklist para hacer todos los cambios en una sola visita.
+- `docs/seo/FICHA-GOOGLE.md` §6: descripción de la ficha (732 de 750 caracteres) y 5 servicios con su descripción (todas de menos de 300 caracteres), más la checklist para hacer todos los cambios en una sola visita.
 - Escritos a partir de la web y de `CONTEXTO.md`, cumpliendo las normas de Google: sin URLs, sin precios en la descripción, sin repetir keywords.
 
 ## Cómo verlo
@@ -14,8 +14,8 @@ Textos para la ficha de Google (Google Business Profile). Solo documentación: n
 ## Qué validar
 
 **Martina**
-- [ ] La descripción suena a ella y es correcta: formación, zonas, idiomas.
-- [ ] "Ricevo su appuntamento": ¿recibe clientes en Via Bologna 2? Si no, quitar la frase y ocultar la dirección en la ficha.
+- [ ] La descripción suena a ella y es correcta (formación, idiomas).
+- [x] Recibe clientes en el estudio con cita y trabaja en Bergamo y provincia, Milano, Monza e Brianza y toda Lombardía (confirmado el 10 oct; texto actualizado).
 - [ ] Los 5 servicios: ¿falta o sobra alguno? ¿"Progettazione bagno e cucina" como servicio aparte?
 - [ ] Mensajes para pedir reseñas (§5).
 - [ ] Tiene acceso a la ficha en business.google.com.

@@ -64,7 +64,7 @@ Ficha pública a 9 oct 2026 ([Google Maps](https://www.google.com/maps/search/MP
 |---|---|---|
 | Nombre | MP_archistudio Arch. Martina Pozzi | Se puede dejar: es el nombre real con el que firma (Spazi Belli e Instagram lo usan igual). No añadir keywords como "Architetto Bergamo" |
 | Categorías | Solo **Studio di architettura** (principal) | Principal **Architetto**; secundarias Studio di architettura, Designer d'interni, Studio di architettura di interni (sección 1). Es probablemente la razón de que no salga entre los 20 primeros de "architetto Bergamo", a pocas calles de Von Wunster y AGM, que sí salen |
-| Dirección | Via Bologna 2, 24128 Bergamo, visible | Mantener si recibe clientes ahí; si no, ocultarla y definir zona de servicio |
+| Dirección | Via Bologna 2, 24128 Bergamo, visible | Mantener (recibe clientes con cita). Añadir como zonas de servicio: Provincia di Bergamo, Milano, Monza e Brianza, Lombardia |
 | Horario | Lunes a viernes, **9–17** | **Lunes a viernes, 9–18** (horario real, confirmado el 9 oct; la web ya lo tiene así) |
 | Teléfono, web | 327 126 7024 · mparchistudio.com | Correcto |
 | Enlace de reserva | calendly.com | Correcto (ArchiAdvice) |
@@ -105,15 +105,13 @@ Las reseñas de Spazi Belli no se pueden pasar a Google: a esos clientes hay que
 
 Redactados el 10 oct 2026 a partir de la web y de `CONTEXTO.md` (prompts 6 y 7). Pendientes de que Martina los revise. Reglas de Google que cumplen: sin URLs, sin precios ni ofertas en la descripción, sin repetir keywords.
 
-### Descripción (731 de 750 caracteres)
+### Descripción (732 de 750 caracteres)
 
 "Modifica profilo → Descrizione dell'attività":
 
-> MP_archistudio è lo studio dell'architetta Martina Pozzi a Bergamo. Seguo la ristrutturazione di appartamenti e case dal rilievo alla consegna delle chiavi: progetto architettonico e d'interni, pratiche edilizie, scelta delle imprese e direzione lavori, con un unico riferimento per tutto il cantiere. Mi occupo anche di restyling senza opere murarie e di consulenze tecniche prima dell'acquisto di una casa. Il colore e i mobili su misura sono il cuore di ogni progetto. Lavoro a Bergamo e provincia, Milano e Monza e Brianza; le consulenze ArchiAdvice si svolgono anche online, in italiano, spagnolo e inglese. Laureata al Politecnico di Milano, ho lavorato in studi di architettura in Italia e in Spagna. Ricevo su appuntamento.
+> MP_archistudio è lo studio dell'architetta Martina Pozzi a Bergamo. Seguo la ristrutturazione di appartamenti e case dal rilievo alla consegna delle chiavi: progetto architettonico e d'interni, pratiche edilizie, scelta delle imprese e direzione lavori, con un unico riferimento. Mi occupo anche di restyling senza opere murarie e di consulenze tecniche prima dell'acquisto di una casa. Il colore e i mobili su misura sono il cuore di ogni progetto. Lavoro a Bergamo e provincia, Milano, Monza e Brianza e in tutta la Lombardia; le consulenze ArchiAdvice si svolgono anche online, in italiano, spagnolo e inglese. Laureata al Politecnico di Milano, ho lavorato in studi di architettura in Italia e in Spagna. Ricevo su appuntamento.
 
-Antes de pegarla, Martina tiene que confirmar:
-- "Ricevo su appuntamento": solo si recibe clientes en el estudio. Si no, quitar la frase.
-- Las zonas (Bergamo y provincia, Milano, Monza e Brianza).
+Confirmado por Martina (10 oct): recibe clientes en el estudio, con cita, y trabaja en Bergamo y provincia, Milano, Monza e Brianza y el resto de Lombardía.
 
 ### Servicios (cada descripción, menos de 300 caracteres)
 
