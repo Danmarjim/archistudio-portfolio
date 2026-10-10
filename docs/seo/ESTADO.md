@@ -32,7 +32,7 @@
 | 10 oct | **Guías C7–C14** en it/es/en y enlaces cruzados entre guías, servicios, fichas de proyecto y chi sono (4–10 enlaces entrantes por guía) | una rama cada una |
 | 10 oct | **A7, simulacro de merge** sobre una copia de `main`: 0 conflictos (también rama a rama), build, 12 redirecciones, sitemap y enlaces en modo producción. Arreglado un enlace roto en chi sono; C10 no se mergea con marcadores (borraría un artículo publicado). `main` mergeado en la preview | [informe](auditorias/2026-10-10-simulacro-merge/README.md) |
 | 10 oct | **A5, A6 y B3**: Lighthouse en las 102 páginas (accesibilidad 100 en todas tras arreglar la galería y el orden de encabezados); agentes de IA 3/3 en Lighthouse Agentic Browsing y el firewall deja pasar a los agentes; intención de búsqueda en Google Italia desde Bergamo: 14 de 15 páginas encajan, restyling reorientado a "restyling casa Bergamo"; `robots.txt` con `Content-Signal: ai-train=no` (no al entrenamiento de modelos) | [Lighthouse](auditorias/2026-10-10-lighthouse/README.md) · [agentes](auditorias/2026-10-10-agentes/README.md) · [intención](auditorias/2026-10-10-intencion/README.md) |
-| 10 oct | Vercel: solo despliega `seo/preview-completa`, nada cuando solo cambia documentación, retención de deployments activada | `vercel.json` |
+| 10 oct | Vercel: solo despliega `preview/seo-completa` (antes `seo/preview-completa`); las ramas `seo/*` y la base no crean despliegues (`git.deploymentEnabled`: subir 24 ramas agotó el límite diario); nada cuando solo cambia documentación; retención de deployments activada | `vercel.json` |
 
 <details><summary>Detalle de PR 1</summary>
 
@@ -71,7 +71,7 @@ Decisiones del 10 oct: B12 (animaciones bajo el pliegue) se mantienen; F8 (créd
 
 ## Ramas
 
-Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/README.md). `seo/preview-completa` las junta todas y es la única que despliega preview. `main` solo recibe lo que Martina aprueba (excepción: Speed Insights, mergeado el 10 oct). `main` sí se mergea en la preview, para que refleje lo que habrá en producción.
+Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/README.md). `preview/seo-completa` las junta todas y es la única que despliega preview (las ramas `seo/*` y la base no crean despliegues). `main` solo recibe lo que Martina aprueba (excepción: Speed Insights, mergeado el 10 oct). `main` sí se mergea en la preview, para que refleje lo que habrá en producción.
 
 ## Próximos pasos
 
