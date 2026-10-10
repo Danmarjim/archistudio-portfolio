@@ -18,7 +18,7 @@
 | A4 | ✅ (`seo/contraste`, 2,42 → 4,54:1) **Contraste** del gris de fechas y etiquetas en noticias | — (código) | Accesibilidad | 15 min |
 | A5 | **Lighthouse en todas las páginas**, no solo en 3 | `/seo unlighthouse` sobre la build local | Rendimiento, accesibilidad | 30 min |
 | A6 | **Agentes de IA:** que un agente navegue y entienda la web (árbol de accesibilidad, `llms.txt`, robots) | `/seo agentic <url>` | Preparación IA | 30 min |
-| A7 | **Simulacro de merge** de todas las ramas en una copia de `main`: conflictos (`package.json`, `messages`), build y redirecciones | — | Seguridad del día del merge | 30 min |
+| A7 | ✅ [hecho](../auditorias/2026-10-10-simulacro-merge/README.md): **Simulacro de merge** de todas las ramas en una copia de `main`: conflictos (`package.json`, `messages`), build y redirecciones. Sin conflictos; arreglado un enlace roto en chi sono; C10 no se mergea con marcadores | [`simulacro.sh`](../auditorias/2026-10-10-simulacro-merge/simulacro.sh) | Seguridad del día del merge | 30 min |
 
 ## B. Preparación sin Martina
 
@@ -48,6 +48,6 @@
 
 ## Orden recomendado
 
-Cerrar la fase 2 → A7 → A5 + A6 + B3 → B4 → B5. D según su fecha.
+~~Cerrar la fase 2~~ → ~~A7~~ → A5 + A6 + B3 → B4 → B5. D según su fecha.
 
 **Comandos que no aportan aquí:** `ecommerce`, `programmatic`, `competitor-pages`, `cluster` (ya hecho el 8 oct), `hreflang` (sin errores en el audit), `seranking`/`profound` (de pago, para cuando haya tráfico).
