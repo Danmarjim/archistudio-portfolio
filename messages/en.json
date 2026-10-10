@@ -475,5 +475,11 @@
     "p1": "My studio is in Bergamo, at Via Bologna 2, and I see clients by appointment. I handle projects and building sites in Bergamo and its province, Milan, Monza e Brianza and the rest of Lombardy: the LOVINGCOLORS apartment is in Bergamo, Casa Archi & Colori in Milan, CASA PEONIA in Camparada and the PARIGINA kitchen in Monza.",
     "p2": "With ArchiAdvice online consultations I work with clients wherever they are, in Italian, Spanish and English.",
     "cta": "See all projects"
+  },
+  "Testimonials": {
+    "title": "What clients say",
+    "translated": "{lang, select, it {Translated from Italian} es {Translated from Spanish} en {Translated from English} other {Translation}}",
+    "source": "Review on {source}",
+    "viewProject": "View the project"
   }
 }

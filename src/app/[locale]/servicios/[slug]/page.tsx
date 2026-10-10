@@ -5,10 +5,12 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from '@/i18n/navigation'
 import Container from '@/components/ui/Container'
 import ProjectCard from '@/components/sections/ProjectCard'
+import Testimonials from '@/components/sections/Testimonials'
 import JsonLd from '@/components/seo/JsonLd'
 import Markdown from '@/components/shared/Markdown'
 import { getPublishedServiceBySlug, getPublishedServices } from '@/lib/services'
 import { getProjectBySlug } from '@/lib/projects'
+import { getTestimonials } from '@/lib/testimonials'
 import { getPublishedNewsSlugs, resolveNewsLinks } from '@/lib/news'
 import { buildBreadcrumb, buildMetadata, businessSummary, localizedUrl } from '@/lib/seo'
 import { CALENDLY_URL, siteConfig } from '@/lib/constants'
@@ -149,6 +151,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
             </div>
           </section>
         )}
+
+        <Testimonials testimonials={getTestimonials(locale, { service: service.slug })} locale={locale} variant="inline" />
 
         <div className="mx-auto mt-16 max-w-3xl rounded-2xl bg-neutral-50 p-8 text-center">
           <p className="font-serif text-2xl text-foreground">{t('finalTitle')}</p>

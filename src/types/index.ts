@@ -116,3 +116,24 @@ export interface ServicePage {
   updated?: string
   content: string
 }
+
+/** Testimonianza di un cliente (`content/testimonials/{slug}.md`). */
+export interface Testimonial {
+  slug: string
+  /** Nome come il cliente ha accettato di comparire (es. "Laura B.") */
+  author: string
+  /** Tipo di lavoro e città nella lingua della pagina (es. "Ristrutturazione integrale, Bergamo") */
+  context?: string
+  /** Slug della pagina di servizio in cui compare (es. `restyling-casa`) */
+  service?: string
+  /** Slug del progetto collegato, se la testimonianza riguarda un lavoro del portfolio */
+  project?: string
+  /** Dove l'ha lasciata (Google, Spazi Belli…), se pubblica anche altrove */
+  source?: string
+  /** Testo originale, come scritto dal cliente */
+  quote: string
+  /** Lingua del testo originale */
+  quoteLang: string
+  /** Traduzione nella lingua della pagina, se diversa dall'originale */
+  translation?: string
+}
