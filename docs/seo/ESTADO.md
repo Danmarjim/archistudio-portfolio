@@ -1,9 +1,10 @@
 # SEO — Estado
 
-Última actualización: 9 oct 2026. **Este es el punto de entrada**: qué está hecho, qué está en curso y qué queda. El detalle de cada tarea (archivos, cómo verificar) está en [`PLAN.md`](PLAN.md); los códigos (A1, C4, F3…) remiten a ese documento.
+Última actualización: 10 oct 2026. **Este es el punto de entrada**: qué está hecho, qué está en curso y qué queda. El detalle de cada tarea (archivos, cómo verificar) está en [`PLAN.md`](PLAN.md); los códigos (A1, C4, F3…) remiten a ese documento.
 
 | Documento | Para qué |
 |---|---|
+| [`PLAN-FASE-3.md`](PLAN-FASE-3.md) | Plan mientras Martina valida: calidad, contenido, día de publicar y seguimiento, con los comandos `/seo` de cada paso |
 | [`CONTEXTO.md`](CONTEXTO.md) | Datos del negocio para pegar en Cowork/Claude antes de cualquier tarea de SEO, y qué prompts usar |
 | [`PLAN.md`](PLAN.md) | Detalle de cada tarea, decisiones y benchmark frente a la competencia |
 | [`FICHA-GOOGLE.md`](FICHA-GOOGLE.md) | Ficha de Google: estado actual, categorías y atributos frente a los competidores, mensajes para pedir reseñas |
@@ -12,7 +13,9 @@
 | [`briefs/`](briefs/) | Un brief por página: estructura, keywords, competidores, meta tags |
 | [`archivo/`](archivo/) | Fase 1 (audit inicial en italiano, plan y estado) y resultados brutos de audits y clusters |
 
-**Score:** 49/100 (7 oct, antes de la fase 1) → 80/100 (7 oct, re-auditoría en producción).
+**Ramas:** cada tarea en su rama, con un documento de revisión en [`revisiones/`](revisiones/); `seo/preview-completa` las junta todas.
+
+**Score:** 49/100 (7 oct, antes de la fase 1) → 80/100 (7 oct, re-auditoría en producción) → **84/100 (10 oct, preview completa de la fase 2, en local)**: [informe](archivo/datos/2026-10-10-audit-preview/FULL-AUDIT-REPORT.md) y [plan de acción](archivo/datos/2026-10-10-audit-preview/ACTION-PLAN.md). Hechos los puntos 1–4 (`llms.txt` dinámico, títulos y descripciones, imagen social por servicio): 0 títulos > 60 y 0 descripciones > 160 en las 87 páginas.
 
 ---
 
@@ -58,7 +61,8 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 | **PR 2** sin merge | Desplegado en preview de Vercel | Revisar (sobre todo las dos noticias de Homeadore) y hacer merge |
 | **Reindexación de las URLs nuevas** (`/servizi`, `/progetti`…) | Sitemap reenviado el 8 oct; Google aún elige `/servicios` como canónica de `/servizi` | Comprobar por API hacia el 11 oct (`/seo google inspect-batch`) |
 | **CSP** en modo `Report-Only` | 0 violaciones en local | Tras ~1 semana en producción sin violaciones, pasar a `Content-Security-Policy` (B11) |
-| **A2 — páginas de servicio** | Plantilla y 4 borradores en `content/services/` con `published: false` | Completar cada texto con su brief (C2, C3, C4, C6) y publicar |
+| **A2 — páginas de servicio** | C4 (reforma Bergamo, 7 datos pendientes) y C2 (ArchiAdvice, 5 pendientes; precio 100 € ya puesto) C3 (compra de vivienda, 10 pendientes) y C6 (restyling, 7 pendientes) redactadas en it/es/en, cada una en su rama, con los datos pendientes como `[DA CONFERMARE]` | Martina valida y completa los datos: lista única en [`revisiones/PARA-MARTINA.md`](revisiones/PARA-MARTINA.md) |
+| **Ficha de Google: textos** | Descripción y 5 servicios redactados (`FICHA-GOOGLE.md` §6) | Martina los valida y aplica la checklist de §6 |
 | **F1 — alt de las galerías** | Paso 1 hecho (patrón traducido con ciudad) | Paso 2: descripciones por foto (Martina) |
 
 ---
@@ -67,15 +71,16 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 
 ### Código, sin datos de Martina
 - [ ] `vercel.json` con *Ignored Build Step* para no desplegar cambios que solo tocan `docs/` o `.md` (ahorra almacenamiento en Vercel).
-- [ ] **A3 — home** (parcial): párrafo de entidad, "Come lavoro", proyectos destacados con ubicación, zona de trabajo. Falta de Martina: H1 y testimonios.
-- [ ] **C1 — chi sono** (parcial): prensa, proyectos, perfiles, H1 con nombre. Falta de Martina: colegiación y texto del premio.
-- [ ] **A4 — enlazado interno**: proyectos → su servicio; hecho ya: prensa → proyecto y servicio → proyectos (plantilla).
+- [x] **A3 — home** (rama `seo/a3-home`): H1 con oficio y ciudad, "Chi sono" concreto, servicios con resumen y enlace, Come lavoro, proyectos destacados, Dove lavoro, teléfono. Falta de Martina: validar el H1 (D5), testimonios y colegiación.
+- [x] **C1 — chi sono** (rama `seo/c1-chi-sono`): H1 con nombre, credenciales, prensa, proyectos, perfiles, `Person` con `hasCredential` y `memberOf`. Falta de Martina: número de colegiada, texto del premio y confirmar Sevilla.
+- [x] **A4 — enlazado interno** (rama `seo/a4-enlazado-interno`): proyecto → servicio, prensa y ArchiAdvice → servicio, servicios entre sí; enlaces a servicios sin publicar apuntan al hub. La home enlaza a los servicios desde A3.
+- [x] Guías **C11** (coste de la obra en Bergamo) y **C7** (cuánto cuesta un arquitecto) redactadas en it/es/en, en sus ramas, con las cifras de Martina como `[DA CONFERMARE]`.
 - [ ] Borradores de las guías **C12** y **C8** para que Martina las revise (C8 requiere revisión normativa).
 - [ ] **B12** — decidir si se quitan las animaciones `opacity:0` bajo el pliegue (propuesta: mantener).
 - [ ] **F8** — créditos IPTC en las fotos (opcional).
 
 ### Martina — datos
-Lista completa en [`DATOS-MARTINA.md`](DATOS-MARTINA.md). Los 8 que desbloquean más: colegiación, premio Piranesi, precios, testimonios, fotos del antes, email/horarios/Google Business Profile, H1 de la home, ubicación del baño de Casa Archi & Colori.
+**Lista única y priorizada en [`revisiones/PARA-MARTINA.md`](revisiones/PARA-MARTINA.md).** Detalle por brief en [`DATOS-MARTINA.md`](DATOS-MARTINA.md). Los 8 que desbloquean más: colegiación, premio Piranesi, precios, testimonios, fotos del antes, email/horarios/Google Business Profile, H1 de la home, ubicación del baño de Casa Archi & Colori.
 
 ### Martina — contenido
 - [ ] Textos de las páginas de servicio: C2 ArchiAdvice, C3 compra de vivienda, C4 reforma en Bergamo, C6 restyling.
