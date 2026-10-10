@@ -22,7 +22,7 @@ La home como página principal para "architetto Bergamo". Brief: [`A3`](../brief
 
 ## Cómo verlo
 
-Preview de la rama o `npm run dev` → http://localhost:3000/, `/es` y `/en`. En la preview de `seo/preview-completa` las tarjetas de servicio enlazan ya a sus páginas.
+Preview de la rama o `npm run dev` → http://localhost:3000/, `/es` y `/en`. En la preview de `preview/seo-completa` las tarjetas de servicio enlazan ya a sus páginas.
 
 ## Qué validar
 
