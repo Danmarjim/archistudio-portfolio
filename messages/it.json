@@ -499,5 +499,11 @@
     "p1": "Il mio studio è a Bergamo, in Via Bologna 2, e ricevo su appuntamento. Seguo progetti e cantieri a Bergamo e provincia, a Milano, in Monza e Brianza e nel resto della Lombardia: l'Appartamento LOVINGCOLORS è a Bergamo, Casa Archi & Colori a Milano, CASA PEONIA a Camparada e la cucina PARIGINA a Monza.",
     "p2": "Con le consulenze online ArchiAdvice lavoro con clienti ovunque si trovino, in italiano, spagnolo e inglese.",
     "cta": "Guarda tutti i progetti"
+  },
+  "Testimonials": {
+    "title": "Dicono di me",
+    "translated": "{lang, select, it {Tradotto dall'italiano} es {Tradotto dallo spagnolo} en {Tradotto dall'inglese} other {Traduzione}}",
+    "source": "Recensione su {source}",
+    "viewProject": "Vedi il progetto"
   }
 }

@@ -499,5 +499,11 @@
     "p1": "Mi estudio está en Bérgamo, en Via Bologna 2, y recibo con cita previa. Sigo proyectos y obras en Bérgamo y su provincia, Milán, Monza e Brianza y el resto de Lombardía: el piso LOVINGCOLORS está en Bérgamo, Casa Archi & Colori en Milán, CASA PEONIA en Camparada y la cocina PARIGINA en Monza.",
     "p2": "Con las asesorías online ArchiAdvice trabajo con clientes estén donde estén, en italiano, español e inglés.",
     "cta": "Ver todos los proyectos"
+  },
+  "Testimonials": {
+    "title": "Lo que dicen de mi trabajo",
+    "translated": "{lang, select, it {Traducido del italiano} es {Traducido del español} en {Traducido del inglés} other {Traducción}}",
+    "source": "Reseña en {source}",
+    "viewProject": "Ver el proyecto"
   }
 }
