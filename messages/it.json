@@ -290,7 +290,9 @@
     "source": "Fonte",
     "readOriginal": "Leggi l'articolo originale",
     "previous": "Precedente",
-    "next": "Successivo"
+    "next": "Successivo",
+    "byline": "Di <author>Martina Pozzi</author>, architetta a Bergamo",
+    "updatedOn": "Aggiornato il {date}"
   },
   "LanguageSwitcher": {
     "label": "Lingua",

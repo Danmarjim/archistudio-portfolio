@@ -290,7 +290,9 @@
     "source": "Source",
     "readOriginal": "Read original article",
     "previous": "Previous",
-    "next": "Next"
+    "next": "Next",
+    "byline": "By <author>Martina Pozzi</author>, architect in Bergamo",
+    "updatedOn": "Updated {date}"
   },
   "LanguageSwitcher": {
     "label": "Language",
