@@ -477,6 +477,8 @@
     "cta": "Ver todos los proyectos"
   },
   "Testimonials": {
+    "eyebrow": "Opiniones",
+    "subtitle": "Las palabras de quienes me confiaron su casa.",
     "title": "Lo que dicen de mi trabajo",
     "translated": "{lang, select, it {Traducido del italiano} es {Traducido del español} en {Traducido del inglés} other {Traducción}}",
     "source": "Reseña en {source}",

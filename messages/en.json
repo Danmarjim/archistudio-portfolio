@@ -477,6 +477,8 @@
     "cta": "See all projects"
   },
   "Testimonials": {
+    "eyebrow": "Reviews",
+    "subtitle": "In the words of the people who trusted me with their home.",
     "title": "What clients say",
     "translated": "{lang, select, it {Translated from Italian} es {Translated from Spanish} en {Translated from English} other {Translation}}",
     "source": "Review on {source}",

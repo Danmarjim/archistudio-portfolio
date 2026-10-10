@@ -477,6 +477,8 @@
     "cta": "Guarda tutti i progetti"
   },
   "Testimonials": {
+    "eyebrow": "Recensioni",
+    "subtitle": "Le parole di chi mi ha affidato la propria casa.",
     "title": "Dicono di me",
     "translated": "{lang, select, it {Tradotto dall'italiano} es {Tradotto dallo spagnolo} en {Tradotto dall'inglese} other {Traduzione}}",
     "source": "Recensione su {source}",
