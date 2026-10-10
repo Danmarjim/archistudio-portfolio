@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: NewsDetailPageProps): Promise
     locale,
     path: `/news/${slug}`,
     title: post.seoTitle ?? post.title,
-    description: post.excerpt,
+    description: post.description ?? post.excerpt,
     image: post.coverImage,
     type: 'article',
     publishedTime: post.date,

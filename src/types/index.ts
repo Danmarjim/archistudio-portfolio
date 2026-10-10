@@ -70,6 +70,8 @@ export interface NewsPost {
   category: NewsCategory
   coverImage: string
   excerpt: string
+  /** Meta description SEO (opzionale, ≤ 155 caratteri): se assente si usa `excerpt` */
+  description?: string
   source?: string        // nome rivista/media (solo per pubblicazioni)
   sourceUrl?: string     // link all'articolo originale
   imagePosition?: string  // es. "center 20%" per centrare il soggetto nel crop 16:9

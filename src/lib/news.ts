@@ -36,6 +36,7 @@ function readNews(locale: string): NewsPost[] {
       category: data.category as NewsCategory,
       coverImage: data.coverImage,
       excerpt: data.excerpt,
+      description: data.description,
       source: data.source,
       sourceUrl: data.sourceUrl,
       imagePosition: data.imagePosition,
@@ -54,7 +55,7 @@ function readNews(locale: string): NewsPost[] {
 }
 
 function hasPending(post: NewsPost): boolean {
-  return hasPendingMarkers(post.title, post.excerpt, post.seoTitle, post.content)
+  return hasPendingMarkers(post.title, post.excerpt, post.description, post.seoTitle, post.content)
 }
 
 /**
