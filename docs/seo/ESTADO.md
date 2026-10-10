@@ -11,6 +11,7 @@
 | [`auditorias/`](auditorias/) | Resultados de audits y clusters por fecha, y el [registro de comandos `/seo`](auditorias/REGISTRO-COMANDOS.md) |
 | [`CONTEXTO-COWORK.md`](../martina/CONTEXTO-COWORK.md) | Datos del negocio para pegar en Cowork/Claude antes de cualquier tarea de SEO |
 | [`FICHA-GOOGLE.md`](../martina/FICHA-GOOGLE.md) | Ficha de Google: estado, categorías y atributos frente a los competidores, mensajes para pedir reseñas |
+| [`POST-GOOGLE.md`](../martina/POST-GOOGLE.md) | 8 publicaciones para la ficha de Google (4 semanas), listas para pegar |
 
 **Score:** 49/100 (7 oct, antes de la fase 1) → 80/100 (7 oct, re-auditoría en producción) → **84/100 (10 oct, preview completa de la fase 2, en local)**: [informe](auditorias/2026-10-10-preview/FULL-AUDIT-REPORT.md) y [plan de acción](auditorias/2026-10-10-preview/ACTION-PLAN.md). Después se hicieron los puntos 1–4 del plan de acción (`llms.txt` dinámico, títulos y descripciones, imagen social por servicio): 0 títulos > 60 y 0 descripciones > 160 en las 87 páginas.
 
@@ -32,6 +33,7 @@
 | 10 oct | **Guías C7–C14** en it/es/en y enlaces cruzados entre guías, servicios, fichas de proyecto y chi sono (4–10 enlaces entrantes por guía) | una rama cada una |
 | 10 oct | **A7, simulacro de merge** sobre una copia de `main`: 0 conflictos (también rama a rama), build, 12 redirecciones, sitemap y enlaces en modo producción. Arreglado un enlace roto en chi sono; C10 no se mergea con marcadores (borraría un artículo publicado). `main` mergeado en la preview | [informe](auditorias/2026-10-10-simulacro-merge/README.md) |
 | 10 oct | **A5, A6 y B3**: Lighthouse en las 102 páginas (accesibilidad 100 en todas tras arreglar la galería y el orden de encabezados); agentes de IA 3/3 en Lighthouse Agentic Browsing y el firewall deja pasar a los agentes; intención de búsqueda en Google Italia desde Bergamo: 14 de 15 páginas encajan, restyling reorientado a "restyling casa Bergamo"; `robots.txt` con `Content-Signal: ai-train=no` (no al entrenamiento de modelos) | [Lighthouse](auditorias/2026-10-10-lighthouse/README.md) · [agentes](auditorias/2026-10-10-agentes/README.md) · [intención](auditorias/2026-10-10-intencion/README.md) |
+| 10 oct | **B4 y B5**: sección de testimonios lista y oculta (sale sola con 2 testimonios con permiso; home y servicios); 8 publicaciones para la ficha de Google a partir de los proyectos | [`seo/b4-testimonios`](revisiones/b4-testimonios.md) · [`POST-GOOGLE.md`](../martina/POST-GOOGLE.md) |
 | 10 oct | Vercel: solo despliega `preview/seo-completa` (antes `seo/preview-completa`); las ramas `seo/*` y la base no crean despliegues (`git.deploymentEnabled`: subir 24 ramas agotó el límite diario); nada cuando solo cambia documentación; retención de deployments activada | `vercel.json` |
 
 <details><summary>Detalle de PR 1</summary>
@@ -64,7 +66,7 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 |---|---|---|---|
 | **1** — base técnica | ✅ Cerrada (10 oct) | — | [`fase-1`](planes/fase-1.md) · [estado](planes/fase-1-estado.md) |
 | **2** — estructura, servicios y contenido | ✅ Cerrada (10 oct) | — (validación y publicación → fase Martina) | [`fase-2`](planes/fase-2.md) |
-| **3** — calidad, preparación y seguimiento | 🔄 En curso (A1–A7 y B3 hechos) | B4, B5 y el seguimiento | [`fase-3`](planes/fase-3.md) |
+| **3** — calidad, preparación y seguimiento | 🔄 En curso: A1–A7 y B3–B5 hechos | Solo el seguimiento (D, por fechas) | [`fase-3`](planes/fase-3.md) |
 | **Martina** — visto bueno, datos y publicación | ⏳ Esperando a Martina | Validar ramas, datos, ficha de Google, día de publicar | [`fase-martina`](planes/fase-martina.md) · [lista para ella](PENDIENTE-MARTINA.md) |
 
 Decisiones del 10 oct: B12 (animaciones bajo el pliegue) se mantienen; F8 (créditos IPTC) descartado; G3 (slugs italianos en news para es/en) no se hace.
@@ -76,5 +78,5 @@ Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/
 ## Próximos pasos
 
 1. ~~**Fase 2**~~: cerrada el 10 oct (guías C8–C14 y enlaces entre guías, servicios y proyectos).
-2. **Fase 3:** ~~A7~~ → ~~A5 + A6 + B3~~ → B4 → B5.
+2. **Fase 3:** ~~A7~~ → ~~A5 + A6 + B3~~ → ~~B4~~ → ~~B5~~. Queda el seguimiento por fechas.
 3. **Por fecha:** ~11 oct inspección de la reindexación; ~15 oct CSP obligatoria.
