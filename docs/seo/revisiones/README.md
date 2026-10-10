@@ -33,6 +33,7 @@ Los textos con datos pendientes llevan `[DA CONFERMARE: …]`. En local y en las
 | `seo/og-servicios` | [og-servicios.md](og-servicios.md) | Pendiente de revisión |
 | `seo/geo-autoria` | [geo-autoria.md](geo-autoria.md) | Pendiente de revisión |
 | `seo/contraste` | [contraste.md](contraste.md) | Pendiente de revisión |
+| `seo/a5-lighthouse` | [a5-lighthouse.md](a5-lighthouse.md) | Pendiente de revisión (solo Daniel: galería y encabezados) |
 | `seo/mensajes-cliente` | [mensajes-cliente.md](mensajes-cliente.md) | Pendiente de revisión |
 | `seo/c12-scegliere-architetto` | [c12-scegliere-architetto.md](c12-scegliere-architetto.md) | Pendiente de revisión (4 datos; tono de la tabla comparativa) |
 | `seo/c9-progettare-bagno` | [c9-progettare-bagno.md](c9-progettare-bagno.md) | Pendiente de revisión (6 datos; cómo eran antes los baños) |
