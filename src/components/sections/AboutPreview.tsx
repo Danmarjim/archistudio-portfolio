@@ -59,6 +59,7 @@ export default function AboutPreview({
 
             <div className="mt-6 space-y-4 text-lg leading-relaxed text-neutral-600">
               <p>{t('description')}</p>
+              <p>{t('description2')}</p>
             </div>
 
             <div className="mt-8">

@@ -50,32 +50,35 @@
   },
   "Hero": {
     "overline": "STUDIO DI PROGETTAZIONE ARCHITETTONICA SARTORIALE D'INTERNI A BERGAMO",
-    "title": "Ristruttura senza pensieri",
-    "subtitle": "Ti accompagno passo a passo, dalle pratiche edilizie fino al cantiere, vegliando sui tuoi interessi",
+    "title": "Architetto a Bergamo: ristrutturazioni e interni su misura",
+    "subtitle": "Ristruttura senza pensieri. Sono Martina Pozzi, architetta: ti seguo dal progetto alle pratiche fino al cantiere, con un unico referente che veglia sui tuoi interessi.",
     "cta": "Vedi progetti",
     "ctaSecondary": "Contattaci",
     "scrollIndicator": "Scopri di più"
   },
   "FeaturedProjects": {
     "title": "Progetti in evidenza",
-    "subtitle": "Una selezione dei nostri lavori più recenti",
+    "subtitle": "Ristrutturazioni e restyling a Bergamo, Milano e in Brianza",
     "viewAll": "Vedi tutti i progetti"
   },
   "AboutPreview": {
     "overline": "Chi sono",
     "title": "Architettura e Ascolto Empatico",
-    "description": "Sono un'architetta appassionata di spazi che migliorano la vita delle persone. Il mio approccio unisce funzionalità, estetica e sostenibilità, cercando sempre soluzioni che rispettino il contesto e rispondano alle esigenze reali di ogni cliente. Ogni progetto è un'occasione per esplorare nuovi modi di abitare. Lo scopo è offrire reali benefici alle persone che si affidano a me.",
-    "cta": "Scopri di più su di me"
+    "description": "Sono Martina Pozzi, architetta, e dal 2021 guido MP_archistudio, studio di architettura e interni a Bergamo. Mi sono laureata al Politecnico di Milano e prima di aprire lo studio ho lavorato in studi di architettura in Italia e in Spagna, tra Siviglia e Barcellona. Progetto ristrutturazioni di appartamenti e case, interni su misura e restyling: il colore e i mobili disegnati su misura sono la mia firma.",
+    "cta": "Scopri di più su di me",
+    "description2": "Ascolto prima di disegnare: ogni progetto parte da come vivi la casa e da cosa vuoi provare quando apri la porta. I miei lavori sono stati pubblicati su HOME, Cose di Casa e Homeadore."
   },
   "ServicesPreview": {
     "title": "Servizi",
-    "subtitle": "Soluzioni complete di architettura e design",
-    "cta": "Vedi tutti i servizi"
+    "subtitle": "Dalla consulenza di un'ora alla ristrutturazione chiavi in mano",
+    "cta": "Vedi tutti i servizi",
+    "learnMore": "Scopri il servizio"
   },
   "CallToAction": {
     "title": "Hai un progetto in mente?",
     "subtitle": "Raccontaci la tua idea e lavoriamo insieme per realizzarla.",
-    "cta": "Contattaci ora"
+    "cta": "Contattaci ora",
+    "phone": "Oppure chiamami al {phone}"
   },
   "ProjectsPage": {
     "title": "Progetti",
@@ -408,7 +411,8 @@
       "f2": "Hai delle idee ma non sai come metterle in pratica",
       "f3": "Non sai come organizzare gli arredi, cosa tenere, cosa rinnovare, come disporli, dove acquistarli",
       "f4": "Vuoi condividere i tuoi dubbi su un progetto d'interni che non ti fa dormire",
-      "cta": "Prenota il tuo ArchiAdvice"
+      "cta": "Prenota il tuo ArchiAdvice",
+      "summary": "Un'ora in videochiamata per decidere colori, materiali, arredi e distribuzione degli spazi, ovunque tu sia, in italiano, spagnolo o inglese. 100 € tutto compreso, scalati dal progetto se poi decidi di proseguire."
     },
     "consulenzaAcquisto": {
       "title": "Consulenza all'acquisto",
@@ -418,7 +422,8 @@
       "f2": "Vuoi fare un sopralluogo con un architetto e/o una messa in comune delle informazioni per valutare eventuali criticità, scoprirne le potenzialità e come sfruttare al meglio ogni metro",
       "f3": "Vuoi sapere quanto potrebbe costarti indicativamente ristrutturarlo",
       "f4": "Vuoi fare un acquisto consapevole",
-      "cta": "Scrivimi"
+      "cta": "Scrivimi",
+      "summary": "Prima di comprare casa verifico con te documenti, conformità urbanistica e catastale e lo stato reale dell'immobile, e ti do una stima orientativa del costo di ristrutturazione. Per fare un'offerta, trattare o rinunciare sapendo cosa stai comprando."
     },
     "restyling": {
       "title": "Restyling",
@@ -428,7 +433,8 @@
       "f2": "Sei in affitto e vorresti sentire più tua la casa dove vivi o il negozio/ufficio dove lavori",
       "f3": "Vuoi cambiare arredi, ottimizzare gli spazi disegnando qualche elemento su misura",
       "f4": "Cantiere finito e ora tocca decorare, dipingere, arredare...",
-      "cta": "Scrivimi"
+      "cta": "Scrivimi",
+      "summary": "Rinnovare casa senza opere murarie: colore, luce, arredi e pezzi su misura per cambiare volto agli ambienti. Per chi ha una casa che non lo rappresenta più, per chi vive in affitto e per chi ha appena finito un cantiere."
     },
     "progettazione": {
       "title": "Progettazione architettonica a 360°",
@@ -438,7 +444,8 @@
       "f2": "Pratiche edilizie, scelta dei materiali e richiesta preventivi",
       "f3": "Gestione delle imprese, seguimento economico e cronoprogramma",
       "f4": "Direzione artistica, direzione lavori e chiusura pratica con aggiornamento catastale",
-      "cta": "Scopri come lavoriamo"
+      "cta": "Scopri come lavoriamo",
+      "summary": "Ristrutturazione di appartamenti e case a Bergamo e in Lombardia, dal rilievo alla consegna delle chiavi: progetto architettonico e d'interni, pratiche edilizie, scelta delle imprese e direzione lavori. Un unico referente per tutto il percorso, anche solo per una parte."
     }
   },
   "NotFound": {
@@ -449,5 +456,24 @@
   },
   "Press": {
     "title": "Pubblicato su"
+  },
+  "HowIWork": {
+    "title": "Come lavoro",
+    "subtitle": "Quattro passaggi, un solo referente: puoi affidarmi tutto il percorso o solo una parte.",
+    "s1title": "Rilievo e ascolto",
+    "s1": "Misuro e fotografo la casa e capisco come vuoi viverla. Se serve, verifico in Comune che lo stato attuale sia in regola.",
+    "s2title": "Progetto",
+    "s2": "Distribuzione, colori, materiali e arredi su misura, con planimetrie, moodboard e viste 3D per vedere la casa prima di costruirla.",
+    "s3title": "Imprese e preventivi",
+    "s3": "Preparo il computo metrico, confronto più preventivi sullo stesso progetto e ti aiuto a scegliere materiali e fornitori.",
+    "s4title": "Cantiere e pratiche",
+    "s4": "Dirigo i lavori, controllo qualità e pagamenti, presento le pratiche e chiudo con la fine lavori e l'aggiornamento catastale.",
+    "cta": "Come funziona una ristrutturazione"
+  },
+  "WorkArea": {
+    "title": "Dove lavoro",
+    "p1": "Il mio studio è a Bergamo, in Via Bologna 2, e ricevo su appuntamento. Seguo progetti e cantieri a Bergamo e provincia, a Milano, in Monza e Brianza e nel resto della Lombardia: l'Appartamento LOVINGCOLORS è a Bergamo, Casa Archi & Colori a Milano, CASA PEONIA a Camparada e la cucina PARIGINA a Monza.",
+    "p2": "Con le consulenze online ArchiAdvice lavoro con clienti ovunque si trovino, in italiano, spagnolo e inglese.",
+    "cta": "Guarda tutti i progetti"
   }
 }

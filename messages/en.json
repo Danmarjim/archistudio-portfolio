@@ -50,32 +50,35 @@
   },
   "Hero": {
     "overline": "ARCHITECTURAL DESIGN STUDIO FOR TAILOR-MADE INTERIORS IN BERGAMO",
-    "title": "Renovate without a worry",
-    "subtitle": "I'll guide you step by step, from building permits to the construction site, looking after your interests",
+    "title": "Architect in Bergamo: renovations and bespoke interiors",
+    "subtitle": "Renovate without the worry. I'm Martina Pozzi, an architect: I guide you from design through permits to the building site, as a single point of contact looking after your interests.",
     "cta": "View projects",
     "ctaSecondary": "Contact",
     "scrollIndicator": "Discover more"
   },
   "FeaturedProjects": {
     "title": "Featured projects",
-    "subtitle": "A selection of our most recent work",
+    "subtitle": "Renovations and restylings in Bergamo, Milan and Brianza",
     "viewAll": "View all projects"
   },
   "AboutPreview": {
     "overline": "About me",
     "title": "Architecture and Empathetic Listening",
-    "description": "I'm an architect passionate about spaces that improve people's lives. My approach combines functionality, aesthetics and sustainability, always seeking solutions that respect the context and respond to each client's real needs. Every project is a chance to explore new ways of living. The goal is to offer real benefits to the people who trust me.",
-    "cta": "Learn more about me"
+    "description": "I'm Martina Pozzi, an architect, and since 2021 I have run MP_archistudio, an architecture and interiors studio in Bergamo. I graduated from the Politecnico di Milano and before opening the studio I worked in architecture practices in Italy and Spain, in Seville and Barcelona. I design renovations of apartments and houses, bespoke interiors and restylings: colour and custom-designed furniture are my signature.",
+    "cta": "Learn more about me",
+    "description2": "I listen before I draw: every project starts from how you live in your home and what you want to feel when you open the door. My work has been published in HOME, Cose di Casa and Homeadore."
   },
   "ServicesPreview": {
     "title": "Services",
-    "subtitle": "Comprehensive architecture and design solutions",
-    "cta": "View all services"
+    "subtitle": "From a one-hour consultation to a turnkey renovation",
+    "cta": "View all services",
+    "learnMore": "Discover the service"
   },
   "CallToAction": {
     "title": "Do you have a project in mind?",
     "subtitle": "Tell us your idea and let's work together to make it a reality.",
-    "cta": "Contact now"
+    "cta": "Contact now",
+    "phone": "Or call me on {phone}"
   },
   "ProjectsPage": {
     "title": "Projects",
@@ -408,7 +411,8 @@
       "f2": "You have ideas but don't know how to put them into practice",
       "f3": "You don't know how to arrange the furniture, what to keep, what to renew, how to position it, where to buy it",
       "f4": "You want to share your doubts about an interior design project that's keeping you up at night",
-      "cta": "Book your ArchiAdvice"
+      "cta": "Book your ArchiAdvice",
+      "summary": "A one-hour video call to decide on colours, materials, furniture and layout, wherever you are, in Italian, Spanish or English. €100 all inclusive, deducted from the project if you decide to go ahead."
     },
     "consulenzaAcquisto": {
       "title": "Purchase consultancy",
@@ -418,7 +422,8 @@
       "f2": "You want a site visit with an architect and/or a shared assessment of the information to evaluate potential issues, discover the property's potential and how to make the most of every square metre",
       "f3": "You want a rough idea of how much it would cost to renovate",
       "f4": "You want to make an informed purchase",
-      "cta": "Write to me"
+      "cta": "Write to me",
+      "summary": "Before you buy, I check the documents, planning and land registry compliance and the actual state of the property with you, and give you an indicative renovation cost estimate. So you can offer, negotiate or walk away knowing what you're buying."
     },
     "restyling": {
       "title": "Restyling",
@@ -428,7 +433,8 @@
       "f2": "You're renting and would like your home, shop or office to feel more like yours",
       "f3": "You want to change the furniture, optimise spaces by designing some bespoke elements",
       "f4": "The building work is done and now it's time to decorate, paint, furnish...",
-      "cta": "Write to me"
+      "cta": "Write to me",
+      "summary": "Refreshing your home without building work: colour, light, furniture and bespoke pieces to transform your rooms. For homes that no longer feel like you, for renters and for anyone who has just finished building work."
     },
     "progettazione": {
       "title": "Full architectural design 360°",
@@ -438,7 +444,8 @@
       "f2": "Building permits, material selection and quote requests",
       "f3": "Contractor management, financial monitoring and schedule",
       "f4": "Artistic direction, construction management and project closure with cadastral update",
-      "cta": "Discover how we work"
+      "cta": "Discover how we work",
+      "summary": "Renovation of apartments and houses in Bergamo and Lombardy, from survey to handover: architectural and interior design, permits, choosing contractors and site supervision. A single point of contact for the whole process, or just part of it."
     }
   },
   "NotFound": {
@@ -449,5 +456,24 @@
   },
   "Press": {
     "title": "Featured in"
+  },
+  "HowIWork": {
+    "title": "How I work",
+    "subtitle": "Four steps, one point of contact: you can hire me for the whole process or just part of it.",
+    "s1title": "Survey and listening",
+    "s1": "I measure and photograph the home and understand how you want to live in it. If needed, I check with the municipality that its current state is compliant.",
+    "s2title": "Design",
+    "s2": "Layout, colours, materials and bespoke furniture, with plans, moodboards and 3D views so you can see the home before it's built.",
+    "s3title": "Contractors and quotes",
+    "s3": "I prepare the bill of quantities, compare several quotes on the same design and help you choose materials and suppliers.",
+    "s4title": "Site and permits",
+    "s4": "I supervise the works, check quality and payments, file the permits and close with the completion notice and land registry update.",
+    "cta": "How a renovation works"
+  },
+  "WorkArea": {
+    "title": "Where I work",
+    "p1": "My studio is in Bergamo, at Via Bologna 2, and I see clients by appointment. I handle projects and building sites in Bergamo and its province, Milan, Monza e Brianza and the rest of Lombardy: the LOVINGCOLORS apartment is in Bergamo, Casa Archi & Colori in Milan, CASA PEONIA in Camparada and the PARIGINA kitchen in Monza.",
+    "p2": "With ArchiAdvice online consultations I work with clients wherever they are, in Italian, Spanish and English.",
+    "cta": "See all projects"
   }
 }
