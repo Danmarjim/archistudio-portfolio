@@ -34,34 +34,39 @@ function TestimonialCard({ item, locale, t, clamp = false, duplicate = false }: 
     <figure
       aria-hidden={duplicate || undefined}
       className={cn(
-        'flex flex-col rounded-2xl border border-neutral-200 bg-white p-7',
+        'flex flex-col rounded-2xl border border-neutral-200 bg-white p-6',
         clamp && 'w-[300px] shrink-0 sm:w-[370px]'
       )}
     >
-      <span aria-hidden="true" className="font-serif text-5xl leading-none text-primary-600">
+      <span aria-hidden="true" className="font-serif text-4xl leading-none text-primary-600">
         “
       </span>
       <blockquote
         lang={item.translation ? locale : item.quoteLang}
-        className={cn('mt-2 flex-1 leading-relaxed text-neutral-700', clamp && 'line-clamp-5')}
+        className="mt-1 flex-1 text-[15px] leading-relaxed text-neutral-700"
       >
-        <p>{item.translation ?? item.quote}</p>
+        <p className={cn(clamp && 'line-clamp-4')}>{item.translation ?? item.quote}</p>
       </blockquote>
       {item.translation && (
         <p className="mt-3 text-xs text-neutral-500">{t('translated', { lang: item.quoteLang })}</p>
       )}
-      <figcaption className="mt-6 text-sm">
-        <span className="font-medium text-foreground">— {item.author}</span>
-        {item.context && <span className="block pl-4 text-neutral-500">{item.context}</span>}
-        {item.source && <span className="block pl-4 text-neutral-500">{t('source', { source: item.source })}</span>}
-        {item.project && (
-          <Link
-            href={projectHref(item.project)}
-            tabIndex={duplicate ? -1 : undefined}
-            className="mt-2 inline-block pl-4 font-medium text-primary-700 underline-offset-4 hover:underline"
-          >
-            {t('viewProject')}
-          </Link>
+      <figcaption className="mt-4 text-sm">
+        <div className="flex items-baseline justify-between gap-3">
+          <span className="font-medium text-foreground">— {item.author}</span>
+          {item.project && (
+            <Link
+              href={projectHref(item.project)}
+              tabIndex={duplicate ? -1 : undefined}
+              className="shrink-0 text-xs font-medium text-primary-700 underline-offset-4 hover:underline"
+            >
+              {t('viewProject')}
+            </Link>
+          )}
+        </div>
+        {(item.context || item.source) && (
+          <span className="block pl-4 text-neutral-500">
+            {[item.context, item.source && t('source', { source: item.source })].filter(Boolean).join(' · ')}
+          </span>
         )}
       </figcaption>
     </figure>
@@ -137,7 +142,7 @@ export default async function Testimonials({ testimonials, locale, variant = 'ho
   const rows = [testimonials.filter((_, i) => i % 2 === 0), testimonials.filter((_, i) => i % 2 === 1)]
 
   return (
-    <section className="bg-neutral-50 py-24">
+    <section className="bg-pietra py-24">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-medium uppercase tracking-widest text-primary-600">{t('eyebrow')}</p>

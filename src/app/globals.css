@@ -3,6 +3,8 @@
 :root {
   --background: #fafaf9;
   --foreground: #1a1a1a;
+  /* Superficie calda "pietra" per staccare una sezione dal fondo (testimonianze) */
+  --pietra: #f3efe8;
 
   /* Primary - tonos cálidos/tierra */
   --primary-50: #faf5f0;
@@ -32,6 +34,7 @@
 
 @theme inline {
   --color-background: var(--background);
+  --color-pietra: var(--pietra);
   --color-foreground: var(--foreground);
 
   /* Primary colors */
