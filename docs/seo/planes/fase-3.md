@@ -16,8 +16,8 @@
 | A2 | ✅ [hecho](../auditorias/2026-10-10-preview/findings/GEO-ANALYSIS.md) (76/100): **Citabilidad en buscadores con IA** (AI Overviews, ChatGPT, Perplexity): pasajes que se entienden solos, datos con fuente, entidad clara | `/seo geo <url>` en guías y servicios | Preparación IA (10 %) | 1 h |
 | A3 | ✅ (`seo/mensajes-cliente`, −15/−24 % de HTML) **Páginas más ligeras:** cada página envía solo los textos que usan sus componentes de cliente | — (código) | Rendimiento (10 %) | 1–2 h |
 | A4 | ✅ (`seo/contraste`, 2,42 → 4,54:1) **Contraste** del gris de fechas y etiquetas en noticias | — (código) | Accesibilidad | 15 min |
-| A5 | **Lighthouse en todas las páginas**, no solo en 3 | `/seo unlighthouse` sobre la build local | Rendimiento, accesibilidad | 30 min |
-| A6 | **Agentes de IA:** que un agente navegue y entienda la web (árbol de accesibilidad, `llms.txt`, robots) | `/seo agentic <url>` | Preparación IA | 30 min |
+| A5 | ✅ [hecho](../auditorias/2026-10-10-lighthouse/README.md) (`seo/a5-lighthouse`): accesibilidad 100 en las 102 páginas, CLS 0, SEO 100. **Lighthouse en todas las páginas**, no solo en 3 | `/seo unlighthouse` sobre la build local | Rendimiento, accesibilidad | 30 min |
+| A6 | ✅ [hecho](../auditorias/2026-10-10-agentes/README.md): Agentic Browsing 3/3, 0 P0 que fallen; queda decidir la política de entrenamiento. **Agentes de IA:** que un agente navegue y entienda la web (árbol de accesibilidad, `llms.txt`, robots) | `/seo agentic <url>` | Preparación IA | 30 min |
 | A7 | ✅ [hecho](../auditorias/2026-10-10-simulacro-merge/README.md): **Simulacro de merge** de todas las ramas en una copia de `main`: conflictos (`package.json`, `messages`), build y redirecciones. Sin conflictos; arreglado un enlace roto en chi sono; C10 no se mergea con marcadores | [`simulacro.sh`](../auditorias/2026-10-10-simulacro-merge/simulacro.sh) | Seguridad del día del merge | 30 min |
 
 ## B. Preparación sin Martina
@@ -26,7 +26,7 @@
 |---|---|---|---|
 | ~~B1~~ | Guía C12 → [fase 2](fase-2.md) | — | — |
 | ~~B2~~ | Guías C9 y C13 → [fase 2](fase-2.md) | — | — |
-| B3 | **Comprobar la intención de búsqueda** de las páginas objetivo: ¿Google quiere una página de servicio, una guía o un listado para cada keyword? | `/seo sxo <url>` | Evita escribir el tipo de página equivocado |
+| B3 | ✅ [hecho](../auditorias/2026-10-10-intencion/README.md): 14 de 15 alineadas; restyling reorientado a Bergamo. **Comprobar la intención de búsqueda** de las páginas objetivo: ¿Google quiere una página de servicio, una guía o un listado para cada keyword? | `/seo sxo <url>` | Evita escribir el tipo de página equivocado |
 | B4 | **Sección de testimonios** lista y oculta: aparece sola cuando haya 2–3 | — | Señal de confianza en home y servicios |
 | B5 | **4 semanas de publicaciones** para la ficha de Google, a partir de los proyectos | — | Actividad en la ficha = mejor posición en el mapa |
 
@@ -48,6 +48,6 @@
 
 ## Orden recomendado
 
-~~Cerrar la fase 2~~ → ~~A7~~ → A5 + A6 + B3 → B4 → B5. D según su fecha.
+~~Cerrar la fase 2~~ → ~~A7~~ → ~~A5 + A6 + B3~~ → B4 → B5. D según su fecha.
 
 **Comandos que no aportan aquí:** `ecommerce`, `programmatic`, `competitor-pages`, `cluster` (ya hecho el 8 oct), `hreflang` (sin errores en el audit), `seranking`/`profound` (de pago, para cuando haya tráfico).
