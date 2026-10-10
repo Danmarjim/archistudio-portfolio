@@ -23,6 +23,7 @@ Los textos con datos pendientes llevan `[DA CONFERMARE: …]`. En local y en las
 | `seo/c2-consulenza-online` | [c2-consulenza-online.md](c2-consulenza-online.md) | Pendiente de revisión (5 datos de Martina) |
 | `seo/c3-acquisto-casa` | [c3-acquisto-casa.md](c3-acquisto-casa.md) | Pendiente de revisión (10 datos de Martina) |
 | `seo/c6-restyling` | [c6-restyling.md](c6-restyling.md) | Pendiente de revisión (7 datos de Martina) |
+| `seo/a4-enlazado-interno` | [a4-enlazado-interno.md](a4-enlazado-interno.md) | Pendiente de revisión |
 | `seo/preview-completa` | — | Integra todas las anteriores |
 
 Orden de merge: primero `feat/seo-fase-2-pr2` (todas salen de ella); después, cualquier rama aprobada, en cualquier orden.

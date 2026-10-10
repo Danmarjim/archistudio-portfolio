@@ -72,7 +72,7 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 - [ ] `vercel.json` con *Ignored Build Step* para no desplegar cambios que solo tocan `docs/` o `.md` (ahorra almacenamiento en Vercel).
 - [ ] **A3 — home** (parcial): párrafo de entidad, "Come lavoro", proyectos destacados con ubicación, zona de trabajo. Falta de Martina: H1 y testimonios.
 - [ ] **C1 — chi sono** (parcial): prensa, proyectos, perfiles, H1 con nombre. Falta de Martina: colegiación y texto del premio.
-- [ ] **A4 — enlazado interno**: proyectos → su servicio; hecho ya: prensa → proyecto y servicio → proyectos (plantilla).
+- [x] **A4 — enlazado interno** (rama `seo/a4-enlazado-interno`): proyecto → servicio, prensa y ArchiAdvice → servicio, servicios entre sí; enlaces a servicios sin publicar apuntan al hub. Falta: home → servicios (A3).
 - [ ] Borradores de las guías **C12** y **C8** para que Martina las revise (C8 requiere revisión normativa).
 - [ ] **B12** — decidir si se quitan las animaciones `opacity:0` bajo el pliegue (propuesta: mantener).
 - [ ] **F8** — créditos IPTC en las fotos (opcional).
