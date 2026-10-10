@@ -1,11 +1,11 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
-import { projectHref } from '@/lib/routes'
+import { projectHref, serviceHref } from '@/lib/routes'
 import Image from 'next/image'
 import { useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowLeft, MapPin, Calendar, Ruler, User, CheckCircle, Expand, Camera } from 'lucide-react'
+import { ArrowLeft, ArrowRight, MapPin, Calendar, Ruler, User, CheckCircle, Expand, Camera } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button, Badge, Lightbox } from '@/components/ui'
 import { useLightbox } from '@/lib/hooks'
@@ -16,9 +16,11 @@ interface ProjectDetailProps {
   project: Project
   prevProject: Project | null
   nextProject: Project | null
+  /** Pagina del servizio con cui è stato realizzato il progetto, se pubblicata */
+  service?: { slug: string; name: string }
 }
 
-export default function ProjectDetail({ project, prevProject, nextProject }: ProjectDetailProps) {
+export default function ProjectDetail({ project, prevProject, nextProject, service }: ProjectDetailProps) {
   const t = useTranslations('ProjectDetail')
   const tStatus = useTranslations('ProjectStatus')
   const tCat = useTranslations('ProjectCategories')
@@ -145,6 +147,16 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
                 </Badge>
               ))}
             </div>
+
+            {service && (
+              <Link
+                href={serviceHref(service.slug)}
+                className="mt-8 inline-flex items-center gap-2 font-medium text-primary-700 underline-offset-4 hover:underline"
+              >
+                {t('serviceLink', { service: service.name })}
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            )}
           </motion.div>
 
           {/* Sidebar - Project Details */}

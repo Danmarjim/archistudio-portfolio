@@ -58,7 +58,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
     url: localizedUrl(locale, `/servicios/${slug}`),
     inLanguage: locale,
     provider: businessSummary,
-    areaServed: ['Bergamo', 'Provincia di Bergamo', 'Milano', 'Monza e Brianza'].map((name) => ({
+    areaServed: ['Bergamo', 'Provincia di Bergamo', 'Milano', 'Monza e Brianza', 'Lombardia'].map((name) => ({
       '@type': 'Place',
       name,
     })),
