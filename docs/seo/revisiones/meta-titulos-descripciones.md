@@ -1,6 +1,6 @@
 # Revisión — `seo/meta-titulos-descripciones`
 
-Títulos y meta descriptions que Google recortaría. Hallazgos 2 y 3 del [audit del 10 oct](../archivo/datos/2026-10-10-audit-preview/FULL-AUDIT-REPORT.md): 19 títulos de más de 60 caracteres y 20 descripciones de más de 160.
+Títulos y meta descriptions que Google recortaría. Hallazgos 2 y 3 del [audit del 10 oct](../auditorias/2026-10-10-preview/FULL-AUDIT-REPORT.md): 19 títulos de más de 60 caracteres y 20 descripciones de más de 160.
 
 ## Qué se ha hecho
 
