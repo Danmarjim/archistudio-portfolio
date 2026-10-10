@@ -1,12 +1,14 @@
 # Plan SEO — detalle de tareas (fase 2)
 
-> Punto de entrada: **`docs/seo/ESTADO.md`** (qué está hecho, en curso y pendiente). Este documento contiene el **detalle** de cada tarea: qué hacer, en qué archivos y cómo verificarlo. Datos a pedir a Martina: `docs/seo/DATOS-MARTINA.md`. Comandos ejecutados: `docs/seo/auditorias/REGISTRO-COMANDOS.md`.
+> Punto de entrada: **`docs/seo/ESTADO.md`** (qué está hecho, en curso y pendiente). Este documento contiene el **detalle** de cada tarea: qué hacer, en qué archivos y cómo verificarlo. Datos a pedir a Martina: `docs/seo/PENDIENTE-MARTINA.md`. Comandos ejecutados: `docs/seo/auditorias/REGISTRO-COMANDOS.md`.
 
 Origen: re-auditoría del 7 oct 2026 (score 49 → 80), plan de clusters "architetto Bergamo" (8 oct) y Search Console. Fase 1 archivada en `docs/seo/planes/`.
 
 **Diagnóstico:** el sitio ya no tiene problemas de indexación. Que no aparezca por "studio architettura Bergamo" es falta de relevancia y autoridad local: una sola página de servicios, sin ficha de Google Business Profile, sin reseñas visibles y sin contenido que responda a las búsquedas reales.
 
 > Antes de cada tarea, comprobar en el código que el problema sigue ahí.
+
+**Estado (10 oct):** en cierre. Lo que depende de Martina (decisiones D2–D5 y D8, validar textos, C5, C15, F1 paso 2, F7 y el bloque D) pasa a la [fase Martina](fase-martina.md); el seguimiento (bloque E), a la [fase 3](fase-3.md). Para cerrar la fase solo quedan los **borradores de las guías C8, C9, C10, C12, C13 y C14**.
 
 ## Decisiones previas (bloquean tareas)
 
@@ -20,7 +22,7 @@ Origen: re-auditoría del 7 oct 2026 (score 49 → 80), plan de clusters "archit
 | D6 | Sevilla: ¿zona de servicio real? | B4 `areaServed` | ✅ **Sí** (8 oct): añadida al `areaServed`. |
 | D7 | Tipos del formulario de contacto | B9 | ✅ **Los 4 servicios + Catálogo tappeti + Altro** (8 oct). |
 | D8 | Email de dominio (`info@mparchistudio.com`) y horarios | B4, C1 | Martina; el email se puede crear en el proveedor del dominio |
-| D9 | `opacity:0` bajo el pliegue (10 elementos en la home) | B12 | Propuesta: mantener las animaciones; no afectan a SEO ni LCP |
+| D9 | `opacity:0` bajo el pliegue (10 elementos en la home) | B12 | ✅ **Decidido (10 oct): se mantienen.** No afectan a SEO ni a LCP |
 
 ## Benchmark frente a la competencia (8 oct 2026)
 
@@ -117,9 +119,11 @@ Misma rúbrica que los briefs: profundidad + formato + SEO + experiencia de uso 
 **✅ PR 1 · B11. CSP** · `next.config.ts`
 - Añadir `Content-Security-Policy` probada con Vercel Analytics, Calendly y los JSON-LD inline. Empezar en `Report-Only` una semana.
 
-**B12. Animaciones bajo el pliegue** (D9) — solo si se decide quitarlas.
+**✅ Cerrado (10 oct) · B12. Animaciones bajo el pliegue** (D9): se mantienen; no hay nada que hacer.
 
 ## Bloque C — Contenido nuevo (requiere textos o datos de Martina)
+
+Nosotros redactamos el borrador de cada página con su brief, con los datos que faltan como `[DA CONFERMARE]`; Martina valida y completa ([fase Martina](fase-martina.md)). Borradores hechos: C1–C4, C6, C7, C11. Pendientes para cerrar la fase: C8, C9, C10, C12, C13, C14.
 
 Preparar antes cada brief con `/seo content-brief <keyword>` (estructura, secciones, palabras, competidores, enlaces). Los briefs se guardan en `docs/seo/briefs/` con el código de la tarea (`C2-…md`).
 
@@ -150,6 +154,8 @@ Fuera de alcance (decidido en el cluster): páginas por ciudad (Milano, Monza), 
 
 ## Bloque D — Fuera de la web (Martina)
 
+→ Movido a la [fase Martina](fase-martina.md) §3.
+
 - D-1. **Google Business Profile**: categoría *Architetto*, nombre `MP_archistudio`, web, teléfono, dirección o zona de servicio, fotos, horario. Es lo único que la saca en el mapa. Cuando exista: enlace en `sameAs` y botón "Recensioni / Come arrivare" en contacto.
 - D-2. Pedir reseñas en Google (primero a los clientes de Spazi Belli).
 - D-3. Nombre comercial idéntico en Houzz, Homify, Spazi Belli, Archilovers.
@@ -157,12 +163,14 @@ Fuera de alcance (decidido en el cluster): páginas por ciudad (Milano, Monza), 
 
 ## Bloque E — Seguimiento
 
+→ Movido a la [fase 3](fase-3.md), bloque D.
+
 - Tras cada deploy con URLs nuevas: reenviar sitemap y solicitar indexación de las 5 URLs principales en Search Console.
 - `/seo drift compare https://mparchistudio.com` tras cada release (baseline del 7 oct).
 - Inspección por API (`/seo google inspect-batch`) de las URLs nuevas a los 3–7 días.
 - Search Console → Rendimiento: primeras impresiones de marca y de "architetto Bergamo".
 
-## Bloque F — Imágenes (auditoría `/seo images`, 8 oct 2026) · F1 (paso 1)–F6 hechos en PR 2; F7 y F8 pendientes
+## Bloque F — Imágenes (auditoría `/seo images`, 8 oct 2026) · F1 (paso 1)–F6 hechos en PR 2; F7 pasa a la fase Martina; F8 descartado
 
 Diagnóstico: lo que se sirve está bien optimizado (WebP de 19–44 KB, `srcset`, dimensiones, lazy bajo el pliegue, `fetchpriority` en el LCP). Los problemas están en los textos alternativos, los nombres de archivo y los originales.
 
@@ -198,7 +206,7 @@ Diagnóstico: lo que se sirve está bien optimizado (WebP de 19–44 KB, `srcset
 **F7. Imágenes compartidas entre proyectos** · Baja · confirmar con Martina
 - La galería de `bagno-italian-summer` usa `restyling-casa-peonia-29…`. Si es la misma casa, renombrar las del baño (`bagno-italian-summer-NN.jpg`) para que Google Images las asocie al proyecto correcto.
 
-**F8. Créditos IPTC** · Baja, opcional
+**❌ Descartado (10 oct) · F8. Créditos IPTC** · Baja, opcional: no es factor de ranking
 - Inyectar Creator/Credit/Copyright (fotógrafa Marta D'Avenia donde aplique, MP_archistudio en el resto) con `exiftool`. Google Images lo muestra; no es factor de ranking. Hacer junto con F3.
 
 ## Bloque G — Internacionalización (auditoría `/seo hreflang`, 8 oct 2026) · G1 y G2 hechos en PR 2
@@ -214,7 +222,7 @@ Diagnóstico: hreflang técnicamente perfecto (63/63 URLs: autorreferencia, reto
 - Cambio: `localeDetection: false`. Cada URL muestra siempre su idioma; el visitante cambia con el selector.
 - Verificar: `curl -H "Accept-Language: es" https://mparchistudio.com/progetti` → 200 (sin redirect).
 
-**G3. Slugs italianos en news y tappeti para es/en** · Info
+**✅ Cerrado (decidido no hacerlo) · G3. Slugs italianos en news y tappeti para es/en** · Info
 - `/en/news/il-colore-nell-architettura`. Aceptable con tan pocas páginas; revisar solo si las noticias pasan a ser contenido estratégico en es/en.
 
 ## Orden de ejecución propuesto
