@@ -24,7 +24,7 @@ docs/
 |---|---|
 | [`ESTADO.md`](seo/ESTADO.md) | **Punto de entrada**: hecho, en curso y pendiente |
 | [`PENDIENTE-MARTINA.md`](seo/PENDIENTE-MARTINA.md) | Todo lo que falta de Martina (datos, textos, decisiones), con el detalle por brief en el anexo |
-| [`planes/`](seo/planes/) | Planes por fase: [`fase-1`](seo/planes/fase-1.md) (cerrada, con su [estado](seo/planes/fase-1-estado.md)), [`fase-2`](seo/planes/fase-2.md) (detalle de cada tarea A1…F3), [`fase-3`](seo/planes/fase-3.md) (en curso) |
+| [`planes/`](seo/planes/) | Planes por fase: [`fase-1`](seo/planes/fase-1.md) (cerrada, con su [estado](seo/planes/fase-1-estado.md)), [`fase-2`](seo/planes/fase-2.md) (detalle de cada tarea A1…F3), [`fase-3`](seo/planes/fase-3.md) y [`fase-martina`](seo/planes/fase-martina.md) (todo lo que depende de Martina) |
 | [`briefs/`](seo/briefs/) | Guion de cada página nueva o a mejorar (estructura, keywords, competidores, meta) |
 | [`revisiones/`](seo/revisiones/) | Un documento por rama: qué se hizo y qué validar |
 | [`auditorias/`](seo/auditorias/) | Resultados de los audits por fecha y el [registro de comandos `/seo`](seo/auditorias/REGISTRO-COMANDOS.md) ya ejecutados |
