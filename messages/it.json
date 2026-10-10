@@ -94,6 +94,7 @@
     "surface": "Superficie",
     "client": "Cliente",
     "status": "Stato",
+    "guideLink": "Leggi la guida: {guide}",
     "serviceLink": "Scopri il servizio: {service}",
     "photographer": "Fotografia",
     "previous": "Precedente",

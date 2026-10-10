@@ -94,6 +94,7 @@
     "surface": "Surface",
     "client": "Client",
     "status": "Status",
+    "guideLink": "Read the guide: {guide}",
     "serviceLink": "Discover the service: {service}",
     "photographer": "Photography",
     "previous": "Previous",

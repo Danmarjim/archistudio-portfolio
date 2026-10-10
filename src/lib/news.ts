@@ -92,6 +92,20 @@ export function getNewsBySlug(slug: string, locale: string = 'it'): NewsPost | u
   return getAllNews(locale).find((p) => p.slug === slug)
 }
 
+// Guida a cui rimanda la scheda di un progetto, in base alla categoria (valori in italiano)
+const GUIDE_BY_PROJECT_CATEGORY: Record<string, string> = {
+  Bagni: 'progettare-il-bagno-consigli-architetto',
+  Cucine: 'progettare-la-cucina-consigli-architetto',
+  'Ristrutturazione integrale': 'il-colore-nell-architettura',
+  Restyling: 'il-colore-nell-architettura',
+}
+
+/** Guida collegata a un progetto, solo se pubblicata. */
+export function getGuideForProject(category: string, locale: string = 'it'): NewsPost | undefined {
+  const slug = GUIDE_BY_PROJECT_CATEGORY[category]
+  return slug ? getNewsBySlug(slug, locale) : undefined
+}
+
 export function getAllNewsSlugs(): string[] {
   return getAllNews('it').map((p) => p.slug)
 }
