@@ -21,7 +21,7 @@ La lista completa y priorizada está en [`PENDIENTE-MARTINA.md`](../PENDIENTE-MA
 | D8 | Email de dominio (decidir Google Workspace) |
 | C1–C4, C6, C7, C11 | Validar los textos redactados y completar sus `[DA CONFERMARE]` |
 | C8–C14 | Validar los borradores de las guías |
-| C5 | 2–3 testimonios con permiso (la sección ya estará preparada y oculta: fase 3, B4) |
+| C5 | 2–3 testimonios con permiso (la sección ya está preparada y oculta: [B4](../revisiones/b4-testimonios.md)) |
 | C15 | Proyectos más completos: encargo, materiales, plazos, presupuesto, cita del cliente |
 | F1 paso 2 | Una descripción corta por foto de galería |
 | F7 | ¿Las fotos `restyling-casa-peonia-*` de `bagno-italian-summer` son de la misma casa? |
