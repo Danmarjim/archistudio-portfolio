@@ -15,9 +15,9 @@ Detalle en [`FULL-AUDIT-REPORT.md`](FULL-AUDIT-REPORT.md). Ordenado por impacto.
 | # | Tarea | Sin Martina | Esfuerzo |
 |---|---|---|---|
 | 4 | ✅ (`seo/og-servicios`) Imagen social propia por servicio (portada del primer proyecto relacionado) y por guía | 🟢 | 30 min |
-| 5 | Pasar al cliente solo los textos que usan sus componentes (`NextIntlClientProvider`) | 🟢 | 1–2 h |
+| 5 | ✅ (`seo/mensajes-cliente`) Pasar al cliente solo los textos que usan sus componentes (`NextIntlClientProvider`) | 🟢 | 1–2 h |
 | 6 | Revisar el LCP de servicios y guías con datos reales de Speed Insights (ya en producción) | 🟢 | tras 1–2 semanas de datos |
-| 7 | Contraste de `text-neutral-400` en la página de noticia | 🟢 | 15 min |
+| 7 | ✅ (`seo/contraste`) Contraste de `text-neutral-400` en la página de noticia | 🟢 | 15 min |
 | 8 | Ampliar la noticia de la colección Sevilla y la de Archiboost | Martina (datos) | — |
 
 ## Fase 3 — Contenido y autoridad (mes 2)
