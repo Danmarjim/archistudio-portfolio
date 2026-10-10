@@ -23,7 +23,7 @@
 
 | Fecha | Qué | Dónde |
 |---|---|---|
-| 7 oct | **Fase 1**: dominio real en canonical/hreflang/sitemap (antes `example.com`), sin errores 500, `<html lang>`, metadatos por idioma, JSON-LD, LCP del hero, NAP coherente, cabeceras de seguridad | `main` · [`archivo/fase-1/`](planes/) |
+| 7 oct | **Fase 1**: dominio real en canonical/hreflang/sitemap (antes `example.com`), sin errores 500, `<html lang>`, metadatos por idioma, JSON-LD, LCP del hero, NAP coherente, cabeceras de seguridad | `main` · [`planes/fase-1`](planes/fase-1.md) |
 | 8 oct | Search Console verificado (DNS en Vercel) y API conectada (Search Console, PageSpeed, CrUX); sitemap enviado | — |
 | 8 oct | **PR 1** — A1 (slugs en italiano + 301) y B1–B11 (JSON-LD ampliado, LCP, `sizes`, assets renombrados, descripciones de proyecto, `llms.txt`, formulario, sitemap, CSP en observación) | `main` (merge `e104ad3`) |
 | 8 oct | **Briefs** de A3 (home), C1 (chi sono), C2, C3, C4, C6 (servicios) y C7–C14 (guías) | [`briefs/`](briefs/) |
@@ -54,50 +54,23 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 
 ---
 
-## 🔄 En curso
+## Fases
 
-| Qué | Estado | Siguiente paso |
-|---|---|---|
-| **PR 2** sin merge | Desplegado en preview de Vercel | Revisar (sobre todo las dos noticias de Homeadore) y hacer merge |
-| **Reindexación de las URLs nuevas** (`/servizi`, `/progetti`…) | Sitemap reenviado el 8 oct; Google aún elige `/servicios` como canónica de `/servizi` | Comprobar por API hacia el 11 oct (`/seo google inspect-batch`) |
-| **CSP** en modo `Report-Only` | 0 violaciones en local | Tras ~1 semana en producción sin violaciones, pasar a `Content-Security-Policy` (B11) |
-| **A2 — páginas de servicio** | C4 (reforma Bergamo, 7 datos pendientes) y C2 (ArchiAdvice, 5 pendientes; precio 100 € ya puesto) C3 (compra de vivienda, 10 pendientes) y C6 (restyling, 7 pendientes) redactadas en it/es/en, cada una en su rama, con los datos pendientes como `[DA CONFERMARE]` | Martina valida y completa los datos: lista única en [`PENDIENTE-MARTINA.md`](PENDIENTE-MARTINA.md) |
-| **Ficha de Google: textos** | Descripción y 5 servicios redactados (`FICHA-GOOGLE.md` §6) | Martina los valida y aplica la checklist de §6 |
-| **F1 — alt de las galerías** | Paso 1 hecho (patrón traducido con ciudad) | Paso 2: descripciones por foto (Martina) |
+| Fase | Estado | Qué queda | Plan |
+|---|---|---|---|
+| **1** — base técnica | ✅ Cerrada (10 oct) | — | [`fase-1`](planes/fase-1.md) · [estado](planes/fase-1-estado.md) |
+| **2** — estructura, servicios y contenido | 🔄 En cierre | Borradores de las guías C8, C9, C10, C12, C13 y C14 | [`fase-2`](planes/fase-2.md) |
+| **3** — calidad, preparación y seguimiento | ⏸ Empieza al cerrar la 2 (A1–A4 ya hechos) | A5–A7, B3–B5 y el seguimiento | [`fase-3`](planes/fase-3.md) |
+| **Martina** — visto bueno, datos y publicación | ⏳ Esperando a Martina | Validar ramas, datos, ficha de Google, día de publicar | [`fase-martina`](planes/fase-martina.md) · [lista para ella](PENDIENTE-MARTINA.md) |
 
----
+Decisiones del 10 oct: B12 (animaciones bajo el pliegue) se mantienen; F8 (créditos IPTC) descartado; G3 (slugs italianos en news para es/en) no se hace.
 
-## ⏳ Pendiente
+## Ramas
 
-### Código, sin datos de Martina
-- [ ] `vercel.json` con *Ignored Build Step* para no desplegar cambios que solo tocan `docs/` o `.md` (ahorra almacenamiento en Vercel).
-- [x] **A3 — home** (rama `seo/a3-home`): H1 con oficio y ciudad, "Chi sono" concreto, servicios con resumen y enlace, Come lavoro, proyectos destacados, Dove lavoro, teléfono. Falta de Martina: validar el H1 (D5), testimonios y colegiación.
-- [x] **C1 — chi sono** (rama `seo/c1-chi-sono`): H1 con nombre, credenciales, prensa, proyectos, perfiles, `Person` con `hasCredential` y `memberOf`. Falta de Martina: número de colegiada, texto del premio y confirmar Sevilla.
-- [x] **A4 — enlazado interno** (rama `seo/a4-enlazado-interno`): proyecto → servicio, prensa y ArchiAdvice → servicio, servicios entre sí; enlaces a servicios sin publicar apuntan al hub. La home enlaza a los servicios desde A3.
-- [x] Guías **C11** (coste de la obra en Bergamo) y **C7** (cuánto cuesta un arquitecto) redactadas en it/es/en, en sus ramas, con las cifras de Martina como `[DA CONFERMARE]`.
-- [ ] Borradores de las guías **C12** y **C8** para que Martina las revise (C8 requiere revisión normativa).
-- [ ] **B12** — decidir si se quitan las animaciones `opacity:0` bajo el pliegue (propuesta: mantener).
-- [ ] **F8** — créditos IPTC en las fotos (opcional).
+Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/README.md). `seo/preview-completa` las junta todas y es la única que despliega preview. `main` solo recibe lo que Martina aprueba (excepción: Speed Insights, mergeado el 10 oct).
 
-### Martina — datos
-**Lista única y priorizada en [`PENDIENTE-MARTINA.md`](PENDIENTE-MARTINA.md).** Detalle por brief en su [anexo](PENDIENTE-MARTINA.md#anexo-detalle-por-brief). Los 8 que desbloquean más: colegiación, premio Piranesi, precios, testimonios, fotos del antes, email/horarios/Google Business Profile, H1 de la home, ubicación del baño de Casa Archi & Colori.
+## Próximos pasos
 
-### Martina — contenido
-- [ ] Textos de las páginas de servicio: C2 ArchiAdvice, C3 compra de vivienda, C4 reforma en Bergamo, C6 restyling.
-- [ ] Guías C7–C14 (con su brief cada una).
-- [ ] C15 — proyectos más completos (encargo, materiales, plazos, presupuesto, cita del cliente).
-- [ ] F7 — confirmar las fotos de `bagno-italian-summer` que se llaman `restyling-casa-peonia-*`.
-
-### Martina — fuera de la web
-- [ ] **D-1 Google Business Profile**: la ficha ya existe, pero solo con categoría Studio di architettura, 0 reseñas, sin atributos y con horario 9–17 (el real es 9–18, como en la web). Confirmar que Martina tiene acceso y aplicar los cambios de [`FICHA-GOOGLE.md`](../martina/FICHA-GOOGLE.md) §3.
-- [ ] D-2 reseñas en Google; D-3 mismo nombre comercial en todos los perfiles; D-4 web en Archilovers y Linktree, alta en PagineGialle, Archisio, Edilportale y Divisare.
-
-### Tú
-- [ ] Vercel: borrar deployments antiguos y activar *Deployment Retention*.
-- [ ] Volúmenes de búsqueda de las keywords del plan (Planificador de palabras clave de Google Ads).
-- [ ] API key gratuita de Moz (para `/seo backlinks` con datos reales).
-
-### Seguimiento (bloque E)
-- [ ] ~11 oct: inspección de URLs y primeras consultas en Search Console.
-- [ ] Tras cada deploy: `/seo drift compare https://mparchistudio.com/` y PageSpeed móvil.
-- [ ] Tras publicar páginas nuevas: solicitar indexación y repetir el benchmark (`planes/fase-2.md`).
+1. **Fase 2:** guías C12 → C9 → C13 → C10 → C14 → C8 (C8 al final: necesita revisión normativa).
+2. **Fase 3:** A7 (simulacro de merge) → A5 + A6 + B3 → B4 → B5.
+3. **Por fecha:** ~11 oct inspección de la reindexación; ~15 oct CSP obligatoria.
