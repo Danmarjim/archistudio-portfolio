@@ -2,7 +2,7 @@
 
 Parte de `docs/seo/planes/fase-2.md` (bloque C, ola 2, tarea C6; estructura en A2). Generado con `/seo content-brief restyling casa` el 8 oct 2026.
 
-**Estado:** pendiente. Bloqueado por los datos de Martina (checklist al final).
+**Estado:** ✅ redactado en it/es/en en la rama `seo/c6-restyling` (10 oct 2026). Lo que falta de Martina está en su [revisión](../revisiones/c6-restyling.md) y en [`PENDIENTE-MARTINA.md`](../PENDIENTE-MARTINA.md). La checklist de datos de abajo es la original del brief.
 
 **Página:** nueva, `/servizi/restyling-casa`. Hoy "Restyling" es un ancla en `/servizi` con 4 viñetas: cambiar el aspecto sin mover tabiques, casa de alquiler, optimizar con piezas a medida, decorar al terminar una obra.
 
