@@ -17,7 +17,7 @@
 | A3 | ✅ (`seo/mensajes-cliente`, −15/−24 % de HTML) **Páginas más ligeras:** cada página envía solo los textos que usan sus componentes de cliente | — (código) | Rendimiento (10 %) | 1–2 h |
 | A4 | ✅ (`seo/contraste`, 2,42 → 4,54:1) **Contraste** del gris de fechas y etiquetas en noticias | — (código) | Accesibilidad | 15 min |
 | A5 | ✅ [hecho](../auditorias/2026-10-10-lighthouse/README.md) (`seo/a5-lighthouse`): accesibilidad 100 en las 102 páginas, CLS 0, SEO 100. **Lighthouse en todas las páginas**, no solo en 3 | `/seo unlighthouse` sobre la build local | Rendimiento, accesibilidad | 30 min |
-| A6 | ✅ [hecho](../auditorias/2026-10-10-agentes/README.md): Agentic Browsing 3/3, 0 P0 que fallen; queda decidir la política de entrenamiento. **Agentes de IA:** que un agente navegue y entienda la web (árbol de accesibilidad, `llms.txt`, robots) | `/seo agentic <url>` | Preparación IA | 30 min |
+| A6 | ✅ [hecho](../auditorias/2026-10-10-agentes/README.md): Agentic Browsing 3/3, 0 P0 que fallen; `Content-Signal: ai-train=no` (`seo/a6-content-signal`). **Agentes de IA:** que un agente navegue y entienda la web (árbol de accesibilidad, `llms.txt`, robots) | `/seo agentic <url>` | Preparación IA | 30 min |
 | A7 | ✅ [hecho](../auditorias/2026-10-10-simulacro-merge/README.md): **Simulacro de merge** de todas las ramas en una copia de `main`: conflictos (`package.json`, `messages`), build y redirecciones. Sin conflictos; arreglado un enlace roto en chi sono; C10 no se mergea con marcadores | [`simulacro.sh`](../auditorias/2026-10-10-simulacro-merge/simulacro.sh) | Seguridad del día del merge | 30 min |
 
 ## B. Preparación sin Martina
