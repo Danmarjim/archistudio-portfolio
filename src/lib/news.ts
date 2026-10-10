@@ -78,7 +78,16 @@ export function getAllNews(locale: string = 'it'): NewsPost[] {
   }))
 }
 
-function resolveNewsLinks(content: string, publishedSlugs: Set<string>): string {
+/** Slug delle notizie pubblicate in una lingua (in produzione, senza quelle con dati da confermare). */
+export function getPublishedNewsSlugs(locale: string = 'it'): Set<string> {
+  return new Set(getAllNews(locale).map((post) => post.slug))
+}
+
+/**
+ * I link Markdown a una notizia non pubblicata (`/news/slug`) puntano a `/news`. Serve anche ai
+ * testi che non passano da `getAllNews`, come le pagine di servizio.
+ */
+export function resolveNewsLinks(content: string, publishedSlugs: Set<string>): string {
   return content.replace(/\]\(\/news\/([a-z0-9-]+)\)/g, (link, slug: string) =>
     publishedSlugs.has(slug) ? link : '](/news)'
   )
