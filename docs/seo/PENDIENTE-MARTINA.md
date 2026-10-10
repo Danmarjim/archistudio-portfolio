@@ -73,6 +73,11 @@ En la preview, todo lo que falta sale **resaltado en amarillo** en las páginas.
 - [ ] Tus medidas de referencia, si son distintas de las de la guía.
 - [ ] Rango de coste y duración de la obra de un baño.
 
+**Guía para diseñar la cocina** ([revisión](revisiones/c13-progettare-cucina.md))
+- [ ] Tus medidas de referencia, y si las adaptas a la altura del cliente.
+- [ ] ¿Trabajas con carpinteros para las cocinas a medida o con tiendas de cocinas?
+- [ ] Duración típica de un restyling de cocina.
+
 ## 4. Revisar lo escrito (visto bueno)
 
 Todo está escrito en primera persona, como si fueras tú. Revisa que suene a ti y que sea correcto.
@@ -82,6 +87,7 @@ Todo está escrito en primera persona, como si fueras tú. Revisa que suene a ti
   - Compra de vivienda: el notario no comprueba en la casa que el estado real coincida con los proyectos y el catastro; se puede poner una condición suspensiva ligada a la verificación técnica.
   - Restyling: la tabla de qué es restyling y qué es reforma.
   - Guías de costes: amianto en edificios anteriores a 1992; honorarios libres desde 2012 y el DM 140/2012 como referencia judicial; los gastos técnicos siguen la deducción de la obra; arquitecto y geometra pueden firmar los trámites de muchas obras en un piso.
+  - Guía de la cocina: cambiar los muebles no requiere trámite; mover tabiques o abrir la cocina, normalmente sí, y si el muro es de carga hace falta un proyecto estructural.
   - Guía del baño: cambiar revestimientos y sanitarios sin moverlos no suele requerir trámite; mover tabiques, sí (CILA); un baño sin ventana necesita extracción mecánica.
   - Guía de cómo elegir arquitecto: el tono de la tabla que compara arquitecto, geometra, empresa llave en mano e interiorista; la restauración de edificios protegidos está reservada al arquitecto; el presupuesto escrito con los datos de la póliza es obligatorio.
 - [ ] Textos de las 4 páginas de servicio, en italiano, español e inglés.

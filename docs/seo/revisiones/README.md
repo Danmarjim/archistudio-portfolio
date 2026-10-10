@@ -36,6 +36,7 @@ Los textos con datos pendientes llevan `[DA CONFERMARE: …]`. En local y en las
 | `seo/mensajes-cliente` | [mensajes-cliente.md](mensajes-cliente.md) | Pendiente de revisión |
 | `seo/c12-scegliere-architetto` | [c12-scegliere-architetto.md](c12-scegliere-architetto.md) | Pendiente de revisión (4 datos; tono de la tabla comparativa) |
 | `seo/c9-progettare-bagno` | [c9-progettare-bagno.md](c9-progettare-bagno.md) | Pendiente de revisión (6 datos; cómo eran antes los baños) |
+| `seo/c13-progettare-cucina` | [c13-progettare-cucina.md](c13-progettare-cucina.md) | Pendiente de revisión (3 datos) |
 | `seo/preview-completa` | — | Integra todas las anteriores |
 
 Orden de merge: primero `feat/seo-fase-2-pr2` (todas salen de ella); después, cualquier rama aprobada, en cualquier orden.
