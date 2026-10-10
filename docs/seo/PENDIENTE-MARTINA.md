@@ -84,6 +84,10 @@ En la preview, todo lo que falta sale **resaltado en amarillo** en las páginas.
 - [ ] (Opcional) Nombres o códigos de los colores de cada proyecto.
 - [ ] Que el texto ampliado siga sonando a ti: es tu artículo más personal.
 
+**Guía de colores para las paredes** ([revisión](revisiones/c14-colori-pareti.md))
+- [ ] Cómo pruebas las muestras y qué pintura prefieres (la misma pregunta que en el artículo del color).
+- [ ] ¿Reconoces como tuya la lectura 60-30-10 de CASA PEONIA (marfil 60 %, roble y marrón 30 %, amarillo oro 10 %)?
+
 ## 4. Revisar lo escrito (visto bueno)
 
 Todo está escrito en primera persona, como si fueras tú. Revisa que suene a ti y que sea correcto.

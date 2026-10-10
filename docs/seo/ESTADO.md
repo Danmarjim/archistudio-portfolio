@@ -59,7 +59,7 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 | Fase | Estado | Qué queda | Plan |
 |---|---|---|---|
 | **1** — base técnica | ✅ Cerrada (10 oct) | — | [`fase-1`](planes/fase-1.md) · [estado](planes/fase-1-estado.md) |
-| **2** — estructura, servicios y contenido | 🔄 En cierre | Borradores de las guías C8 y C14 (C12, C9, C13 y C10 ✅) y los enlaces de C4/C7 hacia ellas | [`fase-2`](planes/fase-2.md) |
+| **2** — estructura, servicios y contenido | 🔄 En cierre | Borrador de la guía C8 (C9, C10, C12, C13 y C14 ✅) y los enlaces de C4/C7 hacia ellas | [`fase-2`](planes/fase-2.md) |
 | **3** — calidad, preparación y seguimiento | ⏸ Empieza al cerrar la 2 (A1–A4 ya hechos) | A5–A7, B3–B5 y el seguimiento | [`fase-3`](planes/fase-3.md) |
 | **Martina** — visto bueno, datos y publicación | ⏳ Esperando a Martina | Validar ramas, datos, ficha de Google, día de publicar | [`fase-martina`](planes/fase-martina.md) · [lista para ella](PENDIENTE-MARTINA.md) |
 
@@ -71,6 +71,6 @@ Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/
 
 ## Próximos pasos
 
-1. **Fase 2:** guías ~~C12~~ → ~~C9~~ → ~~C13~~ → ~~C10~~ → C14 → C8 (C8 al final: necesita revisión normativa) → enlaces hacia las guías.
+1. **Fase 2:** guías ~~C12~~ → ~~C9~~ → ~~C13~~ → ~~C10~~ → ~~C14~~ → C8 (C8 al final: necesita revisión normativa) → enlaces hacia las guías.
 2. **Fase 3:** A7 (simulacro de merge) → A5 + A6 + B3 → B4 → B5.
 3. **Por fecha:** ~11 oct inspección de la reindexación; ~15 oct CSP obligatoria.
