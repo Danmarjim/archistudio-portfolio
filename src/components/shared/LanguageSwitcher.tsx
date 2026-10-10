@@ -47,11 +47,12 @@ export default function LanguageSwitcher() {
         type="button"
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-neutral-600 transition-colors hover:bg-neutral-100 hover:text-foreground"
-        aria-label={t('label')}
         aria-expanded={isOpen}
       >
-        <Globe className="h-4 w-4" />
+        {/* Nome accessibile dal contenuto ("IT, Lingua"): un aria-label che non include il testo visibile rompe il controllo vocale */}
+        <Globe className="h-4 w-4" aria-hidden="true" />
         <span className="uppercase">{locale}</span>
+        <span className="sr-only">, {t('label')}</span>
       </button>
 
       {isOpen && (

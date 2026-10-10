@@ -159,12 +159,13 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
               </h3>
               <dl className="mt-6 space-y-4">
                 {details.map((detail) => (
-                  <div key={detail.label} className="flex items-start gap-3">
-                    <detail.icon className="mt-0.5 h-5 w-5 text-primary-600" />
-                    <div>
-                      <dt className="text-sm text-neutral-500">{detail.label}</dt>
-                      <dd className="font-medium text-foreground">{detail.value}</dd>
-                    </div>
+                  // `dl > div > dt + dd`: l'icona sta dentro il `dt`, un wrapper in più rompe la lista per gli screen reader
+                  <div key={detail.label}>
+                    <dt className="flex items-start gap-3 text-sm text-neutral-500">
+                      <detail.icon className="mt-0.5 h-5 w-5 shrink-0 text-primary-600" aria-hidden="true" />
+                      {detail.label}
+                    </dt>
+                    <dd className="pl-8 font-medium text-foreground">{detail.value}</dd>
                   </div>
                 ))}
               </dl>
