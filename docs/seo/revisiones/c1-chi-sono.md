@@ -23,6 +23,8 @@ La página `/chi-sono`, para que salga primero al buscar "Martina Pozzi architet
 
 **Archivos:** `src/app/[locale]/sobre-mi/page.tsx` (nuevo, servidor), `src/app/[locale]/sobre-mi/SobreMiContent.tsx` (antes `page.tsx`), `src/lib/seo.ts`, `messages/*.json` (`SobreMiPage`).
 
+**10 oct (A7):** el enlace de la bio al artículo del color va a `/news` si el artículo no está publicado (en producción, mientras tenga `[DA CONFERMARE]`). Sin esto daba 404; lo detectó el [simulacro de merge](../auditorias/2026-10-10-simulacro-merge/README.md).
+
 ## Cómo verlo
 
 Preview o `npm run dev` → http://localhost:3000/chi-sono, `/es/sobre-mi` y `/en/about`.
