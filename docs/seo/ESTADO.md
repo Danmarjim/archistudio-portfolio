@@ -1,6 +1,6 @@
 # SEO — Estado
 
-Última actualización: 9 oct 2026. **Este es el punto de entrada**: qué está hecho, qué está en curso y qué queda. El detalle de cada tarea (archivos, cómo verificar) está en [`PLAN.md`](PLAN.md); los códigos (A1, C4, F3…) remiten a ese documento.
+Última actualización: 10 oct 2026. **Este es el punto de entrada**: qué está hecho, qué está en curso y qué queda. El detalle de cada tarea (archivos, cómo verificar) está en [`PLAN.md`](PLAN.md); los códigos (A1, C4, F3…) remiten a ese documento.
 
 | Documento | Para qué |
 |---|---|
@@ -11,6 +11,8 @@
 | [`REGISTRO-COMANDOS.md`](REGISTRO-COMANDOS.md) | Comandos `/seo` ya ejecutados y cuándo merece la pena repetirlos |
 | [`briefs/`](briefs/) | Un brief por página: estructura, keywords, competidores, meta tags |
 | [`archivo/`](archivo/) | Fase 1 (audit inicial en italiano, plan y estado) y resultados brutos de audits y clusters |
+
+**Ramas:** cada tarea en su rama, con un documento de revisión en [`revisiones/`](revisiones/); `seo/preview-completa` las junta todas.
 
 **Score:** 49/100 (7 oct, antes de la fase 1) → 80/100 (7 oct, re-auditoría en producción).
 
@@ -58,7 +60,8 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 | **PR 2** sin merge | Desplegado en preview de Vercel | Revisar (sobre todo las dos noticias de Homeadore) y hacer merge |
 | **Reindexación de las URLs nuevas** (`/servizi`, `/progetti`…) | Sitemap reenviado el 8 oct; Google aún elige `/servicios` como canónica de `/servizi` | Comprobar por API hacia el 11 oct (`/seo google inspect-batch`) |
 | **CSP** en modo `Report-Only` | 0 violaciones en local | Tras ~1 semana en producción sin violaciones, pasar a `Content-Security-Policy` (B11) |
-| **A2 — páginas de servicio** | Plantilla y 4 borradores en `content/services/` con `published: false` | Completar cada texto con su brief (C2, C3, C4, C6) y publicar |
+| **A2 — páginas de servicio** | C4 (reforma Bergamo) y C2 (ArchiAdvice) redactadas en it/es/en, cada una en su rama, con los datos pendientes como `[DA CONFERMARE]`. C3 y C6 siguen como borrador | Martina valida C4 y C2 y completa los datos ([`revisiones/`](revisiones/)); redactar C3 y C6 |
+| **Ficha de Google: textos** | Descripción y 5 servicios redactados (`FICHA-GOOGLE.md` §6) | Martina los valida y aplica la checklist de §6 |
 | **F1 — alt de las galerías** | Paso 1 hecho (patrón traducido con ciudad) | Paso 2: descripciones por foto (Martina) |
 
 ---
