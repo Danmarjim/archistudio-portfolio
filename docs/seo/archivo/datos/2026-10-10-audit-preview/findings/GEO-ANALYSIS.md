@@ -43,7 +43,7 @@ Si Martina no quiere que sus textos e imágenes entrenen modelos, se pueden bloq
 | Cambio | Rama |
 |---|---|
 | Firma "Di Martina Pozzi, architetta a Bergamo" con enlace a chi sono y fecha de actualización en los artículos propios | `seo/geo-autoria` |
-| 76 preguntas frecuentes (it/es/en) pasan de negrita a H3 en 4 servicios y 2 guías | `seo/c2`, `c3`, `c4`, `c6`, `c11`, `c7` |
+| 84 preguntas frecuentes (28 por idioma) pasan de negrita a H3 en 4 servicios y 2 guías | `seo/c2`, `c3`, `c4`, `c6`, `c11`, `c7` |
 
 ## Las 5 mejoras de más impacto (pendientes)
 
