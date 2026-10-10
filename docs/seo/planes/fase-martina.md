@@ -6,7 +6,7 @@ Cuando Martina conteste algo, el trabajo que genera (pasar el dato a los textos,
 
 ## 1. Visto bueno de las ramas
 
-Cada rama tiene su documento de revisión con lo que hay que validar: [`revisiones/`](../revisiones/README.md). Se ven todas juntas en la preview de `seo/preview-completa`. Nada va a `main` sin este visto bueno.
+Cada rama tiene su documento de revisión con lo que hay que validar: [`revisiones/`](../revisiones/README.md). Se ven todas juntas en la preview de `preview/seo-completa`. Nada va a `main` sin este visto bueno.
 
 ## 2. Datos, decisiones y textos
 
