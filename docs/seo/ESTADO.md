@@ -14,7 +14,7 @@
 
 **Ramas:** cada tarea en su rama, con un documento de revisión en [`revisiones/`](revisiones/); `seo/preview-completa` las junta todas.
 
-**Score:** 49/100 (7 oct, antes de la fase 1) → 80/100 (7 oct, re-auditoría en producción) → **84/100 (10 oct, preview completa de la fase 2, en local)**: [informe](archivo/datos/2026-10-10-audit-preview/FULL-AUDIT-REPORT.md) y [plan de acción](archivo/datos/2026-10-10-audit-preview/ACTION-PLAN.md).
+**Score:** 49/100 (7 oct, antes de la fase 1) → 80/100 (7 oct, re-auditoría en producción) → **84/100 (10 oct, preview completa de la fase 2, en local)**: [informe](archivo/datos/2026-10-10-audit-preview/FULL-AUDIT-REPORT.md) y [plan de acción](archivo/datos/2026-10-10-audit-preview/ACTION-PLAN.md). Hechos los puntos 1–4 (`llms.txt` dinámico, títulos y descripciones, imagen social por servicio): 0 títulos > 60 y 0 descripciones > 160 en las 87 páginas.
 
 ---
 
