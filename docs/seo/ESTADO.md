@@ -30,6 +30,7 @@
 | 10 oct | **Fase 3, bloque A1–A4**: revisión de contenido (74/100) y GEO (76/100); `llms.txt` dinámico; títulos y descripciones; imagen social por servicio; autora visible en los artículos; contraste AA; páginas más ligeras (−15/−24 % de HTML) | una rama cada una |
 | 10 oct | **Speed Insights** en producción | `main` (`5243492`) |
 | 10 oct | **Guías C7–C14** en it/es/en y enlaces cruzados entre guías, servicios, fichas de proyecto y chi sono (4–10 enlaces entrantes por guía) | una rama cada una |
+| 10 oct | **A7, simulacro de merge** sobre una copia de `main`: 0 conflictos (también rama a rama), build, 12 redirecciones, sitemap y enlaces en modo producción. Arreglado un enlace roto en chi sono; C10 no se mergea con marcadores (borraría un artículo publicado). `main` mergeado en la preview | [informe](auditorias/2026-10-10-simulacro-merge/README.md) |
 | 10 oct | Vercel: solo despliega `seo/preview-completa`, nada cuando solo cambia documentación, retención de deployments activada | `vercel.json` |
 
 <details><summary>Detalle de PR 1</summary>
@@ -62,17 +63,17 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 |---|---|---|---|
 | **1** — base técnica | ✅ Cerrada (10 oct) | — | [`fase-1`](planes/fase-1.md) · [estado](planes/fase-1-estado.md) |
 | **2** — estructura, servicios y contenido | ✅ Cerrada (10 oct) | — (validación y publicación → fase Martina) | [`fase-2`](planes/fase-2.md) |
-| **3** — calidad, preparación y seguimiento | 🔄 Siguiente (A1–A4 ya hechos) | A5–A7, B3–B5 y el seguimiento | [`fase-3`](planes/fase-3.md) |
+| **3** — calidad, preparación y seguimiento | 🔄 En curso (A1–A4 y A7 hechos) | A5, A6, B3–B5 y el seguimiento | [`fase-3`](planes/fase-3.md) |
 | **Martina** — visto bueno, datos y publicación | ⏳ Esperando a Martina | Validar ramas, datos, ficha de Google, día de publicar | [`fase-martina`](planes/fase-martina.md) · [lista para ella](PENDIENTE-MARTINA.md) |
 
 Decisiones del 10 oct: B12 (animaciones bajo el pliegue) se mantienen; F8 (créditos IPTC) descartado; G3 (slugs italianos en news para es/en) no se hace.
 
 ## Ramas
 
-Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/README.md). `seo/preview-completa` las junta todas y es la única que despliega preview. `main` solo recibe lo que Martina aprueba (excepción: Speed Insights, mergeado el 10 oct).
+Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/README.md). `seo/preview-completa` las junta todas y es la única que despliega preview. `main` solo recibe lo que Martina aprueba (excepción: Speed Insights, mergeado el 10 oct). `main` sí se mergea en la preview, para que refleje lo que habrá en producción.
 
 ## Próximos pasos
 
 1. ~~**Fase 2**~~: cerrada el 10 oct (guías C8–C14 y enlaces entre guías, servicios y proyectos).
-2. **Fase 3:** A7 (simulacro de merge) → A5 + A6 + B3 → B4 → B5.
+2. **Fase 3:** ~~A7 (simulacro de merge)~~ → A5 + A6 + B3 → B4 → B5.
 3. **Por fecha:** ~11 oct inspección de la reindexación; ~15 oct CSP obligatoria.
