@@ -38,7 +38,7 @@
 
 | # | Tarea | Comando | Cuándo |
 |---|---|---|---|
-| D0 | Inspeccionar la reindexación de las URLs nuevas (Google aún elige `/servicios` como canónica de `/servizi`) | `/seo google inspect-batch` | ~11 oct |
+| D0 | ✅ [12 oct](../auditorias/2026-10-12-indexacion/README.md): 48 de 63 indexadas; 4 duplicadas (`/progetti`, `/servizi`, `/contatti`, `/chi-sono`: Google aún prefiere la URL antigua, rastreada antes de la redirección). Solicitudes de indexación en Search Console; repetir hacia el 19 oct | `/seo google inspect-batch` | ~11 oct → 19 oct |
 | D0b | **CSP**: pasar de `Report-Only` a `Content-Security-Policy` si no hay violaciones (B11) | — (código) | ~15 oct, tras una semana en producción |
 | D1 | SEO local → [fase Martina](fase-martina.md) §5 | — | — |
 | D2 | Informe mensual: Search Console, Speed Insights, ficha | `/seo google` (informe) | Cada mes |

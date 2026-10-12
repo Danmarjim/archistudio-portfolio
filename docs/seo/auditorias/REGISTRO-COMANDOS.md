@@ -31,6 +31,7 @@ Antes de lanzar un comando del plugin `claude-seo`, mirar aquí si ya está hech
 | 10 oct | `/seo unlighthouse` (Unlighthouse 0.13.5, directo) | 102 URLs de la preview en local, móvil | Accesibilidad 100 tras `seo/a5-lighthouse`; rendimiento mediana 92. `docs/seo/auditorias/2026-10-10-lighthouse/` | Tras cambios de UI grandes o antes del merge |
 | 10 oct | `/seo agentic` | 6 páginas en local + firewall en producción | Agentic Browsing 3/3; 0 P0 que fallen. `docs/seo/auditorias/2026-10-10-agentes/` | Cuando cambie Lighthouse o se añada un formulario/herramienta |
 | 10 oct | `/seo sxo` (pasos 2–3: tipo de página) | 15 keywords en Google Italia localizado en Bergamo (Chrome) | 14/15 alineadas; restyling reorientado. `docs/seo/auditorias/2026-10-10-intencion/` | Con datos de volumen o si una página no posiciona tras 3 meses |
+| 12 oct | `/seo google inspect-batch` + `sitemaps` | 63 URLs del sitemap de producción + 10 antiguas | 48 indexadas; 4 duplicadas por canónica antigua (`/progetti`, `/servizi`, `/contatti`, `/chi-sono`). `docs/seo/auditorias/2026-10-12-indexacion/` | ~19 oct, tras pedir indexación |
 
 **No hace falta lanzar por separado** lo que ya cubre `/seo audit`: `/seo technical`, `/seo content`, `/seo schema`, `/seo sitemap`, `/seo geo`, `/seo agentic`, `/seo local`, `/seo sxo` y `/seo backlinks` son exactamente los subagentes de la auditoría. Tiene sentido lanzarlos sueltos solo para revisar un área concreta después de cambiarla.
 
