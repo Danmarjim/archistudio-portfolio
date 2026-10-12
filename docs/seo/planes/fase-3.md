@@ -42,7 +42,7 @@
 | D0b | **CSP**: pasar de `Report-Only` a `Content-Security-Policy` si no hay violaciones (B11) | — (código) | ~15 oct, tras una semana en producción |
 | D1 | SEO local → [fase Martina](fase-martina.md) §5 | — | — |
 | D2 | Informe mensual: Search Console, Speed Insights, ficha | `/seo google` (informe) | Cada mes |
-| D3 | Backlinks y menciones | `/seo backlinks` | Con la API de Moz (Daniel, gratuita) |
+| D3 | Backlinks y menciones: informe **Enlaces** de Search Console (sitios que más enlazan, páginas más enlazadas, textos de enlace), leído desde Chrome. Sin Moz (decisión del 12 oct). El 12 oct el informe aún decía "Se están procesando los datos" (propiedad verificada el 8 oct) | Search Console → Enlaces | Hacia el 19 oct, con la inspección de D0 |
 | D4 | Volúmenes de búsqueda de las keywords del plan | Planificador de Google Ads (Daniel) | Cuando se pueda |
 | D5 | Tras cada deploy: `/seo drift compare` y PageSpeed móvil | `/seo drift compare https://mparchistudio.com/` | Cada deploy |
 

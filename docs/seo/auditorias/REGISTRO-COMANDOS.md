@@ -35,4 +35,4 @@ Antes de lanzar un comando del plugin `claude-seo`, mirar aquí si ya está hech
 
 **No hace falta lanzar por separado** lo que ya cubre `/seo audit`: `/seo technical`, `/seo content`, `/seo schema`, `/seo sitemap`, `/seo geo`, `/seo agentic`, `/seo local`, `/seo sxo` y `/seo backlinks` son exactamente los subagentes de la auditoría. Tiene sentido lanzarlos sueltos solo para revisar un área concreta después de cambiarla.
 
-**Pendientes, no ejecutados todavía:** ningún brief de contenido (C1–C14 y A3 hechos); brief del hub `/servizi` (A2) cuando se aborde; `/seo backlinks` con API key de Moz (sin ella da lo mismo que el 7 oct).
+**Pendientes, no ejecutados todavía:** ningún brief de contenido (C1–C14 y A3 hechos); brief del hub `/servizi` (A2) cuando se aborde; los enlaces externos se miran en el informe Enlaces de Search Console, sin Moz (12 oct).
