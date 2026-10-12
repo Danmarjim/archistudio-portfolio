@@ -2,6 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "git": {
     "deploymentEnabled": {
+      "preview/seo-completa": true,
       "seo/*": false,
       "feat/seo-fase-2-pr2": false
     }
