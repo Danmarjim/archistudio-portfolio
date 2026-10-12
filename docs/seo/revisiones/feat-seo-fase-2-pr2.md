@@ -12,7 +12,7 @@
 | `5034ed6` | Marcador `[DA CONFERMARE: …]`: resaltado en previews, bloquea la publicación en producción | `src/lib/pending.ts`, `src/lib/services.ts`, `Markdown.tsx` |
 | (este commit) | Enlaces seguros entre servicios: un enlace Markdown a `/servicios/<slug>` no publicado apunta al hub `/servizi` (páginas de servicio y noticias) | `src/lib/services.ts`, `src/lib/news.ts` |
 | (guías) | Noticias: en producción no se publica ninguna con `[DA CONFERMARE]`; los enlaces a noticias no publicadas apuntan a `/news` | `src/lib/news.ts` |
-| (vercel) | `vercel.json` con *Ignored Build Step*: no se despliega si el commit solo cambia `docs/`, archivos `.md` o `.claude/` (compara con el último despliegue; si no puede comparar, despliega). Las ramas `seo/*` de tarea y esta base no crean despliegues (`git.deploymentEnabled`, desde el 10 oct); `preview/seo-completa` está declarada con `true` de forma explícita (12 oct: sin esa regla, su primer push no desplegó). Se revisan en `preview/seo-completa` | `vercel.json` |
+| (vercel) | `vercel.json` con *Ignored Build Step*: no se despliega si el commit solo cambia `docs/`, archivos `.md` o `.claude/` (compara con el último despliegue; si no puede comparar, despliega). Las ramas `seo/*` de tarea y esta base no crean despliegues (`git.deploymentEnabled`, desde el 10 oct); `preview/seo-completa` está además declarada con `true` de forma explícita, como garantía (según Vercel, si una rama encaja con varias reglas, despliega en cuanto una sea `true`). Se revisan en `preview/seo-completa` | `vercel.json` |
 | varios `docs:` | Reorganización de `docs/seo/`, 14 briefs, `CONTEXTO-COWORK.md`, `FICHA-GOOGLE.md` | `docs/` |
 
 ## Cómo verlo
