@@ -35,11 +35,11 @@ El sitemap tiene 63 URLs enviadas, 0 errores.
 
 ## Qué hacer en Search Console (manual, ~10 solicitudes al día)
 
-**Día 1** — corregir las duplicadas:
+**Día 1** — corregir las duplicadas. ✅ **Hecho el 12 oct**: las 8 solicitudes aceptadas ("Se ha añadido la URL a una cola de rastreo prioritaria") y validación iniciada el 12/10/26.
 1. Inspeccionar cada URL **antigua** → **Solicitar indexación**: `/proyectos`, `/servicios`, `/contacto`, `/sobre-mi`. Al rastrearlas, Google ve el 308 y pasa la canónica a la nueva.
 2. Inspeccionar cada URL **nueva** → **Solicitar indexación**: `/progetti`, `/servizi`, `/contatti`, `/chi-sono`.
 3. Informe *Páginas* → "Duplicada: Google ha elegido…" → **Validar corrección**.
 
-**Día 2** — las que Google no conoce, por prioridad: `/progetti/cucina-parigina`, `/en/projects`, `/en/services`, `/es/proyectos/casa-archi-colori`, `/es/proyectos/cucina-mite`, `/es/proyectos/cucina-parigina`, `/en/news`, `/es/news`.
+**Día 2 (13 oct o después)** — las que Google no conoce, por prioridad: `/progetti/cucina-parigina`, `/en/projects`, `/en/services`, `/es/proyectos/casa-archi-colori`, `/es/proyectos/cucina-mite`, `/es/proyectos/cucina-parigina`, `/en/news`, `/es/news`.
 
 **Repetir la inspección** hacia el 19 oct (`/seo google inspect-batch` con las mismas URLs). Lo esperado: las 4 duplicadas pasan a indexadas y las antiguas a "Página con redirección".
