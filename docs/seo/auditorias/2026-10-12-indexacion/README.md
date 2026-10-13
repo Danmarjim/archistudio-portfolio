@@ -33,13 +33,17 @@ No hace falta cambiar código: se resuelve cuando Google rastrea de nuevo las an
 
 El sitemap tiene 63 URLs enviadas, 0 errores.
 
-## Qué hacer en Search Console (manual, ~10 solicitudes al día)
+## Qué hacer en Search Console (manual, ~10 solicitudes cada 24 horas)
 
 **Día 1** — corregir las duplicadas. ✅ **Hecho el 12 oct**: las 8 solicitudes aceptadas ("Se ha añadido la URL a una cola de rastreo prioritaria") y validación iniciada el 12/10/26.
 1. Inspeccionar cada URL **antigua** → **Solicitar indexación**: `/proyectos`, `/servicios`, `/contacto`, `/sobre-mi`. Al rastrearlas, Google ve el 308 y pasa la canónica a la nueva.
 2. Inspeccionar cada URL **nueva** → **Solicitar indexación**: `/progetti`, `/servizi`, `/contatti`, `/chi-sono`.
 3. Informe *Páginas* → "Duplicada: Google ha elegido…" → **Validar corrección**.
 
-**Día 2 (13 oct o después)** — las que Google no conoce, por prioridad: `/progetti/cucina-parigina`, `/en/projects`, `/en/services`, `/es/proyectos/casa-archi-colori`, `/es/proyectos/cucina-mite`, `/es/proyectos/cucina-parigina`, `/en/news`, `/es/news`.
+**Día 2 (13 oct)** — las que Google no conoce: ✅ `/progetti/cucina-parigina` y `/en/services`. Después, **"Cuota superada"**: el límite son **~10 solicitudes en 24 horas seguidas** (no por día natural), y las 8 del 12 oct contaban todavía.
+
+**Día 3 (14 oct, a partir de ~10:00)** — las 6 que quedan: `/en/projects`, `/es/proyectos/casa-archi-colori`, `/es/proyectos/cucina-mite`, `/es/proyectos/cucina-parigina`, `/en/news`, `/es/news`.
+
+Nota de proceso: esperar siempre al aviso verde "Se ha solicitado la indexación" antes de pasar a otra URL. Cerrar la prueba antes de tiempo la cancela (le pasó a `/en/projects` el 13 oct).
 
 **Repetir la inspección** hacia el 19 oct (`/seo google inspect-batch` con las mismas URLs). Lo esperado: las 4 duplicadas pasan a indexadas y las antiguas a "Página con redirección".
