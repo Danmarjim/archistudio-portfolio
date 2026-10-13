@@ -42,7 +42,7 @@ El sitemap tiene 63 URLs enviadas, 0 errores.
 
 **Día 2 (13 oct)** — las que Google no conoce: ✅ `/progetti/cucina-parigina` y `/en/services`. Después, **"Cuota superada"**: el límite son **~10 solicitudes en 24 horas seguidas** (no por día natural), y las 8 del 12 oct contaban todavía.
 
-**Día 3 (14 oct, a partir de ~10:00)** — las 6 que quedan: `/en/projects`, `/es/proyectos/casa-archi-colori`, `/es/proyectos/cucina-mite`, `/es/proyectos/cucina-parigina`, `/en/news`, `/es/news`.
+**Resto (13 oct, tarde, al liberarse la cuota)** — ✅ hecho. `/en/projects` ya estaba indexada (no hizo falta solicitarla). Solicitadas las 5 restantes: `/es/proyectos/casa-archi-colori` (rastreada sin indexar, último rastreo 19 sept), `/es/proyectos/cucina-mite` (Google no la conocía), `/es/proyectos/cucina-parigina`, `/en/news` y `/es/news` (descubiertas sin indexar). La vista general de Search Console marcaba ya 53 páginas indexadas (48 el 12 oct).
 
 Nota de proceso: esperar siempre al aviso verde "Se ha solicitado la indexación" antes de pasar a otra URL. Cerrar la prueba antes de tiempo la cancela (le pasó a `/en/projects` el 13 oct).
 
