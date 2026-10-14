@@ -39,5 +39,7 @@ Dos pasaron de "Descubierta" a "Desconocida" (`/es/contacto`, `/en/news/collezio
 
 ## Siguiente
 
-- Solicitar indexación de las 10 que no se han pedido nunca (todas menos `/en/services`), respetando el límite de ~10 en 24 horas seguidas.
+- ✅ **14 oct, mañana:** solicitada la indexación de los 5 proyectos en inglés (`cucina-mite`, `appartamento-lovingcolors`, `bagno-italian-summer`, `bagno-casa-peonia`, `bagno-casa-archi-colori`), todas con el aviso verde.
+- **14 oct, tarde** (cuando caduquen las 5 del 13 oct por la tarde): `/es/contacto`, `/en/contact`, `/en/news/archiadvice-lancio`, `/en/news/collezione-tappeti-sevilla`, `/es/tappeti`.
+- Las 21 URLs en italiano del sitemap están todas en el índice: 17 con su URL y las 4 duplicadas con la antigua (no necesitan solicitud).
 - Repetir la inspección hacia el 19 oct, junto con el informe de Enlaces (D3).
