@@ -1,6 +1,6 @@
 # Revisión — `seo/d0b-csp`
 
-La Content Security Policy pasa de **observación** (`Content-Security-Policy-Report-Only`, desde el 8 oct) a **obligatoria** (`Content-Security-Policy`). Es la tarea D0b de la [fase 3](../planes/fase-3.md).
+**✅ En producción desde el 15 oct** (`main`, `dc2b813`, cherry-pick de `c4441c7`). La Content Security Policy pasa de **observación** (`Content-Security-Policy-Report-Only`, desde el 8 oct) a **obligatoria** (`Content-Security-Policy`). Es la tarea D0b de la [fase 3](../planes/fase-3.md).
 
 ## Qué se ha hecho
 
@@ -19,15 +19,18 @@ La Content Security Policy pasa de **observación** (`Content-Security-Policy-Re
 - 39 páginas recorridas con la CSP aplicada: las 34 URLs en italiano del sitemap (servicios y guías incluidos), `/es`, `/en`, `/es/contacto`, `/en/services` y `/privacy`. Resultado: **0 violaciones**, todas hidratan y el vídeo de `/tappeti` carga.
 - Build sin errores; lint sin problemas.
 
+## Publicación (15 oct)
+
+- Antes del push, build de `main` con el cambio en local: 27 páginas (todas las de `main` en italiano y varias en es/en) con **0 violaciones**, todas hidratan y el vídeo de `/tappeti` carga.
+- Push a `main` → producción con la cabecera `Content-Security-Policy` en ~80 s, sin `vercel.live`.
+- En vivo (home, ficha de proyecto, tappeti, contacto): consola sin errores, la página hidrata, el vídeo carga y Vercel Analytics sigue enviando visitas.
+- **Aparte, no causado por la CSP:** Speed Insights no inyecta su script en ninguna página. Esta mañana, con la CSP aún en observación, pasaba igual. Queda como tarea propia.
+
 ## Qué validar
 
 **Daniel**
-- [ ] En la preview desplegada: la cabecera incluye `vercel.live` y la barra de Vercel funciona.
-- [ ] En la preview: consola sin errores de CSP en home, un servicio, una guía y contacto.
-- [ ] Tras publicar: consola limpia en producción y Speed Insights sigue recibiendo datos.
+- [ ] En la próxima preview desplegada: la cabecera incluye `vercel.live` y la barra de Vercel funciona.
 
 ## Cómo mergear
 
-El cambio es solo `next.config.ts` y no depende del contenido de las demás ramas. Dos opciones:
-- **Junto con la PR 2:** se mergea después de `feat/seo-fase-2-pr2`, como el resto.
-- **Antes, sola:** `git cherry-pick c4441c7` sobre `main`, como se hizo con Speed Insights. Comprobado: se aplica sin conflictos. La rama sale de la base, así que mergearla entera en `main` arrastraría la PR 2.
+Ya está en `main` por cherry-pick (decisión del 15 oct: es seguridad, no SEO, y no depende de Martina). Cuando se mergee la PR 2, `next.config.ts` ya tendrá el cambio y Git lo reconoce como aplicado. No hace falta nada más.

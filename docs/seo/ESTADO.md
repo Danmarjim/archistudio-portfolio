@@ -36,7 +36,7 @@
 | 12 oct | **D0, reindexación**: 48 de 63 URLs indexadas. Las 4 "duplicadas" del email de Search Console son `/progetti`, `/servizi`, `/contatti` y `/chi-sono`: Google aún prefiere la URL antigua porque no la ha vuelto a rastrear desde el cambio. La web está bien (308, canónicas, `hreflang`); pedida la indexación de las 8 URLs (antiguas y nuevas) y validación iniciada el 12 oct | [informe](auditorias/2026-10-12-indexacion/README.md) |
 | 12 oct | **Preview desplegada** (`e6a6cdc`) con todo lo de la fase 3: `robots.txt` con Content-Signal, restyling con Bergamo, galería accesible, encabezados de `/servizi`, enlace de chi sono. La rama antigua `seo/preview-completa` está borrada. URL fija de la rama: `portfolio-mparchistudio-git-pre-8a9f45-danmarjim-3740s-projects.vercel.app` (protegida con login de Vercel) | `vercel.json` |
 | 12–15 oct | **D0, reindexación completada**: segunda inspección el 14 oct, con 48 de 63 indexadas (7 más) y las 4 duplicadas aún a la espera de que Google rastree las URLs antiguas. Pedida la indexación de las 15 restantes: las 63 URLs del sitemap están indexadas o solicitadas. Las 21 en italiano ya estaban en el índice | [informe](auditorias/2026-10-14-indexacion/README.md) |
-| 15 oct | **D0b, CSP obligatoria**: una semana en observación sin violaciones en producción; con la CSP aplicada, 0 violaciones en las 39 páginas de la preview. La barra de Vercel solo se permite en las previews | [`seo/d0b-csp`](revisiones/d0b-csp.md) |
+| 15 oct | **D0b, CSP obligatoria**: una semana en observación sin violaciones en producción; con la CSP aplicada, 0 violaciones en las 39 páginas de la preview. La barra de Vercel solo se permite en las previews. **En producción** (cherry-pick a `main`, `dc2b813`): consola limpia en vivo | `main` · [revisión](revisiones/d0b-csp.md) |
 | 10 oct | **B4 y B5**: sección de testimonios lista y oculta (sale sola con 2 testimonios con permiso; home y servicios); 8 publicaciones para la ficha de Google a partir de los proyectos | [`seo/b4-testimonios`](revisiones/b4-testimonios.md) · [`POST-GOOGLE.md`](../martina/POST-GOOGLE.md) |
 | 10 oct | Vercel: solo despliega `preview/seo-completa` (antes `seo/preview-completa`); las ramas `seo/*` y la base no crean despliegues (`git.deploymentEnabled`: subir 24 ramas agotó el límite diario); nada cuando solo cambia documentación; retención de deployments activada | `vercel.json` |
 
@@ -77,10 +77,10 @@ Decisiones del 10 oct: B12 (animaciones bajo el pliegue) se mantienen; F8 (créd
 
 ## Ramas
 
-Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/README.md). `preview/seo-completa` las junta todas y es la única que despliega preview (las ramas `seo/*` y la base no crean despliegues). `main` solo recibe lo que Martina aprueba (excepción: Speed Insights, mergeado el 10 oct). `main` sí se mergea en la preview, para que refleje lo que habrá en producción.
+Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/README.md). `preview/seo-completa` las junta todas y es la única que despliega preview (las ramas `seo/*` y la base no crean despliegues). `main` solo recibe lo que Martina aprueba (excepciones: Speed Insights el 10 oct y la CSP obligatoria el 15 oct). `main` sí se mergea en la preview, para que refleje lo que habrá en producción.
 
 ## Próximos pasos
 
 1. ~~**Fase 2**~~: cerrada el 10 oct (guías C8–C14 y enlaces entre guías, servicios y proyectos).
 2. **Fase 3:** ~~A7~~ → ~~A5 + A6 + B3~~ → ~~B4~~ → ~~B5~~. Queda el seguimiento por fechas.
-3. **Por fecha:** ~~D0 reindexación~~ (12–15 oct); ~~D0b CSP obligatoria~~ (15 oct, rama `seo/d0b-csp`); ~19 oct repetir la inspección y leer el informe de Enlaces (D3).
+3. **Por fecha:** ~~D0 reindexación~~ (12–15 oct); ~~D0b CSP obligatoria~~ (15 oct, en producción); ~19 oct repetir la inspección y leer el informe de Enlaces (D3).
