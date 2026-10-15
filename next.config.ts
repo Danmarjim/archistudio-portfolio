@@ -3,24 +3,30 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
+// La Vercel Toolbar (commenti, feedback) esiste solo nei deploy di preview: le sue origini
+// entrano nella CSP solo lì, mai in produzione. VERCEL_ENV è letto al build.
+// https://vercel.com/docs/vercel-toolbar/managing-toolbar
+const isPreview = process.env.VERCEL_ENV === 'preview'
+const toolbar = (...sources: string[]) => (isPreview ? ` ${sources.join(' ')}` : '')
+
 const securityHeaders = [
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()' },
-  // In modalità Report-Only: il browser segnala le violazioni in console senza bloccare nulla.
-  // Il sito non carica risorse esterne (Calendly e i social sono solo link; Vercel Analytics è
-  // servito da /_vercel). 'unsafe-inline' serve agli script inline di Next.js e ai JSON-LD.
-  // Quando la console resta pulita in produzione, passare a `Content-Security-Policy`.
+  // Il sito non carica risorse esterne (Calendly, Maps e i social sono solo link; Vercel
+  // Analytics e Speed Insights sono serviti da /_vercel). 'unsafe-inline' serve agli script
+  // inline di Next.js e ai JSON-LD. Una settimana in Report-Only (8–15 ott) senza violazioni.
   {
-    key: 'Content-Security-Policy-Report-Only',
+    key: 'Content-Security-Policy',
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline'",
-      "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob:",
-      "font-src 'self'",
-      "connect-src 'self'",
+      `script-src 'self' 'unsafe-inline'${toolbar('https://vercel.live')}`,
+      `style-src 'self' 'unsafe-inline'${toolbar('https://vercel.live')}`,
+      `img-src 'self' data: blob:${toolbar('https://vercel.live', 'https://vercel.com')}`,
+      `font-src 'self'${toolbar('https://vercel.live', 'https://assets.vercel.com')}`,
+      `connect-src 'self'${toolbar('https://vercel.live', 'wss://ws-us3.pusher.com')}`,
+      `frame-src 'self'${toolbar('https://vercel.live')}`,
       "media-src 'self'",
       "object-src 'none'",
       "base-uri 'self'",
