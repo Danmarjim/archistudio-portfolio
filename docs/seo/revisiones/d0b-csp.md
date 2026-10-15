@@ -24,7 +24,7 @@
 - Antes del push, build de `main` con el cambio en local: 27 páginas (todas las de `main` en italiano y varias en es/en) con **0 violaciones**, todas hidratan y el vídeo de `/tappeti` carga.
 - Push a `main` → producción con la cabecera `Content-Security-Policy` en ~80 s, sin `vercel.live`.
 - En vivo (home, ficha de proyecto, tappeti, contacto): consola sin errores, la página hidrata, el vídeo carga y Vercel Analytics sigue enviando visitas.
-- **Aparte, no causado por la CSP:** Speed Insights no inyecta su script en ninguna página. Esta mañana, con la CSP aún en observación, pasaba igual. Queda como tarea propia.
+- Speed Insights también funciona con la CSP: en Vercel no se sirve desde `/_vercel/speed-insights/`, sino desde una ruta ofuscada del mismo dominio (`/c0ff2cb3790a0026/script.js` y `/c0ff2cb3790a0026/vitals`, para esquivar los bloqueadores de anuncios). Ambas responden 200 en producción. Como es el mismo dominio, `'self'` lo cubre.
 
 ## Qué validar
 
