@@ -29,7 +29,8 @@
 ## Qué validar
 
 **Daniel**
-- [ ] En la próxima preview desplegada: la cabecera incluye `vercel.live` y la barra de Vercel funciona.
+- [x] Preview del 20 oct (`4057c19`): la cabecera incluye los orígenes de la barra de Vercel (`vercel.live`, `pusher`…) y home, un servicio, una guía, contacto, tappeti, `robots.txt`, `llms.txt` y el sitemap responden 200.
+- [ ] Al abrir la preview con sesión de Vercel: la barra aparece y no hay errores de CSP en consola.
 
 ## Cómo mergear
 
