@@ -38,11 +38,11 @@
 
 | # | Tarea | Comando | Cuándo |
 |---|---|---|---|
-| D0 | ✅ [12 oct](../auditorias/2026-10-12-indexacion/README.md) · [14 oct](../auditorias/2026-10-14-indexacion/README.md) (63 de 63 indexadas o solicitadas): 48 de 63 indexadas; 4 duplicadas (`/progetti`, `/servizi`, `/contatti`, `/chi-sono`: Google aún prefiere la URL antigua, rastreada antes de la redirección). Solicitudes de indexación en Search Console; repetir hacia el 19 oct | `/seo google inspect-batch` | ~11 oct → 19 oct |
+| D0 | ✅ [12 oct](../auditorias/2026-10-12-indexacion/README.md) · [14 oct](../auditorias/2026-10-14-indexacion/README.md) (63 de 63 indexadas o solicitadas) · [20 oct](../auditorias/2026-10-20-estado/README.md) (61 de 63 indexadas, 0 duplicadas): 48 de 63 indexadas; 4 duplicadas (`/progetti`, `/servizi`, `/contatti`, `/chi-sono`: Google aún prefiere la URL antigua, rastreada antes de la redirección). Solicitudes de indexación en Search Console; repetir hacia el 19 oct | `/seo google inspect-batch` | ~11 oct → 19 oct |
 | D0b | ✅ [15 oct](../revisiones/d0b-csp.md), en producción (`main`, `dc2b813`): 0 violaciones en una semana en producción y en las 39 páginas de la preview con la CSP aplicada. **CSP**: pasar de `Report-Only` a `Content-Security-Policy` si no hay violaciones (B11) | — (código) | ~15 oct, tras una semana en producción |
 | D1 | SEO local → [fase Martina](fase-martina.md) §5 | — | — |
 | D2 | Informe mensual: Search Console, Speed Insights, ficha | `/seo google` (informe) | Cada mes |
-| D3 | Backlinks y menciones: informe **Enlaces** de Search Console (sitios que más enlazan, páginas más enlazadas, textos de enlace), leído desde Chrome. Sin Moz (decisión del 12 oct). El 12 oct el informe aún decía "Se están procesando los datos" (propiedad verificada el 8 oct) | Search Console → Enlaces | Hacia el 19 oct, con la inspección de D0 |
+| D3 | ✅ [20 oct](../auditorias/2026-10-20-estado/README.md): 40 enlaces externos de 21 dominios (19 Homify, Pinterest, Spazi Belli), todos a la home; Homeadore cita sin enlazar. Backlinks y menciones: informe **Enlaces** de Search Console (sitios que más enlazan, páginas más enlazadas, textos de enlace), leído desde Chrome. Sin Moz (decisión del 12 oct). El 12 oct el informe aún decía "Se están procesando los datos" (propiedad verificada el 8 oct) | Search Console → Enlaces | Hacia el 19 oct, con la inspección de D0 |
 | D4 | Volúmenes de búsqueda de las keywords del plan | Planificador de Google Ads (Daniel) | Cuando se pueda |
 | D5 | Tras cada deploy: `/seo drift compare` y PageSpeed móvil | `/seo drift compare https://mparchistudio.com/` | Cada deploy |
 

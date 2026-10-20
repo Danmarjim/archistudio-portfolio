@@ -11,6 +11,7 @@ En la preview, lo que falta sale **resaltado en amarillo** en las páginas. Mien
 - [ ] **Ficha de Google.** Comprobar que tienes acceso en business.google.com y aplicar la checklist de [`FICHA-GOOGLE.md`](../martina/FICHA-GOOGLE.md) §6 en una sola visita: categoría principal Architetto y tres secundarias, horario 9–18, atributos, zonas de servicio, descripción y servicios (los textos ya están escritos, solo hay que revisarlos y pegarlos).
 - [ ] **Reseñas.** Copiar el enlace "Chiedi recensioni" de la ficha y enviar los mensajes de `FICHA-GOOGLE.md` §5, empezando por los 7 clientes de Spazi Belli.
 - [ ] **Email.** Ya: reenviar el Gmail que usa Calendly al hotmail, para no perder respuestas de clientes. Después: decidir el email de dominio (Google Workspace, ~7 €/mes) para tener una sola dirección en la web, Calendly, Meet y la ficha.
+- [ ] **Enlace de Homeadore.** Homeadore publicó LOVINGCOLORS (junio) y CASA ARCHI & COLORI (agosto) y te cita, pero no enlaza la web. Escribirles para pedir que añadan `mparchistudio.com` en los créditos de los dos artículos: hoy sería el único enlace de prensa ([control del 20 oct](auditorias/2026-10-20-estado/README.md)).
 - [ ] Mismo nombre comercial en todos los perfiles y alta en directorios (Houzz, Archilovers, PagineGialle, Archisio, Edilportale, Divisare).
 
 ## 2. Datos que sirven para varias páginas

@@ -1,6 +1,6 @@
 # SEO — Estado
 
-Última actualización: 15 oct 2026. **Este es el punto de entrada**: en qué fase estamos, qué está hecho y qué viene ahora. Los códigos (A1, C4, F3…) remiten al detalle de [`planes/fase-2.md`](planes/fase-2.md); los de la fase 3 (A5, B3…), a [`planes/fase-3.md`](planes/fase-3.md).
+Última actualización: 20 oct 2026. **Este es el punto de entrada**: en qué fase estamos, qué está hecho y qué viene ahora. Los códigos (A1, C4, F3…) remiten al detalle de [`planes/fase-2.md`](planes/fase-2.md); los de la fase 3 (A5, B3…), a [`planes/fase-3.md`](planes/fase-3.md).
 
 | Documento | Para qué |
 |---|---|
@@ -37,6 +37,7 @@
 | 12 oct | **Preview desplegada** (`e6a6cdc`) con todo lo de la fase 3: `robots.txt` con Content-Signal, restyling con Bergamo, galería accesible, encabezados de `/servizi`, enlace de chi sono. La rama antigua `seo/preview-completa` está borrada. URL fija de la rama: `portfolio-mparchistudio-git-pre-8a9f45-danmarjim-3740s-projects.vercel.app` (protegida con login de Vercel) | `vercel.json` |
 | 12–15 oct | **D0, reindexación completada**: segunda inspección el 14 oct, con 48 de 63 indexadas (7 más) y las 4 duplicadas aún a la espera de que Google rastree las URLs antiguas. Pedida la indexación de las 15 restantes: las 63 URLs del sitemap están indexadas o solicitadas. Las 21 en italiano ya estaban en el índice | [informe](auditorias/2026-10-14-indexacion/README.md) |
 | 15 oct | **D0b, CSP obligatoria**: una semana en observación sin violaciones en producción; con la CSP aplicada, 0 violaciones en las 39 páginas de la preview. La barra de Vercel solo se permite en las previews. **En producción** (cherry-pick a `main`, `dc2b813`): consola limpia en vivo | `main` · [revisión](revisiones/d0b-csp.md) |
+| 20 oct | **Control de estado**: 61 de 63 URLs indexadas y las 4 duplicadas resueltas. Backlinks (D3): 40 enlaces de 21 dominios, todos a la home, casi todos Homify; Homeadore cita a Martina sin enlazar. Búsqueda: 15 clics y 106 impresiones en 4 semanas, casi todo de marca. Móvil 97/100/100/100 | [informe](auditorias/2026-10-20-estado/README.md) |
 | 10 oct | **B4 y B5**: sección de testimonios lista y oculta (sale sola con 2 testimonios con permiso; home y servicios); 8 publicaciones para la ficha de Google a partir de los proyectos | [`seo/b4-testimonios`](revisiones/b4-testimonios.md) · [`POST-GOOGLE.md`](../martina/POST-GOOGLE.md) |
 | 10 oct | Vercel: solo despliega `preview/seo-completa` (antes `seo/preview-completa`); las ramas `seo/*` y la base no crean despliegues (`git.deploymentEnabled`: subir 24 ramas agotó el límite diario); nada cuando solo cambia documentación; retención de deployments activada | `vercel.json` |
 
@@ -70,7 +71,7 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 |---|---|---|---|
 | **1** — base técnica | ✅ Cerrada (10 oct) | — | [`fase-1`](planes/fase-1.md) · [estado](planes/fase-1-estado.md) |
 | **2** — estructura, servicios y contenido | ✅ Cerrada (10 oct) | — (validación y publicación → fase Martina) | [`fase-2`](planes/fase-2.md) |
-| **3** — calidad, preparación y seguimiento | 🔄 En curso: A1–A7, B3–B5, D0 y D0b hechos | Solo el seguimiento (D, por fechas) | [`fase-3`](planes/fase-3.md) |
+| **3** — calidad, preparación y seguimiento | 🔄 En curso: A1–A7, B3–B5, D0, D0b y D3 hechos | Solo el seguimiento (D, por fechas) | [`fase-3`](planes/fase-3.md) |
 | **Martina** — visto bueno, datos y publicación | ⏳ Esperando a Martina | Validar ramas, datos, ficha de Google, día de publicar | [`fase-martina`](planes/fase-martina.md) · [lista para ella](PENDIENTE-MARTINA.md) |
 
 Decisiones del 10 oct: B12 (animaciones bajo el pliegue) se mantienen; F8 (créditos IPTC) descartado; G3 (slugs italianos en news para es/en) no se hace.
@@ -83,4 +84,4 @@ Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/
 
 1. ~~**Fase 2**~~: cerrada el 10 oct (guías C8–C14 y enlaces entre guías, servicios y proyectos).
 2. **Fase 3:** ~~A7~~ → ~~A5 + A6 + B3~~ → ~~B4~~ → ~~B5~~. Queda el seguimiento por fechas.
-3. **Por fecha:** ~~D0 reindexación~~ (12–15 oct); ~~D0b CSP obligatoria~~ (15 oct, en producción); ~19 oct repetir la inspección y leer el informe de Enlaces (D3).
+3. **Por fecha:** ~~D0 reindexación~~ (12–15 oct); ~~D0b CSP obligatoria~~ (15 oct, en producción); ~~D3 backlinks~~ y tercera inspección (20 oct). Pendiente: pedir la indexación de `/en/services` y de la entrevista de Archiboost en español; ~8 nov D2, informe mensual.

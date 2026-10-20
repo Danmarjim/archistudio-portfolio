@@ -1,0 +1,22 @@
+{
+  "property": "sc-domain:mparchistudio.com",
+  "sitemaps": [
+    {
+      "path": "https://mparchistudio.com/sitemap.xml",
+      "last_submitted": "2026-10-08T09:42:34.723Z",
+      "is_pending": false,
+      "is_index": false,
+      "type": "sitemap",
+      "warnings": "0",
+      "errors": "0",
+      "contents": [
+        {
+          "type": "web",
+          "submitted": "63"
+        }
+      ],
+      "indexation_note": "Sitemaps API contents[].submitted reflects submitted URL counts only. Use the URL Inspection API as the indexation truth for whether specific URLs are indexed."
+    }
+  ],
+  "error": null
+}
