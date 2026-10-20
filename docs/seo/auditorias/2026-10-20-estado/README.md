@@ -49,7 +49,7 @@ Informe **Enlaces** de Search Console (ya con datos; el 12 oct aún se estaba pr
 ## Qué hacer
 
 **Nosotros**
-1. Solicitar indexación de `/en/services` y `/es/news/intervista-archiboost-luglio-2026` (2 solicitudes).
+1. ✅ **20 oct:** solicitada la indexación de `/en/services` y `/es/news/intervista-archiboost-luglio-2026`, las dos con el aviso verde.
 2. D2, informe mensual: hacia el 8 nov (un mes con Search Console).
 
 **Martina** (añadido a [`PENDIENTE-MARTINA.md`](../../PENDIENTE-MARTINA.md))

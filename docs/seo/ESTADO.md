@@ -84,4 +84,4 @@ Cada tarea en su rama con su documento de revisión: [`revisiones/`](revisiones/
 
 1. ~~**Fase 2**~~: cerrada el 10 oct (guías C8–C14 y enlaces entre guías, servicios y proyectos).
 2. **Fase 3:** ~~A7~~ → ~~A5 + A6 + B3~~ → ~~B4~~ → ~~B5~~. Queda el seguimiento por fechas.
-3. **Por fecha:** ~~D0 reindexación~~ (12–15 oct); ~~D0b CSP obligatoria~~ (15 oct, en producción); ~~D3 backlinks~~ y tercera inspección (20 oct). Pendiente: pedir la indexación de `/en/services` y de la entrevista de Archiboost en español; ~8 nov D2, informe mensual.
+3. **Por fecha:** ~~D0 reindexación~~ (12–15 oct); ~~D0b CSP obligatoria~~ (15 oct, en producción); ~~D3 backlinks~~ y tercera inspección (20 oct). Pedida el 20 oct la indexación de las 2 que faltaban (`/en/services` y la entrevista de Archiboost en español). Siguiente: ~8 nov D2, informe mensual.
