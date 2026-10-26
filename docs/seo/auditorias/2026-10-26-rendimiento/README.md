@@ -26,7 +26,8 @@ La reindexación arregló el **acceso** (que Google conozca y muestre las URLs n
 
 - `https://www.mparchistudio.com/` → `https://mparchistudio.com/` con **307 (temporal)**. Debería ser **308 (permanente)**: con un 307, Google puede seguir tratando `www` como una URL aparte.
 - Search Console lo confirma: `http://www.mparchistudio.com/` aparece en los resultados (15 impresiones antes, 8 después), separado de la home.
-- **Arreglo**: en Vercel → proyecto → Settings → Domains, en `www.mparchistudio.com`, redirección a `mparchistudio.com` con **308 Permanent Redirect**. No toca código.
+- **Causa**: `www` no estaba asignado al proyecto. Resolvía por el comodín DNS (`* ALIAS`) y Vercel aplicaba su redirección por defecto, un 307.
+- ✅ **Arreglado el 26 oct**: `www.mparchistudio.com` añadido al proyecto en Vercel como redirección a `mparchistudio.com` con **308** (API de Vercel; sin cambios de código). Comprobado: `https://www.mparchistudio.com/` y `/progetti` → 308 a la misma ruta sin `www`; `http://www` → 308 a `https://www` → 308 al dominio principal; la web principal sigue en 200. Google consolidará `www` en la home cuando vuelva a rastrearla.
 
 ## Qué esperar
 
