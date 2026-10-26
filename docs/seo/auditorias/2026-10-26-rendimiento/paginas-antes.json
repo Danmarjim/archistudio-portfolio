@@ -1,0 +1,221 @@
+{
+  "property": "sc-domain:mparchistudio.com",
+  "rows": [
+    {
+      "keys": [
+        "https://mparchistudio.com/"
+      ],
+      "clicks": 4,
+      "impressions": 19,
+      "ctr": 21.05,
+      "position": 2.1,
+      "page": "https://mparchistudio.com/"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/servicios"
+      ],
+      "clicks": 2,
+      "impressions": 8,
+      "ctr": 25.0,
+      "position": 4.9,
+      "page": "https://mparchistudio.com/servicios"
+    },
+    {
+      "keys": [
+        "http://www.mparchistudio.com/"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 7.4,
+      "page": "http://www.mparchistudio.com/"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/contacto"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.2,
+      "page": "https://mparchistudio.com/contacto"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "page": "https://mparchistudio.com/en"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/about"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.3,
+      "page": "https://mparchistudio.com/en/about"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/proyectos"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
+      "page": "https://mparchistudio.com/en/proyectos"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/sobre-mi"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10,
+      "page": "https://mparchistudio.com/en/sobre-mi"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/es"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "page": "https://mparchistudio.com/es"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/es/proyectos"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8,
+      "page": "https://mparchistudio.com/es/proyectos"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/es/servicios"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "page": "https://mparchistudio.com/es/servicios"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/es/sobre-mi"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3,
+      "page": "https://mparchistudio.com/es/sobre-mi"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/news"
+      ],
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 5,
+      "page": "https://mparchistudio.com/news"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/news/collezione-tappeti-sevilla"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86,
+      "page": "https://mparchistudio.com/news/collezione-tappeti-sevilla"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/privacy"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 4,
+      "page": "https://mparchistudio.com/privacy"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/progetti/casa-archi-colori"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9,
+      "page": "https://mparchistudio.com/progetti/casa-archi-colori"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/proyectos"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6,
+      "page": "https://mparchistudio.com/proyectos"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/proyectos/cucina-MITE"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9,
+      "page": "https://mparchistudio.com/proyectos/cucina-MITE"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/sobre-mi"
+      ],
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 4.9,
+      "page": "https://mparchistudio.com/sobre-mi"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/tappeti"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9,
+      "page": "https://mparchistudio.com/tappeti"
+    }
+  ],
+  "totals": {
+    "clicks": 6,
+    "impressions": 40,
+    "ctr": 15.0,
+    "position": 5.7
+  },
+  "totals_source": "dimensionless_aggregate",
+  "totals_complete": true,
+  "quick_wins": [],
+  "warnings": [],
+  "row_count": 20,
+  "error": null,
+  "date_range": {
+    "start": "2026-09-28",
+    "end": "2026-10-11"
+  }
+}

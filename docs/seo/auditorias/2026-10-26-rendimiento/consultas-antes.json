@@ -1,0 +1,51 @@
+{
+  "property": "sc-domain:mparchistudio.com",
+  "rows": [
+    {
+      "keys": [
+        "martina pozzi"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 8.7,
+      "query": "martina pozzi"
+    },
+    {
+      "keys": [
+        "panizza tappeti"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 10,
+      "query": "panizza tappeti"
+    },
+    {
+      "keys": [
+        "panizzastudio.com"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86,
+      "query": "panizzastudio.com"
+    }
+  ],
+  "totals": {
+    "clicks": 6,
+    "impressions": 40,
+    "ctr": 15.0,
+    "position": 5.7
+  },
+  "totals_source": "dimensionless_aggregate",
+  "totals_complete": true,
+  "quick_wins": [],
+  "warnings": [],
+  "row_count": 3,
+  "error": null,
+  "date_range": {
+    "start": "2026-09-28",
+    "end": "2026-10-11"
+  }
+}

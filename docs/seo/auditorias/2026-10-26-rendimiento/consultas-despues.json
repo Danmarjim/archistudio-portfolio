@@ -1,0 +1,101 @@
+{
+  "property": "sc-domain:mparchistudio.com",
+  "rows": [
+    {
+      "keys": [
+        "archi milano"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
+      "query": "archi milano"
+    },
+    {
+      "keys": [
+        "casa peonia"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5,
+      "query": "casa peonia"
+    },
+    {
+      "keys": [
+        "martina pozzi"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6,
+      "query": "martina pozzi"
+    },
+    {
+      "keys": [
+        "panizza studio tappeti"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "query": "panizza studio tappeti"
+    },
+    {
+      "keys": [
+        "panizza tappeti"
+      ],
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 9.1,
+      "query": "panizza tappeti"
+    },
+    {
+      "keys": [
+        "panizzastudio.com"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 56.8,
+      "query": "panizzastudio.com"
+    },
+    {
+      "keys": [
+        "progetto casa design"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78,
+      "query": "progetto casa design"
+    },
+    {
+      "keys": [
+        "\u03b1\u03c1\u03c7\u03b9\u03c4\u03b5\u03ba\u03c4\u03bf\u03bd\u03b1\u03c2"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "query": "\u03b1\u03c1\u03c7\u03b9\u03c4\u03b5\u03ba\u03c4\u03bf\u03bd\u03b1\u03c2"
+    }
+  ],
+  "totals": {
+    "clicks": 15,
+    "impressions": 125,
+    "ctr": 12.0,
+    "position": 8.2
+  },
+  "totals_source": "dimensionless_aggregate",
+  "totals_complete": true,
+  "quick_wins": [],
+  "warnings": [],
+  "row_count": 8,
+  "error": null,
+  "date_range": {
+    "start": "2026-10-12",
+    "end": "2026-10-25"
+  }
+}
