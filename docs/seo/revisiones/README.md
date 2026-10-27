@@ -37,6 +37,7 @@ Los textos con datos pendientes llevan `[DA CONFERMARE: …]`. En local y en las
 | `seo/a6-content-signal` | [a6-content-signal.md](a6-content-signal.md) | Pendiente de revisión (solo Daniel: `robots.txt`) |
 | `seo/b4-testimonios` | [b4-testimonios.md](b4-testimonios.md) | Lista y oculta; se activa con los testimonios de Martina (sale de `seo/a3-home`) |
 | `seo/mensajes-cliente` | [mensajes-cliente.md](mensajes-cliente.md) | Pendiente de revisión |
+| `seo/version-publicable` | [version-publicable.md](version-publicable.md) | Lista para producción: PR 2 sin datos pendientes (27 oct) |
 | `seo/d0b-csp` | [d0b-csp.md](d0b-csp.md) | ✅ En `main` (15 oct, cherry-pick) |
 | `seo/c12-scegliere-architetto` | [c12-scegliere-architetto.md](c12-scegliere-architetto.md) | Pendiente de revisión (4 datos; tono de la tabla comparativa) |
 | `seo/c9-progettare-bagno` | [c9-progettare-bagno.md](c9-progettare-bagno.md) | Pendiente de revisión (6 datos; cómo eran antes los baños) |
