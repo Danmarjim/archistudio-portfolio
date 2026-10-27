@@ -1,18 +1,27 @@
 # Para Martina: todo lo pendiente en una lista
 
-Última actualización: 10 oct 2026. Todas las páginas están escritas (4 servicios, home, chi sono y 8 guías). Lo que falta es tuyo: datos que solo tú tienes, revisar que lo escrito sea correcto y suene a ti, y la ficha de Google. Cada pregunta aparece **una sola vez**, aunque sirva para varias páginas. Cuando respondas a algo, Daniel o Claude lo pasan a los textos y lo marcan aquí.
+Última actualización: 27 oct 2026. **Desde el 27 oct la web nueva está publicada** (4 servicios, home, chi sono y 6 guías) sin tus datos: donde faltaban, el texto dice lo general ("te lo indico en un presupuesto") o la frase se ha quitado. Solo la guía de conformidad urbanística sigue sin publicar hasta que la revises. Lo que queda es tuyo: la ficha de Google, revisar lo escrito y, cuando puedas, tus datos para mejorar los textos. Cada pregunta aparece **una sola vez**, aunque sirva para varias páginas. Cuando respondas a algo, Daniel o Claude lo pasan a los textos y lo marcan aquí.
 
-En la preview, lo que falta sale **resaltado en amarillo** en las páginas. Mientras quede algo en amarillo, la página no se publica. El detalle de cada página está en su documento de [`revisiones/`](revisiones/README.md).
+El detalle de cada página está en su documento de [`revisiones/`](revisiones/README.md).
+
+## 0. Lo primero (por este orden)
+
+Hoy ya sales **la primera en Google Maps** para "arquitecto bergamo" (detrás de dos anuncios) y en la respuesta de IA de Google sobre arquitectas en Bergamo (27 oct), con la ficha aún sin configurar. Esto es lo que más te ayuda a mantenerte ahí:
+
+1. [ ] **Reseñas en Google.** Hoy la ficha dice "No hay reseñas", y es lo que más pesa en el mapa y en que la gente elija tu ficha. Copiar el enlace "Chiedi recensioni" y enviar los mensajes de [`FICHA-GOOGLE.md`](../martina/FICHA-GOOGLE.md) §5, empezando por los 7 clientes de Spazi Belli (unos pocos por semana).
+2. [ ] **Ficha de Google: horario y categoría**, en la misma visita a business.google.com:
+   - **Horario 9–18.** La ficha dice que cierras a las 17:00 y la web dice 18:00: a quien busque entre las 17 y las 18 le aparece cerrado.
+   - **Categoría principal "Architetto"** (hoy "Studio di architettura"): la usan 17 de los 19 estudios que salen en "architetto Bergamo".
+   - De paso, el resto de la checklist de `FICHA-GOOGLE.md` §6: tres categorías secundarias, atributos, zonas, descripción y servicios (los textos ya están escritos).
+3. [ ] **Edilportale y los demás directorios** (Houzz, Archilovers, PagineGialle, Archisio, Divisare), con el mismo nombre en todos. La respuesta de IA de Google citaba a las otras arquitectas de Bergamo desde su perfil de Edilportale. Decide también cómo quieres que aparezca tu nombre: Google te llama "Martina C.M. Pozzi" (por el logo) y la web, "Martina Pozzi".
+4. [ ] **Leer lo publicado** (§4): sobre todo las afirmaciones técnicas y legales, porque van en primera persona y con tu nombre.
 
 ---
 
-## 1. Fuera de la web (lo que más clientes trae y más rápido)
+## 1. Fuera de la web (además de lo de arriba)
 
-- [ ] **Ficha de Google.** Comprobar que tienes acceso en business.google.com y aplicar la checklist de [`FICHA-GOOGLE.md`](../martina/FICHA-GOOGLE.md) §6 en una sola visita: categoría principal Architetto y tres secundarias, horario 9–18, atributos, zonas de servicio, descripción y servicios (los textos ya están escritos, solo hay que revisarlos y pegarlos).
-- [ ] **Reseñas.** Copiar el enlace "Chiedi recensioni" de la ficha y enviar los mensajes de `FICHA-GOOGLE.md` §5, empezando por los 7 clientes de Spazi Belli.
 - [ ] **Email.** Ya: reenviar el Gmail que usa Calendly al hotmail, para no perder respuestas de clientes. Después: decidir el email de dominio (Google Workspace, ~7 €/mes) para tener una sola dirección en la web, Calendly, Meet y la ficha.
 - [ ] **Enlace de Homeadore.** Homeadore publicó LOVINGCOLORS (junio) y CASA ARCHI & COLORI (agosto) y te cita, pero no enlaza la web. Escribirles para pedir que añadan `mparchistudio.com` en los créditos de los dos artículos: hoy sería el único enlace de prensa ([control del 20 oct](auditorias/2026-10-20-estado/README.md)).
-- [ ] Mismo nombre comercial en todos los perfiles y alta en directorios (Houzz, Archilovers, PagineGialle, Archisio, Edilportale, Divisare).
 
 ## 2. Datos que sirven para varias páginas
 
