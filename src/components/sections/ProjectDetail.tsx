@@ -1,11 +1,11 @@
 'use client'
 
 import { Link } from '@/i18n/navigation'
-import { projectHref } from '@/lib/routes'
+import { newsHref, projectHref, serviceHref } from '@/lib/routes'
 import Image from 'next/image'
 import { useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowLeft, MapPin, Calendar, Ruler, User, CheckCircle, Expand, Camera } from 'lucide-react'
+import { ArrowLeft, ArrowRight, MapPin, Calendar, Ruler, User, CheckCircle, Expand, Camera } from 'lucide-react'
 import Container from '@/components/ui/Container'
 import { Button, Badge, Lightbox } from '@/components/ui'
 import { useLightbox } from '@/lib/hooks'
@@ -16,9 +16,13 @@ interface ProjectDetailProps {
   project: Project
   prevProject: Project | null
   nextProject: Project | null
+  /** Pagina del servizio con cui è stato realizzato il progetto, se pubblicata */
+  service?: { slug: string; name: string }
+  /** Guida collegata alla categoria del progetto, se pubblicata */
+  guide?: { slug: string; name: string }
 }
 
-export default function ProjectDetail({ project, prevProject, nextProject }: ProjectDetailProps) {
+export default function ProjectDetail({ project, prevProject, nextProject, service, guide }: ProjectDetailProps) {
   const t = useTranslations('ProjectDetail')
   const tStatus = useTranslations('ProjectStatus')
   const tCat = useTranslations('ProjectCategories')
@@ -145,6 +149,29 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
                 </Badge>
               ))}
             </div>
+
+            {(service || guide) && (
+              <div className="mt-8 flex flex-col items-start gap-3">
+                {service && (
+                  <Link
+                    href={serviceHref(service.slug)}
+                    className="inline-flex items-center gap-2 font-medium text-primary-700 underline-offset-4 hover:underline"
+                  >
+                    {t('serviceLink', { service: service.name })}
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                )}
+                {guide && (
+                  <Link
+                    href={newsHref(guide.slug)}
+                    className="inline-flex items-center gap-2 font-medium text-primary-700 underline-offset-4 hover:underline"
+                  >
+                    {t('guideLink', { guide: guide.name })}
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                )}
+              </div>
+            )}
           </motion.div>
 
           {/* Sidebar - Project Details */}
@@ -197,7 +224,11 @@ export default function ProjectDetail({ project, prevProject, nextProject }: Pro
                 >
                   <Image
                     src={item.img}
-                    alt={`${project.title} - Immagine ${item.originalIndex + 1}`}
+                    alt={t('galleryImageAlt', {
+                      title: project.title,
+                      location: project.location,
+                      n: item.originalIndex + 1,
+                    })}
                     // Dimensioni reali: riservano lo spazio prima del caricamento.
                     // Con 0×0 tutte le immagini risultavano nel viewport e il lazy loading le scaricava insieme.
                     width={item.dims?.width ?? 1200}

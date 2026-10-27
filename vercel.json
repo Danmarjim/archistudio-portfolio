@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "git": {
+    "deploymentEnabled": {
+      "preview/seo-completa": true,
+      "seo/*": false,
+      "feat/seo-fase-2-pr2": false
+    }
+  },
+  "ignoreCommand": "[ -n \"$VERCEL_GIT_PREVIOUS_SHA\" ] || exit 1; git cat-file -e \"$VERCEL_GIT_PREVIOUS_SHA^{commit}\" 2>/dev/null || exit 1; git diff --quiet \"$VERCEL_GIT_PREVIOUS_SHA\" HEAD -- . ':(exclude)docs' ':(exclude)*.md' ':(exclude).claude'"
+}

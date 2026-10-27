@@ -1,0 +1,201 @@
+{
+  "property": "sc-domain:mparchistudio.com",
+  "rows": [
+    {
+      "keys": [
+        "ita"
+      ],
+      "clicks": 17,
+      "impressions": 120,
+      "ctr": 14.17,
+      "position": 5.2,
+      "country": "ita"
+    },
+    {
+      "keys": [
+        "bel"
+      ],
+      "clicks": 2,
+      "impressions": 6,
+      "ctr": 33.33,
+      "position": 1.8,
+      "country": "bel"
+    },
+    {
+      "keys": [
+        "deu"
+      ],
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 100,
+      "position": 1,
+      "country": "deu"
+    },
+    {
+      "keys": [
+        "esp"
+      ],
+      "clicks": 1,
+      "impressions": 10,
+      "ctr": 10.0,
+      "position": 8.4,
+      "country": "esp"
+    },
+    {
+      "keys": [
+        "arg"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 42,
+      "country": "arg"
+    },
+    {
+      "keys": [
+        "atg"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "country": "atg"
+    },
+    {
+      "keys": [
+        "che"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.3,
+      "country": "che"
+    },
+    {
+      "keys": [
+        "gbr"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8,
+      "country": "gbr"
+    },
+    {
+      "keys": [
+        "grc"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1.5,
+      "country": "grc"
+    },
+    {
+      "keys": [
+        "hrv"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "country": "hrv"
+    },
+    {
+      "keys": [
+        "ind"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "country": "ind"
+    },
+    {
+      "keys": [
+        "ltu"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5,
+      "country": "ltu"
+    },
+    {
+      "keys": [
+        "mex"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.3,
+      "country": "mex"
+    },
+    {
+      "keys": [
+        "rus"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15,
+      "country": "rus"
+    },
+    {
+      "keys": [
+        "smr"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "country": "smr"
+    },
+    {
+      "keys": [
+        "svn"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "country": "svn"
+    },
+    {
+      "keys": [
+        "usa"
+      ],
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 40.1,
+      "country": "usa"
+    },
+    {
+      "keys": [
+        "zaf"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60,
+      "country": "zaf"
+    }
+  ],
+  "totals": {
+    "clicks": 21,
+    "impressions": 165,
+    "ctr": 12.73,
+    "position": 7.6
+  },
+  "totals_source": "dimensionless_aggregate",
+  "totals_complete": true,
+  "quick_wins": [],
+  "warnings": [],
+  "row_count": 18,
+  "error": null,
+  "date_range": {
+    "start": "2026-07-01",
+    "end": "2026-10-25"
+  }
+}

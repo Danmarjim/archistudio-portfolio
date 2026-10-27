@@ -9,11 +9,20 @@ import {
   ServicesPreview,
   CallToAction,
   NavBand,
+  FeaturedProjects,
 } from '@/components/sections'
 import PressBand from '@/components/sections/PressBand'
+import HowIWork from '@/components/sections/HowIWork'
+import WorkArea from '@/components/sections/WorkArea'
+import Testimonials from '@/components/sections/Testimonials'
 import { isVerticalImage } from '@/lib/imageOrientation'
 import { getAllNews } from '@/lib/news'
+import { getProjectBySlug } from '@/lib/projects'
+import { getPublishedServices } from '@/lib/services'
+import { getTestimonials, MIN_HOME_TESTIMONIALS } from '@/lib/testimonials'
 import { buildMetadata } from '@/lib/seo'
+
+const HOME_FEATURED_PROJECTS = ['appartamento-lovingcolors', 'casa-archi-colori', 'restyling-casa-peonia']
 
 interface HomeProps {
   params: Promise<{ locale: string }>
@@ -37,6 +46,17 @@ export default async function Home({ params, searchParams: _searchParams }: Home
     .filter((post) => Boolean(post.source))
     .map((post) => ({ slug: post.slug, source: post.source as string, title: post.title }))
 
+  // Pagine di servizio pubblicate (`serviceKey` → slug) per i link delle card e di "Come lavoro"
+  const servicePages = Object.fromEntries(getPublishedServices('it').map((s) => [s.serviceKey, s.slug]))
+
+  // Un progetto per tipo e città: ristrutturazione a Bergamo, a Milano e restyling in Brianza
+  const featuredProjects = HOME_FEATURED_PROJECTS.map((slug) => getProjectBySlug(slug, locale)).filter(
+    (project): project is NonNullable<typeof project> => Boolean(project)
+  )
+
+  // La sezione compare da sola quando ci sono abbastanza testimonianze con permesso
+  const testimonials = getTestimonials(locale)
+
   const projectsDir = path.join(process.cwd(), 'public/images/projects')
   const projectFiles = fs.readdirSync(projectsDir)
     .filter((f) => /\.(jpg|jpeg|png|webp)$/i.test(f))
@@ -56,8 +76,12 @@ export default async function Home({ params, searchParams: _searchParams }: Home
       <ProjectsStrip images={allImages} verticalImages={verticalImages} />
       <AboutPreview />
       <PressBand items={pressItems} />
-      <ServicesPreview />
-      <CallToAction />
+      <ServicesPreview servicePages={servicePages} />
+      <HowIWork locale={locale} renovationSlug={servicePages['progettazione-architettonica']} />
+      <FeaturedProjects projects={featuredProjects} />
+      {testimonials.length >= MIN_HOME_TESTIMONIALS && <Testimonials testimonials={testimonials} locale={locale} />}
+      <WorkArea locale={locale} />
+      <CallToAction showPhone />
       <div className="bg-background py-1" />
       <NavBand />
     </>

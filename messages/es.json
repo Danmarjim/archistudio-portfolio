@@ -1,10 +1,10 @@
 {
   "Metadata": {
     "title": "Arquitecta en Bérgamo – Martina Pozzi | MP_archistudio",
-    "description": "Martina Pozzi, arquitecta en Bérgamo: reformas llave en mano, interiorismo a medida y asesoría para la compra de vivienda. Te acompaño hasta el final de la obra.",
+    "description": "Martina Pozzi, arquitecta en Bérgamo: reformas llave en mano, interiorismo a medida y asesoría para comprar vivienda. Escríbeme.",
     "pages": {
       "projects": {
-        "title": "Proyectos de reforma e interiorismo en Bérgamo",
+        "title": "Proyectos de reforma en Bérgamo",
         "description": "Casas, baños y cocinas reformados por MP_archistudio: descubre los proyectos de Martina Pozzi, arquitecta en Bérgamo."
       },
       "news": {
@@ -16,7 +16,7 @@
         "description": "Martina Pozzi, arquitecta titulada en el Politecnico di Milano y con sede en Bérgamo. Conoce mi trayectoria y mi forma de trabajar."
       },
       "services": {
-        "title": "Servicios de arquitectura y reformas en Bérgamo",
+        "title": "Servicios de arquitectura en Bérgamo",
         "description": "ArchiAdvice, asesoría para la compra, restyling y proyecto arquitectónico integral: elige el servicio adecuado para tu vivienda."
       },
       "contact": {
@@ -25,7 +25,7 @@
       },
       "tappeti": {
         "title": "Alfombras — Colección Sevilla",
-        "description": "Sevilla, una colección de alfombras firmadas MP_archistudio by Martina Pozzi. Inspirada en las fiestas de primavera de Sevilla y producida por Panizza Studio en lana y viscosa."
+        "description": "Sevilla, la colección de alfombras de MP_archistudio inspirada en la Feria de Sevilla: lana y viscosa, tufting a mano, a medida y en más de 720 colores."
       },
       "privacy": {
         "title": "Política de privacidad",
@@ -50,32 +50,35 @@
   },
   "Hero": {
     "overline": "ESTUDIO DE DISEÑO ARQUITECTÓNICO DE INTERIORES A MEDIDA EN BERGAMO",
-    "title": "Reforma sin preocupaciones",
-    "subtitle": "Te acompaño paso a paso, desde los trámites de obra hasta la ejecución, velando por tus intereses",
+    "title": "Arquitecta en Bérgamo: reformas e interiores a medida",
+    "subtitle": "Reforma sin preocupaciones. Soy Martina Pozzi, arquitecta: te acompaño del proyecto a los trámites y hasta la obra, con <b>una única persona de referencia</b> que vela por tus intereses.",
     "cta": "Ver proyectos",
     "ctaSecondary": "Contactar",
     "scrollIndicator": "Descubre más"
   },
   "FeaturedProjects": {
     "title": "Proyectos destacados",
-    "subtitle": "Una selección de nuestros trabajos más recientes",
+    "subtitle": "Reformas y restylings en Bérgamo, Milán y la Brianza",
     "viewAll": "Ver todos los proyectos"
   },
   "AboutPreview": {
     "overline": "Sobre mí",
     "title": "Arquitectura y Escucha Empática",
-    "description": "Soy arquitecta apasionada por los espacios que mejoran la vida de las personas. Mi enfoque une funcionalidad, estética y sostenibilidad, buscando siempre soluciones que respeten el contexto y respondan a las necesidades reales de cada cliente. Cada proyecto es una oportunidad para explorar nuevas formas de habitar. El objetivo es ofrecer beneficios reales a las personas que confían en mí.",
-    "cta": "Conoce más sobre mí"
+    "description": "Soy Martina Pozzi, arquitecta, y desde 2021 dirijo MP_archistudio, estudio de arquitectura e interiores en Bérgamo. Me licencié en el Politecnico di Milano y antes de abrir el estudio trabajé en estudios de arquitectura en Italia y en España, entre Sevilla y Barcelona. Proyecto reformas de pisos y casas, interiores a medida y restylings: el color y los muebles diseñados a medida son mi firma.",
+    "cta": "Conoce más sobre mí",
+    "description2": "Escucho antes de dibujar: cada proyecto parte de cómo vives la casa y de lo que quieres sentir al abrir la puerta. Mis trabajos se han publicado en las revistas HOME y Cose di Casa y en el blog internacional de diseño Homeadore."
   },
   "ServicesPreview": {
     "title": "Servicios",
-    "subtitle": "Soluciones integrales de arquitectura y diseño",
-    "cta": "Ver todos los servicios"
+    "subtitle": "De la asesoría de una hora a la reforma llave en mano",
+    "cta": "Ver todos los servicios",
+    "learnMore": "Descubre el servicio"
   },
   "CallToAction": {
     "title": "¿Tienes un proyecto en mente?",
     "subtitle": "Cuéntanos tu idea y trabajemos juntos para hacerla realidad.",
-    "cta": "Contactar ahora"
+    "cta": "Contactar ahora",
+    "phone": "O llámame al {phone}"
   },
   "ProjectsPage": {
     "title": "Proyectos",
@@ -85,6 +88,7 @@
   },
   "ProjectDetail": {
     "backToProjects": "Volver a proyectos",
+    "galleryImageAlt": "{title}, {location} — foto {n}",
     "aboutProject": "Sobre el proyecto",
     "details": "Detalles del proyecto",
     "gallery": "Galería",
@@ -93,6 +97,8 @@
     "surface": "Superficie",
     "client": "Cliente",
     "status": "Estado",
+    "guideLink": "Lee la guía: {guide}",
+    "serviceLink": "Descubre el servicio: {service}",
     "photographer": "Fotografía",
     "previous": "Anterior",
     "next": "Siguiente"
@@ -280,12 +286,19 @@
     "filterAnnunci": "Anuncios",
     "filterInterviste": "Entrevistas",
     "emptyState": "No hay contenido en esta categoría.",
+    "galleryZoom": "Ampliar",
+    "galleryPrevious": "Imagen anterior",
+    "galleryNext": "Imagen siguiente",
+    "galleryClose": "Cerrar",
+    "galleryGoTo": "Ir a la imagen {number}",
     "readMore": "Leer más",
     "backToNews": "Volver a las noticias",
     "source": "Fuente",
     "readOriginal": "Leer el artículo original",
     "previous": "Anterior",
-    "next": "Siguiente"
+    "next": "Siguiente",
+    "byline": "Por <author>Martina Pozzi</author>, arquitecta en Bérgamo",
+    "updatedOn": "Actualizado el {date}"
   },
   "LanguageSwitcher": {
     "label": "Idioma",
@@ -294,8 +307,8 @@
     "it": "Italiano"
   },
   "SobreMiPage": {
-    "overline": "Sobre mí",
-    "heroTitle": "Arquitectura empática",
+    "overline": "Arquitectura empática",
+    "heroTitle": "Martina Pozzi, arquitecta en Bérgamo",
     "heroPara1": "Creo firmemente que la buena arquitectura mejora la calidad de vida.",
     "heroPara2": "Elegir al arquitecto adecuado para la casa de tus sueños significa encontrar a un buen profesional, pero también confiar en alguien que te acompañará en una fase de decisiones muy importante.",
     "heroPara3": "Alguien que sepa escucharos y guiaros de la mano por ese territorio inexplorado — ¡y a menudo estresante! — que es la reforma. Y que os oriente con ojo atento sobre los costes globales.",
@@ -303,7 +316,7 @@
     "bioTitle": "¿Quién es Martina C.M. Pozzi?",
     "bioPara1": "Soy arquitecta con más de 15 años de experiencia en el diseño de espacios que transforman la vida de las personas.",
     "bioPara2": "Mi pasión por la arquitectura nació de la fascinación por la forma en que los espacios pueden influir en nuestras emociones y comportamientos.",
-    "bioPara3": "Mi enfoque une funcionalidad, estética y sostenibilidad, en la búsqueda constante de soluciones que respeten el medio ambiente y respondan a las necesidades reales de cada cliente.",
+    "bioPara3": "Me dedico sobre todo a reformas de pisos y casas, interiores a medida y restylings. <link>El color es mi herramienta principal</link>: lo uso para dar a cada estancia un carácter y una función, junto con muebles diseñados a medida que aprovechan cada centímetro.",
     "bioPara4": "Soy una persona alegre, de las de «sonrisa de mil dientes», capaz de encontrar el lado positivo en cada reto.",
     "bioPara5": "Mi creatividad es inquieta: si no estoy diseñando interiores, me encontraréis creando collages analógicos con la firma",
     "timelineTitle": "Mi trayectoria",
@@ -322,10 +335,34 @@
     "ctaOverline": "Estudio con sede en Bérgamo 🇮🇹 y Sevilla 🇪🇸",
     "ctaTitle": "¿Tienes una idea guardada?",
     "ctaSubtitle": "Escríbeme, pongámosla a prueba y hagámosla realidad.",
-    "ctaButton": "Escríbeme"
+    "ctaButton": "Escríbeme",
+    "tRegYear": "Colegiación",
+    "tRegDate": "2012",
+    "tRegTitle": "Ordine degli Architetti",
+    "tRegDesc": "Colegiación en el Ordine degli Architetti de la provincia de Monza e Brianza.",
+    "credentialsTitle": "Formación y colegiación",
+    "cred1": "Licenciatura en Arquitectura por el Politecnico di Milano (2011)",
+    "cred2": "Colegiada en el Ordine degli Architetti, Pianificatori, Paesaggisti e Conservatori de la provincia de Monza e Brianza desde 2012",
+    "cred3": "Idiomas de trabajo: italiano, español e inglés",
+    "cred4": "MP_archistudio, P.IVA IT07788400963",
+    "pressTitle": "Lo que dicen de mis proyectos",
+    "pressSubtitle": "Revistas y blogs de diseño que han publicado mis trabajos.",
+    "whereTitle": "Dónde encontrarme",
+    "wherePara": "Recibo en mi estudio de Bérgamo, en Via Bologna 2, con cita previa. Mis proyectos y las reseñas de los clientes también están en:",
+    "ctaArchiAdvice": "¿Prefieres empezar con una hora de asesoría online? Reserva un ArchiAdvice"
+  },
+  "ServicePage": {
+    "backToServices": "Todos los servicios",
+    "price": "Precio",
+    "priceFrom": "Desde",
+    "bookCta": "Reserva la asesoría",
+    "contactCta": "Pide información",
+    "relatedProjects": "Proyectos realizados",
+    "finalTitle": "Hablemos de tu proyecto"
   },
   "ServiciosPage": {
     "heroTitle": "Mis servicios",
+    "serviceDetailCta": "Descubre el servicio",
     "heroSubtitle": "Desde la consulta rápida hasta el proyecto llave en mano — elige el servicio más adecuado para tu situación.",
     "notSureTitle": "¿No sabes qué servicio es el tuyo?",
     "notSureCta": "Cuéntame qué tienes en mente y lo descubriremos juntos",
@@ -398,7 +435,8 @@
       "f2": "Tienes ideas pero no sabes cómo llevarlas a la práctica",
       "f3": "No sabes cómo organizar el mobiliario, qué conservar, qué renovar, cómo disponerlo, dónde comprarlo",
       "f4": "Quieres compartir tus dudas sobre un proyecto de interiorismo que no te deja dormir",
-      "cta": "Reserva tu ArchiAdvice"
+      "cta": "Reserva tu ArchiAdvice",
+      "summary": "Una hora de videollamada para decidir colores, materiales, muebles y distribución, estés donde estés, en italiano, español o inglés. 100 € todo incluido, que se descuentan del proyecto si después decides seguir."
     },
     "consulenzaAcquisto": {
       "title": "Asesoría de compra",
@@ -408,7 +446,8 @@
       "f2": "Quieres hacer una visita con un arquitecto y/o una puesta en común de la información para evaluar posibles problemáticas, descubrir el potencial y cómo aprovechar al máximo cada metro",
       "f3": "Quieres saber cuánto podría costarte reformarlo aproximadamente",
       "f4": "Quieres hacer una compra consciente",
-      "cta": "Escríbeme"
+      "cta": "Escríbeme",
+      "summary": "Antes de comprar reviso contigo los documentos, la conformidad urbanística y catastral y el estado real del inmueble, y te doy una estimación orientativa del coste de la reforma. Para ofertar, negociar o renunciar sabiendo lo que compras."
     },
     "restyling": {
       "title": "Restyling",
@@ -418,7 +457,8 @@
       "f2": "Estás de alquiler y te gustaría sentir más tuya la casa donde vives o el local/oficina donde trabajas",
       "f3": "Quieres cambiar el mobiliario, optimizar los espacios diseñando algunos elementos a medida",
       "f4": "La obra ha terminado y ahora toca decorar, pintar, amueblar...",
-      "cta": "Escríbeme"
+      "cta": "Escríbeme",
+      "summary": "Renovar la casa sin obras: color, luz, muebles y piezas a medida para cambiar la imagen de las estancias. Para quien tiene una casa que ya no le representa, para quien vive de alquiler y para quien acaba de terminar una obra."
     },
     "progettazione": {
       "title": "Proyecto arquitectónico 360°",
@@ -428,7 +468,8 @@
       "f2": "Trámites de obra, elección de materiales y solicitud de presupuestos",
       "f3": "Gestión de empresas, seguimiento económico y cronograma",
       "f4": "Dirección artística, dirección de obra y cierre del expediente con actualización catastral",
-      "cta": "Descubre cómo trabajamos"
+      "cta": "Descubre cómo trabajamos",
+      "summary": "Reforma de pisos y casas en Bérgamo y Lombardía, del levantamiento a la entrega de llaves: proyecto arquitectónico y de interiores, trámites, elección de empresas y dirección de obra. Una única persona de referencia para todo el recorrido, o solo para una parte."
     }
   },
   "NotFound": {
@@ -439,5 +480,32 @@
   },
   "Press": {
     "title": "Publicado en"
+  },
+  "HowIWork": {
+    "title": "Cómo trabajo",
+    "subtitle": "Cuatro pasos, una sola persona de referencia: puedes encargarme todo el recorrido o solo una parte.",
+    "s1title": "Levantamiento y escucha",
+    "s1": "Mido y fotografío la casa y entiendo cómo quieres vivirla. Si hace falta, compruebo en el ayuntamiento que el estado actual está en regla.",
+    "s2title": "Proyecto",
+    "s2": "Distribución, colores, materiales y muebles a medida, con planos, moodboard y vistas 3D para ver la casa antes de construirla.",
+    "s3title": "Empresas y presupuestos",
+    "s3": "Preparo las mediciones, comparo varios presupuestos sobre el mismo proyecto y te ayudo a elegir materiales y proveedores.",
+    "s4title": "Obra y trámites",
+    "s4": "Dirijo la obra, controlo calidad y pagos, presento los trámites y cierro con el fin de obra y la actualización catastral.",
+    "cta": "Cómo funciona una reforma"
+  },
+  "WorkArea": {
+    "title": "Dónde trabajo",
+    "p1": "Mi estudio está en Bérgamo, en Via Bologna 2, y recibo con cita previa. Sigo proyectos y obras en Bérgamo y su provincia, Milán, Monza e Brianza y el resto de Lombardía: el piso LOVINGCOLORS está en Bérgamo, Casa Archi & Colori en Milán, CASA PEONIA en Camparada y la cocina PARIGINA en Monza.",
+    "p2": "Con las asesorías online ArchiAdvice trabajo con clientes estén donde estén, en italiano, español e inglés.",
+    "cta": "Ver todos los proyectos"
+  },
+  "Testimonials": {
+    "eyebrow": "Opiniones",
+    "subtitle": "Las palabras de quienes me confiaron su casa.",
+    "title": "Lo que dicen de mi trabajo",
+    "translated": "{lang, select, it {Traducido del italiano} es {Traducido del español} en {Traducido del inglés} other {Traducción}}",
+    "source": "Reseña en {source}",
+    "viewProject": "Ver el proyecto"
   }
 }

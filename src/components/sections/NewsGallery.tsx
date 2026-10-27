@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence, PanInfo } from 'framer-motion'
 import { ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 interface NewsGalleryProps {
   images: string[]
@@ -13,6 +14,7 @@ interface NewsGalleryProps {
 const SWIPE_THRESHOLD = 50
 
 export default function NewsGallery({ images, title = '' }: NewsGalleryProps) {
+  const t = useTranslations('NewsPage')
   const [current, setCurrent] = useState(0)
   const [direction, setDirection] = useState(0)
   const [lightboxOpen, setLightboxOpen] = useState(false)
@@ -70,15 +72,14 @@ export default function NewsGallery({ images, title = '' }: NewsGalleryProps) {
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 900px"
-                  priority={current === 0}
                 />
                 {/* Zoom hint */}
                 <button
                   onClick={() => setLightboxOpen(true)}
                   className="absolute bottom-3 right-3 flex items-center gap-1.5 rounded-full bg-black/40 px-3 py-1.5 text-xs text-white backdrop-blur-sm transition hover:bg-black/60"
                 >
-                  <ZoomIn className="h-3.5 w-3.5" />
-                  Ingrandisci
+                  <ZoomIn className="h-3.5 w-3.5" aria-hidden="true" />
+                  {t('galleryZoom')}
                 </button>
               </motion.div>
             </AnimatePresence>
@@ -88,17 +89,19 @@ export default function NewsGallery({ images, title = '' }: NewsGalleryProps) {
           {current > 0 && (
             <button
               onClick={prev}
+              aria-label={t('galleryPrevious')}
               className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow transition hover:bg-white hover:scale-110"
             >
-              <ChevronLeft className="h-5 w-5" />
+              <ChevronLeft className="h-5 w-5" aria-hidden="true" />
             </button>
           )}
           {current < images.length - 1 && (
             <button
               onClick={next}
+              aria-label={t('galleryNext')}
               className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 shadow transition hover:bg-white hover:scale-110"
             >
-              <ChevronRight className="h-5 w-5" />
+              <ChevronRight className="h-5 w-5" aria-hidden="true" />
             </button>
           )}
 
@@ -115,6 +118,7 @@ export default function NewsGallery({ images, title = '' }: NewsGalleryProps) {
               <button
                 key={i}
                 onClick={() => goTo(i)}
+                aria-current={i === current ? 'true' : undefined}
                 className={`relative h-16 w-24 flex-shrink-0 overflow-hidden rounded-lg transition-all ${
                   i === current
                     ? 'ring-2 ring-primary-600 ring-offset-1'
@@ -146,9 +150,10 @@ export default function NewsGallery({ images, title = '' }: NewsGalleryProps) {
           >
             <button
               onClick={() => setLightboxOpen(false)}
+              aria-label={t('galleryClose')}
               className="absolute right-4 top-4 z-20 rounded-full bg-white/10 p-2.5 text-white backdrop-blur-sm hover:bg-white/20"
             >
-              <X className="h-5 w-5" />
+              <X className="h-5 w-5" aria-hidden="true" />
             </button>
 
             <div className="absolute left-4 top-4 z-20 rounded-full bg-white/10 px-3 py-1.5 text-sm text-white backdrop-blur-sm">
@@ -176,17 +181,19 @@ export default function NewsGallery({ images, title = '' }: NewsGalleryProps) {
             {current > 0 && (
               <button
                 onClick={(e) => { e.stopPropagation(); prev() }}
+                aria-label={t('galleryPrevious')}
                 className="absolute left-4 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-sm hover:bg-white/20"
               >
-                <ChevronLeft className="h-6 w-6" />
+                <ChevronLeft className="h-6 w-6" aria-hidden="true" />
               </button>
             )}
             {current < images.length - 1 && (
               <button
                 onClick={(e) => { e.stopPropagation(); next() }}
+                aria-label={t('galleryNext')}
                 className="absolute right-4 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-sm hover:bg-white/20"
               >
-                <ChevronRight className="h-6 w-6" />
+                <ChevronRight className="h-6 w-6" aria-hidden="true" />
               </button>
             )}
 
@@ -196,6 +203,8 @@ export default function NewsGallery({ images, title = '' }: NewsGalleryProps) {
                 <button
                   key={i}
                   onClick={(e) => { e.stopPropagation(); goTo(i) }}
+                  aria-label={t('galleryGoTo', { number: i + 1 })}
+                  aria-current={i === current ? 'true' : undefined}
                   className={`h-2 rounded-full transition-all ${i === current ? 'w-6 bg-white' : 'w-2 bg-white/40'}`}
                 />
               ))}

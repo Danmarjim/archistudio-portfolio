@@ -11,9 +11,11 @@ import { useTranslations } from 'next-intl'
 interface ProjectCardProps {
   project: Project
   index?: number
+  /** `h2` nei listati senza sezioni (/progetti, /news); `h3` sotto un titolo di sezione */
+  headingLevel?: 'h2' | 'h3'
 }
 
-export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
+export default function ProjectCard({ project, index = 0, headingLevel: Heading = 'h3' }: ProjectCardProps) {
   const tCat = useTranslations('ProjectCategories')
   const aboveFold = index < 3
   return (
@@ -34,7 +36,10 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
             src={project.coverImage}
             alt={project.title}
             aspectRatio="landscape"
-            priority={aboveFold}
+            // Solo la prima card è l'LCP (su mobile è l'unica visibile); le altre above the fold
+            // si caricano subito ma senza contendere la priorità di rete.
+            priority={index === 0}
+            loading={aboveFold && index > 0 ? 'eager' : undefined}
             sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1023px) calc(50vw - 40px), 400px"
             className="transition-transform duration-500 group-hover:scale-105"
           />
@@ -52,12 +57,12 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
         <div className="p-5">
           <div className="mb-2 flex items-center gap-2">
             <Badge variant="outline">{tCat(project.category as Parameters<typeof tCat>[0], { defaultValue: project.category })}</Badge>
-            <span className="text-sm text-neutral-400">{project.year}</span>
+            <span className="text-sm text-neutral-500">{project.year}</span>
           </div>
 
-          <h3 className="font-serif text-xl font-medium text-foreground transition-colors group-hover:text-primary-600">
+          <Heading className="font-serif text-xl font-medium text-foreground transition-colors group-hover:text-primary-600">
             {project.title}
-          </h3>
+          </Heading>
 
           <p className="mt-2 line-clamp-2 text-sm text-neutral-600">
             {project.excerpt}

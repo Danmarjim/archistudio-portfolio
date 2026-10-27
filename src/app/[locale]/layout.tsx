@@ -8,6 +8,7 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import { routing } from '@/i18n/routing'
 import { siteConfig } from '@/lib/constants'
 import { buildMetadata, buildSiteGraph } from '@/lib/seo'
+import { GLOBAL_CLIENT_NAMESPACES, pickMessages } from '@/lib/clientMessages'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import JsonLd from '@/components/seo/JsonLd'
@@ -102,7 +103,8 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
-        <NextIntlClientProvider messages={messages}>
+        {/* Al browser solo i testi dei componenti client comuni; le sezioni aggiungono i propri */}
+        <NextIntlClientProvider messages={pickMessages(messages, GLOBAL_CLIENT_NAMESPACES)}>
           {/* Skip to main content link for accessibility */}
           <a
             href="#main-content"

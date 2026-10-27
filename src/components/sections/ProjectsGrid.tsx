@@ -58,7 +58,7 @@ export default function ProjectsGrid({ projects }: ProjectsGridProps) {
       {/* Projects Grid — ordine riga per riga, altezza naturale per ogni card */}
       <div className="grid items-start gap-8 md:grid-cols-2 lg:grid-cols-3">
         {filteredProjects.map((project, index) => (
-          <ProjectCard key={project.slug} project={project} index={index} />
+          <ProjectCard key={project.slug} project={project} index={index} headingLevel="h2" />
         ))}
       </div>
 

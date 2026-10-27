@@ -1,0 +1,141 @@
+{
+  "property": "sc-domain:mparchistudio.com",
+  "rows": [
+    {
+      "keys": [
+        "archi milano",
+        "https://mparchistudio.com/es/proyectos/casa-archi-colori"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
+      "query": "archi milano",
+      "page": "https://mparchistudio.com/es/proyectos/casa-archi-colori"
+    },
+    {
+      "keys": [
+        "casa peonia",
+        "https://mparchistudio.com/es/proyectos/restyling-casa-peonia"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10,
+      "query": "casa peonia",
+      "page": "https://mparchistudio.com/es/proyectos/restyling-casa-peonia"
+    },
+    {
+      "keys": [
+        "martina pozzi",
+        "https://mparchistudio.com/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9.5,
+      "query": "martina pozzi",
+      "page": "https://mparchistudio.com/"
+    },
+    {
+      "keys": [
+        "martina pozzi",
+        "https://mparchistudio.com/en/about"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.3,
+      "query": "martina pozzi",
+      "page": "https://mparchistudio.com/en/about"
+    },
+    {
+      "keys": [
+        "panizza tappeti",
+        "https://mparchistudio.com/tappeti"
+      ],
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 9.2,
+      "query": "panizza tappeti",
+      "page": "https://mparchistudio.com/tappeti"
+    },
+    {
+      "keys": [
+        "panizzastudio.com",
+        "https://mparchistudio.com/en/news"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25,
+      "query": "panizzastudio.com",
+      "page": "https://mparchistudio.com/en/news"
+    },
+    {
+      "keys": [
+        "panizzastudio.com",
+        "https://mparchistudio.com/en/news/collezione-tappeti-sevilla"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92,
+      "query": "panizzastudio.com",
+      "page": "https://mparchistudio.com/en/news/collezione-tappeti-sevilla"
+    },
+    {
+      "keys": [
+        "panizzastudio.com",
+        "https://mparchistudio.com/en/tappeti"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 18,
+      "query": "panizzastudio.com",
+      "page": "https://mparchistudio.com/en/tappeti"
+    },
+    {
+      "keys": [
+        "panizzastudio.com",
+        "https://mparchistudio.com/news/collezione-tappeti-sevilla"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86,
+      "query": "panizzastudio.com",
+      "page": "https://mparchistudio.com/news/collezione-tappeti-sevilla"
+    },
+    {
+      "keys": [
+        "progetto casa design",
+        "https://mparchistudio.com/en/projects"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 78,
+      "query": "progetto casa design",
+      "page": "https://mparchistudio.com/en/projects"
+    }
+  ],
+  "totals": {
+    "clicks": 15,
+    "impressions": 106,
+    "ctr": 14.15,
+    "position": 7.1
+  },
+  "totals_source": "dimensionless_aggregate",
+  "totals_complete": true,
+  "quick_wins": [],
+  "warnings": [],
+  "row_count": 10,
+  "error": null,
+  "date_range": {
+    "start": "2026-09-22",
+    "end": "2026-10-17"
+  }
+}

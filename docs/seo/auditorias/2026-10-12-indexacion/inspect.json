@@ -1,0 +1,2394 @@
+{
+  "property": "sc-domain:mparchistudio.com",
+  "total": 73,
+  "results": [
+    {
+      "url": "https://mparchistudio.com/es",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-20T08:20:37Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/es/news",
+          "https://mparchistudio.com/es/news/il-colore-nell-architettura"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T08:28:54Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/",
+          "https://mparchistudio.com/en/projects/restyling-casa-peonia",
+          "https://mparchistudio.com/en/news"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/en",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-10T16:36:49Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/es/proyectos",
+          "https://mparchistudio.com/servicios"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com",
+        "user_canonical": "https://mparchistudio.com/",
+        "match": false
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/proyectos",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-19T14:48:49Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/es/sobre-mi"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/proyectos",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/projects",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/progetti",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Duplicate, Google chose different canonical than user",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-10T19:09:28Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti/bagno-casa-peonia",
+          "https://mparchistudio.com/proyectos",
+          "https://mparchistudio.com/progetti/bagno-italian-summer"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/proyectos",
+        "user_canonical": "https://mparchistudio.com/progetti",
+        "match": false
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/sobre-mi",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-09T10:47:07Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/en/about",
+          "https://mparchistudio.com/es/news/intervista-archiboost-luglio-2026",
+          "https://mparchistudio.com/es/news/cose-di-casa-ottobre-2022"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/sobre-mi",
+        "user_canonical": "https://mparchistudio.com/es/sobre-mi",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/about",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T20:28:24Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/en/projects/restyling-casa-peonia"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/en/about",
+        "user_canonical": "https://mparchistudio.com/en/about",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/chi-sono",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": null,
+      "crawl_info": null,
+      "canonical": null,
+      "mobile_usability": null,
+      "rich_results": null,
+      "verdict": null,
+      "error": "URL Inspection API error: <HttpError 500 when requesting https://searchconsole.googleapis.com/v1/urlInspection/index:inspect?alt=json returned \"Internal error encountered.\". Details: \"Internal error encountered.\">"
+    },
+    {
+      "url": "https://mparchistudio.com/es/servicios",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-18T22:11:51Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/es/privacy",
+          "https://mparchistudio.com/es/news/il-colore-nell-architettura"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/servicios",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/services",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/servizi",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Duplicate, Google chose different canonical than user",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-10T19:07:30Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/servicios",
+          "https://mparchistudio.com/progetti/bagno-italian-summer"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/servicios",
+        "user_canonical": "https://mparchistudio.com/servizi",
+        "match": false
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/tappeti",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/tappeti",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": null,
+      "crawl_info": null,
+      "canonical": null,
+      "mobile_usability": null,
+      "rich_results": null,
+      "verdict": null,
+      "error": "URL Inspection API error: <HttpError 500 when requesting https://searchconsole.googleapis.com/v1/urlInspection/index:inspect?alt=json returned \"Internal error encountered.\". Details: \"Internal error encountered.\">"
+    },
+    {
+      "url": "https://mparchistudio.com/tappeti",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T08:28:54Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti/bagno-italian-summer",
+          "http://www.mparchistudio.com/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/tappeti",
+        "user_canonical": "https://mparchistudio.com/tappeti",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/news",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/news",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": null,
+      "crawl_info": null,
+      "canonical": null,
+      "mobile_usability": null,
+      "rich_results": null,
+      "verdict": null,
+      "error": "URL Inspection API error: <HttpError 500 when requesting https://searchconsole.googleapis.com/v1/urlInspection/index:inspect?alt=json returned \"Internal error encountered.\". Details: \"Internal error encountered.\">"
+    },
+    {
+      "url": "https://mparchistudio.com/news",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-09T17:45:08Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti/bagno-italian-summer",
+          "https://mparchistudio.com/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/news",
+        "user_canonical": "https://mparchistudio.com/news",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/contacto",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+        "referring_urls": [
+          "https://mparchistudio.com/contacto"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/contact",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/contatti",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Duplicate, Google chose different canonical than user",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T09:47:11Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/contacto"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/contacto",
+        "user_canonical": "https://mparchistudio.com/contatti",
+        "match": false
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/proyectos/casa-archi-colori",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": null,
+      "crawl_info": null,
+      "canonical": null,
+      "mobile_usability": null,
+      "rich_results": null,
+      "verdict": null,
+      "error": "URL Inspection API error: <HttpError 500 when requesting https://searchconsole.googleapis.com/v1/urlInspection/index:inspect?alt=json returned \"Internal error encountered.\". Details: \"Internal error encountered.\">"
+    },
+    {
+      "url": "https://mparchistudio.com/en/projects/casa-archi-colori",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": null,
+      "crawl_info": null,
+      "canonical": null,
+      "mobile_usability": null,
+      "rich_results": null,
+      "verdict": null,
+      "error": "URL Inspection API error: <HttpError 500 when requesting https://searchconsole.googleapis.com/v1/urlInspection/index:inspect?alt=json returned \"Internal error encountered.\". Details: \"Internal error encountered.\">"
+    },
+    {
+      "url": "https://mparchistudio.com/progetti/casa-archi-colori",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T20:37:40Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/progetti/casa-archi-colori",
+        "user_canonical": "https://mparchistudio.com/progetti/casa-archi-colori",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/proyectos/appartamento-lovingcolors",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-11T08:59:37Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti/appartamento-lovingcolors",
+          "https://mparchistudio.com/proyectos/appartamento-lovingcolors"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/proyectos/appartamento-lovingcolors",
+        "user_canonical": "https://mparchistudio.com/es/proyectos/appartamento-lovingcolors",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/projects/appartamento-lovingcolors",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/progetti/appartamento-lovingcolors",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-10T18:51:50Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti",
+          "https://mparchistudio.com/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/progetti/appartamento-lovingcolors",
+        "user_canonical": "https://mparchistudio.com/progetti/appartamento-lovingcolors",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/proyectos/restyling-casa-peonia",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T13:39:26Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti/restyling-casa-peonia",
+          "https://mparchistudio.com/en/projects/restyling-casa-peonia"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/proyectos/restyling-casa-peonia",
+        "user_canonical": "https://mparchistudio.com/es/proyectos/restyling-casa-peonia",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/projects/restyling-casa-peonia",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-10T11:50:53Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti/restyling-casa-peonia",
+          "https://mparchistudio.com/es/proyectos/restyling-casa-peonia",
+          "https://mparchistudio.com/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/en/projects/restyling-casa-peonia",
+        "user_canonical": "https://mparchistudio.com/en/projects/restyling-casa-peonia",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/progetti/restyling-casa-peonia",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T13:20:30Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/progetti/restyling-casa-peonia",
+        "user_canonical": "https://mparchistudio.com/progetti/restyling-casa-peonia",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/proyectos/bagno-casa-peonia",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-10T10:31:19Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti/bagno-casa-peonia",
+          "https://mparchistudio.com/en/projects/bagno-casa-peonia"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/proyectos/bagno-casa-peonia",
+        "user_canonical": "https://mparchistudio.com/es/proyectos/bagno-casa-peonia",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/projects/bagno-casa-peonia",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/progetti/bagno-casa-peonia",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T22:26:13Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti/restyling-casa-peonia",
+          "https://mparchistudio.com/progetti/bagno-italian-summer"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/progetti/bagno-casa-peonia",
+        "user_canonical": "https://mparchistudio.com/progetti/bagno-casa-peonia",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/proyectos/bagno-italian-summer",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-10T01:40:15Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/en/projects/bagno-italian-summer",
+          "https://mparchistudio.com/progetti/bagno-italian-summer",
+          "https://mparchistudio.com/proyectos/bagno-italian-summer"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/proyectos/bagno-italian-summer",
+        "user_canonical": "https://mparchistudio.com/es/proyectos/bagno-italian-summer",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/projects/bagno-italian-summer",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/progetti/bagno-italian-summer",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T20:24:04Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/progetti/bagno-italian-summer",
+        "user_canonical": "https://mparchistudio.com/progetti/bagno-italian-summer",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/proyectos/cucina-mite",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/projects/cucina-mite",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/progetti/cucina-mite",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T13:50:18Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti/bagno-italian-summer",
+          "https://mparchistudio.com/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/progetti/cucina-mite",
+        "user_canonical": "https://mparchistudio.com/progetti/cucina-mite",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/proyectos/bagno-casa-archi-colori",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-10T09:25:42Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti/bagno-casa-archi-colori",
+          "https://mparchistudio.com/proyectos/bagno-casa-archi-colori"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/proyectos/bagno-casa-archi-colori",
+        "user_canonical": "https://mparchistudio.com/es/proyectos/bagno-casa-archi-colori",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/projects/bagno-casa-archi-colori",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/progetti/bagno-casa-archi-colori",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-10T02:21:24Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/progetti/cucina-mite"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/progetti/bagno-casa-archi-colori",
+        "user_canonical": "https://mparchistudio.com/progetti/bagno-casa-archi-colori",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/proyectos/cucina-parigina",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/projects/cucina-parigina",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-10T11:00:29Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/en/projects"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/en/projects/cucina-parigina",
+        "user_canonical": "https://mparchistudio.com/en/projects/cucina-parigina",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/progetti/cucina-parigina",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/news/collezione-tappeti-sevilla",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-08-29T16:43:53Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news/collezione-tappeti-sevilla"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/news/collezione-tappeti-sevilla",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/news/collezione-tappeti-sevilla",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Discovered - currently not indexed",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": "CRAWLING_USER_AGENT_UNSPECIFIED",
+        "referring_urls": [
+          "https://mparchistudio.com/news/collezione-tappeti-sevilla"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/news/collezione-tappeti-sevilla",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-08-29T14:19:04Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/news/collezione-tappeti-sevilla",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/news/intervista-archiboost-luglio-2026",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-18T11:17:17Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news/intervista-archiboost-luglio-2026"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/news/intervista-archiboost-luglio-2026",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/news/intervista-archiboost-luglio-2026",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-09-29T15:51:52Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news/intervista-archiboost-luglio-2026"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/en/news/intervista-archiboost-luglio-2026",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/news/intervista-archiboost-luglio-2026",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-09-20T02:32:32Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/news/intervista-archiboost-luglio-2026",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/news/home-n36-aprile-2026",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-19T02:18:58Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/es/news/intervista-archiboost-luglio-2026"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/news/home-n36-aprile-2026",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/news/home-n36-aprile-2026",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-18T18:23:09Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/en/news/intervista-archiboost-luglio-2026"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/en/news/home-n36-aprile-2026",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/news/home-n36-aprile-2026",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-17T15:41:07Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/news/home-n36-aprile-2026",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/news/archiadvice-lancio",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-18T08:44:26Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/es/news/cose-di-casa-ottobre-2022"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/news/archiadvice-lancio",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/news/archiadvice-lancio",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/news/archiadvice-lancio",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-17T21:52:37Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/news/archiadvice-lancio",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/news/cose-di-casa-ottobre-2022",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-18T04:19:56Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news/cose-di-casa-ottobre-2022"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/news/cose-di-casa-ottobre-2022",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/news/cose-di-casa-ottobre-2022",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-09-11T16:08:03Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news/cose-di-casa-ottobre-2022"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/en/news/cose-di-casa-ottobre-2022",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/news/cose-di-casa-ottobre-2022",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-09-23T12:33:25Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/news/cose-di-casa-ottobre-2022",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/es/news/il-colore-nell-architettura",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-18T08:46:59Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/es/news/cose-di-casa-ottobre-2022"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/es/news/il-colore-nell-architettura",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/news/il-colore-nell-architettura",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-18T13:49:20Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news/il-colore-nell-architettura"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/en/news/il-colore-nell-architettura",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/news/il-colore-nell-architettura",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-17T15:43:06Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/news/il-colore-nell-architettura",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/proyectos",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T07:52:14Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/proyectos/cucina-MITE"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/proyectos",
+        "user_canonical": "https://mparchistudio.com/proyectos",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/servicios",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T07:44:02Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/news"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/servicios",
+        "user_canonical": "https://mparchistudio.com/servicios",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/sobre-mi",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T07:52:14Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/proyectos/cucina-MITE",
+          "https://mparchistudio.com/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/sobre-mi",
+        "user_canonical": "https://mparchistudio.com/sobre-mi",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/contacto",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-10-08T07:54:23Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "http://www.mparchistudio.com/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/contacto",
+        "user_canonical": "https://mparchistudio.com/contacto",
+        "match": true
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/proyectos",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-18T23:43:04Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/en/sobre-mi",
+          "https://mparchistudio.com/en/news/archiadvice-lancio"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/en/proyectos",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/servicios",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Crawled - currently not indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-09-12T17:23:46Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/servicios",
+          "https://mparchistudio.com/en/news/archiadvice-lancio"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/sobre-mi",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-09-10T17:04:35Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/en/news/archiadvice-lancio"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/en/sobre-mi",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/en/contacto",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-09-23T01:28:38Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/en/news"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/en/contacto",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/proyectos/cucina-MITE",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-09-15T02:37:10Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/en/proyectos/bagno-italian-summer",
+          "https://mparchistudio.com/es/proyectos"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/proyectos/cucina-MITE",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://mparchistudio.com/proyectos/appartamento-lovingcolors",
+      "property": "sc-domain:mparchistudio.com",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-09-11T15:55:03Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://mparchistudio.com/es/proyectos",
+          "https://mparchistudio.com/en/proyectos"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://mparchistudio.com/proyectos/appartamento-lovingcolors",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "deprecated": true,
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    }
+  ],
+  "summary": {
+    "pass": 48,
+    "fail": 0,
+    "neutral": 20,
+    "error": 5
+  },
+  "error": null
+}

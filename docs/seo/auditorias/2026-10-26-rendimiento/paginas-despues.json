@@ -1,0 +1,371 @@
+{
+  "property": "sc-domain:mparchistudio.com",
+  "rows": [
+    {
+      "keys": [
+        "https://mparchistudio.com/"
+      ],
+      "clicks": 6,
+      "impressions": 40,
+      "ctr": 15.0,
+      "position": 4.2,
+      "page": "https://mparchistudio.com/"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en"
+      ],
+      "clicks": 4,
+      "impressions": 12,
+      "ctr": 33.33,
+      "position": 3.5,
+      "page": "https://mparchistudio.com/en"
+    },
+    {
+      "keys": [
+        "http://www.mparchistudio.com/"
+      ],
+      "clicks": 1,
+      "impressions": 8,
+      "ctr": 12.5,
+      "position": 3.2,
+      "page": "http://www.mparchistudio.com/"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/contatti"
+      ],
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 33.33,
+      "position": 6,
+      "page": "https://mparchistudio.com/contatti"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/projects/bagno-casa-peonia"
+      ],
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 50.0,
+      "position": 9.5,
+      "page": "https://mparchistudio.com/en/projects/bagno-casa-peonia"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/sobre-mi"
+      ],
+      "clicks": 1,
+      "impressions": 2,
+      "ctr": 50.0,
+      "position": 2.5,
+      "page": "https://mparchistudio.com/en/sobre-mi"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/sobre-mi"
+      ],
+      "clicks": 1,
+      "impressions": 22,
+      "ctr": 4.55,
+      "position": 8.9,
+      "page": "https://mparchistudio.com/sobre-mi"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/tappeti"
+      ],
+      "clicks": 1,
+      "impressions": 24,
+      "ctr": 4.17,
+      "position": 7.5,
+      "page": "https://mparchistudio.com/tappeti"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/chi-sono"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 6.7,
+      "page": "https://mparchistudio.com/chi-sono"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/contacto"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 6.2,
+      "page": "https://mparchistudio.com/contacto"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/about"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 6.8,
+      "page": "https://mparchistudio.com/en/about"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/contact"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "page": "https://mparchistudio.com/en/contact"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/news"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 13.3,
+      "page": "https://mparchistudio.com/en/news"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/news/archiadvice-lancio"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6,
+      "page": "https://mparchistudio.com/en/news/archiadvice-lancio"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/news/collezione-tappeti-sevilla"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92,
+      "page": "https://mparchistudio.com/en/news/collezione-tappeti-sevilla"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/projects"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 42.3,
+      "page": "https://mparchistudio.com/en/projects"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/projects/bagno-italian-summer"
+      ],
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 5,
+      "page": "https://mparchistudio.com/en/projects/bagno-italian-summer"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/projects/casa-archi-colori"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8.5,
+      "page": "https://mparchistudio.com/en/projects/casa-archi-colori"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/projects/cucina-mite"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "page": "https://mparchistudio.com/en/projects/cucina-mite"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/projects/cucina-parigina"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 8.5,
+      "page": "https://mparchistudio.com/en/projects/cucina-parigina"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/en/tappeti"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 32,
+      "page": "https://mparchistudio.com/en/tappeti"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/es/contacto"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3.5,
+      "page": "https://mparchistudio.com/es/contacto"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/es/news"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 10,
+      "page": "https://mparchistudio.com/es/news"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/es/proyectos/casa-archi-colori"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
+      "page": "https://mparchistudio.com/es/proyectos/casa-archi-colori"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/es/proyectos/restyling-casa-peonia"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 8.7,
+      "page": "https://mparchistudio.com/es/proyectos/restyling-casa-peonia"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/es/tappeti"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 6,
+      "page": "https://mparchistudio.com/es/tappeti"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/news"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5,
+      "page": "https://mparchistudio.com/news"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/news/il-colore-nell-architettura"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "page": "https://mparchistudio.com/news/il-colore-nell-architettura"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/progetti/bagno-casa-archi-colori"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7,
+      "page": "https://mparchistudio.com/progetti/bagno-casa-archi-colori"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/progetti/bagno-italian-summer"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 1.8,
+      "page": "https://mparchistudio.com/progetti/bagno-italian-summer"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/progetti/casa-archi-colori"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "page": "https://mparchistudio.com/progetti/casa-archi-colori"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/progetti/cucina-mite"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
+      "page": "https://mparchistudio.com/progetti/cucina-mite"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/progetti/cucina-parigina"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9.5,
+      "page": "https://mparchistudio.com/progetti/cucina-parigina"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/proyectos"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3.5,
+      "page": "https://mparchistudio.com/proyectos"
+    },
+    {
+      "keys": [
+        "https://mparchistudio.com/servicios"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4.2,
+      "page": "https://mparchistudio.com/servicios"
+    }
+  ],
+  "totals": {
+    "clicks": 15,
+    "impressions": 125,
+    "ctr": 12.0,
+    "position": 8.2
+  },
+  "totals_source": "dimensionless_aggregate",
+  "totals_complete": true,
+  "quick_wins": [],
+  "warnings": [],
+  "row_count": 35,
+  "error": null,
+  "date_range": {
+    "start": "2026-10-12",
+    "end": "2026-10-25"
+  }
+}

@@ -1,0 +1,1394 @@
+{
+  "url": "https://mparchistudio.com/",
+  "psi": {
+    "mobile": {
+      "url": "https://mparchistudio.com/",
+      "strategy": "mobile",
+      "lighthouse_version": "13.5.0",
+      "lighthouse_scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lab_metrics": {
+        "first-contentful-paint": {
+          "value": 925,
+          "display": "0.9\u00a0s",
+          "score": 1
+        },
+        "largest-contentful-paint": {
+          "value": 2565,
+          "display": "2.6\u00a0s",
+          "score": 0.88
+        },
+        "total-blocking-time": {
+          "value": 10,
+          "display": "10\u00a0ms",
+          "score": 1
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "display": "0",
+          "score": 1
+        },
+        "speed-index": {
+          "value": 2091.1823676700596,
+          "display": "2.1\u00a0s",
+          "score": 0.99
+        },
+        "interactive": {
+          "value": 2565,
+          "display": "2.6\u00a0s",
+          "score": 0.98
+        }
+      },
+      "field_metrics": {},
+      "opportunities": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "savings_ms": 300,
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/)."
+        }
+      ],
+      "diagnostics": [
+        {
+          "id": "total-byte-weight",
+          "title": "Avoids enormous network payloads",
+          "display": "Total size was 543\u00a0KiB",
+          "score": 1,
+          "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn how to reduce payload sizes](https://developer.chrome.com/docs/lighthouse/performance/total-byte-weight/)."
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimizes main-thread work",
+          "display": "0.5\u00a0s",
+          "score": 1,
+          "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)"
+        },
+        {
+          "id": "bootup-time",
+          "title": "JavaScript execution time",
+          "display": "0.2\u00a0s",
+          "score": 1,
+          "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to reduce Javascript execution time](https://developer.chrome.com/docs/lighthouse/performance/bootup-time/)."
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "display": "",
+          "score": null,
+          "description": "These are the largest layout shifts observed on the page. Each table item represents a single layout shift, and shows the element that shifted the most. Below each item are possible root causes that led to the layout shift. Some of these layout shifts may not be included in the CLS metric value due to [windowing](https://web.dev/articles/cls#what_is_cls). [Learn how to improve CLS](https://web.dev/articles/optimize-cls)"
+        },
+        {
+          "id": "long-tasks",
+          "title": "Avoid long main-thread tasks",
+          "display": "1 long task found",
+          "score": 1,
+          "description": "Lists the longest tasks on the main thread, useful for identifying worst contributors to input delay. [Learn how to avoid long main-thread tasks](https://web.dev/articles/optimize-long-tasks)"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "display": "Est savings of 62\u00a0KiB",
+          "score": 0,
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/)."
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "display": "",
+          "score": 1,
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)."
+        }
+      ],
+      "failed_audits": [
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "display": "Est savings of 130\u00a0ms",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path."
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": "",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/performance/insights/network-dependency-tree) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load."
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 16\u00a0KiB",
+          "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/performance/insights/image-delivery)"
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0.5,
+          "display": "Est savings of 14\u00a0KiB",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://developer.chrome.com/docs/performance/insights/legacy-javascript)"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.88,
+          "display": "2.6\u00a0s",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)"
+        }
+      ],
+      "passed_audits_count": 89,
+      "seo_audits": [
+        {
+          "id": "is-crawlable",
+          "title": "Page isn\u2019t blocked from indexing",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "document-title",
+          "title": "Document has a `<title>` element",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "meta-description",
+          "title": "Document has a meta description",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "http-status-code",
+          "title": "Page has successful HTTP status code",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "link-text",
+          "title": "Links have descriptive text",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "crawlable-anchors",
+          "title": "Links are crawlable",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "robots-txt",
+          "title": "robots.txt is valid",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements have `[alt]` attributes",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "hreflang",
+          "title": "Document has a valid `hreflang`",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "canonical",
+          "title": "Document has a valid `rel=canonical`",
+          "score": 1,
+          "pass": true
+        }
+      ],
+      "accessibility_audits": [],
+      "audit_details": {
+        "total-byte-weight": {
+          "title": "Avoids enormous network payloads",
+          "headings": [
+            "url",
+            "totalBytes"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js",
+              "totalBytes": 72426
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/2e9f8f28e992eed5.js",
+              "totalBytes": 58898
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+              "totalBytes": 49511
+            },
+            {
+              "url": "https://mparchistudio.com/_next/image?url=%2Fimages%2Fprojects%2Frestyling-casa-peonia-03.jpg&w=750&q=75",
+              "totalBytes": 40007
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/media/2a65768255d6b625-s.p.d19752fb.woff2",
+              "totalBytes": 39539
+            }
+          ],
+          "total_items": 10
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "headings": [
+            "url",
+            "totalBytes",
+            "wastedMs"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/705695336cfc7b2a.css",
+              "totalBytes": 10939,
+              "wastedMs": 151
+            }
+          ],
+          "total_items": 1
+        },
+        "network-requests": {
+          "title": "Network Requests",
+          "headings": [
+            "url",
+            "protocol",
+            "networkRequestTime",
+            "networkEndTime",
+            "transferSize",
+            "resourceSize",
+            "statusCode",
+            "mimeType",
+            "resourceType"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/",
+              "protocol": "h2",
+              "networkRequestTime": 1.0159997940063477,
+              "networkEndTime": 1020.9509992599487,
+              "transferSize": 22137,
+              "resourceSize": 104515,
+              "statusCode": 200,
+              "mimeType": "text/html",
+              "resourceType": "Document"
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/media/2a65768255d6b625-s.p.d19752fb.woff2",
+              "protocol": "h2",
+              "networkRequestTime": 1038.0719995498657,
+              "networkEndTime": 1123.6129999160767,
+              "transferSize": 39539,
+              "resourceSize": 38460,
+              "statusCode": 200,
+              "mimeType": "font/woff2",
+              "resourceType": "Font"
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+              "protocol": "h2",
+              "networkRequestTime": 1038.1510000228882,
+              "networkEndTime": 1107.6110000610352,
+              "transferSize": 49511,
+              "resourceSize": 48432,
+              "statusCode": 200,
+              "mimeType": "font/woff2",
+              "resourceType": "Font"
+            },
+            {
+              "url": "https://mparchistudio.com/_next/image?url=%2Fimages%2Fabout%2Fmparchistudio-logo.png&w=750&q=75",
+              "protocol": "h2",
+              "networkRequestTime": 1039.6879997253418,
+              "networkEndTime": 1246.3489999771118,
+              "transferSize": 4928,
+              "resourceSize": 4148,
+              "statusCode": 200,
+              "mimeType": "image/webp",
+              "resourceType": "Image"
+            },
+            {
+              "url": "https://mparchistudio.com/_next/image?url=%2Fimages%2Fabout%2Fmartina-pozzi.jpg&w=384&q=75",
+              "protocol": "h2",
+              "networkRequestTime": 1038.2440004348755,
+              "networkEndTime": 1216.3730001449585,
+              "transferSize": 20171,
+              "resourceSize": 19402,
+              "statusCode": 200,
+              "mimeType": "image/webp",
+              "resourceType": "Image"
+            }
+          ],
+          "total_items": 45
+        },
+        "csp-xss": {
+          "title": "Ensure CSP is effective against XSS attacks",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "`'unsafe-inline'` allows the execution of unsafe in-page scripts and event handlers. Consider using CSP nonces or hashes to allow scripts individually.",
+              "directive": "script-src",
+              "severity": "High"
+            }
+          ],
+          "total_items": 1
+        },
+        "server-response-time": {
+          "title": "Initial server response time was short",
+          "headings": [
+            "url",
+            "responseTime"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/",
+              "responseTime": 4
+            }
+          ],
+          "total_items": 1
+        },
+        "bootup-time": {
+          "title": "JavaScript execution time",
+          "headings": [
+            "url",
+            "total",
+            "scripting",
+            "scriptParseCompile"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js",
+              "total": 168.29280000000014,
+              "scripting": 145.94040000000015,
+              "scriptParseCompile": 17.659200000000002
+            },
+            {
+              "url": "https://mparchistudio.com/",
+              "total": 70.83359999999999,
+              "scripting": 2.2404000000000006,
+              "scriptParseCompile": 4.004399999999999
+            },
+            {
+              "url": "Unattributable",
+              "total": 69.98520000000013,
+              "scripting": 6.565199999999998,
+              "scriptParseCompile": 0
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/8bd89af71376d71d.js",
+              "total": 59.47920000000003,
+              "scripting": 57.28080000000003,
+              "scriptParseCompile": 2.0627999999999997
+            }
+          ],
+          "total_items": 4
+        },
+        "main-thread-tasks": {
+          "title": "Tasks",
+          "headings": [
+            "startTime",
+            "duration"
+          ],
+          "items": [
+            {
+              "startTime": 1025.333,
+              "duration": 15.244
+            },
+            {
+              "startTime": 1041.295,
+              "duration": 7.263
+            },
+            {
+              "startTime": 1086.218,
+              "duration": 9.499
+            },
+            {
+              "startTime": 1110.188,
+              "duration": 11.583
+            },
+            {
+              "startTime": 1127.3,
+              "duration": 14.939
+            }
+          ],
+          "total_items": 21
+        },
+        "has-hsts": {
+          "title": "Use a strong HSTS policy",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "No `includeSubDomains` directive found",
+              "directive": "includeSubDomains",
+              "severity": "Medium"
+            },
+            {
+              "description": "No `preload` directive found",
+              "directive": "preload",
+              "severity": "Medium"
+            }
+          ],
+          "total_items": 2
+        },
+        "long-tasks": {
+          "title": "Avoid long main-thread tasks",
+          "headings": [
+            "url",
+            "startTime",
+            "duration"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/8bd89af71376d71d.js",
+              "startTime": 2419,
+              "duration": 60
+            }
+          ],
+          "total_items": 1
+        },
+        "resource-summary": {
+          "title": "Resources Summary",
+          "headings": [
+            "label",
+            "requestCount",
+            "transferSize"
+          ],
+          "items": [
+            {
+              "label": "Total",
+              "requestCount": 45,
+              "transferSize": 556075
+            },
+            {
+              "label": "Script",
+              "requestCount": 18,
+              "transferSize": 275429
+            },
+            {
+              "label": "Image",
+              "requestCount": 5,
+              "transferSize": 105047
+            },
+            {
+              "label": "Font",
+              "requestCount": 2,
+              "transferSize": 89050
+            },
+            {
+              "label": "Other",
+              "requestCount": 18,
+              "transferSize": 53473
+            }
+          ],
+          "total_items": 9
+        },
+        "mainthread-work-breakdown": {
+          "title": "Minimizes main-thread work",
+          "headings": [
+            "groupLabel",
+            "duration"
+          ],
+          "items": [
+            {
+              "groupLabel": "Script Evaluation",
+              "duration": 267.0024000000013
+            },
+            {
+              "groupLabel": "Other",
+              "duration": 84.60600000000015
+            },
+            {
+              "groupLabel": "Script Parsing & Compilation",
+              "duration": 71.86440000000002
+            },
+            {
+              "groupLabel": "Style & Layout",
+              "duration": 37.1052
+            },
+            {
+              "groupLabel": "Rendering",
+              "duration": 11.314799999999996
+            }
+          ],
+          "total_items": 6
+        },
+        "network-rtt": {
+          "title": "Network Round Trip Times",
+          "headings": [
+            "origin",
+            "rtt"
+          ],
+          "items": [
+            {
+              "origin": "https://mparchistudio.com",
+              "rtt": 0.0023927866568136448
+            }
+          ],
+          "total_items": 1
+        },
+        "image-delivery-insight": {
+          "title": "Improve image delivery",
+          "headings": [
+            "node",
+            "url",
+            "totalBytes",
+            "wastedBytes"
+          ],
+          "items": [
+            {
+              "node": "{'boundingRect': {'height': 494, 'width': 329, 'right': 371, 'top': 871, 'bottom': 1365, 'left': 41}, 'selector': 'div > section.relative > div.overflow-hidden > img', 'type': 'node', 'path': '2,HTML,",
+              "url": "https://mparchistudio.com/_next/image?url=%2Fimages%2Fprojects%2Frestyling-casa-peonia-03.jpg&w=750&q=75",
+              "totalBytes": 39212,
+              "wastedBytes": 16077
+            }
+          ],
+          "total_items": 1
+        },
+        "trusted-types-xss": {
+          "title": "Mitigate DOM-based XSS with Trusted Types",
+          "headings": [
+            "description",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "No `Content-Security-Policy` header with Trusted Types directive found",
+              "severity": "High"
+            }
+          ],
+          "total_items": 1
+        },
+        "network-server-latency": {
+          "title": "Server Backend Latencies",
+          "headings": [
+            "origin",
+            "serverResponseTime"
+          ],
+          "items": [
+            {
+              "origin": "https://mparchistudio.com",
+              "serverResponseTime": 1
+            }
+          ],
+          "total_items": 1
+        },
+        "baseline": {
+          "title": "Baseline Features",
+          "headings": [
+            "featureId",
+            "displayStatus",
+            "source"
+          ],
+          "items": [
+            {
+              "featureId": "https://webstatus.dev/features/font-metric-overrides",
+              "displayStatus": "{'type': 'baseline-status', 'displayString': 'Limited Availability', 'status': 'limited'}",
+              "source": "https://mparchistudio.com/"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/referencetarget",
+              "displayStatus": "{'type': 'baseline-status', 'status': 'limited', 'displayString': 'Limited Availability'}",
+              "source": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/layout-instability",
+              "displayStatus": "{'status': 'limited', 'type': 'baseline-status', 'displayString': 'Limited Availability'}",
+              "source": "https://mparchistudio.com/c0ff2cb3790a0026/script.js"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/scrollend",
+              "displayStatus": "{'type': 'baseline-status', 'displayString': 'Newly Available (2025-12-12)', 'status': 'low'}",
+              "source": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/fetch-priority",
+              "displayStatus": "{'displayString': 'Newly Available (2024-10-29)', 'status': 'low', 'type': 'baseline-status'}",
+              "source": "https://mparchistudio.com/"
+            }
+          ],
+          "total_items": 37
+        },
+        "dom-size-insight": {
+          "title": "Optimize DOM size",
+          "headings": [
+            "statistic",
+            "node",
+            "value"
+          ],
+          "items": [
+            {
+              "statistic": "Total elements",
+              "value": "{'value': 334, 'granularity': 1, 'type': 'numeric'}"
+            },
+            {
+              "statistic": "DOM depth",
+              "node": "{'selector': 'ul.min-w-[240px] > li > a.flex > span.flex', 'lhId': 'page-4-SPAN', 'snippet': '<span class=\"flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-pri\u2026\">', 'path': '2,HT",
+              "value": "{'value': 13, 'granularity': 1, 'type': 'numeric'}"
+            },
+            {
+              "statistic": "Most children",
+              "node": "{'boundingRect': {'width': 412, 'right': 412, 'left': 0, 'height': 6265, 'bottom': 6265, 'top': 0}, 'selector': 'body.inter_7b064e0d-module__MOT0tq__variable', 'lhId': 'page-3-BODY', 'path': '2,HTML,1",
+              "value": "{'granularity': 1, 'type': 'numeric', 'value': 30}"
+            }
+          ],
+          "total_items": 3
+        },
+        "legacy-javascript-insight": {
+          "title": "Legacy JavaScript",
+          "headings": [
+            "url",
+            "wastedBytes"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js",
+              "wastedBytes": 14124
+            }
+          ],
+          "total_items": 1
+        },
+        "unused-javascript": {
+          "title": "Reduce unused JavaScript",
+          "headings": [
+            "url",
+            "totalBytes",
+            "wastedBytes"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/2e9f8f28e992eed5.js",
+              "totalBytes": 57766,
+              "wastedBytes": 38918
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js",
+              "totalBytes": 71296,
+              "wastedBytes": 24104
+            }
+          ],
+          "total_items": 2
+        },
+        "viewport-insight": {
+          "title": "Optimize viewport for mobile",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'type': 'node', 'path': '2,HTML,0,HEAD,1,META', 'selector': 'head > meta', 'lhId': 'page-2-META', 'snippet': '<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">', 'nodeLabel': 'head"
+            }
+          ],
+          "total_items": 1
+        },
+        "origin-isolation": {
+          "title": "Ensure proper origin isolation with COOP",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "No COOP header found",
+              "severity": "High"
+            }
+          ],
+          "total_items": 1
+        }
+      },
+      "analysis_timestamp": "2026-10-20T08:08:22.318Z",
+      "error": null
+    },
+    "desktop": {
+      "url": "https://mparchistudio.com/",
+      "strategy": "desktop",
+      "lighthouse_version": "13.5.0",
+      "lighthouse_scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lab_metrics": {
+        "first-contentful-paint": {
+          "value": 268,
+          "display": "0.3\u00a0s",
+          "score": 1
+        },
+        "largest-contentful-paint": {
+          "value": 611,
+          "display": "0.6\u00a0s",
+          "score": 0.99
+        },
+        "total-blocking-time": {
+          "value": 0,
+          "display": "0\u00a0ms",
+          "score": 1
+        },
+        "cumulative-layout-shift": {
+          "value": 0.06111046585027143,
+          "display": "0.061",
+          "score": 0.97
+        },
+        "speed-index": {
+          "value": 283.1610844268004,
+          "display": "0.3\u00a0s",
+          "score": 1
+        },
+        "interactive": {
+          "value": 611,
+          "display": "0.6\u00a0s",
+          "score": 1
+        }
+      },
+      "field_metrics": {},
+      "opportunities": [
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "savings_ms": 90,
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/)."
+        }
+      ],
+      "diagnostics": [
+        {
+          "id": "total-byte-weight",
+          "title": "Avoids enormous network payloads",
+          "display": "Total size was 553\u00a0KiB",
+          "score": 1,
+          "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn how to reduce payload sizes](https://developer.chrome.com/docs/lighthouse/performance/total-byte-weight/)."
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimizes main-thread work",
+          "display": "0.4\u00a0s",
+          "score": 1,
+          "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)"
+        },
+        {
+          "id": "bootup-time",
+          "title": "JavaScript execution time",
+          "display": "0.2\u00a0s",
+          "score": 1,
+          "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to reduce Javascript execution time](https://developer.chrome.com/docs/lighthouse/performance/bootup-time/)."
+        },
+        {
+          "id": "layout-shifts",
+          "title": "Avoid large layout shifts",
+          "display": "1 layout shift found",
+          "score": 1,
+          "description": "These are the largest layout shifts observed on the page. Each table item represents a single layout shift, and shows the element that shifted the most. Below each item are possible root causes that led to the layout shift. Some of these layout shifts may not be included in the CLS metric value due to [windowing](https://web.dev/articles/cls#what_is_cls). [Learn how to improve CLS](https://web.dev/articles/optimize-cls)"
+        },
+        {
+          "id": "long-tasks",
+          "title": "Avoid long main-thread tasks",
+          "display": "",
+          "score": null,
+          "description": "Lists the longest tasks on the main thread, useful for identifying worst contributors to input delay. [Learn how to avoid long main-thread tasks](https://web.dev/articles/optimize-long-tasks)"
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "display": "Est savings of 66\u00a0KiB",
+          "score": 0,
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/)."
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "display": "",
+          "score": 1,
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/)."
+        }
+      ],
+      "failed_audits": [
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": "",
+          "description": "[Avoid chaining critical requests](https://developer.chrome.com/docs/performance/insights/network-dependency-tree) by reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load."
+        },
+        {
+          "id": "legacy-javascript-insight",
+          "title": "Legacy JavaScript",
+          "score": 0,
+          "display": "Est savings of 14\u00a0KiB",
+          "description": "Polyfills and transforms enable older browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile [Baseline](https://web.dev/articles/baseline-and-polyfills) features, unless you know you must support older browsers. [Learn why most sites can deploy ES6+ code without transpiling](https://developer.chrome.com/docs/performance/insights/legacy-javascript)"
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0.5,
+          "display": "",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path."
+        }
+      ],
+      "passed_audits_count": 91,
+      "seo_audits": [
+        {
+          "id": "is-crawlable",
+          "title": "Page isn\u2019t blocked from indexing",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "document-title",
+          "title": "Document has a `<title>` element",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "meta-description",
+          "title": "Document has a meta description",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "http-status-code",
+          "title": "Page has successful HTTP status code",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "link-text",
+          "title": "Links have descriptive text",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "crawlable-anchors",
+          "title": "Links are crawlable",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "robots-txt",
+          "title": "robots.txt is valid",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "image-alt",
+          "title": "Image elements have `[alt]` attributes",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "hreflang",
+          "title": "Document has a valid `hreflang`",
+          "score": 1,
+          "pass": true
+        },
+        {
+          "id": "canonical",
+          "title": "Document has a valid `rel=canonical`",
+          "score": 1,
+          "pass": true
+        }
+      ],
+      "accessibility_audits": [],
+      "audit_details": {
+        "trusted-types-xss": {
+          "title": "Mitigate DOM-based XSS with Trusted Types",
+          "headings": [
+            "description",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "No `Content-Security-Policy` header with Trusted Types directive found",
+              "severity": "High"
+            }
+          ],
+          "total_items": 1
+        },
+        "server-response-time": {
+          "title": "Initial server response time was short",
+          "headings": [
+            "url",
+            "responseTime"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/",
+              "responseTime": 4
+            }
+          ],
+          "total_items": 1
+        },
+        "bootup-time": {
+          "title": "JavaScript execution time",
+          "headings": [
+            "url",
+            "total",
+            "scripting",
+            "scriptParseCompile"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js",
+              "total": 131.6099999999999,
+              "scripting": 114.8959999999999,
+              "scriptParseCompile": 13.254999999999999
+            },
+            {
+              "url": "Unattributable",
+              "total": 72.83900000000015,
+              "scripting": 9.521999999999995,
+              "scriptParseCompile": 0
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/ed432eccdaca5a7e.js",
+              "total": 60.66400000000001,
+              "scripting": 46.74600000000001,
+              "scriptParseCompile": 4.889
+            },
+            {
+              "url": "https://mparchistudio.com/",
+              "total": 59.18399999999999,
+              "scripting": 2.2939999999999974,
+              "scriptParseCompile": 4.584999999999995
+            }
+          ],
+          "total_items": 4
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "headings": [
+            "url",
+            "totalBytes",
+            "wastedMs"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/705695336cfc7b2a.css",
+              "totalBytes": 10939
+            }
+          ],
+          "total_items": 1
+        },
+        "network-server-latency": {
+          "title": "Server Backend Latencies",
+          "headings": [
+            "origin",
+            "serverResponseTime"
+          ],
+          "items": [
+            {
+              "origin": "https://mparchistudio.com",
+              "serverResponseTime": 1
+            }
+          ],
+          "total_items": 1
+        },
+        "main-thread-tasks": {
+          "title": "Tasks",
+          "headings": [
+            "startTime",
+            "duration"
+          ],
+          "items": [
+            {
+              "startTime": 73.101,
+              "duration": 11.729
+            },
+            {
+              "startTime": 85.291,
+              "duration": 6.715
+            },
+            {
+              "startTime": 116.231,
+              "duration": 40.642
+            },
+            {
+              "startTime": 173.706,
+              "duration": 7.039
+            },
+            {
+              "startTime": 180.812,
+              "duration": 6.533
+            }
+          ],
+          "total_items": 24
+        },
+        "unused-javascript": {
+          "title": "Reduce unused JavaScript",
+          "headings": [
+            "url",
+            "totalBytes",
+            "wastedBytes"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/2e9f8f28e992eed5.js",
+              "totalBytes": 57778,
+              "wastedBytes": 39070
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js",
+              "totalBytes": 71308,
+              "wastedBytes": 28158
+            }
+          ],
+          "total_items": 2
+        },
+        "csp-xss": {
+          "title": "Ensure CSP is effective against XSS attacks",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "`'unsafe-inline'` allows the execution of unsafe in-page scripts and event handlers. Consider using CSP nonces or hashes to allow scripts individually.",
+              "directive": "script-src",
+              "severity": "High"
+            }
+          ],
+          "total_items": 1
+        },
+        "baseline": {
+          "title": "Baseline Features",
+          "headings": [
+            "featureId",
+            "displayStatus",
+            "source"
+          ],
+          "items": [
+            {
+              "featureId": "https://webstatus.dev/features/font-metric-overrides",
+              "displayStatus": "{'displayString': 'Limited Availability', 'type': 'baseline-status', 'status': 'limited'}",
+              "source": "https://mparchistudio.com/"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/referencetarget",
+              "displayStatus": "{'displayString': 'Limited Availability', 'status': 'limited', 'type': 'baseline-status'}",
+              "source": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/layout-instability",
+              "displayStatus": "{'status': 'limited', 'displayString': 'Limited Availability', 'type': 'baseline-status'}",
+              "source": "https://mparchistudio.com/c0ff2cb3790a0026/script.js"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/scrollend",
+              "displayStatus": "{'type': 'baseline-status', 'displayString': 'Newly Available (2025-12-12)', 'status': 'low'}",
+              "source": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js"
+            },
+            {
+              "featureId": "https://webstatus.dev/features/fetch-priority",
+              "displayStatus": "{'type': 'baseline-status', 'displayString': 'Newly Available (2024-10-29)', 'status': 'low'}",
+              "source": "https://mparchistudio.com/"
+            }
+          ],
+          "total_items": 37
+        },
+        "network-requests": {
+          "title": "Network Requests",
+          "headings": [
+            "url",
+            "protocol",
+            "networkRequestTime",
+            "networkEndTime",
+            "transferSize",
+            "resourceSize",
+            "statusCode",
+            "mimeType",
+            "resourceType"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/",
+              "protocol": "h2",
+              "networkRequestTime": 1.1080000400543213,
+              "networkEndTime": 69.06900012493134,
+              "transferSize": 22137,
+              "resourceSize": 104515,
+              "statusCode": 200,
+              "mimeType": "text/html",
+              "resourceType": "Document"
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/media/2a65768255d6b625-s.p.d19752fb.woff2",
+              "protocol": "h2",
+              "networkRequestTime": 78.84600007534027,
+              "networkEndTime": 105.58800005912781,
+              "transferSize": 39539,
+              "resourceSize": 38460,
+              "statusCode": 200,
+              "mimeType": "font/woff2",
+              "resourceType": "Font"
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+              "protocol": "h2",
+              "networkRequestTime": 78.94000005722046,
+              "networkEndTime": 106.96800005435944,
+              "transferSize": 49511,
+              "resourceSize": 48432,
+              "statusCode": 200,
+              "mimeType": "font/woff2",
+              "resourceType": "Font"
+            },
+            {
+              "url": "https://mparchistudio.com/_next/image?url=%2Fimages%2Fabout%2Fmparchistudio-logo.png&w=1920&q=75",
+              "protocol": "h2",
+              "networkRequestTime": 79.92500007152557,
+              "networkEndTime": 234.29000008106232,
+              "transferSize": 4929,
+              "resourceSize": 4148,
+              "statusCode": 200,
+              "mimeType": "image/webp",
+              "resourceType": "Image"
+            },
+            {
+              "url": "https://mparchistudio.com/_next/image?url=%2Fimages%2Fabout%2Fmartina-pozzi.jpg&w=256&q=75",
+              "protocol": "h2",
+              "networkRequestTime": 79.38700008392334,
+              "networkEndTime": 111.72200012207031,
+              "transferSize": 11167,
+              "resourceSize": 10398,
+              "statusCode": 200,
+              "mimeType": "image/webp",
+              "resourceType": "Image"
+            }
+          ],
+          "total_items": 59
+        },
+        "origin-isolation": {
+          "title": "Ensure proper origin isolation with COOP",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "No COOP header found",
+              "severity": "High"
+            }
+          ],
+          "total_items": 1
+        },
+        "mainthread-work-breakdown": {
+          "title": "Minimizes main-thread work",
+          "headings": [
+            "groupLabel",
+            "duration"
+          ],
+          "items": [
+            {
+              "groupLabel": "Script Evaluation",
+              "duration": 233.1730000000009
+            },
+            {
+              "groupLabel": "Other",
+              "duration": 81.65700000000004
+            },
+            {
+              "groupLabel": "Script Parsing & Compilation",
+              "duration": 53.04200000000001
+            },
+            {
+              "groupLabel": "Style & Layout",
+              "duration": 34.938
+            },
+            {
+              "groupLabel": "Parse HTML & CSS",
+              "duration": 8.893
+            }
+          ],
+          "total_items": 7
+        },
+        "layout-shifts": {
+          "title": "Avoid large layout shifts",
+          "headings": [
+            "node",
+            "score"
+          ],
+          "items": [
+            {
+              "node": "{'path': '2,HTML,1,BODY,3,MAIN,0,DIV,1,SECTION,0,DIV', 'snippet': '<div class=\"overflow-hidden rounded-2xl shadow-2xl\" style=\"opacity:1\">', 'type': 'node', 'selector': 'main#main-content > div > secti",
+              "score": 0.06111046585027143
+            }
+          ],
+          "total_items": 1
+        },
+        "total-byte-weight": {
+          "title": "Avoids enormous network payloads",
+          "headings": [
+            "url",
+            "totalBytes"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js",
+              "totalBytes": 72426
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/2e9f8f28e992eed5.js",
+              "totalBytes": 58898
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2",
+              "totalBytes": 49511
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/media/2a65768255d6b625-s.p.d19752fb.woff2",
+              "totalBytes": 39539
+            },
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/ed432eccdaca5a7e.js",
+              "totalBytes": 33801
+            }
+          ],
+          "total_items": 10
+        },
+        "resource-summary": {
+          "title": "Resources Summary",
+          "headings": [
+            "label",
+            "requestCount",
+            "transferSize"
+          ],
+          "items": [
+            {
+              "label": "Total",
+              "requestCount": 59,
+              "transferSize": 566086
+            },
+            {
+              "label": "Script",
+              "requestCount": 21,
+              "transferSize": 294332
+            },
+            {
+              "label": "Font",
+              "requestCount": 2,
+              "transferSize": 89050
+            },
+            {
+              "label": "Other",
+              "requestCount": 30,
+              "transferSize": 80902
+            },
+            {
+              "label": "Image",
+              "requestCount": 4,
+              "transferSize": 68726
+            }
+          ],
+          "total_items": 9
+        },
+        "legacy-javascript-insight": {
+          "title": "Legacy JavaScript",
+          "headings": [
+            "url",
+            "wastedBytes"
+          ],
+          "items": [
+            {
+              "url": "https://mparchistudio.com/_next/static/chunks/30ea11065999f7ac.js",
+              "wastedBytes": 14124
+            }
+          ],
+          "total_items": 1
+        },
+        "network-rtt": {
+          "title": "Network Round Trip Times",
+          "headings": [
+            "origin",
+            "rtt"
+          ],
+          "items": [
+            {
+              "origin": "https://mparchistudio.com",
+              "rtt": 0.002393082884134192
+            }
+          ],
+          "total_items": 1
+        },
+        "has-hsts": {
+          "title": "Use a strong HSTS policy",
+          "headings": [
+            "description",
+            "directive",
+            "severity"
+          ],
+          "items": [
+            {
+              "description": "No `includeSubDomains` directive found",
+              "directive": "includeSubDomains",
+              "severity": "Medium"
+            },
+            {
+              "description": "No `preload` directive found",
+              "directive": "preload",
+              "severity": "Medium"
+            }
+          ],
+          "total_items": 2
+        },
+        "dom-size-insight": {
+          "title": "Optimize DOM size",
+          "headings": [
+            "statistic",
+            "node",
+            "value"
+          ],
+          "items": [
+            {
+              "statistic": "Total elements",
+              "value": "{'type': 'numeric', 'value': 334, 'granularity': 1}"
+            },
+            {
+              "statistic": "DOM depth",
+              "node": "{'snippet': '<span class=\"flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-pri\u2026\">', 'lhId': 'page-4-SPAN', 'boundingRect': {'width': 20, 'bottom': 103, 'height': 20, 'top': 83, '",
+              "value": "{'type': 'numeric', 'value': 13, 'granularity': 1}"
+            },
+            {
+              "statistic": "Most children",
+              "node": "{'boundingRect': {'left': 0, 'height': 4588, 'top': 0, 'right': 1335, 'bottom': 4588, 'width': 1335}, 'nodeLabel': 'body.inter_7b064e0d-module__MOT0tq__variable', 'snippet': '<body class=\"inter_7b064e",
+              "value": "{'granularity': 1, 'value': 30, 'type': 'numeric'}"
+            }
+          ],
+          "total_items": 3
+        },
+        "viewport-insight": {
+          "title": "Optimize viewport for mobile",
+          "headings": [
+            "node"
+          ],
+          "items": [
+            {
+              "node": "{'type': 'node', 'boundingRect': {'bottom': 0, 'right': 0, 'top': 0, 'width': 0, 'left': 0, 'height': 0}, 'path': '2,HTML,0,HEAD,1,META', 'nodeLabel': 'head > meta', 'snippet': '<meta name=\"viewport\" "
+            }
+          ],
+          "total_items": 1
+        }
+      },
+      "analysis_timestamp": "2026-10-20T08:08:36.474Z",
+      "error": null
+    }
+  },
+  "crux": {
+    "target": "https://mparchistudio.com/",
+    "metrics": {},
+    "collection_period": null,
+    "form_factor": "ALL",
+    "error": "No CrUX data for this origin. The site likely has insufficient Chrome traffic volume for eligibility."
+  },
+  "error": null
+}

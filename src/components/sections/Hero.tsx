@@ -54,7 +54,7 @@ export default function Hero({
 
           {/* Subtitle */}
           <p className="mx-auto mt-5 max-w-3xl text-balance text-lg leading-relaxed text-foreground/70 sm:text-xl lg:text-2xl">
-            {tHero('subtitle')}
+            {tHero.rich('subtitle', { b: (chunks) => <strong className="font-medium text-foreground">{chunks}</strong> })}
           </p>
 
           {/* CTA Buttons */}

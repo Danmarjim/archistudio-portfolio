@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send, CheckCircle, Instagram, Linkedin } from 'lucide-react'
 import Container from '@/components/ui/Container'
@@ -90,11 +90,16 @@ const socialLinks = [
   { icon: HomifyIcon, href: 'https://www.homify.it/esperti/10014002/mp_archistudio-di-arch-martina-c-m-pozzi', label: 'Homify' },
 ]
 
+// Corrispondono ai servizi dello studio (+ catalogo tappeti e altro)
+const projectTypeKeys = ['archiadvice', 'home_purchase', 'restyling', 'renovation', 'carpet_catalog', 'other'] as const
+type ProjectTypeKey = (typeof projectTypeKeys)[number]
+
+function isProjectTypeKey(value: string | null): value is ProjectTypeKey {
+  return projectTypeKeys.includes(value as ProjectTypeKey)
+}
+
 export default function ContactoPage() {
   const t = useTranslations('ContactPage')
-
-  // Corrispondono ai servizi dello studio (+ catalogo tappeti e altro)
-  const projectTypeKeys = ['archiadvice', 'home_purchase', 'restyling', 'renovation', 'carpet_catalog', 'other'] as const
 
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -107,6 +112,13 @@ export default function ContactoPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [submitError, setSubmitError] = useState(false)
+
+  // Le pagine di servizio linkano qui con `?tipo=<chiave>` per preselezionare il tipo di progetto.
+  // Si legge dopo il mount: la pagina è statica e non deve dipendere dai search params al build.
+  useEffect(() => {
+    const tipo = new URLSearchParams(window.location.search).get('tipo')
+    if (isProjectTypeKey(tipo)) setFormData((prev) => ({ ...prev, projectType: tipo }))
+  }, [])
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {}
@@ -142,7 +154,7 @@ export default function ContactoPage() {
         // Nell'email arriva l'etichetta leggibile, non la chiave interna
         body: JSON.stringify({
           ...formData,
-          projectType: t(`form.projectTypes.${formData.projectType as (typeof projectTypeKeys)[number]}`),
+          projectType: t(`form.projectTypes.${formData.projectType as ProjectTypeKey}`),
         }),
       })
 

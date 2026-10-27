@@ -9,6 +9,7 @@ import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import NewsGallery from '@/components/sections/NewsGallery'
 import { getTranslations } from 'next-intl/server'
 import JsonLd from '@/components/seo/JsonLd'
+import Markdown from '@/components/shared/Markdown'
 import { absoluteUrl, buildBreadcrumb, buildMetadata, businessSummary, localizedUrl, personSummary } from '@/lib/seo'
 
 interface NewsDetailPageProps {
@@ -30,19 +31,12 @@ export async function generateMetadata({ params }: NewsDetailPageProps): Promise
   return buildMetadata({
     locale,
     path: `/news/${slug}`,
-    title: post.title,
-    description: post.excerpt,
+    title: post.seoTitle ?? post.title,
+    description: post.description ?? post.excerpt,
     image: post.coverImage,
     type: 'article',
     publishedTime: post.date,
   })
-}
-
-/** Rende `**testo**` come grassetto invece di mostrare gli asterischi letterali. */
-function renderInline(text: string): React.ReactNode[] {
-  return text.split(/\*\*(.+?)\*\*/g).map((part, i) =>
-    i % 2 === 1 ? <strong key={i}>{part}</strong> : part
-  )
 }
 
 const categoryToKey: Record<string, string> = {
@@ -84,7 +78,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
     headline: post.title,
     description: post.excerpt,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     inLanguage: locale,
     image: [post.coverImage, ...(post.images ?? []).slice(0, 3)]
       .filter(Boolean)
@@ -124,7 +118,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
             >
               {categoryToKey[post.category] ? t(categoryToKey[post.category] as Parameters<typeof t>[0]) : post.category}
             </span>
-            <span className="text-sm text-neutral-400">{formatDate(post.date, locale)}</span>
+            <span className="text-sm text-neutral-500">{formatDate(post.date, locale)}</span>
             {post.source && (
               <span className="text-sm font-medium text-primary-600">{post.source}</span>
             )}
@@ -135,6 +129,22 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
           </h1>
 
           <p className="mt-4 text-lg text-neutral-600">{post.excerpt}</p>
+
+          {/* Articoli propri (non rassegna stampa): autrice visibile e data di aggiornamento */}
+          {!post.source && (
+            <p className="mt-4 text-sm text-neutral-600">
+              {t.rich('byline', {
+                author: (chunks) => (
+                  <Link href="/sobre-mi" className="font-medium text-foreground underline-offset-4 hover:underline">
+                    {chunks}
+                  </Link>
+                ),
+              })}
+              {post.updated && post.updated !== post.date && (
+                <> · {t('updatedOn', { date: formatDate(post.updated, locale) })}</>
+              )}
+            </p>
+          )}
 
           {/* Link articolo originale */}
           {post.sourceUrl && (
@@ -169,10 +179,8 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
 
         {/* Content */}
         {post.content && (
-          <div className="prose prose-neutral prose-lg mx-auto mt-12 max-w-3xl">
-            {post.content.split('\n\n').map((paragraph, i) => (
-              <p key={i}>{renderInline(paragraph)}</p>
-            ))}
+          <div className="mx-auto mt-12 max-w-3xl">
+            <Markdown content={post.content} />
           </div>
         )}
 
@@ -205,7 +213,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
               >
                 <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-neutral-400">{t('previous')}</div>
+                  <div className="text-xs uppercase tracking-wider text-neutral-500">{t('previous')}</div>
                   <div className="font-medium text-foreground line-clamp-1">{prev.title}</div>
                 </div>
               </Link>
@@ -217,7 +225,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
                 className="group flex items-center gap-3 text-right text-sm text-neutral-500 transition-colors hover:text-foreground"
               >
                 <div>
-                  <div className="text-xs uppercase tracking-wider text-neutral-400">{t('next')}</div>
+                  <div className="text-xs uppercase tracking-wider text-neutral-500">{t('next')}</div>
                   <div className="font-medium text-foreground line-clamp-1">{next.title}</div>
                 </div>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

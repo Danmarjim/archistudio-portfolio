@@ -41,7 +41,8 @@ export default function FeaturedProjects({
         {/* Projects Grid — ordine riga per riga, altezza naturale per ogni card */}
         <div className="grid items-start gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.slice(0, 3).map((project, index) => (
-            <ProjectCard key={project.slug} project={project} index={index} />
+            // Sotto la piega nella home: index sfalsato per non dare priorità alle immagini (LCP = ritratto)
+            <ProjectCard key={project.slug} project={project} index={index + 3} />
           ))}
         </div>
 

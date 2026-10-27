@@ -2,6 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import type { NewsPost, NewsCategory } from '@/types'
+import { resolveServiceLinks } from '@/lib/services'
+import { hasPendingMarkers, isProductionDeploy } from '@/lib/pending'
 
 const newsDirectory = path.join(process.cwd(), 'content/news')
 
@@ -15,7 +17,7 @@ function getNewsDir(locale: string = 'it'): string {
   return path.join(newsDirectory, 'it')
 }
 
-export function getAllNews(locale: string = 'it'): NewsPost[] {
+function readNews(locale: string): NewsPost[] {
   const dir = getNewsDir(locale)
   if (!fs.existsSync(dir)) return []
 
@@ -34,6 +36,7 @@ export function getAllNews(locale: string = 'it'): NewsPost[] {
       category: data.category as NewsCategory,
       coverImage: data.coverImage,
       excerpt: data.excerpt,
+      description: data.description,
       source: data.source,
       sourceUrl: data.sourceUrl,
       imagePosition: data.imagePosition,
@@ -41,6 +44,8 @@ export function getAllNews(locale: string = 'it'): NewsPost[] {
       images: data.images ?? [],
       relatedProjectUrl: data.relatedProjectUrl,
       relatedProjectLabel: data.relatedProjectLabel,
+      seoTitle: data.seoTitle,
+      updated: data.updated,
       content: content.trim(),
     } as NewsPost
   })
@@ -49,12 +54,66 @@ export function getAllNews(locale: string = 'it'): NewsPost[] {
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
+function hasPending(post: NewsPost): boolean {
+  return hasPendingMarkers(post.title, post.excerpt, post.description, post.seoTitle, post.content)
+}
+
+/**
+ * Notizie pubblicate. In produzione resta fuori ogni articolo con dati da confermare
+ * (`[DA CONFERMARE: …]`) nella lingua richiesta o in italiano, la lingua di riferimento.
+ * I link Markdown a notizie non pubblicate puntano a `/news` e quelli a servizi non
+ * pubblicati all'hub `/servizi`.
+ */
+export function getAllNews(locale: string = 'it'): NewsPost[] {
+  let posts = readNews(locale)
+  if (isProductionDeploy) {
+    const blocked = new Set(
+      [...readNews('it'), ...posts].filter(hasPending).map((post) => post.slug)
+    )
+    posts = posts.filter((post) => !blocked.has(post.slug))
+  }
+  const publishedSlugs = new Set(posts.map((post) => post.slug))
+  return posts.map((post) => ({
+    ...post,
+    content: resolveServiceLinks(resolveNewsLinks(post.content ?? '', publishedSlugs)),
+  }))
+}
+
+/** Slug delle notizie pubblicate in una lingua (in produzione, senza quelle con dati da confermare). */
+export function getPublishedNewsSlugs(locale: string = 'it'): Set<string> {
+  return new Set(getAllNews(locale).map((post) => post.slug))
+}
+
+/**
+ * I link Markdown a una notizia non pubblicata (`/news/slug`) puntano a `/news`. Serve anche ai
+ * testi che non passano da `getAllNews`, come le pagine di servizio.
+ */
+export function resolveNewsLinks(content: string, publishedSlugs: Set<string>): string {
+  return content.replace(/\]\(\/news\/([a-z0-9-]+)\)/g, (link, slug: string) =>
+    publishedSlugs.has(slug) ? link : '](/news)'
+  )
+}
+
 export function getNewsByCategory(category: NewsCategory, locale: string = 'it'): NewsPost[] {
   return getAllNews(locale).filter((p) => p.category === category)
 }
 
 export function getNewsBySlug(slug: string, locale: string = 'it'): NewsPost | undefined {
   return getAllNews(locale).find((p) => p.slug === slug)
+}
+
+// Guida a cui rimanda la scheda di un progetto, in base alla categoria (valori in italiano)
+const GUIDE_BY_PROJECT_CATEGORY: Record<string, string> = {
+  Bagni: 'progettare-il-bagno-consigli-architetto',
+  Cucine: 'progettare-la-cucina-consigli-architetto',
+  'Ristrutturazione integrale': 'il-colore-nell-architettura',
+  Restyling: 'il-colore-nell-architettura',
+}
+
+/** Guida collegata a un progetto, solo se pubblicata. */
+export function getGuideForProject(category: string, locale: string = 'it'): NewsPost | undefined {
+  const slug = GUIDE_BY_PROJECT_CATEGORY[category]
+  return slug ? getNewsBySlug(slug, locale) : undefined
 }
 
 export function getAllNewsSlugs(): string[] {

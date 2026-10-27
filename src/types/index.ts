@@ -70,6 +70,8 @@ export interface NewsPost {
   category: NewsCategory
   coverImage: string
   excerpt: string
+  /** Meta description SEO (opzionale, ≤ 155 caratteri): se assente si usa `excerpt` */
+  description?: string
   source?: string        // nome rivista/media (solo per pubblicazioni)
   sourceUrl?: string     // link all'articolo originale
   imagePosition?: string  // es. "center 20%" per centrare il soggetto nel crop 16:9
@@ -77,6 +79,10 @@ export interface NewsPost {
   images?: string[]       // galleria aggiuntiva (es. pagine scansionate della rivista)
   relatedProjectUrl?: string   // path interno al progetto correlato (es. /proyectos/bagno-italian-summer)
   relatedProjectLabel?: string // testo del link al progetto (localizzato nel frontmatter)
+  /** Titolo SEO (opzionale, ≤ 43 caratteri: il layout aggiunge " | MP_archistudio"); se assente si usa `title` */
+  seoTitle?: string
+  /** Data dell'ultimo aggiornamento sostanziale (YYYY-MM-DD): dateModified e lastmod */
+  updated?: string
   content?: string
 }
 
@@ -87,4 +93,51 @@ export interface ContactForm {
   projectType: 'vivienda' | 'reforma' | 'comercial' | 'otro'
   message: string
   budget?: string
+}
+
+/** Pagina di servizio (`content/services/{locale}/{slug}.mdx`). */
+export interface ServicePage {
+  slug: string
+  /** Chiave del servizio in `ServicesData` / `/servizi` (archiadvice, consulenza-acquisto, …) */
+  serviceKey: string
+  title: string
+  /** Titolo SEO (≤ 43 caratteri: il layout aggiunge " | MP_archistudio") */
+  seoTitle?: string
+  description: string
+  /** Valore di schema.org `serviceType` */
+  serviceType: string
+  published: boolean
+  /** Call to action principale: prenotazione su Calendly o modulo di contatto */
+  cta: 'calendly' | 'contact'
+  /** Tipo di progetto preselezionato nel modulo di contatto */
+  contactProjectType?: string
+  /** Slug dei progetti da mostrare come esempi */
+  relatedProjects: string[]
+  /** Prezzo fisso in euro (es. ArchiAdvice); ha la precedenza su `priceFrom` */
+  price?: number
+  /** Prezzo di partenza in euro, se pubblicato (genera un `Offer` nel JSON-LD) */
+  priceFrom?: number
+  updated?: string
+  content: string
+}
+
+/** Testimonianza di un cliente (`content/testimonials/{slug}.md`). */
+export interface Testimonial {
+  slug: string
+  /** Nome come il cliente ha accettato di comparire (es. "Laura B.") */
+  author: string
+  /** Tipo di lavoro e città nella lingua della pagina (es. "Ristrutturazione integrale, Bergamo") */
+  context?: string
+  /** Slug della pagina di servizio in cui compare (es. `restyling-casa`) */
+  service?: string
+  /** Slug del progetto collegato, se la testimonianza riguarda un lavoro del portfolio */
+  project?: string
+  /** Dove l'ha lasciata (Google, Spazi Belli…), se pubblica anche altrove */
+  source?: string
+  /** Testo originale, come scritto dal cliente */
+  quote: string
+  /** Lingua del testo originale */
+  quoteLang: string
+  /** Traduzione nella lingua della pagina, se diversa dall'originale */
+  translation?: string
 }
