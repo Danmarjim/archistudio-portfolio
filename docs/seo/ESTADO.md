@@ -1,6 +1,6 @@
 # SEO — Estado
 
-Última actualización: 27 oct 2026. **Este es el punto de entrada**: en qué fase estamos, qué está hecho y qué viene ahora. Los códigos (A1, C4, F3…) remiten al detalle de [`planes/fase-2.md`](planes/fase-2.md); los de la fase 3 (A5, B3…), a [`planes/fase-3.md`](planes/fase-3.md).
+Última actualización: 27 oct 2026 (tarde). **Este es el punto de entrada**: en qué fase estamos, qué está hecho y qué viene ahora. Los códigos (A1, C4, F3…) remiten al detalle de [`planes/fase-2.md`](planes/fase-2.md); los de la fase 3 (A5, B3…), a [`planes/fase-3.md`](planes/fase-3.md).
 
 | Documento | Para qué |
 |---|---|
@@ -37,6 +37,7 @@
 | 12 oct | **Preview desplegada** (`e6a6cdc`) con todo lo de la fase 3: `robots.txt` con Content-Signal, restyling con Bergamo, galería accesible, encabezados de `/servizi`, enlace de chi sono. La rama antigua `seo/preview-completa` está borrada. URL fija de la rama: `portfolio-mparchistudio-git-pre-8a9f45-danmarjim-3740s-projects.vercel.app` (protegida con login de Vercel) | `vercel.json` |
 | 12–15 oct | **D0, reindexación completada**: segunda inspección el 14 oct, con 48 de 63 indexadas (7 más) y las 4 duplicadas aún a la espera de que Google rastree las URLs antiguas. Pedida la indexación de las 15 restantes: las 63 URLs del sitemap están indexadas o solicitadas. Las 21 en italiano ya estaban en el índice | [informe](auditorias/2026-10-14-indexacion/README.md) |
 | 15 oct | **D0b, CSP obligatoria**: una semana en observación sin violaciones en producción; con la CSP aplicada, 0 violaciones en las 39 páginas de la preview. La barra de Vercel solo se permite en las previews. **En producción** (cherry-pick a `main`, `dc2b813`): consola limpia en vivo | `main` · [revisión](revisiones/d0b-csp.md) |
+| 27 oct | **🚀 PR 2 en producción** (`seo/version-publicable`, merge `aa33282`): 4 servicios, 6 guías, home, chi sono, enlazado interno y todo lo de las fases 2 y 3, **sin los datos de Martina** (resueltos sin inventar nada). La guía de conformidad queda oculta hasta que Martina la valide. Sitemap de 63 a 99 URLs, todas 200; sitemap reenviado e indexación pedida para la home y los 4 servicios. Rollback preparado | [revisión](revisiones/version-publicable.md) |
 | 27 oct | **Aviso de Search Console "Página alternativa con etiqueta canónica adecuada"** (1 URL, detectada el 24 oct): es la home con los parámetros del enlace de la bio de Instagram (`?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=…`). Declara como canónica `https://mparchistudio.com` y Google la respeta. Es lo correcto: no hay nada que arreglar ni validar. Informe de páginas: 78 indexadas; la validación de las duplicadas, superada (0) | — |
 | 26 oct | **Rendimiento tras la reindexación**: mismo volumen (~1 clic y ~9 impresiones al día, casi todo de marca), pero 35 páginas con impresiones frente a 20. Sin búsquedas de servicio hasta publicar la PR 2. `www` redirigía con 307 (temporal): **arreglado**, ahora 308, con `www` añadido al proyecto en Vercel | [informe](auditorias/2026-10-26-rendimiento/README.md) |
 | 20 oct | **Preview desplegada** (`4057c19`) con la CSP y la barra de Vercel permitida solo ahí. Arreglada la regla de Vercel que salta los despliegues de solo documentación: si el último despliegue correcto de la rama ya no existe (retención), compila en vez de comparar solo con el commit anterior. Antes, un push que acababa en un commit de docs se cancelaba aunque trajera código | `vercel.json` (base) |
@@ -75,7 +76,7 @@ Dato a confirmar con Martina: `bagno-casa-archi-colori` figura en Bergamo y `cas
 | **1** — base técnica | ✅ Cerrada (10 oct) | — | [`fase-1`](planes/fase-1.md) · [estado](planes/fase-1-estado.md) |
 | **2** — estructura, servicios y contenido | ✅ Cerrada (10 oct) | — (validación y publicación → fase Martina) | [`fase-2`](planes/fase-2.md) |
 | **3** — calidad, preparación y seguimiento | 🔄 En curso: A1–A7, B3–B5, D0, D0b y D3 hechos | Solo el seguimiento (D, por fechas) | [`fase-3`](planes/fase-3.md) |
-| **Martina** — visto bueno, datos y publicación | ⏳ Esperando a Martina | Validar ramas, datos, ficha de Google, día de publicar | [`fase-martina`](planes/fase-martina.md) · [lista para ella](PENDIENTE-MARTINA.md) |
+| **Martina** — visto bueno, datos y publicación | 🔄 Publicado sin sus datos (27 oct); falta su lectura y sus datos | Validar ramas, datos, ficha de Google, día de publicar | [`fase-martina`](planes/fase-martina.md) · [lista para ella](PENDIENTE-MARTINA.md) |
 
 Decisiones del 10 oct: B12 (animaciones bajo el pliegue) se mantienen; F8 (créditos IPTC) descartado; G3 (slugs italianos en news para es/en) no se hace.
 

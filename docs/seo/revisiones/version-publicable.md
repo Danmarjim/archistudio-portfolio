@@ -1,5 +1,7 @@
 # Revisión — `seo/version-publicable`
 
+**✅ En producción desde el 27 oct** (`main`, merge `aa33282`; despliegue `portfolio-mparchistudio-nyq6bj1rg…`, Ready en 48 s). Rollback: despliegue anterior `portfolio-mparchistudio-197iyhcsz…` (`dc2b813`).
+
 Versión de la PR 2 que se puede publicar **sin esperar los datos de Martina** (decisión del 27 oct): todo lo de `preview/seo-completa`, con los `[DA CONFERMARE]` resueltos sin inventar datos. Martina lee los textos después de publicar y sus datos se añaden en actualizaciones.
 
 ## Qué se ha hecho (`247a844`)
@@ -39,6 +41,14 @@ Simulacro de merge con `main` (script de [A7](../auditorias/2026-10-10-simulacro
 **Si algo sale mal:**
 - **Inmediato (segundos, sin build):** Vercel → Deployments → el despliegue del punto 1 → *Instant Rollback*. O por CLI: `vercel rollback <url-del-despliegue-anterior>`.
 - **En el código:** `git revert -m 1 <commit del merge>` en `main` y push. Así `main` vuelve a coincidir con lo que se sirve.
+
+## Publicación (27 oct)
+
+- Árbol de `main` tras el merge idéntico al del simulacro.
+- En vivo: sitemap con **99 URLs, todas 200**; 12 redirecciones antiguas en 308; guía de conformidad en 404 (oculta); `/` ya no redirige según el idioma del navegador (`localeDetection: false`); CSP, `robots.txt` con Content-Signal y H1 nuevo de la home.
+- En el navegador (home, reforma, guía del baño, contacto): las páginas hidratan, no hay errores en consola, el formulario se muestra y Analytics/Speed Insights siguen enviando datos.
+- Search Console: sitemap reenviado (Google lee 99 páginas); indexación solicitada para la home y los 4 servicios, todas con el aviso verde.
+- La promesa "risponderemo entro 24 ore" del formulario ya estaba en producción antes; no se ha tocado.
 
 ## Qué validar
 
