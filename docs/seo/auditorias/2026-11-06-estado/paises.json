@@ -1,0 +1,411 @@
+{
+  "property": "sc-domain:mparchistudio.com",
+  "rows": [
+    {
+      "keys": [
+        "ita"
+      ],
+      "clicks": 23,
+      "impressions": 235,
+      "ctr": 9.79,
+      "position": 10.5,
+      "country": "ita"
+    },
+    {
+      "keys": [
+        "bel"
+      ],
+      "clicks": 2,
+      "impressions": 9,
+      "ctr": 22.22,
+      "position": 2.2,
+      "country": "bel"
+    },
+    {
+      "keys": [
+        "deu"
+      ],
+      "clicks": 2,
+      "impressions": 6,
+      "ctr": 33.33,
+      "position": 2.7,
+      "country": "deu"
+    },
+    {
+      "keys": [
+        "fra"
+      ],
+      "clicks": 2,
+      "impressions": 5,
+      "ctr": 40.0,
+      "position": 4.8,
+      "country": "fra"
+    },
+    {
+      "keys": [
+        "esp"
+      ],
+      "clicks": 1,
+      "impressions": 28,
+      "ctr": 3.57,
+      "position": 26.1,
+      "country": "esp"
+    },
+    {
+      "keys": [
+        "arg"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 22.5,
+      "country": "arg"
+    },
+    {
+      "keys": [
+        "atg"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "country": "atg"
+    },
+    {
+      "keys": [
+        "bgr"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "country": "bgr"
+    },
+    {
+      "keys": [
+        "bra"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 12.5,
+      "country": "bra"
+    },
+    {
+      "keys": [
+        "che"
+      ],
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0,
+      "position": 5.5,
+      "country": "che"
+    },
+    {
+      "keys": [
+        "chl"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 30.3,
+      "country": "chl"
+    },
+    {
+      "keys": [
+        "col"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 21.3,
+      "country": "col"
+    },
+    {
+      "keys": [
+        "dom"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 5,
+      "country": "dom"
+    },
+    {
+      "keys": [
+        "fin"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 35,
+      "country": "fin"
+    },
+    {
+      "keys": [
+        "gbr"
+      ],
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 30,
+      "country": "gbr"
+    },
+    {
+      "keys": [
+        "grc"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2.3,
+      "country": "grc"
+    },
+    {
+      "keys": [
+        "hrv"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1.5,
+      "country": "hrv"
+    },
+    {
+      "keys": [
+        "hun"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 9,
+      "country": "hun"
+    },
+    {
+      "keys": [
+        "idn"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6,
+      "country": "idn"
+    },
+    {
+      "keys": [
+        "ind"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "country": "ind"
+    },
+    {
+      "keys": [
+        "isr"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 8,
+      "country": "isr"
+    },
+    {
+      "keys": [
+        "jpn"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 11,
+      "country": "jpn"
+    },
+    {
+      "keys": [
+        "ltu"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4.5,
+      "country": "ltu"
+    },
+    {
+      "keys": [
+        "mex"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 9.3,
+      "country": "mex"
+    },
+    {
+      "keys": [
+        "mlt"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "country": "mlt"
+    },
+    {
+      "keys": [
+        "nld"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 17,
+      "country": "nld"
+    },
+    {
+      "keys": [
+        "nor"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 61,
+      "country": "nor"
+    },
+    {
+      "keys": [
+        "pak"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "country": "pak"
+    },
+    {
+      "keys": [
+        "pol"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 9,
+      "country": "pol"
+    },
+    {
+      "keys": [
+        "prt"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 20,
+      "country": "prt"
+    },
+    {
+      "keys": [
+        "rus"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15,
+      "country": "rus"
+    },
+    {
+      "keys": [
+        "sau"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2,
+      "country": "sau"
+    },
+    {
+      "keys": [
+        "smr"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "country": "smr"
+    },
+    {
+      "keys": [
+        "svn"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 7,
+      "country": "svn"
+    },
+    {
+      "keys": [
+        "tur"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "country": "tur"
+    },
+    {
+      "keys": [
+        "uga"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1,
+      "country": "uga"
+    },
+    {
+      "keys": [
+        "ury"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 7.5,
+      "country": "ury"
+    },
+    {
+      "keys": [
+        "usa"
+      ],
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 26.5,
+      "country": "usa"
+    },
+    {
+      "keys": [
+        "zaf"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 60,
+      "country": "zaf"
+    }
+  ],
+  "totals": {
+    "clicks": 30,
+    "impressions": 363,
+    "ctr": 8.26,
+    "position": 12.8
+  },
+  "totals_source": "dimensionless_aggregate",
+  "totals_complete": true,
+  "quick_wins": [],
+  "warnings": [],
+  "row_count": 39,
+  "error": null,
+  "date_range": {
+    "start": "2026-10-09",
+    "end": "2026-11-03"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "property": "sc-domain:mparchistudio.com",
+  "rows": [
+    {
+      "keys": [
+        "MOBILE"
+      ],
+      "clicks": 18,
+      "impressions": 169,
+      "ctr": 10.65,
+      "position": 6.7,
+      "device": "MOBILE"
+    },
+    {
+      "keys": [
+        "DESKTOP"
+      ],
+      "clicks": 12,
+      "impressions": 183,
+      "ctr": 6.56,
+      "position": 18.9,
+      "device": "DESKTOP"
+    },
+    {
+      "keys": [
+        "TABLET"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 5.2,
+      "device": "TABLET"
+    }
+  ],
+  "totals": {
+    "clicks": 30,
+    "impressions": 363,
+    "ctr": 8.26,
+    "position": 12.8
+  },
+  "totals_source": "dimensionless_aggregate",
+  "totals_complete": true,
+  "quick_wins": [],
+  "warnings": [],
+  "row_count": 3,
+  "error": null,
+  "date_range": {
+    "start": "2026-10-09",
+    "end": "2026-11-03"
+  }
+}
